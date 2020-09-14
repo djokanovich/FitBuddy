@@ -13,9 +13,9 @@ namespace BE
 
     public class Usuario
     {
+        private int _dvh;
 
         public string Apellido { get; set; }
-        public int DVH { get; set; }
         public Estado Estado { get; set; }
         public int IdIdioma { get; set; }
         public int Id { get; set; }
@@ -23,6 +23,27 @@ namespace BE
         public string Nombre { get; set; }
         public string Password { get; set; }
         public string Username { get; set; }
+
+        public int DVH
+        {
+            get
+            {
+                _dvh = CodigoDeControl.Luhn(ConcatenarPropiedades());
+                return _dvh;
+            }
+            set
+            {
+                _dvh = value;
+            }
+        }
+
+        private byte[] ConcatenarPropiedades()
+        {
+            // Jokanovich1714...
+            var concat = string.Concat(new[] { Apellido, Estado.ToString(), IdIdioma.ToString(), Id.ToString(), IntentosFallidos.ToString(), Nombre, Password, Username });
+            return Encoding.ASCII.GetBytes(concat);
+
+        }
 
 
     }

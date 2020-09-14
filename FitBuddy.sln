@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguridad", "Seguridad\Segu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicios", "Servicios\Servicios.csproj", "{E97F0294-5618-4906-BDCF-F36CAB354920}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitacora", "Bitacora\Bitacora.csproj", "{DA778C24-2F10-457A-AEED-9BBDC03C70B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bitacora", "Bitacora\Bitacora.csproj", "{DA778C24-2F10-457A-AEED-9BBDC03C70B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitBuddy.Test", "FitBuddy.Test\FitBuddy.Test.csproj", "{28276512-35FD-453E-9D46-6F1F271DCD01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{DA778C24-2F10-457A-AEED-9BBDC03C70B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA778C24-2F10-457A-AEED-9BBDC03C70B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA778C24-2F10-457A-AEED-9BBDC03C70B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28276512-35FD-453E-9D46-6F1F271DCD01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28276512-35FD-453E-9D46-6F1F271DCD01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28276512-35FD-453E-9D46-6F1F271DCD01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28276512-35FD-453E-9D46-6F1F271DCD01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

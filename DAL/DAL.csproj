@@ -39,9 +39,6 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=2.0.9.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.9\lib\net45\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -125,20 +122,25 @@
     <Compile Include="Migrations\202008242200185_agregarDiarioTurnos.designer.cs">
       <DependentUpon>202008242200185_agregarDiarioTurnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009160000366_agregaDVH.cs" />
+    <Compile Include="Migrations\202009160000366_agregaDVH.designer.cs">
+      <DependentUpon>202009160000366_agregaDVH.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="pacienteDAO.cs" />
     <Compile Include="PlanEjercicioDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\RepoBackup.cs" />
     <Compile Include="Repositorios\RepoLogs.cs" />
+    <Compile Include="Services\ServicioIntegridadDb.cs" />
     <Compile Include="Services\UsuarioDataService.cs" />
     <Compile Include="SistemaDAO.cs" />
     <Compile Include="SQLHelper.cs" />
     <Compile Include="UsuarioDAO.cs" />
+    <Compile Include="Util\CodigoDeControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
     <None Include="xxxApp.config" />
   </ItemGroup>
   <ItemGroup>
@@ -199,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202008242200185_agregarDiarioTurnos.resx">
       <DependentUpon>202008242200185_agregarDiarioTurnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009160000366_agregaDVH.resx">
+      <DependentUpon>202009160000366_agregaDVH.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

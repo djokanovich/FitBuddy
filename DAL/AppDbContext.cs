@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BE;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -52,7 +53,18 @@ namespace DAL
 
         public DbSet<BE.Turno> Turnos { get; set; }
 
+        public override int SaveChanges() // se ejecuta cada vez que modificas o creas una fila en alguna tabla (record)
+        {
+            foreach (var entidadConIntegridad in ChangeTracker.Entries()
+                .Where(e => e.Entity is IVerificoIntegridad &&
+                    (e.State == EntityState.Added || e.State == EntityState.Modified))
+                .Select(e => e.Entity as IVerificoIntegridad))
+            {
+                entidadConIntegridad.DVH = CodigoDeControl.Luhn(entidadConIntegridad.ConcatenarPropiedades());
+            }
 
+            return base.SaveChanges();
+        }
 
 
 

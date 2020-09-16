@@ -11,7 +11,7 @@ namespace BE
         Activo, Desactivado
     }
 
-    public class Usuario
+    public class Usuario : IVerificoIntegridad
     {
         private int _dvh;
 
@@ -23,26 +23,13 @@ namespace BE
         public string Nombre { get; set; }
         public string Password { get; set; }
         public string Username { get; set; }
+        public int DVH { get; set; }
 
-        public int DVH
-        {
-            get
-            {
-                _dvh = CodigoDeControl.Luhn(ConcatenarPropiedades());
-                return _dvh;
-            }
-            set
-            {
-                _dvh = value;
-            }
-        }
-
-        private byte[] ConcatenarPropiedades()
+        public byte[] ConcatenarPropiedades()
         {
             // Jokanovich1714...
             var concat = string.Concat(new[] { Apellido, Estado.ToString(), IdIdioma.ToString(), Id.ToString(), IntentosFallidos.ToString(), Nombre, Password, Username });
             return Encoding.ASCII.GetBytes(concat);
-
         }
 
 

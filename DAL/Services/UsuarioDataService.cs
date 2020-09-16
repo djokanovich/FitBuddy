@@ -14,14 +14,6 @@ namespace DAL.Services
         // patrón repository: no consultás directamente a la DB sino que consultas "algo" que facilita la ultilización de los datos.
         // los sp son para ejecutar querys críticass
     {
-        private log4net.ILog _logger;
-
-        public UsuarioDataService()
-        {
-            _logger = log4net.LogManager.GetLogger(typeof(UsuarioDataService));
-
-        }
-
         public Usuario GetUsuarioByNameAndPassword(string nombre, string password)
         {
             var hashService = new HashService();
@@ -32,7 +24,7 @@ namespace DAL.Services
             {
                 var lists = dbContext.Usuarios.ToList();
                 usuario = lists.SingleOrDefault(u => u.Username == nombre && u.Password == hashedPassword);
-                _logger.Info($"Se ha encontrado el {usuario.Nombre}");
+                //_logger.Info($"Se ha encontrado el {usuario.Nombre}");
             }
 
             return usuario;
@@ -48,7 +40,7 @@ namespace DAL.Services
             using (var dbContext = new AppDbContext())
             {
                 dbContext.Usuarios.Add(usuario);
-                _logger.Info($"El usuario {usuario.Nombre} ha sido guardado en la base de datos.");
+                //_logger.Info($"El usuario {usuario.Nombre} ha sido guardado en la base de datos.");
 
                 return dbContext.SaveChanges(); //guarda los cambios en la db
             }

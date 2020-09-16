@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="Backup.cs" />
     <Compile Include="Bitacora.cs" />
-    <Compile Include="CodigoDeControl.cs" />
     <Compile Include="Comida.cs" />
     <Compile Include="DiarioComidas.cs" />
     <Compile Include="DiarioEjercicios.cs" />
@@ -53,6 +52,7 @@
     <Compile Include="Email.cs" />
     <Compile Include="Grupo.cs" />
     <Compile Include="Idioma.cs" />
+    <Compile Include="IVerificoIntegridad.cs" />
     <Compile Include="Leyenda.cs" />
     <Compile Include="Medico.cs" />
     <Compile Include="Paciente.cs" />

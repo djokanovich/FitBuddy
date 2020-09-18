@@ -1,4 +1,5 @@
 ﻿using BE;
+using Bitacora;
 using DAL.Services;
 using System;
 using System.Collections.Generic;
@@ -60,14 +61,18 @@ namespace GUI
                 Username = txtUsuario.Text,
                 Apellido = txtApellido.Text,
                 Nombre = txtNombre.Text
-            }; //la llave permite inicializar el objeto
+            }; 
 
             var usuarioDataService = new UsuarioDataService();
+            var path = Properties.Settings.Default.ArchivoBitacora;
+            var bitacora = new ServicioBitacora(path);
+
 
 
             if (usuarioDataService.SaveUsuario(usuario, txtPassword.Text) > 0)
             {
                 MessageBox.Show("El usuario fue registrado con éxito");
+                bitacora.Agregar("Se ha registrado el usuario " + usuario.Username + " con éxito");
                 var login = new LogIn();
                 login.Show();
                 this.Close();
@@ -75,6 +80,7 @@ namespace GUI
             else
             {
                 MessageBox.Show("El usuario no fue registrado");
+               
                 BorrarTodo();
             }
         }

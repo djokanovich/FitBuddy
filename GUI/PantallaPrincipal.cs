@@ -79,5 +79,11 @@ namespace GUI
             var AgendaTurno = new AgendarTurno();
             AgendaTurno.Show();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            var backup = new Backup();
+            backup.Show();
+        }
     }
 }

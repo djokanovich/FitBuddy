@@ -21,5 +21,5 @@ namespace BE
             var concat = string.Concat(new[] { Id.ToString(), IdUsuario.ToString(), Tipo, FechaHora.ToString(), Descripcion, });
             return Encoding.ASCII.GetBytes(concat);
         }
-    }
+    } 
 }

@@ -1,4 +1,5 @@
-﻿using DAL.Services;
+﻿using Bitacora;
+using DAL.Services;
 using GUI.Security;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,11 @@ namespace GUI
 
         private void OK_Click(object sender, EventArgs e)
         {
+            var path = Properties.Settings.Default.ArchivoBitacora;
+
+            var bitacora = new ServicioBitacora(path);
+            
+
             var usuarioDataService = new UsuarioDataService();
             var usuario = usuarioDataService.GetUsuarioByNameAndPassword(txtUsername.Text, txtPassword.Text);
             if (usuario != null)
@@ -39,12 +45,15 @@ namespace GUI
 
                 var pantallaprincipal = new PantallaPrincipal();
                 MessageBox.Show("Logueado correctamente");
+                bitacora.Agregar("Se ha logueado el usuario" + usuario.Username);
                 pantallaprincipal.Show(); 
+
             }
             else
             {
                 // no loguearlo
                 MessageBox.Show("Usuario o contraseña incorrectos");
+                bitacora.Agregar("El usuario ha intentado ingresar al sistema sin éxito " + txtUsername.Text);
             }
         }
 

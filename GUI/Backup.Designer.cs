@@ -28,25 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCreateBackup = new System.Windows.Forms.Button();
             this.btnRestore = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnCreateBackup = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnCreateBackup
-            // 
-            this.btnCreateBackup.Location = new System.Drawing.Point(1204, 557);
-            this.btnCreateBackup.Margin = new System.Windows.Forms.Padding(6);
-            this.btnCreateBackup.Name = "btnCreateBackup";
-            this.btnCreateBackup.Size = new System.Drawing.Size(150, 44);
-            this.btnCreateBackup.TabIndex = 5;
-            this.btnCreateBackup.Text = "Crear";
-            this.btnCreateBackup.UseVisualStyleBackColor = true;
-            // 
             // btnRestore
             // 
-            this.btnRestore.Location = new System.Drawing.Point(990, 557);
+            this.btnRestore.Location = new System.Drawing.Point(1204, 549);
             this.btnRestore.Margin = new System.Windows.Forms.Padding(6);
             this.btnRestore.Name = "btnRestore";
             this.btnRestore.Size = new System.Drawing.Size(150, 44);
@@ -57,12 +47,23 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(64, 136);
+            this.dataGridView1.Location = new System.Drawing.Point(64, 142);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(1290, 390);
+            this.dataGridView1.Size = new System.Drawing.Size(1290, 384);
             this.dataGridView1.TabIndex = 3;
+            // 
+            // btnCreateBackup
+            // 
+            this.btnCreateBackup.Location = new System.Drawing.Point(1042, 549);
+            this.btnCreateBackup.Margin = new System.Windows.Forms.Padding(6);
+            this.btnCreateBackup.Name = "btnCreateBackup";
+            this.btnCreateBackup.Size = new System.Drawing.Size(150, 44);
+            this.btnCreateBackup.TabIndex = 5;
+            this.btnCreateBackup.Text = "Crear";
+            this.btnCreateBackup.UseVisualStyleBackColor = true;
+            this.btnCreateBackup.Click += new System.EventHandler(this.btnCreateBackup_Click);
             // 
             // Backup
             // 
@@ -80,9 +81,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnCreateBackup;
         private System.Windows.Forms.Button btnRestore;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnCreateBackup;
     }
 }

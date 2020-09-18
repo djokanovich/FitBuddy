@@ -40,6 +40,7 @@
             this.Button2 = new System.Windows.Forms.Button();
             this.Button1 = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             this.PictureBox1.Location = new System.Drawing.Point(149, 136);
             this.PictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(378, 131);
+            this.PictureBox1.Size = new System.Drawing.Size(378, 130);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox1.TabIndex = 19;
             this.PictureBox1.TabStop = false;
@@ -100,7 +101,7 @@
             // 
             // Button5
             // 
-            this.Button5.Location = new System.Drawing.Point(169, 414);
+            this.Button5.Location = new System.Drawing.Point(169, 470);
             this.Button5.Margin = new System.Windows.Forms.Padding(6);
             this.Button5.Name = "Button5";
             this.Button5.Size = new System.Drawing.Size(358, 44);
@@ -133,7 +134,7 @@
             // 
             // Button2
             // 
-            this.Button2.Location = new System.Drawing.Point(169, 359);
+            this.Button2.Location = new System.Drawing.Point(169, 415);
             this.Button2.Margin = new System.Windows.Forms.Padding(6);
             this.Button2.Name = "Button2";
             this.Button2.Size = new System.Drawing.Size(358, 44);
@@ -144,7 +145,7 @@
             // 
             // Button1
             // 
-            this.Button1.Location = new System.Drawing.Point(169, 303);
+            this.Button1.Location = new System.Drawing.Point(169, 359);
             this.Button1.Margin = new System.Windows.Forms.Padding(6);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(358, 44);
@@ -161,11 +162,23 @@
             this.lblWelcome.Size = new System.Drawing.Size(0, 25);
             this.lblWelcome.TabIndex = 20;
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(565, 470);
+            this.button10.Margin = new System.Windows.Forms.Padding(6);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(358, 44);
+            this.button10.TabIndex = 21;
+            this.button10.Text = "Backup";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // PantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1072, 594);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.Button8);
@@ -199,5 +212,6 @@
         internal System.Windows.Forms.Button Button2;
         internal System.Windows.Forms.Button Button1;
         private System.Windows.Forms.Label lblWelcome;
+        internal System.Windows.Forms.Button button10;
     }
 }

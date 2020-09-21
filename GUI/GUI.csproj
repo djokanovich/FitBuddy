@@ -98,8 +98,6 @@
     <Compile Include="CrearPlanEjercicio.Designer.cs">
       <DependentUpon>CrearPlanEjercicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Security\AnonymousIdentity.cs" />
-    <Compile Include="Security\CustomPrincipal.cs" />
     <Compile Include="GestionarPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,7 +136,9 @@
     <Compile Include="RegistrarNuevoUsuario.Designer.cs">
       <DependentUpon>RegistrarNuevoUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Security\AnonymousIdentity.cs" />
     <Compile Include="Security\CustomIdentity.cs" />
+    <Compile Include="Security\CustomPrincipal.cs" />
     <EmbeddedResource Include="AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>

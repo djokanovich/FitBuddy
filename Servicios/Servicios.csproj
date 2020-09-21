@@ -41,17 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackupService.cs" />
     <Compile Include="BaseService.cs" />
-    <Compile Include="DVVService.cs" />
     <Compile Include="IdiomaService.cs" />
-    <Compile Include="LenguajeLogin.cs" />
     <Compile Include="LogManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TraslationService.cs" />
-    <Compile Include="TraslationsService.cs" />
     <Compile Include="UsuarioService.cs" />
-    <Compile Include="VerificableService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BE\BE.csproj">

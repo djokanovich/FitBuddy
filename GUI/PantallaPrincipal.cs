@@ -54,6 +54,7 @@ namespace GUI
         {
             var cargaEjercicio = new CargarDiarioEjercicios();
             cargaEjercicio.Show();
+            
         }
 
         private void Button7_Click(object sender, EventArgs e)

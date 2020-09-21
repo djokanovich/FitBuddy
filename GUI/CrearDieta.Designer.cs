@@ -113,6 +113,7 @@
             this.Button1.TabIndex = 18;
             this.Button1.Text = "Enviar";
             this.Button1.UseVisualStyleBackColor = true;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // CheckBox9
             // 

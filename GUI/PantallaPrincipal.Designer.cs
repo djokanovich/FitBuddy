@@ -50,7 +50,7 @@
             this.PictureBox1.Location = new System.Drawing.Point(149, 136);
             this.PictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(378, 130);
+            this.PictureBox1.Size = new System.Drawing.Size(378, 124);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox1.TabIndex = 19;
             this.PictureBox1.TabStop = false;
@@ -101,10 +101,10 @@
             // 
             // Button5
             // 
-            this.Button5.Location = new System.Drawing.Point(169, 470);
+            this.Button5.Location = new System.Drawing.Point(149, 469);
             this.Button5.Margin = new System.Windows.Forms.Padding(6);
             this.Button5.Name = "Button5";
-            this.Button5.Size = new System.Drawing.Size(358, 44);
+            this.Button5.Size = new System.Drawing.Size(378, 44);
             this.Button5.TabIndex = 14;
             this.Button5.Text = "Gestionar Plan de Ejercicio";
             this.Button5.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@
             // 
             // Button3
             // 
-            this.Button3.Location = new System.Drawing.Point(565, 136);
+            this.Button3.Location = new System.Drawing.Point(565, 135);
             this.Button3.Margin = new System.Windows.Forms.Padding(6);
             this.Button3.Name = "Button3";
             this.Button3.Size = new System.Drawing.Size(358, 44);
@@ -134,10 +134,10 @@
             // 
             // Button2
             // 
-            this.Button2.Location = new System.Drawing.Point(169, 415);
+            this.Button2.Location = new System.Drawing.Point(149, 414);
             this.Button2.Margin = new System.Windows.Forms.Padding(6);
             this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(358, 44);
+            this.Button2.Size = new System.Drawing.Size(378, 44);
             this.Button2.TabIndex = 11;
             this.Button2.Text = "Gestionar Plan Alimeticio";
             this.Button2.UseVisualStyleBackColor = true;
@@ -145,10 +145,10 @@
             // 
             // Button1
             // 
-            this.Button1.Location = new System.Drawing.Point(169, 359);
+            this.Button1.Location = new System.Drawing.Point(149, 358);
             this.Button1.Margin = new System.Windows.Forms.Padding(6);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(358, 44);
+            this.Button1.Size = new System.Drawing.Size(378, 44);
             this.Button1.TabIndex = 10;
             this.Button1.Text = "Gestionar Perfil";
             this.Button1.UseVisualStyleBackColor = true;
@@ -177,7 +177,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1072, 594);
+            this.ClientSize = new System.Drawing.Size(1016, 594);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.PictureBox1);

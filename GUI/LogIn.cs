@@ -46,7 +46,8 @@ namespace GUI
                 var pantallaprincipal = new PantallaPrincipal();
                 MessageBox.Show("Logueado correctamente");
                 bitacora.Agregar("Se ha logueado el usuario" + usuario.Username);
-                pantallaprincipal.Show(); 
+                pantallaprincipal.Show();
+                this.Close();
             }
             else
             {

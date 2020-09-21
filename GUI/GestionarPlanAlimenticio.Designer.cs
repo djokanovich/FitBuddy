@@ -78,6 +78,7 @@
             this.Button1.TabIndex = 4;
             this.Button1.Text = "Ver Dieta";
             this.Button1.UseVisualStyleBackColor = true;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // lblWelcome
             // 

@@ -31,5 +31,10 @@ namespace GUI
             var crearPlanEj = new CrearPlanEjercicio();
             crearPlanEj.Show();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sección en construcción");
+        }
     }
 }

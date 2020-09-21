@@ -125,7 +125,6 @@
     <Compile Include="Repositorio\UsuarioDAL.cs" />
     <Compile Include="Services\ServicioBackup.cs" />
     <Compile Include="Services\ServicioIntegridadDb.cs" />
-    <Compile Include="SQLHelper.cs" />
     <Compile Include="Util\CodigoDeControl.cs" />
   </ItemGroup>
   <ItemGroup>

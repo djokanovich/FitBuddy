@@ -112,6 +112,7 @@
             this.Button2.TabIndex = 30;
             this.Button2.Text = "Limpiar";
             this.Button2.UseVisualStyleBackColor = true;
+            this.Button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Button1
             // 
@@ -122,6 +123,7 @@
             this.Button1.TabIndex = 29;
             this.Button1.Text = "Enviar";
             this.Button1.UseVisualStyleBackColor = true;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // GroupBox2
             // 

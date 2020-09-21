@@ -1,4 +1,4 @@
-﻿using DAL.Services;
+﻿using BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,7 +32,7 @@ namespace GUI
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string fileName = openFileDialog.FileName;
-                var servicioBackup = new ServicioBackup();
+                var servicioBackup = new ServicioBackupBLL();
                 int resultado = servicioBackup.CrearBackup(fileName);
                 if (resultado == 0)
                 {

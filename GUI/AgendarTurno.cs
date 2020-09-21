@@ -1,4 +1,5 @@
-﻿using GUI.Security;
+﻿using BLL;
+using GUI.Security;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,30 @@ namespace GUI
 
         private void AgendarTurno_Load(object sender, EventArgs e)
         {
+            var gesMedico = new gesMedico();
+            var medicos = gesMedico.ObtenerMedicos();
+            //ComboBox2.Items.AddRange(medicos.Select(m => m.Nombre).ToArray());
+            ComboBox2.DataSource = medicos;
+            ComboBox2.DisplayMember = "Nombre";
+            ComboBox2.ValueMember = "Email";
+
+            ComboBox1.Items.Add("9:00");
+            ComboBox1.Items.Add("10:00");
+            ComboBox1.Items.Add("11:00");
+            ComboBox1.Items.Add("12:00");
+            ComboBox1.Items.Add("13:00");
+            ComboBox1.Items.Add("14:00");
+        }
+
+        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+
 
         }
     }

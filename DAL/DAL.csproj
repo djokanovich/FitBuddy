@@ -121,11 +121,10 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositorios\RepoBackup.cs" />
-    <Compile Include="Repositorios\RepoLogs.cs" />
+    <Compile Include="Repositorio\MedicoDAL.cs" />
+    <Compile Include="Repositorio\UsuarioDAL.cs" />
     <Compile Include="Services\ServicioBackup.cs" />
     <Compile Include="Services\ServicioIntegridadDb.cs" />
-    <Compile Include="Services\UsuarioDataService.cs" />
     <Compile Include="SQLHelper.cs" />
     <Compile Include="Util\CodigoDeControl.cs" />
   </ItemGroup>
@@ -137,10 +136,6 @@
     <ProjectReference Include="..\BE\BE.csproj">
       <Project>{96aab3bc-cd44-4a9e-9847-7f16480a774d}</Project>
       <Name>BE</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Seguridad\Seguridad.csproj">
-      <Project>{f6d53e2f-0779-4611-8ce7-e667a15b8d86}</Project>
-      <Name>Seguridad</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

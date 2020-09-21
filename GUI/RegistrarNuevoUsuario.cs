@@ -1,6 +1,6 @@
 ﻿using BE;
 using Bitacora;
-using DAL.Services;
+using BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,7 +54,6 @@ namespace GUI
                 MessageBox.Show("Debe introducir un correo válido");
                 return;
             }
-            
 
             var usuario = new Usuario
             {
@@ -63,13 +62,11 @@ namespace GUI
                 Nombre = txtNombre.Text
             }; 
 
-            var usuarioDataService = new UsuarioDataService();
             var path = Properties.Settings.Default.ArchivoBitacora;
             var bitacora = new ServicioBitacora(path);
 
-
-
-            if (usuarioDataService.SaveUsuario(usuario, txtPassword.Text) > 0)
+            var gesUsuario = new gesUsuario();
+            if (gesUsuario.GuardarUsuario(usuario, txtPassword.Text) > 0)
             {
                 MessageBox.Show("El usuario fue registrado con éxito");
                 bitacora.Agregar("Se ha registrado el usuario " + usuario.Username + " con éxito");

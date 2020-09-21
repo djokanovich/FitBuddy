@@ -210,9 +210,9 @@
       <Project>{DA778C24-2F10-457A-AEED-9BBDC03C70B4}</Project>
       <Name>Bitacora</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{3a137ce8-ad5c-49ea-9015-239edfb4270b}</Project>
-      <Name>DAL</Name>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{ee2bb302-6125-4327-af75-7aefeed8c058}</Project>
+      <Name>BLL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

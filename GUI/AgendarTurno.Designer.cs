@@ -70,6 +70,7 @@
             this.ComboBox2.Name = "ComboBox2";
             this.ComboBox2.Size = new System.Drawing.Size(434, 33);
             this.ComboBox2.TabIndex = 15;
+            this.ComboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
             // 
             // ComboBox1
             // 
@@ -79,6 +80,7 @@
             this.ComboBox1.Name = "ComboBox1";
             this.ComboBox1.Size = new System.Drawing.Size(434, 33);
             this.ComboBox1.TabIndex = 14;
+            this.ComboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // Label3
             // 

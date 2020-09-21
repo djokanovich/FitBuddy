@@ -1,5 +1,5 @@
 ﻿using Bitacora;
-using DAL.Services;
+using BLL;
 using GUI.Security;
 using System;
 using System.Collections.Generic;
@@ -28,8 +28,8 @@ namespace GUI
             var bitacora = new ServicioBitacora(path);
             
 
-            var usuarioDataService = new UsuarioDataService();
-            var usuario = usuarioDataService.GetUsuarioByNameAndPassword(txtUsername.Text, txtPassword.Text);
+            var gesUsuario = new gesUsuario();
+            var usuario = gesUsuario.UsuarioAutenticado(txtUsername.Text, txtPassword.Text);
             if (usuario != null)
             {
                 // el usuario existe => tiene acceso
@@ -47,7 +47,6 @@ namespace GUI
                 MessageBox.Show("Logueado correctamente");
                 bitacora.Agregar("Se ha logueado el usuario" + usuario.Username);
                 pantallaprincipal.Show(); 
-
             }
             else
             {

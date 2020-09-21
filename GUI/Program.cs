@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DAL.Services;
+using BLL;
 
 namespace GUI
 {
@@ -24,14 +24,14 @@ namespace GUI
 
             // Verificar los códigos de verificación.
 
-            var servicioIntegridadDb = new ServicioIntegridadDb();
+            var servicioIntegridadBll = new ServicioIntegridadBLL();
 
             var path = Properties.Settings.Default.ArchivoBitacora;
 
             var bitacora = new ServicioBitacora(path);
 
 
-            if (!servicioIntegridadDb.DbTieneIntegridad())
+            if (!servicioIntegridadBll.DbTieneIntegridad())
             {
                 MessageBox.Show("Se vió afectada la integridad del sistema. ¿Desea notificar al administrador?","Atención", MessageBoxButtons.YesNo,
                                  MessageBoxIcon.Exclamation);

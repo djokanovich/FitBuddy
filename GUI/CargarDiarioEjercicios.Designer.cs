@@ -50,58 +50,52 @@
             // 
             // TextBox1
             // 
-            this.TextBox1.Location = new System.Drawing.Point(827, 333);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.TextBox1.Location = new System.Drawing.Point(414, 173);
             this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(396, 31);
+            this.TextBox1.Size = new System.Drawing.Size(200, 20);
             this.TextBox1.TabIndex = 39;
             // 
             // Label4
             // 
             this.Label4.AutoSize = true;
-            this.Label4.Location = new System.Drawing.Point(669, 333);
-            this.Label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label4.Location = new System.Drawing.Point(334, 173);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(131, 25);
+            this.Label4.Size = new System.Drawing.Size(64, 13);
             this.Label4.TabIndex = 38;
             this.Label4.Text = "Tiempo(min)";
             // 
             // Button4
             // 
-            this.Button4.Location = new System.Drawing.Point(1315, 660);
-            this.Button4.Margin = new System.Windows.Forms.Padding(6);
+            this.Button4.Location = new System.Drawing.Point(658, 343);
             this.Button4.Name = "Button4";
-            this.Button4.Size = new System.Drawing.Size(150, 44);
+            this.Button4.Size = new System.Drawing.Size(75, 23);
             this.Button4.TabIndex = 37;
             this.Button4.Text = "Atrás";
             this.Button4.UseVisualStyleBackColor = true;
             // 
             // Button3
             // 
-            this.Button3.Location = new System.Drawing.Point(1315, 258);
-            this.Button3.Margin = new System.Windows.Forms.Padding(6);
+            this.Button3.Location = new System.Drawing.Point(658, 134);
             this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(150, 44);
+            this.Button3.Size = new System.Drawing.Size(75, 23);
             this.Button3.TabIndex = 36;
             this.Button3.Text = "Enviar";
             this.Button3.UseVisualStyleBackColor = true;
             // 
             // Button2
             // 
-            this.Button2.Location = new System.Drawing.Point(1315, 201);
-            this.Button2.Margin = new System.Windows.Forms.Padding(6);
+            this.Button2.Location = new System.Drawing.Point(658, 105);
             this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(150, 44);
+            this.Button2.Size = new System.Drawing.Size(75, 23);
             this.Button2.TabIndex = 35;
             this.Button2.Text = "Borrar";
             this.Button2.UseVisualStyleBackColor = true;
             // 
             // Button1
             // 
-            this.Button1.Location = new System.Drawing.Point(1315, 149);
-            this.Button1.Margin = new System.Windows.Forms.Padding(6);
+            this.Button1.Location = new System.Drawing.Point(658, 77);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(150, 44);
+            this.Button1.Size = new System.Drawing.Size(75, 23);
             this.Button1.TabIndex = 34;
             this.Button1.Text = "Agregar";
             this.Button1.UseVisualStyleBackColor = true;
@@ -109,28 +103,25 @@
             // Label3
             // 
             this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(669, 149);
-            this.Label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label3.Location = new System.Drawing.Point(334, 77);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(72, 25);
+            this.Label3.Size = new System.Drawing.Size(37, 13);
             this.Label3.TabIndex = 33;
             this.Label3.Text = "Fecha";
             // 
             // DateTimePicker1
             // 
-            this.DateTimePicker1.Location = new System.Drawing.Point(827, 149);
-            this.DateTimePicker1.Margin = new System.Windows.Forms.Padding(6);
+            this.DateTimePicker1.Location = new System.Drawing.Point(414, 77);
             this.DateTimePicker1.Name = "DateTimePicker1";
-            this.DateTimePicker1.Size = new System.Drawing.Size(396, 31);
+            this.DateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.DateTimePicker1.TabIndex = 32;
             // 
             // PictureBox1
             // 
             this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(91, 149);
-            this.PictureBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.PictureBox1.Location = new System.Drawing.Point(46, 77);
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(508, 473);
+            this.PictureBox1.Size = new System.Drawing.Size(254, 246);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox1.TabIndex = 31;
             this.PictureBox1.TabStop = false;
@@ -138,64 +129,60 @@
             // ComboBox2
             // 
             this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(827, 266);
-            this.ComboBox2.Margin = new System.Windows.Forms.Padding(6);
+            this.ComboBox2.Location = new System.Drawing.Point(414, 138);
             this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(396, 33);
+            this.ComboBox2.Size = new System.Drawing.Size(200, 21);
             this.ComboBox2.TabIndex = 30;
             // 
             // ComboBox1
             // 
             this.ComboBox1.FormattingEnabled = true;
-            this.ComboBox1.Location = new System.Drawing.Point(827, 206);
-            this.ComboBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.ComboBox1.Location = new System.Drawing.Point(414, 107);
             this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(396, 33);
+            this.ComboBox1.Size = new System.Drawing.Size(200, 21);
             this.ComboBox1.TabIndex = 29;
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(669, 281);
-            this.Label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label2.Location = new System.Drawing.Point(334, 146);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(137, 25);
+            this.Label2.Size = new System.Drawing.Size(69, 13);
             this.Label2.TabIndex = 28;
             this.Label2.Text = "Repeticiones";
             // 
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(669, 212);
-            this.Label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label1.Location = new System.Drawing.Point(334, 110);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(94, 25);
+            this.Label1.Size = new System.Drawing.Size(47, 13);
             this.Label1.TabIndex = 27;
             this.Label1.Text = "Ejercicio";
             // 
             // DataGridView1
             // 
             this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView1.Location = new System.Drawing.Point(651, 439);
-            this.DataGridView1.Margin = new System.Windows.Forms.Padding(6);
+            this.DataGridView1.Location = new System.Drawing.Point(326, 228);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.RowHeadersWidth = 82;
-            this.DataGridView1.Size = new System.Drawing.Size(814, 183);
+            this.DataGridView1.Size = new System.Drawing.Size(407, 95);
             this.DataGridView1.TabIndex = 26;
             // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(1153, 62);
+            this.lblWelcome.Location = new System.Drawing.Point(576, 32);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 25);
+            this.lblWelcome.Size = new System.Drawing.Size(0, 13);
             this.lblWelcome.TabIndex = 40;
             // 
             // CargarDiarioEjercicios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2046, 872);
+            this.ClientSize = new System.Drawing.Size(962, 453);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.TextBox1);
             this.Controls.Add(this.Label4);
@@ -211,9 +198,9 @@
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.DataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CargarDiarioEjercicios";
             this.Text = "CargarDiarioEjercicios";
-            this.Load += new System.EventHandler(this.CargarDiarioEjercicios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.ResumeLayout(false);

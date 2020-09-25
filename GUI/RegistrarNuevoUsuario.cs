@@ -24,10 +24,10 @@ namespace GUI
         public void BorrarTodo()
         {
             txtApellido.Text = string.Empty;
-                txtEmail.Text = string.Empty;
-                txtNombre.Text = string.Empty;
-                txtRepeatPassword.Text = string.Empty;
-                txtUsuario.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtRepeatPassword.Text = string.Empty;
+            txtUsuario.Text = string.Empty;
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace GUI
                 Username = txtUsuario.Text,
                 Apellido = txtApellido.Text,
                 Nombre = txtNombre.Text
-            }; 
+            };
 
             var path = Properties.Settings.Default.ArchivoBitacora;
             var bitacora = new ServicioBitacora(path);
@@ -77,7 +77,7 @@ namespace GUI
             else
             {
                 MessageBox.Show("El usuario no fue registrado");
-               
+
                 BorrarTodo();
             }
         }

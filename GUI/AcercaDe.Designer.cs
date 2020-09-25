@@ -52,7 +52,6 @@
             this.TableLayoutPanel.Controls.Add(this.TextBoxDescription, 1, 4);
             this.TableLayoutPanel.Controls.Add(this.OKButton, 1, 5);
             this.TableLayoutPanel.Name = "TableLayoutPanel";
-            this.TableLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel_Paint);
             // 
             // LogoPictureBox
             // 

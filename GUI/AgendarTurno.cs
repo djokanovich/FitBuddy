@@ -38,17 +38,5 @@ namespace GUI
             ComboBox1.Items.Add("13:00");
             ComboBox1.Items.Add("14:00");
         }
-
-        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-
-
-        }
     }
 }

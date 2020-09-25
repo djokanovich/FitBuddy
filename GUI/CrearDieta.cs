@@ -21,11 +21,6 @@ namespace GUI
             lblWelcome.Text = $"Usuario {customPrincipal.Identity.Name}";
         }
 
-        private void CrearDieta_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Perfil alimenticio cargado con éxito");

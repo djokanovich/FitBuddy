@@ -47,20 +47,18 @@
             // PictureBox1
             // 
             this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(149, 136);
-            this.PictureBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.PictureBox1.Location = new System.Drawing.Point(74, 71);
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(378, 124);
+            this.PictureBox1.Size = new System.Drawing.Size(189, 64);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox1.TabIndex = 19;
             this.PictureBox1.TabStop = false;
             // 
             // Button8
             // 
-            this.Button8.Location = new System.Drawing.Point(565, 414);
-            this.Button8.Margin = new System.Windows.Forms.Padding(6);
+            this.Button8.Location = new System.Drawing.Point(282, 215);
             this.Button8.Name = "Button8";
-            this.Button8.Size = new System.Drawing.Size(358, 44);
+            this.Button8.Size = new System.Drawing.Size(179, 23);
             this.Button8.TabIndex = 18;
             this.Button8.Text = "Agendar Turno";
             this.Button8.UseVisualStyleBackColor = true;
@@ -68,10 +66,9 @@
             // 
             // Button9
             // 
-            this.Button9.Location = new System.Drawing.Point(565, 359);
-            this.Button9.Margin = new System.Windows.Forms.Padding(6);
+            this.Button9.Location = new System.Drawing.Point(282, 187);
             this.Button9.Name = "Button9";
-            this.Button9.Size = new System.Drawing.Size(358, 44);
+            this.Button9.Size = new System.Drawing.Size(179, 23);
             this.Button9.TabIndex = 17;
             this.Button9.Text = "Reclamos y Sugerencias";
             this.Button9.UseVisualStyleBackColor = true;
@@ -79,10 +76,9 @@
             // 
             // Button6
             // 
-            this.Button6.Location = new System.Drawing.Point(565, 303);
-            this.Button6.Margin = new System.Windows.Forms.Padding(6);
+            this.Button6.Location = new System.Drawing.Point(282, 158);
             this.Button6.Name = "Button6";
-            this.Button6.Size = new System.Drawing.Size(358, 44);
+            this.Button6.Size = new System.Drawing.Size(179, 23);
             this.Button6.TabIndex = 16;
             this.Button6.Text = "Contactar Profesional";
             this.Button6.UseVisualStyleBackColor = true;
@@ -90,10 +86,9 @@
             // 
             // Button7
             // 
-            this.Button7.Location = new System.Drawing.Point(565, 247);
-            this.Button7.Margin = new System.Windows.Forms.Padding(6);
+            this.Button7.Location = new System.Drawing.Point(282, 128);
             this.Button7.Name = "Button7";
-            this.Button7.Size = new System.Drawing.Size(358, 44);
+            this.Button7.Size = new System.Drawing.Size(179, 23);
             this.Button7.TabIndex = 15;
             this.Button7.Text = "Mis Estadísticas";
             this.Button7.UseVisualStyleBackColor = true;
@@ -101,10 +96,9 @@
             // 
             // Button5
             // 
-            this.Button5.Location = new System.Drawing.Point(149, 469);
-            this.Button5.Margin = new System.Windows.Forms.Padding(6);
+            this.Button5.Location = new System.Drawing.Point(74, 244);
             this.Button5.Name = "Button5";
-            this.Button5.Size = new System.Drawing.Size(378, 44);
+            this.Button5.Size = new System.Drawing.Size(189, 23);
             this.Button5.TabIndex = 14;
             this.Button5.Text = "Gestionar Plan de Ejercicio";
             this.Button5.UseVisualStyleBackColor = true;
@@ -112,10 +106,9 @@
             // 
             // Button4
             // 
-            this.Button4.Location = new System.Drawing.Point(565, 191);
-            this.Button4.Margin = new System.Windows.Forms.Padding(6);
+            this.Button4.Location = new System.Drawing.Point(282, 99);
             this.Button4.Name = "Button4";
-            this.Button4.Size = new System.Drawing.Size(358, 44);
+            this.Button4.Size = new System.Drawing.Size(179, 23);
             this.Button4.TabIndex = 13;
             this.Button4.Text = "Carga Diaria de Ejercicios";
             this.Button4.UseVisualStyleBackColor = true;
@@ -123,10 +116,9 @@
             // 
             // Button3
             // 
-            this.Button3.Location = new System.Drawing.Point(565, 135);
-            this.Button3.Margin = new System.Windows.Forms.Padding(6);
+            this.Button3.Location = new System.Drawing.Point(282, 70);
             this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(358, 44);
+            this.Button3.Size = new System.Drawing.Size(179, 23);
             this.Button3.TabIndex = 12;
             this.Button3.Text = "Carga Diaria de Comidas";
             this.Button3.UseVisualStyleBackColor = true;
@@ -134,10 +126,9 @@
             // 
             // Button2
             // 
-            this.Button2.Location = new System.Drawing.Point(149, 414);
-            this.Button2.Margin = new System.Windows.Forms.Padding(6);
+            this.Button2.Location = new System.Drawing.Point(74, 215);
             this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(378, 44);
+            this.Button2.Size = new System.Drawing.Size(189, 23);
             this.Button2.TabIndex = 11;
             this.Button2.Text = "Gestionar Plan Alimeticio";
             this.Button2.UseVisualStyleBackColor = true;
@@ -145,10 +136,9 @@
             // 
             // Button1
             // 
-            this.Button1.Location = new System.Drawing.Point(149, 358);
-            this.Button1.Margin = new System.Windows.Forms.Padding(6);
+            this.Button1.Location = new System.Drawing.Point(74, 186);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(378, 44);
+            this.Button1.Size = new System.Drawing.Size(189, 23);
             this.Button1.TabIndex = 10;
             this.Button1.Text = "Gestionar Perfil";
             this.Button1.UseVisualStyleBackColor = true;
@@ -157,17 +147,17 @@
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(709, 46);
+            this.lblWelcome.Location = new System.Drawing.Point(354, 24);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 25);
+            this.lblWelcome.Size = new System.Drawing.Size(0, 13);
             this.lblWelcome.TabIndex = 20;
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(565, 470);
-            this.button10.Margin = new System.Windows.Forms.Padding(6);
+            this.button10.Location = new System.Drawing.Point(282, 244);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(358, 44);
+            this.button10.Size = new System.Drawing.Size(179, 23);
             this.button10.TabIndex = 21;
             this.button10.Text = "Backup";
             this.button10.UseVisualStyleBackColor = true;
@@ -175,9 +165,9 @@
             // 
             // PantallaPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 594);
+            this.ClientSize = new System.Drawing.Size(508, 309);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.PictureBox1);
@@ -190,9 +180,9 @@
             this.Controls.Add(this.Button3);
             this.Controls.Add(this.Button2);
             this.Controls.Add(this.Button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PantallaPrincipal";
             this.Text = "PantallaPrincipal";
-            this.Load += new System.EventHandler(this.PantallaPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

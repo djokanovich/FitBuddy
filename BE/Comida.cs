@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BE.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-  public  class Comida : IVerificoIntegridad
+    public  class Comida : IVerificoIntegridad
     {
         public int Id { get; set; }
         public int Calorias { get; set; }

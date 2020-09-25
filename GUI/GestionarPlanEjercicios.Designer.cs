@@ -39,10 +39,9 @@
             // 
             // Button3
             // 
-            this.Button3.Location = new System.Drawing.Point(986, 646);
-            this.Button3.Margin = new System.Windows.Forms.Padding(6);
+            this.Button3.Location = new System.Drawing.Point(493, 336);
             this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(150, 44);
+            this.Button3.Size = new System.Drawing.Size(75, 23);
             this.Button3.TabIndex = 11;
             this.Button3.Text = "Atrás";
             this.Button3.UseVisualStyleBackColor = true;
@@ -50,20 +49,18 @@
             // PictureBox1
             // 
             this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(128, 88);
-            this.PictureBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.PictureBox1.Location = new System.Drawing.Point(64, 46);
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(422, 602);
+            this.PictureBox1.Size = new System.Drawing.Size(211, 313);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.PictureBox1.TabIndex = 10;
             this.PictureBox1.TabStop = false;
             // 
             // Button2
             // 
-            this.Button2.Location = new System.Drawing.Point(640, 286);
-            this.Button2.Margin = new System.Windows.Forms.Padding(6);
+            this.Button2.Location = new System.Drawing.Point(320, 149);
             this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(496, 81);
+            this.Button2.Size = new System.Drawing.Size(248, 42);
             this.Button2.TabIndex = 9;
             this.Button2.Text = "Crear Plan";
             this.Button2.UseVisualStyleBackColor = true;
@@ -71,10 +68,9 @@
             // 
             // Button1
             // 
-            this.Button1.Location = new System.Drawing.Point(640, 379);
-            this.Button1.Margin = new System.Windows.Forms.Padding(6);
+            this.Button1.Location = new System.Drawing.Point(320, 197);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(496, 81);
+            this.Button1.Size = new System.Drawing.Size(248, 42);
             this.Button1.TabIndex = 8;
             this.Button1.Text = "Ver Plan";
             this.Button1.UseVisualStyleBackColor = true;
@@ -83,24 +79,25 @@
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(970, 88);
+            this.lblWelcome.Location = new System.Drawing.Point(485, 46);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 25);
+            this.lblWelcome.Size = new System.Drawing.Size(0, 13);
             this.lblWelcome.TabIndex = 41;
             // 
             // GestionarPlanEjercicios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 778);
+            this.ClientSize = new System.Drawing.Size(632, 405);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.Button3);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.Button2);
             this.Controls.Add(this.Button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "GestionarPlanEjercicios";
             this.Text = "GestionarPlanEjercicios";
-            this.Load += new System.EventHandler(this.GestionarPlanEjercicios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

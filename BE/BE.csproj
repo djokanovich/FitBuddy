@@ -52,7 +52,7 @@
     <Compile Include="Email.cs" />
     <Compile Include="Grupo.cs" />
     <Compile Include="Idioma.cs" />
-    <Compile Include="IVerificoIntegridad.cs" />
+    <Compile Include="Interfaces\IVerificoIntegridad.cs" />
     <Compile Include="Leyenda.cs" />
     <Compile Include="Medico.cs" />
     <Compile Include="Paciente.cs" />

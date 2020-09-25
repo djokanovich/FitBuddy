@@ -13,9 +13,9 @@ namespace DAL.Services
         {
             using (var dbContext = new AppDbContext())
             {
-                return dbContext.Database.ExecuteSqlCommand(TransactionalBehavior.DoNotEnsureTransaction, $"BACKUP DATABASE [{dbContext.Database.Connection.Database}] TO DISK = '{path}'");
+                return dbContext.Database.ExecuteSqlCommand(TransactionalBehavior.DoNotEnsureTransaction,
+                    $"BACKUP DATABASE [{dbContext.Database.Connection.Database}] TO DISK = '{path}'");
             }
         }
-
     }
 }

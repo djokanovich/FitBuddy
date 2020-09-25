@@ -31,10 +31,6 @@ namespace GUI
             TextBox6.Text = null;
             TextBox7.Text = null;
         }
-        private void GestionarPerfil_Load(object sender, EventArgs e)
-        {
-            
-        }
 
         private void Button1_Click(object sender, EventArgs e)
         {

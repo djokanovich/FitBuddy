@@ -31,7 +31,6 @@ namespace DAL
 
         public DbSet<BE.Paciente> Paciente { get; set; }
 
-        public DbSet<BE.PerfilPaciente> PerfilPaciente { get; set; }
 
         public DbSet<BE.Email> Emails { get; set; }
 
@@ -39,11 +38,9 @@ namespace DAL
 
         public DbSet<BE.Dieta> Dietas { get; set; }
         public DbSet<BE.Comida> Comidas { get; set; }
-        public DbSet<BE.PerfilDieta> PerfilDieta { get; set; }
 
         public DbSet<BE.PlanEjercicio> PlanEjercicios { get; set; }
         public DbSet<BE.Ejercicio> Ejercicios { get; set; }
-        public DbSet<BE.PerfilFisico> PerfilFisico { get; set; }
         public DbSet<BE.Medico> Medicos { get; set; }
         public DbSet<BE.Reclamo> Reclamos { get; set; }
 

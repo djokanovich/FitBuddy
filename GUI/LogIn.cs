@@ -41,7 +41,7 @@ namespace GUI
 
                 //Authenticate the user
                 // TODO: Definir los roles
-                customPrincipal.Identity = new CustomIdentity(usuario.Username, null);
+                customPrincipal.Identity = new CustomIdentity(usuario.Id, usuario.Username, null);
 
                 var pantallaprincipal = new PantallaPrincipal();
                 MessageBox.Show("Logueado correctamente");

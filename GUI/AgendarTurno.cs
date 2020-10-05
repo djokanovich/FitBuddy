@@ -22,6 +22,12 @@ namespace GUI
             lblWelcome.Text = $"Usuario {customPrincipal.Identity.Name}";
         }
 
+        public void Clear()
+        {
+            ComboBox1.Text = null;
+            ComboBox2.Text = null;
+            
+        }
         private void AgendarTurno_Load(object sender, EventArgs e)
         {
             var gesMedico = new gesMedico();
@@ -49,6 +55,12 @@ namespace GUI
            
 
 
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Turno cargado con éxito, un administrador se pondrá en contacto para coordinar tu cita.");
+            Clear();
         }
     }
 }

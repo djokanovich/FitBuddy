@@ -13,7 +13,6 @@ namespace BE
 
     public class Usuario : IVerificoIntegridad
     {
-        private int _dvh;
 
         public string Apellido { get; set; }
         public Estado Estado { get; set; }
@@ -24,6 +23,9 @@ namespace BE
         public string Password { get; set; }
         public string Username { get; set; }
         public int DVH { get; set; }
+        
+
+
 
         public byte[] ConcatenarPropiedades()
         {

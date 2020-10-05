@@ -49,7 +49,7 @@
     <Compile Include="gesError.cs" />
     <Compile Include="gesIdioma.cs" />
     <Compile Include="gesMedico.cs" />
-    <Compile Include="gesPerfil.cs" />
+    <Compile Include="gesPaciente.cs" />
     <Compile Include="gesPlanComidas.cs" />
     <Compile Include="gesPlanEjercicios.cs" />
     <Compile Include="gesSistema.cs" />

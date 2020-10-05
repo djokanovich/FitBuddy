@@ -9,7 +9,7 @@ namespace GUI.Security
     public class AnonymousIdentity : CustomIdentity
     {
         public AnonymousIdentity()
-            : base(string.Empty, new string[] { })
+            : base(0, string.Empty, new string[] { })
         {
         }
     }

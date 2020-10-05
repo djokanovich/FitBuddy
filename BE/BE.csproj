@@ -56,9 +56,6 @@
     <Compile Include="Leyenda.cs" />
     <Compile Include="Medico.cs" />
     <Compile Include="Paciente.cs" />
-    <Compile Include="PerfilDieta.cs" />
-    <Compile Include="PerfilFisico.cs" />
-    <Compile Include="PerfilPaciente.cs" />
     <Compile Include="Permiso.cs" />
     <Compile Include="PermisoSimple.cs" />
     <Compile Include="PlanEjercicio.cs" />

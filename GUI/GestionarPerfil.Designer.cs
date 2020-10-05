@@ -32,7 +32,7 @@
             this.Label15 = new System.Windows.Forms.Label();
             this.DateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Button3 = new System.Windows.Forms.Button();
-            this.Button2 = new System.Windows.Forms.Button();
+            this.bntLimpiar = new System.Windows.Forms.Button();
             this.Button1 = new System.Windows.Forms.Button();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.Label14 = new System.Windows.Forms.Label();
@@ -41,33 +41,34 @@
             this.Label11 = new System.Windows.Forms.Label();
             this.LinkLabel1 = new System.Windows.Forms.LinkLabel();
             this.Label5 = new System.Windows.Forms.Label();
-            this.TextBox4 = new System.Windows.Forms.TextBox();
-            this.TextBox7 = new System.Windows.Forms.TextBox();
+            this.txtCintura = new System.Windows.Forms.TextBox();
+            this.txtBrazo = new System.Windows.Forms.TextBox();
             this.Label6 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
-            this.TextBox5 = new System.Windows.Forms.TextBox();
-            this.TextBox6 = new System.Windows.Forms.TextBox();
+            this.txtCadera = new System.Windows.Forms.TextBox();
+            this.txtMuslo = new System.Windows.Forms.TextBox();
             this.Label7 = new System.Windows.Forms.Label();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.Label10 = new System.Windows.Forms.Label();
             this.Label9 = new System.Windows.Forms.Label();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
+            this.txtPeso = new System.Windows.Forms.TextBox();
             this.Label1 = new System.Windows.Forms.Label();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.txtEdad = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
-            this.TextBox3 = new System.Windows.Forms.TextBox();
-            this.Label4 = new System.Windows.Forms.Label();
-            this.RadioButton1 = new System.Windows.Forms.RadioButton();
-            this.RadioButton2 = new System.Windows.Forms.RadioButton();
+            this.txtAltura = new System.Windows.Forms.TextBox();
+            this.radBtnFemenino = new System.Windows.Forms.RadioButton();
+            this.radBtnMasculino = new System.Windows.Forms.RadioButton();
             this.lblWelcome = new System.Windows.Forms.Label();
+            this.grpBoxSexo = new System.Windows.Forms.GroupBox();
             this.GroupBox2.SuspendLayout();
             this.GroupBox1.SuspendLayout();
+            this.grpBoxSexo.SuspendLayout();
             this.SuspendLayout();
             // 
             // Button4
             // 
-            this.Button4.Location = new System.Drawing.Point(1212, 637);
+            this.Button4.Location = new System.Drawing.Point(1212, 674);
             this.Button4.Margin = new System.Windows.Forms.Padding(6);
             this.Button4.Name = "Button4";
             this.Button4.Size = new System.Drawing.Size(126, 40);
@@ -92,10 +93,11 @@
             this.DateTimePicker1.Name = "DateTimePicker1";
             this.DateTimePicker1.Size = new System.Drawing.Size(396, 31);
             this.DateTimePicker1.TabIndex = 32;
+            this.DateTimePicker1.ValueChanged += new System.EventHandler(this.DateTimePicker1_ValueChanged);
             // 
             // Button3
             // 
-            this.Button3.Location = new System.Drawing.Point(1036, 532);
+            this.Button3.Location = new System.Drawing.Point(1036, 569);
             this.Button3.Margin = new System.Windows.Forms.Padding(6);
             this.Button3.Name = "Button3";
             this.Button3.Size = new System.Drawing.Size(302, 75);
@@ -103,20 +105,20 @@
             this.Button3.Text = "Modificar";
             this.Button3.UseVisualStyleBackColor = true;
             // 
-            // Button2
+            // bntLimpiar
             // 
-            this.Button2.Location = new System.Drawing.Point(592, 532);
-            this.Button2.Margin = new System.Windows.Forms.Padding(6);
-            this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(322, 75);
-            this.Button2.TabIndex = 30;
-            this.Button2.Text = "Limpiar";
-            this.Button2.UseVisualStyleBackColor = true;
-            this.Button2.Click += new System.EventHandler(this.Button2_Click);
+            this.bntLimpiar.Location = new System.Drawing.Point(592, 569);
+            this.bntLimpiar.Margin = new System.Windows.Forms.Padding(6);
+            this.bntLimpiar.Name = "bntLimpiar";
+            this.bntLimpiar.Size = new System.Drawing.Size(322, 75);
+            this.bntLimpiar.TabIndex = 30;
+            this.bntLimpiar.Text = "Limpiar";
+            this.bntLimpiar.UseVisualStyleBackColor = true;
+            this.bntLimpiar.Click += new System.EventHandler(this.OnBtnLimpiarClick);
             // 
             // Button1
             // 
-            this.Button1.Location = new System.Drawing.Point(174, 532);
+            this.Button1.Location = new System.Drawing.Point(174, 569);
             this.Button1.Margin = new System.Windows.Forms.Padding(6);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(326, 75);
@@ -133,18 +135,18 @@
             this.GroupBox2.Controls.Add(this.Label11);
             this.GroupBox2.Controls.Add(this.LinkLabel1);
             this.GroupBox2.Controls.Add(this.Label5);
-            this.GroupBox2.Controls.Add(this.TextBox4);
-            this.GroupBox2.Controls.Add(this.TextBox7);
+            this.GroupBox2.Controls.Add(this.txtCintura);
+            this.GroupBox2.Controls.Add(this.txtBrazo);
             this.GroupBox2.Controls.Add(this.Label6);
             this.GroupBox2.Controls.Add(this.Label8);
-            this.GroupBox2.Controls.Add(this.TextBox5);
-            this.GroupBox2.Controls.Add(this.TextBox6);
+            this.GroupBox2.Controls.Add(this.txtCadera);
+            this.GroupBox2.Controls.Add(this.txtMuslo);
             this.GroupBox2.Controls.Add(this.Label7);
             this.GroupBox2.Location = new System.Drawing.Point(776, 191);
             this.GroupBox2.Margin = new System.Windows.Forms.Padding(6);
             this.GroupBox2.Name = "GroupBox2";
             this.GroupBox2.Padding = new System.Windows.Forms.Padding(6);
-            this.GroupBox2.Size = new System.Drawing.Size(562, 306);
+            this.GroupBox2.Size = new System.Drawing.Size(562, 338);
             this.GroupBox2.TabIndex = 28;
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = "Medidas Específicas";
@@ -210,21 +212,21 @@
             this.Label5.TabIndex = 11;
             this.Label5.Text = "Cintura";
             // 
-            // TextBox4
+            // txtCintura
             // 
-            this.TextBox4.Location = new System.Drawing.Point(200, 33);
-            this.TextBox4.Margin = new System.Windows.Forms.Padding(6);
-            this.TextBox4.Name = "TextBox4";
-            this.TextBox4.Size = new System.Drawing.Size(204, 31);
-            this.TextBox4.TabIndex = 12;
+            this.txtCintura.Location = new System.Drawing.Point(200, 33);
+            this.txtCintura.Margin = new System.Windows.Forms.Padding(6);
+            this.txtCintura.Name = "txtCintura";
+            this.txtCintura.Size = new System.Drawing.Size(204, 31);
+            this.txtCintura.TabIndex = 12;
             // 
-            // TextBox7
+            // txtBrazo
             // 
-            this.TextBox7.Location = new System.Drawing.Point(200, 183);
-            this.TextBox7.Margin = new System.Windows.Forms.Padding(6);
-            this.TextBox7.Name = "TextBox7";
-            this.TextBox7.Size = new System.Drawing.Size(204, 31);
-            this.TextBox7.TabIndex = 18;
+            this.txtBrazo.Location = new System.Drawing.Point(200, 183);
+            this.txtBrazo.Margin = new System.Windows.Forms.Padding(6);
+            this.txtBrazo.Name = "txtBrazo";
+            this.txtBrazo.Size = new System.Drawing.Size(204, 31);
+            this.txtBrazo.TabIndex = 18;
             // 
             // Label6
             // 
@@ -246,21 +248,21 @@
             this.Label8.TabIndex = 17;
             this.Label8.Text = "Brazo";
             // 
-            // TextBox5
+            // txtCadera
             // 
-            this.TextBox5.Location = new System.Drawing.Point(200, 83);
-            this.TextBox5.Margin = new System.Windows.Forms.Padding(6);
-            this.TextBox5.Name = "TextBox5";
-            this.TextBox5.Size = new System.Drawing.Size(204, 31);
-            this.TextBox5.TabIndex = 14;
+            this.txtCadera.Location = new System.Drawing.Point(200, 83);
+            this.txtCadera.Margin = new System.Windows.Forms.Padding(6);
+            this.txtCadera.Name = "txtCadera";
+            this.txtCadera.Size = new System.Drawing.Size(204, 31);
+            this.txtCadera.TabIndex = 14;
             // 
-            // TextBox6
+            // txtMuslo
             // 
-            this.TextBox6.Location = new System.Drawing.Point(200, 133);
-            this.TextBox6.Margin = new System.Windows.Forms.Padding(6);
-            this.TextBox6.Name = "TextBox6";
-            this.TextBox6.Size = new System.Drawing.Size(204, 31);
-            this.TextBox6.TabIndex = 16;
+            this.txtMuslo.Location = new System.Drawing.Point(200, 133);
+            this.txtMuslo.Margin = new System.Windows.Forms.Padding(6);
+            this.txtMuslo.Name = "txtMuslo";
+            this.txtMuslo.Size = new System.Drawing.Size(204, 31);
+            this.txtMuslo.TabIndex = 16;
             // 
             // Label7
             // 
@@ -274,22 +276,20 @@
             // 
             // GroupBox1
             // 
+            this.GroupBox1.Controls.Add(this.grpBoxSexo);
             this.GroupBox1.Controls.Add(this.Label10);
             this.GroupBox1.Controls.Add(this.Label9);
-            this.GroupBox1.Controls.Add(this.TextBox2);
+            this.GroupBox1.Controls.Add(this.txtPeso);
             this.GroupBox1.Controls.Add(this.Label1);
-            this.GroupBox1.Controls.Add(this.TextBox1);
+            this.GroupBox1.Controls.Add(this.txtEdad);
             this.GroupBox1.Controls.Add(this.Label2);
             this.GroupBox1.Controls.Add(this.Label3);
-            this.GroupBox1.Controls.Add(this.TextBox3);
-            this.GroupBox1.Controls.Add(this.Label4);
-            this.GroupBox1.Controls.Add(this.RadioButton1);
-            this.GroupBox1.Controls.Add(this.RadioButton2);
+            this.GroupBox1.Controls.Add(this.txtAltura);
             this.GroupBox1.Location = new System.Drawing.Point(174, 191);
             this.GroupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Padding = new System.Windows.Forms.Padding(6);
-            this.GroupBox1.Size = new System.Drawing.Size(568, 306);
+            this.GroupBox1.Size = new System.Drawing.Size(568, 338);
             this.GroupBox1.TabIndex = 27;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "Caracteristicas Generales";
@@ -314,13 +314,13 @@
             this.Label9.TabIndex = 11;
             this.Label9.Text = "Kg.";
             // 
-            // TextBox2
+            // txtPeso
             // 
-            this.TextBox2.Location = new System.Drawing.Point(190, 85);
-            this.TextBox2.Margin = new System.Windows.Forms.Padding(6);
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Size = new System.Drawing.Size(204, 31);
-            this.TextBox2.TabIndex = 3;
+            this.txtPeso.Location = new System.Drawing.Point(190, 85);
+            this.txtPeso.Margin = new System.Windows.Forms.Padding(6);
+            this.txtPeso.Name = "txtPeso";
+            this.txtPeso.Size = new System.Drawing.Size(204, 31);
+            this.txtPeso.TabIndex = 3;
             // 
             // Label1
             // 
@@ -332,13 +332,13 @@
             this.Label1.TabIndex = 0;
             this.Label1.Text = "Edad";
             // 
-            // TextBox1
+            // txtEdad
             // 
-            this.TextBox1.Location = new System.Drawing.Point(190, 35);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(204, 31);
-            this.TextBox1.TabIndex = 1;
+            this.txtEdad.Location = new System.Drawing.Point(190, 35);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(6);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(204, 31);
+            this.txtEdad.TabIndex = 1;
             // 
             // Label2
             // 
@@ -360,47 +360,37 @@
             this.Label3.TabIndex = 4;
             this.Label3.Text = "Altura";
             // 
-            // TextBox3
+            // txtAltura
             // 
-            this.TextBox3.Location = new System.Drawing.Point(190, 135);
-            this.TextBox3.Margin = new System.Windows.Forms.Padding(6);
-            this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Size = new System.Drawing.Size(204, 31);
-            this.TextBox3.TabIndex = 5;
+            this.txtAltura.Location = new System.Drawing.Point(190, 135);
+            this.txtAltura.Margin = new System.Windows.Forms.Padding(6);
+            this.txtAltura.Name = "txtAltura";
+            this.txtAltura.Size = new System.Drawing.Size(204, 31);
+            this.txtAltura.TabIndex = 5;
             // 
-            // Label4
+            // radBtnFemenino
             // 
-            this.Label4.AutoSize = true;
-            this.Label4.Location = new System.Drawing.Point(46, 208);
-            this.Label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(61, 25);
-            this.Label4.TabIndex = 8;
-            this.Label4.Text = "Sexo";
+            this.radBtnFemenino.AutoSize = true;
+            this.radBtnFemenino.Location = new System.Drawing.Point(30, 33);
+            this.radBtnFemenino.Margin = new System.Windows.Forms.Padding(6);
+            this.radBtnFemenino.Name = "radBtnFemenino";
+            this.radBtnFemenino.Size = new System.Drawing.Size(138, 29);
+            this.radBtnFemenino.TabIndex = 9;
+            this.radBtnFemenino.TabStop = true;
+            this.radBtnFemenino.Text = "Femenino";
+            this.radBtnFemenino.UseVisualStyleBackColor = true;
             // 
-            // RadioButton1
+            // radBtnMasculino
             // 
-            this.RadioButton1.AutoSize = true;
-            this.RadioButton1.Location = new System.Drawing.Point(190, 204);
-            this.RadioButton1.Margin = new System.Windows.Forms.Padding(6);
-            this.RadioButton1.Name = "RadioButton1";
-            this.RadioButton1.Size = new System.Drawing.Size(138, 29);
-            this.RadioButton1.TabIndex = 9;
-            this.RadioButton1.TabStop = true;
-            this.RadioButton1.Text = "Femenino";
-            this.RadioButton1.UseVisualStyleBackColor = true;
-            // 
-            // RadioButton2
-            // 
-            this.RadioButton2.AutoSize = true;
-            this.RadioButton2.Location = new System.Drawing.Point(190, 250);
-            this.RadioButton2.Margin = new System.Windows.Forms.Padding(6);
-            this.RadioButton2.Name = "RadioButton2";
-            this.RadioButton2.Size = new System.Drawing.Size(141, 29);
-            this.RadioButton2.TabIndex = 10;
-            this.RadioButton2.TabStop = true;
-            this.RadioButton2.Text = "Masculino";
-            this.RadioButton2.UseVisualStyleBackColor = true;
+            this.radBtnMasculino.AutoSize = true;
+            this.radBtnMasculino.Location = new System.Drawing.Point(30, 79);
+            this.radBtnMasculino.Margin = new System.Windows.Forms.Padding(6);
+            this.radBtnMasculino.Name = "radBtnMasculino";
+            this.radBtnMasculino.Size = new System.Drawing.Size(141, 29);
+            this.radBtnMasculino.TabIndex = 10;
+            this.radBtnMasculino.TabStop = true;
+            this.radBtnMasculino.Text = "Masculino";
+            this.radBtnMasculino.UseVisualStyleBackColor = true;
             // 
             // lblWelcome
             // 
@@ -410,17 +400,28 @@
             this.lblWelcome.Size = new System.Drawing.Size(0, 25);
             this.lblWelcome.TabIndex = 41;
             // 
+            // grpBoxSexo
+            // 
+            this.grpBoxSexo.Controls.Add(this.radBtnFemenino);
+            this.grpBoxSexo.Controls.Add(this.radBtnMasculino);
+            this.grpBoxSexo.Location = new System.Drawing.Point(51, 188);
+            this.grpBoxSexo.Name = "grpBoxSexo";
+            this.grpBoxSexo.Size = new System.Drawing.Size(343, 130);
+            this.grpBoxSexo.TabIndex = 42;
+            this.grpBoxSexo.TabStop = false;
+            this.grpBoxSexo.Text = "Sexo";
+            // 
             // GestionarPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1578, 822);
+            this.ClientSize = new System.Drawing.Size(1512, 800);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.Button4);
             this.Controls.Add(this.Label15);
             this.Controls.Add(this.DateTimePicker1);
             this.Controls.Add(this.Button3);
-            this.Controls.Add(this.Button2);
+            this.Controls.Add(this.bntLimpiar);
             this.Controls.Add(this.Button1);
             this.Controls.Add(this.GroupBox2);
             this.Controls.Add(this.GroupBox1);
@@ -431,6 +432,8 @@
             this.GroupBox2.PerformLayout();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
+            this.grpBoxSexo.ResumeLayout(false);
+            this.grpBoxSexo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -442,7 +445,7 @@
         internal System.Windows.Forms.Label Label15;
         internal System.Windows.Forms.DateTimePicker DateTimePicker1;
         internal System.Windows.Forms.Button Button3;
-        internal System.Windows.Forms.Button Button2;
+        internal System.Windows.Forms.Button bntLimpiar;
         internal System.Windows.Forms.Button Button1;
         internal System.Windows.Forms.GroupBox GroupBox2;
         internal System.Windows.Forms.Label Label14;
@@ -451,25 +454,25 @@
         internal System.Windows.Forms.Label Label11;
         internal System.Windows.Forms.LinkLabel LinkLabel1;
         internal System.Windows.Forms.Label Label5;
-        internal System.Windows.Forms.TextBox TextBox4;
-        internal System.Windows.Forms.TextBox TextBox7;
+        internal System.Windows.Forms.TextBox txtCintura;
+        internal System.Windows.Forms.TextBox txtBrazo;
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.Label Label8;
-        internal System.Windows.Forms.TextBox TextBox5;
-        internal System.Windows.Forms.TextBox TextBox6;
+        internal System.Windows.Forms.TextBox txtCadera;
+        internal System.Windows.Forms.TextBox txtMuslo;
         internal System.Windows.Forms.Label Label7;
         internal System.Windows.Forms.GroupBox GroupBox1;
         internal System.Windows.Forms.Label Label10;
         internal System.Windows.Forms.Label Label9;
-        internal System.Windows.Forms.TextBox TextBox2;
+        internal System.Windows.Forms.TextBox txtPeso;
         internal System.Windows.Forms.Label Label1;
-        internal System.Windows.Forms.TextBox TextBox1;
+        internal System.Windows.Forms.TextBox txtEdad;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label3;
-        internal System.Windows.Forms.TextBox TextBox3;
-        internal System.Windows.Forms.Label Label4;
-        internal System.Windows.Forms.RadioButton RadioButton1;
-        internal System.Windows.Forms.RadioButton RadioButton2;
+        internal System.Windows.Forms.TextBox txtAltura;
+        internal System.Windows.Forms.RadioButton radBtnFemenino;
+        internal System.Windows.Forms.RadioButton radBtnMasculino;
         private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.GroupBox grpBoxSexo;
     }
 }

@@ -9,42 +9,76 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BE;
+using BLL;
 
 namespace GUI
 {
     public partial class GestionarPerfil : Form
     {
+        private CustomPrincipal _customPrincipal = Thread.CurrentPrincipal as CustomPrincipal;
+
         public GestionarPerfil()
         {
             InitializeComponent();
-            var customPrincipal = Thread.CurrentPrincipal as CustomPrincipal;
-            lblWelcome.Text = $"Usuario {customPrincipal.Identity.Name}";
+            lblWelcome.Text = $"Usuario {_customPrincipal.Identity.Name}";
         }
 
         public void Clear()
         {
-            TextBox1.Text = null;
-            TextBox2.Text = null;
-            TextBox3.Text = null;
-            TextBox4.Text = null;
-            TextBox5.Text = null;
-            TextBox6.Text = null;
-            TextBox7.Text = null;
+            txtEdad.Text = null;
+            txtPeso.Text = null;
+            txtAltura.Text = null;
+            txtCintura.Text = null;
+            txtCadera.Text = null;
+            txtMuslo.Text = null;
+            txtBrazo.Text = null;
         }
         private void GestionarPerfil_Load(object sender, EventArgs e)
         {
             
         }
 
+       
+
         private void Button1_Click(object sender, EventArgs e)
         {
+            var genero = ((RadioButton)grpBoxSexo.Controls[0]).Checked ? "F" : "M"; // Operador de coalición
+
+            var gesUsuario = new gesUsuario();
+            var usuario = gesUsuario.ObtenerUsuario(_customPrincipal.Identity.Id);
+            Paciente paciente = new Paciente
+            {
+                UsuarioId = _customPrincipal.Identity.Id,
+                Usuario = usuario,
+                Peso = Convert.ToInt32(txtPeso.Text),
+                ContBrazo = Convert.ToInt32(txtBrazo.Text),
+                ContCadera = Convert.ToInt32(txtCadera.Text),
+                Altura = Convert.ToInt32(txtAltura.Text),
+                ContCintura = Convert.ToInt32(txtCintura.Text),
+                ContMuslo = Convert.ToInt32(txtMuslo.Text),
+                Edad = Convert.ToInt32(txtEdad.Text),
+                Genero = genero,
+                FechaRegistroPerfil = Convert.ToDateTime(DateTimePicker1.Text)
+            };
+
+            // le paso a la BLL el paciente creado
+            gesPaciente gesPaciente = new gesPaciente();
+            gesPaciente.CrearPaciente(paciente);
+            
+
             MessageBox.Show("Datos cargados con éxito");
             Clear();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void OnBtnLimpiarClick(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

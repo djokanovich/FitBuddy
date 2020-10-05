@@ -36,5 +36,11 @@ namespace BLL
 
             return usuarioDAL.GuardarCambios();
         }
+
+        public Usuario ObtenerUsuario(int id)
+        {
+            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            return usuarioDAL.ObtenerUsuario(id);
+        }
     }
 }

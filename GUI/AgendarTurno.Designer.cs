@@ -61,6 +61,7 @@
             this.Button1.TabIndex = 16;
             this.Button1.Text = "Enviar Solicitud";
             this.Button1.UseVisualStyleBackColor = true;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // ComboBox2
             // 

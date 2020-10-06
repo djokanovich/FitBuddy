@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BE
+namespace FitBuddy.Entidades
 {
-   public class Reclamo
+    public class Leyenda
     {
         public int Id { get; set; }
         public string Descripcion { get; set; }
+
     }
 }

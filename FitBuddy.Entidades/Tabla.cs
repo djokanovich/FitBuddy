@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BE
+namespace FitBuddy.Entidades
 {
-   public class Email
+   public class Tabla
     {
         public int Id { get; set; }
-        public string CC { get; set; }
-        public string Emisor { get; set; }
-        public string Mensaje { get; set; }
+        public int DVV { get; set; }
+        public string Nombre { get; set; }
+
     }
 }

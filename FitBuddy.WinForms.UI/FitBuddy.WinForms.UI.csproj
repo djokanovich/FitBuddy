@@ -206,9 +206,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BE\BE.csproj">
+    <ProjectReference Include="..\FitBuddy.Entidades\FitBuddy.Entidades.csproj">
       <Project>{96AAB3BC-CD44-4A9E-9847-7F16480A774D}</Project>
-      <Name>BE</Name>
+      <Name>FitBuddy.Entidades</Name>
     </ProjectReference>
     <ProjectReference Include="..\Bitacora\Bitacora.csproj">
       <Project>{DA778C24-2F10-457A-AEED-9BBDC03C70B4}</Project>

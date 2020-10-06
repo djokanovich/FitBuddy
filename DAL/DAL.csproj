@@ -148,9 +148,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BE\BE.csproj">
+    <ProjectReference Include="..\FitBuddy.Entidades\FitBuddy.Entidades.csproj">
       <Project>{96aab3bc-cd44-4a9e-9847-7f16480a774d}</Project>
-      <Name>BE</Name>
+      <Name>FitBuddy.Entidades</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

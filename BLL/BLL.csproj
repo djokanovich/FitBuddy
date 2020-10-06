@@ -49,9 +49,9 @@
     <Compile Include="ServicioIntegridadBLL.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BE\BE.csproj">
+    <ProjectReference Include="..\FitBuddy.Entidades\FitBuddy.Entidades.csproj">
       <Project>{96AAB3BC-CD44-4A9E-9847-7F16480A774D}</Project>
-      <Name>BE</Name>
+      <Name>FitBuddy.Entidades</Name>
     </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{3a137ce8-ad5c-49ea-9015-239edfb4270b}</Project>

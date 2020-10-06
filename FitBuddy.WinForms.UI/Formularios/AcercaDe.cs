@@ -12,15 +12,17 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class AcercaDe : Form
     {
-        public AcercaDe()
+        private readonly LogIn _logIn;
+
+        public AcercaDe(LogIn logIn)
         {
             InitializeComponent();
+            _logIn = logIn;
         }
 
         private void OKButton_Click(object sender, EventArgs e)
         {
-            var login = new LogIn();
-            login.Show();
+            _logIn.Show();
         }
     }
 }

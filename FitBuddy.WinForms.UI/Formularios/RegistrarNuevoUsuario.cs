@@ -1,4 +1,4 @@
-﻿using Bitacora;
+﻿using Common.Bitacora;
 using FitBuddy.Business;
 using FitBuddy.Entidades;
 using System;
@@ -16,9 +16,14 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class RegistrarNuevoUsuario : Form
     {
-        public RegistrarNuevoUsuario()
+        private readonly IBitacora _bitacora;
+        private readonly LogIn _logIn;
+
+        public RegistrarNuevoUsuario(IBitacora bitacora, LogIn logIn)
         {
             InitializeComponent();
+            _bitacora = bitacora;
+            _logIn = logIn;
         }
 
         public void BorrarTodo()
@@ -62,17 +67,13 @@ namespace FitBuddy.WinForms.UI.Formularios
                 Nombre = txtNombre.Text
             };
 
-            var path = Properties.Settings.Default.ArchivoBitacora;
-            var bitacora = new ServicioBitacora(path);
-
             var gesUsuario = new gesUsuario();
             if (gesUsuario.GuardarUsuario(usuario, txtPassword.Text) > 0)
             {
                 MessageBox.Show("El usuario fue registrado con éxito");
-                bitacora.Agregar("Se ha registrado el usuario " + usuario.Username + " con éxito");
-                var login = new LogIn();
-                login.Show();
-                this.Close();
+                _bitacora.Agregar($"Se ha registrado el usuario {usuario.Username} con éxito");
+                _logIn.Show();
+                Close();
             }
             else
             {

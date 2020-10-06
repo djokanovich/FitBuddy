@@ -1,4 +1,4 @@
-﻿using Bitacora;
+﻿using Common.Bitacora;
 using FitBuddy.Business;
 using FitBuddy.WinForms.UI.Security;
 using System;
@@ -16,18 +16,18 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class LogIn : Form
     {
-        public LogIn()
+        private readonly IBitacora _bitacora;
+        private readonly RegistrarNuevoUsuario _registrarNuevoUsuario;
+
+        public LogIn(IBitacora bitacora, RegistrarNuevoUsuario registrarNuevoUsuario)
         {
             InitializeComponent();
+            _bitacora = bitacora;
+            _registrarNuevoUsuario = registrarNuevoUsuario;
         }
 
         private void OnBtnAceptarClick(object sender, EventArgs e)
         {
-            var path = Properties.Settings.Default.ArchivoBitacora;
-
-            var bitacora = new ServicioBitacora(path);
-            
-
             var gesUsuario = new gesUsuario();
             var usuario = gesUsuario.UsuarioAutenticado(txtUsername.Text, txtPassword.Text);
             if (usuario != null)
@@ -45,7 +45,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
                 var pantallaprincipal = new PantallaPrincipal();
                 MessageBox.Show("Logueado correctamente");
-                bitacora.Agregar("Se ha logueado el usuario" + usuario.Username);
+                _bitacora.Agregar("Se ha logueado el usuario" + usuario.Username);
                 pantallaprincipal.Show();
                 this.Close();
             }
@@ -53,15 +53,14 @@ namespace FitBuddy.WinForms.UI.Formularios
             {
                 // no loguearlo
                 MessageBox.Show("Usuario o contraseña incorrectos");
-                bitacora.Agregar("El usuario ha intentado ingresar al sistema sin éxito " + txtUsername.Text);
+                _bitacora.Agregar("El usuario ha intentado ingresar al sistema sin éxito " + txtUsername.Text);
             }
         }
 
         private void OnLnkRegistrarUsuarioClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            var registrar = new RegistrarNuevoUsuario();
-            registrar.Show();
-            this.Close();
+            _registrarNuevoUsuario.Show();
+            Close();
         }
     }
 }

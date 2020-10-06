@@ -1,4 +1,4 @@
-﻿using Bitacora;
+﻿using Common.Bitacora;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using FitBuddy.WinForms.UI.Formularios;
 using FitBuddy.WinForms.UI.Security;
 using FitBuddy.Business;
+using Autofac;
 
 namespace FitBuddy.WinForms.UI
 {
@@ -19,17 +20,21 @@ namespace FitBuddy.WinForms.UI
         [STAThread]
         static void Main()
         {
-            //log4net.config.xmlconfigurator.configure();
-            //var logger = log4net.logmanager.getlogger(typeof(program));
-            //logger.info("fitbuddy acaba de iniciarse.");
+            // Registro los tipos de datos a ser inyectados por el Contenedor de IoC.
+            var bootstrapper = new Bootstrapper();
+            var container = bootstrapper.Bootstrap();
+
 
             // Verificar los códigos de verificación.
 
+
             var servicioIntegridadBll = new ServicioIntegridadBLL();
 
-            var path = Properties.Settings.Default.ArchivoBitacora;
+            // TODO Borrar
+            //var path = Properties.Settings.Default.ArchivoBitacora;
+            //var bitacora = new Bitacora(path);
 
-            var bitacora = new ServicioBitacora(path);
+            var bitacora = container.Resolve<IBitacora>();
 
 
             if (!servicioIntegridadBll.DbTieneIntegridad())
@@ -44,7 +49,9 @@ namespace FitBuddy.WinForms.UI
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AcercaDe());
+
+            var acercaDe = container.Resolve<AcercaDe>();
+            Application.Run(acercaDe);
         }
     }
 }

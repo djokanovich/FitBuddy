@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace Bitacora
+namespace Common.Bitacora
 {
-    public class ServicioBitacora
+    public class Bitacora : IBitacora
     {
         private readonly string _path;
 
-        public ServicioBitacora(string path)
+        public Bitacora(string path)
         {
             _path = path;
         }

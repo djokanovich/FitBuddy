@@ -45,18 +45,6 @@ namespace GUI
             ComboBox1.Items.Add("14:00");
         }
 
-        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-
-
-        }
-
         private void Button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Turno cargado con éxito, un administrador se pondrá en contacto para coordinar tu cita.");

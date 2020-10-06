@@ -21,11 +21,6 @@ namespace GUI
             lblWelcome.Text = $"Usuario {customPrincipal.Identity.Name}";
         }
 
-        private void GestionarPlanEjercicios_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button2_Click(object sender, EventArgs e)
         {
             var crearPlanEj = new CrearPlanEjercicio();

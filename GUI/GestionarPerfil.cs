@@ -34,10 +34,6 @@ namespace GUI
             txtMuslo.Text = null;
             txtBrazo.Text = null;
         }
-        private void GestionarPerfil_Load(object sender, EventArgs e)
-        {
-            
-        }
 
        
 

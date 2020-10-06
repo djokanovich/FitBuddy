@@ -44,20 +44,18 @@
             // 
             // Button2
             // 
-            this.Button2.Location = new System.Drawing.Point(1095, 689);
-            this.Button2.Margin = new System.Windows.Forms.Padding(6);
+            this.Button2.Location = new System.Drawing.Point(548, 358);
             this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(150, 44);
+            this.Button2.Size = new System.Drawing.Size(75, 23);
             this.Button2.TabIndex = 18;
             this.Button2.Text = "Atrás";
             this.Button2.UseVisualStyleBackColor = true;
             // 
             // Button1
             // 
-            this.Button1.Location = new System.Drawing.Point(807, 453);
-            this.Button1.Margin = new System.Windows.Forms.Padding(6);
+            this.Button1.Location = new System.Drawing.Point(404, 236);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(438, 44);
+            this.Button1.Size = new System.Drawing.Size(219, 23);
             this.Button1.TabIndex = 16;
             this.Button1.Text = "Enviar Solicitud";
             this.Button1.UseVisualStyleBackColor = true;
@@ -66,58 +64,50 @@
             // ComboBox2
             // 
             this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(807, 245);
-            this.ComboBox2.Margin = new System.Windows.Forms.Padding(6);
+            this.ComboBox2.Location = new System.Drawing.Point(404, 127);
             this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(434, 33);
+            this.ComboBox2.Size = new System.Drawing.Size(219, 21);
             this.ComboBox2.TabIndex = 15;
-            this.ComboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
             // 
             // ComboBox1
             // 
             this.ComboBox1.FormattingEnabled = true;
-            this.ComboBox1.Location = new System.Drawing.Point(807, 362);
-            this.ComboBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.ComboBox1.Location = new System.Drawing.Point(404, 188);
             this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(434, 33);
+            this.ComboBox1.Size = new System.Drawing.Size(219, 21);
             this.ComboBox1.TabIndex = 14;
-            this.ComboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // Label3
             // 
             this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(615, 368);
-            this.Label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label3.Location = new System.Drawing.Point(308, 191);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(149, 25);
+            this.Label3.Size = new System.Drawing.Size(73, 13);
             this.Label3.TabIndex = 13;
             this.Label3.Text = "Franja Horaria";
             // 
             // DateTimePicker1
             // 
-            this.DateTimePicker1.Location = new System.Drawing.Point(807, 305);
-            this.DateTimePicker1.Margin = new System.Windows.Forms.Padding(6);
+            this.DateTimePicker1.Location = new System.Drawing.Point(404, 159);
             this.DateTimePicker1.Name = "DateTimePicker1";
-            this.DateTimePicker1.Size = new System.Drawing.Size(434, 31);
+            this.DateTimePicker1.Size = new System.Drawing.Size(219, 20);
             this.DateTimePicker1.TabIndex = 12;
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(649, 316);
-            this.Label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label2.Location = new System.Drawing.Point(324, 164);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(105, 25);
+            this.Label2.Size = new System.Drawing.Size(54, 13);
             this.Label2.TabIndex = 11;
             this.Label2.Text = "Elegir Día";
             // 
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(619, 251);
-            this.Label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label1.Location = new System.Drawing.Point(310, 131);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(143, 25);
+            this.Label1.Size = new System.Drawing.Size(71, 13);
             this.Label1.TabIndex = 10;
             this.Label1.Text = "Elegir Médico";
             // 
@@ -125,10 +115,9 @@
             // 
             this.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(81, 47);
-            this.PictureBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.PictureBox1.Location = new System.Drawing.Point(40, 24);
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(490, 687);
+            this.PictureBox1.Size = new System.Drawing.Size(245, 357);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox1.TabIndex = 17;
             this.PictureBox1.TabStop = false;
@@ -136,16 +125,17 @@
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(1090, 47);
+            this.lblWelcome.Location = new System.Drawing.Point(545, 24);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 25);
+            this.lblWelcome.Size = new System.Drawing.Size(0, 13);
             this.lblWelcome.TabIndex = 22;
             // 
             // AgendarTurno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1394, 816);
+            this.ClientSize = new System.Drawing.Size(697, 424);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.Button2);
             this.Controls.Add(this.Button1);
@@ -156,6 +146,7 @@
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.PictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AgendarTurno";
             this.Text = "AgendarTurno";
             this.Load += new System.EventHandler(this.AgendarTurno_Load);

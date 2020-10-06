@@ -20,10 +20,5 @@ namespace GUI
             var customPrincipal = Thread.CurrentPrincipal as CustomPrincipal;
             lblWelcome.Text = $"Usuario {customPrincipal.Identity.Name}";
         }
-
-        private void CargarDiarioEjercicios_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

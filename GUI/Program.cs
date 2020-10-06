@@ -36,11 +36,7 @@ namespace GUI
                 MessageBox.Show("Se vió afectada la integridad del sistema. ¿Desea notificar al administrador?","Atención", MessageBoxButtons.YesNo,
                                  MessageBoxIcon.Exclamation);
                 bitacora.Agregar("La aplicación inició con un problema de integridad en la base de datos.");
-
-
             }
-
-
 
             Thread.CurrentPrincipal = new CustomPrincipal();
             bitacora.Agregar("Aplicación iniciada.");

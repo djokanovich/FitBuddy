@@ -20,9 +20,7 @@ namespace GUI
 
         private void btnCreateBackup_Click(object sender, EventArgs e)
         {
-            
-
-            OpenFileDialog openFileDialog = new OpenFileDialog
+            var openFileDialog = new OpenFileDialog
             {
                 InitialDirectory = "c:\\",
                 Filter = "Archivos de back-up|*.bak",

@@ -21,13 +21,6 @@ namespace GUI
         {
             var login = new LogIn();
             login.Show();
-            
-           
-        }
-
-        private void TableLayoutPanel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

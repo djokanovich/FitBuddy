@@ -21,11 +21,6 @@ namespace GUI
             lblWelcome.Text = $"Bienvenido, {customPrincipal.Identity.Name}";
         }
 
-        private void PantallaPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button1_Click(object sender, EventArgs e)
         {
             var gesPerfil = new GestionarPerfil();

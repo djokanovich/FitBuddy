@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionarPlanAlimenticio));
-            this.Button3 = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Button2 = new System.Windows.Forms.Button();
-            this.Button1 = new System.Windows.Forms.Button();
+            this.btnCrearDieta = new System.Windows.Forms.Button();
+            this.btnVerDieta = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Button3
+            // btnAtras
             // 
-            this.Button3.Location = new System.Drawing.Point(476, 325);
-            this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(75, 23);
-            this.Button3.TabIndex = 7;
-            this.Button3.Text = "Atrás";
-            this.Button3.UseVisualStyleBackColor = true;
+            this.btnAtras.Location = new System.Drawing.Point(476, 325);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 7;
+            this.btnAtras.Text = "Atrás";
+            this.btnAtras.UseVisualStyleBackColor = true;
             // 
             // PictureBox1
             // 
@@ -56,25 +56,25 @@
             this.PictureBox1.TabIndex = 6;
             this.PictureBox1.TabStop = false;
             // 
-            // Button2
+            // btnCrearDieta
             // 
-            this.Button2.Location = new System.Drawing.Point(303, 138);
-            this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(248, 42);
-            this.Button2.TabIndex = 5;
-            this.Button2.Text = "Crear Dieta";
-            this.Button2.UseVisualStyleBackColor = true;
-            this.Button2.Click += new System.EventHandler(this.Button2_Click);
+            this.btnCrearDieta.Location = new System.Drawing.Point(303, 138);
+            this.btnCrearDieta.Name = "btnCrearDieta";
+            this.btnCrearDieta.Size = new System.Drawing.Size(248, 42);
+            this.btnCrearDieta.TabIndex = 5;
+            this.btnCrearDieta.Text = "Crear Dieta";
+            this.btnCrearDieta.UseVisualStyleBackColor = true;
+            this.btnCrearDieta.Click += new System.EventHandler(this.OnBtnCrearDietaClick);
             // 
-            // Button1
+            // btnVerDieta
             // 
-            this.Button1.Location = new System.Drawing.Point(303, 186);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(248, 42);
-            this.Button1.TabIndex = 4;
-            this.Button1.Text = "Ver Dieta";
-            this.Button1.UseVisualStyleBackColor = true;
-            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnVerDieta.Location = new System.Drawing.Point(303, 186);
+            this.btnVerDieta.Name = "btnVerDieta";
+            this.btnVerDieta.Size = new System.Drawing.Size(248, 42);
+            this.btnVerDieta.TabIndex = 4;
+            this.btnVerDieta.Text = "Ver Dieta";
+            this.btnVerDieta.UseVisualStyleBackColor = true;
+            this.btnVerDieta.Click += new System.EventHandler(this.OnBtnVerDietaClick);
             // 
             // lblWelcome
             // 
@@ -91,11 +91,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(605, 385);
             this.Controls.Add(this.lblWelcome);
-            this.Controls.Add(this.Button3);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.PictureBox1);
-            this.Controls.Add(this.Button2);
-            this.Controls.Add(this.Button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.btnCrearDieta);
+            this.Controls.Add(this.btnVerDieta);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GestionarPlanAlimenticio";
             this.Text = "GestionarPlanAlimenticio";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
@@ -106,10 +106,10 @@
 
         #endregion
 
-        internal System.Windows.Forms.Button Button3;
+        internal System.Windows.Forms.Button btnAtras;
         internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.Button Button2;
-        internal System.Windows.Forms.Button Button1;
+        internal System.Windows.Forms.Button btnCrearDieta;
+        internal System.Windows.Forms.Button btnVerDieta;
         private System.Windows.Forms.Label lblWelcome;
     }
 }

@@ -21,7 +21,7 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void OK_Click(object sender, EventArgs e)
+        private void OnBtnAceptarClick(object sender, EventArgs e)
         {
             var path = Properties.Settings.Default.ArchivoBitacora;
 
@@ -57,7 +57,7 @@ namespace GUI
             }
         }
 
-        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void OnLnkRegistrarUsuarioClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var registrar = new RegistrarNuevoUsuario();
             registrar.Show();

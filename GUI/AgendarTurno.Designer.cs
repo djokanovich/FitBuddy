@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgendarTurno));
-            this.Button2 = new System.Windows.Forms.Button();
-            this.Button1 = new System.Windows.Forms.Button();
-            this.ComboBox2 = new System.Windows.Forms.ComboBox();
-            this.ComboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnAtras = new System.Windows.Forms.Button();
+            this.btnEnviar = new System.Windows.Forms.Button();
+            this.cmbMedico = new System.Windows.Forms.ComboBox();
+            this.cmbFranjaHoraria = new System.Windows.Forms.ComboBox();
             this.Label3 = new System.Windows.Forms.Label();
-            this.DateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.Label2 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
@@ -42,40 +42,40 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Button2
+            // btnAtras
             // 
-            this.Button2.Location = new System.Drawing.Point(548, 358);
-            this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(75, 23);
-            this.Button2.TabIndex = 18;
-            this.Button2.Text = "Atrás";
-            this.Button2.UseVisualStyleBackColor = true;
+            this.btnAtras.Location = new System.Drawing.Point(548, 358);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 18;
+            this.btnAtras.Text = "Atrás";
+            this.btnAtras.UseVisualStyleBackColor = true;
             // 
-            // Button1
+            // btnEnviar
             // 
-            this.Button1.Location = new System.Drawing.Point(404, 236);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(219, 23);
-            this.Button1.TabIndex = 16;
-            this.Button1.Text = "Enviar Solicitud";
-            this.Button1.UseVisualStyleBackColor = true;
-            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnEnviar.Location = new System.Drawing.Point(404, 236);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(219, 23);
+            this.btnEnviar.TabIndex = 16;
+            this.btnEnviar.Text = "Enviar Solicitud";
+            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
             // 
-            // ComboBox2
+            // cmbMedico
             // 
-            this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(404, 127);
-            this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(219, 21);
-            this.ComboBox2.TabIndex = 15;
+            this.cmbMedico.FormattingEnabled = true;
+            this.cmbMedico.Location = new System.Drawing.Point(404, 127);
+            this.cmbMedico.Name = "cmbMedico";
+            this.cmbMedico.Size = new System.Drawing.Size(219, 21);
+            this.cmbMedico.TabIndex = 15;
             // 
-            // ComboBox1
+            // cmbFranjaHoraria
             // 
-            this.ComboBox1.FormattingEnabled = true;
-            this.ComboBox1.Location = new System.Drawing.Point(404, 188);
-            this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(219, 21);
-            this.ComboBox1.TabIndex = 14;
+            this.cmbFranjaHoraria.FormattingEnabled = true;
+            this.cmbFranjaHoraria.Location = new System.Drawing.Point(404, 188);
+            this.cmbFranjaHoraria.Name = "cmbFranjaHoraria";
+            this.cmbFranjaHoraria.Size = new System.Drawing.Size(219, 21);
+            this.cmbFranjaHoraria.TabIndex = 14;
             // 
             // Label3
             // 
@@ -86,12 +86,12 @@
             this.Label3.TabIndex = 13;
             this.Label3.Text = "Franja Horaria";
             // 
-            // DateTimePicker1
+            // dtpFecha
             // 
-            this.DateTimePicker1.Location = new System.Drawing.Point(404, 159);
-            this.DateTimePicker1.Name = "DateTimePicker1";
-            this.DateTimePicker1.Size = new System.Drawing.Size(219, 20);
-            this.DateTimePicker1.TabIndex = 12;
+            this.dtpFecha.Location = new System.Drawing.Point(404, 159);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(219, 20);
+            this.dtpFecha.TabIndex = 12;
             // 
             // Label2
             // 
@@ -137,16 +137,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(697, 424);
             this.Controls.Add(this.lblWelcome);
-            this.Controls.Add(this.Button2);
-            this.Controls.Add(this.Button1);
-            this.Controls.Add(this.ComboBox2);
-            this.Controls.Add(this.ComboBox1);
+            this.Controls.Add(this.btnAtras);
+            this.Controls.Add(this.btnEnviar);
+            this.Controls.Add(this.cmbMedico);
+            this.Controls.Add(this.cmbFranjaHoraria);
             this.Controls.Add(this.Label3);
-            this.Controls.Add(this.DateTimePicker1);
+            this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.PictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AgendarTurno";
             this.Text = "AgendarTurno";
             this.Load += new System.EventHandler(this.AgendarTurno_Load);
@@ -158,12 +158,12 @@
 
         #endregion
 
-        internal System.Windows.Forms.Button Button2;
-        internal System.Windows.Forms.Button Button1;
-        internal System.Windows.Forms.ComboBox ComboBox2;
-        internal System.Windows.Forms.ComboBox ComboBox1;
+        internal System.Windows.Forms.Button btnAtras;
+        internal System.Windows.Forms.Button btnEnviar;
+        internal System.Windows.Forms.ComboBox cmbMedico;
+        internal System.Windows.Forms.ComboBox cmbFranjaHoraria;
         internal System.Windows.Forms.Label Label3;
-        internal System.Windows.Forms.DateTimePicker DateTimePicker1;
+        internal System.Windows.Forms.DateTimePicker dtpFecha;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.PictureBox PictureBox1;

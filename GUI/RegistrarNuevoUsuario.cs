@@ -30,7 +30,7 @@ namespace GUI
             txtUsuario.Text = string.Empty;
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void OnBtnRegistrarClick(object sender, EventArgs e)
         {
             if (!txtPassword.Text.Equals(txtRepeatPassword.Text))
             {

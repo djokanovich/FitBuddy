@@ -31,24 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearDieta));
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
-            this.Atras = new System.Windows.Forms.Button();
-            this.Button1 = new System.Windows.Forms.Button();
-            this.CheckBox9 = new System.Windows.Forms.CheckBox();
-            this.CheckBox10 = new System.Windows.Forms.CheckBox();
-            this.CheckBox11 = new System.Windows.Forms.CheckBox();
-            this.CheckBox12 = new System.Windows.Forms.CheckBox();
-            this.CheckBox13 = new System.Windows.Forms.CheckBox();
-            this.CheckBox14 = new System.Windows.Forms.CheckBox();
-            this.CheckBox15 = new System.Windows.Forms.CheckBox();
-            this.CheckBox16 = new System.Windows.Forms.CheckBox();
-            this.CheckBox5 = new System.Windows.Forms.CheckBox();
-            this.CheckBox6 = new System.Windows.Forms.CheckBox();
-            this.CheckBox7 = new System.Windows.Forms.CheckBox();
-            this.CheckBox8 = new System.Windows.Forms.CheckBox();
-            this.CheckBox3 = new System.Windows.Forms.CheckBox();
-            this.CheckBox4 = new System.Windows.Forms.CheckBox();
-            this.CheckBox2 = new System.Windows.Forms.CheckBox();
-            this.CheckBox1 = new System.Windows.Forms.CheckBox();
+            this.btnAtras = new System.Windows.Forms.Button();
+            this.btnEnviar = new System.Windows.Forms.Button();
+            this.chkSoja = new System.Windows.Forms.CheckBox();
+            this.chkFrutasRojas = new System.Windows.Forms.CheckBox();
+            this.chkHojasVerdes = new System.Windows.Forms.CheckBox();
+            this.chkFructosa = new System.Windows.Forms.CheckBox();
+            this.chkLeche = new System.Windows.Forms.CheckBox();
+            this.chkMariscos = new System.Windows.Forms.CheckBox();
+            this.chkPescado = new System.Windows.Forms.CheckBox();
+            this.chkCarnePollo = new System.Windows.Forms.CheckBox();
+            this.chkTrigo = new System.Windows.Forms.CheckBox();
+            this.chkQueso = new System.Windows.Forms.CheckBox();
+            this.chkFrutosSecos = new System.Windows.Forms.CheckBox();
+            this.chkCarneCerdo = new System.Windows.Forms.CheckBox();
+            this.chkCarneVaca = new System.Windows.Forms.CheckBox();
+            this.chkTomate = new System.Windows.Forms.CheckBox();
+            this.chkHuevo = new System.Windows.Forms.CheckBox();
             this.lblWelcome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.GroupBox1.SuspendLayout();
@@ -66,24 +65,23 @@
             // 
             // GroupBox1
             // 
-            this.GroupBox1.Controls.Add(this.Atras);
-            this.GroupBox1.Controls.Add(this.Button1);
-            this.GroupBox1.Controls.Add(this.CheckBox9);
-            this.GroupBox1.Controls.Add(this.CheckBox10);
-            this.GroupBox1.Controls.Add(this.CheckBox11);
-            this.GroupBox1.Controls.Add(this.CheckBox12);
-            this.GroupBox1.Controls.Add(this.CheckBox13);
-            this.GroupBox1.Controls.Add(this.CheckBox14);
-            this.GroupBox1.Controls.Add(this.CheckBox15);
-            this.GroupBox1.Controls.Add(this.CheckBox16);
-            this.GroupBox1.Controls.Add(this.CheckBox5);
-            this.GroupBox1.Controls.Add(this.CheckBox6);
-            this.GroupBox1.Controls.Add(this.CheckBox7);
-            this.GroupBox1.Controls.Add(this.CheckBox8);
-            this.GroupBox1.Controls.Add(this.CheckBox3);
-            this.GroupBox1.Controls.Add(this.CheckBox4);
-            this.GroupBox1.Controls.Add(this.CheckBox2);
-            this.GroupBox1.Controls.Add(this.CheckBox1);
+            this.GroupBox1.Controls.Add(this.btnAtras);
+            this.GroupBox1.Controls.Add(this.btnEnviar);
+            this.GroupBox1.Controls.Add(this.chkSoja);
+            this.GroupBox1.Controls.Add(this.chkFrutasRojas);
+            this.GroupBox1.Controls.Add(this.chkHojasVerdes);
+            this.GroupBox1.Controls.Add(this.chkFructosa);
+            this.GroupBox1.Controls.Add(this.chkLeche);
+            this.GroupBox1.Controls.Add(this.chkMariscos);
+            this.GroupBox1.Controls.Add(this.chkPescado);
+            this.GroupBox1.Controls.Add(this.chkCarnePollo);
+            this.GroupBox1.Controls.Add(this.chkTrigo);
+            this.GroupBox1.Controls.Add(this.chkQueso);
+            this.GroupBox1.Controls.Add(this.chkFrutosSecos);
+            this.GroupBox1.Controls.Add(this.chkCarneCerdo);
+            this.GroupBox1.Controls.Add(this.chkCarneVaca);
+            this.GroupBox1.Controls.Add(this.chkTomate);
+            this.GroupBox1.Controls.Add(this.chkHuevo);
             this.GroupBox1.Location = new System.Drawing.Point(376, 57);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Size = new System.Drawing.Size(348, 318);
@@ -91,184 +89,174 @@
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "Indique cuál de estos alimentos Ud. NO CONSUME";
             // 
-            // Atras
+            // btnAtras
             // 
-            this.Atras.Location = new System.Drawing.Point(146, 266);
-            this.Atras.Name = "Atras";
-            this.Atras.Size = new System.Drawing.Size(109, 23);
-            this.Atras.TabIndex = 19;
-            this.Atras.Text = "Atrás";
-            this.Atras.UseVisualStyleBackColor = true;
+            this.btnAtras.Location = new System.Drawing.Point(146, 266);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(109, 23);
+            this.btnAtras.TabIndex = 19;
+            this.btnAtras.Text = "Atrás";
+            this.btnAtras.UseVisualStyleBackColor = true;
             // 
-            // Button1
+            // btnEnviar
             // 
-            this.Button1.Location = new System.Drawing.Point(38, 266);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(100, 23);
-            this.Button1.TabIndex = 18;
-            this.Button1.Text = "Enviar";
-            this.Button1.UseVisualStyleBackColor = true;
-            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnEnviar.Location = new System.Drawing.Point(38, 266);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(100, 23);
+            this.btnEnviar.TabIndex = 18;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
             // 
-            // CheckBox9
+            // chkSoja
             // 
-            this.CheckBox9.AutoSize = true;
-            this.CheckBox9.Location = new System.Drawing.Point(146, 215);
-            this.CheckBox9.Name = "CheckBox9";
-            this.CheckBox9.Size = new System.Drawing.Size(47, 17);
-            this.CheckBox9.TabIndex = 17;
-            this.CheckBox9.Text = "Soja";
-            this.CheckBox9.UseVisualStyleBackColor = true;
+            this.chkSoja.AutoSize = true;
+            this.chkSoja.Location = new System.Drawing.Point(146, 188);
+            this.chkSoja.Name = "chkSoja";
+            this.chkSoja.Size = new System.Drawing.Size(47, 17);
+            this.chkSoja.TabIndex = 17;
+            this.chkSoja.Text = "Soja";
+            this.chkSoja.UseVisualStyleBackColor = true;
             // 
-            // CheckBox10
+            // chkFrutasRojas
             // 
-            this.CheckBox10.AutoSize = true;
-            this.CheckBox10.Location = new System.Drawing.Point(146, 188);
-            this.CheckBox10.Name = "CheckBox10";
-            this.CheckBox10.Size = new System.Drawing.Size(85, 17);
-            this.CheckBox10.TabIndex = 16;
-            this.CheckBox10.Text = "Frutas Rojas";
-            this.CheckBox10.UseVisualStyleBackColor = true;
+            this.chkFrutasRojas.AutoSize = true;
+            this.chkFrutasRojas.Location = new System.Drawing.Point(146, 161);
+            this.chkFrutasRojas.Name = "chkFrutasRojas";
+            this.chkFrutasRojas.Size = new System.Drawing.Size(85, 17);
+            this.chkFrutasRojas.TabIndex = 16;
+            this.chkFrutasRojas.Text = "Frutas Rojas";
+            this.chkFrutasRojas.UseVisualStyleBackColor = true;
             // 
-            // CheckBox11
+            // chkHojasVerdes
             // 
-            this.CheckBox11.AutoSize = true;
-            this.CheckBox11.Location = new System.Drawing.Point(146, 163);
-            this.CheckBox11.Name = "CheckBox11";
-            this.CheckBox11.Size = new System.Drawing.Size(89, 17);
-            this.CheckBox11.TabIndex = 15;
-            this.CheckBox11.Text = "Hojas Verdes";
-            this.CheckBox11.UseVisualStyleBackColor = true;
+            this.chkHojasVerdes.AutoSize = true;
+            this.chkHojasVerdes.Location = new System.Drawing.Point(146, 136);
+            this.chkHojasVerdes.Name = "chkHojasVerdes";
+            this.chkHojasVerdes.Size = new System.Drawing.Size(89, 17);
+            this.chkHojasVerdes.TabIndex = 15;
+            this.chkHojasVerdes.Text = "Hojas Verdes";
+            this.chkHojasVerdes.UseVisualStyleBackColor = true;
             // 
-            // CheckBox12
+            // chkFructosa
             // 
-            this.CheckBox12.AutoSize = true;
-            this.CheckBox12.Location = new System.Drawing.Point(146, 136);
-            this.CheckBox12.Name = "CheckBox12";
-            this.CheckBox12.Size = new System.Drawing.Size(73, 17);
-            this.CheckBox12.TabIndex = 14;
-            this.CheckBox12.Text = "Fructuosa";
-            this.CheckBox12.UseVisualStyleBackColor = true;
+            this.chkFructosa.AutoSize = true;
+            this.chkFructosa.Location = new System.Drawing.Point(146, 109);
+            this.chkFructosa.Name = "chkFructosa";
+            this.chkFructosa.Size = new System.Drawing.Size(73, 17);
+            this.chkFructosa.TabIndex = 14;
+            this.chkFructosa.Text = "Fructuosa";
+            this.chkFructosa.UseVisualStyleBackColor = true;
             // 
-            // CheckBox13
+            // chkLeche
             // 
-            this.CheckBox13.AutoSize = true;
-            this.CheckBox13.Location = new System.Drawing.Point(38, 215);
-            this.CheckBox13.Name = "CheckBox13";
-            this.CheckBox13.Size = new System.Drawing.Size(56, 17);
-            this.CheckBox13.TabIndex = 13;
-            this.CheckBox13.Text = "Leche";
-            this.CheckBox13.UseVisualStyleBackColor = true;
+            this.chkLeche.AutoSize = true;
+            this.chkLeche.Location = new System.Drawing.Point(38, 215);
+            this.chkLeche.Name = "chkLeche";
+            this.chkLeche.Size = new System.Drawing.Size(56, 17);
+            this.chkLeche.TabIndex = 13;
+            this.chkLeche.Text = "Leche";
+            this.chkLeche.UseVisualStyleBackColor = true;
             // 
-            // CheckBox14
+            // chkMariscos
             // 
-            this.CheckBox14.AutoSize = true;
-            this.CheckBox14.Location = new System.Drawing.Point(38, 188);
-            this.CheckBox14.Name = "CheckBox14";
-            this.CheckBox14.Size = new System.Drawing.Size(68, 17);
-            this.CheckBox14.TabIndex = 12;
-            this.CheckBox14.Text = "Mariscos";
-            this.CheckBox14.UseVisualStyleBackColor = true;
+            this.chkMariscos.AutoSize = true;
+            this.chkMariscos.Location = new System.Drawing.Point(38, 188);
+            this.chkMariscos.Name = "chkMariscos";
+            this.chkMariscos.Size = new System.Drawing.Size(68, 17);
+            this.chkMariscos.TabIndex = 12;
+            this.chkMariscos.Text = "Mariscos";
+            this.chkMariscos.UseVisualStyleBackColor = true;
             // 
-            // CheckBox15
+            // chkPescado
             // 
-            this.CheckBox15.AutoSize = true;
-            this.CheckBox15.Location = new System.Drawing.Point(38, 163);
-            this.CheckBox15.Name = "CheckBox15";
-            this.CheckBox15.Size = new System.Drawing.Size(68, 17);
-            this.CheckBox15.TabIndex = 11;
-            this.CheckBox15.Text = "Pescado";
-            this.CheckBox15.UseVisualStyleBackColor = true;
+            this.chkPescado.AutoSize = true;
+            this.chkPescado.Location = new System.Drawing.Point(38, 163);
+            this.chkPescado.Name = "chkPescado";
+            this.chkPescado.Size = new System.Drawing.Size(68, 17);
+            this.chkPescado.TabIndex = 11;
+            this.chkPescado.Text = "Pescado";
+            this.chkPescado.UseVisualStyleBackColor = true;
             // 
-            // CheckBox16
+            // chkCarnePollo
             // 
-            this.CheckBox16.AutoSize = true;
-            this.CheckBox16.Location = new System.Drawing.Point(38, 136);
-            this.CheckBox16.Name = "CheckBox16";
-            this.CheckBox16.Size = new System.Drawing.Size(95, 17);
-            this.CheckBox16.TabIndex = 10;
-            this.CheckBox16.Text = "Carne de Pollo";
-            this.CheckBox16.UseVisualStyleBackColor = true;
+            this.chkCarnePollo.AutoSize = true;
+            this.chkCarnePollo.Location = new System.Drawing.Point(38, 136);
+            this.chkCarnePollo.Name = "chkCarnePollo";
+            this.chkCarnePollo.Size = new System.Drawing.Size(95, 17);
+            this.chkCarnePollo.TabIndex = 10;
+            this.chkCarnePollo.Text = "Carne de Pollo";
+            this.chkCarnePollo.UseVisualStyleBackColor = true;
             // 
-            // CheckBox5
+            // chkTrigo
             // 
-            this.CheckBox5.AutoSize = true;
-            this.CheckBox5.Location = new System.Drawing.Point(146, 107);
-            this.CheckBox5.Name = "CheckBox5";
-            this.CheckBox5.Size = new System.Drawing.Size(182, 17);
-            this.CheckBox5.TabIndex = 9;
-            this.CheckBox5.Text = "Trigo, Almidón, Cebada, Centeno";
-            this.CheckBox5.UseVisualStyleBackColor = true;
+            this.chkTrigo.AutoSize = true;
+            this.chkTrigo.Location = new System.Drawing.Point(146, 80);
+            this.chkTrigo.Name = "chkTrigo";
+            this.chkTrigo.Size = new System.Drawing.Size(182, 17);
+            this.chkTrigo.TabIndex = 9;
+            this.chkTrigo.Text = "Trigo, Almidón, Cebada, Centeno";
+            this.chkTrigo.UseVisualStyleBackColor = true;
             // 
-            // CheckBox6
+            // chkQueso
             // 
-            this.CheckBox6.AutoSize = true;
-            this.CheckBox6.Location = new System.Drawing.Point(146, 80);
-            this.CheckBox6.Name = "CheckBox6";
-            this.CheckBox6.Size = new System.Drawing.Size(58, 17);
-            this.CheckBox6.TabIndex = 8;
-            this.CheckBox6.Text = "Huevo";
-            this.CheckBox6.UseVisualStyleBackColor = true;
+            this.chkQueso.AutoSize = true;
+            this.chkQueso.Location = new System.Drawing.Point(146, 55);
+            this.chkQueso.Name = "chkQueso";
+            this.chkQueso.Size = new System.Drawing.Size(57, 17);
+            this.chkQueso.TabIndex = 7;
+            this.chkQueso.Text = "Queso";
+            this.chkQueso.UseVisualStyleBackColor = true;
             // 
-            // CheckBox7
+            // chkFrutosSecos
             // 
-            this.CheckBox7.AutoSize = true;
-            this.CheckBox7.Location = new System.Drawing.Point(146, 55);
-            this.CheckBox7.Name = "CheckBox7";
-            this.CheckBox7.Size = new System.Drawing.Size(57, 17);
-            this.CheckBox7.TabIndex = 7;
-            this.CheckBox7.Text = "Queso";
-            this.CheckBox7.UseVisualStyleBackColor = true;
+            this.chkFrutosSecos.AutoSize = true;
+            this.chkFrutosSecos.Location = new System.Drawing.Point(146, 28);
+            this.chkFrutosSecos.Name = "chkFrutosSecos";
+            this.chkFrutosSecos.Size = new System.Drawing.Size(88, 17);
+            this.chkFrutosSecos.TabIndex = 6;
+            this.chkFrutosSecos.Text = "Frutos Secos";
+            this.chkFrutosSecos.UseVisualStyleBackColor = true;
             // 
-            // CheckBox8
+            // chkCarneCerdo
             // 
-            this.CheckBox8.AutoSize = true;
-            this.CheckBox8.Location = new System.Drawing.Point(146, 28);
-            this.CheckBox8.Name = "CheckBox8";
-            this.CheckBox8.Size = new System.Drawing.Size(88, 17);
-            this.CheckBox8.TabIndex = 6;
-            this.CheckBox8.Text = "Frutos Secos";
-            this.CheckBox8.UseVisualStyleBackColor = true;
+            this.chkCarneCerdo.AutoSize = true;
+            this.chkCarneCerdo.Location = new System.Drawing.Point(38, 107);
+            this.chkCarneCerdo.Name = "chkCarneCerdo";
+            this.chkCarneCerdo.Size = new System.Drawing.Size(100, 17);
+            this.chkCarneCerdo.TabIndex = 5;
+            this.chkCarneCerdo.Text = "Carne de Cerdo";
+            this.chkCarneCerdo.UseVisualStyleBackColor = true;
             // 
-            // CheckBox3
+            // chkCarneVaca
             // 
-            this.CheckBox3.AutoSize = true;
-            this.CheckBox3.Location = new System.Drawing.Point(38, 107);
-            this.CheckBox3.Name = "CheckBox3";
-            this.CheckBox3.Size = new System.Drawing.Size(100, 17);
-            this.CheckBox3.TabIndex = 5;
-            this.CheckBox3.Text = "Carne de Cerdo";
-            this.CheckBox3.UseVisualStyleBackColor = true;
+            this.chkCarneVaca.AutoSize = true;
+            this.chkCarneVaca.Location = new System.Drawing.Point(38, 80);
+            this.chkCarneVaca.Name = "chkCarneVaca";
+            this.chkCarneVaca.Size = new System.Drawing.Size(97, 17);
+            this.chkCarneVaca.TabIndex = 4;
+            this.chkCarneVaca.Text = "Carne de Vaca";
+            this.chkCarneVaca.UseVisualStyleBackColor = true;
             // 
-            // CheckBox4
+            // chkTomate
             // 
-            this.CheckBox4.AutoSize = true;
-            this.CheckBox4.Location = new System.Drawing.Point(38, 80);
-            this.CheckBox4.Name = "CheckBox4";
-            this.CheckBox4.Size = new System.Drawing.Size(97, 17);
-            this.CheckBox4.TabIndex = 4;
-            this.CheckBox4.Text = "Carne de Vaca";
-            this.CheckBox4.UseVisualStyleBackColor = true;
+            this.chkTomate.AutoSize = true;
+            this.chkTomate.Location = new System.Drawing.Point(38, 55);
+            this.chkTomate.Name = "chkTomate";
+            this.chkTomate.Size = new System.Drawing.Size(62, 17);
+            this.chkTomate.TabIndex = 3;
+            this.chkTomate.Text = "Tomate";
+            this.chkTomate.UseVisualStyleBackColor = true;
             // 
-            // CheckBox2
+            // chkHuevo
             // 
-            this.CheckBox2.AutoSize = true;
-            this.CheckBox2.Location = new System.Drawing.Point(38, 55);
-            this.CheckBox2.Name = "CheckBox2";
-            this.CheckBox2.Size = new System.Drawing.Size(62, 17);
-            this.CheckBox2.TabIndex = 3;
-            this.CheckBox2.Text = "Tomate";
-            this.CheckBox2.UseVisualStyleBackColor = true;
-            // 
-            // CheckBox1
-            // 
-            this.CheckBox1.AutoSize = true;
-            this.CheckBox1.Location = new System.Drawing.Point(38, 28);
-            this.CheckBox1.Name = "CheckBox1";
-            this.CheckBox1.Size = new System.Drawing.Size(58, 17);
-            this.CheckBox1.TabIndex = 1;
-            this.CheckBox1.Text = "Huevo";
-            this.CheckBox1.UseVisualStyleBackColor = true;
+            this.chkHuevo.AutoSize = true;
+            this.chkHuevo.Location = new System.Drawing.Point(38, 28);
+            this.chkHuevo.Name = "chkHuevo";
+            this.chkHuevo.Size = new System.Drawing.Size(58, 17);
+            this.chkHuevo.TabIndex = 1;
+            this.chkHuevo.Text = "Huevo";
+            this.chkHuevo.UseVisualStyleBackColor = true;
             // 
             // lblWelcome
             // 
@@ -287,7 +275,7 @@
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.GroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CrearDieta";
             this.Text = "CrearDieta";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
@@ -302,24 +290,23 @@
 
         internal System.Windows.Forms.PictureBox PictureBox1;
         internal System.Windows.Forms.GroupBox GroupBox1;
-        internal System.Windows.Forms.Button Atras;
-        internal System.Windows.Forms.Button Button1;
-        internal System.Windows.Forms.CheckBox CheckBox9;
-        internal System.Windows.Forms.CheckBox CheckBox10;
-        internal System.Windows.Forms.CheckBox CheckBox11;
-        internal System.Windows.Forms.CheckBox CheckBox12;
-        internal System.Windows.Forms.CheckBox CheckBox13;
-        internal System.Windows.Forms.CheckBox CheckBox14;
-        internal System.Windows.Forms.CheckBox CheckBox15;
-        internal System.Windows.Forms.CheckBox CheckBox16;
-        internal System.Windows.Forms.CheckBox CheckBox5;
-        internal System.Windows.Forms.CheckBox CheckBox6;
-        internal System.Windows.Forms.CheckBox CheckBox7;
-        internal System.Windows.Forms.CheckBox CheckBox8;
-        internal System.Windows.Forms.CheckBox CheckBox3;
-        internal System.Windows.Forms.CheckBox CheckBox4;
-        internal System.Windows.Forms.CheckBox CheckBox2;
-        internal System.Windows.Forms.CheckBox CheckBox1;
+        internal System.Windows.Forms.Button btnAtras;
+        internal System.Windows.Forms.Button btnEnviar;
+        internal System.Windows.Forms.CheckBox chkSoja;
+        internal System.Windows.Forms.CheckBox chkFrutasRojas;
+        internal System.Windows.Forms.CheckBox chkHojasVerdes;
+        internal System.Windows.Forms.CheckBox chkFructosa;
+        internal System.Windows.Forms.CheckBox chkLeche;
+        internal System.Windows.Forms.CheckBox chkMariscos;
+        internal System.Windows.Forms.CheckBox chkPescado;
+        internal System.Windows.Forms.CheckBox chkCarnePollo;
+        internal System.Windows.Forms.CheckBox chkTrigo;
+        internal System.Windows.Forms.CheckBox chkQueso;
+        internal System.Windows.Forms.CheckBox chkFrutosSecos;
+        internal System.Windows.Forms.CheckBox chkCarneCerdo;
+        internal System.Windows.Forms.CheckBox chkCarneVaca;
+        internal System.Windows.Forms.CheckBox chkTomate;
+        internal System.Windows.Forms.CheckBox chkHuevo;
         private System.Windows.Forms.Label lblWelcome;
     }
 }

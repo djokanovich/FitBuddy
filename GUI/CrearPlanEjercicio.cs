@@ -23,27 +23,27 @@ namespace GUI
 
         private void CrearPlanEjercicio_Load(object sender, EventArgs e)
         {
-            ComboBox1.Items.Add("Nunca");
-            ComboBox1.Items.Add("Una vez por semana");
-            ComboBox1.Items.Add("Dos veces por semana");
-            ComboBox1.Items.Add("Más de tres veces por semana");
+            cmbFrecuencia.Items.Add("Nunca");
+            cmbFrecuencia.Items.Add("Una vez por semana");
+            cmbFrecuencia.Items.Add("Dos veces por semana");
+            cmbFrecuencia.Items.Add("Más de tres veces por semana");
 
-            ComboBox2.Items.Add("Ganar peso");
-            ComboBox2.Items.Add("Perder peso");
-            ComboBox2.Items.Add("Ganar masa muscular");
-            ComboBox2.Items.Add("Estar más saludable");
+            cmbObjetivo.Items.Add("Ganar peso");
+            cmbObjetivo.Items.Add("Perder peso");
+            cmbObjetivo.Items.Add("Ganar masa muscular");
+            cmbObjetivo.Items.Add("Estar más saludable");
 
-            ComboBox3.Items.Add("Nunca");
-            ComboBox3.Items.Add("Una vez por semana");
-            ComboBox3.Items.Add("Dos veces por semana");
-            ComboBox3.Items.Add("Más de tres veces por semana");
+            cmbDisponibilidadDias.Items.Add("Nunca");
+            cmbDisponibilidadDias.Items.Add("Una vez por semana");
+            cmbDisponibilidadDias.Items.Add("Dos veces por semana");
+            cmbDisponibilidadDias.Items.Add("Más de tres veces por semana");
 
-            ComboBox4.Items.Add("Menos de una hora");
-            ComboBox4.Items.Add("Entre una y dos horas");
-            ComboBox4.Items.Add("Más de dos horas");
+            cmbDisponibilidadHoras.Items.Add("Menos de una hora");
+            cmbDisponibilidadHoras.Items.Add("Entre una y dos horas");
+            cmbDisponibilidadHoras.Items.Add("Más de dos horas");
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void OnBtnEnviarClick(object sender, EventArgs e)
         {
             MessageBox.Show("Perfil de ejercicio cargado con éxito");
         }

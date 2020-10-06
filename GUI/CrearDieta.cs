@@ -21,7 +21,7 @@ namespace GUI
             lblWelcome.Text = $"Usuario {customPrincipal.Identity.Name}";
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void OnBtnEnviarClick(object sender, EventArgs e)
         {
             MessageBox.Show("Perfil alimenticio cargado con éxito");
         }

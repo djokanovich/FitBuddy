@@ -18,7 +18,7 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void btnCreateBackup_Click(object sender, EventArgs e)
+        private void OnBtnCrearBackupClick(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog
             {

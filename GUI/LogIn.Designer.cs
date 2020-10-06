@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.LinkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.LinkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.LinkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.Cancel = new System.Windows.Forms.Button();
-            this.OK = new System.Windows.Forms.Button();
+            this.lnkOlvideContrasena = new System.Windows.Forms.LinkLabel();
+            this.lnkRegistrarUsuario = new System.Windows.Forms.LinkLabel();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.PasswordLabel = new System.Windows.Forms.Label();
@@ -45,80 +45,72 @@
             // LinkLabel3
             // 
             this.LinkLabel3.AutoSize = true;
-            this.LinkLabel3.Location = new System.Drawing.Point(29, 679);
-            this.LinkLabel3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LinkLabel3.Location = new System.Drawing.Point(14, 353);
             this.LinkLabel3.Name = "LinkLabel3";
-            this.LinkLabel3.Size = new System.Drawing.Size(237, 25);
+            this.LinkLabel3.Size = new System.Drawing.Size(119, 13);
             this.LinkLabel3.TabIndex = 24;
             this.LinkLabel3.TabStop = true;
             this.LinkLabel3.Text = "Acerca de la Aplicación";
             // 
-            // LinkLabel2
+            // lnkOlvideContrasena
             // 
-            this.LinkLabel2.AutoSize = true;
-            this.LinkLabel2.Location = new System.Drawing.Point(786, 467);
-            this.LinkLabel2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LinkLabel2.Name = "LinkLabel2";
-            this.LinkLabel2.Size = new System.Drawing.Size(214, 25);
-            this.LinkLabel2.TabIndex = 23;
-            this.LinkLabel2.TabStop = true;
-            this.LinkLabel2.Text = "Olvidé mi contraseña";
+            this.lnkOlvideContrasena.AutoSize = true;
+            this.lnkOlvideContrasena.Location = new System.Drawing.Point(393, 243);
+            this.lnkOlvideContrasena.Name = "lnkOlvideContrasena";
+            this.lnkOlvideContrasena.Size = new System.Drawing.Size(106, 13);
+            this.lnkOlvideContrasena.TabIndex = 23;
+            this.lnkOlvideContrasena.TabStop = true;
+            this.lnkOlvideContrasena.Text = "Olvidé mi contraseña";
             // 
-            // LinkLabel1
+            // lnkRegistrarUsuario
             // 
-            this.LinkLabel1.AutoSize = true;
-            this.LinkLabel1.Location = new System.Drawing.Point(786, 423);
-            this.LinkLabel1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LinkLabel1.Name = "LinkLabel1";
-            this.LinkLabel1.Size = new System.Drawing.Size(176, 25);
-            this.LinkLabel1.TabIndex = 22;
-            this.LinkLabel1.TabStop = true;
-            this.LinkLabel1.Text = "No tengo usuario";
-            this.LinkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
+            this.lnkRegistrarUsuario.AutoSize = true;
+            this.lnkRegistrarUsuario.Location = new System.Drawing.Point(393, 220);
+            this.lnkRegistrarUsuario.Name = "lnkRegistrarUsuario";
+            this.lnkRegistrarUsuario.Size = new System.Drawing.Size(88, 13);
+            this.lnkRegistrarUsuario.TabIndex = 22;
+            this.lnkRegistrarUsuario.TabStop = true;
+            this.lnkRegistrarUsuario.Text = "No tengo usuario";
+            this.lnkRegistrarUsuario.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnLnkRegistrarUsuarioClicked);
             // 
-            // Cancel
+            // btnCancelar
             // 
-            this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel.Location = new System.Drawing.Point(1026, 336);
-            this.Cancel.Margin = new System.Windows.Forms.Padding(6);
-            this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(188, 44);
-            this.Cancel.TabIndex = 21;
-            this.Cancel.Text = "&Cancelar";
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelar.Location = new System.Drawing.Point(513, 175);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(94, 23);
+            this.btnCancelar.TabIndex = 21;
+            this.btnCancelar.Text = "&Cancelar";
             // 
-            // OK
+            // btnAceptar
             // 
-            this.OK.Location = new System.Drawing.Point(780, 336);
-            this.OK.Margin = new System.Windows.Forms.Padding(6);
-            this.OK.Name = "OK";
-            this.OK.Size = new System.Drawing.Size(188, 44);
-            this.OK.TabIndex = 20;
-            this.OK.Text = "&Aceptar";
-            this.OK.Click += new System.EventHandler(this.OK_Click);
+            this.btnAceptar.Location = new System.Drawing.Point(390, 175);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(94, 23);
+            this.btnAceptar.TabIndex = 20;
+            this.btnAceptar.Text = "&Aceptar";
+            this.btnAceptar.Click += new System.EventHandler(this.OnBtnAceptarClick);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(780, 267);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(6);
+            this.txtPassword.Location = new System.Drawing.Point(390, 139);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(436, 31);
+            this.txtPassword.Size = new System.Drawing.Size(220, 20);
             this.txtPassword.TabIndex = 19;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(780, 173);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(6);
+            this.txtUsername.Location = new System.Drawing.Point(390, 90);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(436, 31);
+            this.txtUsername.Size = new System.Drawing.Size(220, 20);
             this.txtUsername.TabIndex = 17;
             // 
             // PasswordLabel
             // 
-            this.PasswordLabel.Location = new System.Drawing.Point(780, 217);
-            this.PasswordLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.PasswordLabel.Location = new System.Drawing.Point(390, 113);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(440, 44);
+            this.PasswordLabel.Size = new System.Drawing.Size(220, 23);
             this.PasswordLabel.TabIndex = 18;
             this.PasswordLabel.Text = "&Contraseña";
             this.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -126,8 +118,7 @@
             // LogoPictureBox
             // 
             this.LogoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogoPictureBox.Image")));
-            this.LogoPictureBox.Location = new System.Drawing.Point(148, 131);
-            this.LogoPictureBox.Margin = new System.Windows.Forms.Padding(6);
+            this.LogoPictureBox.Location = new System.Drawing.Point(74, 68);
             this.LogoPictureBox.Name = "LogoPictureBox";
             this.LogoPictureBox.Size = new System.Drawing.Size(263, 263);
             this.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -136,29 +127,29 @@
             // 
             // UsernameLabel
             // 
-            this.UsernameLabel.Location = new System.Drawing.Point(775, 110);
-            this.UsernameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.UsernameLabel.Location = new System.Drawing.Point(388, 57);
             this.UsernameLabel.Name = "UsernameLabel";
-            this.UsernameLabel.Size = new System.Drawing.Size(440, 44);
+            this.UsernameLabel.Size = new System.Drawing.Size(220, 23);
             this.UsernameLabel.TabIndex = 25;
             this.UsernameLabel.Text = "&Nombre de usuario";
             this.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1314, 726);
+            this.ClientSize = new System.Drawing.Size(657, 378);
             this.Controls.Add(this.UsernameLabel);
             this.Controls.Add(this.LinkLabel3);
-            this.Controls.Add(this.LinkLabel2);
-            this.Controls.Add(this.LinkLabel1);
-            this.Controls.Add(this.Cancel);
-            this.Controls.Add(this.OK);
+            this.Controls.Add(this.lnkOlvideContrasena);
+            this.Controls.Add(this.lnkRegistrarUsuario);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.PasswordLabel);
             this.Controls.Add(this.LogoPictureBox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LogIn";
             this.Text = "LogIn";
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
@@ -170,10 +161,10 @@
         #endregion
 
         internal System.Windows.Forms.LinkLabel LinkLabel3;
-        internal System.Windows.Forms.LinkLabel LinkLabel2;
-        internal System.Windows.Forms.LinkLabel LinkLabel1;
-        internal System.Windows.Forms.Button Cancel;
-        internal System.Windows.Forms.Button OK;
+        internal System.Windows.Forms.LinkLabel lnkOlvideContrasena;
+        internal System.Windows.Forms.LinkLabel lnkRegistrarUsuario;
+        internal System.Windows.Forms.Button btnCancelar;
+        internal System.Windows.Forms.Button btnAceptar;
         internal System.Windows.Forms.TextBox txtPassword;
         internal System.Windows.Forms.TextBox txtUsername;
         internal System.Windows.Forms.Label PasswordLabel;

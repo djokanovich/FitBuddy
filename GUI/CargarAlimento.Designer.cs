@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CargarAlimento));
-            this.Button4 = new System.Windows.Forms.Button();
-            this.Button3 = new System.Windows.Forms.Button();
-            this.Button2 = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
+            this.btnEnviar = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ComboBox2 = new System.Windows.Forms.ComboBox();
-            this.ComboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbPorcion = new System.Windows.Forms.ComboBox();
+            this.cmbComida = new System.Windows.Forms.ComboBox();
             this.Label2 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
@@ -43,32 +43,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Button4
+            // btnAtras
             // 
-            this.Button4.Location = new System.Drawing.Point(652, 342);
-            this.Button4.Name = "Button4";
-            this.Button4.Size = new System.Drawing.Size(75, 23);
-            this.Button4.TabIndex = 20;
-            this.Button4.Text = "Atrás";
-            this.Button4.UseVisualStyleBackColor = true;
+            this.btnAtras.Location = new System.Drawing.Point(652, 342);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 20;
+            this.btnAtras.Text = "Atrás";
+            this.btnAtras.UseVisualStyleBackColor = true;
             // 
-            // Button3
+            // btnEnviar
             // 
-            this.Button3.Location = new System.Drawing.Point(648, 132);
-            this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(75, 23);
-            this.Button3.TabIndex = 19;
-            this.Button3.Text = "Enviar";
-            this.Button3.UseVisualStyleBackColor = true;
+            this.btnEnviar.Location = new System.Drawing.Point(648, 132);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(75, 23);
+            this.btnEnviar.TabIndex = 19;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyleBackColor = true;
             // 
-            // Button2
+            // btnBorrar
             // 
-            this.Button2.Location = new System.Drawing.Point(648, 102);
-            this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(75, 23);
-            this.Button2.TabIndex = 18;
-            this.Button2.Text = "Borrar";
-            this.Button2.UseVisualStyleBackColor = true;
+            this.btnBorrar.Location = new System.Drawing.Point(648, 102);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrar.TabIndex = 18;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
             // 
             // PictureBox1
             // 
@@ -80,21 +80,21 @@
             this.PictureBox1.TabIndex = 17;
             this.PictureBox1.TabStop = false;
             // 
-            // ComboBox2
+            // cmbPorcion
             // 
-            this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(404, 136);
-            this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(200, 21);
-            this.ComboBox2.TabIndex = 16;
+            this.cmbPorcion.FormattingEnabled = true;
+            this.cmbPorcion.Location = new System.Drawing.Point(404, 136);
+            this.cmbPorcion.Name = "cmbPorcion";
+            this.cmbPorcion.Size = new System.Drawing.Size(200, 21);
+            this.cmbPorcion.TabIndex = 16;
             // 
-            // ComboBox1
+            // cmbComida
             // 
-            this.ComboBox1.FormattingEnabled = true;
-            this.ComboBox1.Location = new System.Drawing.Point(404, 105);
-            this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(200, 21);
-            this.ComboBox1.TabIndex = 15;
+            this.cmbComida.FormattingEnabled = true;
+            this.cmbComida.Location = new System.Drawing.Point(404, 105);
+            this.cmbComida.Name = "cmbComida";
+            this.cmbComida.Size = new System.Drawing.Size(200, 21);
+            this.cmbComida.TabIndex = 15;
             // 
             // Label2
             // 
@@ -138,16 +138,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 447);
             this.Controls.Add(this.lblWelcome);
-            this.Controls.Add(this.Button4);
-            this.Controls.Add(this.Button3);
-            this.Controls.Add(this.Button2);
+            this.Controls.Add(this.btnAtras);
+            this.Controls.Add(this.btnEnviar);
+            this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.PictureBox1);
-            this.Controls.Add(this.ComboBox2);
-            this.Controls.Add(this.ComboBox1);
+            this.Controls.Add(this.cmbPorcion);
+            this.Controls.Add(this.cmbComida);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.DataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CargarAlimento";
             this.Text = "CargarAlimento";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
@@ -159,12 +159,12 @@
 
         #endregion
 
-        internal System.Windows.Forms.Button Button4;
-        internal System.Windows.Forms.Button Button3;
-        internal System.Windows.Forms.Button Button2;
+        internal System.Windows.Forms.Button btnAtras;
+        internal System.Windows.Forms.Button btnEnviar;
+        internal System.Windows.Forms.Button btnBorrar;
         internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.ComboBox ComboBox2;
-        internal System.Windows.Forms.ComboBox ComboBox1;
+        internal System.Windows.Forms.ComboBox cmbPorcion;
+        internal System.Windows.Forms.ComboBox cmbComida;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.DataGridView DataGridView1;

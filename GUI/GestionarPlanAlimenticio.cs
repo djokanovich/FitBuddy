@@ -21,13 +21,13 @@ namespace GUI
             lblWelcome.Text = $"Usuario {customPrincipal.Identity.Name}";
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void OnBtnCrearDietaClick(object sender, EventArgs e)
         {
             var crearDieta = new CrearDieta();
             crearDieta.Show();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void OnBtnVerDietaClick(object sender, EventArgs e)
         {
             MessageBox.Show("Sección en construcción");
         }

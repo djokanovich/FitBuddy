@@ -21,13 +21,13 @@ namespace GUI
             lblWelcome.Text = $"Usuario {customPrincipal.Identity.Name}";
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void OnBtnCrearPlanClick(object sender, EventArgs e)
         {
             var crearPlanEj = new CrearPlanEjercicio();
             crearPlanEj.Show();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void OnBtnVerPlanClick(object sender, EventArgs e)
         {
             MessageBox.Show("Sección en construcción");
         }

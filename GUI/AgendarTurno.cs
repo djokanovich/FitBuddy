@@ -24,8 +24,8 @@ namespace GUI
 
         public void Clear()
         {
-            ComboBox1.Text = null;
-            ComboBox2.Text = null;
+            cmbFranjaHoraria.Text = null;
+            cmbMedico.Text = null;
             
         }
         private void AgendarTurno_Load(object sender, EventArgs e)
@@ -33,19 +33,19 @@ namespace GUI
             var gesMedico = new gesMedico();
             var medicos = gesMedico.ObtenerMedicos();
             //ComboBox2.Items.AddRange(medicos.Select(m => m.Nombre).ToArray());
-            ComboBox2.DataSource = medicos;
-            ComboBox2.DisplayMember = "Nombre";
-            ComboBox2.ValueMember = "Email";
+            cmbMedico.DataSource = medicos;
+            cmbMedico.DisplayMember = "Nombre";
+            cmbMedico.ValueMember = "Email";
 
-            ComboBox1.Items.Add("9:00");
-            ComboBox1.Items.Add("10:00");
-            ComboBox1.Items.Add("11:00");
-            ComboBox1.Items.Add("12:00");
-            ComboBox1.Items.Add("13:00");
-            ComboBox1.Items.Add("14:00");
+            cmbFranjaHoraria.Items.Add("9:00");
+            cmbFranjaHoraria.Items.Add("10:00");
+            cmbFranjaHoraria.Items.Add("11:00");
+            cmbFranjaHoraria.Items.Add("12:00");
+            cmbFranjaHoraria.Items.Add("13:00");
+            cmbFranjaHoraria.Items.Add("14:00");
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void OnBtnEnviarClick(object sender, EventArgs e)
         {
             MessageBox.Show("Turno cargado con éxito, un administrador se pondrá en contacto para coordinar tu cita.");
             Clear();

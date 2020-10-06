@@ -35,11 +35,9 @@ namespace GUI
             txtBrazo.Text = null;
         }
 
-       
-
-        private void Button1_Click(object sender, EventArgs e)
+        private void OnBtnEnviarClick(object sender, EventArgs e)
         {
-            var genero = ((RadioButton)grpBoxSexo.Controls[0]).Checked ? "F" : "M"; // Operador de coalición
+            var genero = ((RadioButton)grpBoxSexo.Controls[0]).Checked ? "F" : "M"; // Operador condicional ternario
 
             var gesUsuario = new gesUsuario();
             var usuario = gesUsuario.ObtenerUsuario(_customPrincipal.Identity.Id);
@@ -55,13 +53,13 @@ namespace GUI
                 ContMuslo = Convert.ToInt32(txtMuslo.Text),
                 Edad = Convert.ToInt32(txtEdad.Text),
                 Genero = genero,
-                FechaRegistroPerfil = Convert.ToDateTime(DateTimePicker1.Text)
+                FechaRegistroPerfil = Convert.ToDateTime(dtpFecha.Text)
             };
 
             // le paso a la BLL el paciente creado
-            gesPaciente gesPaciente = new gesPaciente();
+            var gesPaciente = new gesPaciente();
             gesPaciente.CrearPaciente(paciente);
-            
+
 
             MessageBox.Show("Datos cargados con éxito");
             Clear();
@@ -70,11 +68,6 @@ namespace GUI
         private void OnBtnLimpiarClick(object sender, EventArgs e)
         {
             Clear();
-        }
-
-        private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

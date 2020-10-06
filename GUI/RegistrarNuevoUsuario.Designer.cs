@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrarNuevoUsuario));
-            this.LinkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lnkAcercaDe = new System.Windows.Forms.LinkLabel();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Button1 = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -47,157 +47,142 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // LinkLabel1
+            // lnkAcercaDe
             // 
-            this.LinkLabel1.AutoSize = true;
-            this.LinkLabel1.Location = new System.Drawing.Point(874, 604);
-            this.LinkLabel1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LinkLabel1.Name = "LinkLabel1";
-            this.LinkLabel1.Size = new System.Drawing.Size(237, 25);
-            this.LinkLabel1.TabIndex = 29;
-            this.LinkLabel1.TabStop = true;
-            this.LinkLabel1.Text = "Acerca de la Aplicación";
+            this.lnkAcercaDe.AutoSize = true;
+            this.lnkAcercaDe.Location = new System.Drawing.Point(437, 314);
+            this.lnkAcercaDe.Name = "lnkAcercaDe";
+            this.lnkAcercaDe.Size = new System.Drawing.Size(119, 13);
+            this.lnkAcercaDe.TabIndex = 29;
+            this.lnkAcercaDe.TabStop = true;
+            this.lnkAcercaDe.Text = "Acerca de la Aplicación";
             // 
             // PictureBox1
             // 
             this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(34, 112);
-            this.PictureBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.PictureBox1.Location = new System.Drawing.Point(17, 58);
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(534, 500);
+            this.PictureBox1.Size = new System.Drawing.Size(267, 260);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.PictureBox1.TabIndex = 28;
             this.PictureBox1.TabStop = false;
             // 
-            // Button1
+            // btnRegistrar
             // 
-            this.Button1.Location = new System.Drawing.Point(874, 546);
-            this.Button1.Margin = new System.Windows.Forms.Padding(6);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(380, 44);
-            this.Button1.TabIndex = 27;
-            this.Button1.Text = "Registrarme";
-            this.Button1.UseVisualStyleBackColor = true;
-            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnRegistrar.Location = new System.Drawing.Point(437, 284);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(190, 23);
+            this.btnRegistrar.TabIndex = 27;
+            this.btnRegistrar.Text = "Registrarme";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.OnBtnRegistrarClick);
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(874, 452);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(6);
+            this.txtApellido.Location = new System.Drawing.Point(437, 235);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(376, 31);
+            this.txtApellido.Size = new System.Drawing.Size(190, 20);
             this.txtApellido.TabIndex = 26;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(874, 396);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(6);
+            this.txtNombre.Location = new System.Drawing.Point(437, 206);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(376, 31);
+            this.txtNombre.Size = new System.Drawing.Size(190, 20);
             this.txtNombre.TabIndex = 25;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(874, 339);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(6);
+            this.txtEmail.Location = new System.Drawing.Point(437, 176);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(376, 31);
+            this.txtEmail.Size = new System.Drawing.Size(190, 20);
             this.txtEmail.TabIndex = 24;
             // 
             // txtRepeatPassword
             // 
-            this.txtRepeatPassword.Location = new System.Drawing.Point(874, 273);
-            this.txtRepeatPassword.Margin = new System.Windows.Forms.Padding(6);
+            this.txtRepeatPassword.Location = new System.Drawing.Point(437, 142);
             this.txtRepeatPassword.Name = "txtRepeatPassword";
             this.txtRepeatPassword.PasswordChar = '*';
-            this.txtRepeatPassword.Size = new System.Drawing.Size(376, 31);
+            this.txtRepeatPassword.Size = new System.Drawing.Size(190, 20);
             this.txtRepeatPassword.TabIndex = 23;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(874, 206);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(6);
+            this.txtPassword.Location = new System.Drawing.Point(437, 107);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(376, 31);
+            this.txtPassword.Size = new System.Drawing.Size(190, 20);
             this.txtPassword.TabIndex = 22;
             // 
             // Label6
             // 
             this.Label6.AutoSize = true;
-            this.Label6.Location = new System.Drawing.Point(728, 466);
-            this.Label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label6.Location = new System.Drawing.Point(364, 242);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(89, 25);
+            this.Label6.Size = new System.Drawing.Size(44, 13);
             this.Label6.TabIndex = 21;
             this.Label6.Text = "Apellido";
             // 
             // Label5
             // 
             this.Label5.AutoSize = true;
-            this.Label5.Location = new System.Drawing.Point(728, 410);
-            this.Label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label5.Location = new System.Drawing.Point(364, 213);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(87, 25);
+            this.Label5.Size = new System.Drawing.Size(44, 13);
             this.Label5.TabIndex = 20;
             this.Label5.Text = "Nombre";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(874, 144);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(6);
+            this.txtUsuario.Location = new System.Drawing.Point(437, 75);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(376, 31);
+            this.txtUsuario.Size = new System.Drawing.Size(190, 20);
             this.txtUsuario.TabIndex = 19;
             // 
             // Label4
             // 
             this.Label4.AutoSize = true;
-            this.Label4.Location = new System.Drawing.Point(746, 352);
-            this.Label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label4.Location = new System.Drawing.Point(373, 183);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(72, 25);
+            this.Label4.Size = new System.Drawing.Size(35, 13);
             this.Label4.TabIndex = 18;
             this.Label4.Text = "E-mail";
             // 
             // Label3
             // 
             this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(602, 287);
-            this.Label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label3.Location = new System.Drawing.Point(301, 149);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(218, 25);
+            this.Label3.Size = new System.Drawing.Size(107, 13);
             this.Label3.TabIndex = 17;
             this.Label3.Text = "Confirmar contraseña";
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(694, 219);
-            this.Label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label2.Location = new System.Drawing.Point(347, 114);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(123, 25);
+            this.Label2.Size = new System.Drawing.Size(61, 13);
             this.Label2.TabIndex = 16;
             this.Label2.Text = "Contraseña";
             // 
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(730, 158);
-            this.Label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label1.Location = new System.Drawing.Point(365, 82);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(86, 25);
+            this.Label1.Size = new System.Drawing.Size(43, 13);
             this.Label1.TabIndex = 15;
             this.Label1.Text = "Usuario";
             // 
             // RegistrarNuevoUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1288, 740);
-            this.Controls.Add(this.LinkLabel1);
+            this.ClientSize = new System.Drawing.Size(644, 385);
+            this.Controls.Add(this.lnkAcercaDe);
             this.Controls.Add(this.PictureBox1);
-            this.Controls.Add(this.Button1);
+            this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtEmail);
@@ -210,6 +195,7 @@
             this.Controls.Add(this.Label3);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegistrarNuevoUsuario";
             this.Text = "RegistrarNuevoUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
@@ -220,9 +206,9 @@
 
         #endregion
 
-        internal System.Windows.Forms.LinkLabel LinkLabel1;
+        internal System.Windows.Forms.LinkLabel lnkAcercaDe;
         internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.Button Button1;
+        internal System.Windows.Forms.Button btnRegistrar;
         internal System.Windows.Forms.TextBox txtApellido;
         internal System.Windows.Forms.TextBox txtNombre;
         internal System.Windows.Forms.TextBox txtEmail;

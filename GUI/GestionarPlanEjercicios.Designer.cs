@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionarPlanEjercicios));
-            this.Button3 = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Button2 = new System.Windows.Forms.Button();
-            this.Button1 = new System.Windows.Forms.Button();
+            this.btnCrearPlan = new System.Windows.Forms.Button();
+            this.btnVerPlan = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Button3
+            // btnAtras
             // 
-            this.Button3.Location = new System.Drawing.Point(493, 336);
-            this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(75, 23);
-            this.Button3.TabIndex = 11;
-            this.Button3.Text = "Atrás";
-            this.Button3.UseVisualStyleBackColor = true;
+            this.btnAtras.Location = new System.Drawing.Point(493, 336);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 11;
+            this.btnAtras.Text = "Atrás";
+            this.btnAtras.UseVisualStyleBackColor = true;
             // 
             // PictureBox1
             // 
@@ -56,25 +56,25 @@
             this.PictureBox1.TabIndex = 10;
             this.PictureBox1.TabStop = false;
             // 
-            // Button2
+            // btnCrearPlan
             // 
-            this.Button2.Location = new System.Drawing.Point(320, 149);
-            this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(248, 42);
-            this.Button2.TabIndex = 9;
-            this.Button2.Text = "Crear Plan";
-            this.Button2.UseVisualStyleBackColor = true;
-            this.Button2.Click += new System.EventHandler(this.Button2_Click);
+            this.btnCrearPlan.Location = new System.Drawing.Point(320, 149);
+            this.btnCrearPlan.Name = "btnCrearPlan";
+            this.btnCrearPlan.Size = new System.Drawing.Size(248, 42);
+            this.btnCrearPlan.TabIndex = 9;
+            this.btnCrearPlan.Text = "Crear Plan";
+            this.btnCrearPlan.UseVisualStyleBackColor = true;
+            this.btnCrearPlan.Click += new System.EventHandler(this.OnBtnCrearPlanClick);
             // 
-            // Button1
+            // btnVerPlan
             // 
-            this.Button1.Location = new System.Drawing.Point(320, 197);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(248, 42);
-            this.Button1.TabIndex = 8;
-            this.Button1.Text = "Ver Plan";
-            this.Button1.UseVisualStyleBackColor = true;
-            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnVerPlan.Location = new System.Drawing.Point(320, 197);
+            this.btnVerPlan.Name = "btnVerPlan";
+            this.btnVerPlan.Size = new System.Drawing.Size(248, 42);
+            this.btnVerPlan.TabIndex = 8;
+            this.btnVerPlan.Text = "Ver Plan";
+            this.btnVerPlan.UseVisualStyleBackColor = true;
+            this.btnVerPlan.Click += new System.EventHandler(this.OnBtnVerPlanClick);
             // 
             // lblWelcome
             // 
@@ -91,11 +91,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 405);
             this.Controls.Add(this.lblWelcome);
-            this.Controls.Add(this.Button3);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.PictureBox1);
-            this.Controls.Add(this.Button2);
-            this.Controls.Add(this.Button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.btnCrearPlan);
+            this.Controls.Add(this.btnVerPlan);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GestionarPlanEjercicios";
             this.Text = "GestionarPlanEjercicios";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
@@ -106,10 +106,10 @@
 
         #endregion
 
-        internal System.Windows.Forms.Button Button3;
+        internal System.Windows.Forms.Button btnAtras;
         internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.Button Button2;
-        internal System.Windows.Forms.Button Button1;
+        internal System.Windows.Forms.Button btnCrearPlan;
+        internal System.Windows.Forms.Button btnVerPlan;
         private System.Windows.Forms.Label lblWelcome;
     }
 }

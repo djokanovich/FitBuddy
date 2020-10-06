@@ -33,24 +33,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearPlanEjercicio));
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.Label6 = new System.Windows.Forms.Label();
-            this.CheckBox6 = new System.Windows.Forms.CheckBox();
-            this.CheckBox5 = new System.Windows.Forms.CheckBox();
-            this.CheckBox4 = new System.Windows.Forms.CheckBox();
-            this.CheckBox3 = new System.Windows.Forms.CheckBox();
-            this.CheckBox2 = new System.Windows.Forms.CheckBox();
-            this.CheckBox1 = new System.Windows.Forms.CheckBox();
-            this.ComboBox4 = new System.Windows.Forms.ComboBox();
-            this.ComboBox3 = new System.Windows.Forms.ComboBox();
-            this.ComboBox2 = new System.Windows.Forms.ComboBox();
-            this.ComboBox1 = new System.Windows.Forms.ComboBox();
+            this.chkArtrosis = new System.Windows.Forms.CheckBox();
+            this.chkArticulaciones = new System.Windows.Forms.CheckBox();
+            this.chkEscoliosis = new System.Windows.Forms.CheckBox();
+            this.chkRodillas = new System.Windows.Forms.CheckBox();
+            this.chkRespiratorio = new System.Windows.Forms.CheckBox();
+            this.chkInfarto = new System.Windows.Forms.CheckBox();
+            this.cmbDisponibilidadHoras = new System.Windows.Forms.ComboBox();
+            this.cmbDisponibilidadDias = new System.Windows.Forms.ComboBox();
+            this.cmbObjetivo = new System.Windows.Forms.ComboBox();
+            this.cmbFrecuencia = new System.Windows.Forms.ComboBox();
             this.Label5 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
-            this.Button2 = new System.Windows.Forms.Button();
-            this.Button1 = new System.Windows.Forms.Button();
+            this.chkLimpiar = new System.Windows.Forms.Button();
+            this.btnEnviar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,97 +72,97 @@
             this.Label6.TabIndex = 34;
             this.Label6.Text = "Seleccione su respuesta de los formularios:";
             // 
-            // CheckBox6
+            // chkArtrosis
             // 
-            this.CheckBox6.AutoSize = true;
-            this.CheckBox6.Location = new System.Drawing.Point(361, 341);
-            this.CheckBox6.Name = "CheckBox6";
-            this.CheckBox6.Size = new System.Drawing.Size(245, 17);
-            this.CheckBox6.TabIndex = 33;
-            this.CheckBox6.Text = "Sufro de artrosis u algún otra dolencia crónica.";
-            this.CheckBox6.UseVisualStyleBackColor = true;
+            this.chkArtrosis.AutoSize = true;
+            this.chkArtrosis.Location = new System.Drawing.Point(361, 341);
+            this.chkArtrosis.Name = "chkArtrosis";
+            this.chkArtrosis.Size = new System.Drawing.Size(245, 17);
+            this.chkArtrosis.TabIndex = 33;
+            this.chkArtrosis.Text = "Sufro de artrosis u algún otra dolencia crónica.";
+            this.chkArtrosis.UseVisualStyleBackColor = true;
             // 
-            // CheckBox5
+            // chkArticulaciones
             // 
-            this.CheckBox5.AutoSize = true;
-            this.CheckBox5.Location = new System.Drawing.Point(361, 272);
-            this.CheckBox5.Name = "CheckBox5";
-            this.CheckBox5.Size = new System.Drawing.Size(221, 17);
-            this.CheckBox5.TabIndex = 32;
-            this.CheckBox5.Text = "Sufro de problemas en mis articulaciones.";
-            this.CheckBox5.UseVisualStyleBackColor = true;
+            this.chkArticulaciones.AutoSize = true;
+            this.chkArticulaciones.Location = new System.Drawing.Point(361, 272);
+            this.chkArticulaciones.Name = "chkArticulaciones";
+            this.chkArticulaciones.Size = new System.Drawing.Size(221, 17);
+            this.chkArticulaciones.TabIndex = 32;
+            this.chkArticulaciones.Text = "Sufro de problemas en mis articulaciones.";
+            this.chkArticulaciones.UseVisualStyleBackColor = true;
             // 
-            // CheckBox4
+            // chkEscoliosis
             // 
-            this.CheckBox4.AutoSize = true;
-            this.CheckBox4.Location = new System.Drawing.Point(361, 318);
-            this.CheckBox4.Name = "CheckBox4";
-            this.CheckBox4.Size = new System.Drawing.Size(108, 17);
-            this.CheckBox4.TabIndex = 31;
-            this.CheckBox4.Text = "Tengo escoliosis.";
-            this.CheckBox4.UseVisualStyleBackColor = true;
+            this.chkEscoliosis.AutoSize = true;
+            this.chkEscoliosis.Location = new System.Drawing.Point(361, 318);
+            this.chkEscoliosis.Name = "chkEscoliosis";
+            this.chkEscoliosis.Size = new System.Drawing.Size(108, 17);
+            this.chkEscoliosis.TabIndex = 31;
+            this.chkEscoliosis.Text = "Tengo escoliosis.";
+            this.chkEscoliosis.UseVisualStyleBackColor = true;
             // 
-            // CheckBox3
+            // chkRodillas
             // 
-            this.CheckBox3.AutoSize = true;
-            this.CheckBox3.Location = new System.Drawing.Point(361, 295);
-            this.CheckBox3.Name = "CheckBox3";
-            this.CheckBox3.Size = new System.Drawing.Size(340, 17);
-            this.CheckBox3.TabIndex = 30;
-            this.CheckBox3.Text = "He sufrido rotura de meñiscos o algún otro problema en las rodillas.";
-            this.CheckBox3.UseVisualStyleBackColor = true;
+            this.chkRodillas.AutoSize = true;
+            this.chkRodillas.Location = new System.Drawing.Point(361, 295);
+            this.chkRodillas.Name = "chkRodillas";
+            this.chkRodillas.Size = new System.Drawing.Size(340, 17);
+            this.chkRodillas.TabIndex = 30;
+            this.chkRodillas.Text = "He sufrido rotura de meñiscos o algún otro problema en las rodillas.";
+            this.chkRodillas.UseVisualStyleBackColor = true;
             // 
-            // CheckBox2
+            // chkRespiratorio
             // 
-            this.CheckBox2.AutoSize = true;
-            this.CheckBox2.Location = new System.Drawing.Point(361, 249);
-            this.CheckBox2.Name = "CheckBox2";
-            this.CheckBox2.Size = new System.Drawing.Size(263, 17);
-            this.CheckBox2.TabIndex = 29;
-            this.CheckBox2.Text = "Tengo alguna enfermedad o problema respiratorio.";
-            this.CheckBox2.UseVisualStyleBackColor = true;
+            this.chkRespiratorio.AutoSize = true;
+            this.chkRespiratorio.Location = new System.Drawing.Point(361, 249);
+            this.chkRespiratorio.Name = "chkRespiratorio";
+            this.chkRespiratorio.Size = new System.Drawing.Size(263, 17);
+            this.chkRespiratorio.TabIndex = 29;
+            this.chkRespiratorio.Text = "Tengo alguna enfermedad o problema respiratorio.";
+            this.chkRespiratorio.UseVisualStyleBackColor = true;
             // 
-            // CheckBox1
+            // chkInfarto
             // 
-            this.CheckBox1.AutoSize = true;
-            this.CheckBox1.Location = new System.Drawing.Point(361, 228);
-            this.CheckBox1.Name = "CheckBox1";
-            this.CheckBox1.Size = new System.Drawing.Size(270, 17);
-            this.CheckBox1.TabIndex = 28;
-            this.CheckBox1.Text = "He padecido un infarto o poseo alguna cardiopatía.";
-            this.CheckBox1.UseVisualStyleBackColor = true;
+            this.chkInfarto.AutoSize = true;
+            this.chkInfarto.Location = new System.Drawing.Point(361, 228);
+            this.chkInfarto.Name = "chkInfarto";
+            this.chkInfarto.Size = new System.Drawing.Size(270, 17);
+            this.chkInfarto.TabIndex = 28;
+            this.chkInfarto.Text = "He padecido un infarto o poseo alguna cardiopatía.";
+            this.chkInfarto.UseVisualStyleBackColor = true;
             // 
-            // ComboBox4
+            // cmbDisponibilidadHoras
             // 
-            this.ComboBox4.FormattingEnabled = true;
-            this.ComboBox4.Location = new System.Drawing.Point(364, 163);
-            this.ComboBox4.Name = "ComboBox4";
-            this.ComboBox4.Size = new System.Drawing.Size(121, 21);
-            this.ComboBox4.TabIndex = 27;
+            this.cmbDisponibilidadHoras.FormattingEnabled = true;
+            this.cmbDisponibilidadHoras.Location = new System.Drawing.Point(364, 163);
+            this.cmbDisponibilidadHoras.Name = "cmbDisponibilidadHoras";
+            this.cmbDisponibilidadHoras.Size = new System.Drawing.Size(121, 21);
+            this.cmbDisponibilidadHoras.TabIndex = 27;
             // 
-            // ComboBox3
+            // cmbDisponibilidadDias
             // 
-            this.ComboBox3.FormattingEnabled = true;
-            this.ComboBox3.Location = new System.Drawing.Point(364, 135);
-            this.ComboBox3.Name = "ComboBox3";
-            this.ComboBox3.Size = new System.Drawing.Size(121, 21);
-            this.ComboBox3.TabIndex = 26;
+            this.cmbDisponibilidadDias.FormattingEnabled = true;
+            this.cmbDisponibilidadDias.Location = new System.Drawing.Point(364, 135);
+            this.cmbDisponibilidadDias.Name = "cmbDisponibilidadDias";
+            this.cmbDisponibilidadDias.Size = new System.Drawing.Size(121, 21);
+            this.cmbDisponibilidadDias.TabIndex = 26;
             // 
-            // ComboBox2
+            // cmbObjetivo
             // 
-            this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(364, 109);
-            this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(121, 21);
-            this.ComboBox2.TabIndex = 25;
+            this.cmbObjetivo.FormattingEnabled = true;
+            this.cmbObjetivo.Location = new System.Drawing.Point(364, 109);
+            this.cmbObjetivo.Name = "cmbObjetivo";
+            this.cmbObjetivo.Size = new System.Drawing.Size(121, 21);
+            this.cmbObjetivo.TabIndex = 25;
             // 
-            // ComboBox1
+            // cmbFrecuencia
             // 
-            this.ComboBox1.FormattingEnabled = true;
-            this.ComboBox1.Location = new System.Drawing.Point(364, 82);
-            this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(121, 21);
-            this.ComboBox1.TabIndex = 24;
+            this.cmbFrecuencia.FormattingEnabled = true;
+            this.cmbFrecuencia.Location = new System.Drawing.Point(364, 82);
+            this.cmbFrecuencia.Name = "cmbFrecuencia";
+            this.cmbFrecuencia.Size = new System.Drawing.Size(121, 21);
+            this.cmbFrecuencia.TabIndex = 24;
             // 
             // Label5
             // 
@@ -218,51 +218,51 @@
             this.lblWelcome.Size = new System.Drawing.Size(0, 13);
             this.lblWelcome.TabIndex = 41;
             // 
-            // Button2
+            // chkLimpiar
             // 
-            this.Button2.Location = new System.Drawing.Point(546, 405);
-            this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(161, 39);
-            this.Button2.TabIndex = 43;
-            this.Button2.Text = "Limpiar";
-            this.Button2.UseVisualStyleBackColor = true;
+            this.chkLimpiar.Location = new System.Drawing.Point(546, 405);
+            this.chkLimpiar.Name = "chkLimpiar";
+            this.chkLimpiar.Size = new System.Drawing.Size(161, 39);
+            this.chkLimpiar.TabIndex = 43;
+            this.chkLimpiar.Text = "Limpiar";
+            this.chkLimpiar.UseVisualStyleBackColor = true;
             // 
-            // Button1
+            // btnEnviar
             // 
-            this.Button1.Location = new System.Drawing.Point(324, 405);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(163, 39);
-            this.Button1.TabIndex = 42;
-            this.Button1.Text = "Enviar";
-            this.Button1.UseVisualStyleBackColor = true;
-            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnEnviar.Location = new System.Drawing.Point(324, 405);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(163, 39);
+            this.btnEnviar.TabIndex = 42;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
             // 
             // CrearPlanEjercicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(857, 483);
-            this.Controls.Add(this.Button2);
-            this.Controls.Add(this.Button1);
+            this.Controls.Add(this.chkLimpiar);
+            this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.Label6);
-            this.Controls.Add(this.CheckBox6);
-            this.Controls.Add(this.CheckBox5);
-            this.Controls.Add(this.CheckBox4);
-            this.Controls.Add(this.CheckBox3);
-            this.Controls.Add(this.CheckBox2);
-            this.Controls.Add(this.CheckBox1);
-            this.Controls.Add(this.ComboBox4);
-            this.Controls.Add(this.ComboBox3);
-            this.Controls.Add(this.ComboBox2);
-            this.Controls.Add(this.ComboBox1);
+            this.Controls.Add(this.chkArtrosis);
+            this.Controls.Add(this.chkArticulaciones);
+            this.Controls.Add(this.chkEscoliosis);
+            this.Controls.Add(this.chkRodillas);
+            this.Controls.Add(this.chkRespiratorio);
+            this.Controls.Add(this.chkInfarto);
+            this.Controls.Add(this.cmbDisponibilidadHoras);
+            this.Controls.Add(this.cmbDisponibilidadDias);
+            this.Controls.Add(this.cmbObjetivo);
+            this.Controls.Add(this.cmbFrecuencia);
             this.Controls.Add(this.Label5);
             this.Controls.Add(this.Label4);
             this.Controls.Add(this.Label3);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CrearPlanEjercicio";
             this.Text = "CrearPlanEjercicio";
             this.Load += new System.EventHandler(this.CrearPlanEjercicio_Load);
@@ -274,16 +274,16 @@
 
         #endregion
         internal System.Windows.Forms.Label Label6;
-        internal System.Windows.Forms.CheckBox CheckBox6;
-        internal System.Windows.Forms.CheckBox CheckBox5;
-        internal System.Windows.Forms.CheckBox CheckBox4;
-        internal System.Windows.Forms.CheckBox CheckBox3;
-        internal System.Windows.Forms.CheckBox CheckBox2;
-        internal System.Windows.Forms.CheckBox CheckBox1;
-        internal System.Windows.Forms.ComboBox ComboBox4;
-        internal System.Windows.Forms.ComboBox ComboBox3;
-        internal System.Windows.Forms.ComboBox ComboBox2;
-        internal System.Windows.Forms.ComboBox ComboBox1;
+        internal System.Windows.Forms.CheckBox chkArtrosis;
+        internal System.Windows.Forms.CheckBox chkArticulaciones;
+        internal System.Windows.Forms.CheckBox chkEscoliosis;
+        internal System.Windows.Forms.CheckBox chkRodillas;
+        internal System.Windows.Forms.CheckBox chkRespiratorio;
+        internal System.Windows.Forms.CheckBox chkInfarto;
+        internal System.Windows.Forms.ComboBox cmbDisponibilidadHoras;
+        internal System.Windows.Forms.ComboBox cmbDisponibilidadDias;
+        internal System.Windows.Forms.ComboBox cmbObjetivo;
+        internal System.Windows.Forms.ComboBox cmbFrecuencia;
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label Label3;
@@ -291,7 +291,7 @@
         internal System.Windows.Forms.Label Label1;
         private System.Windows.Forms.PictureBox PictureBox1;
         private System.Windows.Forms.Label lblWelcome;
-        internal System.Windows.Forms.Button Button2;
-        internal System.Windows.Forms.Button Button1;
+        internal System.Windows.Forms.Button chkLimpiar;
+        internal System.Windows.Forms.Button btnEnviar;
     }
 }

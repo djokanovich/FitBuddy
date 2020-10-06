@@ -32,17 +32,20 @@ namespace DAL
 
         public DbSet<BE.Paciente> Paciente { get; set; }
 
-
         public DbSet<BE.Email> Emails { get; set; }
 
         public DbSet<BE.Domicilio> Domicilios { get; set; }
 
         public DbSet<BE.Dieta> Dietas { get; set; }
+
         public DbSet<BE.Comida> Comidas { get; set; }
 
         public DbSet<BE.PlanEjercicio> PlanEjercicios { get; set; }
+
         public DbSet<BE.Ejercicio> Ejercicios { get; set; }
+
         public DbSet<BE.Medico> Medicos { get; set; }
+
         public DbSet<BE.Reclamo> Reclamos { get; set; }
 
         public DbSet<BE.DiarioComidas> DiarioComidas { get; set; }
@@ -53,26 +56,18 @@ namespace DAL
 
         public override int SaveChanges() // se ejecuta cada vez que modifico o creo una fila en alguna tabla (record)
         {
-            foreach (var entidadConIntegridad in ChangeTracker.Entries()
-                .Where(e => e.Entity is IVerificoIntegridad &&
-                    (e.State == EntityState.Added || e.State == EntityState.Modified))
-                .Select(e => e.Entity as IVerificoIntegridad))
+            var entidadesConIntegridad =
+                ChangeTracker.Entries() // De todas las entidades que le pedí a Entity Framework que maneje...
+                    .Where(e => e.Entity is IVerificoIntegridad && // ...elijo las que implementan la interfaz IVerificoIntegridad...
+                        (e.State == EntityState.Added || e.State == EntityState.Modified)) // ...y que estoy creando o modificando.
+                    .Select(e => e.Entity as IVerificoIntegridad);
+
+            foreach (var entidadConIntegridad in entidadesConIntegridad)
             {
                 entidadConIntegridad.DVH = CodigoDeControl.Luhn(entidadConIntegridad.ConcatenarPropiedades());
             }
 
             return base.SaveChanges();
         }
-
-
-
-
-
-
-
-
-
-
-
     }
 }

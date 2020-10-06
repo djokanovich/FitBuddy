@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaPrincipal));
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Button8 = new System.Windows.Forms.Button();
-            this.Button9 = new System.Windows.Forms.Button();
-            this.Button6 = new System.Windows.Forms.Button();
-            this.Button7 = new System.Windows.Forms.Button();
-            this.Button5 = new System.Windows.Forms.Button();
-            this.Button4 = new System.Windows.Forms.Button();
-            this.Button3 = new System.Windows.Forms.Button();
-            this.Button2 = new System.Windows.Forms.Button();
-            this.Button1 = new System.Windows.Forms.Button();
+            this.btnAgendarTurno = new System.Windows.Forms.Button();
+            this.btnReclamosSugerencias = new System.Windows.Forms.Button();
+            this.btnContactarProfesional = new System.Windows.Forms.Button();
+            this.btnEstadisticas = new System.Windows.Forms.Button();
+            this.btnGestionarPlanEjercicio = new System.Windows.Forms.Button();
+            this.btnCargaDiariaEjercicios = new System.Windows.Forms.Button();
+            this.btnCargaDiariaComidas = new System.Windows.Forms.Button();
+            this.btnGestionarPlanAlimenticio = new System.Windows.Forms.Button();
+            this.btnGestionarPerfil = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnBackup = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,95 +54,95 @@
             this.PictureBox1.TabIndex = 19;
             this.PictureBox1.TabStop = false;
             // 
-            // Button8
+            // btnAgendarTurno
             // 
-            this.Button8.Location = new System.Drawing.Point(282, 215);
-            this.Button8.Name = "Button8";
-            this.Button8.Size = new System.Drawing.Size(179, 23);
-            this.Button8.TabIndex = 18;
-            this.Button8.Text = "Agendar Turno";
-            this.Button8.UseVisualStyleBackColor = true;
-            this.Button8.Click += new System.EventHandler(this.Button8_Click);
+            this.btnAgendarTurno.Location = new System.Drawing.Point(282, 215);
+            this.btnAgendarTurno.Name = "btnAgendarTurno";
+            this.btnAgendarTurno.Size = new System.Drawing.Size(179, 23);
+            this.btnAgendarTurno.TabIndex = 18;
+            this.btnAgendarTurno.Text = "Agendar Turno";
+            this.btnAgendarTurno.UseVisualStyleBackColor = true;
+            this.btnAgendarTurno.Click += new System.EventHandler(this.OnBtnAgendarTurnoClick);
             // 
-            // Button9
+            // btnReclamosSugerencias
             // 
-            this.Button9.Location = new System.Drawing.Point(282, 187);
-            this.Button9.Name = "Button9";
-            this.Button9.Size = new System.Drawing.Size(179, 23);
-            this.Button9.TabIndex = 17;
-            this.Button9.Text = "Reclamos y Sugerencias";
-            this.Button9.UseVisualStyleBackColor = true;
-            this.Button9.Click += new System.EventHandler(this.Button9_Click);
+            this.btnReclamosSugerencias.Location = new System.Drawing.Point(282, 187);
+            this.btnReclamosSugerencias.Name = "btnReclamosSugerencias";
+            this.btnReclamosSugerencias.Size = new System.Drawing.Size(179, 23);
+            this.btnReclamosSugerencias.TabIndex = 17;
+            this.btnReclamosSugerencias.Text = "Reclamos y Sugerencias";
+            this.btnReclamosSugerencias.UseVisualStyleBackColor = true;
+            this.btnReclamosSugerencias.Click += new System.EventHandler(this.OnBtnReclamosSugerenciasClick);
             // 
-            // Button6
+            // btnContactarProfesional
             // 
-            this.Button6.Location = new System.Drawing.Point(282, 158);
-            this.Button6.Name = "Button6";
-            this.Button6.Size = new System.Drawing.Size(179, 23);
-            this.Button6.TabIndex = 16;
-            this.Button6.Text = "Contactar Profesional";
-            this.Button6.UseVisualStyleBackColor = true;
-            this.Button6.Click += new System.EventHandler(this.Button6_Click);
+            this.btnContactarProfesional.Location = new System.Drawing.Point(282, 158);
+            this.btnContactarProfesional.Name = "btnContactarProfesional";
+            this.btnContactarProfesional.Size = new System.Drawing.Size(179, 23);
+            this.btnContactarProfesional.TabIndex = 16;
+            this.btnContactarProfesional.Text = "Contactar Profesional";
+            this.btnContactarProfesional.UseVisualStyleBackColor = true;
+            this.btnContactarProfesional.Click += new System.EventHandler(this.OnBtnContactarProfesionalClick);
             // 
-            // Button7
+            // btnEstadisticas
             // 
-            this.Button7.Location = new System.Drawing.Point(282, 128);
-            this.Button7.Name = "Button7";
-            this.Button7.Size = new System.Drawing.Size(179, 23);
-            this.Button7.TabIndex = 15;
-            this.Button7.Text = "Mis Estadísticas";
-            this.Button7.UseVisualStyleBackColor = true;
-            this.Button7.Click += new System.EventHandler(this.Button7_Click);
+            this.btnEstadisticas.Location = new System.Drawing.Point(282, 128);
+            this.btnEstadisticas.Name = "btnEstadisticas";
+            this.btnEstadisticas.Size = new System.Drawing.Size(179, 23);
+            this.btnEstadisticas.TabIndex = 15;
+            this.btnEstadisticas.Text = "Mis Estadísticas";
+            this.btnEstadisticas.UseVisualStyleBackColor = true;
+            this.btnEstadisticas.Click += new System.EventHandler(this.OnBtnEstadisticasClick);
             // 
-            // Button5
+            // btnGestionarPlanEjercicio
             // 
-            this.Button5.Location = new System.Drawing.Point(74, 244);
-            this.Button5.Name = "Button5";
-            this.Button5.Size = new System.Drawing.Size(189, 23);
-            this.Button5.TabIndex = 14;
-            this.Button5.Text = "Gestionar Plan de Ejercicio";
-            this.Button5.UseVisualStyleBackColor = true;
-            this.Button5.Click += new System.EventHandler(this.Button5_Click);
+            this.btnGestionarPlanEjercicio.Location = new System.Drawing.Point(74, 244);
+            this.btnGestionarPlanEjercicio.Name = "btnGestionarPlanEjercicio";
+            this.btnGestionarPlanEjercicio.Size = new System.Drawing.Size(189, 23);
+            this.btnGestionarPlanEjercicio.TabIndex = 14;
+            this.btnGestionarPlanEjercicio.Text = "Gestionar Plan de Ejercicio";
+            this.btnGestionarPlanEjercicio.UseVisualStyleBackColor = true;
+            this.btnGestionarPlanEjercicio.Click += new System.EventHandler(this.OnBtnGestionarPlanEjercicioClick);
             // 
-            // Button4
+            // btnCargaDiariaEjercicios
             // 
-            this.Button4.Location = new System.Drawing.Point(282, 99);
-            this.Button4.Name = "Button4";
-            this.Button4.Size = new System.Drawing.Size(179, 23);
-            this.Button4.TabIndex = 13;
-            this.Button4.Text = "Carga Diaria de Ejercicios";
-            this.Button4.UseVisualStyleBackColor = true;
-            this.Button4.Click += new System.EventHandler(this.Button4_Click);
+            this.btnCargaDiariaEjercicios.Location = new System.Drawing.Point(282, 99);
+            this.btnCargaDiariaEjercicios.Name = "btnCargaDiariaEjercicios";
+            this.btnCargaDiariaEjercicios.Size = new System.Drawing.Size(179, 23);
+            this.btnCargaDiariaEjercicios.TabIndex = 13;
+            this.btnCargaDiariaEjercicios.Text = "Carga Diaria de Ejercicios";
+            this.btnCargaDiariaEjercicios.UseVisualStyleBackColor = true;
+            this.btnCargaDiariaEjercicios.Click += new System.EventHandler(this.OnBtnCargaDiariaEjerciciosClick);
             // 
-            // Button3
+            // btnCargaDiariaComidas
             // 
-            this.Button3.Location = new System.Drawing.Point(282, 70);
-            this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(179, 23);
-            this.Button3.TabIndex = 12;
-            this.Button3.Text = "Carga Diaria de Comidas";
-            this.Button3.UseVisualStyleBackColor = true;
-            this.Button3.Click += new System.EventHandler(this.Button3_Click);
+            this.btnCargaDiariaComidas.Location = new System.Drawing.Point(282, 70);
+            this.btnCargaDiariaComidas.Name = "btnCargaDiariaComidas";
+            this.btnCargaDiariaComidas.Size = new System.Drawing.Size(179, 23);
+            this.btnCargaDiariaComidas.TabIndex = 12;
+            this.btnCargaDiariaComidas.Text = "Carga Diaria de Comidas";
+            this.btnCargaDiariaComidas.UseVisualStyleBackColor = true;
+            this.btnCargaDiariaComidas.Click += new System.EventHandler(this.OnBtnCargaDiariaComidasClick);
             // 
-            // Button2
+            // btnGestionarPlanAlimenticio
             // 
-            this.Button2.Location = new System.Drawing.Point(74, 215);
-            this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(189, 23);
-            this.Button2.TabIndex = 11;
-            this.Button2.Text = "Gestionar Plan Alimeticio";
-            this.Button2.UseVisualStyleBackColor = true;
-            this.Button2.Click += new System.EventHandler(this.Button2_Click);
+            this.btnGestionarPlanAlimenticio.Location = new System.Drawing.Point(74, 215);
+            this.btnGestionarPlanAlimenticio.Name = "btnGestionarPlanAlimenticio";
+            this.btnGestionarPlanAlimenticio.Size = new System.Drawing.Size(189, 23);
+            this.btnGestionarPlanAlimenticio.TabIndex = 11;
+            this.btnGestionarPlanAlimenticio.Text = "Gestionar Plan Alimeticio";
+            this.btnGestionarPlanAlimenticio.UseVisualStyleBackColor = true;
+            this.btnGestionarPlanAlimenticio.Click += new System.EventHandler(this.OnBtnGestionarPlanAlimenticioClick);
             // 
-            // Button1
+            // btnGestionarPerfil
             // 
-            this.Button1.Location = new System.Drawing.Point(74, 186);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(189, 23);
-            this.Button1.TabIndex = 10;
-            this.Button1.Text = "Gestionar Perfil";
-            this.Button1.UseVisualStyleBackColor = true;
-            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnGestionarPerfil.Location = new System.Drawing.Point(74, 186);
+            this.btnGestionarPerfil.Name = "btnGestionarPerfil";
+            this.btnGestionarPerfil.Size = new System.Drawing.Size(189, 23);
+            this.btnGestionarPerfil.TabIndex = 10;
+            this.btnGestionarPerfil.Text = "Gestionar Perfil";
+            this.btnGestionarPerfil.UseVisualStyleBackColor = true;
+            this.btnGestionarPerfil.Click += new System.EventHandler(this.OnBtnGestionarPerfilClick);
             // 
             // lblWelcome
             // 
@@ -153,34 +153,34 @@
             this.lblWelcome.Size = new System.Drawing.Size(0, 13);
             this.lblWelcome.TabIndex = 20;
             // 
-            // button10
+            // btnBackup
             // 
-            this.button10.Location = new System.Drawing.Point(282, 244);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(179, 23);
-            this.button10.TabIndex = 21;
-            this.button10.Text = "Backup";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.btnBackup.Location = new System.Drawing.Point(282, 244);
+            this.btnBackup.Name = "btnBackup";
+            this.btnBackup.Size = new System.Drawing.Size(179, 23);
+            this.btnBackup.TabIndex = 21;
+            this.btnBackup.Text = "Backup";
+            this.btnBackup.UseVisualStyleBackColor = true;
+            this.btnBackup.Click += new System.EventHandler(this.OnBtnBackupClick);
             // 
             // PantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 309);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.btnBackup);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.PictureBox1);
-            this.Controls.Add(this.Button8);
-            this.Controls.Add(this.Button9);
-            this.Controls.Add(this.Button6);
-            this.Controls.Add(this.Button7);
-            this.Controls.Add(this.Button5);
-            this.Controls.Add(this.Button4);
-            this.Controls.Add(this.Button3);
-            this.Controls.Add(this.Button2);
-            this.Controls.Add(this.Button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.btnAgendarTurno);
+            this.Controls.Add(this.btnReclamosSugerencias);
+            this.Controls.Add(this.btnContactarProfesional);
+            this.Controls.Add(this.btnEstadisticas);
+            this.Controls.Add(this.btnGestionarPlanEjercicio);
+            this.Controls.Add(this.btnCargaDiariaEjercicios);
+            this.Controls.Add(this.btnCargaDiariaComidas);
+            this.Controls.Add(this.btnGestionarPlanAlimenticio);
+            this.Controls.Add(this.btnGestionarPerfil);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PantallaPrincipal";
             this.Text = "PantallaPrincipal";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
@@ -192,16 +192,16 @@
         #endregion
 
         internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.Button Button8;
-        internal System.Windows.Forms.Button Button9;
-        internal System.Windows.Forms.Button Button6;
-        internal System.Windows.Forms.Button Button7;
-        internal System.Windows.Forms.Button Button5;
-        internal System.Windows.Forms.Button Button4;
-        internal System.Windows.Forms.Button Button3;
-        internal System.Windows.Forms.Button Button2;
-        internal System.Windows.Forms.Button Button1;
+        internal System.Windows.Forms.Button btnAgendarTurno;
+        internal System.Windows.Forms.Button btnReclamosSugerencias;
+        internal System.Windows.Forms.Button btnContactarProfesional;
+        internal System.Windows.Forms.Button btnEstadisticas;
+        internal System.Windows.Forms.Button btnGestionarPlanEjercicio;
+        internal System.Windows.Forms.Button btnCargaDiariaEjercicios;
+        internal System.Windows.Forms.Button btnCargaDiariaComidas;
+        internal System.Windows.Forms.Button btnGestionarPlanAlimenticio;
+        internal System.Windows.Forms.Button btnGestionarPerfil;
         private System.Windows.Forms.Label lblWelcome;
-        internal System.Windows.Forms.Button button10;
+        internal System.Windows.Forms.Button btnBackup;
     }
 }

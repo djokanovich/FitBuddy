@@ -1,4 +1,6 @@
-﻿using FitBuddy.WinForms.UI.Security;
+﻿using FitBuddy.Business;
+using FitBuddy.Entidades;
+using FitBuddy.WinForms.UI.Security;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,8 +11,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BE;
-using BLL;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {

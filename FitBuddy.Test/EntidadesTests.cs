@@ -1,5 +1,5 @@
 ﻿using System;
-using BE;
+using FitBuddy.Entidades;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FitBuddy.Test

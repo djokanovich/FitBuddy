@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{3A137CE8-AD5C-49EA-9015-239EDFB4270B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitBuddy.DataAccess", "FitBuddy.DataAccess\FitBuddy.DataAccess.csproj", "{3A137CE8-AD5C-49EA-9015-239EDFB4270B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitBuddy.Entidades", "FitBuddy.Entidades\FitBuddy.Entidades.csproj", "{96AAB3BC-CD44-4A9E-9847-7F16480A774D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{EE2BB302-6125-4327-AF75-7AEFEED8C058}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitBuddy.Business", "FitBuddy.Business\FitBuddy.Business.csproj", "{EE2BB302-6125-4327-AF75-7AEFEED8C058}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitBuddy.WinForms.UI", "FitBuddy.WinForms.UI\FitBuddy.WinForms.UI.csproj", "{5CD29A6A-30BE-4EBC-A937-A813FD050ECD}"
 EndProject

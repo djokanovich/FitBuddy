@@ -1,4 +1,4 @@
-﻿using BE.Interfaces;
+﻿using FitBuddy.Entidades.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

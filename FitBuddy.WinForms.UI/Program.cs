@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BLL;
 using FitBuddy.WinForms.UI.Formularios;
 using FitBuddy.WinForms.UI.Security;
+using FitBuddy.Business;
 
 namespace FitBuddy.WinForms.UI
 {

@@ -1,6 +1,6 @@
-﻿using BE;
-using Bitacora;
-using BLL;
+﻿using Bitacora;
+using FitBuddy.Business;
+using FitBuddy.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

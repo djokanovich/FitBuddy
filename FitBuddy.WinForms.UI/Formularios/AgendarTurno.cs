@@ -1,4 +1,4 @@
-﻿using BLL;
+﻿using FitBuddy.Business;
 using FitBuddy.WinForms.UI.Security;
 using System;
 using System.Collections.Generic;

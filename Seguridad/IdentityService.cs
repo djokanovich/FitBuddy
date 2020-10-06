@@ -1,4 +1,4 @@
-﻿using BE;
+﻿using FitBuddy.Entidades;
 using MassTransit;
 using OpenQA.Selenium.Remote;
 using SendGrid;

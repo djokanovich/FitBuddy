@@ -206,6 +206,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FitBuddy.Business\FitBuddy.Business.csproj">
+      <Project>{ee2bb302-6125-4327-af75-7aefeed8c058}</Project>
+      <Name>FitBuddy.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FitBuddy.Entidades\FitBuddy.Entidades.csproj">
       <Project>{96AAB3BC-CD44-4A9E-9847-7F16480A774D}</Project>
       <Name>FitBuddy.Entidades</Name>
@@ -213,10 +217,6 @@
     <ProjectReference Include="..\Bitacora\Bitacora.csproj">
       <Project>{DA778C24-2F10-457A-AEED-9BBDC03C70B4}</Project>
       <Name>Bitacora</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{ee2bb302-6125-4327-af75-7aefeed8c058}</Project>
-      <Name>BLL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

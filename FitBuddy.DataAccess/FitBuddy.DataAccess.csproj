@@ -135,6 +135,10 @@
     <Compile Include="Migrations\202010042303111_addgenero.designer.cs">
       <DependentUpon>202010042303111_addgenero.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010062335097_modificoPaciente.cs" />
+    <Compile Include="Migrations\202010062335097_modificoPaciente.designer.cs">
+      <DependentUpon>202010062335097_modificoPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\MedicoDAL.cs" />
@@ -216,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010042303111_addgenero.resx">
       <DependentUpon>202010042303111_addgenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010062335097_modificoPaciente.resx">
+      <DependentUpon>202010062335097_modificoPaciente.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

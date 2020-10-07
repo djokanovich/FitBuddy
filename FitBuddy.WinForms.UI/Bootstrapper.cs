@@ -20,8 +20,8 @@ namespace FitBuddy.WinForms.UI
                 .WithParameter("path", logPath);
 
             builder.RegisterType<AcercaDe>().AsSelf();
-            builder.RegisterType<LogIn>().AsSelf();
-            builder.RegisterType<RegistrarNuevoUsuario>().AsSelf();
+            //builder.RegisterType<LogIn>().AsSelf();
+            //builder.RegisterType<RegistrarNuevoUsuario>().AsSelf();
 
             return builder.Build();
         }

@@ -45,27 +45,30 @@
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(652, 342);
+            this.btnAtras.Location = new System.Drawing.Point(1304, 658);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.Size = new System.Drawing.Size(150, 44);
             this.btnAtras.TabIndex = 20;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(648, 132);
+            this.btnEnviar.Location = new System.Drawing.Point(1296, 254);
+            this.btnEnviar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(75, 23);
+            this.btnEnviar.Size = new System.Drawing.Size(150, 44);
             this.btnEnviar.TabIndex = 19;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(648, 102);
+            this.btnBorrar.Location = new System.Drawing.Point(1296, 196);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrar.Size = new System.Drawing.Size(150, 44);
             this.btnBorrar.TabIndex = 18;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
@@ -73,9 +76,10 @@
             // PictureBox1
             // 
             this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(44, 75);
+            this.PictureBox1.Location = new System.Drawing.Point(88, 144);
+            this.PictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(223, 246);
+            this.PictureBox1.Size = new System.Drawing.Size(446, 473);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.PictureBox1.TabIndex = 17;
             this.PictureBox1.TabStop = false;
@@ -83,60 +87,66 @@
             // cmbPorcion
             // 
             this.cmbPorcion.FormattingEnabled = true;
-            this.cmbPorcion.Location = new System.Drawing.Point(404, 136);
+            this.cmbPorcion.Location = new System.Drawing.Point(808, 262);
+            this.cmbPorcion.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cmbPorcion.Name = "cmbPorcion";
-            this.cmbPorcion.Size = new System.Drawing.Size(200, 21);
+            this.cmbPorcion.Size = new System.Drawing.Size(396, 33);
             this.cmbPorcion.TabIndex = 16;
             // 
             // cmbComida
             // 
             this.cmbComida.FormattingEnabled = true;
-            this.cmbComida.Location = new System.Drawing.Point(404, 105);
+            this.cmbComida.Location = new System.Drawing.Point(808, 202);
+            this.cmbComida.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cmbComida.Name = "cmbComida";
-            this.cmbComida.Size = new System.Drawing.Size(200, 21);
+            this.cmbComida.Size = new System.Drawing.Size(396, 33);
             this.cmbComida.TabIndex = 15;
+            this.cmbComida.SelectedIndexChanged += new System.EventHandler(this.cmbComida_SelectedIndexChanged);
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(324, 144);
+            this.Label2.Location = new System.Drawing.Point(648, 277);
+            this.Label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(43, 13);
+            this.Label2.Size = new System.Drawing.Size(85, 25);
             this.Label2.TabIndex = 14;
             this.Label2.Text = "Porción";
             // 
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(324, 108);
+            this.Label1.Location = new System.Drawing.Point(648, 208);
+            this.Label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(42, 13);
+            this.Label1.Size = new System.Drawing.Size(85, 25);
             this.Label1.TabIndex = 13;
             this.Label1.Text = "Comida";
             // 
             // DataGridView1
             // 
             this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView1.Location = new System.Drawing.Point(320, 188);
+            this.DataGridView1.Location = new System.Drawing.Point(640, 362);
+            this.DataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.RowHeadersWidth = 82;
-            this.DataGridView1.Size = new System.Drawing.Size(407, 133);
+            this.DataGridView1.Size = new System.Drawing.Size(814, 256);
             this.DataGridView1.TabIndex = 12;
             // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(676, 33);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblWelcome.Location = new System.Drawing.Point(1352, 63);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 13);
+            this.lblWelcome.Size = new System.Drawing.Size(0, 25);
             this.lblWelcome.TabIndex = 21;
             // 
             // CargarAlimento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 447);
+            this.ClientSize = new System.Drawing.Size(1924, 860);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnEnviar);
@@ -147,7 +157,7 @@
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.DataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CargarAlimento";
             this.Text = "CargarAlimento";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();

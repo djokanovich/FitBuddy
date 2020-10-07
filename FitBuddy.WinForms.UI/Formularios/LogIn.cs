@@ -17,13 +17,11 @@ namespace FitBuddy.WinForms.UI.Formularios
     public partial class LogIn : Form
     {
         private readonly IBitacora _bitacora;
-        private readonly RegistrarNuevoUsuario _registrarNuevoUsuario;
 
-        public LogIn(IBitacora bitacora, RegistrarNuevoUsuario registrarNuevoUsuario)
+        public LogIn(IBitacora bitacora)
         {
             InitializeComponent();
             _bitacora = bitacora;
-            _registrarNuevoUsuario = registrarNuevoUsuario;
         }
 
         private void OnBtnAceptarClick(object sender, EventArgs e)
@@ -59,7 +57,8 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnLnkRegistrarUsuarioClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            _registrarNuevoUsuario.Show();
+            var registrarNuevoUsuario = new RegistrarNuevoUsuario(_bitacora);
+            registrarNuevoUsuario.Show();
             Close();
         }
     }

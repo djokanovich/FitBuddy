@@ -20,5 +20,10 @@ namespace FitBuddy.WinForms.UI.Formularios
             var customPrincipal = Thread.CurrentPrincipal as CustomPrincipal;
             lblWelcome.Text = $"Usuario {customPrincipal.Identity.Name}";
         }
+
+        private void cmbComida_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

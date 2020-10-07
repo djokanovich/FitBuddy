@@ -25,14 +25,21 @@ namespace FitBuddy.Entidades
         public string Genero { get; set; }
 
         // Perfil Dieta
-        public bool AlergHuevo { get; set; }
-        public bool AlergLacteos { get; set; }
-        public bool AlergMariscos { get; set; }
-        public bool AlergSecos { get; set; }
-        public bool AlergTomates { get; set; }
-        public bool Celiaco { get; set; }
-        public bool Vegano { get; set; }
-        public bool Vegetariano { get; set; }
+        public bool Huevo { get; set; }
+        public bool Tomate { get; set; }
+        public bool Cerdo { get; set; }
+        public bool Pollo { get; set; }
+        public bool Vaca { get; set; }
+        public bool Pescado { get; set; }
+        public bool Mariscos { get; set; }
+        public bool Leche { get; set; }
+        public bool FrutosSecos { get; set; }
+        public bool Queso { get; set; }
+        public bool Tacc { get; set; }
+        public bool Fructuosa { get; set; }
+        public bool HojasVerdes { get; set; }
+        public bool Soja { get; set; }
+        public bool FrutasRojas { get; set; }
 
         // Perfil Físico
 

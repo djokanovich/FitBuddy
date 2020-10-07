@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Bitacora;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,17 +13,18 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class AcercaDe : Form
     {
-        private readonly LogIn _logIn;
+        private readonly IBitacora _bitacora;
 
-        public AcercaDe(LogIn logIn)
+        public AcercaDe(IBitacora bitacora)
         {
             InitializeComponent();
-            _logIn = logIn;
+            _bitacora = bitacora;
         }
 
         private void OKButton_Click(object sender, EventArgs e)
         {
-            _logIn.Show();
+            var logIn = new LogIn(_bitacora);
+            logIn.Show();
         }
     }
 }

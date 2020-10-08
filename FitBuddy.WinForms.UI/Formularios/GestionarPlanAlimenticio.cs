@@ -6,18 +6,18 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class GestionarPlanAlimenticio : Form
     {
-        private readonly IFormManager _formBuilder;
+        private readonly IFormManager _formManager;
 
-        public GestionarPlanAlimenticio(IFormManager formBuilder)
+        public GestionarPlanAlimenticio(IFormManager formManager)
         {
             InitializeComponent();
             lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
-            _formBuilder = formBuilder;
+            _formManager = formManager;
         }
 
         private void OnBtnCrearDietaClick(object sender, EventArgs e)
         {
-            _formBuilder.Show<CrearDieta>();
+            _formManager.Show<CrearDieta>();
         }
 
         private void OnBtnVerDietaClick(object sender, EventArgs e)
@@ -27,7 +27,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnAtrasClick(object sender, EventArgs e)
         {
-            _formBuilder.Close(this);
+            _formManager.Close(this);
         }
     }
 }

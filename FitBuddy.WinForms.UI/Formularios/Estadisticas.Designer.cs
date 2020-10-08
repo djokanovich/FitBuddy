@@ -1,6 +1,6 @@
 ﻿namespace FitBuddy.WinForms.UI.Formularios
 {
-    partial class Estadisticas
+    partial class Estadísticas
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblIMC = new System.Windows.Forms.Label();
-            this.lblIGC = new System.Windows.Forms.Label();
+            this.lblImc = new System.Windows.Forms.Label();
+            this.lblIgc = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -39,70 +39,78 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 162);
+            this.label1.Location = new System.Drawing.Point(29, 84);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(304, 25);
+            this.label1.Size = new System.Drawing.Size(150, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Índice de Masa Corporal (IMC)";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 398);
+            this.label2.Location = new System.Drawing.Point(26, 207);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(307, 25);
+            this.label2.Size = new System.Drawing.Size(151, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Índice de Grasa Corporal (IGC)";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // lblIMC
+            // lblImc
             // 
-            this.lblIMC.AutoSize = true;
-            this.lblIMC.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIMC.Location = new System.Drawing.Point(129, 226);
-            this.lblIMC.Name = "lblIMC";
-            this.lblIMC.Size = new System.Drawing.Size(0, 60);
-            this.lblIMC.TabIndex = 2;
-            this.lblIMC.Click += new System.EventHandler(this.Label3_Click);
+            this.lblImc.AutoSize = true;
+            this.lblImc.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImc.Location = new System.Drawing.Point(64, 118);
+            this.lblImc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblImc.Name = "lblImc";
+            this.lblImc.Size = new System.Drawing.Size(66, 32);
+            this.lblImc.TabIndex = 2;
+            this.lblImc.Text = "IMC";
             // 
-            // lblIGC
+            // lblIgc
             // 
-            this.lblIGC.AutoSize = true;
-            this.lblIGC.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIGC.Location = new System.Drawing.Point(119, 479);
-            this.lblIGC.Name = "lblIGC";
-            this.lblIGC.Size = new System.Drawing.Size(0, 63);
-            this.lblIGC.TabIndex = 3;
+            this.lblIgc.AutoSize = true;
+            this.lblIgc.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIgc.Location = new System.Drawing.Point(60, 249);
+            this.lblIgc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIgc.Name = "lblIgc";
+            this.lblIgc.Size = new System.Drawing.Size(63, 31);
+            this.lblIgc.TabIndex = 3;
+            this.lblIgc.Text = "IGC";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(58, 56);
+            this.label5.Location = new System.Drawing.Point(29, 29);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(212, 25);
+            this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Métricas del usuario:";
             // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(291, 56);
+            this.lblWelcome.Location = new System.Drawing.Point(146, 29);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 25);
+            this.lblWelcome.Size = new System.Drawing.Size(43, 13);
             this.lblWelcome.TabIndex = 5;
+            this.lblWelcome.Text = "Usuario";
             // 
-            // Estadisticas
+            // Estadísticas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 738);
+            this.ClientSize = new System.Drawing.Size(550, 384);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.lblIGC);
-            this.Controls.Add(this.lblIMC);
+            this.Controls.Add(this.lblIgc);
+            this.Controls.Add(this.lblImc);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Estadisticas";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "Estadísticas";
             this.Text = "Estadisticas";
             this.Load += new System.EventHandler(this.Estadisticas_Load);
             this.ResumeLayout(false);
@@ -114,8 +122,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblIMC;
-        private System.Windows.Forms.Label lblIGC;
+        private System.Windows.Forms.Label lblImc;
+        private System.Windows.Forms.Label lblIgc;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblWelcome;
     }

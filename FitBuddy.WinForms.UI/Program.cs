@@ -17,13 +17,13 @@ namespace FitBuddy.WinForms.UI
         {
             _container = new Bootstrapper().Bootstrap();
 
-            // FormBuilder es un singleton que resuelve formulario en tiempo de ejecución.
+            // FormManager es un singleton que resuelve formulario en tiempo de ejecución.
             // Le asigno el contenedor de IoC, para que lo use para resolver los formularios.
-            // A su vez, FormBuilder lo resuelve el contenedor de IoC.
+            // A su vez, FormManager lo resuelve el contenedor de IoC.
             // Es un problema del tipo del huevo y la gallina, y esta es una manera simple
             // de resolverlo (el doble sentido de la palabra 'resolver' es intencional).
-            var formBuilder = _container.Resolve<IFormManager>();
-            formBuilder.Container = _container;
+            var formManager = _container.Resolve<IFormManager>();
+            formManager.Container = _container;
 
             var fitBuddyApp = _container.Resolve<FitBuddyApp>();
             fitBuddyApp.AbrirVentanaPrincipal += AbrirVentanaPrincipal;

@@ -10,12 +10,12 @@ namespace FitBuddy.WinForms.UI.Formularios
     public partial class RegistrarNuevoUsuario : Form
     {
         private readonly IFormManager _formBuilder;
-        private readonly IBitacora _bitacora;
+        private readonly IBitacora<RegistrarNuevoUsuario> _bitacora;
         private readonly IPasswordValidator _passwordValidator;
         private readonly IEmailValidator _emailValidator;
         private readonly IUsuarioFacade _usuarioFacade;
 
-        public RegistrarNuevoUsuario(IFormManager formBuilder, IBitacora bitacora, IPasswordValidator passwordValidator, IEmailValidator emailValidator, IUsuarioFacade usuarioFacade)
+        public RegistrarNuevoUsuario(IFormManager formBuilder, IBitacora<RegistrarNuevoUsuario> bitacora, IPasswordValidator passwordValidator, IEmailValidator emailValidator, IUsuarioFacade usuarioFacade)
         {
             InitializeComponent();
             _formBuilder = formBuilder;

@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Common.Bitacora
 {
-    public class Bitacora : IBitacora
+    public class Bitacora<T> : IBitacora<T>
     {
         private const NivelMensajeBitacora NivelMensajesBitacoraPorDefecto = NivelMensajeBitacora.Info;
 
@@ -42,9 +42,7 @@ namespace Common.Bitacora
         private void Log(string mensaje, NivelMensajeBitacora nivelMensaje)
         {
             if (nivelMensaje < _minimoNivelMensajesBitacora)
-            {
                 return;
-            }
 
             using (var writer = File.AppendText(_path))
             {
@@ -54,7 +52,11 @@ namespace Common.Bitacora
 
         private string FormatMessage(string mensaje, NivelMensajeBitacora logLevel)
         {
-            return $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} [{logLevel.ToString().ToUpperInvariant(),-11}] - {mensaje}";
+            var timeStamp = DateTime.Now;
+            var logLevelString = logLevel.ToString().ToUpperInvariant();
+            var usedInType = $"{typeof(T).Namespace}.{typeof(T).Name}";
+            
+            return $"{timeStamp:yyyy-MM-dd HH:mm:ss} [{logLevelString,-11}] {usedInType} : {mensaje}";
         }
     }
 }

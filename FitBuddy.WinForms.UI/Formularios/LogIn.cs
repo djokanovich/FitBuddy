@@ -9,10 +9,10 @@ namespace FitBuddy.WinForms.UI.Formularios
     public partial class LogIn : Form
     {
         private readonly IFormManager _formManager;
-        private readonly IBitacora _bitacora;
+        private readonly IBitacora<LogIn> _bitacora;
         private readonly IUsuarioFacade _usuarioFacade;
 
-        public LogIn(IFormManager formManager, IBitacora bitacora, IUsuarioFacade usuarioFacade)
+        public LogIn(IFormManager formManager, IBitacora<LogIn> bitacora, IUsuarioFacade usuarioFacade)
         {
             InitializeComponent();
             _formManager = formManager;

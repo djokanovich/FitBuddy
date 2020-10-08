@@ -7,10 +7,10 @@ namespace FitBuddy.WinForms.UI
 {
     internal class FitBuddyApp
     {
-        private readonly IBitacora _bitacora;
+        private readonly IBitacora<FitBuddyApp> _bitacora;
         private readonly IIntegridadBusinessLogic _integridadBusinessLogic;
 
-        public FitBuddyApp(IBitacora bitacora, IIntegridadBusinessLogic integridadBusinessLogic)
+        public FitBuddyApp(IBitacora<FitBuddyApp> bitacora, IIntegridadBusinessLogic integridadBusinessLogic)
         {
             _bitacora = bitacora;
             _integridadBusinessLogic = integridadBusinessLogic;

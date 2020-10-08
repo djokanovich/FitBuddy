@@ -17,7 +17,8 @@ namespace FitBuddy.WinForms.UI
 
             var path = Properties.Settings.Default.ArchivoBitacora;
             var minimoNivelMensajesBitacora = Properties.Settings.Default.MinimoNivelMensajesBitacora;
-            builder.RegisterType<Bitacora>().As<IBitacora>()
+            builder.RegisterGeneric(typeof(Bitacora<>))
+                .As(typeof(IBitacora<>))
                 .WithParameter("path", path)
                 .WithParameter("minimoNivelMensajesBitacora", minimoNivelMensajesBitacora);
             builder.RegisterType<HashService>().As<IHashService>();

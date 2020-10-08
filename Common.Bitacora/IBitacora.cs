@@ -1,6 +1,6 @@
 ﻿namespace Common.Bitacora
 {
-    public interface IBitacora
+    public interface IBitacora<T>
     {
         void Debug(string mensaje);
         void Info(string mensaje);

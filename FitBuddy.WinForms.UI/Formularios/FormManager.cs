@@ -19,9 +19,9 @@ namespace FitBuddy.WinForms.UI.Formularios
 
     public class FormManager : IFormManager
     {
-        private readonly IBitacora _bitacora;
+        private readonly IBitacora<FormManager> _bitacora;
 
-        public FormManager(IBitacora bitacora)
+        public FormManager(IBitacora<FormManager> bitacora)
         {
             _bitacora = bitacora;
         }

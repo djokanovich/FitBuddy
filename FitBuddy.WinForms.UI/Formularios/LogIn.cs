@@ -36,17 +36,17 @@ namespace FitBuddy.WinForms.UI.Formularios
                 // TODO: Definir los roles
                 customPrincipal.Identity = new CustomIdentity(usuario.Id, usuario.Username, null);
 
+                _bitacora.Info($"Se ha logueado el usuario {usuario.Username}.");
+                MessageBox.Show("Logueado correctamente.");
                 var pantallaprincipal = new PantallaPrincipal();
-                MessageBox.Show("Logueado correctamente");
-                _bitacora.Agregar("Se ha logueado el usuario" + usuario.Username);
                 pantallaprincipal.Show();
                 Close();
             }
             else
             {
                 // no loguearlo
-                MessageBox.Show("Usuario o contraseña incorrectos");
-                _bitacora.Agregar("El usuario ha intentado ingresar al sistema sin éxito " + txtUsername.Text);
+                _bitacora.Debug($"El usuario '{txtUsername.Text}' ha intentado ingresar al sistema sin éxito.");
+                MessageBox.Show("Usuario o contraseña incorrectos.");
             }
         }
 

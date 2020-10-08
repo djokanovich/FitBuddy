@@ -13,11 +13,13 @@ namespace FitBuddy.WinForms.UI
         {
             var builder = new ContainerBuilder();
 
-            var logPath = Properties.Settings.Default.ArchivoBitacora;
             builder.RegisterModule<BusinessModule>();
 
+            var path = Properties.Settings.Default.ArchivoBitacora;
+            var minimoNivelMensajesBitacora = Properties.Settings.Default.MinimoNivelMensajesBitacora;
             builder.RegisterType<Bitacora>().As<IBitacora>()
-                .WithParameter("path", logPath);
+                .WithParameter("path", path)
+                .WithParameter("minimoNivelMensajesBitacora", minimoNivelMensajesBitacora);
 
             builder.RegisterType<FitBuddyApp>().AsSelf();
 

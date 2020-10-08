@@ -2,6 +2,9 @@
 {
     public interface IBitacora
     {
-        void Agregar(string mensaje);
+        void Debug(string mensaje);
+        void Info(string mensaje);
+        void Advertencia(string mensaje);
+        void Error(string mensaje);
     }
 }

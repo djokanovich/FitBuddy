@@ -31,5 +31,14 @@ namespace FitBuddy.WinForms.UI.Properties {
                 return ((string)(this["ArchivoBitacora"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Info")]
+        public string MinimoNivelMensajesBitacora {
+            get {
+                return ((string)(this["MinimoNivelMensajesBitacora"]));
+            }
+        }
     }
 }

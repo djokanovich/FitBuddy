@@ -63,8 +63,8 @@ namespace FitBuddy.WinForms.UI.Formularios
             var gesUsuario = new gesUsuario();
             if (gesUsuario.GuardarUsuario(usuario, txtPassword.Text) > 0)
             {
-                MessageBox.Show("El usuario fue registrado con éxito");
-                _bitacora.Agregar($"Se ha registrado el usuario {usuario.Username} con éxito");
+                MessageBox.Show($"El usuario {usuario.Username} fue registrado con éxito.");
+                _bitacora.Info($"Se ha registrado el usuario {usuario.Username} con éxito.");
                 _formBuilder.Show<LogIn>();
                 Close();
             }

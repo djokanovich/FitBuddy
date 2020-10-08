@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FitBuddy.Entidades
 {
-   public class Paciente
+    public class Paciente
     {
-        public int UsuarioId { get; set; }
-        public Usuario Usuario { get; set; }
-
         // Perfil paciente
         public int Id { get; set; }
         public int Altura { get; set; }
@@ -23,6 +16,10 @@ namespace FitBuddy.Entidades
         public int Peso { get; set; }
         public DateTime FechaRegistroPerfil { get; set; }
         public string Genero { get; set; }
+
+        // Propiedades de navegación
+        public int UsuarioId { get; set; }
+        public Usuario Usuario { get; set; }
 
         // Perfil Dieta
         public bool Huevo { get; set; }

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FitBuddy.Entidades
+﻿namespace FitBuddy.Entidades
 {
-   public class Medico
+    public class Medico
     {
         public int Id { get; set; }
         public string Email { get; set; }

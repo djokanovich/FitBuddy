@@ -2,25 +2,20 @@
 using FitBuddy.Business;
 using FitBuddy.WinForms.UI.Security;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class LogIn : Form
     {
+        private readonly IFormBuilder _formBuilder;
         private readonly IBitacora _bitacora;
 
-        public LogIn(IBitacora bitacora)
+        public LogIn(IFormBuilder formBuilder, IBitacora bitacora)
         {
             InitializeComponent();
+            _formBuilder = formBuilder;
             _bitacora = bitacora;
         }
 
@@ -45,7 +40,7 @@ namespace FitBuddy.WinForms.UI.Formularios
                 MessageBox.Show("Logueado correctamente");
                 _bitacora.Agregar("Se ha logueado el usuario" + usuario.Username);
                 pantallaprincipal.Show();
-                this.Close();
+                Close();
             }
             else
             {
@@ -57,8 +52,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnLnkRegistrarUsuarioClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            var registrarNuevoUsuario = new RegistrarNuevoUsuario(_bitacora);
-            registrarNuevoUsuario.Show();
+            _formBuilder.Show<RegistrarNuevoUsuario>();
             Close();
         }
     }

@@ -16,10 +16,10 @@ namespace FitBuddy.Business
             return pacienteDAL.CrearPaciente(paciente);
         }
 
-        public Paciente ObtenerPaciente(int idUsuario)
+        public Paciente ObtenerPaciente(int usuarioId)
         {
             var pacienteDAL = new PacienteDAL();
-            return pacienteDAL.ObtenerPaciente(idUsuario);
+            return pacienteDAL.ObtenerPaciente(usuarioId);
         }
 
         public void ActualizarPaciente(Paciente paciente)

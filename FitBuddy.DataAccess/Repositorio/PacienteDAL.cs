@@ -18,19 +18,18 @@ namespace FitBuddy.DataAccess.Repositorio
             }
         }
 
-        public Paciente ObtenerPaciente(int idUsuario)
+        public Paciente ObtenerPaciente(int usuarioId)
         {
-
             using (var dbContext = new AppDbContext())
             {
-                var paciente = dbContext.Paciente.SingleOrDefault(p => p.Id == idUsuario);
+                var paciente = dbContext.Paciente.SingleOrDefault(p => p.Id == usuarioId);
                 if (paciente == null)
                 {
                     var usuarioDAL = new UsuarioDAL();
-                    var usuario = usuarioDAL.ObtenerUsuario(idUsuario);
+                    var usuario = usuarioDAL.ObtenerUsuario(usuarioId);
                     paciente = new Paciente
                     {
-                        UsuarioId = idUsuario,
+                        UsuarioId = usuarioId,
                         Usuario = usuario
                     };
                     CrearPaciente(paciente);

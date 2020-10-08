@@ -81,6 +81,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FitBuddyApp.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Formularios\AcercaDe.cs">
       <SubType>Form</SubType>
@@ -124,6 +125,7 @@
     <Compile Include="Formularios\CrearPlanEjercicio.Designer.cs">
       <DependentUpon>CrearPlanEjercicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FormBuilder.cs" />
     <Compile Include="Formularios\GestionarPerfil.cs">
       <SubType>Form</SubType>
     </Compile>

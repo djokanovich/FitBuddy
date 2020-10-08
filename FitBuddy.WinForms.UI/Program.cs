@@ -1,57 +1,42 @@
-﻿using Common.Bitacora;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 using FitBuddy.WinForms.UI.Formularios;
-using FitBuddy.WinForms.UI.Security;
-using FitBuddy.Business;
 using Autofac;
 
 namespace FitBuddy.WinForms.UI
 {
     static class Program
     {
+        private static IContainer _container;
+
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            // Registro los tipos de datos a ser inyectados por el Contenedor de IoC.
-            var bootstrapper = new Bootstrapper();
-            var container = bootstrapper.Bootstrap();
+            _container = new Bootstrapper().Bootstrap();
 
+            // FormBuilder es un singleton que resuelve formulario en tiempo de ejecución.
+            // Le asigno el contenedor de IoC, para que lo use para resolver los formularios.
+            // A su vez, FormBuilder lo resuelve el contenedor de IoC.
+            // Es un problema del tipo del huevo y la gallina, y esta es una manera simple
+            // de resolverlo (el doble sentido de la palabra 'resolver' es intencional).
+            var formBuilder = _container.Resolve<IFormBuilder>();
+            formBuilder.Container = _container;
 
-            // Verificar los códigos de verificación.
+            var fitBuddyApp = _container.Resolve<FitBuddyApp>();
+            fitBuddyApp.AbrirVentanaPrincipal += AbrirVentanaPrincipal;
+            fitBuddyApp.Iniciar();
+        }
 
-
-            var servicioIntegridadBll = new ServicioIntegridadBLL();
-
-            // TODO Borrar
-            //var path = Properties.Settings.Default.ArchivoBitacora;
-            //var bitacora = new Bitacora(path);
-
-            var bitacora = container.Resolve<IBitacora>();
-
-
-            if (!servicioIntegridadBll.DbTieneIntegridad())
-            {
-                MessageBox.Show("Se vió afectada la integridad del sistema. ¿Desea notificar al administrador?","Atención", MessageBoxButtons.YesNo,
-                                 MessageBoxIcon.Exclamation);
-                bitacora.Agregar("La aplicación inició con un problema de integridad en la base de datos.");
-            }
-
-            Thread.CurrentPrincipal = new CustomPrincipal();
-            bitacora.Agregar("Aplicación iniciada.");
-
+        private static void AbrirVentanaPrincipal(object sender, EventArgs e)
+        {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            var acercaDe = container.Resolve<AcercaDe>();
-            Application.Run(acercaDe);
+            Form ventanaPrincipal = _container.Resolve<AcercaDe>();
+            Application.Run(ventanaPrincipal);
         }
     }
 }

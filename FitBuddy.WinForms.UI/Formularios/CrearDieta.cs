@@ -16,6 +16,7 @@ namespace FitBuddy.WinForms.UI.Formularios
     public partial class CrearDieta : Form
     {
         private CustomPrincipal _customPrincipal;
+
         public CrearDieta()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             gesPaciente gesPaciente = new gesPaciente();
             var paciente = gesPaciente.ObtenerPaciente(_customPrincipal.Identity.Id);
+
             paciente.Huevo = chkHuevo.Checked;
             paciente.Leche = chkLeche.Checked;
             paciente.Tomate = chkTomate.Checked;

@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 
 namespace FitBuddy.Business
 {
-    public class ServicioIntegridadBLL
+    public interface IServicioIntegridadBLL
+    {
+        bool DbTieneIntegridad();
+    }
+
+    public class ServicioIntegridadBLL : IServicioIntegridadBLL
     {
         public bool DbTieneIntegridad()
         {

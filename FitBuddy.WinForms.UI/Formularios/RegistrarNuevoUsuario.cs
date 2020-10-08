@@ -2,25 +2,20 @@
 using FitBuddy.Business;
 using FitBuddy.Entidades;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class RegistrarNuevoUsuario : Form
     {
+        private readonly IFormBuilder _formBuilder;
         private readonly IBitacora _bitacora;
 
-        public RegistrarNuevoUsuario(IBitacora bitacora)
+        public RegistrarNuevoUsuario(IFormBuilder formBuilder, IBitacora bitacora)
         {
             InitializeComponent();
+            _formBuilder = formBuilder;
             _bitacora = bitacora;
         }
 
@@ -70,8 +65,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             {
                 MessageBox.Show("El usuario fue registrado con éxito");
                 _bitacora.Agregar($"Se ha registrado el usuario {usuario.Username} con éxito");
-                var logIn = new LogIn(_bitacora);
-                logIn.Show();
+                _formBuilder.Show<LogIn>();
                 Close();
             }
             else

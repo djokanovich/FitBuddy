@@ -66,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessModule.cs" />
     <Compile Include="gesMedico.cs" />
     <Compile Include="gesPaciente.cs" />
     <Compile Include="gesUsuario.cs" />

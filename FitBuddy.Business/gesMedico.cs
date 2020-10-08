@@ -1,19 +1,21 @@
 ﻿using FitBuddy.DataAccess.Repositorio;
 using FitBuddy.Entidades;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FitBuddy.Business
 {
     public class gesMedico
     {
+        private readonly IMedicoDAL _medicoDAL;
+
+        public gesMedico(IMedicoDAL medicoDAL)
+        {
+            _medicoDAL = medicoDAL;
+        }
+
         public IEnumerable<Medico> ObtenerMedicos()
         {
-            var medicoDAL = new MedicoDAL();
-            return medicoDAL.ObtenerMedicos();
+            return _medicoDAL.ObtenerMedicos();
         }
     }
 }

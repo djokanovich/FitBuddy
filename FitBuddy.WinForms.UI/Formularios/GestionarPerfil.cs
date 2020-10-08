@@ -16,12 +16,16 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class GestionarPerfil : Form
     {
+        private readonly gesUsuario _gesUsuario;
+        private readonly gesPaciente _gesPaciente;
         private CustomPrincipal _customPrincipal = Thread.CurrentPrincipal as CustomPrincipal;
 
-        public GestionarPerfil()
+        public GestionarPerfil(gesUsuario gesUsuario, gesPaciente gesPaciente)
         {
             InitializeComponent();
             lblWelcome.Text = $"Usuario {_customPrincipal.Identity.Name}";
+            _gesUsuario = gesUsuario;
+            _gesPaciente = gesPaciente;
         }
 
         public void Clear()
@@ -39,8 +43,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             var genero = ((RadioButton)grpBoxSexo.Controls[0]).Checked ? "F" : "M"; // Operador condicional ternario
 
-            var gesUsuario = new gesUsuario();
-            var usuario = gesUsuario.ObtenerUsuario(_customPrincipal.Identity.Id);
+            var usuario = _gesUsuario.ObtenerUsuario(_customPrincipal.Identity.Id);
             Paciente paciente = new Paciente
             {
                 UsuarioId = _customPrincipal.Identity.Id,
@@ -57,8 +60,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             };
 
             // le paso a la BLL el paciente creado
-            var gesPaciente = new gesPaciente();
-            gesPaciente.CrearPaciente(paciente);
+            _gesPaciente.CrearPaciente(paciente);
 
 
             MessageBox.Show("Datos cargados con éxito");

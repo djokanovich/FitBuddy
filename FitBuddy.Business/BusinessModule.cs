@@ -17,6 +17,8 @@ namespace FitBuddy.Business
             builder.RegisterModule<DataAccessModule>();
 
             builder.RegisterType<ServicioIntegridadBLL>().As<IServicioIntegridadBLL>();
+            builder.RegisterType<gesMedico>().AsSelf();
+            builder.RegisterType<gesPaciente>().AsSelf();
             builder.RegisterType<gesUsuario>().AsSelf();
         }
     }

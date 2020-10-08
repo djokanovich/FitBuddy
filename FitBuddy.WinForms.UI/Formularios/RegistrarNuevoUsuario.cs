@@ -11,12 +11,14 @@ namespace FitBuddy.WinForms.UI.Formularios
     {
         private readonly IFormBuilder _formBuilder;
         private readonly IBitacora _bitacora;
+        private readonly gesUsuario _gesUsuario;
 
-        public RegistrarNuevoUsuario(IFormBuilder formBuilder, IBitacora bitacora)
+        public RegistrarNuevoUsuario(IFormBuilder formBuilder, IBitacora bitacora, gesUsuario gesUsuario)
         {
             InitializeComponent();
             _formBuilder = formBuilder;
             _bitacora = bitacora;
+            _gesUsuario = gesUsuario;
         }
 
         public void BorrarTodo()
@@ -60,8 +62,7 @@ namespace FitBuddy.WinForms.UI.Formularios
                 Nombre = txtNombre.Text
             };
 
-            var gesUsuario = new gesUsuario();
-            if (gesUsuario.GuardarUsuario(usuario, txtPassword.Text) > 0)
+            if (_gesUsuario.GuardarUsuario(usuario, txtPassword.Text) > 0)
             {
                 MessageBox.Show($"El usuario {usuario.Username} fue registrado con éxito.");
                 _bitacora.Info($"Se ha registrado el usuario {usuario.Username} con éxito.");

@@ -14,42 +14,39 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class PantallaPrincipal : Form
     {
-        public PantallaPrincipal()
+        private readonly IFormBuilder _formBuilder;
+
+        public PantallaPrincipal(IFormBuilder formBuilder)
         {
             InitializeComponent();
             var customPrincipal = Thread.CurrentPrincipal as CustomPrincipal;
             lblWelcome.Text = $"Bienvenido, {customPrincipal.Identity.Name}";
+            _formBuilder = formBuilder;
         }
 
         private void OnBtnGestionarPerfilClick(object sender, EventArgs e)
         {
-            var gesPerfil = new GestionarPerfil();
-            gesPerfil.Show();
+            _formBuilder.Show<GestionarPerfil>();
         }
 
         private void OnBtnGestionarPlanAlimenticioClick(object sender, EventArgs e)
         {
-            var gesPlanAlim = new GestionarPlanAlimenticio();
-            gesPlanAlim.Show();
+            _formBuilder.Show<GestionarPlanAlimenticio>();
         }
 
         private void OnBtnGestionarPlanEjercicioClick(object sender, EventArgs e)
         {
-            var gesPlanEj = new GestionarPlanEjercicios();
-            gesPlanEj.Show();
+            _formBuilder.Show<GestionarPlanEjercicios>();
         }
 
         private void OnBtnCargaDiariaComidasClick(object sender, EventArgs e)
         {
-            var cargaComidas = new CargarAlimento();
-            cargaComidas.Show();
+            _formBuilder.Show<CargarAlimento>();
         }
 
         private void OnBtnCargaDiariaEjerciciosClick(object sender, EventArgs e)
         {
-            var cargaEjercicio = new CargarDiarioEjercicios();
-            cargaEjercicio.Show();
-            
+            _formBuilder.Show<CargarDiarioEjercicios>();
         }
 
         private void OnBtnEstadisticasClick(object sender, EventArgs e)
@@ -72,14 +69,12 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnAgendarTurnoClick(object sender, EventArgs e)
         {
-            var AgendaTurno = new AgendarTurno();
-            AgendaTurno.Show();
+            _formBuilder.Show<AgendarTurno>();
         }
 
         private void OnBtnBackupClick(object sender, EventArgs e)
         {
-            var backup = new Backup();
-            backup.Show();
+            _formBuilder.Show<Backup>();
         }
     }
 }

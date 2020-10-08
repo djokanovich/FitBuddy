@@ -11,18 +11,19 @@ namespace FitBuddy.WinForms.UI.Formularios
     {
         private readonly IFormBuilder _formBuilder;
         private readonly IBitacora _bitacora;
+        private readonly gesUsuario _gesUsuario;
 
-        public LogIn(IFormBuilder formBuilder, IBitacora bitacora)
+        public LogIn(IFormBuilder formBuilder, IBitacora bitacora, gesUsuario gesUsuario)
         {
             InitializeComponent();
             _formBuilder = formBuilder;
             _bitacora = bitacora;
+            _gesUsuario = gesUsuario;
         }
 
         private void OnBtnAceptarClick(object sender, EventArgs e)
         {
-            var gesUsuario = new gesUsuario();
-            var usuario = gesUsuario.UsuarioAutenticado(txtUsername.Text, txtPassword.Text);
+            var usuario = _gesUsuario.UsuarioAutenticado(txtUsername.Text, txtPassword.Text);
             if (usuario != null)
             {
                 // el usuario existe => tiene acceso
@@ -38,8 +39,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
                 _bitacora.Info($"Se ha logueado el usuario {usuario.Username}.");
                 MessageBox.Show("Logueado correctamente.");
-                var pantallaprincipal = new PantallaPrincipal();
-                pantallaprincipal.Show();
+                _formBuilder.Show<PantallaPrincipal>();
                 Close();
             }
             else

@@ -11,13 +11,19 @@ namespace FitBuddy.Business
 {
     public class gesUsuario
     {
+        private readonly IUsuarioDAL _usuarioDAL;
+
+        public gesUsuario(IUsuarioDAL usuarioDAL)
+        {
+            _usuarioDAL = usuarioDAL;
+        }
+
         public Usuario UsuarioAutenticado(string usuario, string password)
         {
             var hashService = new HashService();
             var hashedPassword = hashService.Hash(password);
 
-            var usuarioDAL = new UsuarioDAL();
-            var usuarioEnBd = usuarioDAL.ObtenerUsuarios()
+            var usuarioEnBd = _usuarioDAL.ObtenerUsuarios()
                 .SingleOrDefault(u => u.Username == usuario && u.Password == hashedPassword);
 
             return usuarioEnBd;
@@ -30,16 +36,14 @@ namespace FitBuddy.Business
 
             usuario.Password = hashedPassword;
 
-            var usuarioDAL = new UsuarioDAL();
-            usuarioDAL.CrearUsuario(usuario);
+            _usuarioDAL.CrearUsuario(usuario);
 
-            return usuarioDAL.GuardarCambios();
+            return _usuarioDAL.GuardarCambios();
         }
 
         public Usuario ObtenerUsuario(int id)
         {
-            UsuarioDAL usuarioDAL = new UsuarioDAL();
-            return usuarioDAL.ObtenerUsuario(id);
+            return _usuarioDAL.ObtenerUsuarioPorId(id);
         }
     }
 }

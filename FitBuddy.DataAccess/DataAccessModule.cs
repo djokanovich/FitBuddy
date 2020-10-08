@@ -1,9 +1,5 @@
 ﻿using Autofac;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using FitBuddy.DataAccess.Repositorio;
 
 namespace FitBuddy.DataAccess
 {
@@ -12,6 +8,13 @@ namespace FitBuddy.DataAccess
         protected override void Load(ContainerBuilder builder)
         {
             base.Load(builder);
+
+            builder.RegisterType<AppDbContext>().AsSelf()
+                .SingleInstance();
+
+            builder.RegisterType<MedicoDAL>().As<IMedicoDAL>();
+            builder.RegisterType<PacienteDAL>().As<IPacienteDAL>();
+            builder.RegisterType<UsuarioDAL>().As<IUsuarioDAL>();
         }
     }
 }

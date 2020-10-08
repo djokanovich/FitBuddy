@@ -1,52 +1,57 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using FitBuddy.Entidades;
 
 namespace FitBuddy.DataAccess.Repositorio
 {
-   public class PacienteDAL
+    public interface IPacienteDAL
     {
-        public int CrearPaciente(Paciente paciente)
+        void ActualizarPaciente(Paciente paciente);
+        Paciente CrearPaciente(Paciente paciente);
+        int GuardarCambios();
+        Paciente ObtenerPacientePorId(int usuarioId);
+    }
+
+    public class PacienteDAL : IPacienteDAL
+    {
+        private readonly AppDbContext _dbContext;
+
+        public PacienteDAL(AppDbContext dbContext)
         {
-            using (var dbContext = new AppDbContext())
-            {
-                dbContext.Paciente.Add(paciente);
-                return dbContext.SaveChanges();
-            }
+            _dbContext = dbContext;
         }
 
-        public Paciente ObtenerPaciente(int usuarioId)
+        public Paciente CrearPaciente(Paciente paciente)
         {
-            using (var dbContext = new AppDbContext())
-            {
-                var paciente = dbContext.Paciente.SingleOrDefault(p => p.Id == usuarioId);
-                if (paciente == null)
-                {
-                    var usuarioDAL = new UsuarioDAL();
-                    var usuario = usuarioDAL.ObtenerUsuario(usuarioId);
-                    paciente = new Paciente
-                    {
-                        UsuarioId = usuarioId,
-                        Usuario = usuario
-                    };
-                    CrearPaciente(paciente);
-                }
+            return _dbContext.Paciente.Add(paciente);
+        }
 
-                return paciente;
+        public Paciente ObtenerPacientePorId(int usuarioId)
+        {
+            var paciente = _dbContext.Paciente.SingleOrDefault(p => p.Id == usuarioId);
+            if (paciente == null)
+            {
+                var usuarioDAL = new UsuarioDAL(_dbContext); // TODO: Resolver dinámicamente.
+                var usuario = usuarioDAL.ObtenerUsuarioPorId(usuarioId);
+                paciente = new Paciente
+                {
+                    UsuarioId = usuarioId,
+                    Usuario = usuario
+                };
+                CrearPaciente(paciente);
             }
+
+            return paciente;
         }
 
         public void ActualizarPaciente(Paciente paciente)
         {
-            using (var dbContext = new AppDbContext())
-            {
-                dbContext.Paciente.Attach(paciente);
-                dbContext.Entry(paciente).State = System.Data.Entity.EntityState.Modified;
-                dbContext.SaveChanges();
-            }
+            _dbContext.Paciente.Attach(paciente);
+            _dbContext.Entry(paciente).State = System.Data.Entity.EntityState.Modified;
+        }
+
+        public int GuardarCambios()
+        {
+            return _dbContext.SaveChanges();
         }
     }
 }

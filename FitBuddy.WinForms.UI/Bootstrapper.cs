@@ -29,7 +29,17 @@ namespace FitBuddy.WinForms.UI
                 .SingleInstance();
 
             builder.RegisterType<AcercaDe>().AsSelf();
+            builder.RegisterType<AgendarTurno>().AsSelf();
+            builder.RegisterType<Backup>().AsSelf();
+            builder.RegisterType<CargarAlimento>().AsSelf();
+            builder.RegisterType<CargarDiarioEjercicios>().AsSelf();
+            builder.RegisterType<CrearDieta>().AsSelf();
+            builder.RegisterType<CrearPlanEjercicio>().AsSelf();
+            builder.RegisterType<GestionarPerfil>().AsSelf();
+            builder.RegisterType<GestionarPlanAlimenticio>().AsSelf();
+            builder.RegisterType<GestionarPlanEjercicios>().AsSelf();
             builder.RegisterType<LogIn>().AsSelf();
+            builder.RegisterType<PantallaPrincipal>().AsSelf();
             builder.RegisterType<RegistrarNuevoUsuario>().AsSelf();
 
             var container = builder.Build();

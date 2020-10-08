@@ -1,31 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FitBuddy.DataAccess.Repositorio;
+﻿using FitBuddy.DataAccess.Repositorio;
 using FitBuddy.Entidades;
 
 namespace FitBuddy.Business
 {
     public class gesPaciente
     {
-        public int CrearPaciente(Paciente paciente)
+        private readonly IPacienteDAL _pacienteDAL;
+
+        public gesPaciente(IPacienteDAL pacienteDAL)
         {
-            var pacienteDAL = new PacienteDAL();
-            return pacienteDAL.CrearPaciente(paciente);
+            _pacienteDAL = pacienteDAL;
+        }
+
+        public Paciente CrearPaciente(Paciente paciente)
+        {
+            return _pacienteDAL.CrearPaciente(paciente);
         }
 
         public Paciente ObtenerPaciente(int usuarioId)
         {
-            var pacienteDAL = new PacienteDAL();
-            return pacienteDAL.ObtenerPaciente(usuarioId);
+            return _pacienteDAL.ObtenerPacientePorId(usuarioId);
         }
 
         public void ActualizarPaciente(Paciente paciente)
         {
-            var pacienteDAL = new PacienteDAL();
-            pacienteDAL.ActualizarPaciente(paciente);
+            _pacienteDAL.ActualizarPaciente(paciente);
         }
     }
 }

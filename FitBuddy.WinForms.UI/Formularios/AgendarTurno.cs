@@ -15,11 +15,14 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class AgendarTurno : Form
     {
-        public AgendarTurno()
+        private readonly gesMedico _gesMedico;
+
+        public AgendarTurno(gesMedico gesMedico)
         {
             InitializeComponent();
             var customPrincipal = Thread.CurrentPrincipal as CustomPrincipal;
             lblWelcome.Text = $"Usuario {customPrincipal.Identity.Name}";
+            _gesMedico = gesMedico;
         }
 
         public void Clear()
@@ -30,8 +33,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         }
         private void AgendarTurno_Load(object sender, EventArgs e)
         {
-            var gesMedico = new gesMedico();
-            var medicos = gesMedico.ObtenerMedicos();
+            var medicos = _gesMedico.ObtenerMedicos();
             //ComboBox2.Items.AddRange(medicos.Select(m => m.Nombre).ToArray());
             cmbMedico.DataSource = medicos;
             cmbMedico.DisplayMember = "Nombre";

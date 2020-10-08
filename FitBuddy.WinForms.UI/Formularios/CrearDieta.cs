@@ -8,19 +8,19 @@ namespace FitBuddy.WinForms.UI.Formularios
     public partial class CrearDieta : Form
     {
         private readonly IFormManager _formManager;
-        private readonly IPacienteFacade _pacienteFacade;
+        private readonly ICrearDietaBusinessLogic _crearDietaBusinessLogic;
 
-        public CrearDieta(IFormManager formManager, IPacienteFacade pacienteFacade)
+        public CrearDieta(IFormManager formManager, ICrearDietaBusinessLogic crearDietaBusinessLogic)
         {
             InitializeComponent();
             lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
             _formManager = formManager;
-            _pacienteFacade = pacienteFacade;
+            _crearDietaBusinessLogic = crearDietaBusinessLogic;
         }
 
         private void OnBtnEnviarClick(object sender, EventArgs e)
         {
-            var paciente = _pacienteFacade.ObtenerPacientePorUsuarioId(IdentityManager.UsuarioActual.UserId);
+            var paciente = _crearDietaBusinessLogic.ObtenerOCrearPacientePorUsuarioId(IdentityManager.UsuarioActual.UserId);
 
             paciente.Huevo = chkHuevo.Checked;
             paciente.Leche = chkLeche.Checked;
@@ -37,8 +37,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             paciente.FrutasRojas = chkFrutasRojas.Checked;
             paciente.Soja = chkSoja.Checked;
 
-            _pacienteFacade.ActualizarPaciente(paciente.Id);
-            _pacienteFacade.GuardarCambios();
+            _crearDietaBusinessLogic.ActualizarPaciente(paciente.Id);
 
             MessageBox.Show("Perfil alimenticio cargado con éxito");
             _formManager.Close(this);

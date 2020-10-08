@@ -1,5 +1,4 @@
 ﻿using Common.Bitacora;
-using Common.Utilidades.Validators;
 using FitBuddy.Business.Facade;
 using FitBuddy.Entidades;
 using System;
@@ -11,18 +10,16 @@ namespace FitBuddy.WinForms.UI.Formularios
     {
         private readonly IFormManager _formBuilder;
         private readonly IBitacora<RegistrarNuevoUsuario> _bitacora;
-        private readonly IPasswordValidator _passwordValidator;
-        private readonly IEmailValidator _emailValidator;
-        private readonly IUsuarioFacade _usuarioFacade;
+        private readonly IRegistrarNuevoUsuarioBusinessLogic _registrarNuevoUsuarioBusinessLogic;
 
-        public RegistrarNuevoUsuario(IFormManager formBuilder, IBitacora<RegistrarNuevoUsuario> bitacora, IPasswordValidator passwordValidator, IEmailValidator emailValidator, IUsuarioFacade usuarioFacade)
+        public RegistrarNuevoUsuario(IFormManager formBuilder,
+            IBitacora<RegistrarNuevoUsuario> bitacora,
+            IRegistrarNuevoUsuarioBusinessLogic registrarNuevoUsuarioBusinessLogic)
         {
             InitializeComponent();
             _formBuilder = formBuilder;
             _bitacora = bitacora;
-            _passwordValidator = passwordValidator;
-            _emailValidator = emailValidator;
-            _usuarioFacade = usuarioFacade;
+            _registrarNuevoUsuarioBusinessLogic = registrarNuevoUsuarioBusinessLogic;
         }
 
         private void OnBtnRegistrarClick(object sender, EventArgs e)
@@ -38,7 +35,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             };
             var contraseña = txtPassword.Text;
 
-            if (_usuarioFacade.EsUsuarioGuardadoConÉxito(usuario, contraseña))
+            if (_registrarNuevoUsuarioBusinessLogic.EsUsuarioGuardadoConÉxito(usuario, contraseña))
             {
                 _bitacora.Info($"Se ha registrado el usuario {usuario.Username} con éxito.");
                 MessageBox.Show($"El usuario {usuario.Username} fue registrado con éxito.");
@@ -67,21 +64,21 @@ namespace FitBuddy.WinForms.UI.Formularios
 
             var contraseña = txtPassword.Text;
             var contraseñaRepetida = txtRepeatPassword.Text;
-            if (!_passwordValidator.SonContraseñasIguales(contraseña, contraseñaRepetida))
+            if (contraseña != contraseñaRepetida)
             {
                 MessageBox.Show("Las contraseñas no coinciden.");
                 BorrarCampos();
                 return false;
             }
 
-            if (!_passwordValidator.EsContraseñaVálida(contraseña))
+            if (!_registrarNuevoUsuarioBusinessLogic.EsContraseñaVálida(contraseña))
             {
-                MessageBox.Show($"La contraseña no es segura. Inserte una contraseña con al menos {_passwordValidator.LongitudMínima} caracteres, un dígito, y una mayúscula.");
+                MessageBox.Show($"La contraseña no es segura. Inserte una contraseña con al menos {_registrarNuevoUsuarioBusinessLogic.ContraseñaLongitudMínima} caracteres, un dígito, y una mayúscula.");
                 return false;
             }
 
             string email = txtEmail.Text;
-            if (!_emailValidator.EsEmailVálido(email))
+            if (!_registrarNuevoUsuarioBusinessLogic.EsEmailVálido(email))
             {
                 MessageBox.Show("Debe introducir un correo válido");
                 return false;

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using FitBuddy.Entidades;
 
 namespace FitBuddy.DataAccess.Repositorio
@@ -15,31 +14,18 @@ namespace FitBuddy.DataAccess.Repositorio
     public class PacienteRepositorio : IPacienteRepositorio
     {
         private readonly AppDbContext _dbContext;
-        private readonly IUsuarioRepositorio _usuarioRepositorio;
 
-        public PacienteRepositorio(AppDbContext dbContext, IUsuarioRepositorio usuarioRepositorio)
+        public PacienteRepositorio(AppDbContext dbContext)
         {
             _dbContext = dbContext;
-            _usuarioRepositorio = usuarioRepositorio;
         }
 
         public Paciente ObtenerPacientePorUsuarioId(int usuarioId)
         {
             var paciente = _dbContext.Paciente.SingleOrDefault(p => p.Id == usuarioId);
-            if (paciente == null)
-            {
-                paciente = new Paciente
-                {
-                    UsuarioId = usuarioId,
-                    Usuario = _usuarioRepositorio.ObtenerUsuarioPorId(usuarioId),
-                    FechaRegistroPerfil = DateTime.Now
-                };
-                CrearPaciente(paciente);
-                GuardarCambios();
-            }
-
             return paciente;
         }
+
         public Paciente CrearPaciente(Paciente paciente)
         {
             return _dbContext.Paciente.Add(paciente);

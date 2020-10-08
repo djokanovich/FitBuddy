@@ -8,20 +8,19 @@ namespace FitBuddy.WinForms.UI.Formularios
     public partial class AgendarTurno : Form
     {
         private readonly IFormManager _formManager;
-        private readonly IMedicoFacade _medicoFacade;
+        private readonly IAgendarTurnoBusinessLogic _agendarTurnoBusinessLogic;
 
-        public AgendarTurno(IFormManager formManager, IMedicoFacade medicoFacade)
+        public AgendarTurno(IFormManager formManager, IAgendarTurnoBusinessLogic agendarTurnoBusinessLogic)
         {
             InitializeComponent();
             lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
             _formManager = formManager;
-            _medicoFacade = medicoFacade;
+            _agendarTurnoBusinessLogic = agendarTurnoBusinessLogic;
         }
 
         private void OnAgendarTurnoLoad(object sender, EventArgs e)
         {
-            var medicos = _medicoFacade.ObtenerMedicos();
-            cmbMedico.DataSource = medicos;
+            cmbMedico.DataSource = _agendarTurnoBusinessLogic.ObtenerMedicos();
             cmbMedico.DisplayMember = "Nombre";
             cmbMedico.ValueMember = "Email";
 

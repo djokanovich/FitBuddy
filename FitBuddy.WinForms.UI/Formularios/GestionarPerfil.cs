@@ -8,34 +8,22 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class GestionarPerfil : Form
     {
-        private readonly IUsuarioFacade _usuarioFacade;
-        private readonly IPacienteFacade _gesPaciente;
+        private readonly IGestionarPerfilBusinessLogic _gestionarPerfilBusinessLogic;
 
-        public GestionarPerfil(IUsuarioFacade usuarioFacade, IPacienteFacade gesPaciente)
+        public GestionarPerfil(IGestionarPerfilBusinessLogic gestionarPerfilBusinessLogic)
         {
             InitializeComponent();
             lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
-            _usuarioFacade = usuarioFacade;
-            _gesPaciente = gesPaciente;
-        }
-
-        public void Clear()
-        {
-            txtEdad.Text = null;
-            txtPeso.Text = null;
-            txtAltura.Text = null;
-            txtCintura.Text = null;
-            txtCadera.Text = null;
-            txtMuslo.Text = null;
-            txtBrazo.Text = null;
+            _gestionarPerfilBusinessLogic = gestionarPerfilBusinessLogic;
         }
 
         private void OnBtnEnviarClick(object sender, EventArgs e)
         {
+            // TODO: El género debería ser una enumeración.
             var genero = ((RadioButton)grpBoxSexo.Controls[0]).Checked ? "F" : "M"; // Operador condicional ternario
 
             var userId = IdentityManager.UsuarioActual.UserId;
-            var usuario = _usuarioFacade.ObtenerUsuario(userId);
+            var usuario = _gestionarPerfilBusinessLogic.ObtenerUsuarioPorId(userId);
             Paciente paciente = new Paciente
             {
                 UsuarioId = userId,
@@ -51,17 +39,27 @@ namespace FitBuddy.WinForms.UI.Formularios
                 FechaRegistroPerfil = Convert.ToDateTime(dtpFecha.Text)
             };
 
-            // le paso a la BLL el paciente creado
-            _gesPaciente.CrearPaciente(paciente);
-
+            // Le paso a la BLL el paciente creado.
+            _gestionarPerfilBusinessLogic.CrearPaciente(paciente);
 
             MessageBox.Show("Datos cargados con éxito");
-            Clear();
+            BorrarCampos();
         }
 
         private void OnBtnLimpiarClick(object sender, EventArgs e)
         {
-            Clear();
+            BorrarCampos();
+        }
+
+        private void BorrarCampos()
+        {
+            txtEdad.Text = null;
+            txtPeso.Text = null;
+            txtAltura.Text = null;
+            txtCintura.Text = null;
+            txtCadera.Text = null;
+            txtMuslo.Text = null;
+            txtBrazo.Text = null;
         }
     }
 }

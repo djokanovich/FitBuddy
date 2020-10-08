@@ -1,4 +1,6 @@
 ﻿using Autofac;
+using Common.Utilidades;
+using Common.Utilidades.Validators;
 using FitBuddy.Business.Facade;
 using FitBuddy.DataAccess;
 
@@ -12,11 +14,18 @@ namespace FitBuddy.Business
 
             builder.RegisterModule<DataAccessModule>();
 
-            builder.RegisterType<BackupBusinessLogic>().As<IBackupBusinessLogic>();
+            builder.RegisterType<HashService>().As<IHashService>();
+            builder.RegisterType<PasswordValidator>().As<IPasswordValidator>();
+            builder.RegisterType<EmailValidator>().As<IEmailValidator>();
+
             builder.RegisterType<IntegridadBusinessLogic>().As<IIntegridadBusinessLogic>();
-            builder.RegisterType<MedicoFacade>().As<IMedicoFacade>();
-            builder.RegisterType<PacienteFacade>().As<IPacienteFacade>();
-            builder.RegisterType<UsuarioFacade>().As<IUsuarioFacade>();
+
+            builder.RegisterType<AgendarTurnoBusinessLogic>().As<IAgendarTurnoBusinessLogic>();
+            builder.RegisterType<BackupBusinessLogic>().As<IBackupBusinessLogic>();
+            builder.RegisterType<CrearDietaBusinessLogic>().As<ICrearDietaBusinessLogic>();
+            builder.RegisterType<GestionarPerfilBusinessLogic>().As<IGestionarPerfilBusinessLogic>();
+            builder.RegisterType<LogInBusinessLogic>().As<ILogInBusinessLogic>();
+            builder.RegisterType<RegistrarNuevoUsuarioBusinessLogic>().As<IRegistrarNuevoUsuarioBusinessLogic>();
         }
     }
 }

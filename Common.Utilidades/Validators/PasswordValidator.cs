@@ -4,19 +4,13 @@ namespace Common.Utilidades.Validators
 {
     public interface IPasswordValidator
     {
-        int LongitudMínima { get; }
+        int ContraseñaLongitudMínima { get; }
         bool EsContraseñaVálida(string contraseña);
-        bool SonContraseñasIguales(string contraseña, string contraseñaRepetida);
     }
 
     public class PasswordValidator : IPasswordValidator
     {
-        public int LongitudMínima => 8; // TODO: ¿Hacer este valor configurable?
-
-        public bool SonContraseñasIguales(string contraseña, string contraseñaRepetida)
-        {
-            return contraseña == contraseñaRepetida;
-        }
+        public int ContraseñaLongitudMínima => 8; // TODO: ¿Hacer este valor configurable?
 
         public bool EsContraseñaVálida(string contraseña)
         {
@@ -27,7 +21,7 @@ namespace Common.Utilidades.Validators
 
         private bool CumpleMínimoDeCaracteres(string contraseña)
         {
-            return contraseña.Length >= LongitudMínima;
+            return contraseña.Length >= ContraseñaLongitudMínima;
         }
 
         private bool TieneDígitos(string contraseña)

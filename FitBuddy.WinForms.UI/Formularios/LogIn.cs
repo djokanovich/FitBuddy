@@ -10,21 +10,21 @@ namespace FitBuddy.WinForms.UI.Formularios
     {
         private readonly IFormManager _formManager;
         private readonly IBitacora<LogIn> _bitacora;
-        private readonly IUsuarioFacade _usuarioFacade;
+        private readonly ILogInBusinessLogic _logInBusinessLogic;
 
-        public LogIn(IFormManager formManager, IBitacora<LogIn> bitacora, IUsuarioFacade usuarioFacade)
+        public LogIn(IFormManager formManager, IBitacora<LogIn> bitacora, ILogInBusinessLogic logInBusinessLogic)
         {
             InitializeComponent();
             _formManager = formManager;
             _bitacora = bitacora;
-            _usuarioFacade = usuarioFacade;
+            _logInBusinessLogic = logInBusinessLogic;
         }
 
         private void OnBtnAceptarClick(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
             string plainPassword = txtPassword.Text;
-            var (usuario, autenticaciónExitosa) = _usuarioFacade.AutenticarUsuarioConContraseña(username, plainPassword);
+            var (usuario, autenticaciónExitosa) = _logInBusinessLogic.AutenticarUsuarioConContraseña(username, plainPassword);
 
             if (autenticaciónExitosa)
             {

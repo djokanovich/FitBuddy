@@ -67,9 +67,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessModule.cs" />
-    <Compile Include="Facade\MedicoFacade.cs" />
-    <Compile Include="Facade\PacienteFacade.cs" />
-    <Compile Include="Facade\UsuarioFacade.cs" />
+    <Compile Include="Facade\AgendarTurnoBusinessLogic.cs" />
+    <Compile Include="Facade\CrearDietaBusinessLogic.cs" />
+    <Compile Include="Facade\GestionarPerfilBusinessLogic.cs" />
+    <Compile Include="Facade\LogInBusinessLogic.cs" />
+    <Compile Include="Facade\RegistrarNuevoUsuarioBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Facade\BackupBusinessLogic.cs" />
     <Compile Include="IntegridadBusinessLogic.cs" />

@@ -39,7 +39,7 @@
             this.Label13 = new System.Windows.Forms.Label();
             this.Label12 = new System.Windows.Forms.Label();
             this.Label11 = new System.Windows.Forms.Label();
-            this.LinkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lnkInstrucciones = new System.Windows.Forms.LinkLabel();
             this.Label5 = new System.Windows.Forms.Label();
             this.txtCintura = new System.Windows.Forms.TextBox();
             this.txtBrazo = new System.Windows.Forms.TextBox();
@@ -126,7 +126,7 @@
             this.GroupBox2.Controls.Add(this.Label13);
             this.GroupBox2.Controls.Add(this.Label12);
             this.GroupBox2.Controls.Add(this.Label11);
-            this.GroupBox2.Controls.Add(this.LinkLabel1);
+            this.GroupBox2.Controls.Add(this.lnkInstrucciones);
             this.GroupBox2.Controls.Add(this.Label5);
             this.GroupBox2.Controls.Add(this.txtCintura);
             this.GroupBox2.Controls.Add(this.txtBrazo);
@@ -178,15 +178,15 @@
             this.Label11.TabIndex = 20;
             this.Label11.Text = "Cm.";
             // 
-            // LinkLabel1
+            // lnkInstrucciones
             // 
-            this.LinkLabel1.AutoSize = true;
-            this.LinkLabel1.Location = new System.Drawing.Point(28, 130);
-            this.LinkLabel1.Name = "LinkLabel1";
-            this.LinkLabel1.Size = new System.Drawing.Size(165, 13);
-            this.LinkLabel1.TabIndex = 19;
-            this.LinkLabel1.TabStop = true;
-            this.LinkLabel1.Text = "Instrucciones para tomar medidas";
+            this.lnkInstrucciones.AutoSize = true;
+            this.lnkInstrucciones.Location = new System.Drawing.Point(28, 130);
+            this.lnkInstrucciones.Name = "lnkInstrucciones";
+            this.lnkInstrucciones.Size = new System.Drawing.Size(165, 13);
+            this.lnkInstrucciones.TabIndex = 19;
+            this.lnkInstrucciones.TabStop = true;
+            this.lnkInstrucciones.Text = "Instrucciones para tomar medidas";
             // 
             // Label5
             // 
@@ -275,9 +275,9 @@
             this.grpBoxSexo.Controls.Add(this.radBtnFemenino);
             this.grpBoxSexo.Controls.Add(this.radBtnMasculino);
             this.grpBoxSexo.Location = new System.Drawing.Point(26, 98);
-            this.grpBoxSexo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBoxSexo.Margin = new System.Windows.Forms.Padding(2);
             this.grpBoxSexo.Name = "grpBoxSexo";
-            this.grpBoxSexo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBoxSexo.Padding = new System.Windows.Forms.Padding(2);
             this.grpBoxSexo.Size = new System.Drawing.Size(172, 68);
             this.grpBoxSexo.TabIndex = 42;
             this.grpBoxSexo.TabStop = false;
@@ -382,6 +382,7 @@
             // 
             // GestionarPerfil
             // 
+            this.AcceptButton = this.btnEnviar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(756, 416);
@@ -394,9 +395,9 @@
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.GroupBox2);
             this.Controls.Add(this.GroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GestionarPerfil";
-            this.Text = "GestionarPerfil";
+            this.Text = "Gestionar perfil";
             this.GroupBox2.ResumeLayout(false);
             this.GroupBox2.PerformLayout();
             this.GroupBox1.ResumeLayout(false);
@@ -421,7 +422,7 @@
         internal System.Windows.Forms.Label Label13;
         internal System.Windows.Forms.Label Label12;
         internal System.Windows.Forms.Label Label11;
-        internal System.Windows.Forms.LinkLabel LinkLabel1;
+        internal System.Windows.Forms.LinkLabel lnkInstrucciones;
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.TextBox txtCintura;
         internal System.Windows.Forms.TextBox txtBrazo;

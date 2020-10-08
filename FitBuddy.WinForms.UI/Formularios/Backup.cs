@@ -1,21 +1,17 @@
-﻿using FitBuddy.Business;
+﻿using FitBuddy.Business.Facade;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class Backup : Form
     {
-        public Backup()
+        private readonly IBackupBusinessLogic _backupBusinessLogic;
+
+        public Backup(IBackupBusinessLogic backupBusinessLogic)
         {
             InitializeComponent();
+            _backupBusinessLogic = backupBusinessLogic;
         }
 
         private void OnBtnCrearBackupClick(object sender, EventArgs e)
@@ -23,16 +19,14 @@ namespace FitBuddy.WinForms.UI.Formularios
             var openFileDialog = new OpenFileDialog
             {
                 InitialDirectory = "c:\\",
-                Filter = "Archivos de back-up|*.bak",
+                Filter = "Archivos de back-up (*.bak)|*.bak",
                 CheckFileExists = false,
             };
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                string fileName = openFileDialog.FileName;
-                var servicioBackup = new ServicioBackupBLL();
-                int resultado = servicioBackup.CrearBackup(fileName);
-                if (resultado == 0)
+                var fileName = openFileDialog.FileName;
+                if (_backupBusinessLogic.EsCrearBackupExitoso(fileName))
                 {
                     MessageBox.Show("Backup creado con éxito");
                 }

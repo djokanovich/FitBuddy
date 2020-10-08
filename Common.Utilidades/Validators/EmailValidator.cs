@@ -1,4 +1,4 @@
-﻿namespace Seguridad
+﻿namespace Common.Utilidades.Validators
 {
     public interface IEmailValidator
     {

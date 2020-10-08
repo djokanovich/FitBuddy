@@ -1,4 +1,4 @@
-﻿using FitBuddy.Business;
+﻿using FitBuddy.Business.Facade;
 using FitBuddy.WinForms.UI.Security;
 using System;
 using System.Windows.Forms;

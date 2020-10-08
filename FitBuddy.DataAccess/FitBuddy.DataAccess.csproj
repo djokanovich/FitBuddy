@@ -170,8 +170,8 @@
     <Compile Include="Repositorio\MedicoDAL.cs" />
     <Compile Include="Repositorio\PacienteRepositorio.cs" />
     <Compile Include="Repositorio\UsuarioRepositorio.cs" />
-    <Compile Include="Services\ServicioBackup.cs" />
-    <Compile Include="Services\ServicioIntegridadDb.cs" />
+    <Compile Include="Services\DbBackupSevice.cs" />
+    <Compile Include="Services\DbIntegridadService.cs" />
     <Compile Include="Util\CodigoDeControl.cs" />
   </ItemGroup>
   <ItemGroup>

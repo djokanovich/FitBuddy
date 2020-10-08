@@ -1,8 +1,6 @@
 ﻿using Common.Bitacora;
 using FitBuddy.Business;
 using System;
-using System.Security.Principal;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI
@@ -10,12 +8,12 @@ namespace FitBuddy.WinForms.UI
     internal class FitBuddyApp
     {
         private readonly IBitacora _bitacora;
-        private readonly IServicioIntegridadBLL _servicioIntegridadBLL;
+        private readonly IIntegridadBusinessLogic _integridadBusinessLogic;
 
-        public FitBuddyApp(IBitacora bitacora, IServicioIntegridadBLL servicioIntegridadBLL)
+        public FitBuddyApp(IBitacora bitacora, IIntegridadBusinessLogic integridadBusinessLogic)
         {
             _bitacora = bitacora;
-            _servicioIntegridadBLL = servicioIntegridadBLL;
+            _integridadBusinessLogic = integridadBusinessLogic;
         }
 
         public event EventHandler AbrirVentanaPrincipal;
@@ -34,8 +32,7 @@ namespace FitBuddy.WinForms.UI
 
         private void VerificarIntegridadDb()
         {
-            bool dbTieneIntegridad = _servicioIntegridadBLL.DbTieneIntegridad();
-            if (dbTieneIntegridad)
+            if (_integridadBusinessLogic.DbTieneIntegridad())
             {
                 _bitacora.Info("Integridad de la base de datos verificada correctamente.");
             }

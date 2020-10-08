@@ -1,7 +1,7 @@
 ﻿using FitBuddy.DataAccess.Repositorio;
 using FitBuddy.Entidades;
 
-namespace FitBuddy.Business
+namespace FitBuddy.Business.Facade
 {
     public interface IPacienteFacade
     {

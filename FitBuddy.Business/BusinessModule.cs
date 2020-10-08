@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using FitBuddy.Business.Facade;
 using FitBuddy.DataAccess;
 
 namespace FitBuddy.Business
@@ -11,7 +12,8 @@ namespace FitBuddy.Business
 
             builder.RegisterModule<DataAccessModule>();
 
-            builder.RegisterType<ServicioIntegridadBLL>().As<IServicioIntegridadBLL>();
+            builder.RegisterType<BackupBusinessLogic>().As<IBackupBusinessLogic>();
+            builder.RegisterType<IntegridadBusinessLogic>().As<IIntegridadBusinessLogic>();
             builder.RegisterType<MedicoFacade>().As<IMedicoFacade>();
             builder.RegisterType<PacienteFacade>().As<IPacienteFacade>();
             builder.RegisterType<UsuarioFacade>().As<IUsuarioFacade>();

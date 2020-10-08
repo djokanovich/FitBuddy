@@ -7,8 +7,8 @@
     <ProjectGuid>{F6D53E2F-0779-4611-8CE7-E667A15B8D86}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Seguridad</RootNamespace>
-    <AssemblyName>Seguridad</AssemblyName>
+    <RootNamespace>Common.Utilidades</RootNamespace>
+    <AssemblyName>Common.Utilidades</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -155,11 +155,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CryptoService.cs" />
-    <Compile Include="EmailValidator.cs" />
+    <Compile Include="Validators\EmailValidator.cs" />
     <Compile Include="HashService.cs" />
-    <Compile Include="IdentityService.cs" />
-    <Compile Include="PasswordValidator.cs" />
+    <Compile Include="Validators\PasswordValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

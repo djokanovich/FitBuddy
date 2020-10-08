@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitBuddy.WinForms.UI", "Fit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitBuddy.Test", "FitBuddy.Test\FitBuddy.Test.csproj", "{28276512-35FD-453E-9D46-6F1F271DCD01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguridad", "Seguridad\Seguridad.csproj", "{F6D53E2F-0779-4611-8CE7-E667A15B8D86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Utilidades", "Common.Utilidades\Common.Utilidades.csproj", "{F6D53E2F-0779-4611-8CE7-E667A15B8D86}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 UI", "01 UI", "{29F7004B-04E1-4B9B-AA4A-DF1E66138BD7}"
 EndProject

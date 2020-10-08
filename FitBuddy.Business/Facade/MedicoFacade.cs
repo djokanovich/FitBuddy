@@ -2,7 +2,7 @@
 using FitBuddy.Entidades;
 using System.Collections.Generic;
 
-namespace FitBuddy.Business
+namespace FitBuddy.Business.Facade
 {
     public interface IMedicoFacade
     {

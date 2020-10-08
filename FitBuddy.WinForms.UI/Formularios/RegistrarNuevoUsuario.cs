@@ -1,7 +1,7 @@
 ﻿using Common.Bitacora;
-using FitBuddy.Business;
+using Common.Utilidades.Validators;
+using FitBuddy.Business.Facade;
 using FitBuddy.Entidades;
-using Seguridad;
 using System;
 using System.Windows.Forms;
 

@@ -1,9 +1,9 @@
-﻿using FitBuddy.DataAccess.Repositorio;
+﻿using Common.Utilidades;
+using FitBuddy.DataAccess.Repositorio;
 using FitBuddy.Entidades;
-using FitBuddy.Seguridad;
 using System.Linq;
 
-namespace FitBuddy.Business
+namespace FitBuddy.Business.Facade
 {
     public interface IUsuarioFacade
     {
@@ -14,17 +14,18 @@ namespace FitBuddy.Business
 
     public class UsuarioFacade : IUsuarioFacade
     {
+        private readonly IHashService _hashService;
         private readonly IUsuarioRepositorio _usuarioDAL;
 
-        public UsuarioFacade(IUsuarioRepositorio usuarioDAL)
+        public UsuarioFacade(IHashService hashService, IUsuarioRepositorio usuarioDAL)
         {
+            _hashService = hashService;
             _usuarioDAL = usuarioDAL;
         }
 
         public (Usuario usuario, bool autenticaciónExitosa) AutenticarUsuarioConContraseña(string username, string plainPassword)
         {
-            var hashService = new HashService();
-            var hashedPassword = hashService.Hash(plainPassword);
+            var hashedPassword = _hashService.Hash(plainPassword);
 
             var usuario = _usuarioDAL.ObtenerUsuarios()
                 .SingleOrDefault(u => u.Username == username && u.Password == hashedPassword);
@@ -34,8 +35,7 @@ namespace FitBuddy.Business
 
         public bool EsUsuarioGuardadoConÉxito(Usuario usuario, string plainPassword)
         {
-            var hashService = new HashService();
-            var hashedPassword = hashService.Hash(plainPassword);
+            var hashedPassword = _hashService.Hash(plainPassword);
 
             usuario.Password = hashedPassword;
 

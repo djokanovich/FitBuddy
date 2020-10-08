@@ -1,40 +1,26 @@
 ﻿using FitBuddy.Business;
 using FitBuddy.WinForms.UI.Security;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class AgendarTurno : Form
     {
-        private readonly gesMedico _gesMedico;
+        private readonly IFormManager _formManager;
+        private readonly IMedicoFacade _medicoFacade;
 
-        public AgendarTurno(gesMedico gesMedico)
+        public AgendarTurno(IFormManager formManager, IMedicoFacade medicoFacade)
         {
             InitializeComponent();
-            var customPrincipal = Thread.CurrentPrincipal as CustomPrincipal;
-            lblWelcome.Text = $"Usuario {customPrincipal.Identity.Name}";
-            _gesMedico = gesMedico;
+            lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
+            _formManager = formManager;
+            _medicoFacade = medicoFacade;
         }
 
-        public void Clear()
+        private void OnAgendarTurnoLoad(object sender, EventArgs e)
         {
-            cmbFranjaHoraria.Text = null;
-            cmbMedico.Text = null;
-            
-        }
-        private void AgendarTurno_Load(object sender, EventArgs e)
-        {
-            var medicos = _gesMedico.ObtenerMedicos();
-            //ComboBox2.Items.AddRange(medicos.Select(m => m.Nombre).ToArray());
+            var medicos = _medicoFacade.ObtenerMedicos();
             cmbMedico.DataSource = medicos;
             cmbMedico.DisplayMember = "Nombre";
             cmbMedico.ValueMember = "Email";
@@ -49,8 +35,20 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnEnviarClick(object sender, EventArgs e)
         {
+            // TODO: Implementar.
             MessageBox.Show("Turno cargado con éxito, un administrador se pondrá en contacto para coordinar tu cita.");
-            Clear();
+            BorrarCampos();
+        }
+
+        private void BorrarCampos()
+        {
+            cmbFranjaHoraria.Text = string.Empty;
+            cmbMedico.Text = string.Empty;
+        }
+
+        private void OnBtnAtrasClick(object sender, EventArgs e)
+        {
+            _formManager.Close(this);
         }
     }
 }

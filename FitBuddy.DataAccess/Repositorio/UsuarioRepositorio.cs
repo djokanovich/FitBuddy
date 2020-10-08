@@ -4,21 +4,21 @@ using System.Linq;
 
 namespace FitBuddy.DataAccess.Repositorio
 {
-    public interface IUsuarioDAL
+    public interface IUsuarioRepositorio
     {
-        Usuario ActualizarUsuario(Usuario usuario);
+        IEnumerable<Usuario> ObtenerUsuarios();
+        Usuario ObtenerUsuarioPorId(int id);
         Usuario CrearUsuario(Usuario usuario);
+        Usuario ActualizarUsuario(Usuario usuario);
         Usuario EliminarUsuario(Usuario usuario);
         int GuardarCambios();
-        Usuario ObtenerUsuarioPorId(int id);
-        IEnumerable<Usuario> ObtenerUsuarios();
     }
 
-    public class UsuarioDAL : IUsuarioDAL
+    public class UsuarioRepositorio : IUsuarioRepositorio
     {
         private readonly AppDbContext _dbContext;
 
-        public UsuarioDAL(AppDbContext dbContext)
+        public UsuarioRepositorio(AppDbContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -29,9 +29,9 @@ namespace FitBuddy.DataAccess.Repositorio
             return usuarios;
         }
 
-        public Usuario ObtenerUsuarioPorId(int id)
+        public Usuario ObtenerUsuarioPorId(int usuarioId)
         {
-            var usuario = _dbContext.Usuarios.SingleOrDefault(u => u.Id == id);
+            var usuario = _dbContext.Usuarios.SingleOrDefault(u => u.Id == usuarioId);
             return usuario;
         }
 
@@ -44,11 +44,14 @@ namespace FitBuddy.DataAccess.Repositorio
         public Usuario ActualizarUsuario(Usuario usuario)
         {
             var usuarioActualizado = _dbContext.Usuarios.SingleOrDefault(u => u.Id == usuario.Id);
-            usuarioActualizado.Apellido = usuario.Apellido;
-            usuarioActualizado.Nombre = usuario.Nombre;
-            usuarioActualizado.Username = usuario.Username;
-            usuarioActualizado.Password = usuario.Password;
-            usuarioActualizado.IdIdioma = usuario.IdIdioma;
+            if (usuarioActualizado != null)
+            {
+                usuarioActualizado.Apellido = usuario.Apellido;
+                usuarioActualizado.Nombre = usuario.Nombre;
+                usuarioActualizado.Username = usuario.Username;
+                usuarioActualizado.Password = usuario.Password;
+                usuarioActualizado.IdIdioma = usuario.IdIdioma;
+            }
 
             return usuarioActualizado;
         }

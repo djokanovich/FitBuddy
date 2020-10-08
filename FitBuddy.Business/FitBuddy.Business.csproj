@@ -67,9 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessModule.cs" />
-    <Compile Include="gesMedico.cs" />
-    <Compile Include="gesPaciente.cs" />
-    <Compile Include="gesUsuario.cs" />
+    <Compile Include="MedicoFacade.cs" />
+    <Compile Include="PacienteFacade.cs" />
+    <Compile Include="UsuarioFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServicioBackupBLL.cs" />
     <Compile Include="ServicioIntegridadBLL.cs" />

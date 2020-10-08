@@ -22,7 +22,7 @@ namespace FitBuddy.WinForms.UI
             // A su vez, FormBuilder lo resuelve el contenedor de IoC.
             // Es un problema del tipo del huevo y la gallina, y esta es una manera simple
             // de resolverlo (el doble sentido de la palabra 'resolver' es intencional).
-            var formBuilder = _container.Resolve<IFormBuilder>();
+            var formBuilder = _container.Resolve<IFormManager>();
             formBuilder.Container = _container;
 
             var fitBuddyApp = _container.Resolve<FitBuddyApp>();

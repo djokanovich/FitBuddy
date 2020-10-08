@@ -50,6 +50,7 @@
             this.btnAtras.TabIndex = 18;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // btnEnviar
             // 
@@ -149,7 +150,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AgendarTurno";
             this.Text = "AgendarTurno";
-            this.Load += new System.EventHandler(this.AgendarTurno_Load);
+            this.Load += new System.EventHandler(this.OnAgendarTurnoLoad);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

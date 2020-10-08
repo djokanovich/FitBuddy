@@ -9,29 +9,43 @@ using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public interface IFormBuilder
+    public interface IFormManager
     {
         IContainer Container { get; set; }
-
-        void Show<F>() where F : Form;
+        FormManager Show<F>() where F : Form;
+        FormManager AndClose(Form form);
+        void Close(Form form);
     }
 
-    public class FormBuilder : IFormBuilder
+    public class FormManager : IFormManager
     {
         private readonly IBitacora _bitacora;
 
-        public FormBuilder(IBitacora bitacora)
+        public FormManager(IBitacora bitacora)
         {
             _bitacora = bitacora;
         }
 
         public IContainer Container { get; set; }
 
-        public void Show<F>() where F : Form
+        public FormManager Show<F>() where F : Form
         {
             _bitacora.Debug($"Solicitud de mostrar el formulario de ${typeof(F).Name}");
             var form = Container.Resolve<F>();
             form.Show();
+
+            return this;
+        }
+
+        public FormManager AndClose(Form form)
+        {
+            Close(form);
+            return this;
+        }
+
+        public void Close(Form form)
+        {
+            form.Close();
         }
     }
 }

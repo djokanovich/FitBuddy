@@ -1,80 +1,113 @@
 ﻿using Common.Bitacora;
 using FitBuddy.Business;
 using FitBuddy.Entidades;
+using Seguridad;
 using System;
-using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class RegistrarNuevoUsuario : Form
     {
-        private readonly IFormBuilder _formBuilder;
+        private readonly IFormManager _formBuilder;
         private readonly IBitacora _bitacora;
-        private readonly gesUsuario _gesUsuario;
+        private readonly IPasswordValidator _passwordValidator;
+        private readonly IEmailValidator _emailValidator;
+        private readonly IUsuarioFacade _usuarioFacade;
 
-        public RegistrarNuevoUsuario(IFormBuilder formBuilder, IBitacora bitacora, gesUsuario gesUsuario)
+        public RegistrarNuevoUsuario(IFormManager formBuilder, IBitacora bitacora, IPasswordValidator passwordValidator, IEmailValidator emailValidator, IUsuarioFacade usuarioFacade)
         {
             InitializeComponent();
             _formBuilder = formBuilder;
             _bitacora = bitacora;
-            _gesUsuario = gesUsuario;
-        }
-
-        public void BorrarTodo()
-        {
-            txtApellido.Text = string.Empty;
-            txtEmail.Text = string.Empty;
-            txtNombre.Text = string.Empty;
-            txtRepeatPassword.Text = string.Empty;
-            txtUsuario.Text = string.Empty;
+            _passwordValidator = passwordValidator;
+            _emailValidator = emailValidator;
+            _usuarioFacade = usuarioFacade;
         }
 
         private void OnBtnRegistrarClick(object sender, EventArgs e)
         {
-            if (!txtPassword.Text.Equals(txtRepeatPassword.Text))
-            {
-                MessageBox.Show("Las contraseñas no coinciden");
-                BorrarTodo();
+            if (!SonCamposVálidos())
                 return;
-            }
-
-            var hasNumber = new Regex(@"[0-9]");
-            var hasUpperChar = new Regex(@"[A-Z]");
-
-            if (txtPassword.Text.Length < 8 || !hasNumber.Match(txtPassword.Text).Success || !hasUpperChar.Match(txtPassword.Text).Success)
-            {
-                MessageBox.Show("La contraseña no es segura. Inserte una contraseña con al menos 8 caracteres, un número y una mayúscula.");
-                return;
-            }
-
-            // TODO: Implementar una validación mejor
-            if (!txtEmail.Text.Contains("@") || !txtEmail.Text.Contains(".com"))
-            {
-                MessageBox.Show("Debe introducir un correo válido");
-                return;
-            }
 
             var usuario = new Usuario
             {
-                Username = txtUsuario.Text,
+                Username = txtUsername.Text,
                 Apellido = txtApellido.Text,
                 Nombre = txtNombre.Text
             };
+            var contraseña = txtPassword.Text;
 
-            if (_gesUsuario.GuardarUsuario(usuario, txtPassword.Text) > 0)
+            if (_usuarioFacade.EsUsuarioGuardadoConÉxito(usuario, contraseña))
             {
-                MessageBox.Show($"El usuario {usuario.Username} fue registrado con éxito.");
                 _bitacora.Info($"Se ha registrado el usuario {usuario.Username} con éxito.");
-                _formBuilder.Show<LogIn>();
-                Close();
+                MessageBox.Show($"El usuario {usuario.Username} fue registrado con éxito.");
+                _formBuilder.Show<LogIn>().AndClose(this);
             }
             else
             {
-                MessageBox.Show("El usuario no fue registrado");
-
-                BorrarTodo();
+                MessageBox.Show("El usuario no fue registrado.");
+                BorrarCampos();
             }
+        }
+
+        private bool SonCamposVálidos()
+        {
+            var username = txtUsername.Text;
+            if (EsCampoVacío(username, "un nombre de usuario"))
+                return false;
+
+            var nombre = txtNombre.Text;
+            if (EsCampoVacío(nombre, "el nombre del usuario"))
+                return false;
+
+            var apellido = txtApellido.Text;
+            if (EsCampoVacío(apellido, "el apellido del usuario"))
+                return false;
+
+            var contraseña = txtPassword.Text;
+            var contraseñaRepetida = txtRepeatPassword.Text;
+            if (!_passwordValidator.SonContraseñasIguales(contraseña, contraseñaRepetida))
+            {
+                MessageBox.Show("Las contraseñas no coinciden.");
+                BorrarCampos();
+                return false;
+            }
+
+            if (!_passwordValidator.EsContraseñaVálida(contraseña))
+            {
+                MessageBox.Show($"La contraseña no es segura. Inserte una contraseña con al menos {_passwordValidator.LongitudMínima} caracteres, un dígito, y una mayúscula.");
+                return false;
+            }
+
+            string email = txtEmail.Text;
+            if (!_emailValidator.EsEmailVálido(email))
+            {
+                MessageBox.Show("Debe introducir un correo válido");
+                return false;
+            }
+
+            return true;
+        }
+
+        private bool EsCampoVacío(string campo, string descripción)
+        {
+            if (string.IsNullOrWhiteSpace(campo))
+            {
+                MessageBox.Show($"Debe ingresar {descripción}.");
+                return true;
+            }
+
+            return false;
+        }
+
+        private void BorrarCampos()
+        {
+            txtUsername.Text = string.Empty;
+            txtRepeatPassword.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtApellido.Text = string.Empty;
         }
     }
 }

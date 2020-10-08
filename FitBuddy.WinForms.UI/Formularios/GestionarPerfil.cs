@@ -2,29 +2,20 @@
 using FitBuddy.Entidades;
 using FitBuddy.WinForms.UI.Security;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class GestionarPerfil : Form
     {
-        private readonly gesUsuario _gesUsuario;
-        private readonly gesPaciente _gesPaciente;
-        private CustomPrincipal _customPrincipal = Thread.CurrentPrincipal as CustomPrincipal;
+        private readonly IUsuarioFacade _usuarioFacade;
+        private readonly PacienteFacade _gesPaciente;
 
-        public GestionarPerfil(gesUsuario gesUsuario, gesPaciente gesPaciente)
+        public GestionarPerfil(IUsuarioFacade usuarioFacade, PacienteFacade gesPaciente)
         {
             InitializeComponent();
-            lblWelcome.Text = $"Usuario {_customPrincipal.Identity.Name}";
-            _gesUsuario = gesUsuario;
+            lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
+            _usuarioFacade = usuarioFacade;
             _gesPaciente = gesPaciente;
         }
 
@@ -43,10 +34,11 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             var genero = ((RadioButton)grpBoxSexo.Controls[0]).Checked ? "F" : "M"; // Operador condicional ternario
 
-            var usuario = _gesUsuario.ObtenerUsuario(_customPrincipal.Identity.Id);
+            var userId = IdentityManager.UsuarioActual.UserId;
+            var usuario = _usuarioFacade.ObtenerUsuario(userId);
             Paciente paciente = new Paciente
             {
-                UsuarioId = _customPrincipal.Identity.Id,
+                UsuarioId = userId,
                 Usuario = usuario,
                 Peso = Convert.ToInt32(txtPeso.Text),
                 ContBrazo = Convert.ToInt32(txtBrazo.Text),

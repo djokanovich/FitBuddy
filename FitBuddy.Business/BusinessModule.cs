@@ -1,10 +1,5 @@
 ﻿using Autofac;
 using FitBuddy.DataAccess;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FitBuddy.Business
 {
@@ -17,9 +12,9 @@ namespace FitBuddy.Business
             builder.RegisterModule<DataAccessModule>();
 
             builder.RegisterType<ServicioIntegridadBLL>().As<IServicioIntegridadBLL>();
-            builder.RegisterType<gesMedico>().AsSelf();
-            builder.RegisterType<gesPaciente>().AsSelf();
-            builder.RegisterType<gesUsuario>().AsSelf();
+            builder.RegisterType<MedicoFacade>().As<IMedicoFacade>();
+            builder.RegisterType<PacienteFacade>().As<IPacienteFacade>();
+            builder.RegisterType<UsuarioFacade>().As<IUsuarioFacade>();
         }
     }
 }

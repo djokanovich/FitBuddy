@@ -156,8 +156,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CryptoService.cs" />
+    <Compile Include="EmailValidator.cs" />
     <Compile Include="HashService.cs" />
     <Compile Include="IdentityService.cs" />
+    <Compile Include="PasswordValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,29 +1,21 @@
-﻿using Common.Bitacora;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class AcercaDe : Form
     {
-        private readonly IFormBuilder _formBuilder;
+        private readonly IFormManager _formManager;
 
-        public AcercaDe(IFormBuilder formBuilder)
+        public AcercaDe(IFormManager formManager)
         {
             InitializeComponent();
-            _formBuilder = formBuilder;
+            _formManager = formManager;
         }
 
-        private void OKButton_Click(object sender, EventArgs e)
+        private void OnBtnAceptarClick(object sender, EventArgs e)
         {
-            _formBuilder.Show<LogIn>();
+            _formManager.Show<LogIn>();
         }
     }
 }

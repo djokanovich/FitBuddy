@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
-            this.LinkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.lnkAcercaDe = new System.Windows.Forms.LinkLabel();
             this.lnkOlvideContrasena = new System.Windows.Forms.LinkLabel();
             this.lnkRegistrarUsuario = new System.Windows.Forms.LinkLabel();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -42,15 +42,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // LinkLabel3
+            // lnkAcercaDe
             // 
-            this.LinkLabel3.AutoSize = true;
-            this.LinkLabel3.Location = new System.Drawing.Point(14, 353);
-            this.LinkLabel3.Name = "LinkLabel3";
-            this.LinkLabel3.Size = new System.Drawing.Size(119, 13);
-            this.LinkLabel3.TabIndex = 24;
-            this.LinkLabel3.TabStop = true;
-            this.LinkLabel3.Text = "Acerca de la Aplicación";
+            this.lnkAcercaDe.AutoSize = true;
+            this.lnkAcercaDe.Location = new System.Drawing.Point(14, 353);
+            this.lnkAcercaDe.Name = "lnkAcercaDe";
+            this.lnkAcercaDe.Size = new System.Drawing.Size(119, 13);
+            this.lnkAcercaDe.TabIndex = 24;
+            this.lnkAcercaDe.TabStop = true;
+            this.lnkAcercaDe.Text = "Acerca de la Aplicación";
+            this.lnkAcercaDe.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnLnkAcercaDeClick);
             // 
             // lnkOlvideContrasena
             // 
@@ -58,9 +59,10 @@
             this.lnkOlvideContrasena.Location = new System.Drawing.Point(393, 243);
             this.lnkOlvideContrasena.Name = "lnkOlvideContrasena";
             this.lnkOlvideContrasena.Size = new System.Drawing.Size(106, 13);
-            this.lnkOlvideContrasena.TabIndex = 23;
+            this.lnkOlvideContrasena.TabIndex = 6;
             this.lnkOlvideContrasena.TabStop = true;
             this.lnkOlvideContrasena.Text = "Olvidé mi contraseña";
+            this.lnkOlvideContrasena.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnLnkOlvideContrasenaClicked);
             // 
             // lnkRegistrarUsuario
             // 
@@ -68,7 +70,7 @@
             this.lnkRegistrarUsuario.Location = new System.Drawing.Point(393, 220);
             this.lnkRegistrarUsuario.Name = "lnkRegistrarUsuario";
             this.lnkRegistrarUsuario.Size = new System.Drawing.Size(88, 13);
-            this.lnkRegistrarUsuario.TabIndex = 22;
+            this.lnkRegistrarUsuario.TabIndex = 5;
             this.lnkRegistrarUsuario.TabStop = true;
             this.lnkRegistrarUsuario.Text = "No tengo usuario";
             this.lnkRegistrarUsuario.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnLnkRegistrarUsuarioClicked);
@@ -79,15 +81,16 @@
             this.btnCancelar.Location = new System.Drawing.Point(513, 175);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(94, 23);
-            this.btnCancelar.TabIndex = 21;
+            this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "&Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.OnBtnCancelarClick);
             // 
             // btnAceptar
             // 
             this.btnAceptar.Location = new System.Drawing.Point(390, 175);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(94, 23);
-            this.btnAceptar.TabIndex = 20;
+            this.btnAceptar.TabIndex = 3;
             this.btnAceptar.Text = "&Aceptar";
             this.btnAceptar.Click += new System.EventHandler(this.OnBtnAceptarClick);
             // 
@@ -97,14 +100,14 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(220, 20);
-            this.txtPassword.TabIndex = 19;
+            this.txtPassword.TabIndex = 2;
             // 
             // txtUsername
             // 
             this.txtUsername.Location = new System.Drawing.Point(390, 90);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(220, 20);
-            this.txtUsername.TabIndex = 17;
+            this.txtUsername.TabIndex = 1;
             // 
             // PasswordLabel
             // 
@@ -136,11 +139,13 @@
             // 
             // LogIn
             // 
+            this.AcceptButton = this.btnAceptar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnCancelar;
             this.ClientSize = new System.Drawing.Size(657, 378);
             this.Controls.Add(this.UsernameLabel);
-            this.Controls.Add(this.LinkLabel3);
+            this.Controls.Add(this.lnkAcercaDe);
             this.Controls.Add(this.lnkOlvideContrasena);
             this.Controls.Add(this.lnkRegistrarUsuario);
             this.Controls.Add(this.btnCancelar);
@@ -149,9 +154,9 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.PasswordLabel);
             this.Controls.Add(this.LogoPictureBox);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LogIn";
-            this.Text = "LogIn";
+            this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -160,7 +165,7 @@
 
         #endregion
 
-        internal System.Windows.Forms.LinkLabel LinkLabel3;
+        internal System.Windows.Forms.LinkLabel lnkAcercaDe;
         internal System.Windows.Forms.LinkLabel lnkOlvideContrasena;
         internal System.Windows.Forms.LinkLabel lnkRegistrarUsuario;
         internal System.Windows.Forms.Button btnCancelar;

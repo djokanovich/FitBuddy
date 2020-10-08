@@ -1,23 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Security.Principal;
 
 namespace FitBuddy.WinForms.UI.Security
 {
     public class CustomIdentity : IIdentity
     {
-        public CustomIdentity(int id, string name, string[] roles)
+        public CustomIdentity(int userId, string username, string[] roles)
         {
-            Id = id;
-            Name = name;
+            UserId = userId;
+            Name = username;
             Roles = roles;
         }
 
-        public int Id { get; set; }
+        public int UserId { get; set; }
         public string Name { get; private set; }
+        public string Username { get => Name; set => Name = value; } // Alias, para que quede claro que Name es realmente Username
         public string[] Roles { get; private set; }
 
         public string AuthenticationType { get { return "Custom authentication"; } }

@@ -42,9 +42,10 @@
             this.btnAtras.Location = new System.Drawing.Point(476, 325);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(75, 23);
-            this.btnAtras.TabIndex = 7;
+            this.btnAtras.TabIndex = 3;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // PictureBox1
             // 
@@ -61,7 +62,7 @@
             this.btnCrearDieta.Location = new System.Drawing.Point(303, 138);
             this.btnCrearDieta.Name = "btnCrearDieta";
             this.btnCrearDieta.Size = new System.Drawing.Size(248, 42);
-            this.btnCrearDieta.TabIndex = 5;
+            this.btnCrearDieta.TabIndex = 1;
             this.btnCrearDieta.Text = "Crear Dieta";
             this.btnCrearDieta.UseVisualStyleBackColor = true;
             this.btnCrearDieta.Click += new System.EventHandler(this.OnBtnCrearDietaClick);
@@ -71,7 +72,7 @@
             this.btnVerDieta.Location = new System.Drawing.Point(303, 186);
             this.btnVerDieta.Name = "btnVerDieta";
             this.btnVerDieta.Size = new System.Drawing.Size(248, 42);
-            this.btnVerDieta.TabIndex = 4;
+            this.btnVerDieta.TabIndex = 2;
             this.btnVerDieta.Text = "Ver Dieta";
             this.btnVerDieta.UseVisualStyleBackColor = true;
             this.btnVerDieta.Click += new System.EventHandler(this.OnBtnVerDietaClick);
@@ -79,11 +80,12 @@
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(436, 53);
+            this.lblWelcome.Location = new System.Drawing.Point(300, 35);
             this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 13);
+            this.lblWelcome.Size = new System.Drawing.Size(60, 13);
             this.lblWelcome.TabIndex = 8;
+            this.lblWelcome.Text = "Bienvenido";
             // 
             // GestionarPlanAlimenticio
             // 
@@ -97,7 +99,7 @@
             this.Controls.Add(this.btnVerDieta);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GestionarPlanAlimenticio";
-            this.Text = "GestionarPlanAlimenticio";
+            this.Text = "Gestionar plan alimenticio";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

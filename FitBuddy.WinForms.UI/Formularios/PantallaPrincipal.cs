@@ -1,19 +1,17 @@
 ﻿using FitBuddy.WinForms.UI.Security;
 using System;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class PantallaPrincipal : Form
     {
-        private readonly IFormBuilder _formBuilder;
+        private readonly IFormManager _formBuilder;
 
-        public PantallaPrincipal(IFormBuilder formBuilder)
+        public PantallaPrincipal(IFormManager formBuilder)
         {
             InitializeComponent();
-            var customPrincipal = Thread.CurrentPrincipal as CustomPrincipal;
-            lblWelcome.Text = $"Bienvenido, {customPrincipal.Identity.Name}";
+            lblWelcome.Text = $"Bienvenido, {IdentityManager.UsuarioActual.Username}";
             _formBuilder = formBuilder;
         }
 

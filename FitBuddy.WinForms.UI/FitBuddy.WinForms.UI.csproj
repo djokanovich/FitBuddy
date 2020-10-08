@@ -125,7 +125,7 @@
     <Compile Include="Formularios\CrearPlanEjercicio.Designer.cs">
       <DependentUpon>CrearPlanEjercicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FormBuilder.cs" />
+    <Compile Include="Formularios\FormManager.cs" />
     <Compile Include="Formularios\GestionarPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +167,7 @@
     <Compile Include="Security\AnonymousIdentity.cs" />
     <Compile Include="Security\CustomIdentity.cs" />
     <Compile Include="Security\CustomPrincipal.cs" />
+    <Compile Include="Security\IdentityManager.cs" />
     <EmbeddedResource Include="Formularios\AcercaDe.en.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +246,10 @@
     <ProjectReference Include="..\FitBuddy.Entidades\FitBuddy.Entidades.csproj">
       <Project>{96AAB3BC-CD44-4A9E-9847-7F16480A774D}</Project>
       <Name>FitBuddy.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seguridad\Seguridad.csproj">
+      <Project>{F6D53E2F-0779-4611-8CE7-E667A15B8D86}</Project>
+      <Name>Seguridad</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

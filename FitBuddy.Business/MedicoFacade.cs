@@ -4,11 +4,16 @@ using System.Collections.Generic;
 
 namespace FitBuddy.Business
 {
-    public class gesMedico
+    public interface IMedicoFacade
+    {
+        IEnumerable<Medico> ObtenerMedicos();
+    }
+
+    public class MedicoFacade : IMedicoFacade
     {
         private readonly IMedicoDAL _medicoDAL;
 
-        public gesMedico(IMedicoDAL medicoDAL)
+        public MedicoFacade(IMedicoDAL medicoDAL)
         {
             _medicoDAL = medicoDAL;
         }

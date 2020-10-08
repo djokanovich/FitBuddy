@@ -59,7 +59,7 @@
             this.btnAgendarTurno.Location = new System.Drawing.Point(282, 215);
             this.btnAgendarTurno.Name = "btnAgendarTurno";
             this.btnAgendarTurno.Size = new System.Drawing.Size(179, 23);
-            this.btnAgendarTurno.TabIndex = 18;
+            this.btnAgendarTurno.TabIndex = 9;
             this.btnAgendarTurno.Text = "Agendar Turno";
             this.btnAgendarTurno.UseVisualStyleBackColor = true;
             this.btnAgendarTurno.Click += new System.EventHandler(this.OnBtnAgendarTurnoClick);
@@ -69,7 +69,7 @@
             this.btnReclamosSugerencias.Location = new System.Drawing.Point(282, 187);
             this.btnReclamosSugerencias.Name = "btnReclamosSugerencias";
             this.btnReclamosSugerencias.Size = new System.Drawing.Size(179, 23);
-            this.btnReclamosSugerencias.TabIndex = 17;
+            this.btnReclamosSugerencias.TabIndex = 8;
             this.btnReclamosSugerencias.Text = "Reclamos y Sugerencias";
             this.btnReclamosSugerencias.UseVisualStyleBackColor = true;
             this.btnReclamosSugerencias.Click += new System.EventHandler(this.OnBtnReclamosSugerenciasClick);
@@ -79,7 +79,7 @@
             this.btnContactarProfesional.Location = new System.Drawing.Point(282, 158);
             this.btnContactarProfesional.Name = "btnContactarProfesional";
             this.btnContactarProfesional.Size = new System.Drawing.Size(179, 23);
-            this.btnContactarProfesional.TabIndex = 16;
+            this.btnContactarProfesional.TabIndex = 7;
             this.btnContactarProfesional.Text = "Contactar Profesional";
             this.btnContactarProfesional.UseVisualStyleBackColor = true;
             this.btnContactarProfesional.Click += new System.EventHandler(this.OnBtnContactarProfesionalClick);
@@ -89,7 +89,7 @@
             this.btnEstadisticas.Location = new System.Drawing.Point(282, 128);
             this.btnEstadisticas.Name = "btnEstadisticas";
             this.btnEstadisticas.Size = new System.Drawing.Size(179, 23);
-            this.btnEstadisticas.TabIndex = 15;
+            this.btnEstadisticas.TabIndex = 6;
             this.btnEstadisticas.Text = "Mis Estadísticas";
             this.btnEstadisticas.UseVisualStyleBackColor = true;
             this.btnEstadisticas.Click += new System.EventHandler(this.OnBtnEstadisticasClick);
@@ -99,7 +99,7 @@
             this.btnGestionarPlanEjercicio.Location = new System.Drawing.Point(74, 244);
             this.btnGestionarPlanEjercicio.Name = "btnGestionarPlanEjercicio";
             this.btnGestionarPlanEjercicio.Size = new System.Drawing.Size(189, 23);
-            this.btnGestionarPlanEjercicio.TabIndex = 14;
+            this.btnGestionarPlanEjercicio.TabIndex = 3;
             this.btnGestionarPlanEjercicio.Text = "Gestionar Plan de Ejercicio";
             this.btnGestionarPlanEjercicio.UseVisualStyleBackColor = true;
             this.btnGestionarPlanEjercicio.Click += new System.EventHandler(this.OnBtnGestionarPlanEjercicioClick);
@@ -109,7 +109,7 @@
             this.btnCargaDiariaEjercicios.Location = new System.Drawing.Point(282, 99);
             this.btnCargaDiariaEjercicios.Name = "btnCargaDiariaEjercicios";
             this.btnCargaDiariaEjercicios.Size = new System.Drawing.Size(179, 23);
-            this.btnCargaDiariaEjercicios.TabIndex = 13;
+            this.btnCargaDiariaEjercicios.TabIndex = 5;
             this.btnCargaDiariaEjercicios.Text = "Carga Diaria de Ejercicios";
             this.btnCargaDiariaEjercicios.UseVisualStyleBackColor = true;
             this.btnCargaDiariaEjercicios.Click += new System.EventHandler(this.OnBtnCargaDiariaEjerciciosClick);
@@ -119,7 +119,7 @@
             this.btnCargaDiariaComidas.Location = new System.Drawing.Point(282, 70);
             this.btnCargaDiariaComidas.Name = "btnCargaDiariaComidas";
             this.btnCargaDiariaComidas.Size = new System.Drawing.Size(179, 23);
-            this.btnCargaDiariaComidas.TabIndex = 12;
+            this.btnCargaDiariaComidas.TabIndex = 4;
             this.btnCargaDiariaComidas.Text = "Carga Diaria de Comidas";
             this.btnCargaDiariaComidas.UseVisualStyleBackColor = true;
             this.btnCargaDiariaComidas.Click += new System.EventHandler(this.OnBtnCargaDiariaComidasClick);
@@ -129,7 +129,7 @@
             this.btnGestionarPlanAlimenticio.Location = new System.Drawing.Point(74, 215);
             this.btnGestionarPlanAlimenticio.Name = "btnGestionarPlanAlimenticio";
             this.btnGestionarPlanAlimenticio.Size = new System.Drawing.Size(189, 23);
-            this.btnGestionarPlanAlimenticio.TabIndex = 11;
+            this.btnGestionarPlanAlimenticio.TabIndex = 2;
             this.btnGestionarPlanAlimenticio.Text = "Gestionar Plan Alimeticio";
             this.btnGestionarPlanAlimenticio.UseVisualStyleBackColor = true;
             this.btnGestionarPlanAlimenticio.Click += new System.EventHandler(this.OnBtnGestionarPlanAlimenticioClick);
@@ -139,7 +139,7 @@
             this.btnGestionarPerfil.Location = new System.Drawing.Point(74, 186);
             this.btnGestionarPerfil.Name = "btnGestionarPerfil";
             this.btnGestionarPerfil.Size = new System.Drawing.Size(189, 23);
-            this.btnGestionarPerfil.TabIndex = 10;
+            this.btnGestionarPerfil.TabIndex = 1;
             this.btnGestionarPerfil.Text = "Gestionar Perfil";
             this.btnGestionarPerfil.UseVisualStyleBackColor = true;
             this.btnGestionarPerfil.Click += new System.EventHandler(this.OnBtnGestionarPerfilClick);
@@ -158,7 +158,7 @@
             this.btnBackup.Location = new System.Drawing.Point(282, 244);
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.Size = new System.Drawing.Size(179, 23);
-            this.btnBackup.TabIndex = 21;
+            this.btnBackup.TabIndex = 10;
             this.btnBackup.Text = "Backup";
             this.btnBackup.UseVisualStyleBackColor = true;
             this.btnBackup.Click += new System.EventHandler(this.OnBtnBackupClick);
@@ -182,7 +182,7 @@
             this.Controls.Add(this.btnGestionarPerfil);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PantallaPrincipal";
-            this.Text = "PantallaPrincipal";
+            this.Text = "Pantalla principal";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

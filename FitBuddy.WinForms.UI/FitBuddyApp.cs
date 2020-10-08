@@ -11,13 +11,11 @@ namespace FitBuddy.WinForms.UI
     {
         private readonly IBitacora _bitacora;
         private readonly IServicioIntegridadBLL _servicioIntegridadBLL;
-        private readonly IPrincipal _customPrincipal;
 
-        public FitBuddyApp(IBitacora bitacora, IServicioIntegridadBLL servicioIntegridadBLL, IPrincipal customPrincipal)
+        public FitBuddyApp(IBitacora bitacora, IServicioIntegridadBLL servicioIntegridadBLL)
         {
             _bitacora = bitacora;
             _servicioIntegridadBLL = servicioIntegridadBLL;
-            _customPrincipal = customPrincipal;
         }
 
         public event EventHandler AbrirVentanaPrincipal;
@@ -28,8 +26,6 @@ namespace FitBuddy.WinForms.UI
                 throw new Exception("No se configuró ningún evento para abrir la ventana principal.");
 
             _bitacora.Info("Aplicación iniciada.");
-
-            Thread.CurrentPrincipal = _customPrincipal;
 
             VerificarIntegridadDb();
 

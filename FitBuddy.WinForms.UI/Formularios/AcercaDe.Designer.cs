@@ -36,7 +36,7 @@
             this.LabelCopyright = new System.Windows.Forms.Label();
             this.LabelCompanyName = new System.Windows.Forms.Label();
             this.TextBoxDescription = new System.Windows.Forms.TextBox();
-            this.OKButton = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.TableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +50,7 @@
             this.TableLayoutPanel.Controls.Add(this.LabelCopyright, 1, 2);
             this.TableLayoutPanel.Controls.Add(this.LabelCompanyName, 1, 3);
             this.TableLayoutPanel.Controls.Add(this.TextBoxDescription, 1, 4);
-            this.TableLayoutPanel.Controls.Add(this.OKButton, 1, 5);
+            this.TableLayoutPanel.Controls.Add(this.btnAceptar, 1, 5);
             this.TableLayoutPanel.Name = "TableLayoutPanel";
             // 
             // LogoPictureBox
@@ -87,15 +87,16 @@
             this.TextBoxDescription.ReadOnly = true;
             this.TextBoxDescription.TabStop = false;
             // 
-            // OKButton
+            // btnAceptar
             // 
-            resources.ApplyResources(this.OKButton, "OKButton");
-            this.OKButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.OKButton.Name = "OKButton";
-            this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
+            resources.ApplyResources(this.btnAceptar, "btnAceptar");
+            this.btnAceptar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Click += new System.EventHandler(this.OnBtnAceptarClick);
             // 
             // AcercaDe
             // 
+            this.AcceptButton = this.btnAceptar;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.TableLayoutPanel);
@@ -116,6 +117,6 @@
         internal System.Windows.Forms.Label LabelCopyright;
         internal System.Windows.Forms.Label LabelCompanyName;
         internal System.Windows.Forms.TextBox TextBoxDescription;
-        internal System.Windows.Forms.Button OKButton;
+        internal System.Windows.Forms.Button btnAceptar;
     }
 }

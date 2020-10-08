@@ -39,7 +39,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.Label6 = new System.Windows.Forms.Label();
             this.Label5 = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
@@ -132,12 +132,12 @@
             this.Label5.TabIndex = 20;
             this.Label5.Text = "Nombre";
             // 
-            // txtUsuario
+            // txtUsername
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(437, 75);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(190, 20);
-            this.txtUsuario.TabIndex = 19;
+            this.txtUsername.Location = new System.Drawing.Point(437, 75);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(190, 20);
+            this.txtUsername.TabIndex = 19;
             // 
             // Label4
             // 
@@ -177,6 +177,7 @@
             // 
             // RegistrarNuevoUsuario
             // 
+            this.AcceptButton = this.btnRegistrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 385);
@@ -190,14 +191,14 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.Label6);
             this.Controls.Add(this.Label5);
-            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.Label4);
             this.Controls.Add(this.Label3);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegistrarNuevoUsuario";
-            this.Text = "RegistrarNuevoUsuario";
+            this.Text = "Registrar nuevo usuario";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -216,7 +217,7 @@
         internal System.Windows.Forms.TextBox txtPassword;
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.Label Label5;
-        internal System.Windows.Forms.TextBox txtUsuario;
+        internal System.Windows.Forms.TextBox txtUsername;
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.Label Label2;

@@ -3,6 +3,7 @@ using Common.Bitacora;
 using FitBuddy.Business;
 using FitBuddy.WinForms.UI.Formularios;
 using FitBuddy.WinForms.UI.Security;
+using Seguridad;
 using System.Security.Principal;
 
 namespace FitBuddy.WinForms.UI
@@ -20,12 +21,12 @@ namespace FitBuddy.WinForms.UI
             builder.RegisterType<Bitacora>().As<IBitacora>()
                 .WithParameter("path", path)
                 .WithParameter("minimoNivelMensajesBitacora", minimoNivelMensajesBitacora);
+            builder.RegisterType<PasswordValidator>().As<IPasswordValidator>();
+            builder.RegisterType<EmailValidator>().As<IEmailValidator>();
 
             builder.RegisterType<FitBuddyApp>().AsSelf();
 
-            builder.RegisterType<CustomPrincipal>().As<IPrincipal>();
-
-            builder.RegisterType<FormBuilder>().As<IFormBuilder>()
+            builder.RegisterType<FormManager>().As<IFormManager>()
                 .SingleInstance();
 
             builder.RegisterType<AcercaDe>().AsSelf();

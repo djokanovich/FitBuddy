@@ -2949,31 +2949,31 @@ Personalice la información de ensamblado de la aplicación en el panel Aplicaci
   <data name="&gt;&gt;TextBoxDescription.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="OKButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="btnAceptar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
-  <data name="OKButton.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
     <value>517, 338</value>
   </data>
-  <data name="OKButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="OKButton.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnAceptar.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="OKButton.Text" xml:space="preserve">
+  <data name="btnAceptar.Text" xml:space="preserve">
     <value>&amp;Aceptar</value>
   </data>
-  <data name="&gt;&gt;OKButton.Name" xml:space="preserve">
-    <value>OKButton</value>
+  <data name="&gt;&gt;btnAceptar.Name" xml:space="preserve">
+    <value>btnAceptar</value>
   </data>
-  <data name="&gt;&gt;OKButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnAceptar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;OKButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnAceptar.Parent" xml:space="preserve">
     <value>TableLayoutPanel</value>
   </data>
-  <data name="&gt;&gt;OKButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnAceptar.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="TableLayoutPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -3004,7 +3004,7 @@ Personalice la información de ensamblado de la aplicación en el panel Aplicaci
     <value>0</value>
   </data>
   <data name="TableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="LogoPictureBox" Row="0" RowSpan="6" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="LabelProductName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelVersion" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelCopyright" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelCompanyName" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxDescription" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="OKButton" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,Percent,67" /&gt;&lt;Rows Styles="Percent,9.967846,Percent,9.967846,Percent,10,Percent,10,Percent,50,Percent,10" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="LogoPictureBox" Row="0" RowSpan="6" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="LabelProductName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelVersion" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelCopyright" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelCompanyName" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxDescription" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnAceptar" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,Percent,67" /&gt;&lt;Rows Styles="Percent,9.967846,Percent,9.967846,Percent,10,Percent,10,Percent,50,Percent,10" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -3019,7 +3019,7 @@ Personalice la información de ensamblado de la aplicación en el panel Aplicaci
     <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>AcercaDe</value>
+    <value>FitBuddy</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>AcercaDe</value>

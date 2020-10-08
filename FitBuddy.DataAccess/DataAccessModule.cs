@@ -13,8 +13,8 @@ namespace FitBuddy.DataAccess
                 .SingleInstance();
 
             builder.RegisterType<MedicoDAL>().As<IMedicoDAL>();
-            builder.RegisterType<PacienteDAL>().As<IPacienteDAL>();
-            builder.RegisterType<UsuarioDAL>().As<IUsuarioDAL>();
+            builder.RegisterType<PacienteRepositorio>().As<IPacienteRepositorio>();
+            builder.RegisterType<UsuarioRepositorio>().As<IUsuarioRepositorio>();
         }
     }
 }

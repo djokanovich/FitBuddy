@@ -125,6 +125,12 @@
     <Compile Include="Formularios\CrearPlanEjercicio.Designer.cs">
       <DependentUpon>CrearPlanEjercicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas.Designer.cs">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FormManager.cs" />
     <Compile Include="Formularios\GestionarPerfil.cs">
       <SubType>Form</SubType>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CrearPlanEjercicio.resx">
       <DependentUpon>CrearPlanEjercicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas.resx">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\GestionarPerfil.resx">
       <DependentUpon>GestionarPerfil.cs</DependentUpon>

@@ -32,6 +32,7 @@ namespace FitBuddy.WinForms.UI
             builder.RegisterType<CargarDiarioEjercicios>().AsSelf();
             builder.RegisterType<CrearDieta>().AsSelf();
             builder.RegisterType<CrearPlanEjercicio>().AsSelf();
+            builder.RegisterType<Estadisticas>().AsSelf();
             builder.RegisterType<GestionarPerfil>().AsSelf();
             builder.RegisterType<GestionarPlanAlimenticio>().AsSelf();
             builder.RegisterType<GestionarPlanEjercicios>().AsSelf();

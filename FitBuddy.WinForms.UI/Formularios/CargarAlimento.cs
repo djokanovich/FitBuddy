@@ -10,5 +10,10 @@ namespace FitBuddy.WinForms.UI.Formularios
             InitializeComponent();
             lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
         }
+
+        private void CargarAlimento_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

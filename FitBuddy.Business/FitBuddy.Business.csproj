@@ -69,6 +69,7 @@
     <Compile Include="BusinessModule.cs" />
     <Compile Include="Facade\AgendarTurnoBusinessLogic.cs" />
     <Compile Include="Facade\CrearDietaBusinessLogic.cs" />
+    <Compile Include="Facade\EstadisticasBusinessLogic.cs" />
     <Compile Include="Facade\GestionarPerfilBusinessLogic.cs" />
     <Compile Include="Facade\LogInBusinessLogic.cs" />
     <Compile Include="Facade\RegistrarNuevoUsuarioBusinessLogic.cs" />

@@ -42,7 +42,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnEstadisticasClick(object sender, EventArgs e)
         {
-            MessageBox.Show("Sección en construcción");
+            _formBuilder.Show<Estadisticas>();
         }
 
         private void OnBtnContactarProfesionalClick(object sender, EventArgs e)

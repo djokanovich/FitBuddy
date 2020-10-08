@@ -22,7 +22,7 @@ namespace FitBuddy.DataAccess.Repositorio
 
         public Paciente ObtenerPacientePorUsuarioId(int usuarioId)
         {
-            var paciente = _dbContext.Paciente.SingleOrDefault(p => p.Id == usuarioId);
+            var paciente = _dbContext.Paciente.SingleOrDefault(p => p.UsuarioId == usuarioId);
             return paciente;
         }
 

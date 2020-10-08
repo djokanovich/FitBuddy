@@ -13,7 +13,7 @@ namespace Common.Bitacora
         public Bitacora(string path, string minimoNivelMensajesBitacora)
         {
             _path = path;
-            
+
             if (!Enum.TryParse(minimoNivelMensajesBitacora, ignoreCase: true, out _minimoNivelMensajesBitacora))
             {
                 _minimoNivelMensajesBitacora = NivelMensajesBitacoraPorDefecto;
@@ -54,7 +54,7 @@ namespace Common.Bitacora
 
         private string FormatMessage(string mensaje, NivelMensajeBitacora logLevel)
         {
-            return $"{DateTime.Now}  [{logLevel.ToString().ToUpperInvariant(),-8}] - {mensaje}";
+            return $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} [{logLevel.ToString().ToUpperInvariant(),-11}] - {mensaje}";
         }
     }
 }

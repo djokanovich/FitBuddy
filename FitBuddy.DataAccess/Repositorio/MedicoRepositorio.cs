@@ -4,16 +4,16 @@ using System.Linq;
 
 namespace FitBuddy.DataAccess.Repositorio
 {
-    public interface IMedicoDAL
+    public interface IMedicoRepositorio
     {
         IEnumerable<Medico> ObtenerMedicos();
     }
 
-    public class MedicoDAL : IMedicoDAL
+    public class MedicoRepositorio : IMedicoRepositorio
     {
         private readonly AppDbContext _dbContext;
 
-        public MedicoDAL(AppDbContext dbContext)
+        public MedicoRepositorio(AppDbContext dbContext)
         {
             _dbContext = dbContext;
         }

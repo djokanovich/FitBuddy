@@ -18,22 +18,18 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             var openFileDialog = new OpenFileDialog
             {
-                InitialDirectory = "c:\\",
-                Filter = "Archivos de back-up (*.bak)|*.bak",
-                CheckFileExists = false,
+                InitialDirectory = "C:\\",
+                Filter = "Archivos de backup (*.bak)|*.bak",
+                CheckFileExists = false, // Falso, para poder seleccionar un archivo inexistente.
             };
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 var fileName = openFileDialog.FileName;
                 if (_backupBusinessLogic.EsCrearBackupExitoso(fileName))
-                {
-                    MessageBox.Show("Backup creado con éxito");
-                }
+                    MessageBox.Show("Backup creado con éxito.");
                 else
-                {
-                    MessageBox.Show("Consulte al administrador");
-                }
+                    MessageBox.Show("No se pudo crear el backup.");
             }
         }
     }

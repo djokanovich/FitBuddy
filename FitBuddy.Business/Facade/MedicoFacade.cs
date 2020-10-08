@@ -11,9 +11,9 @@ namespace FitBuddy.Business.Facade
 
     public class MedicoFacade : IMedicoFacade
     {
-        private readonly IMedicoDAL _medicoDAL;
+        private readonly IMedicoRepositorio _medicoDAL;
 
-        public MedicoFacade(IMedicoDAL medicoDAL)
+        public MedicoFacade(IMedicoRepositorio medicoDAL)
         {
             _medicoDAL = medicoDAL;
         }

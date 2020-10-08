@@ -16,7 +16,7 @@ namespace FitBuddy.DataAccess
             builder.RegisterType<DbBackupSevice>().As<IDbBackupSevice>();
             builder.RegisterType<DbIntegridadService>().As<IDbIntegridadService>();
             
-            builder.RegisterType<MedicoDAL>().As<IMedicoDAL>();
+            builder.RegisterType<MedicoRepositorio>().As<IMedicoRepositorio>();
             builder.RegisterType<PacienteRepositorio>().As<IPacienteRepositorio>();
             builder.RegisterType<UsuarioRepositorio>().As<IUsuarioRepositorio>();
         }

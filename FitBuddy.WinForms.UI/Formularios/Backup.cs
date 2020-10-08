@@ -1,4 +1,5 @@
-﻿using FitBuddy.Business.Facade;
+﻿using Common.Bitacora;
+using FitBuddy.Business.Facade;
 using System;
 using System.Windows.Forms;
 
@@ -6,11 +7,13 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class Backup : Form
     {
+        private readonly IBitacora<Backup> _bitacora;
         private readonly IBackupBusinessLogic _backupBusinessLogic;
 
-        public Backup(IBackupBusinessLogic backupBusinessLogic)
+        public Backup(IBitacora<Backup> bitacora, IBackupBusinessLogic backupBusinessLogic)
         {
             InitializeComponent();
+            _bitacora = bitacora;
             _backupBusinessLogic = backupBusinessLogic;
         }
 
@@ -26,6 +29,8 @@ namespace FitBuddy.WinForms.UI.Formularios
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 var fileName = openFileDialog.FileName;
+                _bitacora.Debug($"Solicitud para crear backup en el archivo {fileName}.");
+
                 if (_backupBusinessLogic.EsCrearBackupExitoso(fileName))
                     MessageBox.Show("Backup creado con éxito.");
                 else

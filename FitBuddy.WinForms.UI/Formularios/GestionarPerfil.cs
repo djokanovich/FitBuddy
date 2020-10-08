@@ -9,9 +9,9 @@ namespace FitBuddy.WinForms.UI.Formularios
     public partial class GestionarPerfil : Form
     {
         private readonly IUsuarioFacade _usuarioFacade;
-        private readonly PacienteFacade _gesPaciente;
+        private readonly IPacienteFacade _gesPaciente;
 
-        public GestionarPerfil(IUsuarioFacade usuarioFacade, PacienteFacade gesPaciente)
+        public GestionarPerfil(IUsuarioFacade usuarioFacade, IPacienteFacade gesPaciente)
         {
             InitializeComponent();
             lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";

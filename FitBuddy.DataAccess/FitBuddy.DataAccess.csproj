@@ -179,6 +179,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common.Bitacora\Common.Bitacora.csproj">
+      <Project>{A9E94ABA-FC74-4048-861C-BBE4193A6909}</Project>
+      <Name>Common.Bitacora</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FitBuddy.Entidades\FitBuddy.Entidades.csproj">
       <Project>{96aab3bc-cd44-4a9e-9847-7f16480a774d}</Project>
       <Name>FitBuddy.Entidades</Name>

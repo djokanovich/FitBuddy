@@ -30,8 +30,11 @@ namespace FitBuddy.WinForms.UI.Formularios
             var usuario = new Usuario
             {
                 Username = txtUsername.Text,
+                Nombre = txtNombre.Text,
                 Apellido = txtApellido.Text,
-                Nombre = txtNombre.Text
+                Estado = Estado.Activo,
+                IntentosFallidos = 0,
+                IdIdioma = 0 // TODO: Agregar idiomas a la tabla idiomas, mostrarlos en un combobox en este formulario, y setear este campo al valor seleccionado
             };
             var contraseña = txtPassword.Text;
 

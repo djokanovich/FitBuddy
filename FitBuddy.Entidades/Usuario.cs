@@ -23,7 +23,7 @@ namespace FitBuddy.Entidades
         public byte[] ConcatenarPropiedades()
         {
             // Jokanovich1714...
-            var concat = string.Concat(new[] { Apellido, Estado.ToString(), IdIdioma.ToString(), Id.ToString(), IntentosFallidos.ToString(), Nombre, Password, Username });
+            var concat = string.Concat(new[] { Username, Password, Nombre, Apellido, Estado.ToString(), IdIdioma.ToString(), IntentosFallidos.ToString() });
             return Encoding.ASCII.GetBytes(concat);
         }
     }

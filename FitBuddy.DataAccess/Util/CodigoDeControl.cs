@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
 namespace FitBuddy.DataAccess.Util
 {
-   public class CodigoDeControl
+    // TODO: Eliminar esta clase y usar un hash (p.ej. MD5, que ya está implementado en el proyecto Common.Utilidades)
+    public class CodigoDeControl
     {
         public static int Luhn(byte[] input) 
         {

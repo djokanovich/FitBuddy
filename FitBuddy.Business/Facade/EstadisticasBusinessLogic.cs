@@ -26,11 +26,10 @@ namespace FitBuddy.Business.Facade
             var imc = peso / Math.Pow(altura, 2);
 
             // Fórmula de Deurenberg
-            // Para una mujer: IMG = (1, 2 × IMC) +(0, 23 × edad) -5,4
-            // Para un hombre: IMG = (1, 2 × IMC) +(0, 23 × edad) -16,2
+            // Para una mujer: IMG = (1,2 × IMC) + (0,23 × edad) - 5,4
+            // Para un hombre: IMG = (1,2 × IMC) + (0,23 × edad) - 16,2
 
             var edad = paciente.Edad;
-
             var offset = paciente.Genero == "F" ? 5.4 : 16.2; //operador ternario
 
             var igc = (1.2 * imc) + (0.23 * edad) - offset;

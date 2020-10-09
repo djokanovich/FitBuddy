@@ -72,6 +72,7 @@
     <Compile Include="Facade\EstadisticasBusinessLogic.cs" />
     <Compile Include="Facade\GestionarPerfilBusinessLogic.cs" />
     <Compile Include="Facade\LogInBusinessLogic.cs" />
+    <Compile Include="Facade\PantallaPrincipalBusinessLogic.cs" />
     <Compile Include="Facade\RegistrarNuevoUsuarioBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Facade\BackupBusinessLogic.cs" />

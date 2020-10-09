@@ -1,4 +1,5 @@
-﻿using FitBuddy.Business.Facade;
+﻿using Common.Bitacora;
+using FitBuddy.Business.Facade;
 using FitBuddy.WinForms.UI.Security;
 using System;
 using System.Windows.Forms;
@@ -8,13 +9,17 @@ namespace FitBuddy.WinForms.UI.Formularios
     public partial class PantallaPrincipal : Form
     {
         private readonly IFormManager _formManager;
+        private readonly IBitacora<PantallaPrincipal> _bitacora;
         private readonly IPantallaPrincipalBusinessLogic _pantallaPrincipalBusinessLogic;
 
-        public PantallaPrincipal(IFormManager formManager, IPantallaPrincipalBusinessLogic pantallaPrincipalBusinessLogic)
+        public PantallaPrincipal(IFormManager formManager,
+            IBitacora<PantallaPrincipal> bitacora,
+            IPantallaPrincipalBusinessLogic pantallaPrincipalBusinessLogic)
         {
             InitializeComponent();
             lblWelcome.Text = $"Bienvenido, {IdentityManager.UsuarioActual.Username}";
             _formManager = formManager;
+            _bitacora = bitacora;
             _pantallaPrincipalBusinessLogic = pantallaPrincipalBusinessLogic;
         }
 
@@ -84,6 +89,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnLogoutClick(object sender, EventArgs e)
         {
+            _bitacora.Info($"El usuario {IdentityManager.UsuarioActual.Username} (id: {IdentityManager.UsuarioActual.UserId}) ha cerrado su sesión.");
             IdentityManager.CerrarSesionUsuario();
             _formManager.Show<LogIn>().AndClose(this);
         }

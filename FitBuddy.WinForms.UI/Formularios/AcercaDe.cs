@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Common.Bitacora;
 using FitBuddy.WinForms.UI.Security;
 
 namespace FitBuddy.WinForms.UI.Formularios
@@ -7,11 +8,13 @@ namespace FitBuddy.WinForms.UI.Formularios
     public partial class AcercaDe : Form
     {
         private readonly IFormManager _formManager;
+        private readonly IBitacora<AcercaDe> _bitacora;
 
-        public AcercaDe(IFormManager formManager)
+        public AcercaDe(IFormManager formManager, IBitacora<AcercaDe> bitacora)
         {
             InitializeComponent();
             _formManager = formManager;
+            _bitacora = bitacora;
         }
 
         private void OnBtnAceptarClick(object sender, EventArgs e)
@@ -24,6 +27,12 @@ namespace FitBuddy.WinForms.UI.Formularios
             {
                 _formManager.Show<LogIn>();
             }
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            _bitacora.Info("Aplicación finalizada.");
+            base.OnClosed(e);
         }
     }
 }

@@ -18,9 +18,11 @@ namespace FitBuddy.WinForms.UI
             builder.RegisterGeneric(typeof(Bitacora<>))
                 .As(typeof(IBitacora<>))
                 .WithParameter("path", path)
-                .WithParameter("minimoNivelMensajesBitacora", minimoNivelMensajesBitacora);
+                .WithParameter("minimoNivelMensajesBitacora", minimoNivelMensajesBitacora)
+                .SingleInstance();
 
-            builder.RegisterType<FitBuddyApp>().AsSelf();
+            builder.RegisterType<FitBuddyApp>().AsSelf()
+                .SingleInstance();
 
             builder.RegisterType<FormManager>().As<IFormManager>()
                 .SingleInstance();

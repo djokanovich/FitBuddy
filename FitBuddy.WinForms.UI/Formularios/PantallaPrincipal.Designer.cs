@@ -41,13 +41,14 @@
             this.btnGestionarPerfil = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.btnBackup = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // PictureBox1
             // 
             this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(74, 71);
+            this.PictureBox1.Location = new System.Drawing.Point(27, 74);
             this.PictureBox1.Name = "PictureBox1";
             this.PictureBox1.Size = new System.Drawing.Size(189, 64);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -56,7 +57,7 @@
             // 
             // btnAgendarTurno
             // 
-            this.btnAgendarTurno.Location = new System.Drawing.Point(282, 215);
+            this.btnAgendarTurno.Location = new System.Drawing.Point(235, 218);
             this.btnAgendarTurno.Name = "btnAgendarTurno";
             this.btnAgendarTurno.Size = new System.Drawing.Size(179, 23);
             this.btnAgendarTurno.TabIndex = 9;
@@ -66,7 +67,7 @@
             // 
             // btnReclamosSugerencias
             // 
-            this.btnReclamosSugerencias.Location = new System.Drawing.Point(282, 187);
+            this.btnReclamosSugerencias.Location = new System.Drawing.Point(235, 190);
             this.btnReclamosSugerencias.Name = "btnReclamosSugerencias";
             this.btnReclamosSugerencias.Size = new System.Drawing.Size(179, 23);
             this.btnReclamosSugerencias.TabIndex = 8;
@@ -76,7 +77,7 @@
             // 
             // btnContactarProfesional
             // 
-            this.btnContactarProfesional.Location = new System.Drawing.Point(282, 158);
+            this.btnContactarProfesional.Location = new System.Drawing.Point(235, 161);
             this.btnContactarProfesional.Name = "btnContactarProfesional";
             this.btnContactarProfesional.Size = new System.Drawing.Size(179, 23);
             this.btnContactarProfesional.TabIndex = 7;
@@ -86,7 +87,7 @@
             // 
             // btnEstadisticas
             // 
-            this.btnEstadisticas.Location = new System.Drawing.Point(282, 128);
+            this.btnEstadisticas.Location = new System.Drawing.Point(235, 131);
             this.btnEstadisticas.Name = "btnEstadisticas";
             this.btnEstadisticas.Size = new System.Drawing.Size(179, 23);
             this.btnEstadisticas.TabIndex = 6;
@@ -96,7 +97,7 @@
             // 
             // btnGestionarPlanEjercicio
             // 
-            this.btnGestionarPlanEjercicio.Location = new System.Drawing.Point(74, 244);
+            this.btnGestionarPlanEjercicio.Location = new System.Drawing.Point(27, 247);
             this.btnGestionarPlanEjercicio.Name = "btnGestionarPlanEjercicio";
             this.btnGestionarPlanEjercicio.Size = new System.Drawing.Size(189, 23);
             this.btnGestionarPlanEjercicio.TabIndex = 3;
@@ -106,7 +107,7 @@
             // 
             // btnCargaDiariaEjercicios
             // 
-            this.btnCargaDiariaEjercicios.Location = new System.Drawing.Point(282, 99);
+            this.btnCargaDiariaEjercicios.Location = new System.Drawing.Point(235, 102);
             this.btnCargaDiariaEjercicios.Name = "btnCargaDiariaEjercicios";
             this.btnCargaDiariaEjercicios.Size = new System.Drawing.Size(179, 23);
             this.btnCargaDiariaEjercicios.TabIndex = 5;
@@ -116,7 +117,7 @@
             // 
             // btnCargaDiariaComidas
             // 
-            this.btnCargaDiariaComidas.Location = new System.Drawing.Point(282, 70);
+            this.btnCargaDiariaComidas.Location = new System.Drawing.Point(235, 73);
             this.btnCargaDiariaComidas.Name = "btnCargaDiariaComidas";
             this.btnCargaDiariaComidas.Size = new System.Drawing.Size(179, 23);
             this.btnCargaDiariaComidas.TabIndex = 4;
@@ -126,7 +127,7 @@
             // 
             // btnGestionarPlanAlimenticio
             // 
-            this.btnGestionarPlanAlimenticio.Location = new System.Drawing.Point(74, 215);
+            this.btnGestionarPlanAlimenticio.Location = new System.Drawing.Point(27, 218);
             this.btnGestionarPlanAlimenticio.Name = "btnGestionarPlanAlimenticio";
             this.btnGestionarPlanAlimenticio.Size = new System.Drawing.Size(189, 23);
             this.btnGestionarPlanAlimenticio.TabIndex = 2;
@@ -136,7 +137,7 @@
             // 
             // btnGestionarPerfil
             // 
-            this.btnGestionarPerfil.Location = new System.Drawing.Point(74, 186);
+            this.btnGestionarPerfil.Location = new System.Drawing.Point(27, 189);
             this.btnGestionarPerfil.Name = "btnGestionarPerfil";
             this.btnGestionarPerfil.Size = new System.Drawing.Size(189, 23);
             this.btnGestionarPerfil.TabIndex = 1;
@@ -146,16 +147,17 @@
             // 
             // lblWelcome
             // 
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(354, 24);
+            this.lblWelcome.Location = new System.Drawing.Point(27, 24);
             this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 13);
+            this.lblWelcome.Size = new System.Drawing.Size(387, 13);
             this.lblWelcome.TabIndex = 20;
+            this.lblWelcome.Text = "Bienvenido";
+            this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // btnBackup
             // 
-            this.btnBackup.Location = new System.Drawing.Point(282, 244);
+            this.btnBackup.Location = new System.Drawing.Point(235, 247);
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.Size = new System.Drawing.Size(179, 23);
             this.btnBackup.TabIndex = 10;
@@ -163,11 +165,22 @@
             this.btnBackup.UseVisualStyleBackColor = true;
             this.btnBackup.Click += new System.EventHandler(this.OnBtnBackupClick);
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(235, 328);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(179, 23);
+            this.btnLogout.TabIndex = 21;
+            this.btnLogout.Text = "Cerrar sesión";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.OnBtnLogoutClick);
+            // 
             // PantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 309);
+            this.ClientSize = new System.Drawing.Size(441, 366);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnBackup);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.PictureBox1);
@@ -185,7 +198,6 @@
             this.Text = "Pantalla principal";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -203,5 +215,6 @@
         internal System.Windows.Forms.Button btnGestionarPerfil;
         private System.Windows.Forms.Label lblWelcome;
         internal System.Windows.Forms.Button btnBackup;
+        internal System.Windows.Forms.Button btnLogout;
     }
 }

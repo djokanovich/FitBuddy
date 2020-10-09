@@ -16,6 +16,17 @@ namespace FitBuddy.WinForms.UI.Security
             ObternerPrincipal.Identity = new CustomIdentity(userId, username, roles);
         }
 
+        public static void CerrarSesionUsuario()
+        {
+            ObternerPrincipal.Identity = new AnonymousIdentity();
+        }
+
+        public static bool HayUsuarioLogueado()
+        {
+            return ObternerPrincipal.Identity.UserId != 0 &&
+                !string.IsNullOrWhiteSpace(ObternerPrincipal.Identity.Username);
+        }
+
         private static CustomPrincipal ObternerPrincipal => Thread.CurrentPrincipal as CustomPrincipal;
     }
 }

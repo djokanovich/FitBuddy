@@ -81,5 +81,11 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             _formManager.Show<Backup>();
         }
+
+        private void OnBtnLogoutClick(object sender, EventArgs e)
+        {
+            IdentityManager.CerrarSesionUsuario();
+            _formManager.Show<LogIn>().AndClose(this);
+        }
     }
 }

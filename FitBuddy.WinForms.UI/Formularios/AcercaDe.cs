@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using FitBuddy.WinForms.UI.Security;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
@@ -15,7 +16,14 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnAceptarClick(object sender, EventArgs e)
         {
-            _formManager.Show<LogIn>();
+            if (IdentityManager.HayUsuarioLogueado())
+            {
+                _formManager.Show<PantallaPrincipal>();
+            }
+            else
+            {
+                _formManager.Show<LogIn>();
+            }
         }
     }
 }

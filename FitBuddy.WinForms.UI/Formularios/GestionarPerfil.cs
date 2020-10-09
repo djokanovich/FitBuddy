@@ -24,7 +24,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
             var userId = IdentityManager.UsuarioActual.UserId;
             var usuario = _gestionarPerfilBusinessLogic.ObtenerUsuarioPorId(userId);
-            Paciente paciente = new Paciente
+            var paciente = new Paciente
             {
                 UsuarioId = userId,
                 Usuario = usuario,

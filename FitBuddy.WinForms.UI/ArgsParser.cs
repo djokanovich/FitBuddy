@@ -40,6 +40,19 @@ namespace FitBuddy.WinForms.UI
                         parsedArgs.LogFilename = args[index];
                         break;
 
+                    case "-v":
+                    case "--version":
+                    case "/v":
+                        parsedArgs.VersiónSolicitada = true;
+                        break;
+
+                    case "-h":
+                    case "--help":
+                    case "/h":
+                    case "/?":
+                        parsedArgs.AyudaSolicitada = true;
+                        break;
+
                     default:
                         parsedArgs.Errores.Add($"El parámetro {arg} no es válido.");
                         break;
@@ -56,5 +69,7 @@ namespace FitBuddy.WinForms.UI
         public bool SonVálidos => !Errores.Any();
         public string LogLevel { get; set; } = null;
         public string LogFilename { get; set; } = null;
+        public bool VersiónSolicitada { get; set; } = false;
+        public bool AyudaSolicitada { get; set; } = false;
     }
 }

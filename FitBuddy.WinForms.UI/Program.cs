@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using FitBuddy.WinForms.UI.Formularios;
 using Autofac;
-using System.Linq;
+using System.Text;
 
 namespace FitBuddy.WinForms.UI
 {
@@ -17,7 +17,7 @@ namespace FitBuddy.WinForms.UI
         static void Main(string[] args)
         {
             var parámetros = ParseArgs(args);
-            if (!parámetros.SonVálidos)
+            if (!parámetros.SonVálidos || parámetros.AyudaSolicitada || parámetros.VersiónSolicitada)
                 return;
 
             _container = new Bootstrapper().Bootstrap(parámetros);
@@ -47,8 +47,45 @@ namespace FitBuddy.WinForms.UI
         private static ParsedArgs ParseArgs(string[] args)
         {
             var parsedArgs = ArgsParser.Parse(args);
+
             if (!parsedArgs.SonVálidos)
                 MessageBox.Show(string.Join("\n", parsedArgs.Errores));
+
+            if (parsedArgs.AyudaSolicitada)
+            {
+                var sb = new StringBuilder();
+                sb.AppendLine("FitBuddy puede ejecutarse con los siguientes parámetros:");
+                sb.AppendLine();
+                sb.AppendLine("-ll LOGLEVEL");
+                sb.AppendLine("--loglevel LOGLEVEL");
+                sb.AppendLine("     Especifica el nivel de mensajes de bitácora, y tiene");
+                sb.AppendLine("     prioridad sobre el archivo de configuración.");
+                sb.AppendLine("     LOGLEVEL puede ser uno de estos valores:");
+                sb.AppendLine("     DEBUG, INFO, ADVERTENCIA, ERROR, OFF");
+                sb.AppendLine("-lf FILENAME");
+                sb.AppendLine("--logfile FILENAME");
+                sb.AppendLine("     Especifica el archivo en el cual guardar la bitácora, y");
+                sb.AppendLine("     tiene prioridad sobre el archivo de configuración.");
+                sb.AppendLine("-v");
+                sb.AppendLine("--version");
+                sb.AppendLine("/v");
+                sb.AppendLine("     Muestra la versión de la aplicación.");
+                sb.AppendLine("-h");
+                sb.AppendLine("--help");
+                sb.AppendLine("/h");
+                sb.AppendLine("/?");
+                sb.AppendLine("     Muestra esta ventana de ayuda, pero como lo estás");
+                sb.AppendLine("     leyendo, seguramente no es ninguna novedad.");
+                MessageBox.Show(sb.ToString());
+            }
+
+            if (parsedArgs.VersiónSolicitada)
+            {
+                var assembly = System.Reflection.Assembly.GetExecutingAssembly();
+                var fileVersionInfo = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
+                string version = fileVersionInfo.FileVersion;
+                MessageBox.Show($"FitBuddy versión {version}.");
+            }
 
             return parsedArgs;
         }

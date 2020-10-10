@@ -30,7 +30,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         public FormManager Show<F>() where F : Form
         {
-            _bitacora.Debug($"Solicitud de mostrar el formulario de ${typeof(F).Name}");
+            _bitacora.Debug($"Abriendo el formulario de {typeof(F).Name}");
             var form = Container.Resolve<F>();
             form.Show();
 

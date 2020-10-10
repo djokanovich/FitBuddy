@@ -81,6 +81,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArgsParser.cs" />
     <Compile Include="FitBuddyApp.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Formularios\AcercaDe.cs">

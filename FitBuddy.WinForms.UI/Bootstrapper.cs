@@ -7,14 +7,14 @@ namespace FitBuddy.WinForms.UI
 {
     internal class Bootstrapper
     {
-        public IContainer Bootstrap()
+        public IContainer Bootstrap(ParsedArgs parsedArgs)
         {
             var builder = new ContainerBuilder();
 
             builder.RegisterModule<BusinessModule>();
 
-            var path = Properties.Settings.Default.ArchivoBitacora;
-            var minimoNivelMensajesBitacora = Properties.Settings.Default.MinimoNivelMensajesBitacora;
+            var path = parsedArgs.LogFilename ?? Properties.Settings.Default.ArchivoBitacora;
+            var minimoNivelMensajesBitacora = parsedArgs.LogLevel ?? Properties.Settings.Default.MinimoNivelMensajesBitacora;
             builder.RegisterGeneric(typeof(Bitacora<>))
                 .As(typeof(IBitacora<>))
                 .WithParameter("path", path)

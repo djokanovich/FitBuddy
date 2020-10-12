@@ -19,6 +19,24 @@ namespace FitBuddy.WinForms.UI.Formularios
         private void Estadisticas_Load(object sender, EventArgs e)
         {
             (lblImc.Text, lblIgc.Text) = _estadisticasBusinessLogic.CalcularIndices(IdentityManager.UsuarioActual.UserId);
+            switch (double.Parse(lblImc.Text))
+            {
+                case var bmi when bmi <= 18.5:
+                    lblImcClasificación.Text = "Por debajo del peso apropiado.";
+                    break;
+                
+                case var bmi when bmi <= 25.0:
+                    lblImcClasificación.Text = "Dentro de los rangos normales.";
+                    break;
+
+                case var bmi when bmi <= 30.0:
+                    lblImcClasificación.Text = "Con sobrepeso.";
+                    break;
+
+                default:
+                    lblImcClasificación.Text = "Obeso.";
+                    break;
+            }
         }
     }
 }

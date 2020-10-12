@@ -34,7 +34,7 @@ namespace FitBuddy.Business.Facade
 
             var igc = (1.2 * imc) + (0.23 * edad) - offset;
 
-            return (imc.ToString(), igc.ToString());
+            return (imc.ToString("N2"), igc.ToString("N2"));
         }
     }
 }

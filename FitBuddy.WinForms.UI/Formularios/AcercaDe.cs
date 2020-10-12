@@ -34,5 +34,13 @@ namespace FitBuddy.WinForms.UI.Formularios
             _bitacora.Info("Aplicación finalizada.");
             base.OnClosed(e);
         }
+
+        private void OnAcercaDeKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                _formManager.Close(this);
+            }
+        }
     }
 }

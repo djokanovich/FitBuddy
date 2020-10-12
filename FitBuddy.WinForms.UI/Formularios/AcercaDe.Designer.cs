@@ -100,7 +100,9 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.TableLayoutPanel);
+            this.KeyPreview = true;
             this.Name = "AcercaDe";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnAcercaDeKeyDown);
             this.TableLayoutPanel.ResumeLayout(false);
             this.TableLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();

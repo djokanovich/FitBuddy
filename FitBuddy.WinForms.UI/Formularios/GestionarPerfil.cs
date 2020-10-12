@@ -8,19 +8,28 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class GestionarPerfil : Form
     {
+        private readonly IFormManager _formManager;
         private readonly IGestionarPerfilBusinessLogic _gestionarPerfilBusinessLogic;
 
-        public GestionarPerfil(IGestionarPerfilBusinessLogic gestionarPerfilBusinessLogic)
+        public GestionarPerfil(IFormManager formManager, IGestionarPerfilBusinessLogic gestionarPerfilBusinessLogic)
         {
             InitializeComponent();
             lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
+            _formManager = formManager;
             _gestionarPerfilBusinessLogic = gestionarPerfilBusinessLogic;
         }
 
         private void OnBtnEnviarClick(object sender, EventArgs e)
         {
-            // TODO: El género debería ser una enumeración.
-            var genero = ((RadioButton)grpBoxSexo.Controls[0]).Checked ? "F" : "M"; // Operador condicional ternario
+            var genero = Genero.NoEspecificado;
+            if (radBtnFemenino.Checked)
+            {
+                genero = Genero.Femenino;
+            }
+            else if (radBtnMasculino.Checked)
+            {
+                genero = Genero.Femenino;
+            }
 
             var userId = IdentityManager.UsuarioActual.UserId;
             var usuario = _gestionarPerfilBusinessLogic.ObtenerUsuarioPorId(userId);
@@ -28,27 +37,37 @@ namespace FitBuddy.WinForms.UI.Formularios
             {
                 UsuarioId = userId,
                 Usuario = usuario,
-                Peso = Convert.ToInt32(txtPeso.Text),
-                ContBrazo = Convert.ToInt32(txtBrazo.Text),
-                ContCadera = Convert.ToInt32(txtCadera.Text),
-                Altura = Convert.ToInt32(txtAltura.Text),
-                ContCintura = Convert.ToInt32(txtCintura.Text),
-                ContMuslo = Convert.ToInt32(txtMuslo.Text),
-                Edad = Convert.ToInt32(txtEdad.Text),
+                Peso = ConvertirAInt(txtPeso.Text),
+                ContBrazo = ConvertirAInt(txtBrazo.Text),
+                ContCadera = ConvertirAInt(txtCadera.Text),
+                Altura = ConvertirAInt(txtAltura.Text),
+                ContCintura = ConvertirAInt(txtCintura.Text),
+                ContMuslo = ConvertirAInt(txtMuslo.Text),
+                Edad = ConvertirAInt(txtEdad.Text),
                 Genero = genero,
-                FechaRegistroPerfil = Convert.ToDateTime(dtpFecha.Text)
+                FechaRegistroPerfil = Convert.ToDateTime(dtpFecha.Text) // TODO: ¿No debería ser DateTime.Now?
             };
 
             // Le paso a la BLL el paciente creado.
             _gestionarPerfilBusinessLogic.CrearPaciente(paciente);
 
             MessageBox.Show("Datos cargados con éxito");
-            BorrarCampos();
+            _formManager.Close(this);
         }
 
         private void OnBtnLimpiarClick(object sender, EventArgs e)
         {
             BorrarCampos();
+        }
+
+        private int ConvertirAInt(string s)
+        {
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                return 0;
+            }
+
+            return int.Parse(s);
         }
 
         private void BorrarCampos()

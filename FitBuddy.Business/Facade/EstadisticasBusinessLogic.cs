@@ -21,7 +21,7 @@ namespace FitBuddy.Business.Facade
         {
             var paciente = _pacienteRepositorio.ObtenerPacientePorUsuarioId(id);
             var peso = paciente.Peso;
-            var altura = paciente.Altura;
+            var altura = paciente.Altura / 100.0; // Expresada en metros.
 
             var imc = peso / Math.Pow(altura, 2);
 
@@ -30,7 +30,7 @@ namespace FitBuddy.Business.Facade
             // Para un hombre: IMG = (1,2 × IMC) + (0,23 × edad) - 16,2
 
             var edad = paciente.Edad;
-            var offset = paciente.Genero == "F" ? 5.4 : 16.2; //operador ternario
+            var offset = paciente.Genero == Entidades.Genero.Femenino ? 5.4 : 16.2; // Operador condicional ternario
 
             var igc = (1.2 * imc) + (0.23 * edad) - offset;
 

@@ -5,8 +5,8 @@ namespace FitBuddy.Business.Facade
 {
     public interface IGestionarPerfilBusinessLogic
     {
-        Paciente CrearPaciente(Paciente paciente);
         Usuario ObtenerUsuarioPorId(int usuarioId);
+        int CrearPaciente(Paciente paciente);
     }
 
     public class GestionarPerfilBusinessLogic : IGestionarPerfilBusinessLogic
@@ -25,9 +25,10 @@ namespace FitBuddy.Business.Facade
             return _usuarioRepositorio.ObtenerUsuarioPorId(usuarioId);
         }
 
-        public Paciente CrearPaciente(Paciente paciente)
+        public int CrearPaciente(Paciente paciente)
         {
-            return _pacienteRepositorio.CrearPaciente(paciente);
+            _pacienteRepositorio.CrearPaciente(paciente);
+            return _pacienteRepositorio.GuardarCambios();
         }
     }
 }

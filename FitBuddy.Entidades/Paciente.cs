@@ -2,6 +2,11 @@
 
 namespace FitBuddy.Entidades
 {
+    public enum Genero
+    {
+        NoEspecificado, Masculino, Femenino
+    }
+
     public class Paciente
     {
         // Perfil paciente
@@ -15,7 +20,7 @@ namespace FitBuddy.Entidades
         public int Objetivo { get; set; }
         public int Peso { get; set; }
         public DateTime FechaRegistroPerfil { get; set; }
-        public string Genero { get; set; }
+        public Genero Genero { get; set; }
 
         // Propiedades de navegación
         public int UsuarioId { get; set; }

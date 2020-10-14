@@ -1,4 +1,5 @@
 ﻿using FitBuddy.DataAccess.Repositorio;
+using FitBuddy.Entidades;
 using System;
 
 namespace FitBuddy.Business.Facade
@@ -6,6 +7,7 @@ namespace FitBuddy.Business.Facade
     public interface IEstadisticasBusinessLogic
     {
         (string imc, string igc) CalcularIndices(int id);
+        (int edad, Genero genero) ObtenerEdadyGeneroPorUsuarioId(int userId);
     }
 
     public class EstadisticasBusinessLogic : IEstadisticasBusinessLogic
@@ -35,6 +37,21 @@ namespace FitBuddy.Business.Facade
             var igc = (1.2 * imc) + (0.23 * edad) - offset;
 
             return (imc.ToString("N2"), igc.ToString("N2"));
+        }
+
+        public (int edad, Genero genero) ObtenerEdadyGeneroPorUsuarioId(int userId)
+        {
+
+            var paciente = _pacienteRepositorio.ObtenerPacientePorUsuarioId(userId);
+
+            if (paciente == null)
+            {
+                return (0, Genero.NoEspecificado);
+            }
+
+            return (paciente.Edad, paciente.Genero);
+
+
         }
     }
 }

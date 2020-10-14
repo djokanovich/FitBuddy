@@ -19,6 +19,36 @@ namespace FitBuddy.WinForms.UI.Formularios
             _gestionarPerfilBusinessLogic = gestionarPerfilBusinessLogic;
         }
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            var paciente = _gestionarPerfilBusinessLogic.ObtenerPacientePorUsuarioId(IdentityManager.UsuarioActual.UserId);
+
+            if (paciente != null)
+            {
+                txtAltura.Text = paciente.Altura.ToString();
+                txtBrazo.Text = paciente.ContBrazo.ToString();
+                txtCadera.Text = paciente.ContCadera.ToString() ;
+                txtCintura.Text = paciente.ContCintura.ToString();
+                txtEdad.Text = paciente.Edad.ToString();
+                txtMuslo.Text = paciente.ContMuslo.ToString();
+                txtPeso.Text = paciente.Peso.ToString();
+                dtpFecha.Value = paciente.FechaRegistroPerfil;
+                if (paciente.Genero == Genero.Femenino) 
+                {
+                    radBtnFemenino.Checked  = true;
+                }
+                else
+                {
+                    radBtnMasculino.Checked = true;
+                }
+            }
+
+            
+        }
+
+
         private void OnBtnEnviarClick(object sender, EventArgs e)
         {
             var genero = Genero.NoEspecificado;
@@ -79,6 +109,18 @@ namespace FitBuddy.WinForms.UI.Formularios
             txtCadera.Text = null;
             txtMuslo.Text = null;
             txtBrazo.Text = null;
+        }
+
+        private void lnkInstrucciones_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+            System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=IxrRGDIh_mM");
+
+        }
+
+        private void GestionarPerfil_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

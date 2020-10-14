@@ -44,10 +44,7 @@ namespace FitBuddy.WinForms.UI.Formularios
                     radBtnMasculino.Checked = true;
                 }
             }
-
-            
         }
-
 
         private void OnBtnEnviarClick(object sender, EventArgs e)
         {
@@ -113,14 +110,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void lnkInstrucciones_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
             System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=IxrRGDIh_mM");
-
-        }
-
-        private void GestionarPerfil_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

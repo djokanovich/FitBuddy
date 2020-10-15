@@ -74,6 +74,7 @@
             this.btnAtras.TabIndex = 13;
             this.btnAtras.Text = "Atras";
             this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // Label15
             // 
@@ -318,9 +319,9 @@
             this.grpBoxSexo.Controls.Add(this.radBtnFemenino);
             this.grpBoxSexo.Controls.Add(this.radBtnMasculino);
             this.grpBoxSexo.Location = new System.Drawing.Point(26, 98);
-            this.grpBoxSexo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBoxSexo.Margin = new System.Windows.Forms.Padding(2);
             this.grpBoxSexo.Name = "grpBoxSexo";
-            this.grpBoxSexo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBoxSexo.Padding = new System.Windows.Forms.Padding(2);
             this.grpBoxSexo.Size = new System.Drawing.Size(172, 68);
             this.grpBoxSexo.TabIndex = 4;
             this.grpBoxSexo.TabStop = false;
@@ -408,6 +409,7 @@
             this.AcceptButton = this.btnEnviar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnAtras;
             this.ClientSize = new System.Drawing.Size(562, 386);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnAtras);
@@ -418,7 +420,7 @@
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.GroupBox2);
             this.Controls.Add(this.GroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GestionarPerfil";
             this.Text = "Gestionar perfil";
             this.GroupBox2.ResumeLayout(false);

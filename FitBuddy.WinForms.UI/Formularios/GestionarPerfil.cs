@@ -112,5 +112,10 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=IxrRGDIh_mM");
         }
+
+        private void OnBtnAtrasClick(object sender, EventArgs e)
+        {
+            _formManager.Close(this);
+        }
     }
 }

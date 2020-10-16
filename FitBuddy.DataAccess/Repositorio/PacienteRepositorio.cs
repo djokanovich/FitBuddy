@@ -31,7 +31,6 @@ namespace FitBuddy.DataAccess.Repositorio
             return _dbContext.Paciente.Add(paciente);
         }
 
-
         public Paciente ActualizarPaciente(int pacienteId)
         {
             var paciente = _dbContext.Paciente.SingleOrDefault(p => p.Id == pacienteId);

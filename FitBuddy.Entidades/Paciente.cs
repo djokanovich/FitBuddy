@@ -7,6 +7,20 @@ namespace FitBuddy.Entidades
         NoEspecificado, Masculino, Femenino
     }
 
+    public enum Frecuencia
+    {
+        Nunca, UnaVezPorSemana, DosVecesPorSemana, TresOMasVecesPorSemana
+    }
+
+    public enum DisponibilidadHoras
+    {
+        MenosUnaHora, EntreUnaYDosHoras, MasDeDosHoras
+    }
+
+    public enum ObjetivoBuscado
+    {
+        GanarPeso, PerderPeso, GanarMusculo, EstarSaludable
+    }
     public class Paciente
     {
         // Perfil paciente
@@ -45,12 +59,24 @@ namespace FitBuddy.Entidades
 
         // Perfil Físico
 
-        public int DispDiaria { get; set; }
-        public int DispSemanal { get; set; }
-        public int IdPerfilFisico { get; set; }
+        
+
+        public Frecuencia FrecuenciaActual { get; set; }
+        public DisponibilidadHoras DisposicionDiariaHoras { get; set; }
+        public Frecuencia DisposicionSemanalDias { get; set; }
+        public ObjetivoBuscado ObjetivoBuscado { get; set; }
+
         public bool ProblemasCardio { get; set; }
         public bool ProblemasResp { get; set; }
-        public bool ProblemasTraumat { get; set; }
+
+        public bool ProblemasArticulaciones { get; set; }
+
+        public bool ProblemasEscoliosis { get; set; }
+
+        public bool ProblemasMeñiscos { get; set; }
+
+        public bool ProblemasArtrosis { get; set; }
+
 
     }
 }

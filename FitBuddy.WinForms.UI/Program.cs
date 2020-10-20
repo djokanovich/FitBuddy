@@ -83,8 +83,9 @@ namespace FitBuddy.WinForms.UI
             {
                 var assembly = System.Reflection.Assembly.GetExecutingAssembly();
                 var fileVersionInfo = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
-                string version = fileVersionInfo.FileVersion;
-                MessageBox.Show($"FitBuddy versión {version}.");
+                var productName = fileVersionInfo.ProductName;
+                var productVersion = fileVersionInfo.ProductVersion;
+                MessageBox.Show($"{productName} versión {productVersion}.");
             }
 
             return parsedArgs;

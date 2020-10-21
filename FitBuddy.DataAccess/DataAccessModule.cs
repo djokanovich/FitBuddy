@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using FitBuddy.DataAccess.Repositorio;
+using FitBuddy.DataAccess.Repositorios;
 using FitBuddy.DataAccess.Services;
 
 namespace FitBuddy.DataAccess

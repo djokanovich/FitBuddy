@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace FitBuddy.DataAccess.Repositorio
+namespace FitBuddy.DataAccess.Repositorios
 {
     public interface IMedicoRepositorio
     {

@@ -1,4 +1,4 @@
-﻿using FitBuddy.DataAccess.Repositorio;
+﻿using FitBuddy.DataAccess.Repositorios;
 
 namespace FitBuddy.Business.Facade
 {

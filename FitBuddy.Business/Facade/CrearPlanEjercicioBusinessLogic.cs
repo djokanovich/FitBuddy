@@ -1,4 +1,4 @@
-﻿using FitBuddy.DataAccess.Repositorio;
+﻿using FitBuddy.DataAccess.Repositorios;
 using FitBuddy.Entidades;
 using System;
 using System.Collections.Generic;

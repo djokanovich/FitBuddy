@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using Common.Utilidades;
-using FitBuddy.DataAccess.Repositorio;
+using FitBuddy.DataAccess.Repositorios;
 using FitBuddy.Entidades;
 
 namespace FitBuddy.Business.Facade

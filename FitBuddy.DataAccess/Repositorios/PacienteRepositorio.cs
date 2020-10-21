@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using FitBuddy.Entidades;
 
-namespace FitBuddy.DataAccess.Repositorio
+namespace FitBuddy.DataAccess.Repositorios
 {
     public interface IPacienteRepositorio
     {

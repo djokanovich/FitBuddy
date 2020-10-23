@@ -167,6 +167,7 @@
             // 
             // btnLogout
             // 
+            this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnLogout.Location = new System.Drawing.Point(235, 328);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(179, 23);
@@ -179,6 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnLogout;
             this.ClientSize = new System.Drawing.Size(441, 366);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnBackup);

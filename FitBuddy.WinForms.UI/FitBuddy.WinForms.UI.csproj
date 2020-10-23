@@ -81,6 +81,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animación\Animar.cs" />
+    <Compile Include="Animación\FuncionesDeSuavizado.cs" />
+    <Compile Include="Animación\Transformación.cs" />
     <Compile Include="ArgsParser.cs" />
     <Compile Include="FitBuddyApp.cs" />
     <Compile Include="Bootstrapper.cs" />
@@ -257,6 +260,12 @@
       <Project>{96AAB3BC-CD44-4A9E-9847-7F16480A774D}</Project>
       <Name>FitBuddy.Entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imágenes\aguja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imágenes\velocimetro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

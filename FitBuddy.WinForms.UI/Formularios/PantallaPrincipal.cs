@@ -91,6 +91,11 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             _bitacora.Info($"El usuario {IdentityManager.UsuarioActual.Username} (id: {IdentityManager.UsuarioActual.UserId}) ha cerrado su sesión.");
             IdentityManager.CerrarSesionUsuario();
+            MessageBox.Show(
+                "Se ha cerrado la sesión.",
+                "¡Atención!",
+                MessageBoxButtons.OK);
+            
             _formManager.Show<LogIn>().AndClose(this);
         }
     }

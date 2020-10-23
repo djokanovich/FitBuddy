@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Common.Bitacora;
 using FitBuddy.Business;
+using FitBuddy.WinForms.UI.Animación;
 using FitBuddy.WinForms.UI.Formularios;
 
 namespace FitBuddy.WinForms.UI
@@ -26,6 +27,8 @@ namespace FitBuddy.WinForms.UI
 
             builder.RegisterType<FormManager>().As<IFormManager>()
                 .SingleInstance();
+
+            builder.RegisterType<Animar>().AsSelf();
 
             builder.RegisterType<AcercaDe>().AsSelf();
             builder.RegisterType<AgendarTurno>().AsSelf();

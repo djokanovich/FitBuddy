@@ -6,8 +6,9 @@ namespace FitBuddy.Business.Facade
 {
     public interface IEstadisticasBusinessLogic
     {
-        string Imc { get; set; }
-        string Igc { get; set; }
+        double Imc { get; set; }
+        string ImcString { get; set; }
+        string IgcString { get; set; }
         string ImcClasificación { get; set; }
         string IgcClasificación { get; set; }
 
@@ -19,7 +20,6 @@ namespace FitBuddy.Business.Facade
         private readonly IPacienteRepositorio _pacienteRepositorio;
 
         private Paciente _paciente;
-        private double _imc;
         private double _igc;
 
         public EstadisticasBusinessLogic(IPacienteRepositorio pacienteRepositorio)
@@ -27,8 +27,9 @@ namespace FitBuddy.Business.Facade
             _pacienteRepositorio = pacienteRepositorio;
         }
 
-        public string Imc { get; set; }
-        public string Igc { get; set; }
+        public double Imc { get; set; }
+        public string ImcString { get; set; }
+        public string IgcString { get; set; }
         public string ImcClasificación { get; set; }
         public string IgcClasificación { get; set; }
 
@@ -49,10 +50,10 @@ namespace FitBuddy.Business.Facade
             var peso = _paciente.Peso;
             var altura = _paciente.Altura / 100.0; // Expresada en metros.
 
-            _imc = peso / Math.Pow(altura, 2);
+            Imc = peso / Math.Pow(altura, 2);
 
 
-            Imc = _imc.ToString("N2");
+            ImcString = Imc.ToString("N2");
         }
 
         private void CalcularIgc()
@@ -64,14 +65,14 @@ namespace FitBuddy.Business.Facade
             var edad = _paciente.Edad;
             var offset = _paciente.Genero == Genero.Femenino ? 5.4 : 16.2; // Operador condicional ternario
 
-            _igc = (1.2 * _imc) + (0.23 * edad) - offset;
+            _igc = (1.2 * Imc) + (0.23 * edad) - offset;
 
-            Igc = _igc.ToString("N2");
+            IgcString = _igc.ToString("N2");
         }
 
         private void ClasificarPorImc()
         {
-            switch (_imc)
+            switch (Imc)
             {
                 case var imc when imc <= 18.5:
                     ImcClasificación = "Por debajo del peso apropiado.";

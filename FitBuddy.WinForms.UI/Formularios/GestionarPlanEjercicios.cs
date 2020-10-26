@@ -24,5 +24,10 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             MessageBox.Show("Sección en construcción");
         }
+
+        private void OnBtnAtrasClick(object sender, EventArgs e)
+        {
+            _formManager.Close(this);
+        }
     }
 }

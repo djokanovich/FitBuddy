@@ -39,6 +39,7 @@
             // 
             // btnAtras
             // 
+            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnAtras.Location = new System.Drawing.Point(476, 325);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(75, 23);
@@ -91,6 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnAtras;
             this.ClientSize = new System.Drawing.Size(605, 385);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnAtras);

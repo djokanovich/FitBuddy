@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alimento.cs" />
+    <Compile Include="Enums\Antecedentes.cs" />
+    <Compile Include="Enums\Alimento.cs" />
     <Compile Include="Backup.cs" />
     <Compile Include="Bitacora.cs" />
     <Compile Include="Comida.cs" />
@@ -51,11 +52,13 @@
     <Compile Include="Domicilio.cs" />
     <Compile Include="Ejercicio.cs" />
     <Compile Include="Email.cs" />
+    <Compile Include="Enums\Genero.cs" />
     <Compile Include="Grupo.cs" />
     <Compile Include="Idioma.cs" />
     <Compile Include="Interfaces\IVerificoIntegridad.cs" />
     <Compile Include="Leyenda.cs" />
     <Compile Include="Medico.cs" />
+    <Compile Include="Enums\Objetivo.cs" />
     <Compile Include="Paciente.cs" />
     <Compile Include="Permiso.cs" />
     <Compile Include="PermisoSimple.cs" />
@@ -63,6 +66,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reclamo.cs" />
     <Compile Include="Tabla.cs" />
+    <Compile Include="Enums\TipoComida.cs" />
     <Compile Include="Turno.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>

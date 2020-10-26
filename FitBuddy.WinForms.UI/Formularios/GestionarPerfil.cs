@@ -1,5 +1,6 @@
 ﻿using FitBuddy.Business.Facade;
 using FitBuddy.Entidades;
+using FitBuddy.Entidades.Enums;
 using FitBuddy.WinForms.UI.Security;
 using System;
 using System.Windows.Forms;
@@ -28,11 +29,11 @@ namespace FitBuddy.WinForms.UI.Formularios
             if (paciente != null)
             {
                 txtAltura.Text = paciente.Altura.ToString();
-                txtBrazo.Text = paciente.ContBrazo.ToString();
-                txtCadera.Text = paciente.ContCadera.ToString() ;
-                txtCintura.Text = paciente.ContCintura.ToString();
+                txtBrazo.Text = paciente.ContornoBrazoEnCm.ToString();
+                txtCadera.Text = paciente.ContornoCaderaEnCm.ToString() ;
+                txtCintura.Text = paciente.ContornoCinturaEnCm.ToString();
                 txtEdad.Text = paciente.Edad.ToString();
-                txtMuslo.Text = paciente.ContMuslo.ToString();
+                txtMuslo.Text = paciente.ContornoMusloEnCm.ToString();
                 txtPeso.Text = paciente.Peso.ToString();
                 dtpFecha.Value = paciente.FechaRegistroPerfil;
                 if (paciente.Genero == Genero.Femenino) 
@@ -65,11 +66,11 @@ namespace FitBuddy.WinForms.UI.Formularios
                 UsuarioId = userId,
                 Usuario = usuario,
                 Peso = ConvertirAInt(txtPeso.Text),
-                ContBrazo = ConvertirAInt(txtBrazo.Text),
-                ContCadera = ConvertirAInt(txtCadera.Text),
+                ContornoBrazoEnCm = ConvertirAInt(txtBrazo.Text),
+                ContornoCaderaEnCm = ConvertirAInt(txtCadera.Text),
                 Altura = ConvertirAInt(txtAltura.Text),
-                ContCintura = ConvertirAInt(txtCintura.Text),
-                ContMuslo = ConvertirAInt(txtMuslo.Text),
+                ContornoCinturaEnCm = ConvertirAInt(txtCintura.Text),
+                ContornoMusloEnCm = ConvertirAInt(txtMuslo.Text),
                 Edad = ConvertirAInt(txtEdad.Text),
                 Genero = genero,
                 FechaRegistroPerfil = Convert.ToDateTime(dtpFecha.Text) // TODO: ¿No debería ser DateTime.Now?

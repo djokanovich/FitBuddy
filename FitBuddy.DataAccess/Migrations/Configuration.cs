@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity.Migrations;
 using FitBuddy.Entidades;
+using FitBuddy.Entidades.Enums;
 
 namespace DAL.Migrations
 {

@@ -181,6 +181,10 @@
     <Compile Include="Migrations\202010260001496_SimplificarAlergiasEnPaciente.designer.cs">
       <DependentUpon>202010260001496_SimplificarAlergiasEnPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010261544147_NombresMasClarosEnPaciente.cs" />
+    <Compile Include="Migrations\202010261544147_NombresMasClarosEnPaciente.designer.cs">
+      <DependentUpon>202010261544147_NombresMasClarosEnPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\ComidaRepositorio.cs" />
@@ -283,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010260001496_SimplificarAlergiasEnPaciente.resx">
       <DependentUpon>202010260001496_SimplificarAlergiasEnPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010261544147_NombresMasClarosEnPaciente.resx">
+      <DependentUpon>202010261544147_NombresMasClarosEnPaciente.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

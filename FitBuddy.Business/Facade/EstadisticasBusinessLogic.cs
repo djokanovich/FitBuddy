@@ -1,5 +1,6 @@
 ﻿using FitBuddy.DataAccess.Repositorios;
 using FitBuddy.Entidades;
+using FitBuddy.Entidades.Enums;
 using System;
 
 namespace FitBuddy.Business.Facade

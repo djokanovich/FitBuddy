@@ -1,5 +1,6 @@
 ﻿using FitBuddy.Business.Facade;
 using FitBuddy.Entidades;
+using FitBuddy.Entidades.Enums;
 using FitBuddy.WinForms.UI.Security;
 using System;
 using System.Windows.Forms;
@@ -44,17 +45,18 @@ namespace FitBuddy.WinForms.UI.Formularios
             var paciente = new Paciente
             {
                 UsuarioId = IdentityManager.UsuarioActual.UserId,
-
-                ProblemasArticulaciones = chkArticulaciones.Checked,
-                ProblemasArtrosis = chkArtrosis.Checked,
-                ProblemasCardio = chkInfarto.Checked,
-                ProblemasEscoliosis = chkEscoliosis.Checked,
-                ProblemasMeñiscos = chkArticulaciones.Checked,
-                ProblemasResp = chkRespiratorio.Checked,
                 FrecuenciaActual = (Frecuencia)cmbFrecuencia.SelectedIndex,
                 DisposicionDiariaHoras = (DisponibilidadHoras)cmbDisponibilidadHoras.SelectedIndex,
                 DisposicionSemanalDias = (Frecuencia)cmbDisponibilidadDias.SelectedIndex
             };
+
+            paciente.Antecedentes = Antecedentes.None;
+            if (chkArticulaciones.Checked) paciente.Antecedentes |= Antecedentes.ProblemasArticulatorios;
+            if (chkArtrosis.Checked) paciente.Antecedentes |= Antecedentes.ArtrosisDolenciaCrónica;
+            if (chkInfarto.Checked) paciente.Antecedentes |= Antecedentes.InfartoCardiopatía;
+            if (chkEscoliosis.Checked) paciente.Antecedentes |= Antecedentes.Escoliosis;
+            if (chkRodillas.Checked) paciente.Antecedentes |= Antecedentes.RoturaDeMeñiscosProblemaDeRodillas;
+            if (chkRespiratorio.Checked) paciente.Antecedentes |= Antecedentes.EnfermedadRespiratoria;
 
             _crearPlanEjercicioBusinessLogic.GuardarPlanEjercicio(paciente.UsuarioId, paciente);
             MessageBox.Show("Perfil de ejercicio cargado con éxito");

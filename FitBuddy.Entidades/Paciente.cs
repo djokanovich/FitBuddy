@@ -1,12 +1,8 @@
 ﻿using System;
+using FitBuddy.Entidades.Enums;
 
 namespace FitBuddy.Entidades
 {
-    public enum Genero
-    {
-        NoEspecificado, Masculino, Femenino
-    }
-
     public enum Frecuencia
     {
         Nunca, UnaVezPorSemana, DosVecesPorSemana, TresOMasVecesPorSemana
@@ -27,40 +23,27 @@ namespace FitBuddy.Entidades
         public int Id { get; set; }
         public int Altura { get; set; }
         public int Edad { get; set; }
-        public int ContBrazo { get; set; }
-        public int ContCadera { get; set; }
-        public int ContCintura { get; set; }
-        public int ContMuslo { get; set; }
-        public int Objetivo { get; set; }
-        public int Peso { get; set; }
-        public DateTime FechaRegistroPerfil { get; set; }
+        public int ContornoBrazoEnCm { get; set; }
+        public int ContornoCaderaEnCm { get; set; }
+        public int ContornoCinturaEnCm { get; set; }
+        public int ContornoMusloEnCm { get; set; }
+        public int Objetivo { get; set; } // TODO: ¿Cuál es la función?
+        public int Peso { get; set; } // TODO: ¿No debería ser float?
+        public DateTime FechaRegistroPerfil { get; set; } // TODO: ¿Cuál es la función?
         public Genero Genero { get; set; }
-
-        // Propiedades de navegación
-        public int UsuarioId { get; set; }
-        public Usuario Usuario { get; set; }
 
         // Perfil Dieta
         public Alimento Alergias { get; set; }
 
         // Perfil Físico
-
         public Frecuencia FrecuenciaActual { get; set; }
         public DisponibilidadHoras DisposicionDiariaHoras { get; set; }
         public Frecuencia DisposicionSemanalDias { get; set; }
         public ObjetivoBuscado ObjetivoBuscado { get; set; }
+        public Antecedentes Antecedentes { get; set; }
 
-        public bool ProblemasCardio { get; set; }
-        public bool ProblemasResp { get; set; }
-
-        public bool ProblemasArticulaciones { get; set; }
-
-        public bool ProblemasEscoliosis { get; set; }
-
-        public bool ProblemasMeñiscos { get; set; }
-
-        public bool ProblemasArtrosis { get; set; }
-
-
+        // Propiedades de navegación
+        public int UsuarioId { get; set; }
+        public Usuario Usuario { get; set; }
     }
 }

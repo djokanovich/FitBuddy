@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FitBuddy.Entidades
+namespace FitBuddy.Entidades.Enums
 {
     [Flags]
     public enum Alimento

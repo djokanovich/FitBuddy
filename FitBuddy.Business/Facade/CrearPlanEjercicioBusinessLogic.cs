@@ -33,12 +33,7 @@ namespace FitBuddy.Business.Facade
             }
             else
             {
-                pacienteEnDb.ProblemasArticulaciones = paciente.ProblemasArticulaciones;
-                pacienteEnDb.ProblemasArtrosis = paciente.ProblemasArtrosis;
-                pacienteEnDb.ProblemasCardio = paciente.ProblemasCardio;
-                pacienteEnDb.ProblemasMeñiscos = paciente.ProblemasMeñiscos;
-                pacienteEnDb.ProblemasResp = paciente.ProblemasResp;
-                pacienteEnDb.ProblemasEscoliosis = paciente.ProblemasEscoliosis;
+                pacienteEnDb.Antecedentes = paciente.Antecedentes;
                 pacienteEnDb.DisposicionDiariaHoras = paciente.DisposicionDiariaHoras;
                 pacienteEnDb.DisposicionSemanalDias = paciente.DisposicionSemanalDias;
                 pacienteEnDb.FrecuenciaActual = paciente.FrecuenciaActual;

@@ -1,4 +1,5 @@
 ﻿using FitBuddy.Business.Facade;
+using FitBuddy.Entidades;
 using FitBuddy.WinForms.UI.Security;
 using System;
 using System.Windows.Forms;
@@ -22,20 +23,21 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             var paciente = _crearDietaBusinessLogic.ObtenerOCrearPacientePorUsuarioId(IdentityManager.UsuarioActual.UserId);
 
-            paciente.Huevo = chkHuevo.Checked;
-            paciente.Leche = chkLeche.Checked;
-            paciente.Tomate = chkTomate.Checked;
-            paciente.Vaca = chkCarneVaca.Checked;
-            paciente.Cerdo = chkCarneCerdo.Checked;
-            paciente.Pescado = chkPescado.Checked;
-            paciente.Mariscos = chkMariscos.Checked;
-            paciente.FrutosSecos = chkFrutosSecos.Checked;
-            paciente.Queso = chkQueso.Checked;
-            paciente.Tacc = chkTrigo.Checked;
-            paciente.Fructuosa = chkFructosa.Checked;
-            paciente.HojasVerdes = chkHojasVerdes.Checked;
-            paciente.FrutasRojas = chkFrutasRojas.Checked;
-            paciente.Soja = chkSoja.Checked;
+            paciente.Alergias = Alimento.None;
+            if (chkHuevo.Checked) paciente.Alergias |= Alimento.Huevo;
+            if (chkLeche.Checked) paciente.Alergias |= Alimento.Lácteos;
+            if (chkTomate.Checked) paciente.Alergias |= Alimento.Tomate;
+            if (chkCarneVaca.Checked) paciente.Alergias |= Alimento.CarneDeVaca;
+            if (chkCarneCerdo.Checked) paciente.Alergias |= Alimento.CarneDeCerdo;
+            if (chkPescado.Checked) paciente.Alergias |= Alimento.Pescado;
+            if (chkMariscos.Checked) paciente.Alergias |= Alimento.Mariscos;
+            if (chkFrutosSecos.Checked) paciente.Alergias |= Alimento.FrutosSecos;
+            if (chkQueso.Checked) paciente.Alergias |= Alimento.Queso;
+            if (chkTrigo.Checked) paciente.Alergias |= Alimento.Tacc;
+            if (chkFructosa.Checked) paciente.Alergias |= Alimento.Fructuosa;
+            if (chkHojasVerdes.Checked) paciente.Alergias |= Alimento.HojasVerdes;
+            if (chkFrutasRojas.Checked) paciente.Alergias |= Alimento.FrutosRojos;
+            if (chkSoja.Checked) paciente.Alergias |= Alimento.Soja;
 
             _crearDietaBusinessLogic.ActualizarPaciente(paciente.Id);
 

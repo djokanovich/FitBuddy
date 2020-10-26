@@ -41,25 +41,9 @@ namespace FitBuddy.Entidades
         public Usuario Usuario { get; set; }
 
         // Perfil Dieta
-        public bool Huevo { get; set; }
-        public bool Tomate { get; set; }
-        public bool Cerdo { get; set; }
-        public bool Pollo { get; set; }
-        public bool Vaca { get; set; }
-        public bool Pescado { get; set; }
-        public bool Mariscos { get; set; }
-        public bool Leche { get; set; }
-        public bool FrutosSecos { get; set; }
-        public bool Queso { get; set; }
-        public bool Tacc { get; set; }
-        public bool Fructuosa { get; set; }
-        public bool HojasVerdes { get; set; }
-        public bool Soja { get; set; }
-        public bool FrutasRojas { get; set; }
+        public Alimento Alergias { get; set; }
 
         // Perfil Físico
-
-        
 
         public Frecuencia FrecuenciaActual { get; set; }
         public DisponibilidadHoras DisposicionDiariaHoras { get; set; }

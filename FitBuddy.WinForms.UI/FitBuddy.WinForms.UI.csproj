@@ -129,6 +129,12 @@
     <Compile Include="Formularios\CrearPlanEjercicio.Designer.cs">
       <DependentUpon>CrearPlanEjercicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Dieta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Dieta.Designer.cs">
+      <DependentUpon>Dieta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Estadisticas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CrearPlanEjercicio.resx">
       <DependentUpon>CrearPlanEjercicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Dieta.resx">
+      <DependentUpon>Dieta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas.resx">
       <DependentUpon>Estadisticas.cs</DependentUpon>

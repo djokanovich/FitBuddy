@@ -22,7 +22,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnVerDietaClick(object sender, EventArgs e)
         {
-            MessageBox.Show("Sección en construcción");
+            _formManager.Show<Dieta>();
         }
 
         private void OnBtnAtrasClick(object sender, EventArgs e)

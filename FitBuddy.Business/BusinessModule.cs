@@ -19,11 +19,12 @@ namespace FitBuddy.Business
             builder.RegisterType<EmailValidator>().As<IEmailValidator>();
 
             builder.RegisterType<IntegridadBusinessLogic>().As<IIntegridadBusinessLogic>();
-
+            
             builder.RegisterType<AgendarTurnoBusinessLogic>().As<IAgendarTurnoBusinessLogic>();
             builder.RegisterType<BackupBusinessLogic>().As<IBackupBusinessLogic>();
             builder.RegisterType<CrearDietaBusinessLogic>().As<ICrearDietaBusinessLogic>();
             builder.RegisterType<CrearPlanEjercicioBusinessLogic>().As<ICrearPlanEjercicioBusinessLogic>();
+            builder.RegisterType<DietaBusinessLogic>().As<IDietaBusinessLogic>();
             builder.RegisterType<EstadisticasBusinessLogic>().As<IEstadisticasBusinessLogic>();
             builder.RegisterType<GestionarPerfilBusinessLogic>().As<IGestionarPerfilBusinessLogic>();
             builder.RegisterType<LogInBusinessLogic>().As<ILogInBusinessLogic>();

@@ -6,7 +6,7 @@ namespace FitBuddy.Business.Facade
 {
     public interface IGestionarPerfilBusinessLogic
     {
-        int CrearPacienteAsociadoAUsuario(int usuarioId, Paciente paciente);
+        bool CrearOActualizarPacienteAsociadoAUsuario(int usuarioId, Paciente paciente);
         Paciente ObtenerPacienteAsociadoAUsuario(int userId);
     }
 
@@ -19,11 +19,20 @@ namespace FitBuddy.Business.Facade
             _pacienteRepositorio = pacienteRepositorio;
         }
 
-        public int CrearPacienteAsociadoAUsuario(int usuarioId, Paciente paciente)
+        // TODO: Método duplicado en CrearDietaBusinessLogic
+        public bool CrearOActualizarPacienteAsociadoAUsuario(int usuarioId, Paciente paciente)
         {
-            paciente.UsuarioId = usuarioId;
-            _pacienteRepositorio.AgregarNuevo(paciente);
-            return _pacienteRepositorio.GuardarCambios();
+            if (paciente.Id == 0)
+            {
+                paciente.UsuarioId = usuarioId;
+                _pacienteRepositorio.AgregarNuevo(paciente);
+            }
+            else
+            {
+                _pacienteRepositorio.ActualizarExistente(paciente);
+            }
+
+            return _pacienteRepositorio.GuardarCambios() > 0;
         }
 
         public Paciente ObtenerPacienteAsociadoAUsuario(int usuarioId)

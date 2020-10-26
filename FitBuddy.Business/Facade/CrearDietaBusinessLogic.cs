@@ -2,14 +2,13 @@
 using System.Linq;
 using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
-using FitBuddy.Entidades.Enums;
 
 namespace FitBuddy.Business.Facade
 {
     public interface ICrearDietaBusinessLogic
     {
         Paciente ObtenerPacienteAsociadoAUsuario(int usuarioId);
-        bool CrearOActualizarPaciente(int usuarioId, Paciente paciente);
+        bool CrearOActualizarPacienteAsociadoAUsuario(int usuarioId, Paciente paciente);
     }
 
     public class CrearDietaBusinessLogic : ICrearDietaBusinessLogic
@@ -27,7 +26,7 @@ namespace FitBuddy.Business.Facade
             return pacienteAsociadoAUsuario;
         }
 
-        public bool CrearOActualizarPaciente(int usuarioId, Paciente paciente)
+        public bool CrearOActualizarPacienteAsociadoAUsuario(int usuarioId, Paciente paciente)
         {
             if (paciente.Id == 0)
             {

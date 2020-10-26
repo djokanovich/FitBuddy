@@ -29,7 +29,8 @@ namespace FitBuddy.Business.Facade
                 return string.Empty;
             }
 
-            var comidas = _comidaRepositorio.BuscarPor(comida => pacienteAsociadoAUsuario.EsAlérgicoA(comida.Contiene))
+            // Buscar las comidas que no contengan las alergias del paciente.
+            var comidas = _comidaRepositorio.BuscarPor(comida => (pacienteAsociadoAUsuario.Alergias & comida.Contiene) == 0)
                 .ToList();
 
             var indice = new Random().Next(comidas.Count);

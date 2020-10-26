@@ -31,9 +31,8 @@
             this.btnAtras = new System.Windows.Forms.Button();
             this.Label15 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.bntLimpiar = new System.Windows.Forms.Button();
-            this.btnEnviar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -68,6 +67,7 @@
             // 
             // btnAtras
             // 
+            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnAtras.Location = new System.Drawing.Point(480, 348);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(63, 21);
@@ -92,18 +92,9 @@
             this.dtpFecha.Size = new System.Drawing.Size(200, 20);
             this.dtpFecha.TabIndex = 20;
             // 
-            // btnModificar
-            // 
-            this.btnModificar.Location = new System.Drawing.Point(392, 289);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(151, 39);
-            this.btnModificar.TabIndex = 12;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            // 
             // bntLimpiar
             // 
-            this.bntLimpiar.Location = new System.Drawing.Point(203, 289);
+            this.bntLimpiar.Location = new System.Drawing.Point(213, 286);
             this.bntLimpiar.Name = "bntLimpiar";
             this.bntLimpiar.Size = new System.Drawing.Size(161, 39);
             this.bntLimpiar.TabIndex = 11;
@@ -111,15 +102,15 @@
             this.bntLimpiar.UseVisualStyleBackColor = true;
             this.bntLimpiar.Click += new System.EventHandler(this.OnBtnLimpiarClick);
             // 
-            // btnEnviar
+            // btnGuardar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(12, 289);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(163, 39);
-            this.btnEnviar.TabIndex = 10;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
-            this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
+            this.btnGuardar.Location = new System.Drawing.Point(380, 286);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(163, 39);
+            this.btnGuardar.TabIndex = 10;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.OnBtnGuardarClick);
             // 
             // GroupBox2
             // 
@@ -406,7 +397,7 @@
             // 
             // GestionarPerfil
             // 
-            this.AcceptButton = this.btnEnviar;
+            this.AcceptButton = this.btnGuardar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAtras;
@@ -415,9 +406,8 @@
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.Label15);
             this.Controls.Add(this.dtpFecha);
-            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.bntLimpiar);
-            this.Controls.Add(this.btnEnviar);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.GroupBox2);
             this.Controls.Add(this.GroupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -439,9 +429,8 @@
         internal System.Windows.Forms.Button btnAtras;
         internal System.Windows.Forms.Label Label15;
         internal System.Windows.Forms.DateTimePicker dtpFecha;
-        internal System.Windows.Forms.Button btnModificar;
         internal System.Windows.Forms.Button bntLimpiar;
-        internal System.Windows.Forms.Button btnEnviar;
+        internal System.Windows.Forms.Button btnGuardar;
         internal System.Windows.Forms.GroupBox GroupBox2;
         internal System.Windows.Forms.Label Label12;
         internal System.Windows.Forms.Label Label11;

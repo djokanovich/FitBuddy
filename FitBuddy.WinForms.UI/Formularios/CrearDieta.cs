@@ -13,12 +13,32 @@ namespace FitBuddy.WinForms.UI.Formularios
         private readonly ICrearDietaBusinessLogic _crearDietaBusinessLogic;
         private Paciente _paciente;
 
+        private readonly Tuple<CheckBox, Alimento>[] _checkBoxesAlimentos;
+
         public CrearDieta(IFormManager formManager, ICrearDietaBusinessLogic crearDietaBusinessLogic)
         {
             InitializeComponent();
             lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
             _formManager = formManager;
             _crearDietaBusinessLogic = crearDietaBusinessLogic;
+
+            _checkBoxesAlimentos = new Tuple<CheckBox, Alimento>[]
+            {
+                new Tuple<CheckBox, Alimento>(chkHuevo, Alimento.Huevo),
+                new Tuple<CheckBox, Alimento>(chkLeche, Alimento.Lácteos),
+                new Tuple<CheckBox, Alimento>(chkTomate, Alimento.Tomate),
+                new Tuple<CheckBox, Alimento>(chkCarneVaca, Alimento.CarneDeVaca),
+                new Tuple<CheckBox, Alimento>(chkCarneCerdo, Alimento.CarneDeCerdo),
+                new Tuple<CheckBox, Alimento>(chkPescado, Alimento.Pescado),
+                new Tuple<CheckBox, Alimento>(chkMariscos, Alimento.Mariscos),
+                new Tuple<CheckBox, Alimento>(chkFrutosSecos, Alimento.FrutosSecos),
+                new Tuple<CheckBox, Alimento>(chkQueso, Alimento.Queso),
+                new Tuple<CheckBox, Alimento>(chkTrigo, Alimento.Tacc),
+                new Tuple<CheckBox, Alimento>(chkFructosa, Alimento.Fructuosa),
+                new Tuple<CheckBox, Alimento>(chkHojasVerdes, Alimento.HojasVerdes),
+                new Tuple<CheckBox, Alimento>(chkFrutasRojas, Alimento.FrutosRojos),
+                new Tuple<CheckBox, Alimento>(chkSoja, Alimento.Soja),
+            };
         }
 
         protected override void OnLoad(EventArgs e)
@@ -29,20 +49,10 @@ namespace FitBuddy.WinForms.UI.Formularios
             _paciente = _crearDietaBusinessLogic.ObtenerPacienteAsociadoAUsuario(usuarioId);
             if (_paciente == null) return;
 
-            chkHuevo.Checked = _paciente.EsAlérgicoA(Alimento.Huevo);
-            chkLeche.Checked = _paciente.EsAlérgicoA(Alimento.Lácteos);
-            chkTomate.Checked = _paciente.EsAlérgicoA(Alimento.Tomate);
-            chkCarneVaca.Checked = _paciente.EsAlérgicoA(Alimento.CarneDeVaca);
-            chkCarneCerdo.Checked = _paciente.EsAlérgicoA(Alimento.CarneDeCerdo);
-            chkPescado.Checked = _paciente.EsAlérgicoA(Alimento.Pescado);
-            chkMariscos.Checked = _paciente.EsAlérgicoA(Alimento.Mariscos);
-            chkFrutosSecos.Checked = _paciente.EsAlérgicoA(Alimento.FrutosSecos);
-            chkQueso.Checked = _paciente.EsAlérgicoA(Alimento.Queso);
-            chkTrigo.Checked = _paciente.EsAlérgicoA(Alimento.Tacc);
-            chkFructosa.Checked = _paciente.EsAlérgicoA(Alimento.Fructuosa);
-            chkHojasVerdes.Checked = _paciente.EsAlérgicoA(Alimento.HojasVerdes);
-            chkFrutasRojas.Checked = _paciente.EsAlérgicoA(Alimento.FrutosRojos);
-            chkSoja.Checked = _paciente.EsAlérgicoA(Alimento.Soja);
+            foreach (var checkBoxAlimento in _checkBoxesAlimentos)
+            {
+                checkBoxAlimento.Item1.Checked = _paciente.EsAlérgicoA(checkBoxAlimento.Item2);
+            }
         }
 
         private void OnBtnEnviarClick(object sender, EventArgs e)
@@ -50,22 +60,15 @@ namespace FitBuddy.WinForms.UI.Formularios
             var usuarioId = IdentityManager.UsuarioActual.UserId;
             if (_paciente == null) _paciente = new Paciente();
 
-            if (chkHuevo.Checked) _paciente.AgregarAlergiaA(Alimento.Huevo);
-            if (chkLeche.Checked) _paciente.AgregarAlergiaA(Alimento.Lácteos);
-            if (chkTomate.Checked) _paciente.AgregarAlergiaA(Alimento.Tomate);
-            if (chkCarneVaca.Checked) _paciente.AgregarAlergiaA(Alimento.CarneDeVaca);
-            if (chkCarneCerdo.Checked) _paciente.AgregarAlergiaA(Alimento.CarneDeCerdo);
-            if (chkPescado.Checked) _paciente.AgregarAlergiaA(Alimento.Pescado);
-            if (chkMariscos.Checked) _paciente.AgregarAlergiaA(Alimento.Mariscos);
-            if (chkFrutosSecos.Checked) _paciente.AgregarAlergiaA(Alimento.FrutosSecos);
-            if (chkQueso.Checked) _paciente.AgregarAlergiaA(Alimento.Queso);
-            if (chkTrigo.Checked) _paciente.AgregarAlergiaA(Alimento.Tacc);
-            if (chkFructosa.Checked) _paciente.AgregarAlergiaA(Alimento.Fructuosa);
-            if (chkHojasVerdes.Checked) _paciente.AgregarAlergiaA(Alimento.HojasVerdes);
-            if (chkFrutasRojas.Checked) _paciente.AgregarAlergiaA(Alimento.FrutosRojos);
-            if (chkSoja.Checked) _paciente.AgregarAlergiaA(Alimento.Soja);
+            foreach (var checkBoxAlimento in _checkBoxesAlimentos)
+            {
+                if (checkBoxAlimento.Item1.Checked)
+                    _paciente.AgregarAlergiaA(checkBoxAlimento.Item2);
+                else
+                    _paciente.QuitarAlergiaA(checkBoxAlimento.Item2);
+            }
 
-            var éxito = _crearDietaBusinessLogic.CrearOActualizarPaciente(usuarioId, _paciente);
+            var éxito = _crearDietaBusinessLogic.CrearOActualizarPacienteAsociadoAUsuario(usuarioId, _paciente);
 
             if (éxito)
             {

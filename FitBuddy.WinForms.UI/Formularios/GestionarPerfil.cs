@@ -11,6 +11,7 @@ namespace FitBuddy.WinForms.UI.Formularios
     {
         private readonly IFormManager _formManager;
         private readonly IGestionarPerfilBusinessLogic _gestionarPerfilBusinessLogic;
+        private Paciente _paciente;
 
         public GestionarPerfil(IFormManager formManager, IGestionarPerfilBusinessLogic gestionarPerfilBusinessLogic)
         {
@@ -25,30 +26,30 @@ namespace FitBuddy.WinForms.UI.Formularios
             base.OnLoad(e);
 
             var usuarioId = IdentityManager.UsuarioActual.UserId;
-            var paciente = _gestionarPerfilBusinessLogic.ObtenerPacienteAsociadoAUsuario(usuarioId);
+            _paciente = _gestionarPerfilBusinessLogic.ObtenerPacienteAsociadoAUsuario(usuarioId);
 
-            if (paciente != null)
+            if (_paciente == null) return;
+
+            txtAltura.Text = _paciente.Altura.ToString();
+            txtBrazo.Text = _paciente.ContornoBrazoEnCm.ToString();
+            txtCadera.Text = _paciente.ContornoCaderaEnCm.ToString();
+            txtCintura.Text = _paciente.ContornoCinturaEnCm.ToString();
+            txtEdad.Text = _paciente.Edad.ToString();
+            txtMuslo.Text = _paciente.ContornoMusloEnCm.ToString();
+            txtPeso.Text = _paciente.Peso.ToString();
+            dtpFecha.Value = _paciente.FechaRegistroPerfil;
+
+            if (_paciente.Genero == Genero.Femenino)
             {
-                txtAltura.Text = paciente.Altura.ToString();
-                txtBrazo.Text = paciente.ContornoBrazoEnCm.ToString();
-                txtCadera.Text = paciente.ContornoCaderaEnCm.ToString() ;
-                txtCintura.Text = paciente.ContornoCinturaEnCm.ToString();
-                txtEdad.Text = paciente.Edad.ToString();
-                txtMuslo.Text = paciente.ContornoMusloEnCm.ToString();
-                txtPeso.Text = paciente.Peso.ToString();
-                dtpFecha.Value = paciente.FechaRegistroPerfil;
-                if (paciente.Genero == Genero.Femenino) 
-                {
-                    radBtnFemenino.Checked  = true;
-                }
-                else
-                {
-                    radBtnMasculino.Checked = true;
-                }
+                radBtnFemenino.Checked = true;
+            }
+            else if (_paciente.Genero == Genero.Masculino)
+            {
+                radBtnMasculino.Checked = true;
             }
         }
 
-        private void OnBtnEnviarClick(object sender, EventArgs e)
+        private void OnBtnGuardarClick(object sender, EventArgs e)
         {
             var usuarioId = IdentityManager.UsuarioActual.UserId;
 
@@ -62,23 +63,26 @@ namespace FitBuddy.WinForms.UI.Formularios
                 genero = Genero.Femenino;
             }
 
-            var paciente = new Paciente
-            {
-                Peso = ConvertirAInt(txtPeso.Text),
-                ContornoBrazoEnCm = ConvertirAInt(txtBrazo.Text),
-                ContornoCaderaEnCm = ConvertirAInt(txtCadera.Text),
-                Altura = ConvertirAInt(txtAltura.Text),
-                ContornoCinturaEnCm = ConvertirAInt(txtCintura.Text),
-                ContornoMusloEnCm = ConvertirAInt(txtMuslo.Text),
-                Edad = ConvertirAInt(txtEdad.Text),
-                Genero = genero,
-                FechaRegistroPerfil = Convert.ToDateTime(dtpFecha.Text) // TODO: ¿No debería ser DateTime.Now?
-            };
+            if (_paciente == null) _paciente = new Paciente();
+
+            _paciente.Peso = ConvertirAInt(txtPeso.Text);
+            _paciente.ContornoBrazoEnCm = ConvertirAInt(txtBrazo.Text);
+            _paciente.ContornoCaderaEnCm = ConvertirAInt(txtCadera.Text);
+            _paciente.Altura = ConvertirAInt(txtAltura.Text);
+            _paciente.ContornoCinturaEnCm = ConvertirAInt(txtCintura.Text);
+            _paciente.ContornoMusloEnCm = ConvertirAInt(txtMuslo.Text);
+            _paciente.Edad = ConvertirAInt(txtEdad.Text);
+            _paciente.Genero = genero;
+            _paciente.FechaRegistroPerfil = Convert.ToDateTime(dtpFecha.Text); // TODO: ¿No debería ser DateTime.Now?
 
             // Le paso a la BLL el paciente creado.
-            _gestionarPerfilBusinessLogic.CrearPacienteAsociadoAUsuario(usuarioId, paciente);
+            var éxito = _gestionarPerfilBusinessLogic.CrearOActualizarPacienteAsociadoAUsuario(usuarioId, _paciente);
 
-            MessageBox.Show("Datos cargados con éxito");
+            if (éxito)
+            {
+                MessageBox.Show("Datos cargados con éxito");
+            } // TODO: else?
+
             _formManager.Close(this);
         }
 

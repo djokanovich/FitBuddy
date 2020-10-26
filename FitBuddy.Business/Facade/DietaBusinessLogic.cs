@@ -24,13 +24,12 @@ namespace FitBuddy.Business.Facade
         public string ElegirAlimentoAlAzar(int usuarioId)
         {
             var pacienteAsociadoAUsuario = _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
-
             if (pacienteAsociadoAUsuario == null)
             {
                 return string.Empty;
             }
 
-            var comidas = _comidaRepositorio.BuscarPor(c => (c.Contiene & pacienteAsociadoAUsuario.Alergias) == 0)
+            var comidas = _comidaRepositorio.BuscarPor(comida => pacienteAsociadoAUsuario.EsAlérgicoA(comida.Contiene))
                 .ToList();
 
             var indice = new Random().Next(comidas.Count);

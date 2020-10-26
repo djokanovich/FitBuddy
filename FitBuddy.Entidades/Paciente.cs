@@ -33,7 +33,7 @@ namespace FitBuddy.Entidades
         public Genero Genero { get; set; }
 
         // Perfil Dieta
-        public Alimento Alergias { get; set; }
+        public Alimento Alergias { get; set; } = Alimento.None;
 
         // Perfil Físico
         public Frecuencia FrecuenciaActual { get; set; }
@@ -45,5 +45,24 @@ namespace FitBuddy.Entidades
         // Propiedades de navegación
         public int UsuarioId { get; set; }
         public Usuario Usuario { get; set; }
+
+        // TODO: Las entidades no deberían tener métodos. Considerar crear modelos en la BLL que sí contengan métodos.
+        public bool EsAlérgicoA(Alimento alimento)
+        {
+            return (Alergias & alimento) != 0;
+        }
+
+        public void AgregarAlergiaA(Alimento alimento)
+        {
+            Alergias |= alimento;
+        }
+
+        public void QuitarAlergiaA(Alimento alimento)
+        {
+            if (EsAlérgicoA(alimento))
+            {
+                Alergias -= alimento;
+            }
+        }
     }
 }

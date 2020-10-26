@@ -4,7 +4,6 @@ using FitBuddy.Entidades.Interfaces;
 using System.Data.Entity;
 using System.Linq;
 
-
 namespace FitBuddy.DataAccess
 {
     public class AppDbContext : DbContext
@@ -13,43 +12,10 @@ namespace FitBuddy.DataAccess
         {
         }
 
-        public DbSet<Usuario> Usuarios { get; set; }
-
-        public DbSet<Permiso> Permisos { get; set; }
-
-        public DbSet<Bitacora> Bitacora { get; set; }
-
-        public DbSet<Tabla> Tabla { get; set; }
-
-        public DbSet<Backup> Backup { get; set; }
-
-        public DbSet<Idioma> Idioma { get; set; }
-
-        public DbSet<Leyenda> Leyenda { get; set; }
-
-        public DbSet<Paciente> Paciente { get; set; }
-
-        public DbSet<Email> Emails { get; set; }
-
-        public DbSet<Domicilio> Domicilios { get; set; }
-
-        public DbSet<Dieta> Dietas { get; set; }
-
         public DbSet<Comida> Comidas { get; set; }
-
-        public DbSet<PlanEjercicio> PlanEjercicios { get; set; }
-
-        public DbSet<Ejercicio> Ejercicios { get; set; }
-
         public DbSet<Medico> Medicos { get; set; }
-
-        public DbSet<Reclamo> Reclamos { get; set; }
-
-        public DbSet<DiarioComidas> DiarioComidas { get; set; }
-
-        public DbSet<DiarioEjercicios> DiarioEjercicios { get; set; }
-
-        public DbSet<Turno> Turnos { get; set; }
+        public DbSet<Paciente> Paciente { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         public override int SaveChanges() // se ejecuta cada vez que modifico o creo una fila en alguna tabla (record)
         {

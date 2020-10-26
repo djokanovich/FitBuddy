@@ -50,7 +50,8 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnEstadisticasClick(object sender, EventArgs e)
         {
-            if (_pantallaPrincipalBusinessLogic.AlturaPesoEdadPacienteDefinidos(IdentityManager.UsuarioActual.UserId))
+            var usuarioId = IdentityManager.UsuarioActual.UserId;
+            if (_pantallaPrincipalBusinessLogic.PuedeMostrarEstadísticas(usuarioId))
             {
                 _formManager.Show<Estadísticas>();
             }

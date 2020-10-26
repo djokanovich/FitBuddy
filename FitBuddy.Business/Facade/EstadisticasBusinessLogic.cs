@@ -1,7 +1,8 @@
-﻿using FitBuddy.DataAccess.Repositorios;
+﻿using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
 using FitBuddy.Entidades.Enums;
 using System;
+using System.Linq;
 
 namespace FitBuddy.Business.Facade
 {
@@ -18,12 +19,12 @@ namespace FitBuddy.Business.Facade
 
     public class EstadisticasBusinessLogic : IEstadisticasBusinessLogic
     {
-        private readonly IPacienteRepositorio _pacienteRepositorio;
+        private readonly IRepositorio<Paciente> _pacienteRepositorio;
 
         private Paciente _paciente;
         private double _igc;
 
-        public EstadisticasBusinessLogic(IPacienteRepositorio pacienteRepositorio)
+        public EstadisticasBusinessLogic(IRepositorio<Paciente> pacienteRepositorio)
         {
             _pacienteRepositorio = pacienteRepositorio;
         }
@@ -34,9 +35,9 @@ namespace FitBuddy.Business.Facade
         public string ImcClasificación { get; set; }
         public string IgcClasificación { get; set; }
 
-        public void CalcularEstadísticasDePacientePorUsuarioId(int userId)
+        public void CalcularEstadísticasDePacientePorUsuarioId(int usuarioId)
         {
-            _paciente = _pacienteRepositorio.ObtenerPacientePorUsuarioId(userId);
+            _paciente = _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
             if (_paciente != null)
             {
                 CalcularImc();
@@ -191,9 +192,9 @@ namespace FitBuddy.Business.Facade
                         break;
                 }
             }
-            else
+            else // Género = Masculino
             {
-
+                // TODO
             }
         }
     }

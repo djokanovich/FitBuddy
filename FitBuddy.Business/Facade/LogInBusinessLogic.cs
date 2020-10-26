@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using Common.Utilidades;
-using FitBuddy.DataAccess.Repositorios;
+using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
 
 namespace FitBuddy.Business.Facade
@@ -13,9 +13,9 @@ namespace FitBuddy.Business.Facade
     public class LogInBusinessLogic : ILogInBusinessLogic
     {
         private readonly IHashService _hashService;
-        private readonly IUsuarioRepositorio _usuarioRepositorio;
+        private readonly IRepositorio<Usuario> _usuarioRepositorio;
 
-        public LogInBusinessLogic(IHashService hashService, IUsuarioRepositorio usuarioRepositorio)
+        public LogInBusinessLogic(IHashService hashService, IRepositorio<Usuario> usuarioRepositorio)
         {
             _hashService = hashService;
             _usuarioRepositorio = usuarioRepositorio;
@@ -25,8 +25,7 @@ namespace FitBuddy.Business.Facade
         {
             var hashedPassword = _hashService.Hash(plainPassword);
 
-            var usuario = _usuarioRepositorio.ObtenerUsuarios()
-                .SingleOrDefault(u => u.Username == username && u.Password == hashedPassword);
+            var usuario = _usuarioRepositorio.BuscarPor(u => u.Username == username && u.Password == hashedPassword).SingleOrDefault();
 
             return (usuario, usuario != null);
         }

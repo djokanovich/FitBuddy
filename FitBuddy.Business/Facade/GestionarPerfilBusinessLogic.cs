@@ -1,42 +1,34 @@
-﻿using FitBuddy.DataAccess.Repositorios;
+﻿using System.Linq;
+using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
 
 namespace FitBuddy.Business.Facade
 {
     public interface IGestionarPerfilBusinessLogic
     {
-        Usuario ObtenerUsuarioPorId(int usuarioId);
-        int CrearPaciente(Paciente paciente);
-        Paciente ObtenerPacientePorUsuarioId(int userId);
+        int CrearPacienteAsociadoAUsuario(int usuarioId, Paciente paciente);
+        Paciente ObtenerPacienteAsociadoAUsuario(int userId);
     }
 
     public class GestionarPerfilBusinessLogic : IGestionarPerfilBusinessLogic
     {
-        private readonly IUsuarioRepositorio _usuarioRepositorio;
-        private readonly IPacienteRepositorio _pacienteRepositorio;
+        private readonly IRepositorio<Paciente> _pacienteRepositorio;
 
-        public GestionarPerfilBusinessLogic(IUsuarioRepositorio usuarioRepositorio, IPacienteRepositorio pacienteRepositorio)
+        public GestionarPerfilBusinessLogic(IRepositorio<Paciente> pacienteRepositorio)
         {
-            _usuarioRepositorio = usuarioRepositorio;
             _pacienteRepositorio = pacienteRepositorio;
         }
 
-        public Usuario ObtenerUsuarioPorId(int usuarioId)
+        public int CrearPacienteAsociadoAUsuario(int usuarioId, Paciente paciente)
         {
-            return _usuarioRepositorio.ObtenerUsuarioPorId(usuarioId);
-        }
-
-        public int CrearPaciente(Paciente paciente)
-        {
-            _pacienteRepositorio.CrearPaciente(paciente);
+            paciente.UsuarioId = usuarioId;
+            _pacienteRepositorio.AgregarNuevo(paciente);
             return _pacienteRepositorio.GuardarCambios();
         }
 
-        public Paciente ObtenerPacientePorUsuarioId(int userId)
+        public Paciente ObtenerPacienteAsociadoAUsuario(int usuarioId)
         {
-            return _pacienteRepositorio.ObtenerPacientePorUsuarioId(userId);
+            return _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
         }
-
-
     }
 }

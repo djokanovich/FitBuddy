@@ -1,48 +1,44 @@
-﻿using FitBuddy.DataAccess.Repositorios;
+﻿using System.Linq;
+using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FitBuddy.Business.Facade
 {
     public interface ICrearPlanEjercicioBusinessLogic
     {
-        void GuardarPlanEjercicio(int userid, Paciente paciente);
+        bool GuardarPlanEjercicio(int userid, Paciente paciente);
     }
 
-    
     public class CrearPlanEjercicioBusinessLogic : ICrearPlanEjercicioBusinessLogic
     {
-        private readonly IPacienteRepositorio _pacienteRepositorio;
+        private readonly IRepositorio<Paciente> _pacienteRepositorio;
 
-        public CrearPlanEjercicioBusinessLogic(IPacienteRepositorio pacienteRepositorio)
+        public CrearPlanEjercicioBusinessLogic(IRepositorio<Paciente> pacienteRepositorio)
         {
             _pacienteRepositorio = pacienteRepositorio;
 
         }
-        public void GuardarPlanEjercicio(int userid, Paciente paciente)
+        public bool GuardarPlanEjercicio(int usuarioId, Paciente paciente)
         {
-            var pacienteEnDb = _pacienteRepositorio.ObtenerPacientePorUsuarioId(userid);
+            var pacienteAsociadoAUsuario = _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
 
-            if (pacienteEnDb == null)
+            if (pacienteAsociadoAUsuario == null)
             {
-                _pacienteRepositorio.CrearPaciente(paciente);
+                paciente.UsuarioId = usuarioId;
+                _pacienteRepositorio.AgregarNuevo(paciente);
             }
             else
             {
-                pacienteEnDb.Antecedentes = paciente.Antecedentes;
-                pacienteEnDb.DisposicionDiariaHoras = paciente.DisposicionDiariaHoras;
-                pacienteEnDb.DisposicionSemanalDias = paciente.DisposicionSemanalDias;
-                pacienteEnDb.FrecuenciaActual = paciente.FrecuenciaActual;
-                pacienteEnDb.ObjetivoBuscado = paciente.ObjetivoBuscado;
+                pacienteAsociadoAUsuario.Antecedentes = paciente.Antecedentes;
+                pacienteAsociadoAUsuario.DisposicionDiariaHoras = paciente.DisposicionDiariaHoras;
+                pacienteAsociadoAUsuario.DisposicionSemanalDias = paciente.DisposicionSemanalDias;
+                pacienteAsociadoAUsuario.FrecuenciaActual = paciente.FrecuenciaActual;
+                pacienteAsociadoAUsuario.ObjetivoBuscado = paciente.ObjetivoBuscado;
 
-                _pacienteRepositorio.ActualizarPaciente(pacienteEnDb.Id);
+                _pacienteRepositorio.ActualizarExistente(pacienteAsociadoAUsuario);
             }
 
-            _pacienteRepositorio.GuardarCambios();
+            return _pacienteRepositorio.GuardarCambios() > 0;
         }
     }
 }

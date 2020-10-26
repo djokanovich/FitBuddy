@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using FitBuddy.DataAccess.Repositorios;
+using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
 
 namespace FitBuddy.Business.Facade
@@ -11,16 +11,16 @@ namespace FitBuddy.Business.Facade
 
     public class AgendarTurnoBusinessLogic : IAgendarTurnoBusinessLogic
     {
-        private readonly IMedicoRepositorio _medicoRepositorio;
+        private readonly IRepositorio<Medico> _medicoRepositorio;
 
-        public AgendarTurnoBusinessLogic(IMedicoRepositorio medicoRepositorio)
+        public AgendarTurnoBusinessLogic(IRepositorio<Medico> medicoRepositorio)
         {
             _medicoRepositorio = medicoRepositorio;
         }
 
         public IEnumerable<Medico> ObtenerMedicos()
         {
-            return _medicoRepositorio.ObtenerMedicos();
+            return _medicoRepositorio.Todos();
         }
     }
 }

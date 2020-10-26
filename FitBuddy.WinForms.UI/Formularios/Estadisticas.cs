@@ -79,7 +79,8 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void Estadisticas_Load(object sender, EventArgs e)
         {
-            _estadisticasBusinessLogic.CalcularEstadísticasDePacientePorUsuarioId(IdentityManager.UsuarioActual.UserId);
+            var usuarioId = IdentityManager.UsuarioActual.UserId;
+            _estadisticasBusinessLogic.CalcularEstadísticasDePacientePorUsuarioId(usuarioId);
 
             lblImc.Text = _estadisticasBusinessLogic.ImcString;
             lblIgc.Text = _estadisticasBusinessLogic.IgcString;

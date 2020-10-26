@@ -24,7 +24,8 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             base.OnLoad(e);
 
-            var paciente = _gestionarPerfilBusinessLogic.ObtenerPacientePorUsuarioId(IdentityManager.UsuarioActual.UserId);
+            var usuarioId = IdentityManager.UsuarioActual.UserId;
+            var paciente = _gestionarPerfilBusinessLogic.ObtenerPacienteAsociadoAUsuario(usuarioId);
 
             if (paciente != null)
             {
@@ -49,6 +50,8 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnEnviarClick(object sender, EventArgs e)
         {
+            var usuarioId = IdentityManager.UsuarioActual.UserId;
+
             var genero = Genero.NoEspecificado;
             if (radBtnFemenino.Checked)
             {
@@ -59,12 +62,8 @@ namespace FitBuddy.WinForms.UI.Formularios
                 genero = Genero.Femenino;
             }
 
-            var userId = IdentityManager.UsuarioActual.UserId;
-            var usuario = _gestionarPerfilBusinessLogic.ObtenerUsuarioPorId(userId);
             var paciente = new Paciente
             {
-                UsuarioId = userId,
-                Usuario = usuario,
                 Peso = ConvertirAInt(txtPeso.Text),
                 ContornoBrazoEnCm = ConvertirAInt(txtBrazo.Text),
                 ContornoCaderaEnCm = ConvertirAInt(txtCadera.Text),
@@ -77,7 +76,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             };
 
             // Le paso a la BLL el paciente creado.
-            _gestionarPerfilBusinessLogic.CrearPaciente(paciente);
+            _gestionarPerfilBusinessLogic.CrearPacienteAsociadoAUsuario(usuarioId, paciente);
 
             MessageBox.Show("Datos cargados con éxito");
             _formManager.Close(this);

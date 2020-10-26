@@ -192,8 +192,10 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\ComidaRepositorio.cs" />
-    <Compile Include="Repositorios\MedicoRepositorio.cs" />
+    <Compile Include="Repositorios\Genérico\IRepositorio.cs" />
+    <Compile Include="Repositorios\MédicoRepositorio.cs" />
     <Compile Include="Repositorios\PacienteRepositorio.cs" />
+    <Compile Include="Repositorios\Genérico\RepositorioGenérico.cs" />
     <Compile Include="Repositorios\UsuarioRepositorio.cs" />
     <Compile Include="Services\DbBackupSevice.cs" />
     <Compile Include="Services\DbIntegridadService.cs" />

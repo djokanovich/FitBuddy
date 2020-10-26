@@ -1,38 +1,38 @@
-﻿using FitBuddy.DataAccess.Repositorios;
+﻿using FitBuddy.DataAccess.Repositorios.Genérico;
+using FitBuddy.Entidades;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FitBuddy.Business.Facade
 {
     public interface IDietaBusinessLogic
     {
-        string ElegirAlimentoAlAzar(int userid);
+        string ElegirAlimentoAlAzar(int usuarioId);
     }
 
     public class DietaBusinessLogic : IDietaBusinessLogic
     {
-        private readonly IPacienteRepositorio _pacienteRepositorio;
-        private readonly IComidaRepositorio _comidaRepositorio;
+        private readonly IRepositorio<Paciente> _pacienteRepositorio;
+        private readonly IRepositorio<Comida> _comidaRepositorio;
 
-        public DietaBusinessLogic(IPacienteRepositorio pacienteRepositorio, IComidaRepositorio comidaRepositorio)
+        public DietaBusinessLogic(IRepositorio<Paciente> pacienteRepositorio, IRepositorio<Comida> comidaRepositorio)
         {
             _pacienteRepositorio = pacienteRepositorio;
             _comidaRepositorio = comidaRepositorio;
         }
 
-        public string ElegirAlimentoAlAzar(int userid)
+        public string ElegirAlimentoAlAzar(int usuarioId)
         {
-            var paciente = _pacienteRepositorio.ObtenerPacientePorUsuarioId(userid);
+            var pacienteAsociadoAUsuario = _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
 
-            if (paciente == null)
+            if (pacienteAsociadoAUsuario == null)
             {
                 return string.Empty;
             }
 
-            var comidas = _comidaRepositorio.ComidasCompatiblesConAlergia(paciente.Alergias).ToList();
+            var comidas = _comidaRepositorio.BuscarPor(c => (c.Contiene & pacienteAsociadoAUsuario.Alergias) == 0)
+                .ToList();
+
             var indice = new Random().Next(comidas.Count);
             return comidas[indice].Descripción;
         }

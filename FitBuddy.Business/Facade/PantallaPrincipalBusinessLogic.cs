@@ -1,24 +1,26 @@
-﻿using FitBuddy.DataAccess.Repositorios;
+﻿using System.Linq;
+using FitBuddy.DataAccess.Repositorios.Genérico;
+using FitBuddy.Entidades;
 
 namespace FitBuddy.Business.Facade
 {
     public interface IPantallaPrincipalBusinessLogic
     {
-        bool AlturaPesoEdadPacienteDefinidos(int usuarioId);
+        bool PuedeMostrarEstadísticas(int usuarioId);
     }
 
     public class PantallaPrincipalBusinessLogic : IPantallaPrincipalBusinessLogic
     {
-        private readonly IPacienteRepositorio _pacienteRepositorio;
+        private readonly IRepositorio<Paciente> _pacienteRepositorio;
 
-        public PantallaPrincipalBusinessLogic(IPacienteRepositorio pacienteRepositorio)
+        public PantallaPrincipalBusinessLogic(IRepositorio<Paciente> pacienteRepositorio)
         {
             _pacienteRepositorio = pacienteRepositorio;
         }
 
-        public bool AlturaPesoEdadPacienteDefinidos(int usuarioId)
+        public bool PuedeMostrarEstadísticas(int usuarioId)
         {
-            var paciente = _pacienteRepositorio.ObtenerPacientePorUsuarioId(usuarioId);
+            var paciente = _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
             if (paciente == null)
                 return false;
             

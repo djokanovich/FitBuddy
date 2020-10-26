@@ -42,15 +42,16 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnEnviarClick(object sender, EventArgs e)
         {
+            var usuarioId = IdentityManager.UsuarioActual.UserId;
+
             var paciente = new Paciente
             {
-                UsuarioId = IdentityManager.UsuarioActual.UserId,
                 FrecuenciaActual = (Frecuencia)cmbFrecuencia.SelectedIndex,
                 DisposicionDiariaHoras = (DisponibilidadHoras)cmbDisponibilidadHoras.SelectedIndex,
-                DisposicionSemanalDias = (Frecuencia)cmbDisponibilidadDias.SelectedIndex
+                DisposicionSemanalDias = (Frecuencia)cmbDisponibilidadDias.SelectedIndex,
+                Antecedentes = Antecedentes.None
             };
 
-            paciente.Antecedentes = Antecedentes.None;
             if (chkArticulaciones.Checked) paciente.Antecedentes |= Antecedentes.ProblemasArticulatorios;
             if (chkArtrosis.Checked) paciente.Antecedentes |= Antecedentes.ArtrosisDolenciaCrónica;
             if (chkInfarto.Checked) paciente.Antecedentes |= Antecedentes.InfartoCardiopatía;
@@ -58,7 +59,8 @@ namespace FitBuddy.WinForms.UI.Formularios
             if (chkRodillas.Checked) paciente.Antecedentes |= Antecedentes.RoturaDeMeñiscosProblemaDeRodillas;
             if (chkRespiratorio.Checked) paciente.Antecedentes |= Antecedentes.EnfermedadRespiratoria;
 
-            _crearPlanEjercicioBusinessLogic.GuardarPlanEjercicio(paciente.UsuarioId, paciente);
+            _crearPlanEjercicioBusinessLogic.GuardarPlanEjercicio(usuarioId, paciente);
+
             MessageBox.Show("Perfil de ejercicio cargado con éxito");
         }
     }

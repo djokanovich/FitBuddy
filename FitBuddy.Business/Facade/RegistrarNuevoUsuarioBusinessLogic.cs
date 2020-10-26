@@ -1,6 +1,6 @@
 ﻿using Common.Utilidades;
 using Common.Utilidades.Validators;
-using FitBuddy.DataAccess.Repositorios;
+using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
 
 namespace FitBuddy.Business.Facade
@@ -16,7 +16,7 @@ namespace FitBuddy.Business.Facade
     public class RegistrarNuevoUsuarioBusinessLogic : IRegistrarNuevoUsuarioBusinessLogic
     {
         private readonly IHashService _hashService;
-        private readonly IUsuarioRepositorio _usuarioRepositorio;
+        private readonly IRepositorio<Usuario> _usuarioRepositorio;
         private readonly IPasswordValidator _passwordValidator;
         private readonly IEmailValidator _emailValidator;
 
@@ -24,7 +24,7 @@ namespace FitBuddy.Business.Facade
 
         public RegistrarNuevoUsuarioBusinessLogic(
             IHashService hashService,
-            IUsuarioRepositorio usuarioRepositorio,
+            IRepositorio<Usuario> usuarioRepositorio,
             IPasswordValidator passwordValidator,
             IEmailValidator emailValidator)
         {
@@ -40,7 +40,7 @@ namespace FitBuddy.Business.Facade
 
             usuario.Password = hashedPassword;
 
-            _usuarioRepositorio.CrearUsuario(usuario);
+            _usuarioRepositorio.AgregarNuevo(usuario);
 
             return _usuarioRepositorio.GuardarCambios() > 0;
         }

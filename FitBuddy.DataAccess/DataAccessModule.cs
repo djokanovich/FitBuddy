@@ -1,6 +1,8 @@
 ﻿using Autofac;
 using FitBuddy.DataAccess.Repositorios;
+using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.DataAccess.Services;
+using FitBuddy.Entidades;
 
 namespace FitBuddy.DataAccess
 {
@@ -15,11 +17,11 @@ namespace FitBuddy.DataAccess
 
             builder.RegisterType<DbBackupSevice>().As<IDbBackupSevice>();
             builder.RegisterType<DbIntegridadService>().As<IDbIntegridadService>();
-            
-            builder.RegisterType<ComidaRepositorio>().As<IComidaRepositorio>();
-            builder.RegisterType<MedicoRepositorio>().As<IMedicoRepositorio>();
-            builder.RegisterType<PacienteRepositorio>().As<IPacienteRepositorio>();
-            builder.RegisterType<UsuarioRepositorio>().As<IUsuarioRepositorio>();
+
+            builder.RegisterType<ComidaRepositorio>().As<IRepositorio<Comida>>();
+            builder.RegisterType<MédicoRepositorio>().As<IRepositorio<Medico>>();
+            builder.RegisterType<PacienteRepositorio>().As<IRepositorio<Paciente>>();
+            builder.RegisterType<UsuarioRepositorio>().As<IRepositorio<Usuario>>();
         }
     }
 }

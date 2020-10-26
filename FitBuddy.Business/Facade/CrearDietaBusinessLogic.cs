@@ -1,48 +1,41 @@
 ﻿using System;
-using FitBuddy.DataAccess.Repositorios;
+using System.Linq;
+using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
 
 namespace FitBuddy.Business.Facade
 {
     public interface ICrearDietaBusinessLogic
     {
-        int ActualizarPaciente(int pacienteId);
-        Paciente ObtenerOCrearPacientePorUsuarioId(int usuarioId);
+        bool CrearOActualizarPaciente(int usuarioId, Paciente paciente);
     }
 
     public class CrearDietaBusinessLogic : ICrearDietaBusinessLogic
     {
-        private readonly IPacienteRepositorio _pacienteRepositorio;
-        private readonly IUsuarioRepositorio _usuarioRepositorio;
+        private readonly IRepositorio<Paciente> _pacienteRepositorio;
 
-        public CrearDietaBusinessLogic(IPacienteRepositorio pacienteRepositorio, IUsuarioRepositorio usuarioRepositorio)
+        public CrearDietaBusinessLogic(IRepositorio<Paciente> pacienteRepositorio)
         {
             _pacienteRepositorio = pacienteRepositorio;
-            _usuarioRepositorio = usuarioRepositorio;
         }
 
-        public Paciente ObtenerOCrearPacientePorUsuarioId(int usuarioId)
+        public bool CrearOActualizarPaciente(int usuarioId, Paciente paciente)
         {
-            var paciente = _pacienteRepositorio.ObtenerPacientePorUsuarioId(usuarioId);
-            if (paciente == null)
+            var pacienteAsociadoAUsuario = _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
+            if (pacienteAsociadoAUsuario == null)
             {
-                paciente = new Paciente
-                {
-                    UsuarioId = usuarioId,
-                    Usuario = _usuarioRepositorio.ObtenerUsuarioPorId(usuarioId),
-                    FechaRegistroPerfil = DateTime.Now
-                };
+                paciente.UsuarioId = usuarioId;
+                paciente.FechaRegistroPerfil = DateTime.Now; // TODO: ¿Qué función cumple esta propiedad? ¿Es la fecha de última actualización?
 
-                _pacienteRepositorio.CrearPaciente(paciente);
-                _pacienteRepositorio.GuardarCambios();
+                _pacienteRepositorio.AgregarNuevo(paciente);
+            }
+            else
+            {
+                paciente.Id = pacienteAsociadoAUsuario.Id;
+                _pacienteRepositorio.ActualizarExistente(paciente);
             }
 
-            return paciente;
-        }
-        public int ActualizarPaciente(int pacienteId)
-        {
-            _pacienteRepositorio.ActualizarPaciente(pacienteId);
-            return _pacienteRepositorio.GuardarCambios();
+            return _pacienteRepositorio.GuardarCambios() > 0;
         }
     }
 }

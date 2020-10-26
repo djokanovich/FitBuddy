@@ -1,4 +1,5 @@
 ﻿using FitBuddy.Business.Facade;
+using FitBuddy.Entidades;
 using FitBuddy.Entidades.Enums;
 using FitBuddy.WinForms.UI.Security;
 using System;
@@ -21,9 +22,13 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnEnviarClick(object sender, EventArgs e)
         {
-            var paciente = _crearDietaBusinessLogic.ObtenerOCrearPacientePorUsuarioId(IdentityManager.UsuarioActual.UserId);
+            var usuarioId = IdentityManager.UsuarioActual.UserId;
 
-            paciente.Alergias = Alimento.None;
+            var paciente = new Paciente
+            {
+                Alergias = Alimento.None
+            };
+
             if (chkHuevo.Checked) paciente.Alergias |= Alimento.Huevo;
             if (chkLeche.Checked) paciente.Alergias |= Alimento.Lácteos;
             if (chkTomate.Checked) paciente.Alergias |= Alimento.Tomate;
@@ -39,9 +44,13 @@ namespace FitBuddy.WinForms.UI.Formularios
             if (chkFrutasRojas.Checked) paciente.Alergias |= Alimento.FrutosRojos;
             if (chkSoja.Checked) paciente.Alergias |= Alimento.Soja;
 
-            _crearDietaBusinessLogic.ActualizarPaciente(paciente.Id);
+            var éxito = _crearDietaBusinessLogic.CrearOActualizarPaciente(usuarioId, paciente);
 
-            MessageBox.Show("Perfil alimenticio cargado con éxito");
+            if (éxito)
+            {
+                MessageBox.Show("Perfil alimenticio cargado con éxito.");
+            } // TODO: else?
+
             _formManager.Close(this);
         }
 

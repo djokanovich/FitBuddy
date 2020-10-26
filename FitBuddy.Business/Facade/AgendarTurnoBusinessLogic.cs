@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
 
@@ -6,7 +7,7 @@ namespace FitBuddy.Business.Facade
 {
     public interface IAgendarTurnoBusinessLogic
     {
-        IEnumerable<Medico> ObtenerMedicos();
+        List<Medico> ObtenerMedicos();
     }
 
     public class AgendarTurnoBusinessLogic : IAgendarTurnoBusinessLogic
@@ -18,9 +19,9 @@ namespace FitBuddy.Business.Facade
             _medicoRepositorio = medicoRepositorio;
         }
 
-        public IEnumerable<Medico> ObtenerMedicos()
+        public List<Medico> ObtenerMedicos()
         {
-            return _medicoRepositorio.Todos();
+            return _medicoRepositorio.Todos().ToList();
         }
     }
 }

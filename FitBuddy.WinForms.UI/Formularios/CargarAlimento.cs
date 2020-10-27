@@ -5,10 +5,18 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class CargarAlimento : Form
     {
-        public CargarAlimento()
+        private readonly IFormManager _formManager;
+
+        public CargarAlimento(IFormManager formManager)
         {
             InitializeComponent();
             lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
+            _formManager = formManager;
+        }
+
+        private void OnBtnAtrasClick(object sender, System.EventArgs e)
+        {
+            _formManager.Close(this);
         }
     }
 }

@@ -51,6 +51,7 @@
             this.btnAtras.TabIndex = 20;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // btnEnviar
             // 
@@ -136,7 +137,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 447);
+            this.CancelButton = this.btnAtras;
+            this.ClientSize = new System.Drawing.Size(769, 393);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnEnviar);
@@ -147,7 +149,7 @@
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.DataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CargarAlimento";
             this.Text = "CargarAlimento";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();

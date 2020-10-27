@@ -134,9 +134,11 @@
             // 
             // AgendarTurno
             // 
+            this.AcceptButton = this.btnEnviar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 424);
+            this.CancelButton = this.btnAtras;
+            this.ClientSize = new System.Drawing.Size(670, 407);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnEnviar);

@@ -31,6 +31,7 @@
             this.btnRestaurar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnCreateBackup = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,12 +63,24 @@
             this.btnCreateBackup.UseVisualStyleBackColor = true;
             this.btnCreateBackup.Click += new System.EventHandler(this.OnBtnCrearBackupClick);
             // 
+            // btnAtras
+            // 
+            this.btnAtras.Location = new System.Drawing.Point(601, 315);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 6;
+            this.btnAtras.Text = "Atrás";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
+            // 
             // Backup
             // 
             this.AcceptButton = this.btnCreateBackup;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnAtras;
             this.ClientSize = new System.Drawing.Size(709, 383);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnCreateBackup);
             this.Controls.Add(this.btnRestaurar);
             this.Controls.Add(this.dataGridView1);
@@ -83,5 +96,6 @@
         private System.Windows.Forms.Button btnRestaurar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnCreateBackup;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

@@ -7,12 +7,14 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class Backup : Form
     {
+        private readonly IFormManager _formManager;
         private readonly IBitacora<Backup> _bitacora;
         private readonly IBackupBusinessLogic _backupBusinessLogic;
 
-        public Backup(IBitacora<Backup> bitacora, IBackupBusinessLogic backupBusinessLogic)
+        public Backup(IFormManager formManager, IBitacora<Backup> bitacora, IBackupBusinessLogic backupBusinessLogic)
         {
             InitializeComponent();
+            _formManager = formManager;
             _bitacora = bitacora;
             _backupBusinessLogic = backupBusinessLogic;
         }
@@ -36,6 +38,11 @@ namespace FitBuddy.WinForms.UI.Formularios
                 else
                     MessageBox.Show("No se pudo crear el backup.");
             }
+        }
+
+        private void OnBtnAtrasClick(object sender, EventArgs e)
+        {
+            _formManager.Close(this);
         }
     }
 }

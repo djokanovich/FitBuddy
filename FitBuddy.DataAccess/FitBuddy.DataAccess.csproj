@@ -77,117 +77,9 @@
   <ItemGroup>
     <Compile Include="AppDbContext.cs" />
     <Compile Include="DataAccessModule.cs" />
-    <Compile Include="Migrations\202008232338436_inicial.cs" />
-    <Compile Include="Migrations\202008232338436_inicial.designer.cs">
-      <DependentUpon>202008232338436_inicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008232351364_agregarPermiso.cs" />
-    <Compile Include="Migrations\202008232351364_agregarPermiso.designer.cs">
-      <DependentUpon>202008232351364_agregarPermiso.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008240103173_agregarBitacora.cs" />
-    <Compile Include="Migrations\202008240103173_agregarBitacora.designer.cs">
-      <DependentUpon>202008240103173_agregarBitacora.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008240106511_agregarTabla.cs" />
-    <Compile Include="Migrations\202008240106511_agregarTabla.designer.cs">
-      <DependentUpon>202008240106511_agregarTabla.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008240113172_agregarBackup.cs" />
-    <Compile Include="Migrations\202008240113172_agregarBackup.designer.cs">
-      <DependentUpon>202008240113172_agregarBackup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008240118427_agregarIdioma.cs" />
-    <Compile Include="Migrations\202008240118427_agregarIdioma.designer.cs">
-      <DependentUpon>202008240118427_agregarIdioma.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008240120225_agregarLeyenda.cs" />
-    <Compile Include="Migrations\202008240120225_agregarLeyenda.designer.cs">
-      <DependentUpon>202008240120225_agregarLeyenda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008240126500_agregarPerfilPcte.cs" />
-    <Compile Include="Migrations\202008240126500_agregarPerfilPcte.designer.cs">
-      <DependentUpon>202008240126500_agregarPerfilPcte.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008240132069_agregarEmailsyDomicilios.cs" />
-    <Compile Include="Migrations\202008240132069_agregarEmailsyDomicilios.designer.cs">
-      <DependentUpon>202008240132069_agregarEmailsyDomicilios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008240137285_agregarDietasyComidas.cs" />
-    <Compile Include="Migrations\202008240137285_agregarDietasyComidas.designer.cs">
-      <DependentUpon>202008240137285_agregarDietasyComidas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008240143189_agregarEjerciciosyPlanes.cs" />
-    <Compile Include="Migrations\202008240143189_agregarEjerciciosyPlanes.designer.cs">
-      <DependentUpon>202008240143189_agregarEjerciciosyPlanes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008242149584_agregarMedicos.cs" />
-    <Compile Include="Migrations\202008242149584_agregarMedicos.designer.cs">
-      <DependentUpon>202008242149584_agregarMedicos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008242151478_agregarReclamos.cs" />
-    <Compile Include="Migrations\202008242151478_agregarReclamos.designer.cs">
-      <DependentUpon>202008242151478_agregarReclamos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008242154192_agregarDiarioComidas.cs" />
-    <Compile Include="Migrations\202008242154192_agregarDiarioComidas.designer.cs">
-      <DependentUpon>202008242154192_agregarDiarioComidas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008242157129_agregarDiarioEjercicios.cs" />
-    <Compile Include="Migrations\202008242157129_agregarDiarioEjercicios.designer.cs">
-      <DependentUpon>202008242157129_agregarDiarioEjercicios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008242200185_agregarDiarioTurnos.cs" />
-    <Compile Include="Migrations\202008242200185_agregarDiarioTurnos.designer.cs">
-      <DependentUpon>202008242200185_agregarDiarioTurnos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202009160000366_agregaDVH.cs" />
-    <Compile Include="Migrations\202009160000366_agregaDVH.designer.cs">
-      <DependentUpon>202009160000366_agregaDVH.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202010042243534_Paciente.cs" />
-    <Compile Include="Migrations\202010042243534_Paciente.designer.cs">
-      <DependentUpon>202010042243534_Paciente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202010042254111_fecharegistro.cs" />
-    <Compile Include="Migrations\202010042254111_fecharegistro.designer.cs">
-      <DependentUpon>202010042254111_fecharegistro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202010042301388_fecharegistro1.cs" />
-    <Compile Include="Migrations\202010042301388_fecharegistro1.designer.cs">
-      <DependentUpon>202010042301388_fecharegistro1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202010042303111_addgenero.cs" />
-    <Compile Include="Migrations\202010042303111_addgenero.designer.cs">
-      <DependentUpon>202010042303111_addgenero.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202010062335097_modificoPaciente.cs" />
-    <Compile Include="Migrations\202010062335097_modificoPaciente.designer.cs">
-      <DependentUpon>202010062335097_modificoPaciente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202010121009182_CambioGeneroDeStringAEnum.cs" />
-    <Compile Include="Migrations\202010121009182_CambioGeneroDeStringAEnum.designer.cs">
-      <DependentUpon>202010121009182_CambioGeneroDeStringAEnum.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202010152309372_ModificoEntidadPaciente.cs" />
-    <Compile Include="Migrations\202010152309372_ModificoEntidadPaciente.designer.cs">
-      <DependentUpon>202010152309372_ModificoEntidadPaciente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202010252220056_DefinirEInicializarComida.cs" />
-    <Compile Include="Migrations\202010252220056_DefinirEInicializarComida.designer.cs">
-      <DependentUpon>202010252220056_DefinirEInicializarComida.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202010260001496_SimplificarAlergiasEnPaciente.cs" />
-    <Compile Include="Migrations\202010260001496_SimplificarAlergiasEnPaciente.designer.cs">
-      <DependentUpon>202010260001496_SimplificarAlergiasEnPaciente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202010261544147_NombresMasClarosEnPaciente.cs" />
-    <Compile Include="Migrations\202010261544147_NombresMasClarosEnPaciente.designer.cs">
-      <DependentUpon>202010261544147_NombresMasClarosEnPaciente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202010261556223_EliminarEntidadesQueNoSeUsan.cs" />
-    <Compile Include="Migrations\202010261556223_EliminarEntidadesQueNoSeUsan.designer.cs">
-      <DependentUpon>202010261556223_EliminarEntidadesQueNoSeUsan.cs</DependentUpon>
+    <Compile Include="Migrations\202010271922480_Inicial.cs" />
+    <Compile Include="Migrations\202010271922480_Inicial.designer.cs">
+      <DependentUpon>202010271922480_Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -199,7 +91,7 @@
     <Compile Include="Repositorios\UsuarioRepositorio.cs" />
     <Compile Include="Services\DbBackupSevice.cs" />
     <Compile Include="Services\DbIntegridadService.cs" />
-    <Compile Include="Util\CodigoDeControl.cs" />
+    <Compile Include="Services\Md5HashingService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -216,89 +108,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202008232338436_inicial.resx">
-      <DependentUpon>202008232338436_inicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008232351364_agregarPermiso.resx">
-      <DependentUpon>202008232351364_agregarPermiso.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008240103173_agregarBitacora.resx">
-      <DependentUpon>202008240103173_agregarBitacora.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008240106511_agregarTabla.resx">
-      <DependentUpon>202008240106511_agregarTabla.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008240113172_agregarBackup.resx">
-      <DependentUpon>202008240113172_agregarBackup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008240118427_agregarIdioma.resx">
-      <DependentUpon>202008240118427_agregarIdioma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008240120225_agregarLeyenda.resx">
-      <DependentUpon>202008240120225_agregarLeyenda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008240126500_agregarPerfilPcte.resx">
-      <DependentUpon>202008240126500_agregarPerfilPcte.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008240132069_agregarEmailsyDomicilios.resx">
-      <DependentUpon>202008240132069_agregarEmailsyDomicilios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008240137285_agregarDietasyComidas.resx">
-      <DependentUpon>202008240137285_agregarDietasyComidas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008240143189_agregarEjerciciosyPlanes.resx">
-      <DependentUpon>202008240143189_agregarEjerciciosyPlanes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008242149584_agregarMedicos.resx">
-      <DependentUpon>202008242149584_agregarMedicos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008242151478_agregarReclamos.resx">
-      <DependentUpon>202008242151478_agregarReclamos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008242154192_agregarDiarioComidas.resx">
-      <DependentUpon>202008242154192_agregarDiarioComidas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008242157129_agregarDiarioEjercicios.resx">
-      <DependentUpon>202008242157129_agregarDiarioEjercicios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008242200185_agregarDiarioTurnos.resx">
-      <DependentUpon>202008242200185_agregarDiarioTurnos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009160000366_agregaDVH.resx">
-      <DependentUpon>202009160000366_agregaDVH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202010042243534_Paciente.resx">
-      <DependentUpon>202010042243534_Paciente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202010042254111_fecharegistro.resx">
-      <DependentUpon>202010042254111_fecharegistro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202010042301388_fecharegistro1.resx">
-      <DependentUpon>202010042301388_fecharegistro1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202010042303111_addgenero.resx">
-      <DependentUpon>202010042303111_addgenero.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202010062335097_modificoPaciente.resx">
-      <DependentUpon>202010062335097_modificoPaciente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202010121009182_CambioGeneroDeStringAEnum.resx">
-      <DependentUpon>202010121009182_CambioGeneroDeStringAEnum.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202010152309372_ModificoEntidadPaciente.resx">
-      <DependentUpon>202010152309372_ModificoEntidadPaciente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202010252220056_DefinirEInicializarComida.resx">
-      <DependentUpon>202010252220056_DefinirEInicializarComida.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202010260001496_SimplificarAlergiasEnPaciente.resx">
-      <DependentUpon>202010260001496_SimplificarAlergiasEnPaciente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202010261544147_NombresMasClarosEnPaciente.resx">
-      <DependentUpon>202010261544147_NombresMasClarosEnPaciente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202010261556223_EliminarEntidadesQueNoSeUsan.resx">
-      <DependentUpon>202010261556223_EliminarEntidadesQueNoSeUsan.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202010271922480_Inicial.resx">
+      <DependentUpon>202010271922480_Inicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

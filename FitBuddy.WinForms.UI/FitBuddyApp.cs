@@ -32,15 +32,10 @@ namespace FitBuddy.WinForms.UI
 
         private void VerificarIntegridadDb()
         {
-            if (_integridadBusinessLogic.DbTieneIntegridad())
+            if (!_integridadBusinessLogic.DbTieneIntegridad())
             {
-                _bitacora.Info("Integridad de la base de datos verificada correctamente.");
-            }
-            else
-            {
-                _bitacora.Advertencia("La aplicación inició con un problema de integridad en la base de datos.");
                 var respuesta = MessageBox.Show("Se vió afectada la integridad del sistema. ¿Desea notificar al administrador?",
-                    "Atención",
+                    "¡Atención!",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Exclamation);
 

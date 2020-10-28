@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,11 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntidadBase.cs" />
     <Compile Include="Enums\Antecedentes.cs" />
     <Compile Include="Enums\Alimento.cs" />
     <Compile Include="Comida.cs" />
     <Compile Include="Enums\Genero.cs" />
-    <Compile Include="Interfaces\IVerificoIntegridad.cs" />
     <Compile Include="Medico.cs" />
     <Compile Include="Enums\Objetivo.cs" />
     <Compile Include="Paciente.cs" />

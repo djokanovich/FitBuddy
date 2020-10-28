@@ -1,16 +1,12 @@
-﻿using FitBuddy.Entidades.Interfaces;
-using System.Text;
-
-namespace FitBuddy.Entidades
+﻿namespace FitBuddy.Entidades
 {
     public enum Estado
     {
         Activo, Desactivado
     }
 
-    public class Usuario : IVerificoIntegridad
+    public class Usuario : EntidadBase
     {
-        public int Id { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public string Nombre { get; set; }
@@ -18,13 +14,5 @@ namespace FitBuddy.Entidades
         public Estado Estado { get; set; }
         public int IdIdioma { get; set; }
         public int IntentosFallidos { get; set; }
-        public int DVH { get; set; }
-
-        public byte[] ConcatenarPropiedades()
-        {
-            // Jokanovich1714...
-            var concat = string.Concat(new[] { Username, Password, Nombre, Apellido, Estado.ToString(), IdIdioma.ToString(), IntentosFallidos.ToString() });
-            return Encoding.ASCII.GetBytes(concat);
-        }
     }
 }

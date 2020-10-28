@@ -1,8 +1,8 @@
-﻿using FitBuddy.DataAccess.Util;
+﻿using FitBuddy.DataAccess.Services;
 using FitBuddy.Entidades;
-using FitBuddy.Entidades.Interfaces;
 using System.Data.Entity;
 using System.Linq;
+using System.Security.Cryptography;
 
 namespace FitBuddy.DataAccess
 {
@@ -21,13 +21,16 @@ namespace FitBuddy.DataAccess
         {
             var entidadesConIntegridad =
                 ChangeTracker.Entries() // De todas las entidades que le pedí a Entity Framework que maneje...
-                    .Where(e => e.Entity is IVerificoIntegridad && // ...elijo las que implementan la interfaz IVerificoIntegridad...
+                    .Where(e => e.Entity is EntidadBase && // ...elijo las que implementan la interfaz IVerificoIntegridad...
                         (e.State == EntityState.Added || e.State == EntityState.Modified)) // ...y que estoy creando o modificando.
-                    .Select(e => e.Entity as IVerificoIntegridad);
+                    .Select(e => e.Entity as EntidadBase);
 
-            foreach (var entidadConIntegridad in entidadesConIntegridad)
+            using (var md5 = MD5.Create())
             {
-                entidadConIntegridad.DVH = CodigoDeControl.Luhn(entidadConIntegridad.ConcatenarPropiedades());
+                foreach (var entidadConIntegridad in entidadesConIntegridad)
+                {
+                    entidadConIntegridad.Md5Hash = Md5HashingService.CalcularHash(md5, entidadConIntegridad);
+                }
             }
 
             return base.SaveChanges();

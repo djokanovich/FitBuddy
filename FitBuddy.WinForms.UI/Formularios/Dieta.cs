@@ -66,16 +66,23 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         public void btnImprimir_Click(object sender, EventArgs e)
         {
-            CaptureScreen();
-            _printDocument.Print();
+            var printDialog = new PrintDialog();
+            printDialog.Document = _printDocument;
+            printDialog.PrinterSettings.DefaultPageSettings.Landscape = false;
+            var dialogResult = printDialog.ShowDialog();
+            if (dialogResult == DialogResult.OK)
+            {
+                CaptureScreen();
+                _printDocument.Print();
+            }
         }
 
         private void CaptureScreen()
         {
-            var myGraphics = CreateGraphics();
-            _memoryImage = new Bitmap(Size.Width, Size.Height, myGraphics);
+            var graphics = CreateGraphics();
+            _memoryImage = new Bitmap(Size.Width, Size.Height, graphics);
             var memoryGraphics = Graphics.FromImage(_memoryImage);
-            memoryGraphics.CopyFromScreen(Location.X, Location.Y, 0, 0, Size);
+            memoryGraphics.CopyFromScreen(Location.X, Location.Y + 40, 0, 0, new Size(Size.Width, 475));
         }
 
         private void OnPrintPage(object sender, PrintPageEventArgs e)

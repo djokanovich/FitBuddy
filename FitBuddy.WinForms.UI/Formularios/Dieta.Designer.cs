@@ -33,36 +33,37 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.desayunoLunes = new System.Windows.Forms.Label();
-            this.almuerzoLunes = new System.Windows.Forms.Label();
-            this.meriendaLunes = new System.Windows.Forms.Label();
-            this.cenaLunes = new System.Windows.Forms.Label();
+            this.lblDesayunoLunes = new System.Windows.Forms.Label();
+            this.lblAlmuerzoLunes = new System.Windows.Forms.Label();
+            this.lblMeriendaLunes = new System.Windows.Forms.Label();
+            this.lblCenaLunes = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cMartes = new System.Windows.Forms.Label();
-            this.dMartes = new System.Windows.Forms.Label();
-            this.aMartes = new System.Windows.Forms.Label();
-            this.mMartes = new System.Windows.Forms.Label();
+            this.lblCenaMartes = new System.Windows.Forms.Label();
+            this.lblDesayunoMartes = new System.Windows.Forms.Label();
+            this.lblAlmuerzoMartes = new System.Windows.Forms.Label();
+            this.lblMeriendaMartes = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cMiercoles = new System.Windows.Forms.Label();
-            this.dMiercoles = new System.Windows.Forms.Label();
-            this.aMiercoles = new System.Windows.Forms.Label();
-            this.mMiercoles = new System.Windows.Forms.Label();
+            this.lblCenaMiercoles = new System.Windows.Forms.Label();
+            this.lblDesayunoMiercoles = new System.Windows.Forms.Label();
+            this.lblAlmuerzoMiercoles = new System.Windows.Forms.Label();
+            this.lblMeriendaMiercoles = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.cJueves = new System.Windows.Forms.Label();
-            this.dJueves = new System.Windows.Forms.Label();
-            this.aJueves = new System.Windows.Forms.Label();
-            this.mJueves = new System.Windows.Forms.Label();
+            this.lblCenaJueves = new System.Windows.Forms.Label();
+            this.lblDesayunoJueves = new System.Windows.Forms.Label();
+            this.lblAlmuerzoJueves = new System.Windows.Forms.Label();
+            this.lblMeriendaJueves = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.cViernes = new System.Windows.Forms.Label();
-            this.dViernes = new System.Windows.Forms.Label();
-            this.aViernes = new System.Windows.Forms.Label();
-            this.mViernes = new System.Windows.Forms.Label();
+            this.lblCenaViernes = new System.Windows.Forms.Label();
+            this.lblDesayunoViernes = new System.Windows.Forms.Label();
+            this.lblAlmuerzoViernes = new System.Windows.Forms.Label();
+            this.lblMeriendaViernes = new System.Windows.Forms.Label();
             this.btnImprimir = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -72,316 +73,447 @@
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(2246, 138);
+            this.label7.Location = new System.Drawing.Point(1123, 72);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 25);
+            this.label7.Size = new System.Drawing.Size(48, 13);
             this.label7.TabIndex = 6;
             this.label7.Text = "Domingo";
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(67, 354);
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(11, 64);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 25);
+            this.label8.Size = new System.Drawing.Size(80, 17);
             this.label8.TabIndex = 7;
             this.label8.Text = "Desayuno";
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(70, 553);
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 167);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 25);
+            this.label9.Size = new System.Drawing.Size(75, 17);
             this.label9.TabIndex = 8;
             this.label9.Text = "Almuerzo";
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(70, 752);
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(11, 271);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(102, 25);
+            this.label10.Size = new System.Drawing.Size(75, 17);
             this.label10.TabIndex = 9;
             this.label10.Text = "Merienda";
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(90, 951);
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(12, 374);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(63, 25);
+            this.label11.Size = new System.Drawing.Size(45, 17);
             this.label11.TabIndex = 10;
             this.label11.Text = "Cena";
             // 
-            // desayunoLunes
+            // lblDesayunoLunes
             // 
-            this.desayunoLunes.Location = new System.Drawing.Point(26, 190);
-            this.desayunoLunes.Name = "desayunoLunes";
-            this.desayunoLunes.Size = new System.Drawing.Size(230, 175);
-            this.desayunoLunes.TabIndex = 11;
-            this.desayunoLunes.Text = "desayunolunes";
+            this.lblDesayunoLunes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblDesayunoLunes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesayunoLunes.Location = new System.Drawing.Point(4, 38);
+            this.lblDesayunoLunes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDesayunoLunes.Name = "lblDesayunoLunes";
+            this.lblDesayunoLunes.Padding = new System.Windows.Forms.Padding(5);
+            this.lblDesayunoLunes.Size = new System.Drawing.Size(132, 91);
+            this.lblDesayunoLunes.TabIndex = 11;
+            this.lblDesayunoLunes.Text = "DesayunoLunes";
             // 
-            // almuerzoLunes
+            // lblAlmuerzoLunes
             // 
-            this.almuerzoLunes.Location = new System.Drawing.Point(26, 389);
-            this.almuerzoLunes.Name = "almuerzoLunes";
-            this.almuerzoLunes.Size = new System.Drawing.Size(230, 175);
-            this.almuerzoLunes.TabIndex = 12;
-            this.almuerzoLunes.Text = "label12";
+            this.lblAlmuerzoLunes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblAlmuerzoLunes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlmuerzoLunes.Location = new System.Drawing.Point(4, 141);
+            this.lblAlmuerzoLunes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAlmuerzoLunes.Name = "lblAlmuerzoLunes";
+            this.lblAlmuerzoLunes.Padding = new System.Windows.Forms.Padding(5);
+            this.lblAlmuerzoLunes.Size = new System.Drawing.Size(132, 91);
+            this.lblAlmuerzoLunes.TabIndex = 12;
+            this.lblAlmuerzoLunes.Text = "AlmuerzoLunes";
             // 
-            // meriendaLunes
+            // lblMeriendaLunes
             // 
-            this.meriendaLunes.Location = new System.Drawing.Point(42, 588);
-            this.meriendaLunes.Name = "meriendaLunes";
-            this.meriendaLunes.Size = new System.Drawing.Size(230, 175);
-            this.meriendaLunes.TabIndex = 13;
-            this.meriendaLunes.Text = "label12";
+            this.lblMeriendaLunes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblMeriendaLunes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMeriendaLunes.Location = new System.Drawing.Point(4, 245);
+            this.lblMeriendaLunes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMeriendaLunes.Name = "lblMeriendaLunes";
+            this.lblMeriendaLunes.Padding = new System.Windows.Forms.Padding(5);
+            this.lblMeriendaLunes.Size = new System.Drawing.Size(132, 91);
+            this.lblMeriendaLunes.TabIndex = 13;
+            this.lblMeriendaLunes.Text = "MeriendaLunes";
             // 
-            // cenaLunes
+            // lblCenaLunes
             // 
-            this.cenaLunes.Location = new System.Drawing.Point(42, 787);
-            this.cenaLunes.Name = "cenaLunes";
-            this.cenaLunes.Size = new System.Drawing.Size(230, 175);
-            this.cenaLunes.TabIndex = 14;
-            this.cenaLunes.Text = "label12";
+            this.lblCenaLunes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblCenaLunes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCenaLunes.Location = new System.Drawing.Point(4, 348);
+            this.lblCenaLunes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCenaLunes.Name = "lblCenaLunes";
+            this.lblCenaLunes.Padding = new System.Windows.Forms.Padding(5);
+            this.lblCenaLunes.Size = new System.Drawing.Size(132, 91);
+            this.lblCenaLunes.TabIndex = 14;
+            this.lblCenaLunes.Text = "CenaLunes";
             // 
             // label32
             // 
-            this.label32.Location = new System.Drawing.Point(2226, 859);
+            this.label32.Location = new System.Drawing.Point(1113, 447);
+            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(230, 175);
+            this.label32.Size = new System.Drawing.Size(115, 91);
             this.label32.TabIndex = 38;
             this.label32.Text = "label12";
             // 
             // label33
             // 
-            this.label33.Location = new System.Drawing.Point(2226, 660);
+            this.label33.Location = new System.Drawing.Point(1113, 343);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(230, 175);
+            this.label33.Size = new System.Drawing.Size(115, 91);
             this.label33.TabIndex = 37;
             this.label33.Text = "label12";
             // 
             // label34
             // 
-            this.label34.Location = new System.Drawing.Point(2226, 461);
+            this.label34.Location = new System.Drawing.Point(1113, 240);
+            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(230, 175);
+            this.label34.Size = new System.Drawing.Size(115, 91);
             this.label34.TabIndex = 36;
             this.label34.Text = "label12";
             // 
             // label35
             // 
-            this.label35.Location = new System.Drawing.Point(2226, 262);
+            this.label35.Location = new System.Drawing.Point(1113, 136);
+            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(158, 25);
+            this.label35.Size = new System.Drawing.Size(79, 13);
             this.label35.TabIndex = 35;
             this.label35.Text = "desayunolunes";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cenaLunes);
-            this.groupBox1.Controls.Add(this.desayunoLunes);
-            this.groupBox1.Controls.Add(this.almuerzoLunes);
-            this.groupBox1.Controls.Add(this.meriendaLunes);
-            this.groupBox1.Location = new System.Drawing.Point(325, 164);
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.Controls.Add(this.lblCenaLunes);
+            this.groupBox1.Controls.Add(this.lblDesayunoLunes);
+            this.groupBox1.Controls.Add(this.lblAlmuerzoLunes);
+            this.groupBox1.Controls.Add(this.lblMeriendaLunes);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(107, 28);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(280, 1002);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(140, 451);
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lunes";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.cMartes);
-            this.groupBox2.Controls.Add(this.dMartes);
-            this.groupBox2.Controls.Add(this.aMartes);
-            this.groupBox2.Controls.Add(this.mMartes);
-            this.groupBox2.Location = new System.Drawing.Point(636, 164);
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox2.Controls.Add(this.lblCenaMartes);
+            this.groupBox2.Controls.Add(this.lblDesayunoMartes);
+            this.groupBox2.Controls.Add(this.lblAlmuerzoMartes);
+            this.groupBox2.Controls.Add(this.lblMeriendaMartes);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(263, 28);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(280, 1002);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(140, 451);
             this.groupBox2.TabIndex = 40;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Martes";
             // 
-            // cMartes
+            // lblCenaMartes
             // 
-            this.cMartes.Location = new System.Drawing.Point(42, 787);
-            this.cMartes.Name = "cMartes";
-            this.cMartes.Size = new System.Drawing.Size(230, 175);
-            this.cMartes.TabIndex = 14;
-            this.cMartes.Text = "label12";
+            this.lblCenaMartes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblCenaMartes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCenaMartes.Location = new System.Drawing.Point(4, 348);
+            this.lblCenaMartes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCenaMartes.Name = "lblCenaMartes";
+            this.lblCenaMartes.Padding = new System.Windows.Forms.Padding(5);
+            this.lblCenaMartes.Size = new System.Drawing.Size(132, 91);
+            this.lblCenaMartes.TabIndex = 14;
+            this.lblCenaMartes.Text = "CenaMartes";
             // 
-            // dMartes
+            // lblDesayunoMartes
             // 
-            this.dMartes.Location = new System.Drawing.Point(42, 190);
-            this.dMartes.Name = "dMartes";
-            this.dMartes.Size = new System.Drawing.Size(216, 153);
-            this.dMartes.TabIndex = 11;
-            this.dMartes.Text = "desayunolunes";
+            this.lblDesayunoMartes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblDesayunoMartes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesayunoMartes.Location = new System.Drawing.Point(4, 38);
+            this.lblDesayunoMartes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDesayunoMartes.Name = "lblDesayunoMartes";
+            this.lblDesayunoMartes.Padding = new System.Windows.Forms.Padding(5);
+            this.lblDesayunoMartes.Size = new System.Drawing.Size(132, 91);
+            this.lblDesayunoMartes.TabIndex = 11;
+            this.lblDesayunoMartes.Text = "DesayunoMartes";
             // 
-            // aMartes
+            // lblAlmuerzoMartes
             // 
-            this.aMartes.Location = new System.Drawing.Point(42, 389);
-            this.aMartes.Name = "aMartes";
-            this.aMartes.Size = new System.Drawing.Size(230, 175);
-            this.aMartes.TabIndex = 12;
-            this.aMartes.Text = "label12";
+            this.lblAlmuerzoMartes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblAlmuerzoMartes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlmuerzoMartes.Location = new System.Drawing.Point(4, 141);
+            this.lblAlmuerzoMartes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAlmuerzoMartes.Name = "lblAlmuerzoMartes";
+            this.lblAlmuerzoMartes.Padding = new System.Windows.Forms.Padding(5);
+            this.lblAlmuerzoMartes.Size = new System.Drawing.Size(132, 91);
+            this.lblAlmuerzoMartes.TabIndex = 12;
+            this.lblAlmuerzoMartes.Text = "AlmuerzoMartes";
             // 
-            // mMartes
+            // lblMeriendaMartes
             // 
-            this.mMartes.Location = new System.Drawing.Point(42, 588);
-            this.mMartes.Name = "mMartes";
-            this.mMartes.Size = new System.Drawing.Size(230, 175);
-            this.mMartes.TabIndex = 13;
-            this.mMartes.Text = "label12";
+            this.lblMeriendaMartes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblMeriendaMartes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMeriendaMartes.Location = new System.Drawing.Point(4, 245);
+            this.lblMeriendaMartes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMeriendaMartes.Name = "lblMeriendaMartes";
+            this.lblMeriendaMartes.Padding = new System.Windows.Forms.Padding(5);
+            this.lblMeriendaMartes.Size = new System.Drawing.Size(132, 91);
+            this.lblMeriendaMartes.TabIndex = 13;
+            this.lblMeriendaMartes.Text = "MeriendaMartes";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.cMiercoles);
-            this.groupBox3.Controls.Add(this.dMiercoles);
-            this.groupBox3.Controls.Add(this.aMiercoles);
-            this.groupBox3.Controls.Add(this.mMiercoles);
-            this.groupBox3.Location = new System.Drawing.Point(947, 164);
+            this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox3.Controls.Add(this.lblCenaMiercoles);
+            this.groupBox3.Controls.Add(this.lblDesayunoMiercoles);
+            this.groupBox3.Controls.Add(this.lblAlmuerzoMiercoles);
+            this.groupBox3.Controls.Add(this.lblMeriendaMiercoles);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(419, 28);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(280, 1002);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(140, 451);
             this.groupBox3.TabIndex = 40;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Miercoles";
             // 
-            // cMiercoles
+            // lblCenaMiercoles
             // 
-            this.cMiercoles.Location = new System.Drawing.Point(42, 787);
-            this.cMiercoles.Name = "cMiercoles";
-            this.cMiercoles.Size = new System.Drawing.Size(230, 175);
-            this.cMiercoles.TabIndex = 14;
-            this.cMiercoles.Text = "label12";
+            this.lblCenaMiercoles.BackColor = System.Drawing.SystemColors.Info;
+            this.lblCenaMiercoles.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCenaMiercoles.Location = new System.Drawing.Point(4, 348);
+            this.lblCenaMiercoles.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCenaMiercoles.Name = "lblCenaMiercoles";
+            this.lblCenaMiercoles.Padding = new System.Windows.Forms.Padding(5);
+            this.lblCenaMiercoles.Size = new System.Drawing.Size(132, 91);
+            this.lblCenaMiercoles.TabIndex = 14;
+            this.lblCenaMiercoles.Text = "CenaMiercoles";
             // 
-            // dMiercoles
+            // lblDesayunoMiercoles
             // 
-            this.dMiercoles.Location = new System.Drawing.Point(42, 190);
-            this.dMiercoles.Name = "dMiercoles";
-            this.dMiercoles.Size = new System.Drawing.Size(210, 153);
-            this.dMiercoles.TabIndex = 11;
-            this.dMiercoles.Text = "desayunolunes";
+            this.lblDesayunoMiercoles.BackColor = System.Drawing.SystemColors.Info;
+            this.lblDesayunoMiercoles.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesayunoMiercoles.Location = new System.Drawing.Point(4, 38);
+            this.lblDesayunoMiercoles.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDesayunoMiercoles.Name = "lblDesayunoMiercoles";
+            this.lblDesayunoMiercoles.Padding = new System.Windows.Forms.Padding(5);
+            this.lblDesayunoMiercoles.Size = new System.Drawing.Size(132, 91);
+            this.lblDesayunoMiercoles.TabIndex = 11;
+            this.lblDesayunoMiercoles.Text = "DesayunoMiercoles";
             // 
-            // aMiercoles
+            // lblAlmuerzoMiercoles
             // 
-            this.aMiercoles.Location = new System.Drawing.Point(42, 389);
-            this.aMiercoles.Name = "aMiercoles";
-            this.aMiercoles.Size = new System.Drawing.Size(230, 175);
-            this.aMiercoles.TabIndex = 12;
-            this.aMiercoles.Text = "label12";
+            this.lblAlmuerzoMiercoles.BackColor = System.Drawing.SystemColors.Info;
+            this.lblAlmuerzoMiercoles.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlmuerzoMiercoles.Location = new System.Drawing.Point(4, 141);
+            this.lblAlmuerzoMiercoles.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAlmuerzoMiercoles.Name = "lblAlmuerzoMiercoles";
+            this.lblAlmuerzoMiercoles.Padding = new System.Windows.Forms.Padding(5);
+            this.lblAlmuerzoMiercoles.Size = new System.Drawing.Size(132, 91);
+            this.lblAlmuerzoMiercoles.TabIndex = 12;
+            this.lblAlmuerzoMiercoles.Text = "AlmuerzoMiercoles";
             // 
-            // mMiercoles
+            // lblMeriendaMiercoles
             // 
-            this.mMiercoles.Location = new System.Drawing.Point(42, 588);
-            this.mMiercoles.Name = "mMiercoles";
-            this.mMiercoles.Size = new System.Drawing.Size(230, 175);
-            this.mMiercoles.TabIndex = 13;
-            this.mMiercoles.Text = "label12";
+            this.lblMeriendaMiercoles.BackColor = System.Drawing.SystemColors.Info;
+            this.lblMeriendaMiercoles.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMeriendaMiercoles.Location = new System.Drawing.Point(4, 245);
+            this.lblMeriendaMiercoles.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMeriendaMiercoles.Name = "lblMeriendaMiercoles";
+            this.lblMeriendaMiercoles.Padding = new System.Windows.Forms.Padding(5);
+            this.lblMeriendaMiercoles.Size = new System.Drawing.Size(132, 91);
+            this.lblMeriendaMiercoles.TabIndex = 13;
+            this.lblMeriendaMiercoles.Text = "MeriendaMiercoles";
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.cJueves);
-            this.groupBox4.Controls.Add(this.dJueves);
-            this.groupBox4.Controls.Add(this.aJueves);
-            this.groupBox4.Controls.Add(this.mJueves);
-            this.groupBox4.Location = new System.Drawing.Point(1258, 164);
+            this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox4.Controls.Add(this.lblCenaJueves);
+            this.groupBox4.Controls.Add(this.lblDesayunoJueves);
+            this.groupBox4.Controls.Add(this.lblAlmuerzoJueves);
+            this.groupBox4.Controls.Add(this.lblMeriendaJueves);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(574, 28);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(280, 1002);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Size = new System.Drawing.Size(140, 451);
             this.groupBox4.TabIndex = 40;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Jueves";
             // 
-            // cJueves
+            // lblCenaJueves
             // 
-            this.cJueves.Location = new System.Drawing.Point(42, 787);
-            this.cJueves.Name = "cJueves";
-            this.cJueves.Size = new System.Drawing.Size(230, 175);
-            this.cJueves.TabIndex = 14;
-            this.cJueves.Text = "label12";
+            this.lblCenaJueves.BackColor = System.Drawing.SystemColors.Info;
+            this.lblCenaJueves.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCenaJueves.Location = new System.Drawing.Point(4, 348);
+            this.lblCenaJueves.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCenaJueves.Name = "lblCenaJueves";
+            this.lblCenaJueves.Padding = new System.Windows.Forms.Padding(5);
+            this.lblCenaJueves.Size = new System.Drawing.Size(132, 91);
+            this.lblCenaJueves.TabIndex = 14;
+            this.lblCenaJueves.Text = "CenaJueves";
             // 
-            // dJueves
+            // lblDesayunoJueves
             // 
-            this.dJueves.Location = new System.Drawing.Point(42, 190);
-            this.dJueves.Name = "dJueves";
-            this.dJueves.Size = new System.Drawing.Size(209, 153);
-            this.dJueves.TabIndex = 11;
-            this.dJueves.Text = "desayunolunes";
+            this.lblDesayunoJueves.BackColor = System.Drawing.SystemColors.Info;
+            this.lblDesayunoJueves.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesayunoJueves.Location = new System.Drawing.Point(4, 38);
+            this.lblDesayunoJueves.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDesayunoJueves.Name = "lblDesayunoJueves";
+            this.lblDesayunoJueves.Padding = new System.Windows.Forms.Padding(5);
+            this.lblDesayunoJueves.Size = new System.Drawing.Size(132, 91);
+            this.lblDesayunoJueves.TabIndex = 11;
+            this.lblDesayunoJueves.Text = "DesayunoJueves";
             // 
-            // aJueves
+            // lblAlmuerzoJueves
             // 
-            this.aJueves.Location = new System.Drawing.Point(42, 389);
-            this.aJueves.Name = "aJueves";
-            this.aJueves.Size = new System.Drawing.Size(230, 175);
-            this.aJueves.TabIndex = 12;
-            this.aJueves.Text = "label12";
+            this.lblAlmuerzoJueves.BackColor = System.Drawing.SystemColors.Info;
+            this.lblAlmuerzoJueves.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlmuerzoJueves.Location = new System.Drawing.Point(4, 141);
+            this.lblAlmuerzoJueves.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAlmuerzoJueves.Name = "lblAlmuerzoJueves";
+            this.lblAlmuerzoJueves.Padding = new System.Windows.Forms.Padding(5);
+            this.lblAlmuerzoJueves.Size = new System.Drawing.Size(132, 91);
+            this.lblAlmuerzoJueves.TabIndex = 12;
+            this.lblAlmuerzoJueves.Text = "AlmuerzoJueves";
             // 
-            // mJueves
+            // lblMeriendaJueves
             // 
-            this.mJueves.Location = new System.Drawing.Point(42, 588);
-            this.mJueves.Name = "mJueves";
-            this.mJueves.Size = new System.Drawing.Size(230, 175);
-            this.mJueves.TabIndex = 13;
-            this.mJueves.Text = "label12";
+            this.lblMeriendaJueves.BackColor = System.Drawing.SystemColors.Info;
+            this.lblMeriendaJueves.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMeriendaJueves.Location = new System.Drawing.Point(4, 245);
+            this.lblMeriendaJueves.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMeriendaJueves.Name = "lblMeriendaJueves";
+            this.lblMeriendaJueves.Padding = new System.Windows.Forms.Padding(5);
+            this.lblMeriendaJueves.Size = new System.Drawing.Size(132, 91);
+            this.lblMeriendaJueves.TabIndex = 13;
+            this.lblMeriendaJueves.Text = "MeriendaJueves";
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.cViernes);
-            this.groupBox5.Controls.Add(this.dViernes);
-            this.groupBox5.Controls.Add(this.aViernes);
-            this.groupBox5.Controls.Add(this.mViernes);
-            this.groupBox5.Location = new System.Drawing.Point(1569, 164);
+            this.groupBox5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox5.Controls.Add(this.lblCenaViernes);
+            this.groupBox5.Controls.Add(this.lblDesayunoViernes);
+            this.groupBox5.Controls.Add(this.lblAlmuerzoViernes);
+            this.groupBox5.Controls.Add(this.lblMeriendaViernes);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(729, 28);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(280, 1002);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Size = new System.Drawing.Size(140, 451);
             this.groupBox5.TabIndex = 40;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Viernes";
             // 
-            // cViernes
+            // lblCenaViernes
             // 
-            this.cViernes.Location = new System.Drawing.Point(42, 787);
-            this.cViernes.Name = "cViernes";
-            this.cViernes.Size = new System.Drawing.Size(230, 175);
-            this.cViernes.TabIndex = 14;
-            this.cViernes.Text = "label12";
+            this.lblCenaViernes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblCenaViernes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCenaViernes.Location = new System.Drawing.Point(4, 348);
+            this.lblCenaViernes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCenaViernes.Name = "lblCenaViernes";
+            this.lblCenaViernes.Padding = new System.Windows.Forms.Padding(5);
+            this.lblCenaViernes.Size = new System.Drawing.Size(132, 91);
+            this.lblCenaViernes.TabIndex = 14;
+            this.lblCenaViernes.Text = "CenaViernes";
             // 
-            // dViernes
+            // lblDesayunoViernes
             // 
-            this.dViernes.Location = new System.Drawing.Point(42, 190);
-            this.dViernes.Name = "dViernes";
-            this.dViernes.Size = new System.Drawing.Size(216, 175);
-            this.dViernes.TabIndex = 11;
-            this.dViernes.Text = "desayunolunes";
+            this.lblDesayunoViernes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblDesayunoViernes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesayunoViernes.Location = new System.Drawing.Point(4, 38);
+            this.lblDesayunoViernes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDesayunoViernes.Name = "lblDesayunoViernes";
+            this.lblDesayunoViernes.Padding = new System.Windows.Forms.Padding(5);
+            this.lblDesayunoViernes.Size = new System.Drawing.Size(132, 91);
+            this.lblDesayunoViernes.TabIndex = 11;
+            this.lblDesayunoViernes.Text = "DesayunoViernes";
             // 
-            // aViernes
+            // lblAlmuerzoViernes
             // 
-            this.aViernes.Location = new System.Drawing.Point(42, 389);
-            this.aViernes.Name = "aViernes";
-            this.aViernes.Size = new System.Drawing.Size(230, 175);
-            this.aViernes.TabIndex = 12;
-            this.aViernes.Text = "label12";
+            this.lblAlmuerzoViernes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblAlmuerzoViernes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlmuerzoViernes.Location = new System.Drawing.Point(4, 141);
+            this.lblAlmuerzoViernes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAlmuerzoViernes.Name = "lblAlmuerzoViernes";
+            this.lblAlmuerzoViernes.Padding = new System.Windows.Forms.Padding(5);
+            this.lblAlmuerzoViernes.Size = new System.Drawing.Size(132, 91);
+            this.lblAlmuerzoViernes.TabIndex = 12;
+            this.lblAlmuerzoViernes.Text = "AlmuerzoViernes";
             // 
-            // mViernes
+            // lblMeriendaViernes
             // 
-            this.mViernes.Location = new System.Drawing.Point(42, 588);
-            this.mViernes.Name = "mViernes";
-            this.mViernes.Size = new System.Drawing.Size(230, 175);
-            this.mViernes.TabIndex = 13;
-            this.mViernes.Text = "label12";
+            this.lblMeriendaViernes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblMeriendaViernes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMeriendaViernes.Location = new System.Drawing.Point(4, 245);
+            this.lblMeriendaViernes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMeriendaViernes.Name = "lblMeriendaViernes";
+            this.lblMeriendaViernes.Padding = new System.Windows.Forms.Padding(5);
+            this.lblMeriendaViernes.Size = new System.Drawing.Size(132, 91);
+            this.lblMeriendaViernes.TabIndex = 13;
+            this.lblMeriendaViernes.Text = "MeriendaViernes";
             // 
             // btnImprimir
             // 
-            this.btnImprimir.Location = new System.Drawing.Point(312, 1250);
+            this.btnImprimir.Location = new System.Drawing.Point(156, 650);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(301, 93);
+            this.btnImprimir.Size = new System.Drawing.Size(150, 48);
             this.btnImprimir.TabIndex = 41;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
+            // btnAtras
+            // 
+            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnAtras.Location = new System.Drawing.Point(793, 505);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 42;
+            this.btnAtras.Text = "Atrás";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
+            // 
             // Dieta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2506, 1530);
+            this.CancelButton = this.btnAtras;
+            this.ClientSize = new System.Drawing.Size(886, 549);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -397,15 +529,16 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Dieta";
             this.Text = "Dieta";
-            this.Load += new System.EventHandler(this.Dieta_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -415,35 +548,36 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label desayunoLunes;
-        private System.Windows.Forms.Label almuerzoLunes;
-        private System.Windows.Forms.Label meriendaLunes;
-        private System.Windows.Forms.Label cenaLunes;
+        private System.Windows.Forms.Label lblDesayunoLunes;
+        private System.Windows.Forms.Label lblAlmuerzoLunes;
+        private System.Windows.Forms.Label lblMeriendaLunes;
+        private System.Windows.Forms.Label lblCenaLunes;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label cMartes;
-        private System.Windows.Forms.Label dMartes;
-        private System.Windows.Forms.Label aMartes;
-        private System.Windows.Forms.Label mMartes;
+        private System.Windows.Forms.Label lblCenaMartes;
+        private System.Windows.Forms.Label lblDesayunoMartes;
+        private System.Windows.Forms.Label lblAlmuerzoMartes;
+        private System.Windows.Forms.Label lblMeriendaMartes;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label cMiercoles;
-        private System.Windows.Forms.Label dMiercoles;
-        private System.Windows.Forms.Label aMiercoles;
-        private System.Windows.Forms.Label mMiercoles;
+        private System.Windows.Forms.Label lblCenaMiercoles;
+        private System.Windows.Forms.Label lblDesayunoMiercoles;
+        private System.Windows.Forms.Label lblAlmuerzoMiercoles;
+        private System.Windows.Forms.Label lblMeriendaMiercoles;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label cJueves;
-        private System.Windows.Forms.Label dJueves;
-        private System.Windows.Forms.Label aJueves;
-        private System.Windows.Forms.Label mJueves;
+        private System.Windows.Forms.Label lblCenaJueves;
+        private System.Windows.Forms.Label lblDesayunoJueves;
+        private System.Windows.Forms.Label lblAlmuerzoJueves;
+        private System.Windows.Forms.Label lblMeriendaJueves;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label cViernes;
-        private System.Windows.Forms.Label dViernes;
-        private System.Windows.Forms.Label aViernes;
-        private System.Windows.Forms.Label mViernes;
+        private System.Windows.Forms.Label lblCenaViernes;
+        private System.Windows.Forms.Label lblDesayunoViernes;
+        private System.Windows.Forms.Label lblAlmuerzoViernes;
+        private System.Windows.Forms.Label lblMeriendaViernes;
         private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

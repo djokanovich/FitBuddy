@@ -10,13 +10,15 @@ namespace FitBuddy.WinForms.UI.Formularios
 {
     public partial class Dieta : Form
     {
+        private readonly IFormManager _formManager;
         private readonly IDietaBusinessLogic _dietaBusinessLogic;
         private PrintDocument _printDocument;
         private Bitmap _memoryImage;
 
-        public Dieta(IDietaBusinessLogic dietaBusinessLogic)
+        public Dieta(IFormManager formManager, IDietaBusinessLogic dietaBusinessLogic)
         {
             InitializeComponent();
+            _formManager = formManager;
             _dietaBusinessLogic = dietaBusinessLogic;
 
             _printDocument = new PrintDocument();
@@ -27,43 +29,40 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             base.OnLoad(e);
 
+            var usuarioId = IdentityManager.UsuarioActual.UserId;
+
             //lunes
-            desayunoLunes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Desayuno);
-            almuerzoLunes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Almuerzo);
-            meriendaLunes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Merienda);
-            cenaLunes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Cena);
+            lblDesayunoLunes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Desayuno, usuarioId);
+            lblAlmuerzoLunes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Almuerzo, usuarioId);
+            lblMeriendaLunes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Merienda, usuarioId);
+            lblCenaLunes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Cena, usuarioId);
 
             //martes
-            dMartes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Desayuno);
-            aMartes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Almuerzo);
-            mMartes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Merienda);
-            cMartes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Cena);
+            lblDesayunoMartes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Desayuno, usuarioId);
+            lblAlmuerzoMartes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Almuerzo, usuarioId);
+            lblMeriendaMartes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Merienda, usuarioId);
+            lblCenaMartes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Cena, usuarioId);
 
             //miercoles
-            dMiercoles.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Desayuno);
-            aMiercoles.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Almuerzo);
-            mMiercoles.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Merienda);
-            cMiercoles.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Cena);
+            lblDesayunoMiercoles.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Desayuno, usuarioId);
+            lblAlmuerzoMiercoles.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Almuerzo, usuarioId);
+            lblMeriendaMiercoles.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Merienda, usuarioId);
+            lblCenaMiercoles.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Cena, usuarioId);
 
 
             //jueves
-            dJueves.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Desayuno);
-            aJueves.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Almuerzo);
-            mJueves.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Merienda);
-            cJueves.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Cena);
+            lblDesayunoJueves.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Desayuno, usuarioId);
+            lblAlmuerzoJueves.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Almuerzo, usuarioId);
+            lblMeriendaJueves.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Merienda, usuarioId);
+            lblCenaJueves.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Cena, usuarioId);
 
             //viernes
-            dViernes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Desayuno);
-            aViernes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Almuerzo);
-            mViernes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Merienda);
-            cViernes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(IdentityManager.UsuarioActual.UserId, TipoComida.Cena);
+            lblDesayunoViernes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Desayuno, usuarioId);
+            lblAlmuerzoViernes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Almuerzo, usuarioId);
+            lblMeriendaViernes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Merienda, usuarioId);
+            lblCenaViernes.Text = _dietaBusinessLogic.ElegirAlimentoAlAzar(TipoComida.Cena, usuarioId);
         }
 
-
-        private void Dieta_Load(object sender, EventArgs e)
-        {
-
-        }
 
         public void btnImprimir_Click(object sender, EventArgs e)
         {
@@ -82,6 +81,11 @@ namespace FitBuddy.WinForms.UI.Formularios
         private void OnPrintPage(object sender, PrintPageEventArgs e)
         {
             e.Graphics.DrawImage(_memoryImage, 0, 0);
+        }
+
+        private void OnBtnAtrasClick(object sender, EventArgs e)
+        {
+            _formManager.Close(this);
         }
     }
 }

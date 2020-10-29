@@ -261,6 +261,10 @@
       <Project>{a9e94aba-fc74-4048-861c-bbe4193a6909}</Project>
       <Name>Common.Bitacora</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Common.Utilidades\Common.Utilidades.csproj">
+      <Project>{F6D53E2F-0779-4611-8CE7-E667A15B8D86}</Project>
+      <Name>Common.Utilidades</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FitBuddy.Business\FitBuddy.Business.csproj">
       <Project>{ee2bb302-6125-4327-af75-7aefeed8c058}</Project>
       <Name>FitBuddy.Business</Name>

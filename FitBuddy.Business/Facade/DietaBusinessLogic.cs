@@ -1,4 +1,5 @@
-﻿using FitBuddy.DataAccess.Repositorios.Genérico;
+﻿using Common.Utilidades;
+using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
 using FitBuddy.Entidades.Enums;
 using System;
@@ -8,21 +9,23 @@ namespace FitBuddy.Business.Facade
 {
     public interface IDietaBusinessLogic
     {
-        string ElegirAlimentoAlAzar(int usuarioId, TipoComida tipoComida);
+        string ElegirAlimentoAlAzar(TipoComida tipoComida, int usuarioId);
     }
 
     public class DietaBusinessLogic : IDietaBusinessLogic
     {
         private readonly IRepositorio<Paciente> _pacienteRepositorio;
         private readonly IRepositorio<Comida> _comidaRepositorio;
+        private readonly RandomNumberGeneratorService _rngService;
 
-        public DietaBusinessLogic(IRepositorio<Paciente> pacienteRepositorio, IRepositorio<Comida> comidaRepositorio)
+        public DietaBusinessLogic(IRepositorio<Paciente> pacienteRepositorio, IRepositorio<Comida> comidaRepositorio, RandomNumberGeneratorService rngService)
         {
             _pacienteRepositorio = pacienteRepositorio;
             _comidaRepositorio = comidaRepositorio;
+            _rngService = rngService;
         }
 
-        public string ElegirAlimentoAlAzar(int usuarioId, TipoComida tipoComida)
+        public string ElegirAlimentoAlAzar(TipoComida tipoComida, int usuarioId)
         {
             var pacienteAsociadoAUsuario = _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
             if (pacienteAsociadoAUsuario == null)
@@ -35,7 +38,7 @@ namespace FitBuddy.Business.Facade
                     (comida.TipoComida & tipoComida) != 0)
                 .ToList();
 
-            var indice = new Random().Next(comidas.Count);
+            var indice = _rngService.NúmeroAlAzar(comidas.Count);
             return comidas[indice].Descripción;
         }
     }

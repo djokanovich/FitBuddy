@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Common.Utilidades;
 
 namespace FitBuddy.WinForms.UI.Animación
 {
@@ -22,12 +23,13 @@ namespace FitBuddy.WinForms.UI.Animación
         private FunciónDeSuavizado _función;
 
         private readonly Timer _timer = new Timer();
-
+        private readonly RandomNumberGeneratorService _rngService;
         private float _instanteDeTiempo = 0;
 
-        public Animar()
+        public Animar(RandomNumberGeneratorService rngService)
         {
             _timer.Interval = 10;
+            _rngService = rngService;
         }
 
         public EventHandler EjecutarACadaInstanteDeTiempo { get; set; }
@@ -47,7 +49,7 @@ namespace FitBuddy.WinForms.UI.Animación
 
         public void SeleccionarFunciónAlAzar()
         {
-            var randomIndex = new Random().Next(_funcionesDeSuavizados.Length);
+            var randomIndex = _rngService.NúmeroAlAzar(_funcionesDeSuavizados.Length);
             _función = _funcionesDeSuavizados[randomIndex];
         }
 

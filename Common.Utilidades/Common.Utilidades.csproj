@@ -155,6 +155,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RandomNumberGeneratorService.cs" />
     <Compile Include="Validators\EmailValidator.cs" />
     <Compile Include="HashService.cs" />
     <Compile Include="Validators\PasswordValidator.cs" />

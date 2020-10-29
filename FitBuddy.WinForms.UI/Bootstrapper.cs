@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Common.Bitacora;
+using Common.Utilidades;
 using FitBuddy.Business;
 using FitBuddy.WinForms.UI.Animación;
 using FitBuddy.WinForms.UI.Formularios;
@@ -20,6 +21,9 @@ namespace FitBuddy.WinForms.UI
                 .As(typeof(IBitacora<>))
                 .WithParameter("path", path)
                 .WithParameter("minimoNivelMensajesBitacora", minimoNivelMensajesBitacora)
+                .SingleInstance();
+
+            builder.RegisterType<RandomNumberGeneratorService>().AsSelf()
                 .SingleInstance();
 
             builder.RegisterType<FitBuddyApp>().AsSelf()

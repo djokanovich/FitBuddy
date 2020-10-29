@@ -10,10 +10,10 @@ namespace FitBuddy.Entidades
 
         public string Md5Hash { get; set; }
 
-        public virtual string Key()
+        public virtual string Key() // concatena todas las propiedades de la entidad para hacer el hash
         {
             var valueTypeProperties = GetType().GetProperties()
-                .Where(p => EsPropiedadHasheable(p))
+                .Where(p => EsPropiedadHasheable(p)) // string o int
                 .OrderBy(p => p.Name)
                 .Select(p => p.GetValue(this) == null ? string.Empty : p.GetValue(this).ToString());
 

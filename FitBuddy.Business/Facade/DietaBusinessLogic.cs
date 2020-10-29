@@ -1,5 +1,6 @@
 ﻿using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
+using FitBuddy.Entidades.Enums;
 using System;
 using System.Linq;
 
@@ -7,7 +8,7 @@ namespace FitBuddy.Business.Facade
 {
     public interface IDietaBusinessLogic
     {
-        string ElegirAlimentoAlAzar(int usuarioId);
+        string ElegirAlimentoAlAzar(int usuarioId, TipoComida tipoComida);
     }
 
     public class DietaBusinessLogic : IDietaBusinessLogic
@@ -21,7 +22,7 @@ namespace FitBuddy.Business.Facade
             _comidaRepositorio = comidaRepositorio;
         }
 
-        public string ElegirAlimentoAlAzar(int usuarioId)
+        public string ElegirAlimentoAlAzar(int usuarioId, TipoComida tipoComida)
         {
             var pacienteAsociadoAUsuario = _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
             if (pacienteAsociadoAUsuario == null)
@@ -30,7 +31,8 @@ namespace FitBuddy.Business.Facade
             }
 
             // Buscar las comidas que no contengan las alergias del paciente.
-            var comidas = _comidaRepositorio.BuscarPor(comida => (pacienteAsociadoAUsuario.Alergias & comida.Contiene) == 0)
+            var comidas = _comidaRepositorio.BuscarPor(comida => (pacienteAsociadoAUsuario.Alergias & comida.Contiene) == 0 &&
+                    (comida.TipoComida & tipoComida) != 0)
                 .ToList();
 
             var indice = new Random().Next(comidas.Count);

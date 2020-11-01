@@ -287,13 +287,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Imágenes\aguja.png" />
+    <None Include="Recursos\Aguja.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Imágenes\velocimetro.png" />
+    <None Include="Recursos\Velocimetro.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\dieta.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recursos\dieta.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

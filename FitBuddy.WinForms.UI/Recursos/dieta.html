@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dieta personalizada</title>
+    <style>
+        /* thead {
+            color: green;
+        }
+
+        tbody {
+            color: blue;
+        }
+
+        tfoot {
+            color: red;
+        } */
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, .firstColumn {
+            font-weight: bold;
+            background-color: #c0c0c0;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            padding: .3em .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FitBuddy</h1>
+    <h2>Dieta semanal</h2>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="firstColumn">Desayuno</td>
+                <td>{DesayunoLunes}</td>
+                <td>{DesayunoMartes}</td>
+                <td>{DesayunoMiercoles}</td>
+                <td>{DesayunoJueves}</td>
+                <td>{DesayunoViernes}</td>
+            </tr>
+            <tr>
+                <td class="firstColumn">Almuerzo</td>
+                <td>{AlmuerzoLunes}</td>
+                <td>{AlmuerzoMartes}</td>
+                <td>{AlmuerzoMiercoles}</td>
+                <td>{AlmuerzoJueves}</td>
+                <td>{AlmuerzoViernes}</td>
+            </tr>
+            <tr>
+                <td class="firstColumn">Merienda</td>
+                <td>{MeriendaLunes}</td>
+                <td>{MeriendaMartes}</td>
+                <td>{MeriendaMiercoles}</td>
+                <td>{MeriendaJueves}</td>
+                <td>{MeriendaViernes}</td>
+            </tr>
+            <tr>
+                <td class="firstColumn">Cena</td>
+                <td>{CenaLunes}</td>
+                <td>{CenaMartes}</td>
+                <td>{CenaMiercoles}</td>
+                <td>{CenaJueves}</td>
+                <td>{CenaViernes}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

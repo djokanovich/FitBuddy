@@ -9,7 +9,7 @@ namespace FitBuddy.Business.Facade
 {
     public interface IDietaBusinessLogic
     {
-        string ElegirAlimentoAlAzar(TipoComida tipoComida, int usuarioId);
+        DietaSemanal CrearDietaSemanal(int usuarioId);
     }
 
     public class DietaBusinessLogic : IDietaBusinessLogic
@@ -25,21 +25,30 @@ namespace FitBuddy.Business.Facade
             _rngService = rngService;
         }
 
-        public string ElegirAlimentoAlAzar(TipoComida tipoComida, int usuarioId)
+        public DietaSemanal CrearDietaSemanal(int usuarioId)
         {
+            var dietaSemanal = new DietaSemanal();
+
             var pacienteAsociadoAUsuario = _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
             if (pacienteAsociadoAUsuario == null)
-            {
-                return string.Empty;
-            }
+                return dietaSemanal;
 
             // Buscar las comidas que no contengan las alergias del paciente.
-            var comidas = _comidaRepositorio.BuscarPor(comida => (pacienteAsociadoAUsuario.Alergias & comida.Contiene) == 0 &&
-                    (comida.TipoComida & tipoComida) != 0)
-                .ToList();
+            var comidas = _comidaRepositorio.BuscarPor(comida => (pacienteAsociadoAUsuario.Alergias & comida.Contiene) == 0);
 
-            var indice = _rngService.NúmeroAlAzar(comidas.Count);
-            return comidas[indice].Descripción;
+            for (DayOfWeek dayOfWeek = DayOfWeek.Monday; dayOfWeek <= DayOfWeek.Friday; ++dayOfWeek)
+            {
+                foreach (TipoComida tipoComida in Enum.GetValues(typeof(TipoComida)))
+                {
+                    // Filtrar por tipo de comida (desayuno, almuerzo, etc.)
+                    var comidasDeTipoComida = comidas.Where(c => (c.TipoComida & tipoComida) != 0).ToList();
+
+                    var númeroAlAzar = _rngService.NúmeroAlAzar(comidasDeTipoComida.Count);
+                    dietaSemanal[dayOfWeek, tipoComida] = comidasDeTipoComida[númeroAlAzar].Descripción;
+                }
+            }
+
+            return dietaSemanal;
         }
     }
 }

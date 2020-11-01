@@ -63,19 +63,56 @@ namespace FitBuddy.WinForms.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap aguja {
+        internal static System.Drawing.Bitmap Aguja {
             get {
-                object obj = ResourceManager.GetObject("aguja", resourceCulture);
+                object obj = ResourceManager.GetObject("Aguja", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+        ///&lt;html lang=&quot;en&quot;&gt;
+        ///
+        ///&lt;head&gt;
+        ///    &lt;meta charset=&quot;UTF-8&quot;&gt;
+        ///    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        ///    &lt;title&gt;Dieta personalizada&lt;/title&gt;
+        ///    &lt;style&gt;
+        ///        /* thead {
+        ///            color: green;
+        ///        }
+        ///
+        ///        tbody {
+        ///            color: blue;
+        ///        }
+        ///
+        ///        tfoot {
+        ///            color: red;
+        ///        } */
+        ///
+        ///        h1, h2 {
+        ///            text-align: center;
+        ///        }
+        ///
+        ///        table {
+        ///            border-collapse: collapse;
+        ///        }
+        ///
+        ///   [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TemplateDietaSemanal {
+            get {
+                return ResourceManager.GetString("TemplateDietaSemanal", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap velocimetro {
+        internal static System.Drawing.Bitmap Velocimetro {
             get {
-                object obj = ResourceManager.GetObject("velocimetro", resourceCulture);
+                object obj = ResourceManager.GetObject("Velocimetro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

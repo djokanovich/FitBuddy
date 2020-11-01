@@ -62,7 +62,7 @@
             this.lblDesayunoViernes = new System.Windows.Forms.Label();
             this.lblAlmuerzoViernes = new System.Windows.Forms.Label();
             this.lblMeriendaViernes = new System.Windows.Forms.Label();
-            this.btnImprimir = new System.Windows.Forms.Button();
+            this.btnExportarAPdf = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -485,16 +485,16 @@
             this.lblMeriendaViernes.TabIndex = 13;
             this.lblMeriendaViernes.Text = "MeriendaViernes";
             // 
-            // btnImprimir
+            // btnExportarAPdf
             // 
-            this.btnImprimir.Location = new System.Drawing.Point(114, 492);
-            this.btnImprimir.Margin = new System.Windows.Forms.Padding(2);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(150, 48);
-            this.btnImprimir.TabIndex = 41;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            this.btnExportarAPdf.Location = new System.Drawing.Point(114, 492);
+            this.btnExportarAPdf.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExportarAPdf.Name = "btnExportarAPdf";
+            this.btnExportarAPdf.Size = new System.Drawing.Size(150, 48);
+            this.btnExportarAPdf.TabIndex = 41;
+            this.btnExportarAPdf.Text = "Exportar a PDF";
+            this.btnExportarAPdf.UseVisualStyleBackColor = true;
+            this.btnExportarAPdf.Click += new System.EventHandler(this.OnBtnExportarAPdfClick);
             // 
             // btnAtras
             // 
@@ -514,7 +514,7 @@
             this.CancelButton = this.btnAtras;
             this.ClientSize = new System.Drawing.Size(886, 549);
             this.Controls.Add(this.btnAtras);
-            this.Controls.Add(this.btnImprimir);
+            this.Controls.Add(this.btnExportarAPdf);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -577,7 +577,7 @@
         private System.Windows.Forms.Label lblDesayunoViernes;
         private System.Windows.Forms.Label lblAlmuerzoViernes;
         private System.Windows.Forms.Label lblMeriendaViernes;
-        private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Button btnExportarAPdf;
         private System.Windows.Forms.Button btnAtras;
     }
 }

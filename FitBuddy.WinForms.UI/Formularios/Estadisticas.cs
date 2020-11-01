@@ -44,7 +44,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             _estadisticasBusinessLogic = estadisticasBusinessLogic;
             _animar = animar;
 
-            _imagenAguja = new Bitmap(Properties.Resources.aguja);
+            _imagenAguja = new Bitmap(Properties.Resources.Aguja);
             ConfigurarImágenes(anchoVelocímetroDeseado: 220);
 
             _animar.SeleccionarFunciónAlAzar();
@@ -55,7 +55,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         private void ConfigurarImágenes(int anchoVelocímetroDeseado)
         {
             // Asignar a cada PictureBox su imagen correspondiente.
-            picFondo.Image = new Bitmap(Properties.Resources.velocimetro);
+            picFondo.Image = new Bitmap(Properties.Resources.Velocimetro);
             picAguja.Image = _imagenAguja;
 
             // Dimensionar la imagen de fondo del velocímetro.

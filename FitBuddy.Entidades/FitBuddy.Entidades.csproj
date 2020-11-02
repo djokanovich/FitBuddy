@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComposiciónAlimento.cs" />
     <Compile Include="DietaSemanal.cs" />
     <Compile Include="EntidadBase.cs" />
     <Compile Include="Enums\Antecedentes.cs" />

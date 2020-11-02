@@ -34,31 +34,32 @@
             this.btnBorrar = new System.Windows.Forms.Button();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.cmbPorcion = new System.Windows.Forms.ComboBox();
-            this.cmbComida = new System.Windows.Forms.ComboBox();
             this.Label2 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblWelcome = new System.Windows.Forms.Label();
+            this.txtComida = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAtras
             // 
+            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnAtras.Location = new System.Drawing.Point(652, 342);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(75, 23);
-            this.btnAtras.TabIndex = 20;
+            this.btnAtras.TabIndex = 5;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(648, 132);
+            this.btnEnviar.Location = new System.Drawing.Point(648, 139);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(75, 23);
-            this.btnEnviar.TabIndex = 19;
+            this.btnEnviar.TabIndex = 4;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
             // 
@@ -67,7 +68,7 @@
             this.btnBorrar.Location = new System.Drawing.Point(648, 102);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrar.TabIndex = 18;
+            this.btnBorrar.TabIndex = 3;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
             // 
@@ -84,18 +85,10 @@
             // cmbPorcion
             // 
             this.cmbPorcion.FormattingEnabled = true;
-            this.cmbPorcion.Location = new System.Drawing.Point(404, 136);
+            this.cmbPorcion.Location = new System.Drawing.Point(404, 141);
             this.cmbPorcion.Name = "cmbPorcion";
             this.cmbPorcion.Size = new System.Drawing.Size(200, 21);
-            this.cmbPorcion.TabIndex = 16;
-            // 
-            // cmbComida
-            // 
-            this.cmbComida.FormattingEnabled = true;
-            this.cmbComida.Location = new System.Drawing.Point(404, 105);
-            this.cmbComida.Name = "cmbComida";
-            this.cmbComida.Size = new System.Drawing.Size(200, 21);
-            this.cmbComida.TabIndex = 15;
+            this.cmbPorcion.TabIndex = 2;
             // 
             // Label2
             // 
@@ -123,6 +116,7 @@
             this.DataGridView1.RowHeadersWidth = 82;
             this.DataGridView1.Size = new System.Drawing.Size(407, 133);
             this.DataGridView1.TabIndex = 12;
+            this.DataGridView1.TabStop = false;
             // 
             // lblWelcome
             // 
@@ -133,19 +127,29 @@
             this.lblWelcome.Size = new System.Drawing.Size(0, 13);
             this.lblWelcome.TabIndex = 21;
             // 
+            // txtComida
+            // 
+            this.txtComida.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtComida.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtComida.Location = new System.Drawing.Point(404, 105);
+            this.txtComida.Name = "txtComida";
+            this.txtComida.Size = new System.Drawing.Size(200, 20);
+            this.txtComida.TabIndex = 1;
+            // 
             // CargarAlimento
             // 
+            this.AcceptButton = this.btnEnviar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAtras;
             this.ClientSize = new System.Drawing.Size(769, 393);
+            this.Controls.Add(this.txtComida);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.cmbPorcion);
-            this.Controls.Add(this.cmbComida);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.DataGridView1);
@@ -166,10 +170,10 @@
         internal System.Windows.Forms.Button btnBorrar;
         internal System.Windows.Forms.PictureBox PictureBox1;
         internal System.Windows.Forms.ComboBox cmbPorcion;
-        internal System.Windows.Forms.ComboBox cmbComida;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.DataGridView DataGridView1;
         private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.TextBox txtComida;
     }
 }

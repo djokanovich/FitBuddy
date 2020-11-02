@@ -19,6 +19,7 @@ namespace FitBuddy.DataAccess
             builder.RegisterType<DbIntegridadService>().As<IDbIntegridadService>();
 
             builder.RegisterType<ComidaRepositorio>().As<IRepositorio<Comida>>();
+            builder.RegisterType<ComposiciónAlimentoRepositorio>().As<IRepositorio<ComposiciónAlimento>>();
             builder.RegisterType<MédicoRepositorio>().As<IRepositorio<Medico>>();
             builder.RegisterType<PacienteRepositorio>().As<IRepositorio<Paciente>>();
             builder.RegisterType<UsuarioRepositorio>().As<IRepositorio<Usuario>>();

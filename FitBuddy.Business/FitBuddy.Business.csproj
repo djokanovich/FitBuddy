@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="BusinessModule.cs" />
     <Compile Include="Facade\AgendarTurnoBusinessLogic.cs" />
+    <Compile Include="Facade\CargarAlimentoBusinessLogic.cs" />
     <Compile Include="Facade\CrearDietaBusinessLogic.cs" />
     <Compile Include="Facade\CrearPlanEjercicioBusinessLogic.cs" />
     <Compile Include="Facade\DietaBusinessLogic.cs" />

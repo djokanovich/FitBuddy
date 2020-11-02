@@ -90,6 +90,7 @@
     <Compile Include="Migrations\SeedData\ComposicionAlimentoSeedData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\ComidaRepositorio.cs" />
+    <Compile Include="Repositorios\ComposiciónAlimentoRepositorio.cs" />
     <Compile Include="Repositorios\Genérico\IRepositorio.cs" />
     <Compile Include="Repositorios\MédicoRepositorio.cs" />
     <Compile Include="Repositorios\PacienteRepositorio.cs" />

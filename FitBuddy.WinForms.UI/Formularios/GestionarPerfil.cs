@@ -25,10 +25,16 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             base.OnLoad(e);
 
+            dtpFecha.Value = DateTime.Now;
+
             var usuarioId = IdentityManager.UsuarioActual.UserId;
             _paciente = _gestionarPerfilBusinessLogic.ObtenerPacienteAsociadoAUsuario(usuarioId);
 
-            if (_paciente == null) return;
+            if (_paciente == null)
+            {
+                lblRegistroAnterior.Text = "Este será el primer registro del perfil.";
+                return;
+            }
 
             txtAltura.Text = _paciente.Altura.ToString();
             txtBrazo.Text = _paciente.ContornoBrazoEnCm.ToString();
@@ -37,7 +43,10 @@ namespace FitBuddy.WinForms.UI.Formularios
             txtEdad.Text = _paciente.Edad.ToString();
             txtMuslo.Text = _paciente.ContornoMusloEnCm.ToString();
             txtPeso.Text = _paciente.Peso.ToString();
-            dtpFecha.Value = _paciente.FechaRegistroPerfil;
+
+            var últimaActualización = _paciente.FechaRegistroPerfil.ToString("ddd, d MMM yyyy");
+            var díasAtrás = (DateTime.Today - _paciente.FechaRegistroPerfil).Days;
+            lblRegistroAnterior.Text = $"Última actualización del perfil: {últimaActualización}.\n(Hace {díasAtrás} días.)";
 
             if (_paciente.Genero == Genero.Femenino)
             {
@@ -63,7 +72,8 @@ namespace FitBuddy.WinForms.UI.Formularios
                 genero = Genero.Femenino;
             }
 
-            if (_paciente == null) _paciente = new Paciente();
+            if (_paciente == null)
+                _paciente = new Paciente();
 
             _paciente.Peso = ConvertirAInt(txtPeso.Text);
             _paciente.ContornoBrazoEnCm = ConvertirAInt(txtBrazo.Text);
@@ -73,7 +83,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             _paciente.ContornoMusloEnCm = ConvertirAInt(txtMuslo.Text);
             _paciente.Edad = ConvertirAInt(txtEdad.Text);
             _paciente.Genero = genero;
-            _paciente.FechaRegistroPerfil = Convert.ToDateTime(dtpFecha.Text); // TODO: ¿No debería ser DateTime.Now?
+            _paciente.FechaRegistroPerfil = Convert.ToDateTime(dtpFecha.Text);
 
             // Le paso a la BLL el paciente creado.
             var éxito = _gestionarPerfilBusinessLogic.CrearOActualizarPacienteAsociadoAUsuario(usuarioId, _paciente);

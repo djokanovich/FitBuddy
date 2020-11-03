@@ -60,6 +60,7 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
+            this.lblRegistroAnterior = new System.Windows.Forms.Label();
             this.GroupBox2.SuspendLayout();
             this.GroupBox1.SuspendLayout();
             this.grpBoxSexo.SuspendLayout();
@@ -68,7 +69,7 @@
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAtras.Location = new System.Drawing.Point(480, 348);
+            this.btnAtras.Location = new System.Drawing.Point(480, 376);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(63, 21);
             this.btnAtras.TabIndex = 13;
@@ -87,14 +88,14 @@
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(92, 44);
+            this.dtpFecha.Location = new System.Drawing.Point(92, 46);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(200, 20);
             this.dtpFecha.TabIndex = 20;
             // 
             // bntLimpiar
             // 
-            this.bntLimpiar.Location = new System.Drawing.Point(213, 286);
+            this.bntLimpiar.Location = new System.Drawing.Point(213, 314);
             this.bntLimpiar.Name = "bntLimpiar";
             this.bntLimpiar.Size = new System.Drawing.Size(161, 39);
             this.bntLimpiar.TabIndex = 11;
@@ -104,7 +105,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(380, 286);
+            this.btnGuardar.Location = new System.Drawing.Point(380, 314);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(163, 39);
             this.btnGuardar.TabIndex = 10;
@@ -127,7 +128,7 @@
             this.GroupBox2.Controls.Add(this.Label6);
             this.GroupBox2.Controls.Add(this.Label8);
             this.GroupBox2.Controls.Add(this.Label7);
-            this.GroupBox2.Location = new System.Drawing.Point(262, 92);
+            this.GroupBox2.Location = new System.Drawing.Point(262, 120);
             this.GroupBox2.Name = "GroupBox2";
             this.GroupBox2.Size = new System.Drawing.Size(281, 176);
             this.GroupBox2.TabIndex = 28;
@@ -268,7 +269,7 @@
             this.GroupBox1.Controls.Add(this.Label1);
             this.GroupBox1.Controls.Add(this.Label2);
             this.GroupBox1.Controls.Add(this.Label3);
-            this.GroupBox1.Location = new System.Drawing.Point(12, 92);
+            this.GroupBox1.Location = new System.Drawing.Point(12, 120);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Size = new System.Drawing.Size(225, 176);
             this.GroupBox1.TabIndex = 27;
@@ -395,13 +396,22 @@
             this.lblWelcome.Text = "Bienvenido";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // lblRegistroAnterior
+            // 
+            this.lblRegistroAnterior.Location = new System.Drawing.Point(299, 50);
+            this.lblRegistroAnterior.Name = "lblRegistroAnterior";
+            this.lblRegistroAnterior.Size = new System.Drawing.Size(244, 49);
+            this.lblRegistroAnterior.TabIndex = 42;
+            this.lblRegistroAnterior.Text = "{{RegistroAnterior}}";
+            // 
             // GestionarPerfil
             // 
             this.AcceptButton = this.btnGuardar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAtras;
-            this.ClientSize = new System.Drawing.Size(562, 386);
+            this.ClientSize = new System.Drawing.Size(562, 417);
+            this.Controls.Add(this.lblRegistroAnterior);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.Label15);
@@ -458,5 +468,6 @@
         private System.Windows.Forms.MaskedTextBox txtCadera;
         private System.Windows.Forms.MaskedTextBox txtCintura;
         private System.Windows.Forms.MaskedTextBox txtAltura;
+        private System.Windows.Forms.Label lblRegistroAnterior;
     }
 }

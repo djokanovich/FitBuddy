@@ -17,7 +17,7 @@ namespace FitBuddy.Business.Facade
 
     public class RegistrarNuevoUsuarioBusinessLogic : IRegistrarNuevoUsuarioBusinessLogic
     {
-        private readonly IHashService _hashService;
+        private readonly IMd5HashingService _md5HashingService;
         private readonly IRepositorio<Usuario> _usuarioRepositorio;
         private readonly IPasswordValidator _passwordValidator;
         private readonly IEmailValidator _emailValidator;
@@ -25,12 +25,12 @@ namespace FitBuddy.Business.Facade
         public int ContraseñaLongitudMínima => _passwordValidator.ContraseñaLongitudMínima;
 
         public RegistrarNuevoUsuarioBusinessLogic(
-            IHashService hashService,
+            IMd5HashingService md5HashingService,
             IRepositorio<Usuario> usuarioRepositorio,
             IPasswordValidator passwordValidator,
             IEmailValidator emailValidator)
         {
-            _hashService = hashService;
+            _md5HashingService = md5HashingService;
             _usuarioRepositorio = usuarioRepositorio;
             _passwordValidator = passwordValidator;
             _emailValidator = emailValidator;
@@ -44,7 +44,7 @@ namespace FitBuddy.Business.Facade
 
         public bool EsUsuarioGuardadoConÉxito(Usuario usuario, string plainPassword)
         {
-            var hashedPassword = _hashService.Hash(plainPassword);
+            var hashedPassword = _md5HashingService.CalcularHash(plainPassword);
 
             usuario.Password = hashedPassword;
 

@@ -1,4 +1,4 @@
-﻿using FitBuddy.DataAccess.Services;
+﻿using Common.Utilidades;
 using FitBuddy.Entidades;
 using System.Data.Entity;
 using System.Linq;
@@ -8,8 +8,11 @@ namespace FitBuddy.DataAccess
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext() : base("FitBuddyDbConnectionString")
+        private readonly IMd5HashingService _md5HashingService;
+
+        public AppDbContext(IMd5HashingService md5HashingService) : base("FitBuddyDbConnectionString")
         {
+            _md5HashingService = md5HashingService;
         }
 
         public DbSet<Comida> Comidas { get; set; }
@@ -30,7 +33,7 @@ namespace FitBuddy.DataAccess
             {
                 foreach (var entidadConIntegridad in entidadesConIntegridad)
                 {
-                    entidadConIntegridad.Md5Hash = Md5HashingService.CalcularHash(md5, entidadConIntegridad);
+                    entidadConIntegridad.Md5Hash = _md5HashingService.CalcularHashDeEntidadBase(md5, entidadConIntegridad);
                 }
             }
 

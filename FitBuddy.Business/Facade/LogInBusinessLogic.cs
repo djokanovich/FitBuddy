@@ -13,18 +13,18 @@ namespace FitBuddy.Business.Facade
 
     public class LogInBusinessLogic : ILogInBusinessLogic
     {
-        private readonly IHashService _hashService;
+        private readonly IMd5HashingService _md5HashingService;
         private readonly IRepositorio<Usuario> _usuarioRepositorio;
 
-        public LogInBusinessLogic(IHashService hashService, IRepositorio<Usuario> usuarioRepositorio)
+        public LogInBusinessLogic(IMd5HashingService md5HashingService, IRepositorio<Usuario> usuarioRepositorio)
         {
-            _hashService = hashService;
+            _md5HashingService = md5HashingService;
             _usuarioRepositorio = usuarioRepositorio;
         }
 
         public (Usuario usuario, bool autenticaciónExitosa) AutenticarUsuarioConContraseña(string username, string plainPassword)
         {
-            var hashedPassword = _hashService.Hash(plainPassword);
+            var hashedPassword = _md5HashingService.CalcularHash(plainPassword);
 
             var usuario = _usuarioRepositorio.BuscarPor(u => u.Username == username).SingleOrDefault();
 

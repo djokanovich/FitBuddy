@@ -156,7 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="RandomNumberGeneratorService.cs" />
-    <Compile Include="HashService.cs" />
+    <Compile Include="Md5HashingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -106,7 +106,6 @@
     <Compile Include="Repositorios\UsuarioRepositorio.cs" />
     <Compile Include="Services\DbBackupSevice.cs" />
     <Compile Include="Services\DbIntegridadService.cs" />
-    <Compile Include="Services\Md5HashingService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -116,6 +115,10 @@
     <ProjectReference Include="..\Common.Bitacora\Common.Bitacora.csproj">
       <Project>{A9E94ABA-FC74-4048-861C-BBE4193A6909}</Project>
       <Name>Common.Bitacora</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Utilidades\Common.Utilidades.csproj">
+      <Project>{F6D53E2F-0779-4611-8CE7-E667A15B8D86}</Project>
+      <Name>Common.Utilidades</Name>
     </ProjectReference>
     <ProjectReference Include="..\FitBuddy.Entidades\FitBuddy.Entidades.csproj">
       <Project>{96aab3bc-cd44-4a9e-9847-7f16480a774d}</Project>

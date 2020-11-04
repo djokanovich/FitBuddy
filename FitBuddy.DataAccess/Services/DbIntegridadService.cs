@@ -1,4 +1,5 @@
 ﻿using Common.Bitacora;
+using Common.Utilidades;
 using FitBuddy.Entidades;
 using System;
 using System.Linq;
@@ -14,11 +15,13 @@ namespace FitBuddy.DataAccess.Services
     public class DbIntegridadService : IDbIntegridadService
     {
         private readonly AppDbContext _dbContext;
+        private readonly IMd5HashingService _md5HashingService;
         private readonly IBitacora<DbIntegridadService> _bitacora;
 
-        public DbIntegridadService(AppDbContext dbContext, IBitacora<DbIntegridadService> bitacora)
+        public DbIntegridadService(AppDbContext dbContext, IMd5HashingService md5HashingService, IBitacora<DbIntegridadService> bitacora)
         {
             _dbContext = dbContext;
+            _md5HashingService = md5HashingService;
             _bitacora = bitacora;
         }
 
@@ -46,7 +49,7 @@ namespace FitBuddy.DataAccess.Services
 
                     foreach (EntidadBase elemento in elementosConIntegridad)
                     {
-                        var md5Hash = Md5HashingService.CalcularHash(md5, elemento);
+                        var md5Hash = _md5HashingService.CalcularHashDeEntidadBase(md5, elemento);
 
                         if (elemento.Md5Hash != md5Hash)
                         {

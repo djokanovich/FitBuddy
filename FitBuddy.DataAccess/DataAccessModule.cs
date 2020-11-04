@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Common.Utilidades;
 using FitBuddy.DataAccess.Repositorios;
 using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.DataAccess.Services;
@@ -14,6 +15,8 @@ namespace FitBuddy.DataAccess
 
             builder.RegisterType<AppDbContext>().AsSelf()
                 .SingleInstance();
+
+            builder.RegisterType<Md5HashingService>().As<IMd5HashingService>();
 
             builder.RegisterType<DbBackupSevice>().As<IDbBackupSevice>();
             builder.RegisterType<DbIntegridadService>().As<IDbIntegridadService>();

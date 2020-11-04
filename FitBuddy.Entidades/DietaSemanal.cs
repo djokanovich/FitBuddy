@@ -4,6 +4,10 @@ using FitBuddy.Entidades.Enums;
 
 namespace FitBuddy.Entidades
 {
+    /// <summary>
+    /// Representa una dieta semanal (que es una tabla de doble entrada) como una matriz, donde cada componente es una enumeración.
+    /// (Primera componente: día de la semana; segunda componente: desayuno, almuerzo, etc.)
+    /// </summary>
     public class DietaSemanal
     {
         private readonly Dictionary<DayOfWeek, Dictionary<TipoComida, string>> _dietaSemanal = new Dictionary<DayOfWeek, Dictionary<TipoComida, string>>();

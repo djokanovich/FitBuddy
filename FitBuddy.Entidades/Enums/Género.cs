@@ -1,6 +1,6 @@
 ﻿namespace FitBuddy.Entidades.Enums
 {
-    public enum Genero : byte
+    public enum Género : byte
     {
         NoEspecificado = 0,
         Masculino = 1,

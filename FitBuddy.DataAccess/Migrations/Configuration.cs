@@ -18,7 +18,7 @@ namespace DAL.Migrations
             context.Comidas.AddOrUpdate(comidasSeedData);
             
             var composicionAlimentosSeedData = ComposicionAlimentoSeedData.GetSeedData();
-            context.ComposicionAlimentos.AddOrUpdate(composicionAlimentosSeedData);
+            context.ComposiciónAlimentos.AddOrUpdate(composicionAlimentosSeedData);
         }
     }
 }

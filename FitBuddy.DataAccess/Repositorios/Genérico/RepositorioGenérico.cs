@@ -31,7 +31,7 @@ namespace FitBuddy.DataAccess.Repositorios.Genérico
 
         public virtual IEnumerable<T> BuscarPor(Expression<Func<T, bool>> predicado)
         {
-            return _dbContext.Set<T>().AsQueryable()
+            return _dbContext.Set<T>()
                 .Where(predicado)
                 .AsEnumerable();
         }

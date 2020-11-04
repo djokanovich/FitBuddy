@@ -47,8 +47,8 @@ namespace FitBuddy.WinForms.UI.Formularios
             var paciente = new Paciente
             {
                 FrecuenciaActual = (Frecuencia)cmbFrecuencia.SelectedIndex,
-                DisposicionDiariaHoras = (DisponibilidadHoras)cmbDisponibilidadHoras.SelectedIndex,
-                DisposicionSemanalDias = (Frecuencia)cmbDisponibilidadDias.SelectedIndex,
+                DisposiciónDiariaHoras = (DisponibilidadHoras)cmbDisponibilidadHoras.SelectedIndex,
+                DisposiciónSemanalDias = (Frecuencia)cmbDisponibilidadDias.SelectedIndex,
                 Antecedentes = Antecedentes.None
             };
 

@@ -21,16 +21,18 @@ namespace FitBuddy.Business.Facade
         public bool PuedeMostrarEstadísticas(int usuarioId)
         {
             var paciente = _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
-            if (paciente == null)
+            if (paciente == null || paciente.HistorialPaciente == null || !paciente.HistorialPaciente.Any())
                 return false;
-            
-            var altura = paciente.Altura;
-            var peso = paciente.Peso;
+
             var edad = paciente.Edad;
 
-            var puedeMostrarEstadísticas = altura > 0 &&
-                peso > 0 &&
-                edad > 0;
+            var últimoRegistroDelPaciente = paciente.ÚltimoRegistro();
+            var altura = últimoRegistroDelPaciente.AlturaEnCm;
+            var peso = últimoRegistroDelPaciente.PesoEnKg;
+
+            var puedeMostrarEstadísticas = edad > 0 &&
+                altura > 0 &&
+                peso > 0;
 
             return puedeMostrarEstadísticas;
         }

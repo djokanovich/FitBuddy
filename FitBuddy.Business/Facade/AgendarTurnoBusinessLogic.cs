@@ -7,21 +7,21 @@ namespace FitBuddy.Business.Facade
 {
     public interface IAgendarTurnoBusinessLogic
     {
-        List<Medico> ObtenerMedicos();
+        List<Médico> ObtenerMédicos();
     }
 
     public class AgendarTurnoBusinessLogic : IAgendarTurnoBusinessLogic
     {
-        private readonly IRepositorio<Medico> _medicoRepositorio;
+        private readonly IRepositorio<Médico> _médicoRepositorio;
 
-        public AgendarTurnoBusinessLogic(IRepositorio<Medico> medicoRepositorio)
+        public AgendarTurnoBusinessLogic(IRepositorio<Médico> médicoRepositorio)
         {
-            _medicoRepositorio = medicoRepositorio;
+            _médicoRepositorio = médicoRepositorio;
         }
 
-        public List<Medico> ObtenerMedicos()
+        public List<Médico> ObtenerMédicos()
         {
-            return _medicoRepositorio.Todos().ToList();
+            return _médicoRepositorio.Todos().ToList();
         }
     }
 }

@@ -30,8 +30,8 @@ namespace FitBuddy.Business.Facade
             else
             {
                 pacienteAsociadoAUsuario.Antecedentes = paciente.Antecedentes;
-                pacienteAsociadoAUsuario.DisposicionDiariaHoras = paciente.DisposicionDiariaHoras;
-                pacienteAsociadoAUsuario.DisposicionSemanalDias = paciente.DisposicionSemanalDias;
+                pacienteAsociadoAUsuario.DisposiciónDiariaHoras = paciente.DisposiciónDiariaHoras;
+                pacienteAsociadoAUsuario.DisposiciónSemanalDias = paciente.DisposiciónSemanalDias;
                 pacienteAsociadoAUsuario.FrecuenciaActual = paciente.FrecuenciaActual;
                 pacienteAsociadoAUsuario.ObjetivoBuscado = paciente.ObjetivoBuscado;
 

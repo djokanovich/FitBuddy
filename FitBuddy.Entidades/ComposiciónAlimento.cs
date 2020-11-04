@@ -1,5 +1,8 @@
-﻿namespace FitBuddy.Entidades
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FitBuddy.Entidades
 {
+    [Table("ComposiciónAlimentos")]
     public class ComposiciónAlimento
     {
         public int Id { get; set; }

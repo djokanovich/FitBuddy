@@ -6,70 +6,59 @@ using System.Linq;
 
 namespace FitBuddy.Business.Facade
 {
-    public interface IEstadisticasBusinessLogic
+    public interface IEstadísticasBusinessLogic
     {
         double Imc { get; set; }
-        string ImcString { get; set; }
-        string IgcString { get; set; }
+        double Igc { get; set; }
         string ImcClasificación { get; set; }
         string IgcClasificación { get; set; }
 
         void CalcularEstadísticasDePacientePorUsuarioId(int userId);
     }
 
-    public class EstadisticasBusinessLogic : IEstadisticasBusinessLogic
+    public class EstadísticasBusinessLogic : IEstadísticasBusinessLogic
     {
         private readonly IRepositorio<Paciente> _pacienteRepositorio;
 
-        private Paciente _paciente;
-        private double _igc;
-
-        public EstadisticasBusinessLogic(IRepositorio<Paciente> pacienteRepositorio)
+        public EstadísticasBusinessLogic(IRepositorio<Paciente> pacienteRepositorio)
         {
             _pacienteRepositorio = pacienteRepositorio;
         }
 
         public double Imc { get; set; }
-        public string ImcString { get; set; }
-        public string IgcString { get; set; }
+        public double Igc { get; set; }
         public string ImcClasificación { get; set; }
         public string IgcClasificación { get; set; }
 
         public void CalcularEstadísticasDePacientePorUsuarioId(int usuarioId)
         {
-            _paciente = _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
-            if (_paciente != null)
-            {
-                CalcularImc();
-                CalcularIgc();
-                ClasificarPorImc();
-                ClasificarPorIgc();
-            }
+            var paciente = _pacienteRepositorio.BuscarPor(p => p.UsuarioId == usuarioId).SingleOrDefault();
+            if (paciente == null || paciente.HistorialPaciente == null || !paciente.HistorialPaciente.Any())
+                return;
+
+            var últimoRegistroDelPaciente = paciente.ÚltimoRegistro();
+            var alturaEnMetros = últimoRegistroDelPaciente.AlturaEnCm / 100.0;
+            
+            CalcularImc(últimoRegistroDelPaciente.PesoEnKg, alturaEnMetros);
+            CalcularIgc(paciente.Edad, paciente.Género);
+            ClasificarPorImc();
+            ClasificarPorIgc(paciente.Edad, paciente.Género);
         }
 
-        private void CalcularImc()
+        private void CalcularImc(double pesoEnKg, double alturaEnMetros)
         {
-            var peso = _paciente.Peso;
-            var altura = _paciente.Altura / 100.0; // Expresada en metros.
-
-            Imc = peso / Math.Pow(altura, 2);
-
-
-            ImcString = Imc.ToString("N2");
+            Imc = pesoEnKg / Math.Pow(alturaEnMetros, 2);
         }
 
-        private void CalcularIgc()
+        private void CalcularIgc(int edad, Género género)
         {
             // Fórmula de Deurenberg
             // Para una mujer: IMG = (1,2 × IMC) + (0,23 × edad) - 5,4
             // Para un hombre: IMG = (1,2 × IMC) + (0,23 × edad) - 16,2
 
-            var edad = _paciente.Edad;
-            var offset = _paciente.Genero == Genero.Femenino ? 5.4 : 16.2; // Operador condicional ternario
+            var offset = género == Género.Femenino ? 5.4 : 16.2; // Operador condicional ternario
 
-            _igc = (1.2 * Imc) + (0.23 * edad) - offset;
-
-            IgcString = _igc.ToString("N2");
+            Igc = (1.2 * Imc) + (0.23 * edad) - offset;
         }
 
         private void ClasificarPorImc()
@@ -94,12 +83,11 @@ namespace FitBuddy.Business.Facade
             }
         }
 
-        private void ClasificarPorIgc()
+        private void ClasificarPorIgc(int edad, Género género)
         {
-            var edad = _paciente.Edad;
-            if (_paciente.Genero == Genero.Femenino)
+            if (género == Género.Femenino)
             {
-                switch (_igc)
+                switch (Igc)
                 {
                     //Atleta
                     case var igc when igc <= 11.0 && edad <= 29:

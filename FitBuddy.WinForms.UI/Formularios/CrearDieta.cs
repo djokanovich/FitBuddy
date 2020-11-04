@@ -47,7 +47,8 @@ namespace FitBuddy.WinForms.UI.Formularios
 
             var usuarioId = IdentityManager.UsuarioActual.UserId;
             _paciente = _crearDietaBusinessLogic.ObtenerPacienteAsociadoAUsuario(usuarioId);
-            if (_paciente == null) return;
+            if (_paciente == null)
+                return;
 
             foreach (var checkBoxAlimento in _checkBoxesAlimentos)
             {
@@ -58,7 +59,9 @@ namespace FitBuddy.WinForms.UI.Formularios
         private void OnBtnEnviarClick(object sender, EventArgs e)
         {
             var usuarioId = IdentityManager.UsuarioActual.UserId;
-            if (_paciente == null) _paciente = new Paciente();
+            
+            if (_paciente == null)
+                _paciente = new Paciente();
 
             foreach (var checkBoxAlimento in _checkBoxesAlimentos)
             {
@@ -71,9 +74,9 @@ namespace FitBuddy.WinForms.UI.Formularios
             var éxito = _crearDietaBusinessLogic.CrearOActualizarPacienteAsociadoAUsuario(usuarioId, _paciente);
 
             if (éxito)
-            {
                 MessageBox.Show("Perfil alimenticio cargado con éxito.");
-            } // TODO: else?
+            else
+                MessageBox.Show("No se ha podido guardar los cambios. Si el problema persiste, notifique a un administrador.");
 
             _formManager.Close(this);
         }

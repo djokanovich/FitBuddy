@@ -31,10 +31,10 @@ namespace FitBuddy.WinForms.UI.Formularios
         private readonly Bitmap _imagenAguja;
 
         private readonly IFormManager _formManager;
-        private readonly IEstadisticasBusinessLogic _estadisticasBusinessLogic;
+        private readonly IEstadísticasBusinessLogic _estadisticasBusinessLogic;
         private readonly Animar _animar;
 
-        public Estadísticas(IFormManager formManager, IEstadisticasBusinessLogic estadisticasBusinessLogic, Animar animar)
+        public Estadísticas(IFormManager formManager, IEstadísticasBusinessLogic estadisticasBusinessLogic, Animar animar)
         {
             InitializeComponent();
 
@@ -82,8 +82,8 @@ namespace FitBuddy.WinForms.UI.Formularios
             var usuarioId = IdentityManager.UsuarioActual.UserId;
             _estadisticasBusinessLogic.CalcularEstadísticasDePacientePorUsuarioId(usuarioId);
 
-            lblImc.Text = _estadisticasBusinessLogic.ImcString;
-            lblIgc.Text = _estadisticasBusinessLogic.IgcString;
+            lblImc.Text = _estadisticasBusinessLogic.Imc.ToString("N2");
+            lblIgc.Text = _estadisticasBusinessLogic.Igc.ToString("N2");
 
             lblImcClasificación.Text = _estadisticasBusinessLogic.ImcClasificación;
             lblIgcClasificacion.Text = _estadisticasBusinessLogic.IgcClasificación;

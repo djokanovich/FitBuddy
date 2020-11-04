@@ -13,8 +13,8 @@ namespace FitBuddy.DataAccess
         }
 
         public DbSet<Comida> Comidas { get; set; }
-        public DbSet<ComposiciónAlimento> ComposicionAlimentos { get; set; }
-        public DbSet<Medico> Medicos { get; set; }
+        public DbSet<ComposiciónAlimento> ComposiciónAlimentos { get; set; }
+        public DbSet<Médico> Medicos { get; set; }
         public DbSet<Paciente> Paciente { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
 

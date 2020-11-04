@@ -48,8 +48,9 @@
     <Compile Include="Enums\Antecedentes.cs" />
     <Compile Include="Enums\Alimento.cs" />
     <Compile Include="Comida.cs" />
-    <Compile Include="Enums\Genero.cs" />
-    <Compile Include="Medico.cs" />
+    <Compile Include="Enums\Género.cs" />
+    <Compile Include="HistorialPaciente.cs" />
+    <Compile Include="Médico.cs" />
     <Compile Include="Enums\Objetivo.cs" />
     <Compile Include="Paciente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

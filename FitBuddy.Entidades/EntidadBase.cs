@@ -4,6 +4,9 @@ using System.Reflection;
 
 namespace FitBuddy.Entidades
 {
+    /// <summary>
+    /// Define una entidad con la capacidad de contener su propio hash.
+    /// </summary>
     public abstract class EntidadBase
     {
         public int Id { get; set; }

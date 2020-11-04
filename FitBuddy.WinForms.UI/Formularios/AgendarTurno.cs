@@ -20,7 +20,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnAgendarTurnoLoad(object sender, EventArgs e)
         {
-            cmbMedico.DataSource = _agendarTurnoBusinessLogic.ObtenerMedicos();
+            cmbMedico.DataSource = _agendarTurnoBusinessLogic.ObtenerMédicos();
             cmbMedico.DisplayMember = "Nombre";
             cmbMedico.ValueMember = "Email";
 

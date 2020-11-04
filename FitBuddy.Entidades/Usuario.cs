@@ -1,10 +1,13 @@
-﻿namespace FitBuddy.Entidades
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FitBuddy.Entidades
 {
     public enum Estado
     {
         Activo, Desactivado
     }
 
+    [Table("Usuarios")]
     public class Usuario : EntidadBase
     {
         public string Username { get; set; }

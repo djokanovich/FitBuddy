@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
 
@@ -31,8 +30,6 @@ namespace FitBuddy.Business.Facade
             if (paciente.Id == 0)
             {
                 paciente.UsuarioId = usuarioId;
-                paciente.FechaRegistroPerfil = DateTime.Now; // TODO: ¿Qué función cumple esta propiedad? ¿Es la fecha de última actualización?
-
                 _pacienteRepositorio.AgregarNuevo(paciente);
             }
             else

@@ -85,6 +85,10 @@
     <Compile Include="Migrations\202011021908187_AgregarEntidadComposiciónAlimentoEInicilizarConDatos.designer.cs">
       <DependentUpon>202011021908187_AgregarEntidadComposiciónAlimentoEInicilizarConDatos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011041020447_AgregarEntidadHistorialPaciente.cs" />
+    <Compile Include="Migrations\202011041020447_AgregarEntidadHistorialPaciente.designer.cs">
+      <DependentUpon>202011041020447_AgregarEntidadHistorialPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\SeedData\ComidaSeedData.cs" />
     <Compile Include="Migrations\SeedData\ComposicionAlimentoSeedData.cs" />
@@ -120,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011021908187_AgregarEntidadComposiciónAlimentoEInicilizarConDatos.resx">
       <DependentUpon>202011021908187_AgregarEntidadComposiciónAlimentoEInicilizarConDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011041020447_AgregarEntidadHistorialPaciente.resx">
+      <DependentUpon>202011041020447_AgregarEntidadHistorialPaciente.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

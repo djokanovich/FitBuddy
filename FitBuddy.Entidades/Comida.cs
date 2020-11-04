@@ -1,7 +1,9 @@
-﻿using FitBuddy.Entidades.Enums;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using FitBuddy.Entidades.Enums;
 
 namespace FitBuddy.Entidades
 {
+    [Table("Comidas")]
     public class Comida
     {
         public int Id { get; set; }

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FitBuddy.Entidades
 {
@@ -10,6 +11,7 @@ namespace FitBuddy.Entidades
     [Table("Usuarios")]
     public class Usuario : EntidadBase
     {
+        [Key, Column(Order = 1)]
         public string Username { get; set; }
         public string Password { get; set; }
         public string Nombre { get; set; }

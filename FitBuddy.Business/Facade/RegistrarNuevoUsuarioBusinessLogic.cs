@@ -1,4 +1,5 @@
-﻿using Common.Utilidades;
+﻿using System.Linq;
+using Common.Utilidades;
 using Common.Utilidades.Validators;
 using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
@@ -8,6 +9,7 @@ namespace FitBuddy.Business.Facade
     public interface IRegistrarNuevoUsuarioBusinessLogic
     {
         int ContraseñaLongitudMínima { get; }
+        bool ExisteNombreDeUsuario(string username);
         bool EsUsuarioGuardadoConÉxito(Usuario usuario, string plainPassword);
         bool EsContraseñaVálida(string contraseña);
         bool EsEmailVálido(string email);
@@ -32,6 +34,12 @@ namespace FitBuddy.Business.Facade
             _usuarioRepositorio = usuarioRepositorio;
             _passwordValidator = passwordValidator;
             _emailValidator = emailValidator;
+        }
+
+        public bool ExisteNombreDeUsuario(string username)
+        {
+            var usuario = _usuarioRepositorio.BuscarPor(u => u.Username == username).SingleOrDefault();
+            return usuario != null;
         }
 
         public bool EsUsuarioGuardadoConÉxito(Usuario usuario, string plainPassword)

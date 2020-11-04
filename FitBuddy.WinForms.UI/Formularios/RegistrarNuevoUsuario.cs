@@ -27,9 +27,17 @@ namespace FitBuddy.WinForms.UI.Formularios
             if (!SonCamposVálidos())
                 return;
 
+            var username = txtUsername.Text;
+
+            if (_registrarNuevoUsuarioBusinessLogic.ExisteNombreDeUsuario(username))
+            {
+                MessageBox.Show($"El nombre de usuario '{username}' ya existe. Elija otro nombre de usuario.");
+                return;
+            }
+
             var usuario = new Usuario
             {
-                Username = txtUsername.Text,
+                Username = username,
                 Nombre = txtNombre.Text,
                 Apellido = txtApellido.Text,
                 Estado = Estado.Activo,
@@ -46,7 +54,8 @@ namespace FitBuddy.WinForms.UI.Formularios
             }
             else
             {
-                MessageBox.Show("El usuario no fue registrado.");
+                _bitacora.Error($"Error al intentar crear el usuario '{username}' con nombre: '{usuario.Nombre}', apellido: '{usuario.Apellido}'.");
+                MessageBox.Show("El usuario no pudo ser creado. Si el problema persiste, notifique a un administrador.");
                 BorrarCampos();
             }
         }
@@ -54,15 +63,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         private bool SonCamposVálidos()
         {
             var username = txtUsername.Text;
-            if (EsCampoVacío(username, "un nombre de usuario"))
-                return false;
-
-            var nombre = txtNombre.Text;
-            if (EsCampoVacío(nombre, "el nombre del usuario"))
-                return false;
-
-            var apellido = txtApellido.Text;
-            if (EsCampoVacío(apellido, "el apellido del usuario"))
+            if (EsCampoVacío(username, "un nombre de usuario (username)"))
                 return false;
 
             var contraseña = txtPassword.Text;
@@ -70,7 +71,6 @@ namespace FitBuddy.WinForms.UI.Formularios
             if (contraseña != contraseñaRepetida)
             {
                 MessageBox.Show("Las contraseñas no coinciden.");
-                BorrarCampos();
                 return false;
             }
 
@@ -86,6 +86,14 @@ namespace FitBuddy.WinForms.UI.Formularios
                 MessageBox.Show("Debe introducir un correo válido");
                 return false;
             }
+
+            var nombre = txtNombre.Text;
+            if (EsCampoVacío(nombre, "el nombre de pila del usuario"))
+                return false;
+
+            var apellido = txtApellido.Text;
+            if (EsCampoVacío(apellido, "el apellido del usuario"))
+                return false;
 
             return true;
         }
@@ -108,6 +116,11 @@ namespace FitBuddy.WinForms.UI.Formularios
             txtEmail.Text = string.Empty;
             txtNombre.Text = string.Empty;
             txtApellido.Text = string.Empty;
+        }
+
+        private void OnBtnAtrásClick(object sender, EventArgs e)
+        {
+            _formManager.Show<LogIn>().AndClose(this);
         }
     }
 }

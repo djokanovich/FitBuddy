@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Reflection;
 
@@ -9,6 +10,7 @@ namespace FitBuddy.Entidades
     /// </summary>
     public abstract class EntidadBase
     {
+        [Key, Column(Order = 0)]
         public int Id { get; set; }
 
         public string Md5Hash { get; set; }

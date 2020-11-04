@@ -22,8 +22,14 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnAceptarClick(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
             string plainPassword = txtPassword.Text;
+            if (string.IsNullOrWhiteSpace(plainPassword))
+            {
+                MessageBox.Show("Debe ingresar la contraseña.");
+                return;
+            }
+
+            string username = txtUsername.Text;
             var (usuario, autenticaciónExitosa) = _logInBusinessLogic.AutenticarUsuarioConContraseña(username, plainPassword);
 
             if (autenticaciónExitosa)
@@ -38,8 +44,8 @@ namespace FitBuddy.WinForms.UI.Formularios
             }
             else
             {
-                _bitacora.Debug($"El usuario '{txtUsername.Text}' ha intentado ingresar al sistema sin éxito.");
-
+                _logInBusinessLogic.IntentoFallidoDeLogin(usuario);
+                _bitacora.Debug($"El usuario '{username}' (ID: {usuario.Id}) ha intentado ingresar al sistema sin éxito.");
                 MessageBox.Show("Usuario o contraseña incorrectos.");
             }
         }

@@ -8,6 +8,7 @@ namespace FitBuddy.Business.Facade
     public interface ILogInBusinessLogic
     {
         (Usuario usuario, bool autenticaciónExitosa) AutenticarUsuarioConContraseña(string username, string plainPassword);
+        void IntentoFallidoDeLogin(Usuario usuario);
     }
 
     public class LogInBusinessLogic : ILogInBusinessLogic
@@ -25,9 +26,16 @@ namespace FitBuddy.Business.Facade
         {
             var hashedPassword = _hashService.Hash(plainPassword);
 
-            var usuario = _usuarioRepositorio.BuscarPor(u => u.Username == username && u.Password == hashedPassword).SingleOrDefault();
+            var usuario = _usuarioRepositorio.BuscarPor(u => u.Username == username).SingleOrDefault();
 
-            return (usuario, usuario != null);
+            return (usuario, usuario != null && usuario.Password == hashedPassword);
+        }
+
+        public void IntentoFallidoDeLogin(Usuario usuario)
+        {
+            ++usuario.IntentosFallidos;
+            _usuarioRepositorio.ActualizarExistente(usuario);
+            _usuarioRepositorio.GuardarCambios();
         }
     }
 }

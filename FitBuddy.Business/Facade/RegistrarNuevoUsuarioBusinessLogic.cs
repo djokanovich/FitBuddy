@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using Common.Utilidades;
-using Common.Utilidades.Validators;
+using FitBuddy.Business.Validators;
 using FitBuddy.DataAccess.Repositorios.Genérico;
 using FitBuddy.Entidades;
 

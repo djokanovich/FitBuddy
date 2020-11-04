@@ -1,4 +1,4 @@
-﻿namespace Common.Utilidades.Validators
+﻿namespace FitBuddy.Business.Validators
 {
     public interface IEmailValidator
     {

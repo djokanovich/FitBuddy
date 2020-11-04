@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using Common.Utilidades;
-using Common.Utilidades.Validators;
 using FitBuddy.Business.Facade;
+using FitBuddy.Business.Validators;
 using FitBuddy.DataAccess;
 
 namespace FitBuddy.Business

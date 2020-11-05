@@ -53,7 +53,7 @@
             this.txtTiempo.Location = new System.Drawing.Point(414, 173);
             this.txtTiempo.Name = "txtTiempo";
             this.txtTiempo.Size = new System.Drawing.Size(200, 20);
-            this.txtTiempo.TabIndex = 39;
+            this.txtTiempo.TabIndex = 4;
             // 
             // Label4
             // 
@@ -66,10 +66,11 @@
             // 
             // btnAtras
             // 
+            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnAtras.Location = new System.Drawing.Point(658, 343);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(75, 23);
-            this.btnAtras.TabIndex = 37;
+            this.btnAtras.TabIndex = 8;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
@@ -79,7 +80,7 @@
             this.btnEnviar.Location = new System.Drawing.Point(658, 134);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(75, 23);
-            this.btnEnviar.TabIndex = 36;
+            this.btnEnviar.TabIndex = 7;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
             // 
@@ -88,7 +89,7 @@
             this.btnBorrar.Location = new System.Drawing.Point(658, 105);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrar.TabIndex = 35;
+            this.btnBorrar.TabIndex = 6;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
             // 
@@ -97,7 +98,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(658, 77);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 34;
+            this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
@@ -115,7 +116,7 @@
             this.dtpFecha.Location = new System.Drawing.Point(414, 77);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(200, 20);
-            this.dtpFecha.TabIndex = 32;
+            this.dtpFecha.TabIndex = 1;
             // 
             // PictureBox1
             // 
@@ -133,7 +134,7 @@
             this.cmbRepeticiones.Location = new System.Drawing.Point(414, 138);
             this.cmbRepeticiones.Name = "cmbRepeticiones";
             this.cmbRepeticiones.Size = new System.Drawing.Size(200, 21);
-            this.cmbRepeticiones.TabIndex = 30;
+            this.cmbRepeticiones.TabIndex = 3;
             // 
             // cmbEjercicio
             // 
@@ -141,7 +142,7 @@
             this.cmbEjercicio.Location = new System.Drawing.Point(414, 107);
             this.cmbEjercicio.Name = "cmbEjercicio";
             this.cmbEjercicio.Size = new System.Drawing.Size(200, 21);
-            this.cmbEjercicio.TabIndex = 29;
+            this.cmbEjercicio.TabIndex = 2;
             // 
             // Label2
             // 

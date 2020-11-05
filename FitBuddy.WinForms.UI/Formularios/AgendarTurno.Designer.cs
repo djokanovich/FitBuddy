@@ -44,10 +44,11 @@
             // 
             // btnAtras
             // 
+            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnAtras.Location = new System.Drawing.Point(548, 358);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(75, 23);
-            this.btnAtras.TabIndex = 18;
+            this.btnAtras.TabIndex = 5;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
@@ -57,7 +58,7 @@
             this.btnEnviar.Location = new System.Drawing.Point(404, 236);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(219, 23);
-            this.btnEnviar.TabIndex = 16;
+            this.btnEnviar.TabIndex = 4;
             this.btnEnviar.Text = "Enviar Solicitud";
             this.btnEnviar.UseVisualStyleBackColor = true;
             this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
@@ -68,7 +69,7 @@
             this.cmbMedico.Location = new System.Drawing.Point(404, 127);
             this.cmbMedico.Name = "cmbMedico";
             this.cmbMedico.Size = new System.Drawing.Size(219, 21);
-            this.cmbMedico.TabIndex = 15;
+            this.cmbMedico.TabIndex = 1;
             // 
             // cmbFranjaHoraria
             // 
@@ -76,7 +77,7 @@
             this.cmbFranjaHoraria.Location = new System.Drawing.Point(404, 188);
             this.cmbFranjaHoraria.Name = "cmbFranjaHoraria";
             this.cmbFranjaHoraria.Size = new System.Drawing.Size(219, 21);
-            this.cmbFranjaHoraria.TabIndex = 14;
+            this.cmbFranjaHoraria.TabIndex = 3;
             // 
             // Label3
             // 
@@ -92,7 +93,7 @@
             this.dtpFecha.Location = new System.Drawing.Point(404, 159);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(219, 20);
-            this.dtpFecha.TabIndex = 12;
+            this.dtpFecha.TabIndex = 2;
             // 
             // Label2
             // 

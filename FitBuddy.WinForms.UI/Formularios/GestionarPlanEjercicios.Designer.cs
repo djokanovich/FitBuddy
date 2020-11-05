@@ -39,10 +39,11 @@
             // 
             // btnAtras
             // 
+            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnAtras.Location = new System.Drawing.Point(493, 336);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(75, 23);
-            this.btnAtras.TabIndex = 11;
+            this.btnAtras.TabIndex = 3;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
@@ -62,7 +63,7 @@
             this.btnCrearPlan.Location = new System.Drawing.Point(320, 149);
             this.btnCrearPlan.Name = "btnCrearPlan";
             this.btnCrearPlan.Size = new System.Drawing.Size(248, 42);
-            this.btnCrearPlan.TabIndex = 9;
+            this.btnCrearPlan.TabIndex = 1;
             this.btnCrearPlan.Text = "Crear Plan";
             this.btnCrearPlan.UseVisualStyleBackColor = true;
             this.btnCrearPlan.Click += new System.EventHandler(this.OnBtnCrearPlanClick);
@@ -72,7 +73,7 @@
             this.btnVerPlan.Location = new System.Drawing.Point(320, 197);
             this.btnVerPlan.Name = "btnVerPlan";
             this.btnVerPlan.Size = new System.Drawing.Size(248, 42);
-            this.btnVerPlan.TabIndex = 8;
+            this.btnVerPlan.TabIndex = 2;
             this.btnVerPlan.Text = "Ver Plan";
             this.btnVerPlan.UseVisualStyleBackColor = true;
             this.btnVerPlan.Click += new System.EventHandler(this.OnBtnVerPlanClick);

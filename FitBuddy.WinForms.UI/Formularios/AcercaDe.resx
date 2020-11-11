@@ -2746,7 +2746,7 @@
     <value>3, 3</value>
   </data>
   <data name="LogoPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 358</value>
+    <value>177, 278</value>
   </data>
   <data name="LogoPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
@@ -2770,7 +2770,7 @@
     <value>Fill</value>
   </data>
   <data name="LabelProductName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 0</value>
+    <value>189, 0</value>
   </data>
   <data name="LabelProductName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 3, 0</value>
@@ -2779,7 +2779,7 @@
     <value>0, 17</value>
   </data>
   <data name="LabelProductName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>390, 17</value>
+    <value>363, 17</value>
   </data>
   <data name="LabelProductName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2806,7 +2806,7 @@
     <value>Fill</value>
   </data>
   <data name="LabelVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 36</value>
+    <value>189, 28</value>
   </data>
   <data name="LabelVersion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 3, 0</value>
@@ -2815,7 +2815,7 @@
     <value>0, 17</value>
   </data>
   <data name="LabelVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>390, 17</value>
+    <value>363, 17</value>
   </data>
   <data name="LabelVersion.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2842,7 +2842,7 @@
     <value>Fill</value>
   </data>
   <data name="LabelCopyright.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 72</value>
+    <value>189, 56</value>
   </data>
   <data name="LabelCopyright.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 3, 0</value>
@@ -2851,7 +2851,7 @@
     <value>0, 17</value>
   </data>
   <data name="LabelCopyright.Size" type="System.Drawing.Size, System.Drawing">
-    <value>390, 17</value>
+    <value>363, 17</value>
   </data>
   <data name="LabelCopyright.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2878,7 +2878,7 @@
     <value>Fill</value>
   </data>
   <data name="LabelCompanyName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 108</value>
+    <value>189, 84</value>
   </data>
   <data name="LabelCompanyName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 3, 0</value>
@@ -2887,7 +2887,7 @@
     <value>0, 17</value>
   </data>
   <data name="LabelCompanyName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>390, 17</value>
+    <value>363, 17</value>
   </data>
   <data name="LabelCompanyName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2914,7 +2914,7 @@
     <value>Fill</value>
   </data>
   <data name="TextBoxDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 147</value>
+    <value>189, 115</value>
   </data>
   <data name="TextBoxDescription.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 3, 3, 3</value>
@@ -2926,7 +2926,7 @@
     <value>Both</value>
   </data>
   <data name="TextBoxDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>390, 176</value>
+    <value>363, 136</value>
   </data>
   <data name="TextBoxDescription.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2953,7 +2953,7 @@ Personalice la información de ensamblado de la aplicación en el panel Aplicaci
     <value>Bottom, Right</value>
   </data>
   <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>517, 338</value>
+    <value>477, 258</value>
   </data>
   <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -2980,13 +2980,13 @@ Personalice la información de ensamblado de la aplicación en el panel Aplicaci
     <value>Fill</value>
   </data>
   <data name="TableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>20, 60</value>
   </data>
   <data name="TableLayoutPanel.RowCount" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="TableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>595, 364</value>
+    <value>555, 284</value>
   </data>
   <data name="TableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3015,9 +3015,6 @@ Personalice la información de ensamblado de la aplicación en el panel Aplicaci
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>595, 364</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
@@ -3028,6 +3025,6 @@ Personalice la información de ensamblado de la aplicación en el panel Aplicaci
     <value>AcercaDe</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
 </root>

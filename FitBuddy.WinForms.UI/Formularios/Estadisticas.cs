@@ -1,13 +1,13 @@
 ﻿using FitBuddy.Business.Facade;
 using FitBuddy.WinForms.UI.Animación;
 using FitBuddy.WinForms.UI.Security;
+using MetroFramework.Forms;
 using System;
 using System.Drawing;
-using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public partial class Estadísticas : Form
+    public partial class Estadísticas : MetroForm
     {
         // Para la animación en este formulario usamos dos imágenes:
         // - El fondo de un velocímetro (ancho: 1024px, alto: 1272px)

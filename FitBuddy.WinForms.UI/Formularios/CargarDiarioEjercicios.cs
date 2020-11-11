@@ -1,9 +1,9 @@
 ﻿using FitBuddy.WinForms.UI.Security;
-using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public partial class CargarDiarioEjercicios : Form
+    public partial class CargarDiarioEjercicios : MetroForm
     {
         private readonly IFormManager _formManager;
 

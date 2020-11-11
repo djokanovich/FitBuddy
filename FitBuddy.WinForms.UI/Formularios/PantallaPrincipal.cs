@@ -1,12 +1,13 @@
 ﻿using Common.Bitacora;
 using FitBuddy.Business.Facade;
 using FitBuddy.WinForms.UI.Security;
+using MetroFramework.Forms;
 using System;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public partial class PantallaPrincipal : Form
+    public partial class PantallaPrincipal : MetroForm
     {
         private readonly IFormManager _formManager;
         private readonly IBitacora<PantallaPrincipal> _bitacora;

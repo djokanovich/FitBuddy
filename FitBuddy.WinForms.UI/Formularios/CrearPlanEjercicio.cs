@@ -2,12 +2,13 @@
 using FitBuddy.Entidades;
 using FitBuddy.Entidades.Enums;
 using FitBuddy.WinForms.UI.Security;
+using MetroFramework.Forms;
 using System;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public partial class CrearPlanEjercicio : Form
+    public partial class CrearPlanEjercicio : MetroForm
     {
         private readonly ICrearPlanEjercicioBusinessLogic _crearPlanEjercicioBusinessLogic;
 

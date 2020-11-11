@@ -1,10 +1,11 @@
 ﻿using FitBuddy.WinForms.UI.Security;
+using MetroFramework.Forms;
 using System;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public partial class GestionarPlanEjercicios : Form
+    public partial class GestionarPlanEjercicios : MetroForm
     {
         private readonly IFormManager _formManager;
 

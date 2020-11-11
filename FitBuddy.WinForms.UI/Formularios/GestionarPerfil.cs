@@ -2,6 +2,7 @@
 using FitBuddy.Entidades;
 using FitBuddy.Entidades.Enums;
 using FitBuddy.WinForms.UI.Security;
+using MetroFramework.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public partial class GestionarPerfil : Form
+    public partial class GestionarPerfil : MetroForm
     {
         private readonly IFormManager _formManager;
         private readonly IGestionarPerfilBusinessLogic _gestionarPerfilBusinessLogic;

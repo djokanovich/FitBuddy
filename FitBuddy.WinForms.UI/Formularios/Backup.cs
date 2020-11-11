@@ -1,11 +1,12 @@
 ﻿using Common.Bitacora;
 using FitBuddy.Business.Facade;
+using MetroFramework.Forms;
 using System;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public partial class Backup : Form
+    public partial class Backup : MetroForm
     {
         private readonly IFormManager _formManager;
         private readonly IBitacora<Backup> _bitacora;

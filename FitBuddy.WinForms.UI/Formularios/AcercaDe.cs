@@ -2,10 +2,11 @@
 using System.Windows.Forms;
 using Common.Bitacora;
 using FitBuddy.WinForms.UI.Security;
+using MetroFramework.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public partial class AcercaDe : Form
+    public partial class AcercaDe : MetroForm
     {
         private readonly IFormManager _formManager;
         private readonly IBitacora<AcercaDe> _bitacora;

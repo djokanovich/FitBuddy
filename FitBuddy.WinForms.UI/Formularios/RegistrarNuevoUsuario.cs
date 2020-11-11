@@ -1,12 +1,13 @@
 ﻿using Common.Bitacora;
 using FitBuddy.Business.Facade;
 using FitBuddy.Entidades;
+using MetroFramework.Forms;
 using System;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public partial class RegistrarNuevoUsuario : Form
+    public partial class RegistrarNuevoUsuario : MetroForm
     {
         private readonly IFormManager _formManager;
         private readonly IBitacora<RegistrarNuevoUsuario> _bitacora;

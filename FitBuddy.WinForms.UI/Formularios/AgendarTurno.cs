@@ -1,11 +1,12 @@
 ﻿using FitBuddy.Business.Facade;
 using FitBuddy.WinForms.UI.Security;
+using MetroFramework.Forms;
 using System;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public partial class AgendarTurno : Form
+    public partial class AgendarTurno : MetroForm
     {
         private readonly IFormManager _formManager;
         private readonly IAgendarTurnoBusinessLogic _agendarTurnoBusinessLogic;

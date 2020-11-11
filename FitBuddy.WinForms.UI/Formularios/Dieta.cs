@@ -2,6 +2,7 @@
 using FitBuddy.Entidades;
 using FitBuddy.Entidades.Enums;
 using FitBuddy.WinForms.UI.Security;
+using MetroFramework.Forms;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -10,7 +11,7 @@ using TheArtOfDev.HtmlRenderer.PdfSharp;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public partial class Dieta : Form
+    public partial class Dieta : MetroForm
     {
         private readonly IFormManager _formManager;
         private readonly IDietaBusinessLogic _dietaBusinessLogic;

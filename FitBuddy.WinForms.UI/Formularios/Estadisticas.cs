@@ -114,7 +114,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnVerMásClick(object sender, EventArgs e)
         {
-            _formManager.Show<EstadisticasCompletas>();
+            _formManager.Show<EstadísticasCompletas>();
         }
     }
 }

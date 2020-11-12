@@ -23,6 +23,7 @@ namespace FitBuddy.DataAccess
 
             builder.RegisterType<ComidaRepositorio>().As<IRepositorio<Comida>>();
             builder.RegisterType<ComposiciónAlimentoRepositorio>().As<IRepositorio<ComposiciónAlimento>>();
+            builder.RegisterType<HistorialPacienteRepositorio>().As<IRepositorio<HistorialPaciente>>();
             builder.RegisterType<MédicoRepositorio>().As<IRepositorio<Médico>>();
             builder.RegisterType<PacienteRepositorio>().As<IRepositorio<Paciente>>();
             builder.RegisterType<UsuarioRepositorio>().As<IRepositorio<Usuario>>();

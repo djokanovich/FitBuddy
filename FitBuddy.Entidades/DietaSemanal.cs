@@ -13,7 +13,7 @@ namespace FitBuddy.Entidades
         private readonly Dictionary<DayOfWeek, Dictionary<TipoComida, string>> _dietaSemanal = new Dictionary<DayOfWeek, Dictionary<TipoComida, string>>();
 
         public string this[DayOfWeek dayOfWeek, TipoComida tipoComida]
-        {
+        { 
             get
             {
                 if (!_dietaSemanal.ContainsKey(dayOfWeek))

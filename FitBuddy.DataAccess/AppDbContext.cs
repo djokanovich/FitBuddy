@@ -10,6 +10,11 @@ namespace FitBuddy.DataAccess
     {
         private readonly IMd5HashingService _md5HashingService;
 
+        // Necesario para hacer Update-Database.
+        public AppDbContext() : this(null)
+        {
+        }
+
         public AppDbContext(IMd5HashingService md5HashingService) : base("FitBuddyDbConnectionString")
         {
             _md5HashingService = md5HashingService;

@@ -93,6 +93,10 @@
     <Compile Include="Migrations\202011041214023_UsuarioUsernameEsClavePrimaria.designer.cs">
       <DependentUpon>202011041214023_UsuarioUsernameEsClavePrimaria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011112311376_UsuarioUsernameNoEsClavePrimaria.cs" />
+    <Compile Include="Migrations\202011112311376_UsuarioUsernameNoEsClavePrimaria.designer.cs">
+      <DependentUpon>202011112311376_UsuarioUsernameNoEsClavePrimaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\SeedData\ComidaSeedData.cs" />
     <Compile Include="Migrations\SeedData\ComposicionAlimentoSeedData.cs" />
@@ -100,6 +104,7 @@
     <Compile Include="Repositorios\ComidaRepositorio.cs" />
     <Compile Include="Repositorios\ComposiciónAlimentoRepositorio.cs" />
     <Compile Include="Repositorios\Genérico\IRepositorio.cs" />
+    <Compile Include="Repositorios\HistorialPacienteRepositorio.cs" />
     <Compile Include="Repositorios\MédicoRepositorio.cs" />
     <Compile Include="Repositorios\PacienteRepositorio.cs" />
     <Compile Include="Repositorios\Genérico\RepositorioGenérico.cs" />
@@ -137,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011041214023_UsuarioUsernameEsClavePrimaria.resx">
       <DependentUpon>202011041214023_UsuarioUsernameEsClavePrimaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011112311376_UsuarioUsernameNoEsClavePrimaria.resx">
+      <DependentUpon>202011112311376_UsuarioUsernameNoEsClavePrimaria.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

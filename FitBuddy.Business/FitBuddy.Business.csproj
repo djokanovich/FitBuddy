@@ -72,6 +72,7 @@
     <Compile Include="Facade\CrearDietaBusinessLogic.cs" />
     <Compile Include="Facade\CrearPlanEjercicioBusinessLogic.cs" />
     <Compile Include="Facade\DietaBusinessLogic.cs" />
+    <Compile Include="Facade\EstadisticasCompletasBusinessLogic.cs" />
     <Compile Include="Facade\EstadísticasBusinessLogic.cs" />
     <Compile Include="Facade\GestionarPerfilBusinessLogic.cs" />
     <Compile Include="Facade\LogInBusinessLogic.cs" />

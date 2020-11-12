@@ -119,7 +119,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormManager formManager = _formManager.Show<GestionarPerfil>();
+            FormManager formManager = _formManager.Show<EstadisticasCompletas>();
         }
     }
 }

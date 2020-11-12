@@ -27,6 +27,7 @@ namespace FitBuddy.Business
             builder.RegisterType<CrearPlanEjercicioBusinessLogic>().As<ICrearPlanEjercicioBusinessLogic>();
             builder.RegisterType<DietaBusinessLogic>().As<IDietaBusinessLogic>();
             builder.RegisterType<EstadísticasBusinessLogic>().As<IEstadísticasBusinessLogic>();
+            builder.RegisterType<EstadisticasCompletasBusinessLogic>().As<IEstadisticasCompletasBusinessLogic>();
             builder.RegisterType<GestionarPerfilBusinessLogic>().As<IGestionarPerfilBusinessLogic>();
             builder.RegisterType<LogInBusinessLogic>().As<ILogInBusinessLogic>();
             builder.RegisterType<PantallaPrincipalBusinessLogic>().As<IPantallaPrincipalBusinessLogic>();

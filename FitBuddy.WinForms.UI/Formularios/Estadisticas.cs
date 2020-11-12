@@ -112,14 +112,9 @@ namespace FitBuddy.WinForms.UI.Formularios
             _formManager.Close(this);
         }
 
-        private void picAguja_Click(object sender, EventArgs e)
+        private void OnBtnVerMásClick(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FormManager formManager = _formManager.Show<EstadisticasCompletas>();
+            _formManager.Show<EstadisticasCompletas>();
         }
     }
 }

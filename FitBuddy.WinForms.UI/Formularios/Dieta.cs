@@ -148,10 +148,5 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             _formManager.Close(this);
         }
-
-        private void Dieta_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

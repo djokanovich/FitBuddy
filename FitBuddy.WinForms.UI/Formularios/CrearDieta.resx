@@ -16299,4 +16299,618 @@
         0yh+4tnwnBwM0TACg2gTgUbXMqJRdC0k5RDy0CTzcxCZuXvs/w+daI/nDs5xLwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 110</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>610, 512</value>
+  </data>
+  <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
+    <value>PictureBox1</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnAtras.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 512</value>
+  </data>
+  <data name="btnAtras.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnAtras.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 44</value>
+  </data>
+  <data name="btnAtras.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="btnAtras.Text" xml:space="preserve">
+    <value>Atrás</value>
+  </data>
+  <data name="&gt;&gt;btnAtras.Name" xml:space="preserve">
+    <value>btnAtras</value>
+  </data>
+  <data name="&gt;&gt;btnAtras.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAtras.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnAtras.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnEnviar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 512</value>
+  </data>
+  <data name="btnEnviar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnEnviar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 44</value>
+  </data>
+  <data name="btnEnviar.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btnEnviar.Text" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="&gt;&gt;btnEnviar.Name" xml:space="preserve">
+    <value>btnEnviar</value>
+  </data>
+  <data name="&gt;&gt;btnEnviar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEnviar.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnEnviar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkSoja.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkSoja.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 362</value>
+  </data>
+  <data name="chkSoja.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkSoja.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 29</value>
+  </data>
+  <data name="chkSoja.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="chkSoja.Text" xml:space="preserve">
+    <value>Soja</value>
+  </data>
+  <data name="&gt;&gt;chkSoja.Name" xml:space="preserve">
+    <value>chkSoja</value>
+  </data>
+  <data name="&gt;&gt;chkSoja.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSoja.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkSoja.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkFrutasRojas.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkFrutasRojas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 310</value>
+  </data>
+  <data name="chkFrutasRojas.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkFrutasRojas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 29</value>
+  </data>
+  <data name="chkFrutasRojas.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="chkFrutasRojas.Text" xml:space="preserve">
+    <value>Frutas Rojas</value>
+  </data>
+  <data name="&gt;&gt;chkFrutasRojas.Name" xml:space="preserve">
+    <value>chkFrutasRojas</value>
+  </data>
+  <data name="&gt;&gt;chkFrutasRojas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkFrutasRojas.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkFrutasRojas.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkHojasVerdes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkHojasVerdes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 262</value>
+  </data>
+  <data name="chkHojasVerdes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkHojasVerdes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 29</value>
+  </data>
+  <data name="chkHojasVerdes.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="chkHojasVerdes.Text" xml:space="preserve">
+    <value>Hojas Verdes</value>
+  </data>
+  <data name="&gt;&gt;chkHojasVerdes.Name" xml:space="preserve">
+    <value>chkHojasVerdes</value>
+  </data>
+  <data name="&gt;&gt;chkHojasVerdes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkHojasVerdes.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkHojasVerdes.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chkFructosa.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkFructosa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 210</value>
+  </data>
+  <data name="chkFructosa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkFructosa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 29</value>
+  </data>
+  <data name="chkFructosa.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="chkFructosa.Text" xml:space="preserve">
+    <value>Fructuosa</value>
+  </data>
+  <data name="&gt;&gt;chkFructosa.Name" xml:space="preserve">
+    <value>chkFructosa</value>
+  </data>
+  <data name="&gt;&gt;chkFructosa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkFructosa.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkFructosa.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chkLeche.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkLeche.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 413</value>
+  </data>
+  <data name="chkLeche.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkLeche.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 29</value>
+  </data>
+  <data name="chkLeche.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="chkLeche.Text" xml:space="preserve">
+    <value>Leche</value>
+  </data>
+  <data name="&gt;&gt;chkLeche.Name" xml:space="preserve">
+    <value>chkLeche</value>
+  </data>
+  <data name="&gt;&gt;chkLeche.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkLeche.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkLeche.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="chkMariscos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkMariscos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 362</value>
+  </data>
+  <data name="chkMariscos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkMariscos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 29</value>
+  </data>
+  <data name="chkMariscos.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="chkMariscos.Text" xml:space="preserve">
+    <value>Mariscos</value>
+  </data>
+  <data name="&gt;&gt;chkMariscos.Name" xml:space="preserve">
+    <value>chkMariscos</value>
+  </data>
+  <data name="&gt;&gt;chkMariscos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkMariscos.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkMariscos.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chkPescado.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkPescado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 313</value>
+  </data>
+  <data name="chkPescado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkPescado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 29</value>
+  </data>
+  <data name="chkPescado.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="chkPescado.Text" xml:space="preserve">
+    <value>Pescado</value>
+  </data>
+  <data name="&gt;&gt;chkPescado.Name" xml:space="preserve">
+    <value>chkPescado</value>
+  </data>
+  <data name="&gt;&gt;chkPescado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPescado.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPescado.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="chkCarnePollo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkCarnePollo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 262</value>
+  </data>
+  <data name="chkCarnePollo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkCarnePollo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 29</value>
+  </data>
+  <data name="chkCarnePollo.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="chkCarnePollo.Text" xml:space="preserve">
+    <value>Carne de Pollo</value>
+  </data>
+  <data name="&gt;&gt;chkCarnePollo.Name" xml:space="preserve">
+    <value>chkCarnePollo</value>
+  </data>
+  <data name="&gt;&gt;chkCarnePollo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkCarnePollo.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkCarnePollo.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="chkTrigo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkTrigo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 154</value>
+  </data>
+  <data name="chkTrigo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkTrigo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 29</value>
+  </data>
+  <data name="chkTrigo.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="chkTrigo.Text" xml:space="preserve">
+    <value>Trigo, Almidón, Cebada, Centeno</value>
+  </data>
+  <data name="&gt;&gt;chkTrigo.Name" xml:space="preserve">
+    <value>chkTrigo</value>
+  </data>
+  <data name="&gt;&gt;chkTrigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTrigo.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkTrigo.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="chkQueso.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkQueso.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 106</value>
+  </data>
+  <data name="chkQueso.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkQueso.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 29</value>
+  </data>
+  <data name="chkQueso.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="chkQueso.Text" xml:space="preserve">
+    <value>Queso</value>
+  </data>
+  <data name="&gt;&gt;chkQueso.Name" xml:space="preserve">
+    <value>chkQueso</value>
+  </data>
+  <data name="&gt;&gt;chkQueso.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkQueso.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkQueso.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="chkFrutosSecos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkFrutosSecos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 54</value>
+  </data>
+  <data name="chkFrutosSecos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkFrutosSecos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 29</value>
+  </data>
+  <data name="chkFrutosSecos.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="chkFrutosSecos.Text" xml:space="preserve">
+    <value>Frutos Secos</value>
+  </data>
+  <data name="&gt;&gt;chkFrutosSecos.Name" xml:space="preserve">
+    <value>chkFrutosSecos</value>
+  </data>
+  <data name="&gt;&gt;chkFrutosSecos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkFrutosSecos.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkFrutosSecos.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="chkCarneCerdo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkCarneCerdo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 206</value>
+  </data>
+  <data name="chkCarneCerdo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkCarneCerdo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 29</value>
+  </data>
+  <data name="chkCarneCerdo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="chkCarneCerdo.Text" xml:space="preserve">
+    <value>Carne de Cerdo</value>
+  </data>
+  <data name="&gt;&gt;chkCarneCerdo.Name" xml:space="preserve">
+    <value>chkCarneCerdo</value>
+  </data>
+  <data name="&gt;&gt;chkCarneCerdo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkCarneCerdo.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkCarneCerdo.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="chkCarneVaca.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkCarneVaca.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 154</value>
+  </data>
+  <data name="chkCarneVaca.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkCarneVaca.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 29</value>
+  </data>
+  <data name="chkCarneVaca.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chkCarneVaca.Text" xml:space="preserve">
+    <value>Carne de Vaca</value>
+  </data>
+  <data name="&gt;&gt;chkCarneVaca.Name" xml:space="preserve">
+    <value>chkCarneVaca</value>
+  </data>
+  <data name="&gt;&gt;chkCarneVaca.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkCarneVaca.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkCarneVaca.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="chkTomate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkTomate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 106</value>
+  </data>
+  <data name="chkTomate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkTomate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="chkTomate.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chkTomate.Text" xml:space="preserve">
+    <value>Tomate</value>
+  </data>
+  <data name="&gt;&gt;chkTomate.Name" xml:space="preserve">
+    <value>chkTomate</value>
+  </data>
+  <data name="&gt;&gt;chkTomate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTomate.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkTomate.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="chkHuevo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkHuevo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 54</value>
+  </data>
+  <data name="chkHuevo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="chkHuevo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 29</value>
+  </data>
+  <data name="chkHuevo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chkHuevo.Text" xml:space="preserve">
+    <value>Huevo</value>
+  </data>
+  <data name="&gt;&gt;chkHuevo.Name" xml:space="preserve">
+    <value>chkHuevo</value>
+  </data>
+  <data name="&gt;&gt;chkHuevo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkHuevo.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkHuevo.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>752, 110</value>
+  </data>
+  <data name="GroupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="GroupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>696, 612</value>
+  </data>
+  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>Indique cuál de estos alimentos Ud. NO CONSUME</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblWelcome.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblWelcome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1148, 48</value>
+  </data>
+  <data name="lblWelcome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="lblWelcome.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;lblWelcome.Name" xml:space="preserve">
+    <value>lblWelcome</value>
+  </data>
+  <data name="&gt;&gt;lblWelcome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblWelcome.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblWelcome.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>12, 25</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1558, 831</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>40, 115, 40, 38</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>CrearDieta</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CrearDieta</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
 </root>

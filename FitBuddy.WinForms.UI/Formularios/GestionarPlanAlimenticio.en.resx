@@ -117,40 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblWelcome.Text" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnAtras.Location" type="System.Drawing.Point, System.Drawing">
-    <value>952, 625</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAtras.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
-  </data>
-  <data name="btnAtras.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 44</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAtras.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
   </data>
   <data name="btnAtras.Text" xml:space="preserve">
-    <value>Atrás</value>
+    <value>Back</value>
   </data>
-  <data name="&gt;&gt;btnAtras.Name" xml:space="preserve">
-    <value>btnAtras</value>
+  <data name="btnCrearDieta.Text" xml:space="preserve">
+    <value>Create Plan</value>
   </data>
-  <data name="&gt;&gt;btnAtras.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAtras.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnAtras.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="btnVerDieta.Text" xml:space="preserve">
+    <value>View Plan</value>
   </data>
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAO4AAAGoCAYAAABBmNnnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAA/7JJREFUeF7s/fWbVce6NQz3asMJEYi7uxFiQIIECQlO0ECCWyC4u7s03bS7u7u7
+        wQAADsEBuJFr7QAA/7JJREFUeF7s/fWbVce6NQz3asMJEYi7uxFiQIIECQlO0ECCWyC4u7s03bS7u7u7
         u7vhEN97P2fv5Ix3jNnp8z3v9x+813V+qGsumWvaqnGPMaruqjJ74okn8L/lf8v/lv9vFbPHH38c/1v+
         t/xv+f9W+V/g/m/53/L/wWLWlB6HhtQYtGYloj0nGTeKs3CzJBt3yvPwS00xrhdl4m5FvvFe33fkpOBm
         YTZaUhNQnxyLupQE1KYmoq0wD20FWfx9Jn6qysftsmx05afwuPGoTQpHXXIMzxOHa4VZuFWah+aMRDSm
@@ -5379,140 +5365,5 @@
         /e4BmfU+mfcJJTHZ9uguDG+f0NcyePJzLO9vwfz2OMrfuVEeu1Neq1C444TCRVcYRs7C6dy5c/jf7X+3
         /93+/9TO4f8BRGgFTxS2efkAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 67</value>
-  </data>
-  <data name="PictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
-  </data>
-  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>422, 602</value>
-  </data>
-  <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
-  </data>
-  <data name="PictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
-    <value>PictureBox1</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnCrearDieta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>606, 265</value>
-  </data>
-  <data name="btnCrearDieta.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
-  </data>
-  <data name="btnCrearDieta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 81</value>
-  </data>
-  <data name="btnCrearDieta.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnCrearDieta.Text" xml:space="preserve">
-    <value>Crear Dieta</value>
-  </data>
-  <data name="&gt;&gt;btnCrearDieta.Name" xml:space="preserve">
-    <value>btnCrearDieta</value>
-  </data>
-  <data name="&gt;&gt;btnCrearDieta.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCrearDieta.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnCrearDieta.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnVerDieta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>606, 358</value>
-  </data>
-  <data name="btnVerDieta.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
-  </data>
-  <data name="btnVerDieta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 81</value>
-  </data>
-  <data name="btnVerDieta.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnVerDieta.Text" xml:space="preserve">
-    <value>Ver Dieta</value>
-  </data>
-  <data name="&gt;&gt;btnVerDieta.Name" xml:space="preserve">
-    <value>btnVerDieta</value>
-  </data>
-  <data name="&gt;&gt;btnVerDieta.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnVerDieta.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnVerDieta.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lblWelcome.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblWelcome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>600, 67</value>
-  </data>
-  <data name="lblWelcome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 25</value>
-  </data>
-  <data name="lblWelcome.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lblWelcome.Text" xml:space="preserve">
-    <value>Bienvenido</value>
-  </data>
-  <data name="&gt;&gt;lblWelcome.Name" xml:space="preserve">
-    <value>lblWelcome</value>
-  </data>
-  <data name="&gt;&gt;lblWelcome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblWelcome.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblWelcome.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>12, 25</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1210, 740</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>40, 115, 40, 38</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Gestionar plan alimenticio</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>GestionarPlanAlimenticio</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
 </root>

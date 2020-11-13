@@ -44,106 +44,70 @@
             // 
             // lnkAcercaDe
             // 
-            this.lnkAcercaDe.AutoSize = true;
-            this.lnkAcercaDe.Location = new System.Drawing.Point(14, 353);
+            resources.ApplyResources(this.lnkAcercaDe, "lnkAcercaDe");
             this.lnkAcercaDe.Name = "lnkAcercaDe";
-            this.lnkAcercaDe.Size = new System.Drawing.Size(119, 13);
-            this.lnkAcercaDe.TabIndex = 24;
             this.lnkAcercaDe.TabStop = true;
-            this.lnkAcercaDe.Text = "Acerca de la Aplicación";
             this.lnkAcercaDe.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnLnkAcercaDeClick);
             // 
             // lnkOlvideContrasena
             // 
-            this.lnkOlvideContrasena.AutoSize = true;
-            this.lnkOlvideContrasena.Location = new System.Drawing.Point(393, 243);
+            resources.ApplyResources(this.lnkOlvideContrasena, "lnkOlvideContrasena");
             this.lnkOlvideContrasena.Name = "lnkOlvideContrasena";
-            this.lnkOlvideContrasena.Size = new System.Drawing.Size(106, 13);
-            this.lnkOlvideContrasena.TabIndex = 6;
             this.lnkOlvideContrasena.TabStop = true;
-            this.lnkOlvideContrasena.Text = "Olvidé mi contraseña";
             this.lnkOlvideContrasena.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnLnkOlvideContrasenaClicked);
             // 
             // lnkRegistrarUsuario
             // 
-            this.lnkRegistrarUsuario.AutoSize = true;
-            this.lnkRegistrarUsuario.Location = new System.Drawing.Point(393, 220);
+            resources.ApplyResources(this.lnkRegistrarUsuario, "lnkRegistrarUsuario");
             this.lnkRegistrarUsuario.Name = "lnkRegistrarUsuario";
-            this.lnkRegistrarUsuario.Size = new System.Drawing.Size(88, 13);
-            this.lnkRegistrarUsuario.TabIndex = 5;
             this.lnkRegistrarUsuario.TabStop = true;
-            this.lnkRegistrarUsuario.Text = "No tengo usuario";
             this.lnkRegistrarUsuario.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnLnkRegistrarUsuarioClicked);
             // 
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(513, 175);
+            resources.ApplyResources(this.btnCancelar, "btnCancelar");
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(94, 23);
-            this.btnCancelar.TabIndex = 4;
-            this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.OnBtnCancelarClick);
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(390, 175);
+            resources.ApplyResources(this.btnAceptar, "btnAceptar");
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(94, 23);
-            this.btnAceptar.TabIndex = 3;
-            this.btnAceptar.Text = "&Aceptar";
             this.btnAceptar.Click += new System.EventHandler(this.OnBtnAceptarClick);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(390, 139);
+            resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(220, 20);
-            this.txtPassword.TabIndex = 2;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(390, 90);
+            resources.ApplyResources(this.txtUsername, "txtUsername");
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(220, 20);
-            this.txtUsername.TabIndex = 1;
             // 
             // PasswordLabel
             // 
-            this.PasswordLabel.Location = new System.Drawing.Point(390, 113);
+            resources.ApplyResources(this.PasswordLabel, "PasswordLabel");
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(220, 23);
-            this.PasswordLabel.TabIndex = 18;
-            this.PasswordLabel.Text = "&Contraseña";
-            this.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LogoPictureBox
             // 
-            this.LogoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogoPictureBox.Image")));
-            this.LogoPictureBox.Location = new System.Drawing.Point(74, 68);
+            resources.ApplyResources(this.LogoPictureBox, "LogoPictureBox");
             this.LogoPictureBox.Name = "LogoPictureBox";
-            this.LogoPictureBox.Size = new System.Drawing.Size(263, 263);
-            this.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.LogoPictureBox.TabIndex = 16;
             this.LogoPictureBox.TabStop = false;
             // 
             // UsernameLabel
             // 
-            this.UsernameLabel.Location = new System.Drawing.Point(388, 57);
+            resources.ApplyResources(this.UsernameLabel, "UsernameLabel");
             this.UsernameLabel.Name = "UsernameLabel";
-            this.UsernameLabel.Size = new System.Drawing.Size(220, 23);
-            this.UsernameLabel.TabIndex = 25;
-            this.UsernameLabel.Text = "&Nombre de usuario";
-            this.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LogIn
             // 
             this.AcceptButton = this.btnAceptar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(657, 378);
             this.Controls.Add(this.UsernameLabel);
             this.Controls.Add(this.lnkAcercaDe);
             this.Controls.Add(this.lnkOlvideContrasena);
@@ -154,9 +118,7 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.PasswordLabel);
             this.Controls.Add(this.LogoPictureBox);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LogIn";
-            this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

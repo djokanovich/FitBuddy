@@ -40,67 +40,47 @@
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAtras.Location = new System.Drawing.Point(493, 336);
+            resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(75, 23);
-            this.btnAtras.TabIndex = 3;
-            this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // PictureBox1
             // 
-            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(64, 46);
+            resources.ApplyResources(this.PictureBox1, "PictureBox1");
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(211, 313);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.PictureBox1.TabIndex = 10;
             this.PictureBox1.TabStop = false;
             // 
             // btnCrearPlan
             // 
-            this.btnCrearPlan.Location = new System.Drawing.Point(320, 149);
+            resources.ApplyResources(this.btnCrearPlan, "btnCrearPlan");
             this.btnCrearPlan.Name = "btnCrearPlan";
-            this.btnCrearPlan.Size = new System.Drawing.Size(248, 42);
-            this.btnCrearPlan.TabIndex = 1;
-            this.btnCrearPlan.Text = "Crear Plan";
             this.btnCrearPlan.UseVisualStyleBackColor = true;
             this.btnCrearPlan.Click += new System.EventHandler(this.OnBtnCrearPlanClick);
             // 
             // btnVerPlan
             // 
-            this.btnVerPlan.Location = new System.Drawing.Point(320, 197);
+            resources.ApplyResources(this.btnVerPlan, "btnVerPlan");
             this.btnVerPlan.Name = "btnVerPlan";
-            this.btnVerPlan.Size = new System.Drawing.Size(248, 42);
-            this.btnVerPlan.TabIndex = 2;
-            this.btnVerPlan.Text = "Ver Plan";
             this.btnVerPlan.UseVisualStyleBackColor = true;
             this.btnVerPlan.Click += new System.EventHandler(this.OnBtnVerPlanClick);
             // 
             // lblWelcome
             // 
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(485, 46);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.lblWelcome, "lblWelcome");
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 13);
-            this.lblWelcome.TabIndex = 41;
             // 
             // GestionarPlanEjercicios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAtras;
-            this.ClientSize = new System.Drawing.Size(632, 405);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.btnCrearPlan);
             this.Controls.Add(this.btnVerPlan);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GestionarPlanEjercicios";
-            this.Text = "GestionarPlanEjercicios";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

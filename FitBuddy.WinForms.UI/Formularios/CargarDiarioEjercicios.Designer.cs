@@ -50,142 +50,94 @@
             // 
             // txtTiempo
             // 
-            this.txtTiempo.Location = new System.Drawing.Point(414, 173);
+            resources.ApplyResources(this.txtTiempo, "txtTiempo");
             this.txtTiempo.Name = "txtTiempo";
-            this.txtTiempo.Size = new System.Drawing.Size(200, 20);
-            this.txtTiempo.TabIndex = 4;
             // 
             // Label4
             // 
-            this.Label4.AutoSize = true;
-            this.Label4.Location = new System.Drawing.Point(334, 173);
+            resources.ApplyResources(this.Label4, "Label4");
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(64, 13);
-            this.Label4.TabIndex = 38;
-            this.Label4.Text = "Tiempo(min)";
             // 
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAtras.Location = new System.Drawing.Point(658, 343);
+            resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(75, 23);
-            this.btnAtras.TabIndex = 8;
-            this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(658, 134);
+            resources.ApplyResources(this.btnEnviar, "btnEnviar");
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(75, 23);
-            this.btnEnviar.TabIndex = 7;
-            this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(658, 105);
+            resources.ApplyResources(this.btnBorrar, "btnBorrar");
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrar.TabIndex = 6;
-            this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(658, 77);
+            resources.ApplyResources(this.btnAgregar, "btnAgregar");
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 5;
-            this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
             // Label3
             // 
-            this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(334, 77);
+            resources.ApplyResources(this.Label3, "Label3");
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(37, 13);
-            this.Label3.TabIndex = 33;
-            this.Label3.Text = "Fecha";
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(414, 77);
+            resources.ApplyResources(this.dtpFecha, "dtpFecha");
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
-            this.dtpFecha.TabIndex = 1;
             // 
             // PictureBox1
             // 
-            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(46, 77);
+            resources.ApplyResources(this.PictureBox1, "PictureBox1");
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(254, 246);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox1.TabIndex = 31;
             this.PictureBox1.TabStop = false;
             // 
             // cmbRepeticiones
             // 
             this.cmbRepeticiones.FormattingEnabled = true;
-            this.cmbRepeticiones.Location = new System.Drawing.Point(414, 138);
+            resources.ApplyResources(this.cmbRepeticiones, "cmbRepeticiones");
             this.cmbRepeticiones.Name = "cmbRepeticiones";
-            this.cmbRepeticiones.Size = new System.Drawing.Size(200, 21);
-            this.cmbRepeticiones.TabIndex = 3;
             // 
             // cmbEjercicio
             // 
             this.cmbEjercicio.FormattingEnabled = true;
-            this.cmbEjercicio.Location = new System.Drawing.Point(414, 107);
+            resources.ApplyResources(this.cmbEjercicio, "cmbEjercicio");
             this.cmbEjercicio.Name = "cmbEjercicio";
-            this.cmbEjercicio.Size = new System.Drawing.Size(200, 21);
-            this.cmbEjercicio.TabIndex = 2;
             // 
             // Label2
             // 
-            this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(334, 146);
+            resources.ApplyResources(this.Label2, "Label2");
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(69, 13);
-            this.Label2.TabIndex = 28;
-            this.Label2.Text = "Repeticiones";
             // 
             // Label1
             // 
-            this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(334, 110);
+            resources.ApplyResources(this.Label1, "Label1");
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(47, 13);
-            this.Label1.TabIndex = 27;
-            this.Label1.Text = "Ejercicio";
             // 
             // DataGridView1
             // 
             this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView1.Location = new System.Drawing.Point(326, 228);
+            resources.ApplyResources(this.DataGridView1, "DataGridView1");
             this.DataGridView1.Name = "DataGridView1";
-            this.DataGridView1.RowHeadersWidth = 82;
-            this.DataGridView1.Size = new System.Drawing.Size(407, 95);
-            this.DataGridView1.TabIndex = 26;
             // 
             // lblWelcome
             // 
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(576, 32);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.lblWelcome, "lblWelcome");
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 13);
-            this.lblWelcome.TabIndex = 40;
             // 
             // CargarDiarioEjercicios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAtras;
-            this.ClientSize = new System.Drawing.Size(769, 386);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.txtTiempo);
             this.Controls.Add(this.Label4);
@@ -201,9 +153,7 @@
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.DataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CargarDiarioEjercicios";
-            this.Text = "CargarDiarioEjercicios";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.ResumeLayout(false);

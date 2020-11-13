@@ -45,101 +45,67 @@
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAtras.Location = new System.Drawing.Point(548, 358);
+            resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(75, 23);
-            this.btnAtras.TabIndex = 5;
-            this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(404, 236);
+            resources.ApplyResources(this.btnEnviar, "btnEnviar");
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(219, 23);
-            this.btnEnviar.TabIndex = 4;
-            this.btnEnviar.Text = "Enviar Solicitud";
             this.btnEnviar.UseVisualStyleBackColor = true;
             this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
             // 
             // cmbMedico
             // 
             this.cmbMedico.FormattingEnabled = true;
-            this.cmbMedico.Location = new System.Drawing.Point(404, 127);
+            resources.ApplyResources(this.cmbMedico, "cmbMedico");
             this.cmbMedico.Name = "cmbMedico";
-            this.cmbMedico.Size = new System.Drawing.Size(219, 21);
-            this.cmbMedico.TabIndex = 1;
             // 
             // cmbFranjaHoraria
             // 
             this.cmbFranjaHoraria.FormattingEnabled = true;
-            this.cmbFranjaHoraria.Location = new System.Drawing.Point(404, 188);
+            resources.ApplyResources(this.cmbFranjaHoraria, "cmbFranjaHoraria");
             this.cmbFranjaHoraria.Name = "cmbFranjaHoraria";
-            this.cmbFranjaHoraria.Size = new System.Drawing.Size(219, 21);
-            this.cmbFranjaHoraria.TabIndex = 3;
             // 
             // Label3
             // 
-            this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(308, 191);
+            resources.ApplyResources(this.Label3, "Label3");
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(73, 13);
-            this.Label3.TabIndex = 13;
-            this.Label3.Text = "Franja Horaria";
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(404, 159);
+            resources.ApplyResources(this.dtpFecha, "dtpFecha");
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(219, 20);
-            this.dtpFecha.TabIndex = 2;
             // 
             // Label2
             // 
-            this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(324, 164);
+            resources.ApplyResources(this.Label2, "Label2");
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(54, 13);
-            this.Label2.TabIndex = 11;
-            this.Label2.Text = "Elegir Día";
             // 
             // Label1
             // 
-            this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(310, 131);
+            resources.ApplyResources(this.Label1, "Label1");
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(71, 13);
-            this.Label1.TabIndex = 10;
-            this.Label1.Text = "Elegir Médico";
             // 
             // PictureBox1
             // 
-            this.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(40, 24);
+            resources.ApplyResources(this.PictureBox1, "PictureBox1");
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(245, 357);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox1.TabIndex = 17;
             this.PictureBox1.TabStop = false;
             // 
             // lblWelcome
             // 
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(545, 24);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.lblWelcome, "lblWelcome");
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 13);
-            this.lblWelcome.TabIndex = 22;
             // 
             // AgendarTurno
             // 
             this.AcceptButton = this.btnEnviar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAtras;
-            this.ClientSize = new System.Drawing.Size(670, 407);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnEnviar);
@@ -150,9 +116,7 @@
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.PictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AgendarTurno";
-            this.Text = "AgendarTurno";
             this.Load += new System.EventHandler(this.OnAgendarTurnoLoad);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);

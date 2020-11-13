@@ -55,12 +55,8 @@
             // 
             // PictureBox1
             // 
-            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(50, 57);
+            resources.ApplyResources(this.PictureBox1, "PictureBox1");
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(305, 266);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.PictureBox1.TabIndex = 21;
             this.PictureBox1.TabStop = false;
             // 
             // GroupBox1
@@ -82,206 +78,130 @@
             this.GroupBox1.Controls.Add(this.chkCarneVaca);
             this.GroupBox1.Controls.Add(this.chkTomate);
             this.GroupBox1.Controls.Add(this.chkHuevo);
-            this.GroupBox1.Location = new System.Drawing.Point(376, 57);
+            resources.ApplyResources(this.GroupBox1, "GroupBox1");
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(348, 318);
-            this.GroupBox1.TabIndex = 20;
             this.GroupBox1.TabStop = false;
-            this.GroupBox1.Text = "Indique cuál de estos alimentos Ud. NO CONSUME";
             // 
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAtras.Location = new System.Drawing.Point(146, 266);
+            resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(109, 23);
-            this.btnAtras.TabIndex = 19;
-            this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(38, 266);
+            resources.ApplyResources(this.btnEnviar, "btnEnviar");
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(100, 23);
-            this.btnEnviar.TabIndex = 18;
-            this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
             this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
             // 
             // chkSoja
             // 
-            this.chkSoja.AutoSize = true;
-            this.chkSoja.Location = new System.Drawing.Point(146, 188);
+            resources.ApplyResources(this.chkSoja, "chkSoja");
             this.chkSoja.Name = "chkSoja";
-            this.chkSoja.Size = new System.Drawing.Size(47, 17);
-            this.chkSoja.TabIndex = 17;
-            this.chkSoja.Text = "Soja";
             this.chkSoja.UseVisualStyleBackColor = true;
             // 
             // chkFrutasRojas
             // 
-            this.chkFrutasRojas.AutoSize = true;
-            this.chkFrutasRojas.Location = new System.Drawing.Point(146, 161);
+            resources.ApplyResources(this.chkFrutasRojas, "chkFrutasRojas");
             this.chkFrutasRojas.Name = "chkFrutasRojas";
-            this.chkFrutasRojas.Size = new System.Drawing.Size(85, 17);
-            this.chkFrutasRojas.TabIndex = 16;
-            this.chkFrutasRojas.Text = "Frutas Rojas";
             this.chkFrutasRojas.UseVisualStyleBackColor = true;
             // 
             // chkHojasVerdes
             // 
-            this.chkHojasVerdes.AutoSize = true;
-            this.chkHojasVerdes.Location = new System.Drawing.Point(146, 136);
+            resources.ApplyResources(this.chkHojasVerdes, "chkHojasVerdes");
             this.chkHojasVerdes.Name = "chkHojasVerdes";
-            this.chkHojasVerdes.Size = new System.Drawing.Size(89, 17);
-            this.chkHojasVerdes.TabIndex = 15;
-            this.chkHojasVerdes.Text = "Hojas Verdes";
             this.chkHojasVerdes.UseVisualStyleBackColor = true;
             // 
             // chkFructosa
             // 
-            this.chkFructosa.AutoSize = true;
-            this.chkFructosa.Location = new System.Drawing.Point(146, 109);
+            resources.ApplyResources(this.chkFructosa, "chkFructosa");
             this.chkFructosa.Name = "chkFructosa";
-            this.chkFructosa.Size = new System.Drawing.Size(73, 17);
-            this.chkFructosa.TabIndex = 14;
-            this.chkFructosa.Text = "Fructuosa";
             this.chkFructosa.UseVisualStyleBackColor = true;
             // 
             // chkLeche
             // 
-            this.chkLeche.AutoSize = true;
-            this.chkLeche.Location = new System.Drawing.Point(38, 215);
+            resources.ApplyResources(this.chkLeche, "chkLeche");
             this.chkLeche.Name = "chkLeche";
-            this.chkLeche.Size = new System.Drawing.Size(56, 17);
-            this.chkLeche.TabIndex = 13;
-            this.chkLeche.Text = "Leche";
             this.chkLeche.UseVisualStyleBackColor = true;
             // 
             // chkMariscos
             // 
-            this.chkMariscos.AutoSize = true;
-            this.chkMariscos.Location = new System.Drawing.Point(38, 188);
+            resources.ApplyResources(this.chkMariscos, "chkMariscos");
             this.chkMariscos.Name = "chkMariscos";
-            this.chkMariscos.Size = new System.Drawing.Size(68, 17);
-            this.chkMariscos.TabIndex = 12;
-            this.chkMariscos.Text = "Mariscos";
             this.chkMariscos.UseVisualStyleBackColor = true;
             // 
             // chkPescado
             // 
-            this.chkPescado.AutoSize = true;
-            this.chkPescado.Location = new System.Drawing.Point(38, 163);
+            resources.ApplyResources(this.chkPescado, "chkPescado");
             this.chkPescado.Name = "chkPescado";
-            this.chkPescado.Size = new System.Drawing.Size(68, 17);
-            this.chkPescado.TabIndex = 11;
-            this.chkPescado.Text = "Pescado";
             this.chkPescado.UseVisualStyleBackColor = true;
             // 
             // chkCarnePollo
             // 
-            this.chkCarnePollo.AutoSize = true;
-            this.chkCarnePollo.Location = new System.Drawing.Point(38, 136);
+            resources.ApplyResources(this.chkCarnePollo, "chkCarnePollo");
             this.chkCarnePollo.Name = "chkCarnePollo";
-            this.chkCarnePollo.Size = new System.Drawing.Size(95, 17);
-            this.chkCarnePollo.TabIndex = 10;
-            this.chkCarnePollo.Text = "Carne de Pollo";
             this.chkCarnePollo.UseVisualStyleBackColor = true;
             // 
             // chkTrigo
             // 
-            this.chkTrigo.AutoSize = true;
-            this.chkTrigo.Location = new System.Drawing.Point(146, 80);
+            resources.ApplyResources(this.chkTrigo, "chkTrigo");
             this.chkTrigo.Name = "chkTrigo";
-            this.chkTrigo.Size = new System.Drawing.Size(182, 17);
-            this.chkTrigo.TabIndex = 9;
-            this.chkTrigo.Text = "Trigo, Almidón, Cebada, Centeno";
             this.chkTrigo.UseVisualStyleBackColor = true;
             // 
             // chkQueso
             // 
-            this.chkQueso.AutoSize = true;
-            this.chkQueso.Location = new System.Drawing.Point(146, 55);
+            resources.ApplyResources(this.chkQueso, "chkQueso");
             this.chkQueso.Name = "chkQueso";
-            this.chkQueso.Size = new System.Drawing.Size(57, 17);
-            this.chkQueso.TabIndex = 7;
-            this.chkQueso.Text = "Queso";
             this.chkQueso.UseVisualStyleBackColor = true;
             // 
             // chkFrutosSecos
             // 
-            this.chkFrutosSecos.AutoSize = true;
-            this.chkFrutosSecos.Location = new System.Drawing.Point(146, 28);
+            resources.ApplyResources(this.chkFrutosSecos, "chkFrutosSecos");
             this.chkFrutosSecos.Name = "chkFrutosSecos";
-            this.chkFrutosSecos.Size = new System.Drawing.Size(88, 17);
-            this.chkFrutosSecos.TabIndex = 6;
-            this.chkFrutosSecos.Text = "Frutos Secos";
             this.chkFrutosSecos.UseVisualStyleBackColor = true;
             // 
             // chkCarneCerdo
             // 
-            this.chkCarneCerdo.AutoSize = true;
-            this.chkCarneCerdo.Location = new System.Drawing.Point(38, 107);
+            resources.ApplyResources(this.chkCarneCerdo, "chkCarneCerdo");
             this.chkCarneCerdo.Name = "chkCarneCerdo";
-            this.chkCarneCerdo.Size = new System.Drawing.Size(100, 17);
-            this.chkCarneCerdo.TabIndex = 5;
-            this.chkCarneCerdo.Text = "Carne de Cerdo";
             this.chkCarneCerdo.UseVisualStyleBackColor = true;
             // 
             // chkCarneVaca
             // 
-            this.chkCarneVaca.AutoSize = true;
-            this.chkCarneVaca.Location = new System.Drawing.Point(38, 80);
+            resources.ApplyResources(this.chkCarneVaca, "chkCarneVaca");
             this.chkCarneVaca.Name = "chkCarneVaca";
-            this.chkCarneVaca.Size = new System.Drawing.Size(97, 17);
-            this.chkCarneVaca.TabIndex = 4;
-            this.chkCarneVaca.Text = "Carne de Vaca";
             this.chkCarneVaca.UseVisualStyleBackColor = true;
             // 
             // chkTomate
             // 
-            this.chkTomate.AutoSize = true;
-            this.chkTomate.Location = new System.Drawing.Point(38, 55);
+            resources.ApplyResources(this.chkTomate, "chkTomate");
             this.chkTomate.Name = "chkTomate";
-            this.chkTomate.Size = new System.Drawing.Size(62, 17);
-            this.chkTomate.TabIndex = 3;
-            this.chkTomate.Text = "Tomate";
             this.chkTomate.UseVisualStyleBackColor = true;
             // 
             // chkHuevo
             // 
-            this.chkHuevo.AutoSize = true;
-            this.chkHuevo.Location = new System.Drawing.Point(38, 28);
+            resources.ApplyResources(this.chkHuevo, "chkHuevo");
             this.chkHuevo.Name = "chkHuevo";
-            this.chkHuevo.Size = new System.Drawing.Size(58, 17);
-            this.chkHuevo.TabIndex = 1;
-            this.chkHuevo.Text = "Huevo";
             this.chkHuevo.UseVisualStyleBackColor = true;
             // 
             // lblWelcome
             // 
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(574, 25);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.lblWelcome, "lblWelcome");
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 13);
-            this.lblWelcome.TabIndex = 41;
             // 
             // CrearDieta
             // 
             this.AcceptButton = this.btnEnviar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAtras;
-            this.ClientSize = new System.Drawing.Size(779, 432);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.GroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CrearDieta";
-            this.Text = "CrearDieta";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();

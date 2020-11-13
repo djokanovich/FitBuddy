@@ -50,150 +50,97 @@
             // 
             // lnkAcercaDe
             // 
-            this.lnkAcercaDe.AutoSize = true;
-            this.lnkAcercaDe.Location = new System.Drawing.Point(429, 303);
+            resources.ApplyResources(this.lnkAcercaDe, "lnkAcercaDe");
             this.lnkAcercaDe.Name = "lnkAcercaDe";
-            this.lnkAcercaDe.Size = new System.Drawing.Size(119, 13);
-            this.lnkAcercaDe.TabIndex = 9;
             this.lnkAcercaDe.TabStop = true;
-            this.lnkAcercaDe.Text = "Acerca de la Aplicación";
             // 
             // PictureBox1
             // 
-            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.PictureBox1, "PictureBox1");
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(267, 260);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.PictureBox1.TabIndex = 28;
             this.PictureBox1.TabStop = false;
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(432, 238);
+            resources.ApplyResources(this.btnRegistrar, "btnRegistrar");
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(190, 23);
-            this.btnRegistrar.TabIndex = 7;
-            this.btnRegistrar.Text = "Registrarme";
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.OnBtnRegistrarClick);
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(432, 189);
+            resources.ApplyResources(this.txtApellido, "txtApellido");
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(190, 20);
-            this.txtApellido.TabIndex = 6;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(432, 160);
+            resources.ApplyResources(this.txtNombre, "txtNombre");
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(190, 20);
-            this.txtNombre.TabIndex = 5;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(432, 130);
+            resources.ApplyResources(this.txtEmail, "txtEmail");
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(190, 20);
-            this.txtEmail.TabIndex = 4;
             // 
             // txtRepeatPassword
             // 
-            this.txtRepeatPassword.Location = new System.Drawing.Point(432, 96);
+            resources.ApplyResources(this.txtRepeatPassword, "txtRepeatPassword");
             this.txtRepeatPassword.Name = "txtRepeatPassword";
-            this.txtRepeatPassword.PasswordChar = '*';
-            this.txtRepeatPassword.Size = new System.Drawing.Size(190, 20);
-            this.txtRepeatPassword.TabIndex = 3;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(432, 61);
+            resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(190, 20);
-            this.txtPassword.TabIndex = 2;
             // 
             // Label6
             // 
-            this.Label6.AutoSize = true;
-            this.Label6.Location = new System.Drawing.Point(359, 196);
+            resources.ApplyResources(this.Label6, "Label6");
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(44, 13);
-            this.Label6.TabIndex = 21;
-            this.Label6.Text = "Apellido";
             // 
             // Label5
             // 
-            this.Label5.AutoSize = true;
-            this.Label5.Location = new System.Drawing.Point(359, 167);
+            resources.ApplyResources(this.Label5, "Label5");
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(44, 13);
-            this.Label5.TabIndex = 20;
-            this.Label5.Text = "Nombre";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(432, 29);
+            resources.ApplyResources(this.txtUsername, "txtUsername");
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(190, 20);
-            this.txtUsername.TabIndex = 1;
             // 
             // Label4
             // 
-            this.Label4.AutoSize = true;
-            this.Label4.Location = new System.Drawing.Point(368, 137);
+            resources.ApplyResources(this.Label4, "Label4");
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(35, 13);
-            this.Label4.TabIndex = 18;
-            this.Label4.Text = "E-mail";
             // 
             // Label3
             // 
-            this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(296, 103);
+            resources.ApplyResources(this.Label3, "Label3");
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(107, 13);
-            this.Label3.TabIndex = 17;
-            this.Label3.Text = "Confirmar contraseña";
             // 
             // Label2
             // 
-            this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(342, 68);
+            resources.ApplyResources(this.Label2, "Label2");
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(61, 13);
-            this.Label2.TabIndex = 16;
-            this.Label2.Text = "Contraseña";
             // 
             // Label1
             // 
-            this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(360, 36);
+            resources.ApplyResources(this.Label1, "Label1");
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(43, 13);
-            this.Label1.TabIndex = 15;
-            this.Label1.Text = "Usuario";
             // 
             // btnAtrás
             // 
             this.btnAtrás.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAtrás.Location = new System.Drawing.Point(432, 268);
+            resources.ApplyResources(this.btnAtrás, "btnAtrás");
             this.btnAtrás.Name = "btnAtrás";
-            this.btnAtrás.Size = new System.Drawing.Size(190, 23);
-            this.btnAtrás.TabIndex = 8;
-            this.btnAtrás.Text = "Atrás";
             this.btnAtrás.UseVisualStyleBackColor = true;
             this.btnAtrás.Click += new System.EventHandler(this.OnBtnAtrásClick);
             // 
             // RegistrarNuevoUsuario
             // 
             this.AcceptButton = this.btnRegistrar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAtrás;
-            this.ClientSize = new System.Drawing.Size(644, 337);
             this.Controls.Add(this.btnAtrás);
             this.Controls.Add(this.lnkAcercaDe);
             this.Controls.Add(this.PictureBox1);
@@ -210,9 +157,7 @@
             this.Controls.Add(this.Label3);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegistrarNuevoUsuario";
-            this.Text = "Registrar nuevo usuario";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

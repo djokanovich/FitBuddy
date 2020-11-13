@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Backup));
             this.btnRestaurar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnCreateBackup = new System.Windows.Forms.Button();
@@ -37,56 +38,42 @@
             // 
             // btnRestaurar
             // 
-            this.btnRestaurar.Location = new System.Drawing.Point(602, 285);
+            resources.ApplyResources(this.btnRestaurar, "btnRestaurar");
             this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(75, 23);
-            this.btnRestaurar.TabIndex = 4;
-            this.btnRestaurar.Text = "Restaurar";
             this.btnRestaurar.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 74);
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(645, 200);
-            this.dataGridView1.TabIndex = 3;
             // 
             // btnCreateBackup
             // 
-            this.btnCreateBackup.Location = new System.Drawing.Point(521, 285);
+            resources.ApplyResources(this.btnCreateBackup, "btnCreateBackup");
             this.btnCreateBackup.Name = "btnCreateBackup";
-            this.btnCreateBackup.Size = new System.Drawing.Size(75, 23);
-            this.btnCreateBackup.TabIndex = 5;
-            this.btnCreateBackup.Text = "Crear";
             this.btnCreateBackup.UseVisualStyleBackColor = true;
             this.btnCreateBackup.Click += new System.EventHandler(this.OnBtnCrearBackupClick);
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(601, 315);
+            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(75, 23);
-            this.btnAtras.TabIndex = 6;
-            this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // Backup
             // 
             this.AcceptButton = this.btnCreateBackup;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAtras;
-            this.ClientSize = new System.Drawing.Size(709, 383);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnCreateBackup);
             this.Controls.Add(this.btnRestaurar);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Backup";
-            this.Text = "Backup";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

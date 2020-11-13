@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionarPerfil));
             this.btnAtras = new System.Windows.Forms.Button();
             this.Label15 = new System.Windows.Forms.Label();
             this.dtpFechaRegistro = new System.Windows.Forms.DateTimePicker();
@@ -70,47 +71,32 @@
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAtras.Location = new System.Drawing.Point(504, 347);
+            resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(63, 21);
-            this.btnAtras.TabIndex = 13;
-            this.btnAtras.Text = "Atras";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // Label15
             // 
-            this.Label15.AutoSize = true;
-            this.Label15.Location = new System.Drawing.Point(12, 50);
+            resources.ApplyResources(this.Label15, "Label15");
             this.Label15.Name = "Label15";
-            this.Label15.Size = new System.Drawing.Size(74, 13);
-            this.Label15.TabIndex = 33;
-            this.Label15.Text = "Fecha registro";
             // 
             // dtpFechaRegistro
             // 
-            this.dtpFechaRegistro.Location = new System.Drawing.Point(92, 46);
+            resources.ApplyResources(this.dtpFechaRegistro, "dtpFechaRegistro");
             this.dtpFechaRegistro.Name = "dtpFechaRegistro";
-            this.dtpFechaRegistro.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaRegistro.TabIndex = 20;
             // 
             // bntLimpiar
             // 
-            this.bntLimpiar.Location = new System.Drawing.Point(237, 285);
+            resources.ApplyResources(this.bntLimpiar, "bntLimpiar");
             this.bntLimpiar.Name = "bntLimpiar";
-            this.bntLimpiar.Size = new System.Drawing.Size(161, 39);
-            this.bntLimpiar.TabIndex = 11;
-            this.bntLimpiar.Text = "Limpiar";
             this.bntLimpiar.UseVisualStyleBackColor = true;
             this.bntLimpiar.Click += new System.EventHandler(this.OnBtnLimpiarClick);
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(404, 285);
+            resources.ApplyResources(this.btnGuardar, "btnGuardar");
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(163, 39);
-            this.btnGuardar.TabIndex = 10;
-            this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.OnBtnGuardarClick);
             // 
@@ -129,135 +115,84 @@
             this.GroupBox2.Controls.Add(this.Label6);
             this.GroupBox2.Controls.Add(this.Label8);
             this.GroupBox2.Controls.Add(this.Label7);
-            this.GroupBox2.Location = new System.Drawing.Point(364, 120);
+            resources.ApplyResources(this.GroupBox2, "GroupBox2");
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Size = new System.Drawing.Size(203, 159);
-            this.GroupBox2.TabIndex = 28;
             this.GroupBox2.TabStop = false;
-            this.GroupBox2.Text = "Medidas Específicas";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(149, 96);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(21, 13);
-            this.label4.TabIndex = 46;
-            this.label4.Text = "cm";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(149, 71);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(21, 13);
-            this.label13.TabIndex = 45;
-            this.label13.Text = "cm";
             // 
             // txtBrazo
             // 
             this.txtBrazo.BeepOnError = true;
-            this.txtBrazo.Location = new System.Drawing.Point(75, 95);
-            this.txtBrazo.Mask = "000";
+            resources.ApplyResources(this.txtBrazo, "txtBrazo");
             this.txtBrazo.Name = "txtBrazo";
-            this.txtBrazo.Size = new System.Drawing.Size(68, 20);
-            this.txtBrazo.TabIndex = 8;
             this.txtBrazo.ValidatingType = typeof(int);
             // 
             // txtMuslo
             // 
             this.txtMuslo.BeepOnError = true;
-            this.txtMuslo.Location = new System.Drawing.Point(75, 69);
-            this.txtMuslo.Mask = "000";
+            resources.ApplyResources(this.txtMuslo, "txtMuslo");
             this.txtMuslo.Name = "txtMuslo";
-            this.txtMuslo.Size = new System.Drawing.Size(68, 20);
-            this.txtMuslo.TabIndex = 7;
             this.txtMuslo.ValidatingType = typeof(int);
             // 
             // txtCadera
             // 
             this.txtCadera.BeepOnError = true;
-            this.txtCadera.Location = new System.Drawing.Point(75, 43);
-            this.txtCadera.Mask = "000";
+            resources.ApplyResources(this.txtCadera, "txtCadera");
             this.txtCadera.Name = "txtCadera";
-            this.txtCadera.Size = new System.Drawing.Size(68, 20);
-            this.txtCadera.TabIndex = 6;
             this.txtCadera.ValidatingType = typeof(int);
             // 
             // txtCintura
             // 
             this.txtCintura.BeepOnError = true;
-            this.txtCintura.Location = new System.Drawing.Point(75, 17);
-            this.txtCintura.Mask = "000";
+            resources.ApplyResources(this.txtCintura, "txtCintura");
             this.txtCintura.Name = "txtCintura";
-            this.txtCintura.Size = new System.Drawing.Size(68, 20);
-            this.txtCintura.TabIndex = 5;
             this.txtCintura.ValidatingType = typeof(int);
             // 
             // Label12
             // 
-            this.Label12.AutoSize = true;
-            this.Label12.Location = new System.Drawing.Point(149, 46);
+            resources.ApplyResources(this.Label12, "Label12");
             this.Label12.Name = "Label12";
-            this.Label12.Size = new System.Drawing.Size(21, 13);
-            this.Label12.TabIndex = 21;
-            this.Label12.Text = "cm";
             // 
             // Label11
             // 
-            this.Label11.AutoSize = true;
-            this.Label11.Location = new System.Drawing.Point(149, 21);
+            resources.ApplyResources(this.Label11, "Label11");
             this.Label11.Name = "Label11";
-            this.Label11.Size = new System.Drawing.Size(21, 13);
-            this.Label11.TabIndex = 20;
-            this.Label11.Text = "cm";
             // 
             // lnkInstrucciones
             // 
-            this.lnkInstrucciones.AutoSize = true;
-            this.lnkInstrucciones.Location = new System.Drawing.Point(28, 130);
+            resources.ApplyResources(this.lnkInstrucciones, "lnkInstrucciones");
             this.lnkInstrucciones.Name = "lnkInstrucciones";
-            this.lnkInstrucciones.Size = new System.Drawing.Size(165, 13);
-            this.lnkInstrucciones.TabIndex = 19;
             this.lnkInstrucciones.TabStop = true;
-            this.lnkInstrucciones.Text = "Instrucciones para tomar medidas";
             this.lnkInstrucciones.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkInstrucciones_LinkClicked);
             // 
             // Label5
             // 
-            this.Label5.AutoSize = true;
-            this.Label5.Location = new System.Drawing.Point(28, 20);
+            resources.ApplyResources(this.Label5, "Label5");
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(40, 13);
-            this.Label5.TabIndex = 11;
-            this.Label5.Text = "Cintura";
             // 
             // Label6
             // 
-            this.Label6.AutoSize = true;
-            this.Label6.Location = new System.Drawing.Point(28, 46);
+            resources.ApplyResources(this.Label6, "Label6");
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(41, 13);
-            this.Label6.TabIndex = 13;
-            this.Label6.Text = "Cadera";
             // 
             // Label8
             // 
-            this.Label8.AutoSize = true;
-            this.Label8.Location = new System.Drawing.Point(28, 98);
+            resources.ApplyResources(this.Label8, "Label8");
             this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(34, 13);
-            this.Label8.TabIndex = 17;
-            this.Label8.Text = "Brazo";
             // 
             // Label7
             // 
-            this.Label7.AutoSize = true;
-            this.Label7.Location = new System.Drawing.Point(28, 72);
+            resources.ApplyResources(this.Label7, "Label7");
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(35, 13);
-            this.Label7.TabIndex = 15;
-            this.Label7.Text = "Muslo";
             // 
             // GroupBox1
             // 
@@ -271,154 +206,97 @@
             this.GroupBox1.Controls.Add(this.Label9);
             this.GroupBox1.Controls.Add(this.Label2);
             this.GroupBox1.Controls.Add(this.Label3);
-            this.GroupBox1.Location = new System.Drawing.Point(12, 120);
+            resources.ApplyResources(this.GroupBox1, "GroupBox1");
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(346, 159);
-            this.GroupBox1.TabIndex = 27;
             this.GroupBox1.TabStop = false;
-            this.GroupBox1.Text = "Características Generales";
             // 
             // lblEdad
             // 
-            this.lblEdad.AutoSize = true;
-            this.lblEdad.Location = new System.Drawing.Point(23, 43);
+            resources.ApplyResources(this.lblEdad, "lblEdad");
             this.lblEdad.Name = "lblEdad";
-            this.lblEdad.Size = new System.Drawing.Size(48, 13);
-            this.lblEdad.TabIndex = 45;
-            this.lblEdad.Text = "{{Edad}}";
             // 
             // lblFechaNacimiento
             // 
-            this.lblFechaNacimiento.AutoSize = true;
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(23, 20);
+            resources.ApplyResources(this.lblFechaNacimiento, "lblFechaNacimiento");
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
-            this.lblFechaNacimiento.Size = new System.Drawing.Size(106, 13);
-            this.lblFechaNacimiento.TabIndex = 44;
-            this.lblFechaNacimiento.Text = "Fecha de nacimiento";
             // 
             // dtpFechaNacimiento
             // 
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(135, 16);
+            resources.ApplyResources(this.dtpFechaNacimiento, "dtpFechaNacimiento");
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaNacimiento.TabIndex = 43;
             // 
             // txtAltura
             // 
             this.txtAltura.BeepOnError = true;
-            this.txtAltura.Location = new System.Drawing.Point(61, 98);
-            this.txtAltura.Mask = "000";
+            resources.ApplyResources(this.txtAltura, "txtAltura");
             this.txtAltura.Name = "txtAltura";
-            this.txtAltura.Size = new System.Drawing.Size(68, 20);
-            this.txtAltura.TabIndex = 3;
             this.txtAltura.ValidatingType = typeof(int);
             // 
             // txtPeso
             // 
             this.txtPeso.BeepOnError = true;
-            this.txtPeso.Location = new System.Drawing.Point(61, 72);
-            this.txtPeso.Mask = "000";
+            resources.ApplyResources(this.txtPeso, "txtPeso");
             this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(68, 20);
-            this.txtPeso.TabIndex = 2;
             this.txtPeso.ValidatingType = typeof(int);
             // 
             // grpBoxSexo
             // 
             this.grpBoxSexo.Controls.Add(this.radBtnFemenino);
             this.grpBoxSexo.Controls.Add(this.radBtnMasculino);
-            this.grpBoxSexo.Location = new System.Drawing.Point(163, 60);
-            this.grpBoxSexo.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.grpBoxSexo, "grpBoxSexo");
             this.grpBoxSexo.Name = "grpBoxSexo";
-            this.grpBoxSexo.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBoxSexo.Size = new System.Drawing.Size(172, 68);
-            this.grpBoxSexo.TabIndex = 4;
             this.grpBoxSexo.TabStop = false;
-            this.grpBoxSexo.Text = "Sexo";
             // 
             // radBtnFemenino
             // 
-            this.radBtnFemenino.AutoSize = true;
-            this.radBtnFemenino.Location = new System.Drawing.Point(15, 17);
+            resources.ApplyResources(this.radBtnFemenino, "radBtnFemenino");
             this.radBtnFemenino.Name = "radBtnFemenino";
-            this.radBtnFemenino.Size = new System.Drawing.Size(71, 17);
-            this.radBtnFemenino.TabIndex = 9;
             this.radBtnFemenino.TabStop = true;
-            this.radBtnFemenino.Text = "Femenino";
             this.radBtnFemenino.UseVisualStyleBackColor = true;
             // 
             // radBtnMasculino
             // 
-            this.radBtnMasculino.AutoSize = true;
-            this.radBtnMasculino.Location = new System.Drawing.Point(15, 41);
+            resources.ApplyResources(this.radBtnMasculino, "radBtnMasculino");
             this.radBtnMasculino.Name = "radBtnMasculino";
-            this.radBtnMasculino.Size = new System.Drawing.Size(73, 17);
-            this.radBtnMasculino.TabIndex = 10;
             this.radBtnMasculino.TabStop = true;
-            this.radBtnMasculino.Text = "Masculino";
             this.radBtnMasculino.UseVisualStyleBackColor = true;
             // 
             // Label10
             // 
-            this.Label10.AutoSize = true;
-            this.Label10.Location = new System.Drawing.Point(135, 101);
+            resources.ApplyResources(this.Label10, "Label10");
             this.Label10.Name = "Label10";
-            this.Label10.Size = new System.Drawing.Size(21, 13);
-            this.Label10.TabIndex = 12;
-            this.Label10.Text = "cm";
             // 
             // Label9
             // 
-            this.Label9.AutoSize = true;
-            this.Label9.Location = new System.Drawing.Point(135, 75);
+            resources.ApplyResources(this.Label9, "Label9");
             this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(19, 13);
-            this.Label9.TabIndex = 11;
-            this.Label9.Text = "kg";
             // 
             // Label2
             // 
-            this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(23, 75);
+            resources.ApplyResources(this.Label2, "Label2");
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(31, 13);
-            this.Label2.TabIndex = 2;
-            this.Label2.Text = "Peso";
             // 
             // Label3
             // 
-            this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(23, 101);
+            resources.ApplyResources(this.Label3, "Label3");
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(34, 13);
-            this.Label3.TabIndex = 4;
-            this.Label3.Text = "Altura";
             // 
             // lblWelcome
             // 
-            this.lblWelcome.Location = new System.Drawing.Point(12, 12);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.lblWelcome, "lblWelcome");
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(531, 15);
-            this.lblWelcome.TabIndex = 41;
-            this.lblWelcome.Text = "Bienvenido";
-            this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblRegistroAnterior
             // 
-            this.lblRegistroAnterior.Location = new System.Drawing.Point(299, 50);
+            resources.ApplyResources(this.lblRegistroAnterior, "lblRegistroAnterior");
             this.lblRegistroAnterior.Name = "lblRegistroAnterior";
-            this.lblRegistroAnterior.Size = new System.Drawing.Size(244, 49);
-            this.lblRegistroAnterior.TabIndex = 42;
-            this.lblRegistroAnterior.Text = "{{RegistroAnterior}}";
             // 
             // GestionarPerfil
             // 
             this.AcceptButton = this.btnGuardar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAtras;
-            this.ClientSize = new System.Drawing.Size(584, 385);
             this.Controls.Add(this.lblRegistroAnterior);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnAtras);
@@ -428,9 +306,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.GroupBox2);
             this.Controls.Add(this.GroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GestionarPerfil";
-            this.Text = "Gestionar perfil";
             this.GroupBox2.ResumeLayout(false);
             this.GroupBox2.PerformLayout();
             this.GroupBox1.ResumeLayout(false);

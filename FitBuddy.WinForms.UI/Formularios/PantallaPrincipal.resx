@@ -256,4 +256,384 @@
         8usDrytxx6gAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 142</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 123</value>
+  </data>
+  <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
+    <value>PictureBox1</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnAgendarTurno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 419</value>
+  </data>
+  <data name="btnAgendarTurno.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnAgendarTurno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 44</value>
+  </data>
+  <data name="btnAgendarTurno.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnAgendarTurno.Text" xml:space="preserve">
+    <value>Agendar Turno</value>
+  </data>
+  <data name="&gt;&gt;btnAgendarTurno.Name" xml:space="preserve">
+    <value>btnAgendarTurno</value>
+  </data>
+  <data name="&gt;&gt;btnAgendarTurno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAgendarTurno.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAgendarTurno.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnReclamosSugerencias.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 365</value>
+  </data>
+  <data name="btnReclamosSugerencias.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnReclamosSugerencias.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 44</value>
+  </data>
+  <data name="btnReclamosSugerencias.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnReclamosSugerencias.Text" xml:space="preserve">
+    <value>Reclamos y Sugerencias</value>
+  </data>
+  <data name="&gt;&gt;btnReclamosSugerencias.Name" xml:space="preserve">
+    <value>btnReclamosSugerencias</value>
+  </data>
+  <data name="&gt;&gt;btnReclamosSugerencias.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnReclamosSugerencias.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnReclamosSugerencias.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnContactarProfesional.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 310</value>
+  </data>
+  <data name="btnContactarProfesional.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnContactarProfesional.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 44</value>
+  </data>
+  <data name="btnContactarProfesional.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnContactarProfesional.Text" xml:space="preserve">
+    <value>Contactar Profesional</value>
+  </data>
+  <data name="&gt;&gt;btnContactarProfesional.Name" xml:space="preserve">
+    <value>btnContactarProfesional</value>
+  </data>
+  <data name="&gt;&gt;btnContactarProfesional.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnContactarProfesional.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnContactarProfesional.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnEstadisticas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 252</value>
+  </data>
+  <data name="btnEstadisticas.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnEstadisticas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 44</value>
+  </data>
+  <data name="btnEstadisticas.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnEstadisticas.Text" xml:space="preserve">
+    <value>Mis Estadísticas</value>
+  </data>
+  <data name="&gt;&gt;btnEstadisticas.Name" xml:space="preserve">
+    <value>btnEstadisticas</value>
+  </data>
+  <data name="&gt;&gt;btnEstadisticas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEstadisticas.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnEstadisticas.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnGestionarPlanEjercicio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 475</value>
+  </data>
+  <data name="btnGestionarPlanEjercicio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnGestionarPlanEjercicio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 44</value>
+  </data>
+  <data name="btnGestionarPlanEjercicio.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnGestionarPlanEjercicio.Text" xml:space="preserve">
+    <value>Gestionar Plan de Ejercicio</value>
+  </data>
+  <data name="&gt;&gt;btnGestionarPlanEjercicio.Name" xml:space="preserve">
+    <value>btnGestionarPlanEjercicio</value>
+  </data>
+  <data name="&gt;&gt;btnGestionarPlanEjercicio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGestionarPlanEjercicio.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnGestionarPlanEjercicio.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btnCargaDiariaEjercicios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 196</value>
+  </data>
+  <data name="btnCargaDiariaEjercicios.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnCargaDiariaEjercicios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 44</value>
+  </data>
+  <data name="btnCargaDiariaEjercicios.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnCargaDiariaEjercicios.Text" xml:space="preserve">
+    <value>Carga Diaria de Ejercicios</value>
+  </data>
+  <data name="&gt;&gt;btnCargaDiariaEjercicios.Name" xml:space="preserve">
+    <value>btnCargaDiariaEjercicios</value>
+  </data>
+  <data name="&gt;&gt;btnCargaDiariaEjercicios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCargaDiariaEjercicios.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCargaDiariaEjercicios.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnCargaDiariaComidas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 140</value>
+  </data>
+  <data name="btnCargaDiariaComidas.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnCargaDiariaComidas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 44</value>
+  </data>
+  <data name="btnCargaDiariaComidas.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnCargaDiariaComidas.Text" xml:space="preserve">
+    <value>Carga Diaria de Comidas</value>
+  </data>
+  <data name="&gt;&gt;btnCargaDiariaComidas.Name" xml:space="preserve">
+    <value>btnCargaDiariaComidas</value>
+  </data>
+  <data name="&gt;&gt;btnCargaDiariaComidas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCargaDiariaComidas.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCargaDiariaComidas.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btnGestionarPlanAlimenticio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 419</value>
+  </data>
+  <data name="btnGestionarPlanAlimenticio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnGestionarPlanAlimenticio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 44</value>
+  </data>
+  <data name="btnGestionarPlanAlimenticio.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnGestionarPlanAlimenticio.Text" xml:space="preserve">
+    <value>Gestionar Plan Alimeticio</value>
+  </data>
+  <data name="&gt;&gt;btnGestionarPlanAlimenticio.Name" xml:space="preserve">
+    <value>btnGestionarPlanAlimenticio</value>
+  </data>
+  <data name="&gt;&gt;btnGestionarPlanAlimenticio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGestionarPlanAlimenticio.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnGestionarPlanAlimenticio.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btnGestionarPerfil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 363</value>
+  </data>
+  <data name="btnGestionarPerfil.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnGestionarPerfil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 44</value>
+  </data>
+  <data name="btnGestionarPerfil.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnGestionarPerfil.Text" xml:space="preserve">
+    <value>Gestionar Perfil</value>
+  </data>
+  <data name="&gt;&gt;btnGestionarPerfil.Name" xml:space="preserve">
+    <value>btnGestionarPerfil</value>
+  </data>
+  <data name="&gt;&gt;btnGestionarPerfil.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGestionarPerfil.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnGestionarPerfil.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblWelcome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 46</value>
+  </data>
+  <data name="lblWelcome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>774, 25</value>
+  </data>
+  <data name="lblWelcome.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lblWelcome.Text" xml:space="preserve">
+    <value>Bienvenido</value>
+  </data>
+  <data name="lblWelcome.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lblWelcome.Name" xml:space="preserve">
+    <value>lblWelcome</value>
+  </data>
+  <data name="&gt;&gt;lblWelcome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblWelcome.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblWelcome.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnBackup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 475</value>
+  </data>
+  <data name="btnBackup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnBackup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 44</value>
+  </data>
+  <data name="btnBackup.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnBackup.Text" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="&gt;&gt;btnBackup.Name" xml:space="preserve">
+    <value>btnBackup</value>
+  </data>
+  <data name="&gt;&gt;btnBackup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBackup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnBackup.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnLogout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 631</value>
+  </data>
+  <data name="btnLogout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnLogout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 44</value>
+  </data>
+  <data name="btnLogout.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btnLogout.Text" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
+  <data name="&gt;&gt;btnLogout.Name" xml:space="preserve">
+    <value>btnLogout</value>
+  </data>
+  <data name="&gt;&gt;btnLogout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLogout.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnLogout.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>12, 25</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>882, 704</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>40, 115, 40, 38</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Pantalla principal</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PantallaPrincipal</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
 </root>

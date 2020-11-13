@@ -75,6 +75,7 @@
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
@@ -139,6 +140,7 @@
     <Compile Include="Formularios\CargarDiarioEjercicios.Designer.cs">
       <DependentUpon>CargarDiarioEjercicios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ConsumoAlimentosData.cs" />
     <Compile Include="Formularios\CrearDieta.cs">
       <SubType>Form</SubType>
     </Compile>

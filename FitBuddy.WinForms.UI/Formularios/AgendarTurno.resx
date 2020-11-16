@@ -148,7 +148,7 @@
     <value>1</value>
   </data>
   <data name="btnEnviar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 454</value>
+    <value>808, 500</value>
   </data>
   <data name="btnEnviar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -175,7 +175,7 @@
     <value>2</value>
   </data>
   <data name="cmbMedico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 244</value>
+    <value>808, 290</value>
   </data>
   <data name="cmbMedico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -199,7 +199,7 @@
     <value>3</value>
   </data>
   <data name="cmbFranjaHoraria.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 362</value>
+    <value>808, 408</value>
   </data>
   <data name="cmbFranjaHoraria.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -226,7 +226,7 @@
     <value>True</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>616, 367</value>
+    <value>616, 413</value>
   </data>
   <data name="Label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 6, 0</value>
@@ -253,7 +253,7 @@
     <value>5</value>
   </data>
   <data name="dtpFecha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 306</value>
+    <value>808, 352</value>
   </data>
   <data name="dtpFecha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -280,7 +280,7 @@
     <value>True</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>648, 315</value>
+    <value>648, 361</value>
   </data>
   <data name="Label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 6, 0</value>
@@ -310,7 +310,7 @@
     <value>True</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>620, 252</value>
+    <value>620, 298</value>
   </data>
   <data name="Label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 6, 0</value>
@@ -1268,13 +1268,13 @@
 </value>
   </data>
   <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 46</value>
+    <value>138, 136</value>
   </data>
   <data name="PictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
   </data>
   <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 687</value>
+    <value>384, 547</value>
   </data>
   <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>

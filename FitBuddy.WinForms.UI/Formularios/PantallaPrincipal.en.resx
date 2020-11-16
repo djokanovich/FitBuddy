@@ -117,14 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnAgendarTurno.Text" xml:space="preserve">
-    <value>Schedule Appointment</value>
-  </data>
   <data name="btnEstadisticas.Text" xml:space="preserve">
     <value>My Stats</value>
   </data>
-  <data name="btnGestionarPerfil.Text" xml:space="preserve">
-    <value>Manage Profile</value>
+  <data name="btnAgendarTurno.Text" xml:space="preserve">
+    <value>Schedule An Appointment</value>
   </data>
   <data name="btnContactarProfesional.Text" xml:space="preserve">
     <value>Contact Professional</value>
@@ -150,11 +147,14 @@
   <data name="btnLogout.Text" xml:space="preserve">
     <value>Log Out</value>
   </data>
+  <data name="btnGestionarPerfil.Text" xml:space="preserve">
+    <value>Manage Profile</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQcAAABUCAYAAACPxvJKAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAHuJJREFUeF7tnYm/XEWVx/mLZj4z6sjqjOxhcRkQFB10WFVQR2REkE0QcEA2BXFA
+        vwAADr8BOAVTJAAAHuJJREFUeF7tnYm/XEWVx/mLZj4z6sjqjOxhcRkQFB10WFVQR2REkE0QcEA2BXFA
         WWRUGBBFBgEFgUAIJCxJyApJIAlkhfD2/aXm9617z3vV91X3vd2vu+mYuviz87pv1Tl16tSvTi237n5H
         Lxlyhy0ZcZ9cPOA++UJ/QkJCgkcih4SEhCj2W7B0OJFDQkLCHCRySEhIiCKRQ0JCQhSJHBISEqJI5JCQ
         kBBFIoeEhIQoEjkkJCREkcghISEhikQOCQkJUSRySEhIiOJDI4d/aRNieYPYvSB2L4jdO1/E5FRFLL8y
@@ -288,5 +288,8 @@
         Q0JCwt6FRA4JCQlRJHJISEiIQuQw7A5bOuoOfXEwI4iEhIQEYb+jXh51h7865QmCCCIhISHhsCUj7v8B
         8usDrytxx6gAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="btnConfiguración.Text" xml:space="preserve">
+    <value>Configuration</value>
   </data>
 </root>

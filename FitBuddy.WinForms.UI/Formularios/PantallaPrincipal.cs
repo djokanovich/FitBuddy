@@ -100,5 +100,10 @@ namespace FitBuddy.WinForms.UI.Formularios
             
             _formManager.Show<LogIn>().AndClose(this);
         }
+
+        private void btnConfiguración_Click(object sender, EventArgs e)
+        {
+            _formManager.Show<Configuracion>();
+        }
     }
 }

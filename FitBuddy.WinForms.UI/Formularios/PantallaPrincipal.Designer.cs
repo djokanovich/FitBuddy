@@ -40,8 +40,8 @@
             this.btnGestionarPlanAlimenticio = new System.Windows.Forms.Button();
             this.btnGestionarPerfil = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
-            this.btnBackup = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnConfiguración = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,13 +119,6 @@
             resources.ApplyResources(this.lblWelcome, "lblWelcome");
             this.lblWelcome.Name = "lblWelcome";
             // 
-            // btnBackup
-            // 
-            resources.ApplyResources(this.btnBackup, "btnBackup");
-            this.btnBackup.Name = "btnBackup";
-            this.btnBackup.UseVisualStyleBackColor = true;
-            this.btnBackup.Click += new System.EventHandler(this.OnBtnBackupClick);
-            // 
             // btnLogout
             // 
             this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -134,13 +127,20 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.OnBtnLogoutClick);
             // 
+            // btnConfiguración
+            // 
+            resources.ApplyResources(this.btnConfiguración, "btnConfiguración");
+            this.btnConfiguración.Name = "btnConfiguración";
+            this.btnConfiguración.UseVisualStyleBackColor = true;
+            this.btnConfiguración.Click += new System.EventHandler(this.btnConfiguración_Click);
+            // 
             // PantallaPrincipal
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnLogout;
+            this.Controls.Add(this.btnConfiguración);
             this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.btnBackup);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.btnAgendarTurno);
@@ -171,7 +171,7 @@
         internal System.Windows.Forms.Button btnGestionarPlanAlimenticio;
         internal System.Windows.Forms.Button btnGestionarPerfil;
         private System.Windows.Forms.Label lblWelcome;
-        internal System.Windows.Forms.Button btnBackup;
         internal System.Windows.Forms.Button btnLogout;
+        internal System.Windows.Forms.Button btnConfiguración;
     }
 }

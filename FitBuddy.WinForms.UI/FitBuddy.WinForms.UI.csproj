@@ -140,6 +140,12 @@
     <Compile Include="Formularios\CargarDiarioEjercicios.Designer.cs">
       <DependentUpon>CargarDiarioEjercicios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configuracion.Designer.cs">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ConsumoAlimentosData.cs" />
     <Compile Include="Formularios\CrearDieta.cs">
       <SubType>Form</SubType>
@@ -220,26 +226,53 @@
     <EmbeddedResource Include="Formularios\AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AgendarTurno.en.resx">
+      <DependentUpon>AgendarTurno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\AgendarTurno.resx">
       <DependentUpon>AgendarTurno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Backup.resx">
       <DependentUpon>Backup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CargarAlimento.en.resx">
+      <DependentUpon>CargarAlimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CargarAlimento.es.resx">
+      <DependentUpon>CargarAlimento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CargarAlimento.resx">
       <DependentUpon>CargarAlimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CargarDiarioEjercicios.en.resx">
+      <DependentUpon>CargarDiarioEjercicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CargarDiarioEjercicios.resx">
       <DependentUpon>CargarDiarioEjercicios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion.resx">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CrearDieta.en.resx">
+      <DependentUpon>CrearDieta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CrearDieta.resx">
       <DependentUpon>CrearDieta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CrearPlanEjercicio.en.resx">
+      <DependentUpon>CrearPlanEjercicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CrearPlanEjercicio.resx">
       <DependentUpon>CrearPlanEjercicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Dieta.en.resx">
+      <DependentUpon>Dieta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Dieta.resx">
       <DependentUpon>Dieta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas.en.resx">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas.resx">
       <DependentUpon>Estadisticas.cs</DependentUpon>
@@ -247,20 +280,38 @@
     <EmbeddedResource Include="Formularios\EstadísticasCompletas.resx">
       <DependentUpon>EstadísticasCompletas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GestionarPerfil.en.resx">
+      <DependentUpon>GestionarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\GestionarPerfil.resx">
       <DependentUpon>GestionarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GestionarPlanAlimenticio.en.resx">
+      <DependentUpon>GestionarPlanAlimenticio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\GestionarPlanAlimenticio.resx">
       <DependentUpon>GestionarPlanAlimenticio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GestionarPlanEjercicios.en.resx">
+      <DependentUpon>GestionarPlanEjercicios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\GestionarPlanEjercicios.resx">
       <DependentUpon>GestionarPlanEjercicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\LogIn.en.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PantallaPrincipal.en.resx">
+      <DependentUpon>PantallaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\PantallaPrincipal.resx">
       <DependentUpon>PantallaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RegistrarNuevoUsuario.en.resx">
+      <DependentUpon>RegistrarNuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

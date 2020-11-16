@@ -51,6 +51,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
             CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
+            MessageBox.Show("Please restart the system");
             _formManager.Close(this);
         }
     }

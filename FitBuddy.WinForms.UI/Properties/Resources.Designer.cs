@@ -143,6 +143,16 @@ namespace FitBuddy.WinForms.UI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ilustração_Email_PNG_1024x1024 {
+            get {
+                object obj = ResourceManager.GetObject("Ilustração-Email-PNG-1024x1024", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Medical_05 {
             get {
                 object obj = ResourceManager.GetObject("Medical-05", resourceCulture);

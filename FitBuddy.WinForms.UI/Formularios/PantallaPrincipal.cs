@@ -71,7 +71,7 @@ namespace FitBuddy.WinForms.UI.Formularios
 
         private void OnBtnContactarProfesionalClick(object sender, EventArgs e)
         {
-            MessageBox.Show("Sección en construcción");
+            _formManager.Show<ContactarProfesional>();
         }
 
         private void OnBtnReclamosSugerenciasClick(object sender, EventArgs e)

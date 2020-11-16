@@ -51,6 +51,8 @@ namespace FitBuddy.WinForms.UI
             builder.RegisterType<PantallaPrincipal>().AsSelf();
             builder.RegisterType<RegistrarNuevoUsuario>().AsSelf();
             builder.RegisterType<Configuracion>().AsSelf();
+            builder.RegisterType<ContactarProfesional>().AsSelf();
+
 
             var container = builder.Build();
             return container;

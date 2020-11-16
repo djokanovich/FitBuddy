@@ -177,6 +177,12 @@
     <Compile Include="Formularios\EstadísticasCompletas.Designer.cs">
       <DependentUpon>EstadísticasCompletas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ContactarProfesional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ContactarProfesional.Designer.cs">
+      <DependentUpon>ContactarProfesional.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FormManager.cs" />
     <Compile Include="Formularios\GestionarPerfil.cs">
       <SubType>Form</SubType>
@@ -283,6 +289,9 @@
     <EmbeddedResource Include="Formularios\EstadísticasCompletas.resx">
       <DependentUpon>EstadísticasCompletas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ContactarProfesional.resx">
+      <DependentUpon>ContactarProfesional.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\GestionarPerfil.en.resx">
       <DependentUpon>GestionarPerfil.cs</DependentUpon>
     </EmbeddedResource>
@@ -372,6 +381,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Recursos\dieta.html" />
+    <None Include="Resources\Ilustração-Email-PNG-1024x1024.png" />
     <None Include="Resources\catering-clipart-meal-prep-1.png" />
     <None Include="Resources\387564.png" />
     <None Include="Resources\614-6140076_exercise-icon-pink-hd-png-download.png" />

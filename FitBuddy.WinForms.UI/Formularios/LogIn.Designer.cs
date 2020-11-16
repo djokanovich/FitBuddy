@@ -119,6 +119,7 @@
             this.Controls.Add(this.PasswordLabel);
             this.Controls.Add(this.LogoPictureBox);
             this.Name = "LogIn";
+            this.Opacity = 0.9D;
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

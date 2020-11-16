@@ -24,10 +24,13 @@ namespace FitBuddy.WinForms.UI.Formularios
             {
                 _formManager.Show<PantallaPrincipal>();
             }
+
             else
             {
                 _formManager.Show<LogIn>();
+                
             }
+
         }
 
         protected override void OnClosed(EventArgs e)
@@ -42,6 +45,11 @@ namespace FitBuddy.WinForms.UI.Formularios
             {
                 _formManager.Close(this);
             }
+        }
+
+        private void AcercaDe_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

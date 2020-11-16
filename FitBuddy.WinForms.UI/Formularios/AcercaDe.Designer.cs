@@ -102,6 +102,8 @@
             this.Controls.Add(this.TableLayoutPanel);
             this.KeyPreview = true;
             this.Name = "AcercaDe";
+            this.Opacity = 0.9D;
+            this.Load += new System.EventHandler(this.AcercaDe_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnAcercaDeKeyDown);
             this.TableLayoutPanel.ResumeLayout(false);
             this.TableLayoutPanel.PerformLayout();

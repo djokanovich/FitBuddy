@@ -31,7 +31,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearPlanEjercicio));
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.Label6 = new System.Windows.Forms.Label();
             this.chkArtrosis = new System.Windows.Forms.CheckBox();
             this.chkArticulaciones = new System.Windows.Forms.CheckBox();
@@ -51,14 +50,9 @@
             this.lblWelcome = new System.Windows.Forms.Label();
             this.chkLimpiar = new System.Windows.Forms.Button();
             this.btnEnviar = new System.Windows.Forms.Button();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PictureBox1
-            // 
-            resources.ApplyResources(this.PictureBox1, "PictureBox1");
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.TabStop = false;
             // 
             // Label6
             // 
@@ -168,6 +162,13 @@
             this.btnEnviar.UseVisualStyleBackColor = true;
             this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
             // 
+            // PictureBox1
+            // 
+            resources.ApplyResources(this.PictureBox1, "PictureBox1");
+            this.PictureBox1.Image = global::FitBuddy.WinForms.UI.Properties.Resources.Medical_05;
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.TabStop = false;
+            // 
             // CrearPlanEjercicio
             // 
             resources.ApplyResources(this, "$this");
@@ -217,9 +218,9 @@
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label1;
-        private System.Windows.Forms.PictureBox PictureBox1;
         private System.Windows.Forms.Label lblWelcome;
         internal System.Windows.Forms.Button chkLimpiar;
         internal System.Windows.Forms.Button btnEnviar;
+        private System.Windows.Forms.PictureBox PictureBox1;
     }
 }

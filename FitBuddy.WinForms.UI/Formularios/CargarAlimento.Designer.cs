@@ -71,6 +71,7 @@
             // 
             // PictureBox1
             // 
+            this.PictureBox1.Image = global::FitBuddy.WinForms.UI.Properties.Resources.nutrition_icon_png;
             resources.ApplyResources(this.PictureBox1, "PictureBox1");
             this.PictureBox1.Name = "PictureBox1";
             this.PictureBox1.TabStop = false;
@@ -113,6 +114,7 @@
             // 
             resources.ApplyResources(this.lblCalorias, "lblCalorias");
             this.lblCalorias.Name = "lblCalorias";
+            this.lblCalorias.Click += new System.EventHandler(this.lblCalorias_Click);
             // 
             // txtPorcion
             // 

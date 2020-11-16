@@ -151,16 +151,16 @@
     <value>True</value>
   </data>
   <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 123</value>
+    <value>30, 188</value>
   </data>
   <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 31</value>
+    <value>148, 33</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -184,16 +184,16 @@
     <value>True</value>
   </data>
   <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 321</value>
+    <value>32, 386</value>
   </data>
   <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 31</value>
+    <value>143, 33</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -217,16 +217,16 @@
     <value>True</value>
   </data>
   <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 521</value>
+    <value>30, 586</value>
   </data>
   <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 31</value>
+    <value>141, 33</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -250,16 +250,16 @@
     <value>True</value>
   </data>
   <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 719</value>
+    <value>32, 784</value>
   </data>
   <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 31</value>
+    <value>82, 33</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -520,10 +520,10 @@
     <value>10</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 54</value>
+    <value>222, 119</value>
   </data>
   <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -685,10 +685,10 @@
     <value>3</value>
   </data>
   <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 54</value>
+    <value>534, 119</value>
   </data>
   <data name="groupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -850,10 +850,10 @@
     <value>3</value>
   </data>
   <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>838, 54</value>
+    <value>846, 119</value>
   </data>
   <data name="groupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1015,10 +1015,10 @@
     <value>3</value>
   </data>
   <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1148, 54</value>
+    <value>1156, 119</value>
   </data>
   <data name="groupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1180,10 +1180,10 @@
     <value>3</value>
   </data>
   <data name="groupBox5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1458, 54</value>
+    <value>1466, 119</value>
   </data>
   <data name="groupBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1213,13 +1213,13 @@
     <value>2</value>
   </data>
   <data name="btnExportarAPdf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 946</value>
+    <value>1190, 1015</value>
   </data>
   <data name="btnExportarAPdf.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="btnExportarAPdf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 92</value>
+    <value>226, 44</value>
   </data>
   <data name="btnExportarAPdf.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -1240,13 +1240,13 @@
     <value>1</value>
   </data>
   <data name="btnAtras.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1586, 971</value>
+    <value>1496, 1015</value>
   </data>
   <data name="btnAtras.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
   </data>
   <data name="btnAtras.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 44</value>
+    <value>230, 44</value>
   </data>
   <data name="btnAtras.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -1273,7 +1273,7 @@
     <value>12, 25</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1772, 1056</value>
+    <value>1772, 1128</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1282,7 +1282,7 @@
     <value>20, 115, 20, 19</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Dieta</value>
+    <value>Ver Dieta</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Dieta</value>

@@ -47,6 +47,7 @@
             // 
             // PictureBox1
             // 
+            this.PictureBox1.Image = global::FitBuddy.WinForms.UI.Properties.Resources._542ec68513d564e12f422d96d739da49;
             resources.ApplyResources(this.PictureBox1, "PictureBox1");
             this.PictureBox1.Name = "PictureBox1";
             this.PictureBox1.TabStop = false;

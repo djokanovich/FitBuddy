@@ -124,9 +124,6 @@
   <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>759, 315</value>
   </data>
-  <data name="btnRegistrar.Text" xml:space="preserve">
-    <value>Back</value>
-  </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>750, 124</value>
   </data>
@@ -154,8 +151,8 @@
   <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 13</value>
   </data>
-  <data name="lnkAcercaDe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 13</value>
+  <data name="btnRegistrar.Text" xml:space="preserve">
+    <value>Back</value>
   </data>
   <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>376, 20</value>
@@ -187,6 +184,9 @@
   <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
   </data>
+  <data name="lnkAcercaDe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>712, 192</value>
   </data>
@@ -199,7 +199,7 @@
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQcAAAEHCAYAAACjq4OnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAbrVJREFUeF7tvQWYHEeS9+3n+d6729vb9d3u8d57d3v07t3twZJ3zcwMMjPba5Zl
+        vwAADr8BOAVTJAAAbrVJREFUeF7tvQWYHEeS9+3n+d6729vb9d3u8d57d3v07t3twZJ3zcwMMjPba5Zl
         ZmYmGWRZlmVGgcXMzMzM0kx3T0/3THfHF7+ozlFNq4ara2bkSvuvmemuyszKyvhnRGRk5l4y6i+lMDJG
         KBj1F1IY82MpDPyJ5Hv+l1TfeKqkLz5f0hdeIOmLFBfHCAPVF50n+fPOlGU3dpUPX3hfzhq5QQ6bWq3I
         yOFT0nJEjFCwV374X0h+WIxQQFuO/LHk+v9Esj1+LsnrT5GEduTEBedL4kKgv8doM5IXnCvZc7rI4utv

@@ -329,6 +329,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Name = "Dieta";
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);

@@ -1337,7 +1337,7 @@
     <value>40, 115, 40, 38</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>AgendarTurno</value>
+    <value>Agendar Turno</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>AgendarTurno</value>

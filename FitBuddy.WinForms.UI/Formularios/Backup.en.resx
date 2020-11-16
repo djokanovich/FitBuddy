@@ -117,74 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblImcClasificación.Text" xml:space="preserve">
-    <value>Classification</value>
+  <data name="btnAtras.Text" xml:space="preserve">
+    <value>Back</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>User metrics:</value>
+  <data name="btnRestaurar.Text" xml:space="preserve">
+    <value>Restore</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblIgc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 31</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 19</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Body Mass Index (BMI)</value>
-  </data>
-  <data name="lblImcClasificación.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 13</value>
-  </data>
-  <data name="btnCerrar.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Scan to understand calculation variables</value>
-  </data>
-  <data name="lblIgcClasificacion.Text" xml:space="preserve">
-    <value>Classification</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 13</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 17</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 19</value>
-  </data>
-  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 13</value>
-  </data>
-  <data name="lblWelcome.Text" xml:space="preserve">
-    <value>User</value>
-  </data>
-  <data name="btnVerMás.Text" xml:space="preserve">
-    <value>View more</value>
-  </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOAQMAAABCf2vmAAAABGdBTUEAALGPC/xhBQAAAAZQTFRF////
-        AAAAVcLTfgAAAAlwSFlzAAAOwAAADsABataJCQAAAflJREFUaN7tmU1uxSAMhC1xAI7E1TlSDoBEmRmT
-        n2bZbkaKFeW9hq8LB3ts8+Kzzz77F5uwjuto84gRUWaPiqfDE8Fn7evO9abvo/ZcckTqXA/WVQ6+A7gO
-        cL0Ga6QcbSHL77WHCxn+yApDfZfr3kggMMtCcO+gkGrv2LVBJB6Kzdv11hcbJA2a0eho006+zQVZz+gf
-        73VSESeksd4E3gpZK0XFiuHJnGv4j6OFJxLUDNjSQvpaFKpXqrkhVHcW4VYoiqhXR7unmheCGsXADAap
-        fJXS2yKIxKgMz6lqrHdwbrMbwlZiO6r0YotxFWEzZNJLUSi/aycZmBmkhkigUYJyaObY6o6ZY3gi6sen
-        /K5zb+O9FJshbGbZyUI/tMjwrM9+1wc5B1y5y/KVE5UvEpo5WKb4Grpqcngi8q9Q2rmfyLbYs7sjIo91
-        mrLlcMajCJshmjDUR0AwiAe69W6K6PSLA4c6pmyU4jIzJGuUEKRX48UUdEW4b7jguoKU3V8bnojS6+zQ
-        c29/DxxWSGqh/spZCuuXHJoh28so7PvyuOiVbUbIzDE965XO9pLyRPBZs1e6t0i3VHNDcus0ETY9mY8T
-        Sktkn7xycZ8lD2cE+jHzbFJa8v6FwwaJPOwvu78Y1Mj5+2dAG+QUD03qeQb2aGbNkM8+++wvFvEDmltf
-        gzRPQJ8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Body Fat Index (IGC)</value>
-  </data>
-  <data name="lblImc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 32</value>
-  </data>
-  <data name="lblIgcClasificacion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 13</value>
+  <data name="btnCreateBackup.Text" xml:space="preserve">
+    <value>Create</value>
   </data>
 </root>

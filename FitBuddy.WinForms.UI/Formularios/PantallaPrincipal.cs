@@ -105,5 +105,10 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             _formManager.Show<Configuracion>();
         }
+
+        private void lblWelcome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

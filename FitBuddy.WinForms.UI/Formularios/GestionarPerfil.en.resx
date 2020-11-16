@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
-  </data>
   <data name="Label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 13</value>
   </data>
@@ -132,9 +129,6 @@
   </data>
   <data name="Label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>21, 13</value>
-  </data>
-  <data name="Label5.Text" xml:space="preserve">
-    <value>Waist</value>
   </data>
   <data name="Label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>21, 13</value>
@@ -148,8 +142,8 @@
   <data name="btnAtras.Text" xml:space="preserve">
     <value>Back</value>
   </data>
-  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 13</value>
+  <data name="txtCadera.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 20</value>
   </data>
   <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
@@ -169,17 +163,17 @@
   <data name="txtCintura.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 20</value>
   </data>
-  <data name="radBtnFemenino.Text" xml:space="preserve">
-    <value>W</value>
-  </data>
   <data name="radBtnMasculino.Text" xml:space="preserve">
     <value>M</value>
   </data>
   <data name="Label3.Text" xml:space="preserve">
     <value>Height</value>
   </data>
+  <data name="Label15.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
   <data name="Label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 94</value>
+    <value>141, 216</value>
   </data>
   <data name="grpBoxSexo.Text" xml:space="preserve">
     <value>Genre</value>
@@ -202,8 +196,11 @@
   <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
   </data>
-  <data name="Label15.Text" xml:space="preserve">
-    <value>Date</value>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="lnkInstrucciones.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
   </data>
   <data name="txtMuslo.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 20</value>
@@ -214,8 +211,11 @@
   <data name="dtpFechaNacimiento.Size" type="System.Drawing.Size, System.Drawing">
     <value>396, 20</value>
   </data>
-  <data name="txtPeso.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 20</value>
+  <data name="radBtnFemenino.Text" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="Label8.Text" xml:space="preserve">
+    <value>Thigh</value>
   </data>
   <data name="Label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>21, 13</value>
@@ -223,14 +223,14 @@
   <data name="radBtnFemenino.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 17</value>
   </data>
-  <data name="txtCadera.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtPeso.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 20</value>
   </data>
   <data name="btnGuardar.Text" xml:space="preserve">
     <value>Save</value>
   </data>
-  <data name="lnkInstrucciones.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 13</value>
+  <data name="Label5.Text" xml:space="preserve">
+    <value>Waist</value>
   </data>
   <data name="lblWelcome.Text" xml:space="preserve">
     <value>Welcome</value>
@@ -238,8 +238,8 @@
   <data name="dtpFechaRegistro.Size" type="System.Drawing.Size, System.Drawing">
     <value>396, 20</value>
   </data>
-  <data name="Label8.Text" xml:space="preserve">
-    <value>Thigh</value>
+  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 13</value>
   </data>
   <data name="lblFechaNacimiento.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 13</value>

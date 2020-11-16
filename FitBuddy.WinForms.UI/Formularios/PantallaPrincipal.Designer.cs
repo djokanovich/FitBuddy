@@ -47,6 +47,7 @@
             // 
             // PictureBox1
             // 
+            this.PictureBox1.Image = global::FitBuddy.WinForms.UI.Properties.Resources.Fitbuddy;
             resources.ApplyResources(this.PictureBox1, "PictureBox1");
             this.PictureBox1.Name = "PictureBox1";
             this.PictureBox1.TabStop = false;
@@ -118,6 +119,7 @@
             // 
             resources.ApplyResources(this.lblWelcome, "lblWelcome");
             this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Click += new System.EventHandler(this.lblWelcome_Click);
             // 
             // btnLogout
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
 {
-    public partial class Configuracion : Form
+    public partial class Configuracion : MetroForm
     {
         private readonly IFormManager _formManager;
 

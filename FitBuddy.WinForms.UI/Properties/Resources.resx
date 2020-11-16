@@ -121,10 +121,37 @@
   <data name="Aguja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\recursos\aguja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TemplateDietaSemanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\recursos\dieta.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="Medical-05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Medical-05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nutrition-icon-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nutrition-icon-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="614-6140076_exercise-icon-pink-hd-png-download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\614-6140076_exercise-icon-pink-hd-png-download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gym-unisex-exercise-logo-47950" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gym-unisex-exercise-logo-47950.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Velocimetro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\recursos\velocimetro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TemplateDietaSemanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\recursos\dieta.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="542ec68513d564e12f422d96d739da49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\542ec68513d564e12f422d96d739da49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="387564" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\387564.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dinner-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dinner-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fitbuddy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fitbuddy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catering-clipart-meal-prep-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catering-clipart-meal-prep-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

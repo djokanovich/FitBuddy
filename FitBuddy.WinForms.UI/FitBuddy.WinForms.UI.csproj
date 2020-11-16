@@ -232,13 +232,13 @@
     <EmbeddedResource Include="Formularios\AgendarTurno.resx">
       <DependentUpon>AgendarTurno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Backup.en.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Backup.resx">
       <DependentUpon>Backup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CargarAlimento.en.resx">
-      <DependentUpon>CargarAlimento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\CargarAlimento.es.resx">
       <DependentUpon>CargarAlimento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CargarAlimento.resx">
@@ -249,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CargarDiarioEjercicios.resx">
       <DependentUpon>CargarDiarioEjercicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion.en.resx">
+      <DependentUpon>Configuracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
@@ -369,6 +372,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Recursos\dieta.html" />
+    <None Include="Resources\catering-clipart-meal-prep-1.png" />
+    <None Include="Resources\387564.png" />
+    <None Include="Resources\614-6140076_exercise-icon-pink-hd-png-download.png" />
+    <None Include="Resources\nutrition-icon-png.png" />
+    <None Include="Resources\Medical-05.png" />
+    <None Include="Resources\dinner-icon.png" />
+    <None Include="Resources\542ec68513d564e12f422d96d739da49.png" />
+    <None Include="Resources\gym-unisex-exercise-logo-47950.png" />
+    <None Include="Resources\Fitbuddy.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

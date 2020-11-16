@@ -83,5 +83,10 @@ namespace FitBuddy.WinForms.UI.Formularios
 
 
         }
+
+        private void lblCalorias_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

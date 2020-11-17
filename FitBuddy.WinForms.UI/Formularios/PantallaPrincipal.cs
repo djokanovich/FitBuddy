@@ -3,6 +3,7 @@ using FitBuddy.Business.Facade;
 using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
@@ -18,6 +19,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             IPantallaPrincipalBusinessLogic pantallaPrincipalBusinessLogic)
         {
             InitializeComponent();
+            panel1.BackColor = Color.FromArgb(50, Color.AliceBlue);
             lblWelcome.Text = $"Bienvenido, {IdentityManager.UsuarioActual.Username}";
             _formManager = formManager;
             _bitacora = bitacora;
@@ -107,6 +109,11 @@ namespace FitBuddy.WinForms.UI.Formularios
         }
 
         private void lblWelcome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

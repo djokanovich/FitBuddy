@@ -44,17 +44,19 @@
             // 
             // btnAtras
             // 
+            this.btnAtras.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // btnEnviar
             // 
+            this.btnEnviar.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnEnviar, "btnEnviar");
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.UseVisualStyleBackColor = false;
             this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
             // 
             // cmbMedico

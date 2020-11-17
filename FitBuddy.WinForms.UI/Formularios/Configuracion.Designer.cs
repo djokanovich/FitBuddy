@@ -48,6 +48,7 @@
             resources.ApplyResources(this.cmbIdioma, "cmbIdioma");
             this.cmbIdioma.Name = "cmbIdioma";
             this.cmbIdioma.UseSelectable = true;
+            this.cmbIdioma.SelectedIndexChanged += new System.EventHandler(this.cmbIdioma_SelectedIndexChanged);
             // 
             // label1
             // 

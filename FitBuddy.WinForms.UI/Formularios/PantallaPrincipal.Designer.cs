@@ -30,19 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaPrincipal));
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAgendarTurno = new System.Windows.Forms.Button();
-            this.btnReclamosSugerencias = new System.Windows.Forms.Button();
-            this.btnContactarProfesional = new System.Windows.Forms.Button();
-            this.btnEstadisticas = new System.Windows.Forms.Button();
-            this.btnGestionarPlanEjercicio = new System.Windows.Forms.Button();
-            this.btnCargaDiariaEjercicios = new System.Windows.Forms.Button();
-            this.btnCargaDiariaComidas = new System.Windows.Forms.Button();
-            this.btnGestionarPlanAlimenticio = new System.Windows.Forms.Button();
-            this.btnGestionarPerfil = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnCargaDiariaComidas = new System.Windows.Forms.Button();
+            this.btnContactarProfesional = new System.Windows.Forms.Button();
+            this.btnGestionarPlanEjercicio = new System.Windows.Forms.Button();
+            this.btnAgendarTurno = new System.Windows.Forms.Button();
+            this.btnReclamosSugerencias = new System.Windows.Forms.Button();
+            this.btnEstadisticas = new System.Windows.Forms.Button();
+            this.btnCargaDiariaEjercicios = new System.Windows.Forms.Button();
+            this.btnGestionarPlanAlimenticio = new System.Windows.Forms.Button();
+            this.btnGestionarPerfil = new System.Windows.Forms.Button();
             this.btnConfiguración = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PictureBox1
@@ -52,69 +54,6 @@
             this.PictureBox1.Name = "PictureBox1";
             this.PictureBox1.TabStop = false;
             // 
-            // btnAgendarTurno
-            // 
-            resources.ApplyResources(this.btnAgendarTurno, "btnAgendarTurno");
-            this.btnAgendarTurno.Name = "btnAgendarTurno";
-            this.btnAgendarTurno.UseVisualStyleBackColor = true;
-            this.btnAgendarTurno.Click += new System.EventHandler(this.OnBtnAgendarTurnoClick);
-            // 
-            // btnReclamosSugerencias
-            // 
-            resources.ApplyResources(this.btnReclamosSugerencias, "btnReclamosSugerencias");
-            this.btnReclamosSugerencias.Name = "btnReclamosSugerencias";
-            this.btnReclamosSugerencias.UseVisualStyleBackColor = true;
-            this.btnReclamosSugerencias.Click += new System.EventHandler(this.OnBtnReclamosSugerenciasClick);
-            // 
-            // btnContactarProfesional
-            // 
-            resources.ApplyResources(this.btnContactarProfesional, "btnContactarProfesional");
-            this.btnContactarProfesional.Name = "btnContactarProfesional";
-            this.btnContactarProfesional.UseVisualStyleBackColor = true;
-            this.btnContactarProfesional.Click += new System.EventHandler(this.OnBtnContactarProfesionalClick);
-            // 
-            // btnEstadisticas
-            // 
-            resources.ApplyResources(this.btnEstadisticas, "btnEstadisticas");
-            this.btnEstadisticas.Name = "btnEstadisticas";
-            this.btnEstadisticas.UseVisualStyleBackColor = true;
-            this.btnEstadisticas.Click += new System.EventHandler(this.OnBtnEstadisticasClick);
-            // 
-            // btnGestionarPlanEjercicio
-            // 
-            resources.ApplyResources(this.btnGestionarPlanEjercicio, "btnGestionarPlanEjercicio");
-            this.btnGestionarPlanEjercicio.Name = "btnGestionarPlanEjercicio";
-            this.btnGestionarPlanEjercicio.UseVisualStyleBackColor = true;
-            this.btnGestionarPlanEjercicio.Click += new System.EventHandler(this.OnBtnGestionarPlanEjercicioClick);
-            // 
-            // btnCargaDiariaEjercicios
-            // 
-            resources.ApplyResources(this.btnCargaDiariaEjercicios, "btnCargaDiariaEjercicios");
-            this.btnCargaDiariaEjercicios.Name = "btnCargaDiariaEjercicios";
-            this.btnCargaDiariaEjercicios.UseVisualStyleBackColor = true;
-            this.btnCargaDiariaEjercicios.Click += new System.EventHandler(this.OnBtnCargaDiariaEjerciciosClick);
-            // 
-            // btnCargaDiariaComidas
-            // 
-            resources.ApplyResources(this.btnCargaDiariaComidas, "btnCargaDiariaComidas");
-            this.btnCargaDiariaComidas.Name = "btnCargaDiariaComidas";
-            this.btnCargaDiariaComidas.UseVisualStyleBackColor = true;
-            this.btnCargaDiariaComidas.Click += new System.EventHandler(this.OnBtnCargaDiariaComidasClick);
-            // 
-            // btnGestionarPlanAlimenticio
-            // 
-            resources.ApplyResources(this.btnGestionarPlanAlimenticio, "btnGestionarPlanAlimenticio");
-            this.btnGestionarPlanAlimenticio.Name = "btnGestionarPlanAlimenticio";
-            this.btnGestionarPlanAlimenticio.UseVisualStyleBackColor = true;
-            this.btnGestionarPlanAlimenticio.Click += new System.EventHandler(this.OnBtnGestionarPlanAlimenticioClick);
-            // 
-            // btnGestionarPerfil
-            // 
-            resources.ApplyResources(this.btnGestionarPerfil, "btnGestionarPerfil");
-            this.btnGestionarPerfil.Name = "btnGestionarPerfil";
-            this.btnGestionarPerfil.UseVisualStyleBackColor = true;
-            this.btnGestionarPerfil.Click += new System.EventHandler(this.OnBtnGestionarPerfilClick);
-            // 
             // lblWelcome
             // 
             resources.ApplyResources(this.lblWelcome, "lblWelcome");
@@ -123,39 +62,122 @@
             // 
             // btnLogout
             // 
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnLogout, "btnLogout");
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.OnBtnLogoutClick);
+            // 
+            // btnCargaDiariaComidas
+            // 
+            this.btnCargaDiariaComidas.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btnCargaDiariaComidas, "btnCargaDiariaComidas");
+            this.btnCargaDiariaComidas.Name = "btnCargaDiariaComidas";
+            this.btnCargaDiariaComidas.UseVisualStyleBackColor = false;
+            this.btnCargaDiariaComidas.Click += new System.EventHandler(this.OnBtnCargaDiariaComidasClick);
+            // 
+            // btnContactarProfesional
+            // 
+            this.btnContactarProfesional.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btnContactarProfesional, "btnContactarProfesional");
+            this.btnContactarProfesional.Name = "btnContactarProfesional";
+            this.btnContactarProfesional.UseVisualStyleBackColor = false;
+            this.btnContactarProfesional.Click += new System.EventHandler(this.OnBtnContactarProfesionalClick);
+            // 
+            // btnGestionarPlanEjercicio
+            // 
+            this.btnGestionarPlanEjercicio.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btnGestionarPlanEjercicio, "btnGestionarPlanEjercicio");
+            this.btnGestionarPlanEjercicio.Name = "btnGestionarPlanEjercicio";
+            this.btnGestionarPlanEjercicio.UseVisualStyleBackColor = false;
+            this.btnGestionarPlanEjercicio.Click += new System.EventHandler(this.OnBtnGestionarPlanEjercicioClick);
+            // 
+            // btnAgendarTurno
+            // 
+            this.btnAgendarTurno.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btnAgendarTurno, "btnAgendarTurno");
+            this.btnAgendarTurno.Name = "btnAgendarTurno";
+            this.btnAgendarTurno.UseVisualStyleBackColor = false;
+            this.btnAgendarTurno.Click += new System.EventHandler(this.OnBtnAgendarTurnoClick);
+            // 
+            // btnReclamosSugerencias
+            // 
+            this.btnReclamosSugerencias.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btnReclamosSugerencias, "btnReclamosSugerencias");
+            this.btnReclamosSugerencias.Name = "btnReclamosSugerencias";
+            this.btnReclamosSugerencias.UseVisualStyleBackColor = false;
+            this.btnReclamosSugerencias.Click += new System.EventHandler(this.OnBtnReclamosSugerenciasClick);
+            // 
+            // btnEstadisticas
+            // 
+            this.btnEstadisticas.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btnEstadisticas, "btnEstadisticas");
+            this.btnEstadisticas.Name = "btnEstadisticas";
+            this.btnEstadisticas.UseVisualStyleBackColor = false;
+            this.btnEstadisticas.Click += new System.EventHandler(this.OnBtnEstadisticasClick);
+            // 
+            // btnCargaDiariaEjercicios
+            // 
+            this.btnCargaDiariaEjercicios.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btnCargaDiariaEjercicios, "btnCargaDiariaEjercicios");
+            this.btnCargaDiariaEjercicios.Name = "btnCargaDiariaEjercicios";
+            this.btnCargaDiariaEjercicios.UseVisualStyleBackColor = false;
+            this.btnCargaDiariaEjercicios.Click += new System.EventHandler(this.OnBtnCargaDiariaEjerciciosClick);
+            // 
+            // btnGestionarPlanAlimenticio
+            // 
+            this.btnGestionarPlanAlimenticio.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btnGestionarPlanAlimenticio, "btnGestionarPlanAlimenticio");
+            this.btnGestionarPlanAlimenticio.Name = "btnGestionarPlanAlimenticio";
+            this.btnGestionarPlanAlimenticio.UseVisualStyleBackColor = false;
+            this.btnGestionarPlanAlimenticio.Click += new System.EventHandler(this.OnBtnGestionarPlanAlimenticioClick);
+            // 
+            // btnGestionarPerfil
+            // 
+            this.btnGestionarPerfil.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btnGestionarPerfil, "btnGestionarPerfil");
+            this.btnGestionarPerfil.Name = "btnGestionarPerfil";
+            this.btnGestionarPerfil.UseVisualStyleBackColor = false;
+            this.btnGestionarPerfil.Click += new System.EventHandler(this.OnBtnGestionarPerfilClick);
             // 
             // btnConfiguración
             // 
+            this.btnConfiguración.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnConfiguración, "btnConfiguración");
             this.btnConfiguración.Name = "btnConfiguración";
-            this.btnConfiguración.UseVisualStyleBackColor = true;
+            this.btnConfiguración.UseVisualStyleBackColor = false;
             this.btnConfiguración.Click += new System.EventHandler(this.btnConfiguración_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnConfiguración);
+            this.panel1.Controls.Add(this.btnGestionarPerfil);
+            this.panel1.Controls.Add(this.btnGestionarPlanAlimenticio);
+            this.panel1.Controls.Add(this.btnCargaDiariaEjercicios);
+            this.panel1.Controls.Add(this.btnEstadisticas);
+            this.panel1.Controls.Add(this.btnReclamosSugerencias);
+            this.panel1.Controls.Add(this.btnAgendarTurno);
+            this.panel1.Controls.Add(this.btnGestionarPlanEjercicio);
+            this.panel1.Controls.Add(this.btnContactarProfesional);
+            this.panel1.Controls.Add(this.btnCargaDiariaComidas);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
             // 
             // PantallaPrincipal
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnLogout;
-            this.Controls.Add(this.btnConfiguración);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.PictureBox1);
-            this.Controls.Add(this.btnAgendarTurno);
-            this.Controls.Add(this.btnReclamosSugerencias);
-            this.Controls.Add(this.btnContactarProfesional);
-            this.Controls.Add(this.btnEstadisticas);
-            this.Controls.Add(this.btnGestionarPlanEjercicio);
-            this.Controls.Add(this.btnCargaDiariaEjercicios);
-            this.Controls.Add(this.btnCargaDiariaComidas);
-            this.Controls.Add(this.btnGestionarPlanAlimenticio);
-            this.Controls.Add(this.btnGestionarPerfil);
+            this.Controls.Add(this.panel1);
             this.Name = "PantallaPrincipal";
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -163,17 +185,18 @@
         #endregion
 
         internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.Button btnAgendarTurno;
-        internal System.Windows.Forms.Button btnReclamosSugerencias;
-        internal System.Windows.Forms.Button btnContactarProfesional;
-        internal System.Windows.Forms.Button btnEstadisticas;
-        internal System.Windows.Forms.Button btnGestionarPlanEjercicio;
-        internal System.Windows.Forms.Button btnCargaDiariaEjercicios;
-        internal System.Windows.Forms.Button btnCargaDiariaComidas;
-        internal System.Windows.Forms.Button btnGestionarPlanAlimenticio;
-        internal System.Windows.Forms.Button btnGestionarPerfil;
         private System.Windows.Forms.Label lblWelcome;
         internal System.Windows.Forms.Button btnLogout;
+        internal System.Windows.Forms.Button btnCargaDiariaComidas;
+        internal System.Windows.Forms.Button btnContactarProfesional;
+        internal System.Windows.Forms.Button btnGestionarPlanEjercicio;
+        internal System.Windows.Forms.Button btnAgendarTurno;
+        internal System.Windows.Forms.Button btnReclamosSugerencias;
+        internal System.Windows.Forms.Button btnEstadisticas;
+        internal System.Windows.Forms.Button btnCargaDiariaEjercicios;
+        internal System.Windows.Forms.Button btnGestionarPlanAlimenticio;
+        internal System.Windows.Forms.Button btnGestionarPerfil;
         internal System.Windows.Forms.Button btnConfiguración;
+        private System.Windows.Forms.Panel panel1;
     }
 }

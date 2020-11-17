@@ -117,7 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAtras.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAtras.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
+  </data>
   <data name="btnAtras.Location" type="System.Drawing.Point, System.Drawing">
     <value>804, 483</value>
   </data>
@@ -128,7 +135,6 @@
   <data name="btnAtras.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 44</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnAtras.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -177,6 +183,12 @@
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="btnCrearDieta.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnCrearDieta.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
+  </data>
   <data name="btnCrearDieta.Location" type="System.Drawing.Point, System.Drawing">
     <value>458, 281</value>
   </data>
@@ -203,6 +215,12 @@
   </data>
   <data name="&gt;&gt;btnCrearDieta.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="btnVerDieta.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnVerDieta.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="btnVerDieta.Location" type="System.Drawing.Point, System.Drawing">
     <value>458, 374</value>

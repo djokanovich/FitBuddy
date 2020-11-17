@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAtras.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
+  </data>
   <data name="btnAtras.Location" type="System.Drawing.Point, System.Drawing">
     <value>900, 508</value>
   </data>
@@ -174,6 +177,9 @@
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="btnCrearPlan.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
+  </data>
   <data name="btnCrearPlan.Location" type="System.Drawing.Point, System.Drawing">
     <value>554, 243</value>
   </data>
@@ -200,6 +206,9 @@
   </data>
   <data name="&gt;&gt;btnCrearPlan.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="btnVerPlan.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="btnVerPlan.Location" type="System.Drawing.Point, System.Drawing">
     <value>554, 335</value>
@@ -260,6 +269,9 @@
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>12, 25</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1170, 663</value>

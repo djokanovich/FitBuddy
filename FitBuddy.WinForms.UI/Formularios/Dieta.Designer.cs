@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dieta));
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -38,10 +37,6 @@
             this.lblAlmuerzoLunes = new System.Windows.Forms.Label();
             this.lblMeriendaLunes = new System.Windows.Forms.Label();
             this.lblCenaLunes = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblCenaMartes = new System.Windows.Forms.Label();
@@ -65,85 +60,70 @@
             this.lblMeriendaViernes = new System.Windows.Forms.Label();
             this.btnExportarAPdf = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Name = "label8";
             // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Name = "label9";
             // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Name = "label10";
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Name = "label11";
             // 
             // lblDesayunoLunes
             // 
-            this.lblDesayunoLunes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblDesayunoLunes.BackColor = System.Drawing.Color.MistyRose;
             resources.ApplyResources(this.lblDesayunoLunes, "lblDesayunoLunes");
             this.lblDesayunoLunes.Name = "lblDesayunoLunes";
             // 
             // lblAlmuerzoLunes
             // 
-            this.lblAlmuerzoLunes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblAlmuerzoLunes.BackColor = System.Drawing.Color.MistyRose;
             resources.ApplyResources(this.lblAlmuerzoLunes, "lblAlmuerzoLunes");
             this.lblAlmuerzoLunes.Name = "lblAlmuerzoLunes";
             // 
             // lblMeriendaLunes
             // 
-            this.lblMeriendaLunes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblMeriendaLunes.BackColor = System.Drawing.Color.MistyRose;
             resources.ApplyResources(this.lblMeriendaLunes, "lblMeriendaLunes");
             this.lblMeriendaLunes.Name = "lblMeriendaLunes";
             // 
             // lblCenaLunes
             // 
-            this.lblCenaLunes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblCenaLunes.BackColor = System.Drawing.Color.MistyRose;
             resources.ApplyResources(this.lblCenaLunes, "lblCenaLunes");
             this.lblCenaLunes.Name = "lblCenaLunes";
             // 
-            // label32
-            // 
-            resources.ApplyResources(this.label32, "label32");
-            this.label32.Name = "label32";
-            // 
-            // label33
-            // 
-            resources.ApplyResources(this.label33, "label33");
-            this.label33.Name = "label33";
-            // 
-            // label34
-            // 
-            resources.ApplyResources(this.label34, "label34");
-            this.label34.Name = "label34";
-            // 
-            // label35
-            // 
-            resources.ApplyResources(this.label35, "label35");
-            this.label35.Name = "label35";
-            // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.BackColor = System.Drawing.Color.Salmon;
             this.groupBox1.Controls.Add(this.lblCenaLunes);
             this.groupBox1.Controls.Add(this.lblDesayunoLunes);
             this.groupBox1.Controls.Add(this.lblAlmuerzoLunes);
@@ -154,7 +134,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox2.BackColor = System.Drawing.Color.MediumTurquoise;
             this.groupBox2.Controls.Add(this.lblCenaMartes);
             this.groupBox2.Controls.Add(this.lblDesayunoMartes);
             this.groupBox2.Controls.Add(this.lblAlmuerzoMartes);
@@ -165,31 +145,31 @@
             // 
             // lblCenaMartes
             // 
-            this.lblCenaMartes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblCenaMartes.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.lblCenaMartes, "lblCenaMartes");
             this.lblCenaMartes.Name = "lblCenaMartes";
             // 
             // lblDesayunoMartes
             // 
-            this.lblDesayunoMartes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblDesayunoMartes.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.lblDesayunoMartes, "lblDesayunoMartes");
             this.lblDesayunoMartes.Name = "lblDesayunoMartes";
             // 
             // lblAlmuerzoMartes
             // 
-            this.lblAlmuerzoMartes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblAlmuerzoMartes.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.lblAlmuerzoMartes, "lblAlmuerzoMartes");
             this.lblAlmuerzoMartes.Name = "lblAlmuerzoMartes";
             // 
             // lblMeriendaMartes
             // 
-            this.lblMeriendaMartes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblMeriendaMartes.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.lblMeriendaMartes, "lblMeriendaMartes");
             this.lblMeriendaMartes.Name = "lblMeriendaMartes";
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox3.BackColor = System.Drawing.Color.Khaki;
             this.groupBox3.Controls.Add(this.lblCenaMiercoles);
             this.groupBox3.Controls.Add(this.lblDesayunoMiercoles);
             this.groupBox3.Controls.Add(this.lblAlmuerzoMiercoles);
@@ -224,7 +204,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox4.BackColor = System.Drawing.Color.MediumAquamarine;
             this.groupBox4.Controls.Add(this.lblCenaJueves);
             this.groupBox4.Controls.Add(this.lblDesayunoJueves);
             this.groupBox4.Controls.Add(this.lblAlmuerzoJueves);
@@ -235,31 +215,31 @@
             // 
             // lblCenaJueves
             // 
-            this.lblCenaJueves.BackColor = System.Drawing.SystemColors.Info;
+            this.lblCenaJueves.BackColor = System.Drawing.Color.Honeydew;
             resources.ApplyResources(this.lblCenaJueves, "lblCenaJueves");
             this.lblCenaJueves.Name = "lblCenaJueves";
             // 
             // lblDesayunoJueves
             // 
-            this.lblDesayunoJueves.BackColor = System.Drawing.SystemColors.Info;
+            this.lblDesayunoJueves.BackColor = System.Drawing.Color.Honeydew;
             resources.ApplyResources(this.lblDesayunoJueves, "lblDesayunoJueves");
             this.lblDesayunoJueves.Name = "lblDesayunoJueves";
             // 
             // lblAlmuerzoJueves
             // 
-            this.lblAlmuerzoJueves.BackColor = System.Drawing.SystemColors.Info;
+            this.lblAlmuerzoJueves.BackColor = System.Drawing.Color.Honeydew;
             resources.ApplyResources(this.lblAlmuerzoJueves, "lblAlmuerzoJueves");
             this.lblAlmuerzoJueves.Name = "lblAlmuerzoJueves";
             // 
             // lblMeriendaJueves
             // 
-            this.lblMeriendaJueves.BackColor = System.Drawing.SystemColors.Info;
+            this.lblMeriendaJueves.BackColor = System.Drawing.Color.Honeydew;
             resources.ApplyResources(this.lblMeriendaJueves, "lblMeriendaJueves");
             this.lblMeriendaJueves.Name = "lblMeriendaJueves";
             // 
             // groupBox5
             // 
-            this.groupBox5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox5.BackColor = System.Drawing.Color.LightPink;
             this.groupBox5.Controls.Add(this.lblCenaViernes);
             this.groupBox5.Controls.Add(this.lblDesayunoViernes);
             this.groupBox5.Controls.Add(this.lblAlmuerzoViernes);
@@ -270,42 +250,75 @@
             // 
             // lblCenaViernes
             // 
-            this.lblCenaViernes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblCenaViernes.BackColor = System.Drawing.Color.LavenderBlush;
             resources.ApplyResources(this.lblCenaViernes, "lblCenaViernes");
             this.lblCenaViernes.Name = "lblCenaViernes";
             // 
             // lblDesayunoViernes
             // 
-            this.lblDesayunoViernes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblDesayunoViernes.BackColor = System.Drawing.Color.LavenderBlush;
             resources.ApplyResources(this.lblDesayunoViernes, "lblDesayunoViernes");
             this.lblDesayunoViernes.Name = "lblDesayunoViernes";
             // 
             // lblAlmuerzoViernes
             // 
-            this.lblAlmuerzoViernes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblAlmuerzoViernes.BackColor = System.Drawing.Color.LavenderBlush;
             resources.ApplyResources(this.lblAlmuerzoViernes, "lblAlmuerzoViernes");
             this.lblAlmuerzoViernes.Name = "lblAlmuerzoViernes";
             // 
             // lblMeriendaViernes
             // 
-            this.lblMeriendaViernes.BackColor = System.Drawing.SystemColors.Info;
+            this.lblMeriendaViernes.BackColor = System.Drawing.Color.LavenderBlush;
             resources.ApplyResources(this.lblMeriendaViernes, "lblMeriendaViernes");
             this.lblMeriendaViernes.Name = "lblMeriendaViernes";
             // 
             // btnExportarAPdf
             // 
+            this.btnExportarAPdf.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnExportarAPdf, "btnExportarAPdf");
             this.btnExportarAPdf.Name = "btnExportarAPdf";
-            this.btnExportarAPdf.UseVisualStyleBackColor = true;
+            this.btnExportarAPdf.UseVisualStyleBackColor = false;
             this.btnExportarAPdf.Click += new System.EventHandler(this.OnBtnExportarAPdfClick);
             // 
             // btnAtras
             // 
+            this.btnAtras.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightGray;
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LightGray;
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightGray;
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.LightGray;
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FitBuddy.WinForms.UI.Properties.Resources._1200px_PDF_file_icon_svg;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // Dieta
             // 
@@ -319,15 +332,15 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.label33);
-            this.Controls.Add(this.label34);
-            this.Controls.Add(this.label35);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Dieta";
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
             this.groupBox1.ResumeLayout(false);
@@ -335,13 +348,13 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -350,10 +363,6 @@
         private System.Windows.Forms.Label lblAlmuerzoLunes;
         private System.Windows.Forms.Label lblMeriendaLunes;
         private System.Windows.Forms.Label lblCenaLunes;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label lblCenaMartes;
@@ -377,5 +386,10 @@
         private System.Windows.Forms.Label lblMeriendaViernes;
         private System.Windows.Forms.Button btnExportarAPdf;
         private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

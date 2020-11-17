@@ -44,9 +44,14 @@
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.label3 = new System.Windows.Forms.Label();
             this.btnVerMás = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picAguja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -91,10 +96,11 @@
             // 
             // btnCerrar
             // 
+            this.btnCerrar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnCerrar, "btnCerrar");
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.OnBtnCerrarClick);
             // 
             // picAguja
@@ -129,16 +135,45 @@
             // 
             // btnVerMás
             // 
+            this.btnVerMás.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnVerMás, "btnVerMás");
             this.btnVerMás.Name = "btnVerMás";
-            this.btnVerMás.UseVisualStyleBackColor = true;
+            this.btnVerMás.UseVisualStyleBackColor = false;
             this.btnVerMás.Click += new System.EventHandler(this.OnBtnVerMásClick);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Brown;
+            this.panel1.Controls.Add(this.panel2);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Brown;
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Brown;
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Brown;
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
             // 
             // Estadísticas
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCerrar;
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnVerMás);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.splitter1);
@@ -159,6 +194,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picAguja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFondo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,5 +217,9 @@
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnVerMás;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }

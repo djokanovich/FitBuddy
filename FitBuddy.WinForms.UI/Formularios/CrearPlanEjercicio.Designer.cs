@@ -97,26 +97,26 @@
             // 
             // cmbDisponibilidadHoras
             // 
-            this.cmbDisponibilidadHoras.FormattingEnabled = true;
             resources.ApplyResources(this.cmbDisponibilidadHoras, "cmbDisponibilidadHoras");
+            this.cmbDisponibilidadHoras.FormattingEnabled = true;
             this.cmbDisponibilidadHoras.Name = "cmbDisponibilidadHoras";
             // 
             // cmbDisponibilidadDias
             // 
-            this.cmbDisponibilidadDias.FormattingEnabled = true;
             resources.ApplyResources(this.cmbDisponibilidadDias, "cmbDisponibilidadDias");
+            this.cmbDisponibilidadDias.FormattingEnabled = true;
             this.cmbDisponibilidadDias.Name = "cmbDisponibilidadDias";
             // 
             // cmbObjetivo
             // 
-            this.cmbObjetivo.FormattingEnabled = true;
             resources.ApplyResources(this.cmbObjetivo, "cmbObjetivo");
+            this.cmbObjetivo.FormattingEnabled = true;
             this.cmbObjetivo.Name = "cmbObjetivo";
             // 
             // cmbFrecuencia
             // 
-            this.cmbFrecuencia.FormattingEnabled = true;
             resources.ApplyResources(this.cmbFrecuencia, "cmbFrecuencia");
+            this.cmbFrecuencia.FormattingEnabled = true;
             this.cmbFrecuencia.Name = "cmbFrecuencia";
             // 
             // Label5

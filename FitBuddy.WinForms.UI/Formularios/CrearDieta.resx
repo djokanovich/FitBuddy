@@ -147,6 +147,9 @@
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="btnAtras.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
+  </data>
   <data name="btnAtras.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 512</value>
   </data>
@@ -173,6 +176,9 @@
   </data>
   <data name="&gt;&gt;btnAtras.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="btnEnviar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="btnEnviar.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 512</value>
@@ -204,6 +210,9 @@
   <data name="chkSoja.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkSoja.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkSoja.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 362</value>
   </data>
@@ -211,7 +220,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkSoja.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 29</value>
+    <value>91, 33</value>
   </data>
   <data name="chkSoja.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -234,6 +243,9 @@
   <data name="chkFrutasRojas.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkFrutasRojas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkFrutasRojas.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 310</value>
   </data>
@@ -241,7 +253,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkFrutasRojas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 29</value>
+    <value>179, 33</value>
   </data>
   <data name="chkFrutasRojas.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -264,6 +276,9 @@
   <data name="chkHojasVerdes.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkHojasVerdes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkHojasVerdes.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 262</value>
   </data>
@@ -271,7 +286,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkHojasVerdes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 29</value>
+    <value>186, 33</value>
   </data>
   <data name="chkHojasVerdes.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -294,6 +309,9 @@
   <data name="chkFructosa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkFructosa.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkFructosa.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 210</value>
   </data>
@@ -301,7 +319,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkFructosa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 29</value>
+    <value>149, 33</value>
   </data>
   <data name="chkFructosa.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -324,6 +342,9 @@
   <data name="chkLeche.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkLeche.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkLeche.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 413</value>
   </data>
@@ -331,7 +352,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkLeche.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 29</value>
+    <value>107, 33</value>
   </data>
   <data name="chkLeche.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -354,6 +375,9 @@
   <data name="chkMariscos.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkMariscos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkMariscos.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 362</value>
   </data>
@@ -361,7 +385,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkMariscos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 29</value>
+    <value>137, 33</value>
   </data>
   <data name="chkMariscos.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -384,6 +408,9 @@
   <data name="chkPescado.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkPescado.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkPescado.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 313</value>
   </data>
@@ -391,7 +418,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkPescado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 29</value>
+    <value>132, 33</value>
   </data>
   <data name="chkPescado.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -414,6 +441,9 @@
   <data name="chkCarnePollo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkCarnePollo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkCarnePollo.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 262</value>
   </data>
@@ -421,7 +451,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkCarnePollo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 29</value>
+    <value>198, 33</value>
   </data>
   <data name="chkCarnePollo.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -444,6 +474,9 @@
   <data name="chkTrigo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkTrigo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkTrigo.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 154</value>
   </data>
@@ -451,7 +484,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkTrigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>362, 29</value>
+    <value>393, 33</value>
   </data>
   <data name="chkTrigo.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -474,6 +507,9 @@
   <data name="chkQueso.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkQueso.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkQueso.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 106</value>
   </data>
@@ -481,7 +517,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkQueso.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 29</value>
+    <value>112, 33</value>
   </data>
   <data name="chkQueso.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -504,6 +540,9 @@
   <data name="chkFrutosSecos.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkFrutosSecos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkFrutosSecos.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 54</value>
   </data>
@@ -511,7 +550,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkFrutosSecos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 29</value>
+    <value>181, 33</value>
   </data>
   <data name="chkFrutosSecos.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -534,6 +573,9 @@
   <data name="chkCarneCerdo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkCarneCerdo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkCarneCerdo.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 206</value>
   </data>
@@ -541,7 +583,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkCarneCerdo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 29</value>
+    <value>211, 33</value>
   </data>
   <data name="chkCarneCerdo.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -564,6 +606,9 @@
   <data name="chkCarneVaca.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkCarneVaca.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkCarneVaca.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 154</value>
   </data>
@@ -571,7 +616,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkCarneVaca.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 29</value>
+    <value>200, 33</value>
   </data>
   <data name="chkCarneVaca.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -594,6 +639,9 @@
   <data name="chkTomate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkTomate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkTomate.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 106</value>
   </data>
@@ -601,7 +649,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkTomate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 29</value>
+    <value>126, 33</value>
   </data>
   <data name="chkTomate.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -624,6 +672,9 @@
   <data name="chkHuevo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkHuevo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="chkHuevo.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 54</value>
   </data>
@@ -631,7 +682,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="chkHuevo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 29</value>
+    <value>112, 33</value>
   </data>
   <data name="chkHuevo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>

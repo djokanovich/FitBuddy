@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAtras.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
+  </data>
   <data name="btnAtras.Location" type="System.Drawing.Point, System.Drawing">
     <value>1040, 789</value>
   </data>
@@ -201,6 +204,9 @@
   <data name="&gt;&gt;dtpFechaRegistro.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="bntLimpiar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
+  </data>
   <data name="bntLimpiar.Location" type="System.Drawing.Point, System.Drawing">
     <value>506, 670</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="&gt;&gt;bntLimpiar.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="btnGuardar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="btnGuardar.Location" type="System.Drawing.Point, System.Drawing">
     <value>840, 670</value>

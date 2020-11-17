@@ -381,6 +381,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Recursos\dieta.html" />
+    <None Include="Resources\1200px-PDF_file_icon.svg.png" />
     <None Include="Resources\Ilustração-Email-PNG-1024x1024.png" />
     <None Include="Resources\catering-clipart-meal-prep-1.png" />
     <None Include="Resources\387564.png" />

@@ -56,15 +56,17 @@
             // 
             // PictureBox1
             // 
+            this.PictureBox1.Image = global::FitBuddy.WinForms.UI.Properties.Resources.Fitbuddy;
             resources.ApplyResources(this.PictureBox1, "PictureBox1");
             this.PictureBox1.Name = "PictureBox1";
             this.PictureBox1.TabStop = false;
             // 
             // btnRegistrar
             // 
+            this.btnRegistrar.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnRegistrar, "btnRegistrar");
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.OnBtnRegistrarClick);
             // 
             // txtApellido
@@ -129,10 +131,11 @@
             // 
             // btnAtrás
             // 
+            this.btnAtrás.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAtrás.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnAtrás, "btnAtrás");
             this.btnAtrás.Name = "btnAtrás";
-            this.btnAtrás.UseVisualStyleBackColor = true;
+            this.btnAtrás.UseVisualStyleBackColor = false;
             this.btnAtrás.Click += new System.EventHandler(this.OnBtnAtrásClick);
             // 
             // RegistrarNuevoUsuario

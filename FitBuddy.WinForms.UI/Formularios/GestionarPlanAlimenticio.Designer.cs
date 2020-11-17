@@ -39,10 +39,11 @@
             // 
             // btnAtras
             // 
-            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnAtras, "btnAtras");
+            this.btnAtras.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // PictureBox1
@@ -55,15 +56,17 @@
             // btnCrearDieta
             // 
             resources.ApplyResources(this.btnCrearDieta, "btnCrearDieta");
+            this.btnCrearDieta.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnCrearDieta.Name = "btnCrearDieta";
-            this.btnCrearDieta.UseVisualStyleBackColor = true;
+            this.btnCrearDieta.UseVisualStyleBackColor = false;
             this.btnCrearDieta.Click += new System.EventHandler(this.OnBtnCrearDietaClick);
             // 
             // btnVerDieta
             // 
             resources.ApplyResources(this.btnVerDieta, "btnVerDieta");
+            this.btnVerDieta.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnVerDieta.Name = "btnVerDieta";
-            this.btnVerDieta.UseVisualStyleBackColor = true;
+            this.btnVerDieta.UseVisualStyleBackColor = false;
             this.btnVerDieta.Click += new System.EventHandler(this.OnBtnVerDietaClick);
             // 
             // lblWelcome

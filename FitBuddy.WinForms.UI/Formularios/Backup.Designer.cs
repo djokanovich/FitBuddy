@@ -38,9 +38,10 @@
             // 
             // btnRestaurar
             // 
+            this.btnRestaurar.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnRestaurar, "btnRestaurar");
             this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.UseVisualStyleBackColor = true;
+            this.btnRestaurar.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -50,17 +51,19 @@
             // 
             // btnCreateBackup
             // 
+            this.btnCreateBackup.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnCreateBackup, "btnCreateBackup");
             this.btnCreateBackup.Name = "btnCreateBackup";
-            this.btnCreateBackup.UseVisualStyleBackColor = true;
+            this.btnCreateBackup.UseVisualStyleBackColor = false;
             this.btnCreateBackup.Click += new System.EventHandler(this.OnBtnCrearBackupClick);
             // 
             // btnAtras
             // 
+            this.btnAtras.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // Backup

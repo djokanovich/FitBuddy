@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnRestaurar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.125pt</value>
+  </data>
   <data name="btnRestaurar.Location" type="System.Drawing.Point, System.Drawing">
     <value>1204, 548</value>
   </data>
@@ -174,6 +177,9 @@
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="btnCreateBackup.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.125pt</value>
+  </data>
   <data name="btnCreateBackup.Location" type="System.Drawing.Point, System.Drawing">
     <value>1042, 548</value>
   </data>
@@ -200,6 +206,9 @@
   </data>
   <data name="&gt;&gt;btnCreateBackup.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="btnAtras.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.125pt</value>
   </data>
   <data name="btnAtras.Location" type="System.Drawing.Point, System.Drawing">
     <value>1202, 606</value>

@@ -60,29 +60,33 @@
             // 
             // btnAtras
             // 
+            this.btnAtras.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // btnEnviar
             // 
+            this.btnEnviar.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnEnviar, "btnEnviar");
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.UseVisualStyleBackColor = false;
             // 
             // btnBorrar
             // 
+            this.btnBorrar.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnBorrar, "btnBorrar");
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.UseVisualStyleBackColor = false;
             // 
             // btnAgregar
             // 
+            this.btnAgregar.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnAgregar, "btnAgregar");
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             // 
             // Label3
             // 

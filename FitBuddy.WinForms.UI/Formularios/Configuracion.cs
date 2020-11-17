@@ -54,5 +54,10 @@ namespace FitBuddy.WinForms.UI.Formularios
             MessageBox.Show("Please restart the system");
             _formManager.Close(this);
         }
+
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

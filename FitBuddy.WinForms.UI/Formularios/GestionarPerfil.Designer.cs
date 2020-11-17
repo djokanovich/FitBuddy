@@ -70,10 +70,11 @@
             // 
             // btnAtras
             // 
+            this.btnAtras.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // Label15
@@ -88,16 +89,18 @@
             // 
             // bntLimpiar
             // 
+            this.bntLimpiar.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.bntLimpiar, "bntLimpiar");
             this.bntLimpiar.Name = "bntLimpiar";
-            this.bntLimpiar.UseVisualStyleBackColor = true;
+            this.bntLimpiar.UseVisualStyleBackColor = false;
             this.bntLimpiar.Click += new System.EventHandler(this.OnBtnLimpiarClick);
             // 
             // btnGuardar
             // 
+            this.btnGuardar.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnGuardar, "btnGuardar");
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.OnBtnGuardarClick);
             // 
             // GroupBox2

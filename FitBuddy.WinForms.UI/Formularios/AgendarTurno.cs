@@ -42,7 +42,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             smtpClient.UseDefaultCredentials = false;
             smtpClient.EnableSsl = true;
             smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-            smtpClient.Credentials = new NetworkCredential("fitbuddyturnos@gmail.com", "");
+            smtpClient.Credentials = new NetworkCredential("fitbuddyturnos@gmail.com", "Chester_40");
 
             var emailMedico = cmbMedico.SelectedValue.ToString();
             var nombreMedico = cmbMedico.Text;
@@ -57,10 +57,11 @@ namespace FitBuddy.WinForms.UI.Formularios
             message.ReplyToList.Add(replyTo);
 
             // set subject and encoding
-            message.Subject = "Test message";
+            var usuario = IdentityManager.UsuarioActual.Name;
+
+            message.Subject = $"Fitbuddy: Solicitud de nuevo turno con el paciente {usuario}";
             message.SubjectEncoding = Encoding.UTF8;
 
-            var usuario = IdentityManager.UsuarioActual.Name;
             // set body-message and encoding
             message.Body = $"<b>Estimado, el paciente {usuario} solicita un turno para el día {dtpFecha.Value:dd-MM-yyyy} a las {cmbFranjaHoraria.Text}.</b>.";
             message.BodyEncoding = Encoding.UTF8;

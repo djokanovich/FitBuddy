@@ -39,10 +39,11 @@
             // 
             // btnAtras
             // 
+            this.btnAtras.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // PictureBox1
@@ -54,16 +55,18 @@
             // 
             // btnCrearPlan
             // 
+            this.btnCrearPlan.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnCrearPlan, "btnCrearPlan");
             this.btnCrearPlan.Name = "btnCrearPlan";
-            this.btnCrearPlan.UseVisualStyleBackColor = true;
+            this.btnCrearPlan.UseVisualStyleBackColor = false;
             this.btnCrearPlan.Click += new System.EventHandler(this.OnBtnCrearPlanClick);
             // 
             // btnVerPlan
             // 
+            this.btnVerPlan.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.btnVerPlan, "btnVerPlan");
             this.btnVerPlan.Name = "btnVerPlan";
-            this.btnVerPlan.UseVisualStyleBackColor = true;
+            this.btnVerPlan.UseVisualStyleBackColor = false;
             this.btnVerPlan.Click += new System.EventHandler(this.OnBtnVerPlanClick);
             // 
             // lblWelcome

@@ -263,6 +263,9 @@
     <EmbeddedResource Include="Formularios\Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ContactarProfesional.en.resx">
+      <DependentUpon>ContactarProfesional.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CrearDieta.en.resx">
       <DependentUpon>CrearDieta.cs</DependentUpon>
     </EmbeddedResource>

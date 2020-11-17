@@ -117,51 +117,78 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnGestionarPlanEjercicio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="btnReclamosSugerencias.Text" xml:space="preserve">
+    <value>Customer Feedback</value>
+  </data>
   <data name="btnAgendarTurno.Text" xml:space="preserve">
-    <value>Schedule An Appointment</value>
+    <value>Make an Appointment</value>
   </data>
   <data name="btnConfiguración.Text" xml:space="preserve">
-    <value>Configuration</value>
+    <value>App Settings</value>
+  </data>
+  <data name="btnGestionarPerfil.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="btnReclamosSugerencias.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="btnAgendarTurno.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
   </data>
   <data name="btnCargaDiariaEjercicios.Text" xml:space="preserve">
-    <value>Daily Fitness Load</value>
+    <value>Record Activity</value>
+  </data>
+  <data name="btnCargaDiariaComidas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
   </data>
   <data name="btnGestionarPlanAlimenticio.Text" xml:space="preserve">
-    <value>Manage Meal Plan</value>
+    <value>Edit Meal Profile</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="btnCargaDiariaComidas.Text" xml:space="preserve">
-    <value>Daily Meal Load</value>
+  <data name="btnGestionarPlanAlimenticio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
   </data>
-  <data name="btnLogout.Text" xml:space="preserve">
-    <value>Log Out</value>
+  <data name="btnCargaDiariaComidas.Text" xml:space="preserve">
+    <value>Record a Meal</value>
+  </data>
+  <data name="btnEstadisticas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
   </data>
   <data name="lblWelcome.Text" xml:space="preserve">
     <value>Welcome</value>
   </data>
+  <data name="btnConfiguración.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="btnGestionarPlanEjercicio.Text" xml:space="preserve">
+    <value>Edit Fitness Profile</value>
+  </data>
   <data name="btnEstadisticas.Text" xml:space="preserve">
     <value>My Stats</value>
   </data>
-  <data name="btnGestionarPlanEjercicio.Text" xml:space="preserve">
-    <value>Manage Fitness Plan</value>
+  <data name="btnCargaDiariaEjercicios.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
   </data>
   <data name="btnContactarProfesional.Text" xml:space="preserve">
-    <value>Contact Professional</value>
+    <value>Contact a Doctor</value>
   </data>
-  <data name="btnReclamosSugerencias.Text" xml:space="preserve">
-    <value>Claims and Suggestions</value>
+  <data name="btnLogout.Text" xml:space="preserve">
+    <value>Log Out</value>
   </data>
   <data name="btnGestionarPerfil.Text" xml:space="preserve">
-    <value>Manage Profile</value>
+    <value>Edit User Profile</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAXYAAABaCAYAAACsR32cAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAA/0SURBVHhe
+        DAAACwwBP0AiyAAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAA/0SURBVHhe
         7Z3Bkda4FoUnBEIgBKpeArOYAAiBEAiBEAiBENi8/YRACGzengx45zRyY25fybqy5F9yn1N1apj+pSvL
         sj/bkiz/JUnS69J//vu/n5X+N2VZTk5dcl62jpIkSc9y4JazwC5JkrSCHLjlLLBL8+nnP//8vTn9SZJe
         vRy45SywrypA7zP87+R+lzb3UEj7Bv4C/4B/Gn+Fq2PNLByQn3lQXuSv8Cf4I6yL5OJCG3qA8yywryqA
@@ -232,33 +259,6 @@
         0QKMoy8ceWYMzYCRJEmaQQAyXz5qme7ItWKYV0CXJEmaVYA0lxbgYCrXWWcXjfXTG6kp+QP111//B2IK
         m8wQ3ha+AAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="btnGestionarPlanEjercicio.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="btnGestionarPerfil.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="btnReclamosSugerencias.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="btnAgendarTurno.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="btnCargaDiariaComidas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="btnGestionarPlanAlimenticio.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="btnEstadisticas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="btnConfiguración.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="btnCargaDiariaEjercicios.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
   </data>
   <data name="btnContactarProfesional.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>

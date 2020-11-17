@@ -118,139 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 13</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 17</value>
   </data>
-  <data name="lblFechaNacimiento.Text" xml:space="preserve">
-    <value>Date of birth</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Subject</value>
   </data>
-  <data name="radBtnMasculino.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 17</value>
+  <data name="metroButton1.Text" xml:space="preserve">
+    <value>Send</value>
   </data>
-  <data name="Label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 13</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Message</value>
   </data>
-  <data name="Label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 13</value>
+  <data name="metroButton2.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-  <data name="Label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 13</value>
-  </data>
-  <data name="lblEdad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 13</value>
-  </data>
-  <data name="btnAtras.Text" xml:space="preserve">
-    <value>Back</value>
-  </data>
-  <data name="txtCadera.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 20</value>
-  </data>
-  <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 13</value>
-  </data>
-  <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 13</value>
-  </data>
-  <data name="lnkInstrucciones.Text" xml:space="preserve">
-    <value>Instructions</value>
-  </data>
-  <data name="Label7.Text" xml:space="preserve">
-    <value>Thigh</value>
-  </data>
-  <data name="GroupBox1.Text" xml:space="preserve">
-    <value>General</value>
-  </data>
-  <data name="txtCintura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 20</value>
-  </data>
-  <data name="radBtnMasculino.Text" xml:space="preserve">
-    <value>Male</value>
-  </data>
-  <data name="Label3.Text" xml:space="preserve">
-    <value>Height</value>
-  </data>
-  <data name="txtAltura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 20</value>
-  </data>
-  <data name="Label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 216</value>
-  </data>
-  <data name="grpBoxSexo.Text" xml:space="preserve">
-    <value>Sex</value>
-  </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>Weight</value>
-  </data>
-  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 13</value>
-  </data>
-  <data name="GroupBox2.Text" xml:space="preserve">
-    <value>Measures</value>
-  </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 13</value>
-  </data>
-  <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 13</value>
-  </data>
-  <data name="Label15.Text" xml:space="preserve">
-    <value>Date</value>
-  </data>
-  <data name="lnkInstrucciones.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 13</value>
-  </data>
-  <data name="txtMuslo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 20</value>
-  </data>
-  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 13</value>
-  </data>
-  <data name="txtBrazo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 20</value>
-  </data>
-  <data name="dtpFechaNacimiento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 20</value>
-  </data>
-  <data name="radBtnFemenino.Text" xml:space="preserve">
-    <value>Female</value>
-  </data>
-  <data name="Label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 13</value>
-  </data>
-  <data name="radBtnFemenino.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 17</value>
-  </data>
-  <data name="txtPeso.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 20</value>
-  </data>
-  <data name="btnGuardar.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
-  </data>
-  <data name="lblWelcome.Text" xml:space="preserve">
-    <value>Welcome</value>
-  </data>
-  <data name="dtpFechaRegistro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 20</value>
-  </data>
-  <data name="Label8.Text" xml:space="preserve">
-    <value>Arm</value>
-  </data>
-  <data name="lblFechaNacimiento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 13</value>
-  </data>
-  <data name="Label6.Text" xml:space="preserve">
-    <value>Hip</value>
-  </data>
-  <data name="Label5.Text" xml:space="preserve">
-    <value>Waist</value>
-  </data>
-  <data name="bntLimpiar.Text" xml:space="preserve">
-    <value>Clear</value>
   </data>
 </root>

@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lnkOlvideContrasena.Text" xml:space="preserve">
+    <value>I forgot my password</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtUsername.Size" type="System.Drawing.Size, System.Drawing">
     <value>436, 20</value>
@@ -128,7 +131,7 @@
     <value>Password</value>
   </data>
   <data name="lnkOlvideContrasena.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 13</value>
+    <value>104, 13</value>
   </data>
   <data name="LogoPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -206,7 +209,7 @@
 </value>
   </data>
   <data name="btnAceptar.Text" xml:space="preserve">
-    <value>Log In</value>
+    <value>Log in</value>
   </data>
   <data name="btnAceptar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
@@ -221,34 +224,31 @@
     <value>About this app</value>
   </data>
   <data name="lnkRegistrarUsuario.Text" xml:space="preserve">
-    <value>Sign In</value>
+    <value>Sign up</value>
   </data>
-  <data name="PasswordLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt</value>
+  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 55</value>
   </data>
   <data name="UsernameLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="lnkRegistrarUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
+    <value>43, 13</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="LogoPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="lnkOlvideContrasena.Text" xml:space="preserve">
-    <value>Forgot my password</value>
+  <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 55</value>
+  </data>
+  <data name="PasswordLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
   </data>
   <data name="UsernameLabel.Text" xml:space="preserve">
-    <value>Nickname</value>
+    <value>Username</value>
   </data>
   <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 55</value>
-  </data>
-  <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 55</value>
   </data>
 </root>

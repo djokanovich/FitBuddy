@@ -152,7 +152,7 @@
     <value>104, 17</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 19</value>
+    <value>164, 19</value>
   </data>
   <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
@@ -166,7 +166,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOAQMAAABCf2vmAAAABGdBTUEAALGPC/xhBQAAAAZQTFRF////
-        AAAAVcLTfgAAAAlwSFlzAAAOwAAADsABataJCQAAAflJREFUaN7tmU1uxSAMhC1xAI7E1TlSDoBEmRmT
+        AAAAVcLTfgAAAAlwSFlzAAAOvgAADr4B6kKxwAAAAflJREFUaN7tmU1uxSAMhC1xAI7E1TlSDoBEmRmT
         n2bZbkaKFeW9hq8LB3ts8+Kzzz77F5uwjuto84gRUWaPiqfDE8Fn7evO9abvo/ZcckTqXA/WVQ6+A7gO
         cL0Ga6QcbSHL77WHCxn+yApDfZfr3kggMMtCcO+gkGrv2LVBJB6Kzdv11hcbJA2a0eho006+zQVZz+gf
         73VSESeksd4E3gpZK0XFiuHJnGv4j6OFJxLUDNjSQvpaFKpXqrkhVHcW4VYoiqhXR7unmheCGsXADAap
@@ -179,7 +179,7 @@
 </value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Body Fat Index (IGC)</value>
+    <value>Body Fat Index (BFI)</value>
   </data>
   <data name="lblImc.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 32</value>

@@ -149,10 +149,10 @@
     <value>91, 13</value>
   </data>
   <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>57, 13</value>
   </data>
   <data name="btnRegistrar.Text" xml:space="preserve">
-    <value>Back</value>
+    <value>Sign up</value>
   </data>
   <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>376, 20</value>
@@ -176,10 +176,10 @@
     <value>About this app</value>
   </data>
   <data name="Label5.Text" xml:space="preserve">
-    <value>Name</value>
+    <value>First Name</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
-    <value>Nickname</value>
+    <value>Username</value>
   </data>
   <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
@@ -199,7 +199,7 @@
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQcAAAEHCAYAAACjq4OnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAbrVJREFUeF7tvQWYHEeS9+3n+d6729vb9d3u8d57d3v07t3twZJ3zcwMMjPba5Zl
+        vQAADr0BR/uQrQAAbrVJREFUeF7tvQWYHEeS9+3n+d6729vb9d3u8d57d3v07t3twZJ3zcwMMjPba5Zl
         ZmYmGWRZlmVGgcXMzMzM0kx3T0/3THfHF7+ozlFNq4ara2bkSvuvmemuyszKyvhnRGRk5l4y6i+lMDJG
         KBj1F1IY82MpDPyJ5Hv+l1TfeKqkLz5f0hdeIOmLFBfHCAPVF50n+fPOlGU3dpUPX3hfzhq5QQ6bWq3I
         yOFT0nJEjFCwV374X0h+WIxQQFuO/LHk+v9Esj1+LsnrT5GEduTEBedL4kKgv8doM5IXnCvZc7rI4utv
@@ -673,5 +673,8 @@
         MTnEiBEjEDE5xIgRIxAxOcSIESMQMTnEiBEjEDE5xIgRIxAxOcSIESMQMTnEiBEjEDE5xIgRIxAxOcSI
         ESMQMTnEiBEjEDE5xIgRIxAxOcSIESMQMTnEiBEjAJXy/wMiT76CwZRe1QAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="btnAtrás.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
 </root>

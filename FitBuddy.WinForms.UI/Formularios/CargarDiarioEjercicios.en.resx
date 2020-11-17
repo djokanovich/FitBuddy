@@ -122,7 +122,7 @@
     <value>47, 13</value>
   </data>
   <data name="Label4.Text" xml:space="preserve">
-    <value>Time(min)</value>
+    <value>Time (min)</value>
   </data>
   <data name="btnBorrar.Text" xml:space="preserve">
     <value>Delete</value>
@@ -146,7 +146,7 @@
     <value>396, 20</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 13</value>
+    <value>60, 13</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
     <value>Exercise</value>
@@ -155,7 +155,7 @@
     <value>0, 13</value>
   </data>
   <data name="Label2.Text" xml:space="preserve">
-    <value>Repeat</value>
+    <value>Repetitions</value>
   </data>
   <data name="Label3.Text" xml:space="preserve">
     <value>Date</value>
@@ -169,7 +169,7 @@
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        1QAADdUBPdZY8QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAGb2SURBVHhe7d13
+        0wAADdMBvdUcagAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAGb2SURBVHhe7d13
         lBzXvR94C6JwFCiKXtEr2uaTxcOVZe16LVnat9axdGRKR8+SvXv4tJK42uciUmGQc855ZpBzZABBgCRA
         gggkQEQSgRE5iSRIIgciA5PzTNfd++swrK75zkxPT1dX6O8fn0PiToequlX3e7vCvf9MKUVEfmeY39Ae
         0X6i/VZ7UuutjdPmaau1DdpWbZe2XzugHdM+1s5ql7WbWrFWqTXEyf9LmfxNXiOvlffIe+Uz5LPkM+Wz
@@ -613,6 +613,6 @@
 </value>
   </data>
   <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
+    <value>55, 13</value>
   </data>
 </root>

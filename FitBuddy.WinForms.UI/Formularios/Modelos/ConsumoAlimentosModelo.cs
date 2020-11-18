@@ -1,6 +1,6 @@
-﻿namespace FitBuddy.WinForms.UI.Formularios
+﻿namespace FitBuddy.WinForms.UI.Formularios.Modelos
 {
-    public class ConsumoAlimentosData
+    public class ConsumoAlimentosModelo
     {
         public string Comida { get; set; }
         public string Porción { get; set; }

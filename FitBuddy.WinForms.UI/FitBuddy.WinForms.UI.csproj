@@ -149,7 +149,7 @@
     <Compile Include="Formularios\Configuracion.Designer.cs">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ConsumoAlimentosData.cs" />
+    <Compile Include="Formularios\Modelos\ConsumoAlimentosModelo.cs" />
     <Compile Include="Formularios\CrearDieta.cs">
       <SubType>Form</SubType>
     </Compile>

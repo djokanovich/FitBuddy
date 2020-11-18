@@ -1,6 +1,7 @@
 ﻿using FitBuddy.Business.Facade;
 using FitBuddy.Business.Modelos;
 using FitBuddy.WinForms.UI.ExtensionMethods;
+using FitBuddy.WinForms.UI.Formularios.Modelos;
 using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 using System;
@@ -14,7 +15,7 @@ namespace FitBuddy.WinForms.UI.Formularios
     {
         private readonly IFormManager _formManager;
         private readonly ICargarAlimentoBusinessLogic _cargarAlimentoBusinessLogic;
-        private List<ConsumoAlimentosData> _consumoAlimentos = new List<ConsumoAlimentosData>();
+        private List<ConsumoAlimentosModelo> _consumoAlimentos = new List<ConsumoAlimentosModelo>();
         private BindingSource _bindingSource;
         private IEnumerable<CargarAlimentoModelo> _tablaAlimentosCalorías;
 
@@ -55,7 +56,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             if (!CamposSonVálidos())
                 return;
 
-            var consumo = new ConsumoAlimentosData
+            var consumo = new ConsumoAlimentosModelo
             {
                 Comida = txtComida.Text,
                 Porción = txtPorción.Text,

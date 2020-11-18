@@ -1,10 +1,6 @@
 ﻿using Autofac;
 using Common.Bitacora;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
@@ -31,8 +27,17 @@ namespace FitBuddy.WinForms.UI.Formularios
         public FormManager Show<F>() where F : Form
         {
             _bitacora.Debug($"Abriendo el formulario de {typeof(F).Name}");
-            var form = Container.Resolve<F>();
-            form.Show();
+
+            if (Application.OpenForms.OfType<F>().Count() == 1)
+            {
+                var form = Application.OpenForms.OfType<F>().Single();
+                form.Focus();
+            }
+            else
+            {
+                var form = Container.Resolve<F>();
+                form.Show();
+            }
 
             return this;
         }
@@ -46,6 +51,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         public void Close(Form form)
         {
             form.Close();
+            form.Dispose();
         }
     }
 }

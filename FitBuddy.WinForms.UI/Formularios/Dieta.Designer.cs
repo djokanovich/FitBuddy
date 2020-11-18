@@ -29,42 +29,42 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dieta));
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.lblDesayunoLunes = new System.Windows.Forms.Label();
-            this.lblAlmuerzoLunes = new System.Windows.Forms.Label();
-            this.lblMeriendaLunes = new System.Windows.Forms.Label();
-            this.lblCenaLunes = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
+            this.label7 = new MetroFramework.Controls.MetroLabel();
+            this.label8 = new MetroFramework.Controls.MetroLabel();
+            this.label9 = new MetroFramework.Controls.MetroLabel();
+            this.label10 = new MetroFramework.Controls.MetroLabel();
+            this.label11 = new MetroFramework.Controls.MetroLabel();
+            this.lblDesayunoLunes = new MetroFramework.Controls.MetroLabel();
+            this.lblAlmuerzoLunes = new MetroFramework.Controls.MetroLabel();
+            this.lblMeriendaLunes = new MetroFramework.Controls.MetroLabel();
+            this.lblCenaLunes = new MetroFramework.Controls.MetroLabel();
+            this.label32 = new MetroFramework.Controls.MetroLabel();
+            this.label33 = new MetroFramework.Controls.MetroLabel();
+            this.label34 = new MetroFramework.Controls.MetroLabel();
+            this.label35 = new MetroFramework.Controls.MetroLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblCenaMartes = new System.Windows.Forms.Label();
-            this.lblDesayunoMartes = new System.Windows.Forms.Label();
-            this.lblAlmuerzoMartes = new System.Windows.Forms.Label();
-            this.lblMeriendaMartes = new System.Windows.Forms.Label();
+            this.lblCenaMartes = new MetroFramework.Controls.MetroLabel();
+            this.lblDesayunoMartes = new MetroFramework.Controls.MetroLabel();
+            this.lblAlmuerzoMartes = new MetroFramework.Controls.MetroLabel();
+            this.lblMeriendaMartes = new MetroFramework.Controls.MetroLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblCenaMiercoles = new System.Windows.Forms.Label();
-            this.lblDesayunoMiercoles = new System.Windows.Forms.Label();
-            this.lblAlmuerzoMiercoles = new System.Windows.Forms.Label();
-            this.lblMeriendaMiercoles = new System.Windows.Forms.Label();
+            this.lblCenaMiercoles = new MetroFramework.Controls.MetroLabel();
+            this.lblDesayunoMiercoles = new MetroFramework.Controls.MetroLabel();
+            this.lblAlmuerzoMiercoles = new MetroFramework.Controls.MetroLabel();
+            this.lblMeriendaMiercoles = new MetroFramework.Controls.MetroLabel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.lblCenaJueves = new System.Windows.Forms.Label();
-            this.lblDesayunoJueves = new System.Windows.Forms.Label();
-            this.lblAlmuerzoJueves = new System.Windows.Forms.Label();
-            this.lblMeriendaJueves = new System.Windows.Forms.Label();
+            this.lblCenaJueves = new MetroFramework.Controls.MetroLabel();
+            this.lblDesayunoJueves = new MetroFramework.Controls.MetroLabel();
+            this.lblAlmuerzoJueves = new MetroFramework.Controls.MetroLabel();
+            this.lblMeriendaJueves = new MetroFramework.Controls.MetroLabel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.lblCenaViernes = new System.Windows.Forms.Label();
-            this.lblDesayunoViernes = new System.Windows.Forms.Label();
-            this.lblAlmuerzoViernes = new System.Windows.Forms.Label();
-            this.lblMeriendaViernes = new System.Windows.Forms.Label();
-            this.btnExportarAPdf = new System.Windows.Forms.Button();
-            this.btnAtras = new System.Windows.Forms.Button();
+            this.lblCenaViernes = new MetroFramework.Controls.MetroLabel();
+            this.lblDesayunoViernes = new MetroFramework.Controls.MetroLabel();
+            this.lblAlmuerzoViernes = new MetroFramework.Controls.MetroLabel();
+            this.lblMeriendaViernes = new MetroFramework.Controls.MetroLabel();
+            this.btnExportarAPdf = new MetroFramework.Controls.MetroButton();
+            this.btnAtras = new MetroFramework.Controls.MetroButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -294,17 +294,20 @@
             // 
             // btnExportarAPdf
             // 
+            this.btnExportarAPdf.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnExportarAPdf.Highlight = true;
             resources.ApplyResources(this.btnExportarAPdf, "btnExportarAPdf");
             this.btnExportarAPdf.Name = "btnExportarAPdf";
-            this.btnExportarAPdf.UseVisualStyleBackColor = true;
+            this.btnExportarAPdf.UseSelectable = true;
             this.btnExportarAPdf.Click += new System.EventHandler(this.OnBtnExportarAPdfClick);
             // 
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnAtras.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseSelectable = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // Dieta
@@ -341,41 +344,41 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label lblDesayunoLunes;
-        private System.Windows.Forms.Label lblAlmuerzoLunes;
-        private System.Windows.Forms.Label lblMeriendaLunes;
-        private System.Windows.Forms.Label lblCenaLunes;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
+        private MetroFramework.Controls.MetroLabel label7;
+        private MetroFramework.Controls.MetroLabel label8;
+        private MetroFramework.Controls.MetroLabel label9;
+        private MetroFramework.Controls.MetroLabel label10;
+        private MetroFramework.Controls.MetroLabel label11;
+        private MetroFramework.Controls.MetroLabel lblDesayunoLunes;
+        private MetroFramework.Controls.MetroLabel lblAlmuerzoLunes;
+        private MetroFramework.Controls.MetroLabel lblMeriendaLunes;
+        private MetroFramework.Controls.MetroLabel lblCenaLunes;
+        private MetroFramework.Controls.MetroLabel label32;
+        private MetroFramework.Controls.MetroLabel label33;
+        private MetroFramework.Controls.MetroLabel label34;
+        private MetroFramework.Controls.MetroLabel label35;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label lblCenaMartes;
-        private System.Windows.Forms.Label lblDesayunoMartes;
-        private System.Windows.Forms.Label lblAlmuerzoMartes;
-        private System.Windows.Forms.Label lblMeriendaMartes;
+        private MetroFramework.Controls.MetroLabel lblCenaMartes;
+        private MetroFramework.Controls.MetroLabel lblDesayunoMartes;
+        private MetroFramework.Controls.MetroLabel lblAlmuerzoMartes;
+        private MetroFramework.Controls.MetroLabel lblMeriendaMartes;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label lblCenaMiercoles;
-        private System.Windows.Forms.Label lblDesayunoMiercoles;
-        private System.Windows.Forms.Label lblAlmuerzoMiercoles;
-        private System.Windows.Forms.Label lblMeriendaMiercoles;
+        private MetroFramework.Controls.MetroLabel lblCenaMiercoles;
+        private MetroFramework.Controls.MetroLabel lblDesayunoMiercoles;
+        private MetroFramework.Controls.MetroLabel lblAlmuerzoMiercoles;
+        private MetroFramework.Controls.MetroLabel lblMeriendaMiercoles;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label lblCenaJueves;
-        private System.Windows.Forms.Label lblDesayunoJueves;
-        private System.Windows.Forms.Label lblAlmuerzoJueves;
-        private System.Windows.Forms.Label lblMeriendaJueves;
+        private MetroFramework.Controls.MetroLabel lblCenaJueves;
+        private MetroFramework.Controls.MetroLabel lblDesayunoJueves;
+        private MetroFramework.Controls.MetroLabel lblAlmuerzoJueves;
+        private MetroFramework.Controls.MetroLabel lblMeriendaJueves;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label lblCenaViernes;
-        private System.Windows.Forms.Label lblDesayunoViernes;
-        private System.Windows.Forms.Label lblAlmuerzoViernes;
-        private System.Windows.Forms.Label lblMeriendaViernes;
-        private System.Windows.Forms.Button btnExportarAPdf;
-        private System.Windows.Forms.Button btnAtras;
+        private MetroFramework.Controls.MetroLabel lblCenaViernes;
+        private MetroFramework.Controls.MetroLabel lblDesayunoViernes;
+        private MetroFramework.Controls.MetroLabel lblAlmuerzoViernes;
+        private MetroFramework.Controls.MetroLabel lblMeriendaViernes;
+        private MetroFramework.Controls.MetroButton btnExportarAPdf;
+        private MetroFramework.Controls.MetroButton btnAtras;
     }
 }

@@ -1,4 +1,5 @@
-﻿using FitBuddy.WinForms.UI.Security;
+﻿using FitBuddy.WinForms.UI.ExtensionMethods;
+using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 using System;
 
@@ -11,7 +12,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         public GestionarPlanAlimenticio(IFormManager formManager)
         {
             InitializeComponent();
-            lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
+            lblWelcome.FormatearControl(IdentityManager.UsuarioActual.Username);
             _formManager = formManager;
         }
 

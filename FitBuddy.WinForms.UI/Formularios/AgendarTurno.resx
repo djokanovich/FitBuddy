@@ -119,14 +119,10 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnAtras.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1096, 688</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAtras.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>527, 354</value>
   </data>
   <data name="btnAtras.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 44</value>
+    <value>120, 30</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnAtras.TabIndex" type="System.Int32, mscorlib">
@@ -139,7 +135,7 @@
     <value>btnAtras</value>
   </data>
   <data name="&gt;&gt;btnAtras.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;btnAtras.Parent" xml:space="preserve">
     <value>$this</value>
@@ -148,13 +144,10 @@
     <value>1</value>
   </data>
   <data name="btnEnviar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 500</value>
-  </data>
-  <data name="btnEnviar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>401, 354</value>
   </data>
   <data name="btnEnviar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>438, 44</value>
+    <value>120, 30</value>
   </data>
   <data name="btnEnviar.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -166,7 +159,7 @@
     <value>btnEnviar</value>
   </data>
   <data name="&gt;&gt;btnEnviar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;btnEnviar.Parent" xml:space="preserve">
     <value>$this</value>
@@ -175,13 +168,10 @@
     <value>2</value>
   </data>
   <data name="cmbMedico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 290</value>
-  </data>
-  <data name="cmbMedico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>404, 71</value>
   </data>
   <data name="cmbMedico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 33</value>
+    <value>219, 21</value>
   </data>
   <data name="cmbMedico.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -199,13 +189,10 @@
     <value>3</value>
   </data>
   <data name="cmbFranjaHoraria.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 408</value>
-  </data>
-  <data name="cmbFranjaHoraria.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>404, 155</value>
   </data>
   <data name="cmbFranjaHoraria.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 33</value>
+    <value>219, 21</value>
   </data>
   <data name="cmbFranjaHoraria.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -226,13 +213,10 @@
     <value>True</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>616, 413</value>
-  </data>
-  <data name="Label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
+    <value>281, 155</value>
   </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 25</value>
+    <value>93, 19</value>
   </data>
   <data name="Label3.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -244,7 +228,7 @@
     <value>Label3</value>
   </data>
   <data name="&gt;&gt;Label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
     <value>$this</value>
@@ -253,13 +237,10 @@
     <value>5</value>
   </data>
   <data name="dtpFecha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 352</value>
-  </data>
-  <data name="dtpFecha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>404, 113</value>
   </data>
   <data name="dtpFecha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 31</value>
+    <value>219, 20</value>
   </data>
   <data name="dtpFecha.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -280,13 +261,10 @@
     <value>True</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>648, 361</value>
-  </data>
-  <data name="Label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
+    <value>309, 113</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 25</value>
+    <value>65, 19</value>
   </data>
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -298,7 +276,7 @@
     <value>Label2</value>
   </data>
   <data name="&gt;&gt;Label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -310,13 +288,10 @@
     <value>True</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>620, 298</value>
-  </data>
-  <data name="Label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
+    <value>284, 71</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 25</value>
+    <value>90, 19</value>
   </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -328,7 +303,7 @@
     <value>Label1</value>
   </data>
   <data name="&gt;&gt;Label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -336,6 +311,7 @@
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1268,13 +1244,10 @@
 </value>
   </data>
   <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 136</value>
-  </data>
-  <data name="PictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>69, 71</value>
   </data>
   <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 547</value>
+    <value>192, 284</value>
   </data>
   <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -1298,22 +1271,25 @@
     <value>True</value>
   </data>
   <data name="lblWelcome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1090, 46</value>
+    <value>554, 22</value>
   </data>
   <data name="lblWelcome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 25</value>
+    <value>95, 19</value>
   </data>
   <data name="lblWelcome.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
+  </data>
+  <data name="lblWelcome.Text" xml:space="preserve">
+    <value>Bienvenido, {0}</value>
   </data>
   <data name="&gt;&gt;lblWelcome.Name" xml:space="preserve">
     <value>lblWelcome</value>
   </data>
   <data name="&gt;&gt;lblWelcome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;lblWelcome.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1325,16 +1301,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>12, 25</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1340, 783</value>
+    <value>670, 407</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>40, 115, 40, 38</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Agendar Turno</value>

@@ -29,40 +29,40 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionarPerfil));
-            this.btnAtras = new System.Windows.Forms.Button();
-            this.Label15 = new System.Windows.Forms.Label();
+            this.btnAtras = new MetroFramework.Controls.MetroButton();
+            this.Label15 = new MetroFramework.Controls.MetroLabel();
             this.dtpFechaRegistro = new System.Windows.Forms.DateTimePicker();
-            this.bntLimpiar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.bntLimpiar = new MetroFramework.Controls.MetroButton();
+            this.btnGuardar = new MetroFramework.Controls.MetroButton();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.label4 = new MetroFramework.Controls.MetroLabel();
+            this.label13 = new MetroFramework.Controls.MetroLabel();
             this.txtBrazo = new System.Windows.Forms.MaskedTextBox();
             this.txtMuslo = new System.Windows.Forms.MaskedTextBox();
             this.txtCadera = new System.Windows.Forms.MaskedTextBox();
             this.txtCintura = new System.Windows.Forms.MaskedTextBox();
-            this.Label12 = new System.Windows.Forms.Label();
-            this.Label11 = new System.Windows.Forms.Label();
+            this.Label12 = new MetroFramework.Controls.MetroLabel();
+            this.Label11 = new MetroFramework.Controls.MetroLabel();
             this.lnkInstrucciones = new System.Windows.Forms.LinkLabel();
-            this.Label5 = new System.Windows.Forms.Label();
-            this.Label6 = new System.Windows.Forms.Label();
-            this.Label8 = new System.Windows.Forms.Label();
-            this.Label7 = new System.Windows.Forms.Label();
+            this.Label5 = new MetroFramework.Controls.MetroLabel();
+            this.Label6 = new MetroFramework.Controls.MetroLabel();
+            this.Label8 = new MetroFramework.Controls.MetroLabel();
+            this.Label7 = new MetroFramework.Controls.MetroLabel();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblEdad = new System.Windows.Forms.Label();
-            this.lblFechaNacimiento = new System.Windows.Forms.Label();
+            this.lblEdad = new MetroFramework.Controls.MetroLabel();
+            this.lblFechaNacimiento = new MetroFramework.Controls.MetroLabel();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.txtAltura = new System.Windows.Forms.MaskedTextBox();
             this.txtPeso = new System.Windows.Forms.MaskedTextBox();
             this.grpBoxSexo = new System.Windows.Forms.GroupBox();
-            this.radBtnFemenino = new System.Windows.Forms.RadioButton();
-            this.radBtnMasculino = new System.Windows.Forms.RadioButton();
-            this.Label10 = new System.Windows.Forms.Label();
-            this.Label9 = new System.Windows.Forms.Label();
-            this.Label2 = new System.Windows.Forms.Label();
-            this.Label3 = new System.Windows.Forms.Label();
-            this.lblWelcome = new System.Windows.Forms.Label();
-            this.lblRegistroAnterior = new System.Windows.Forms.Label();
+            this.radBtnFemenino = new MetroFramework.Controls.MetroRadioButton();
+            this.radBtnMasculino = new MetroFramework.Controls.MetroRadioButton();
+            this.Label10 = new MetroFramework.Controls.MetroLabel();
+            this.Label9 = new MetroFramework.Controls.MetroLabel();
+            this.Label2 = new MetroFramework.Controls.MetroLabel();
+            this.Label3 = new MetroFramework.Controls.MetroLabel();
+            this.lblWelcome = new MetroFramework.Controls.MetroLabel();
+            this.lblRegistroAnterior = new MetroFramework.Controls.MetroLabel();
             this.GroupBox2.SuspendLayout();
             this.GroupBox1.SuspendLayout();
             this.grpBoxSexo.SuspendLayout();
@@ -71,9 +71,10 @@
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnAtras.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseSelectable = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // Label15
@@ -88,16 +89,19 @@
             // 
             // bntLimpiar
             // 
+            this.bntLimpiar.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.bntLimpiar, "bntLimpiar");
             this.bntLimpiar.Name = "bntLimpiar";
-            this.bntLimpiar.UseVisualStyleBackColor = true;
+            this.bntLimpiar.UseSelectable = true;
             this.bntLimpiar.Click += new System.EventHandler(this.OnBtnLimpiarClick);
             // 
             // btnGuardar
             // 
+            this.btnGuardar.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnGuardar.Highlight = true;
             resources.ApplyResources(this.btnGuardar, "btnGuardar");
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseSelectable = true;
             this.btnGuardar.Click += new System.EventHandler(this.OnBtnGuardarClick);
             // 
             // GroupBox2
@@ -252,14 +256,14 @@
             resources.ApplyResources(this.radBtnFemenino, "radBtnFemenino");
             this.radBtnFemenino.Name = "radBtnFemenino";
             this.radBtnFemenino.TabStop = true;
-            this.radBtnFemenino.UseVisualStyleBackColor = true;
+            this.radBtnFemenino.UseSelectable = true;
             // 
             // radBtnMasculino
             // 
             resources.ApplyResources(this.radBtnMasculino, "radBtnMasculino");
             this.radBtnMasculino.Name = "radBtnMasculino";
             this.radBtnMasculino.TabStop = true;
-            this.radBtnMasculino.UseVisualStyleBackColor = true;
+            this.radBtnMasculino.UseSelectable = true;
             // 
             // Label10
             // 
@@ -290,6 +294,7 @@
             // 
             resources.ApplyResources(this.lblRegistroAnterior, "lblRegistroAnterior");
             this.lblRegistroAnterior.Name = "lblRegistroAnterior";
+            this.lblRegistroAnterior.WrapToLine = true;
             // 
             // GestionarPerfil
             // 
@@ -320,39 +325,39 @@
 
         #endregion
 
-        internal System.Windows.Forms.Button btnAtras;
-        internal System.Windows.Forms.Label Label15;
+        internal MetroFramework.Controls.MetroButton btnAtras;
+        internal MetroFramework.Controls.MetroLabel Label15;
         internal System.Windows.Forms.DateTimePicker dtpFechaRegistro;
-        internal System.Windows.Forms.Button bntLimpiar;
-        internal System.Windows.Forms.Button btnGuardar;
+        internal MetroFramework.Controls.MetroButton bntLimpiar;
+        internal MetroFramework.Controls.MetroButton btnGuardar;
         internal System.Windows.Forms.GroupBox GroupBox2;
-        internal System.Windows.Forms.Label Label12;
-        internal System.Windows.Forms.Label Label11;
+        internal MetroFramework.Controls.MetroLabel Label12;
+        internal MetroFramework.Controls.MetroLabel Label11;
         internal System.Windows.Forms.LinkLabel lnkInstrucciones;
-        internal System.Windows.Forms.Label Label5;
-        internal System.Windows.Forms.Label Label6;
-        internal System.Windows.Forms.Label Label8;
-        internal System.Windows.Forms.Label Label7;
+        internal MetroFramework.Controls.MetroLabel Label5;
+        internal MetroFramework.Controls.MetroLabel Label6;
+        internal MetroFramework.Controls.MetroLabel Label8;
+        internal MetroFramework.Controls.MetroLabel Label7;
         internal System.Windows.Forms.GroupBox GroupBox1;
-        internal System.Windows.Forms.Label Label10;
-        internal System.Windows.Forms.Label Label9;
-        internal System.Windows.Forms.Label Label2;
-        internal System.Windows.Forms.Label Label3;
-        internal System.Windows.Forms.RadioButton radBtnFemenino;
-        internal System.Windows.Forms.RadioButton radBtnMasculino;
-        private System.Windows.Forms.Label lblWelcome;
+        internal MetroFramework.Controls.MetroLabel Label10;
+        internal MetroFramework.Controls.MetroLabel Label9;
+        internal MetroFramework.Controls.MetroLabel Label2;
+        internal MetroFramework.Controls.MetroLabel Label3;
+        internal MetroFramework.Controls.MetroRadioButton radBtnFemenino;
+        internal MetroFramework.Controls.MetroRadioButton radBtnMasculino;
+        private MetroFramework.Controls.MetroLabel lblWelcome;
         private System.Windows.Forms.GroupBox grpBoxSexo;
         private System.Windows.Forms.MaskedTextBox txtPeso;
-        internal System.Windows.Forms.Label label4;
-        internal System.Windows.Forms.Label label13;
+        internal MetroFramework.Controls.MetroLabel label4;
+        internal MetroFramework.Controls.MetroLabel label13;
         private System.Windows.Forms.MaskedTextBox txtBrazo;
         private System.Windows.Forms.MaskedTextBox txtMuslo;
         private System.Windows.Forms.MaskedTextBox txtCadera;
         private System.Windows.Forms.MaskedTextBox txtCintura;
         private System.Windows.Forms.MaskedTextBox txtAltura;
-        private System.Windows.Forms.Label lblRegistroAnterior;
-        internal System.Windows.Forms.Label lblEdad;
-        internal System.Windows.Forms.Label lblFechaNacimiento;
+        private MetroFramework.Controls.MetroLabel lblRegistroAnterior;
+        internal MetroFramework.Controls.MetroLabel lblEdad;
+        internal MetroFramework.Controls.MetroLabel lblFechaNacimiento;
         internal System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
     }
 }

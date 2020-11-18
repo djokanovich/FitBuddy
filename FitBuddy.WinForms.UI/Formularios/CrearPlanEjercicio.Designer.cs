@@ -31,25 +31,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearPlanEjercicio));
-            this.Label6 = new System.Windows.Forms.Label();
-            this.chkArtrosis = new System.Windows.Forms.CheckBox();
-            this.chkArticulaciones = new System.Windows.Forms.CheckBox();
-            this.chkEscoliosis = new System.Windows.Forms.CheckBox();
-            this.chkRodillas = new System.Windows.Forms.CheckBox();
-            this.chkRespiratorio = new System.Windows.Forms.CheckBox();
-            this.chkInfarto = new System.Windows.Forms.CheckBox();
+            this.Label6 = new MetroFramework.Controls.MetroLabel();
+            this.chkArtrosis = new MetroFramework.Controls.MetroCheckBox();
+            this.chkArticulaciones = new MetroFramework.Controls.MetroCheckBox();
+            this.chkEscoliosis = new MetroFramework.Controls.MetroCheckBox();
+            this.chkRodillas = new MetroFramework.Controls.MetroCheckBox();
+            this.chkRespiratorio = new MetroFramework.Controls.MetroCheckBox();
+            this.chkInfarto = new MetroFramework.Controls.MetroCheckBox();
             this.cmbDisponibilidadHoras = new System.Windows.Forms.ComboBox();
             this.cmbDisponibilidadDias = new System.Windows.Forms.ComboBox();
             this.cmbObjetivo = new System.Windows.Forms.ComboBox();
             this.cmbFrecuencia = new System.Windows.Forms.ComboBox();
-            this.Label5 = new System.Windows.Forms.Label();
-            this.Label4 = new System.Windows.Forms.Label();
-            this.Label3 = new System.Windows.Forms.Label();
-            this.Label2 = new System.Windows.Forms.Label();
-            this.Label1 = new System.Windows.Forms.Label();
-            this.lblWelcome = new System.Windows.Forms.Label();
-            this.chkLimpiar = new System.Windows.Forms.Button();
-            this.btnEnviar = new System.Windows.Forms.Button();
+            this.Label5 = new MetroFramework.Controls.MetroLabel();
+            this.Label4 = new MetroFramework.Controls.MetroLabel();
+            this.Label3 = new MetroFramework.Controls.MetroLabel();
+            this.Label2 = new MetroFramework.Controls.MetroLabel();
+            this.Label1 = new MetroFramework.Controls.MetroLabel();
+            this.lblWelcome = new MetroFramework.Controls.MetroLabel();
+            this.chkLimpiar = new MetroFramework.Controls.MetroButton();
+            this.btnEnviar = new MetroFramework.Controls.MetroButton();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -63,37 +63,37 @@
             // 
             resources.ApplyResources(this.chkArtrosis, "chkArtrosis");
             this.chkArtrosis.Name = "chkArtrosis";
-            this.chkArtrosis.UseVisualStyleBackColor = true;
+            this.chkArtrosis.UseSelectable = true;
             // 
             // chkArticulaciones
             // 
             resources.ApplyResources(this.chkArticulaciones, "chkArticulaciones");
             this.chkArticulaciones.Name = "chkArticulaciones";
-            this.chkArticulaciones.UseVisualStyleBackColor = true;
+            this.chkArticulaciones.UseSelectable = true;
             // 
             // chkEscoliosis
             // 
             resources.ApplyResources(this.chkEscoliosis, "chkEscoliosis");
             this.chkEscoliosis.Name = "chkEscoliosis";
-            this.chkEscoliosis.UseVisualStyleBackColor = true;
+            this.chkEscoliosis.UseSelectable = true;
             // 
             // chkRodillas
             // 
             resources.ApplyResources(this.chkRodillas, "chkRodillas");
             this.chkRodillas.Name = "chkRodillas";
-            this.chkRodillas.UseVisualStyleBackColor = true;
+            this.chkRodillas.UseSelectable = true;
             // 
             // chkRespiratorio
             // 
             resources.ApplyResources(this.chkRespiratorio, "chkRespiratorio");
             this.chkRespiratorio.Name = "chkRespiratorio";
-            this.chkRespiratorio.UseVisualStyleBackColor = true;
+            this.chkRespiratorio.UseSelectable = true;
             // 
             // chkInfarto
             // 
             resources.ApplyResources(this.chkInfarto, "chkInfarto");
             this.chkInfarto.Name = "chkInfarto";
-            this.chkInfarto.UseVisualStyleBackColor = true;
+            this.chkInfarto.UseSelectable = true;
             // 
             // cmbDisponibilidadHoras
             // 
@@ -151,15 +151,18 @@
             // 
             // chkLimpiar
             // 
+            this.chkLimpiar.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.chkLimpiar, "chkLimpiar");
             this.chkLimpiar.Name = "chkLimpiar";
-            this.chkLimpiar.UseVisualStyleBackColor = true;
+            this.chkLimpiar.UseSelectable = true;
             // 
             // btnEnviar
             // 
+            this.btnEnviar.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnEnviar.Highlight = true;
             resources.ApplyResources(this.btnEnviar, "btnEnviar");
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.UseSelectable = true;
             this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
             // 
             // PictureBox1
@@ -202,25 +205,25 @@
         }
 
         #endregion
-        internal System.Windows.Forms.Label Label6;
-        internal System.Windows.Forms.CheckBox chkArtrosis;
-        internal System.Windows.Forms.CheckBox chkArticulaciones;
-        internal System.Windows.Forms.CheckBox chkEscoliosis;
-        internal System.Windows.Forms.CheckBox chkRodillas;
-        internal System.Windows.Forms.CheckBox chkRespiratorio;
-        internal System.Windows.Forms.CheckBox chkInfarto;
+        internal MetroFramework.Controls.MetroLabel Label6;
+        internal MetroFramework.Controls.MetroCheckBox chkArtrosis;
+        internal MetroFramework.Controls.MetroCheckBox chkArticulaciones;
+        internal MetroFramework.Controls.MetroCheckBox chkEscoliosis;
+        internal MetroFramework.Controls.MetroCheckBox chkRodillas;
+        internal MetroFramework.Controls.MetroCheckBox chkRespiratorio;
+        internal MetroFramework.Controls.MetroCheckBox chkInfarto;
         internal System.Windows.Forms.ComboBox cmbDisponibilidadHoras;
         internal System.Windows.Forms.ComboBox cmbDisponibilidadDias;
         internal System.Windows.Forms.ComboBox cmbObjetivo;
         internal System.Windows.Forms.ComboBox cmbFrecuencia;
-        internal System.Windows.Forms.Label Label5;
-        internal System.Windows.Forms.Label Label4;
-        internal System.Windows.Forms.Label Label3;
-        internal System.Windows.Forms.Label Label2;
-        internal System.Windows.Forms.Label Label1;
-        private System.Windows.Forms.Label lblWelcome;
-        internal System.Windows.Forms.Button chkLimpiar;
-        internal System.Windows.Forms.Button btnEnviar;
+        internal MetroFramework.Controls.MetroLabel Label5;
+        internal MetroFramework.Controls.MetroLabel Label4;
+        internal MetroFramework.Controls.MetroLabel Label3;
+        internal MetroFramework.Controls.MetroLabel Label2;
+        internal MetroFramework.Controls.MetroLabel Label1;
+        private MetroFramework.Controls.MetroLabel lblWelcome;
+        internal MetroFramework.Controls.MetroButton chkLimpiar;
+        internal MetroFramework.Controls.MetroButton btnEnviar;
         private System.Windows.Forms.PictureBox PictureBox1;
     }
 }

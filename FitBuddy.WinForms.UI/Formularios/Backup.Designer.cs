@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Backup));
-            this.btnRestaurar = new System.Windows.Forms.Button();
+            this.btnRestaurar = new MetroFramework.Controls.MetroButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnCreateBackup = new System.Windows.Forms.Button();
-            this.btnAtras = new System.Windows.Forms.Button();
+            this.btnCreateBackup = new MetroFramework.Controls.MetroButton();
+            this.btnAtras = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRestaurar
             // 
+            this.btnRestaurar.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnRestaurar, "btnRestaurar");
             this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.UseVisualStyleBackColor = true;
+            this.btnRestaurar.UseSelectable = true;
             // 
             // dataGridView1
             // 
@@ -50,17 +51,20 @@
             // 
             // btnCreateBackup
             // 
+            this.btnCreateBackup.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnCreateBackup.Highlight = true;
             resources.ApplyResources(this.btnCreateBackup, "btnCreateBackup");
             this.btnCreateBackup.Name = "btnCreateBackup";
-            this.btnCreateBackup.UseVisualStyleBackColor = true;
+            this.btnCreateBackup.UseSelectable = true;
             this.btnCreateBackup.Click += new System.EventHandler(this.OnBtnCrearBackupClick);
             // 
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnAtras.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseSelectable = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // Backup
@@ -80,9 +84,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnRestaurar;
+        private MetroFramework.Controls.MetroButton btnRestaurar;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnCreateBackup;
-        private System.Windows.Forms.Button btnAtras;
+        private MetroFramework.Controls.MetroButton btnCreateBackup;
+        private MetroFramework.Controls.MetroButton btnAtras;
     }
 }

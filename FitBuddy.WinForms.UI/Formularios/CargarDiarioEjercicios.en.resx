@@ -117,56 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
-  </data>
-  <data name="Label4.Text" xml:space="preserve">
-    <value>Time (min)</value>
-  </data>
   <data name="btnBorrar.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="cmbRepeticiones.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 21</value>
-  </data>
-  <data name="btnAgregar.Text" xml:space="preserve">
-    <value>Add exercise</value>
-  </data>
-  <data name="cmbEjercicio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 21</value>
-  </data>
-  <data name="dtpFecha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 20</value>
-  </data>
-  <data name="btnAtras.Text" xml:space="preserve">
-    <value>Back</value>
-  </data>
-  <data name="txtTiempo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 20</value>
-  </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
+    <value>Clear</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
     <value>Exercise</value>
   </data>
-  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="lblWelcome.Text" xml:space="preserve">
+    <value>Welcome, {0}</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>Time (min)</value>
+  </data>
+  <data name="btnAgregar.Text" xml:space="preserve">
+    <value>Add</value>
   </data>
   <data name="Label2.Text" xml:space="preserve">
     <value>Repetitions</value>
   </data>
-  <data name="Label3.Text" xml:space="preserve">
-    <value>Date</value>
-  </data>
-  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 13</value>
-  </data>
-  <data name="btnEnviar.Text" xml:space="preserve">
-    <value>Send</value>
-  </data>
-  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
+  <data name="btnAtras.Text" xml:space="preserve">
+    <value>Back</value>
   </data>
 </root>

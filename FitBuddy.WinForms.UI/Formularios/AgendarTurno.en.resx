@@ -117,52 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 13</value>
-  </data>
-  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>718, 298</value>
-  </data>
-  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>731, 416</value>
-  </data>
-  <data name="dtpFecha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 20</value>
-  </data>
-  <data name="btnAtras.Text" xml:space="preserve">
-    <value>Back</value>
-  </data>
-  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>731, 359</value>
-  </data>
-  <data name="cmbMedico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 21</value>
-  </data>
-  <data name="cmbFranjaHoraria.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 21</value>
-  </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 13</value>
-  </data>
   <data name="Label1.Text" xml:space="preserve">
     <value>Doctor</value>
-  </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>Date</value>
   </data>
   <data name="Label3.Text" xml:space="preserve">
     <value>Time</value>
   </data>
-  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 13</value>
+  <data name="lblWelcome.Text" xml:space="preserve">
+    <value>Welcome, {0}</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="btnAtras.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
   <data name="btnEnviar.Text" xml:space="preserve">
-    <value>Send Request</value>
+    <value>Submit request</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEBLAEsAAD/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubwIQAABtbnRyUkdCIFhZ

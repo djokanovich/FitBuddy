@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionarPlanAlimenticio));
-            this.btnAtras = new System.Windows.Forms.Button();
+            this.btnAtras = new MetroFramework.Controls.MetroButton();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCrearDieta = new System.Windows.Forms.Button();
-            this.btnVerDieta = new System.Windows.Forms.Button();
-            this.lblWelcome = new System.Windows.Forms.Label();
+            this.btnCrearDieta = new MetroFramework.Controls.MetroButton();
+            this.btnVerDieta = new MetroFramework.Controls.MetroButton();
+            this.lblWelcome = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnAtras.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseSelectable = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // PictureBox1
@@ -54,16 +55,18 @@
             // 
             // btnCrearDieta
             // 
+            this.btnCrearDieta.FontSize = MetroFramework.MetroButtonSize.Tall;
             resources.ApplyResources(this.btnCrearDieta, "btnCrearDieta");
             this.btnCrearDieta.Name = "btnCrearDieta";
-            this.btnCrearDieta.UseVisualStyleBackColor = true;
+            this.btnCrearDieta.UseSelectable = true;
             this.btnCrearDieta.Click += new System.EventHandler(this.OnBtnCrearDietaClick);
             // 
             // btnVerDieta
             // 
+            this.btnVerDieta.FontSize = MetroFramework.MetroButtonSize.Tall;
             resources.ApplyResources(this.btnVerDieta, "btnVerDieta");
             this.btnVerDieta.Name = "btnVerDieta";
-            this.btnVerDieta.UseVisualStyleBackColor = true;
+            this.btnVerDieta.UseSelectable = true;
             this.btnVerDieta.Click += new System.EventHandler(this.OnBtnVerDietaClick);
             // 
             // lblWelcome
@@ -84,16 +87,15 @@
             this.Name = "GestionarPlanAlimenticio";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        internal System.Windows.Forms.Button btnAtras;
+        internal MetroFramework.Controls.MetroButton btnAtras;
         internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.Button btnCrearDieta;
-        internal System.Windows.Forms.Button btnVerDieta;
-        private System.Windows.Forms.Label lblWelcome;
+        internal MetroFramework.Controls.MetroButton btnCrearDieta;
+        internal MetroFramework.Controls.MetroButton btnVerDieta;
+        private MetroFramework.Controls.MetroLabel lblWelcome;
     }
 }

@@ -51,11 +51,6 @@ namespace FitBuddy.WinForms.UI.Formularios
             }
         }
 
-        private void OnBtnCancelarClick(object sender, EventArgs e)
-        {
-            _formManager.Close(this);
-        }
-
         private void OnLnkRegistrarUsuarioClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             _formManager.Show<RegistrarNuevoUsuario>().AndClose(this);
@@ -68,6 +63,11 @@ namespace FitBuddy.WinForms.UI.Formularios
         }
 
         private void OnLnkAcercaDeClick(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            _formManager.Show<AcercaDe>().AndClose(this);
+        }
+
+        private void OnBtnCancelarClick(object sender, EventArgs e)
         {
             _formManager.Close(this);
         }

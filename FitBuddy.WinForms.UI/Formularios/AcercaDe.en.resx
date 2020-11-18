@@ -117,75 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="TextBoxDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>390, 176</value>
+  <data name="txtDescripción.Text" xml:space="preserve">
+    <value>Fitness assistant to help you stay fit as a fiddle.
+
+Copyright © 2020 Danisa Jokanovich
+
+This program comes with ABSOLUTELY NO WARRANTY. you can redistribute it and/or modify it under the terms of the following license ...</value>
   </data>
-  <data name="LabelProductName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>390, 17</value>
-  </data>
-  <data name="LabelCopyright.Size" type="System.Drawing.Size, System.Drawing">
-    <value>390, 17</value>
-  </data>
-  <data name="LabelVersion.Text" xml:space="preserve">
-    <value>Version 1.0</value>
+  <data name="lblVersión.Text" xml:space="preserve">
+    <value>FitBuddy version {0}</value>
   </data>
   <data name="btnAceptar.Text" xml:space="preserve">
-    <value>Ok</value>
-  </data>
-  <data name="LabelCompanyName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 108</value>
-  </data>
-  <data name="LabelCopyright.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 72</value>
-  </data>
-  <data name="TextBoxDescription.Text" xml:space="preserve">
-    <value>Description: Nutritional software</value>
-  </data>
-  <data name="LabelCompanyName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>390, 17</value>
-  </data>
-  <data name="LabelVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 36</value>
-  </data>
-  <data name="TableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="TableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>595, 364</value>
-  </data>
-  <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>517, 338</value>
-  </data>
-  <data name="TextBoxDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 147</value>
-  </data>
-  <data name="LabelVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>390, 17</value>
-  </data>
-  <data name="LogoPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 358</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="LogoPictureBox" Row="0" RowSpan="6" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="LabelProductName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelVersion" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelCopyright" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelCompanyName" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxDescription" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnAceptar" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,Percent,67" /&gt;&lt;Rows Styles="Percent,9.967846,Percent,9.967846,Percent,10,Percent,10,Percent,50,Percent,10" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="LabelProductName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 0</value>
-  </data>
-  <data name="LabelVersion.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt</value>
-  </data>
-  <data name="LabelCopyright.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt</value>
-  </data>
-  <data name="LabelProductName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt</value>
-  </data>
-  <data name="LabelCompanyName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt</value>
-  </data>
-  <data name="TextBoxDescription.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt</value>
+    <value>&amp;OK</value>
   </data>
 </root>

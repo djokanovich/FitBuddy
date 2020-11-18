@@ -1,6 +1,7 @@
 ﻿using FitBuddy.Business.Facade;
 using FitBuddy.Entidades;
 using FitBuddy.Entidades.Enums;
+using FitBuddy.WinForms.UI.ExtensionMethods;
 using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 using System;
@@ -15,7 +16,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         public CrearPlanEjercicio(ICrearPlanEjercicioBusinessLogic crearPlanEjercicioBusinessLogic)
         {
             InitializeComponent();
-            lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
+            lblWelcome.FormatearControl(IdentityManager.UsuarioActual.Username);
             _crearPlanEjercicioBusinessLogic = crearPlanEjercicioBusinessLogic;
         }
 

@@ -1,6 +1,7 @@
 ﻿using FitBuddy.Business.Facade;
 using FitBuddy.Entidades;
 using FitBuddy.Entidades.Enums;
+using FitBuddy.WinForms.UI.ExtensionMethods;
 using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 using System;
@@ -19,7 +20,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         public CrearDieta(IFormManager formManager, ICrearDietaBusinessLogic crearDietaBusinessLogic)
         {
             InitializeComponent();
-            lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
+            lblWelcome.FormatearControl(IdentityManager.UsuarioActual.Username);
             _formManager = formManager;
             _crearDietaBusinessLogic = crearDietaBusinessLogic;
 

@@ -1,4 +1,5 @@
-﻿using FitBuddy.WinForms.UI.Security;
+﻿using FitBuddy.WinForms.UI.ExtensionMethods;
+using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 using System;
 using System.Windows.Forms;
@@ -12,7 +13,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         public GestionarPlanEjercicios(IFormManager formManager)
         {
             InitializeComponent();
-            lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
+            lblWelcome.FormatearControl(IdentityManager.UsuarioActual.Username);
             _formManager = formManager;
         }
 

@@ -120,14 +120,13 @@
   <data name="btnVerPlan.Text" xml:space="preserve">
     <value>View Plan</value>
   </data>
-  <data name="btnCrearPlan.Text" xml:space="preserve">
-    <value>Create Plan</value>
+  <data name="lblWelcome.Text" xml:space="preserve">
+    <value>Welcome, {0}</value>
   </data>
   <data name="btnAtras.Text" xml:space="preserve">
-    <value>Back</value>
+    <value>&amp;Back</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+  <data name="btnCrearPlan.Text" xml:space="preserve">
+    <value>Create Plan</value>
   </data>
 </root>

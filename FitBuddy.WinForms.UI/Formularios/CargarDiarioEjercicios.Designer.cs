@@ -29,29 +29,52 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CargarDiarioEjercicios));
-            this.txtTiempo = new System.Windows.Forms.TextBox();
-            this.Label4 = new System.Windows.Forms.Label();
-            this.btnAtras = new System.Windows.Forms.Button();
-            this.btnEnviar = new System.Windows.Forms.Button();
-            this.btnBorrar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.Label3 = new System.Windows.Forms.Label();
+            this.txtTiempo = new MetroFramework.Controls.MetroTextBox();
+            this.Label4 = new MetroFramework.Controls.MetroLabel();
+            this.btnAtras = new MetroFramework.Controls.MetroButton();
+            this.btnBorrar = new MetroFramework.Controls.MetroButton();
+            this.btnAgregar = new MetroFramework.Controls.MetroButton();
+            this.Label3 = new MetroFramework.Controls.MetroLabel();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.cmbRepeticiones = new System.Windows.Forms.ComboBox();
             this.cmbEjercicio = new System.Windows.Forms.ComboBox();
-            this.Label2 = new System.Windows.Forms.Label();
-            this.Label1 = new System.Windows.Forms.Label();
+            this.Label2 = new MetroFramework.Controls.MetroLabel();
+            this.Label1 = new MetroFramework.Controls.MetroLabel();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblWelcome = new System.Windows.Forms.Label();
+            this.lblWelcome = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTiempo
             // 
+            // 
+            // 
+            // 
+            this.txtTiempo.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.txtTiempo.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
+            this.txtTiempo.CustomButton.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("resource.Margin")));
+            this.txtTiempo.CustomButton.Name = "";
+            this.txtTiempo.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
+            this.txtTiempo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtTiempo.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
+            this.txtTiempo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtTiempo.CustomButton.UseSelectable = true;
+            this.txtTiempo.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
+            this.txtTiempo.Lines = new string[0];
             resources.ApplyResources(this.txtTiempo, "txtTiempo");
+            this.txtTiempo.MaxLength = 32767;
             this.txtTiempo.Name = "txtTiempo";
+            this.txtTiempo.PasswordChar = '\0';
+            this.txtTiempo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtTiempo.SelectedText = "";
+            this.txtTiempo.SelectionLength = 0;
+            this.txtTiempo.SelectionStart = 0;
+            this.txtTiempo.ShortcutsEnabled = true;
+            this.txtTiempo.UseSelectable = true;
+            this.txtTiempo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtTiempo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // Label4
             // 
@@ -61,28 +84,25 @@
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnAtras.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseSelectable = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
-            // 
-            // btnEnviar
-            // 
-            resources.ApplyResources(this.btnEnviar, "btnEnviar");
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
             // 
             // btnBorrar
             // 
+            this.btnBorrar.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnBorrar, "btnBorrar");
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.UseSelectable = true;
             // 
             // btnAgregar
             // 
+            this.btnAgregar.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnAgregar, "btnAgregar");
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseSelectable = true;
             // 
             // Label3
             // 
@@ -143,7 +163,6 @@
             this.Controls.Add(this.txtTiempo);
             this.Controls.Add(this.Label4);
             this.Controls.Add(this.btnAtras);
-            this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.Label3);
@@ -164,20 +183,19 @@
 
         #endregion
 
-        internal System.Windows.Forms.TextBox txtTiempo;
-        internal System.Windows.Forms.Label Label4;
-        internal System.Windows.Forms.Button btnAtras;
-        internal System.Windows.Forms.Button btnEnviar;
-        internal System.Windows.Forms.Button btnBorrar;
-        internal System.Windows.Forms.Button btnAgregar;
-        internal System.Windows.Forms.Label Label3;
+        internal MetroFramework.Controls.MetroTextBox txtTiempo;
+        internal MetroFramework.Controls.MetroLabel Label4;
+        internal MetroFramework.Controls.MetroButton btnAtras;
+        internal MetroFramework.Controls.MetroButton btnBorrar;
+        internal MetroFramework.Controls.MetroButton btnAgregar;
+        internal MetroFramework.Controls.MetroLabel Label3;
         internal System.Windows.Forms.DateTimePicker dtpFecha;
         internal System.Windows.Forms.PictureBox PictureBox1;
         internal System.Windows.Forms.ComboBox cmbRepeticiones;
         internal System.Windows.Forms.ComboBox cmbEjercicio;
-        internal System.Windows.Forms.Label Label2;
-        internal System.Windows.Forms.Label Label1;
+        internal MetroFramework.Controls.MetroLabel Label2;
+        internal MetroFramework.Controls.MetroLabel Label1;
         internal System.Windows.Forms.DataGridView DataGridView1;
-        private System.Windows.Forms.Label lblWelcome;
+        private MetroFramework.Controls.MetroLabel lblWelcome;
     }
 }

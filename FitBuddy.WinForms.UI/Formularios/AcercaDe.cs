@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Common.Bitacora;
+using FitBuddy.WinForms.UI.ExtensionMethods;
 using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 
@@ -18,6 +19,13 @@ namespace FitBuddy.WinForms.UI.Formularios
             _bitacora = bitacora;
         }
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            lblVersión.FormatearControl(AppInfo.ProductVersion);
+        }
+
         private void OnBtnAceptarClick(object sender, EventArgs e)
         {
             if (IdentityManager.HayUsuarioLogueado())
@@ -28,9 +36,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             else
             {
                 _formManager.Show<LogIn>();
-                
             }
-
         }
 
         protected override void OnClosed(EventArgs e)
@@ -45,11 +51,6 @@ namespace FitBuddy.WinForms.UI.Formularios
             {
                 _formManager.Close(this);
             }
-        }
-
-        private void AcercaDe_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

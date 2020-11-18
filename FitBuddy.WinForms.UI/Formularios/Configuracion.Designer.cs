@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configuracion));
-            this.btnBackup = new System.Windows.Forms.Button();
+            this.btnBackup = new MetroFramework.Controls.MetroButton();
             this.cmbIdioma = new MetroFramework.Controls.MetroComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.label1 = new MetroFramework.Controls.MetroLabel();
+            this.btnGuardar = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // btnBackup
             // 
+            this.btnBackup.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnBackup, "btnBackup");
             this.btnBackup.Name = "btnBackup";
-            this.btnBackup.UseVisualStyleBackColor = true;
+            this.btnBackup.UseSelectable = true;
             this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
             // 
             // cmbIdioma
@@ -56,9 +57,11 @@
             // 
             // btnGuardar
             // 
+            this.btnGuardar.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnGuardar.Highlight = true;
             resources.ApplyResources(this.btnGuardar, "btnGuardar");
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseSelectable = true;
             this.btnGuardar.Click += new System.EventHandler(this.OnBtnGuardarClick);
             // 
             // Configuracion
@@ -78,9 +81,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnBackup;
+        private MetroFramework.Controls.MetroButton btnBackup;
         private MetroFramework.Controls.MetroComboBox cmbIdioma;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnGuardar;
+        private MetroFramework.Controls.MetroLabel label1;
+        private MetroFramework.Controls.MetroButton btnGuardar;
     }
 }

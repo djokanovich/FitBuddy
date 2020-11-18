@@ -117,65 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 13</value>
-  </data>
-  <data name="btnAgregar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 139</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 13</value>
-  </data>
-  <data name="lblCalorias.Size" type="System.Drawing.Size, System.Drawing">
-    <value>397, 19</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Type of meal</value>
-  </data>
   <data name="btnBorrar.Text" xml:space="preserve">
-    <value>Delete</value>
+    <value>Clear</value>
   </data>
-  <data name="btnAtras.Text" xml:space="preserve">
+  <data name="btnAtrás.Text" xml:space="preserve">
     <value>Back</value>
   </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>Amount</value>
+  <data name="lblComida.Text" xml:space="preserve">
+    <value>Food item</value>
   </data>
-  <data name="btnBorrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 103</value>
+  <data name="lblMomento.Text" xml:space="preserve">
+    <value>Type of meal</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 17</value>
+  <data name="lblWelcome.Text" xml:space="preserve">
+    <value>Welcome, {0}</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Total calories:</value>
-  </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
-  </data>
-  <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
-  </data>
-  <data name="Label1.Text" xml:space="preserve">
-    <value>Food</value>
-  </data>
-  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="txtPorcion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 20</value>
-  </data>
-  <data name="lblCalorias.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 399</value>
-  </data>
-  <data name="cmbMomento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 21</value>
-  </data>
-  <data name="btnEnviar.Text" xml:space="preserve">
+  <data name="btnAgregar.Text" xml:space="preserve">
     <value>Add</value>
   </data>
-  <data name="txtComida.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+  <data name="lblPorción.Text" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="lblCalorías.Text" xml:space="preserve">
+    <value>Total calories: {0}</value>
   </data>
 </root>

@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Estadísticas));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblImc = new System.Windows.Forms.Label();
-            this.lblIgc = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblWelcome = new System.Windows.Forms.Label();
-            this.lblImcClasificación = new System.Windows.Forms.Label();
-            this.lblIgcClasificacion = new System.Windows.Forms.Label();
-            this.btnCerrar = new System.Windows.Forms.Button();
+            this.label1 = new MetroFramework.Controls.MetroLabel();
+            this.label2 = new MetroFramework.Controls.MetroLabel();
+            this.lblImc = new MetroFramework.Controls.MetroLabel();
+            this.lblIgc = new MetroFramework.Controls.MetroLabel();
+            this.label5 = new MetroFramework.Controls.MetroLabel();
+            this.lblWelcome = new MetroFramework.Controls.MetroLabel();
+            this.lblImcClasificación = new MetroFramework.Controls.MetroLabel();
+            this.lblIgcClasificacion = new MetroFramework.Controls.MetroLabel();
+            this.btnCerrar = new MetroFramework.Controls.MetroButton();
             this.picAguja = new System.Windows.Forms.PictureBox();
             this.picFondo = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnVerMás = new System.Windows.Forms.Button();
+            this.label3 = new MetroFramework.Controls.MetroLabel();
+            this.btnVerMás = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.picAguja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -92,9 +92,10 @@
             // btnCerrar
             // 
             this.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCerrar.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnCerrar, "btnCerrar");
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.UseSelectable = true;
             this.btnCerrar.Click += new System.EventHandler(this.OnBtnCerrarClick);
             // 
             // picAguja
@@ -129,9 +130,11 @@
             // 
             // btnVerMás
             // 
+            this.btnVerMás.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnVerMás.Highlight = true;
             resources.ApplyResources(this.btnVerMás, "btnVerMás");
             this.btnVerMás.Name = "btnVerMás";
-            this.btnVerMás.UseVisualStyleBackColor = true;
+            this.btnVerMás.UseSelectable = true;
             this.btnVerMás.Click += new System.EventHandler(this.OnBtnVerMásClick);
             // 
             // Estadísticas
@@ -166,20 +169,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblImc;
-        private System.Windows.Forms.Label lblIgc;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblWelcome;
-        private System.Windows.Forms.Label lblImcClasificación;
-        private System.Windows.Forms.Label lblIgcClasificacion;
+        private MetroFramework.Controls.MetroLabel label1;
+        private MetroFramework.Controls.MetroLabel label2;
+        private MetroFramework.Controls.MetroLabel lblImc;
+        private MetroFramework.Controls.MetroLabel lblIgc;
+        private MetroFramework.Controls.MetroLabel label5;
+        private MetroFramework.Controls.MetroLabel lblWelcome;
+        private MetroFramework.Controls.MetroLabel lblImcClasificación;
+        private MetroFramework.Controls.MetroLabel lblIgcClasificacion;
         private System.Windows.Forms.PictureBox picFondo;
         private System.Windows.Forms.PictureBox picAguja;
-        private System.Windows.Forms.Button btnCerrar;
+        private MetroFramework.Controls.MetroButton btnCerrar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnVerMás;
+        private MetroFramework.Controls.MetroLabel label3;
+        private MetroFramework.Controls.MetroButton btnVerMás;
     }
 }

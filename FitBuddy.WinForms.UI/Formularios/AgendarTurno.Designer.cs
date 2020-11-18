@@ -29,32 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgendarTurno));
-            this.btnAtras = new System.Windows.Forms.Button();
-            this.btnEnviar = new System.Windows.Forms.Button();
+            this.btnAtras = new MetroFramework.Controls.MetroButton();
+            this.btnEnviar = new MetroFramework.Controls.MetroButton();
             this.cmbMedico = new System.Windows.Forms.ComboBox();
             this.cmbFranjaHoraria = new System.Windows.Forms.ComboBox();
-            this.Label3 = new System.Windows.Forms.Label();
+            this.Label3 = new MetroFramework.Controls.MetroLabel();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.Label2 = new System.Windows.Forms.Label();
-            this.Label1 = new System.Windows.Forms.Label();
+            this.Label2 = new MetroFramework.Controls.MetroLabel();
+            this.Label1 = new MetroFramework.Controls.MetroLabel();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblWelcome = new System.Windows.Forms.Label();
+            this.lblWelcome = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnAtras.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseSelectable = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // btnEnviar
             // 
+            this.btnEnviar.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnEnviar.Highlight = true;
             resources.ApplyResources(this.btnEnviar, "btnEnviar");
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.UseSelectable = true;
             this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
             // 
             // cmbMedico
@@ -126,15 +129,15 @@
 
         #endregion
 
-        internal System.Windows.Forms.Button btnAtras;
-        internal System.Windows.Forms.Button btnEnviar;
+        internal MetroFramework.Controls.MetroButton btnAtras;
+        internal MetroFramework.Controls.MetroButton btnEnviar;
         internal System.Windows.Forms.ComboBox cmbMedico;
         internal System.Windows.Forms.ComboBox cmbFranjaHoraria;
-        internal System.Windows.Forms.Label Label3;
+        internal MetroFramework.Controls.MetroLabel Label3;
         internal System.Windows.Forms.DateTimePicker dtpFecha;
-        internal System.Windows.Forms.Label Label2;
-        internal System.Windows.Forms.Label Label1;
+        internal MetroFramework.Controls.MetroLabel Label2;
+        internal MetroFramework.Controls.MetroLabel Label1;
         internal System.Windows.Forms.PictureBox PictureBox1;
-        private System.Windows.Forms.Label lblWelcome;
+        private MetroFramework.Controls.MetroLabel lblWelcome;
     }
 }

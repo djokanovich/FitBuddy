@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionarPlanEjercicios));
-            this.btnAtras = new System.Windows.Forms.Button();
+            this.btnAtras = new MetroFramework.Controls.MetroButton();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCrearPlan = new System.Windows.Forms.Button();
-            this.btnVerPlan = new System.Windows.Forms.Button();
-            this.lblWelcome = new System.Windows.Forms.Label();
+            this.btnCrearPlan = new MetroFramework.Controls.MetroButton();
+            this.btnVerPlan = new MetroFramework.Controls.MetroButton();
+            this.lblWelcome = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAtras
             // 
             this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnAtras.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnAtras, "btnAtras");
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.UseSelectable = true;
             this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
             // 
             // PictureBox1
@@ -54,16 +55,18 @@
             // 
             // btnCrearPlan
             // 
+            this.btnCrearPlan.FontSize = MetroFramework.MetroButtonSize.Tall;
             resources.ApplyResources(this.btnCrearPlan, "btnCrearPlan");
             this.btnCrearPlan.Name = "btnCrearPlan";
-            this.btnCrearPlan.UseVisualStyleBackColor = true;
+            this.btnCrearPlan.UseSelectable = true;
             this.btnCrearPlan.Click += new System.EventHandler(this.OnBtnCrearPlanClick);
             // 
             // btnVerPlan
             // 
+            this.btnVerPlan.FontSize = MetroFramework.MetroButtonSize.Tall;
             resources.ApplyResources(this.btnVerPlan, "btnVerPlan");
             this.btnVerPlan.Name = "btnVerPlan";
-            this.btnVerPlan.UseVisualStyleBackColor = true;
+            this.btnVerPlan.UseSelectable = true;
             this.btnVerPlan.Click += new System.EventHandler(this.OnBtnVerPlanClick);
             // 
             // lblWelcome
@@ -84,16 +87,15 @@
             this.Name = "GestionarPlanEjercicios";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        internal System.Windows.Forms.Button btnAtras;
+        internal MetroFramework.Controls.MetroButton btnAtras;
         internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.Button btnCrearPlan;
-        internal System.Windows.Forms.Button btnVerPlan;
-        private System.Windows.Forms.Label lblWelcome;
+        internal MetroFramework.Controls.MetroButton btnCrearPlan;
+        internal MetroFramework.Controls.MetroButton btnVerPlan;
+        private MetroFramework.Controls.MetroLabel lblWelcome;
     }
 }

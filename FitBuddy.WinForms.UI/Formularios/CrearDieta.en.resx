@@ -117,8 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="chkFrutosSecos.Text" xml:space="preserve">
+    <value>Nuts</value>
+  </data>
   <data name="chkCarneCerdo.Text" xml:space="preserve">
     <value>Pork</value>
+  </data>
+  <data name="btnAtras.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>Check the items you DO NOT EAT</value>
+  </data>
+  <data name="chkTomate.Text" xml:space="preserve">
+    <value>Tomato</value>
+  </data>
+  <data name="chkHojasVerdes.Text" xml:space="preserve">
+    <value>Green leaves</value>
+  </data>
+  <data name="chkSoja.Text" xml:space="preserve">
+    <value>Soy</value>
+  </data>
+  <data name="chkPescado.Text" xml:space="preserve">
+    <value>Fish</value>
+  </data>
+  <data name="chkFrutasRojas.Text" xml:space="preserve">
+    <value>Berries</value>
+  </data>
+  <data name="lblWelcome.Text" xml:space="preserve">
+    <value>Welcome, {0}</value>
+  </data>
+  <data name="chkMariscos.Text" xml:space="preserve">
+    <value>Seafood</value>
+  </data>
+  <data name="chkQueso.Text" xml:space="preserve">
+    <value>Cheese</value>
+  </data>
+  <data name="chkLeche.Text" xml:space="preserve">
+    <value>Milk</value>
+  </data>
+  <data name="chkHuevo.Text" xml:space="preserve">
+    <value>Egg</value>
   </data>
   <data name="chkCarneVaca.Text" xml:space="preserve">
     <value>Beef</value>
@@ -126,101 +165,13 @@
   <data name="chkFructosa.Text" xml:space="preserve">
     <value>Fructose</value>
   </data>
-  <data name="chkHuevo.Text" xml:space="preserve">
-    <value>Eggs</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="chkFrutosSecos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 17</value>
-  </data>
-  <data name="btnAtras.Text" xml:space="preserve">
-    <value>Back</value>
-  </data>
-  <data name="chkTomate.Text" xml:space="preserve">
-    <value>Tomato</value>
-  </data>
-  <data name="chkLeche.Text" xml:space="preserve">
-    <value>Milk</value>
-  </data>
-  <data name="chkHojasVerdes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 17</value>
-  </data>
-  <data name="chkSoja.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 17</value>
-  </data>
-  <data name="btnEnviar.Text" xml:space="preserve">
-    <value>Send</value>
-  </data>
-  <data name="chkMariscos.Text" xml:space="preserve">
-    <value>Seafood</value>
-  </data>
-  <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 164</value>
-  </data>
-  <data name="chkTomate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 17</value>
+  <data name="chkTrigo.Text" xml:space="preserve">
+    <value>Wheat, Starch, Barley, Rye</value>
   </data>
   <data name="chkCarnePollo.Text" xml:space="preserve">
     <value>Chicken</value>
   </data>
-  <data name="chkFrutosSecos.Text" xml:space="preserve">
-    <value>Nuts</value>
-  </data>
-  <data name="chkTrigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 17</value>
-  </data>
-  <data name="chkCarneCerdo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 17</value>
-  </data>
-  <data name="chkHojasVerdes.Text" xml:space="preserve">
-    <value>Green leaves</value>
-  </data>
-  <data name="GroupBox1.Text" xml:space="preserve">
-    <value>Check the items you DO NOT eat</value>
-  </data>
-  <data name="chkSoja.Text" xml:space="preserve">
-    <value>Soy</value>
-  </data>
-  <data name="chkFrutasRojas.Text" xml:space="preserve">
-    <value>Berries</value>
-  </data>
-  <data name="chkHuevo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 17</value>
-  </data>
-  <data name="chkLeche.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 17</value>
-  </data>
-  <data name="chkTrigo.Text" xml:space="preserve">
-    <value>Wheat, Starch, Barley, Rye</value>
-  </data>
-  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="chkMariscos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 17</value>
-  </data>
-  <data name="chkCarnePollo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 17</value>
-  </data>
-  <data name="chkCarneVaca.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 17</value>
-  </data>
-  <data name="chkQueso.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 17</value>
-  </data>
-  <data name="chkQueso.Text" xml:space="preserve">
-    <value>Cheese</value>
-  </data>
-  <data name="chkPescado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 17</value>
-  </data>
-  <data name="chkFructosa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 17</value>
-  </data>
-  <data name="chkPescado.Text" xml:space="preserve">
-    <value>Fish</value>
-  </data>
-  <data name="chkFrutasRojas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 17</value>
+  <data name="btnEnviar.Text" xml:space="preserve">
+    <value>&amp;Send</value>
   </data>
 </root>

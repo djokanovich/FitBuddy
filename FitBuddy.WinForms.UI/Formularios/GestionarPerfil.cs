@@ -1,6 +1,7 @@
 ﻿using FitBuddy.Business.Facade;
 using FitBuddy.Entidades;
 using FitBuddy.Entidades.Enums;
+using FitBuddy.WinForms.UI.ExtensionMethods;
 using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 using System;
@@ -19,7 +20,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         public GestionarPerfil(IFormManager formManager, IGestionarPerfilBusinessLogic gestionarPerfilBusinessLogic)
         {
             InitializeComponent();
-            lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
+            lblWelcome.FormatearControl(IdentityManager.UsuarioActual.Username);
             _formManager = formManager;
             _gestionarPerfilBusinessLogic = gestionarPerfilBusinessLogic;
         }
@@ -41,14 +42,14 @@ namespace FitBuddy.WinForms.UI.Formularios
             if (_paciente == null)
             {
                 // Aún no se ha creado un paciente asociado al usuario.
-                lblRegistroAnterior.Text = "Este será el primer registro del perfil.";
+                lblRegistroAnterior.FormatearControl(0);
                 dtpFechaNacimiento.Value = new DateTime(DateTime.Today.AddYears(-30).Year, 1, 1);
                 lblEdad.Text = string.Empty;
                 return;
             }
 
             dtpFechaNacimiento.Value = _paciente.FechaNacimiento;
-            lblEdad.Text = $"Edad: {_paciente.Edad} años.";
+            lblEdad.FormatearControl(_paciente.Edad.ToString());
 
             if (_paciente.Género == Género.Femenino)
             {
@@ -63,13 +64,13 @@ namespace FitBuddy.WinForms.UI.Formularios
             if (últimoRegistroDelPaciente == null)
             {
                 // Se ha creado un paciente asociado al usuario, pero no hay registros acerca del peso, la altura, etc.
-                lblRegistroAnterior.Text = "No se ha creado ningún registro para este paciente todavía.";
+                lblRegistroAnterior.FormatearControl(1);
                 return;
             }
 
             var fechaÚltimoRegistro = últimoRegistroDelPaciente.FechaRegistro.ToString("ddd, d MMM yyyy");
             var díasAtrás = (DateTime.Today - últimoRegistroDelPaciente.FechaRegistro).Days;
-            lblRegistroAnterior.Text = $"Última actualización del perfil: {fechaÚltimoRegistro}.\n(Hace {díasAtrás} días.)";
+            lblRegistroAnterior.FormatearControl(2, fechaÚltimoRegistro, díasAtrás.ToString());
 
             txtAltura.Text = últimoRegistroDelPaciente.AlturaEnCm.ToString();
             txtPeso.Text = últimoRegistroDelPaciente.PesoEnKg.ToString();

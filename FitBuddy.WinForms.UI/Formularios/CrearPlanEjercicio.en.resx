@@ -117,102 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="chkRodillas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>365, 17</value>
-  </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>My goal</value>
-  </data>
-  <data name="cmbDisponibilidadDias.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 21</value>
-  </data>
-  <data name="chkInfarto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 17</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="chkInfarto.Text" xml:space="preserve">
-    <value>I have had a heart attack or have heart disease.</value>
-  </data>
-  <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 13</value>
-  </data>
-  <data name="cmbObjetivo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 21</value>
-  </data>
-  <data name="chkRodillas.Text" xml:space="preserve">
-    <value>I have suffered from a broken pinkie or some other problem in my knees.</value>
-  </data>
-  <data name="Label1.Text" xml:space="preserve">
-    <value>How often I do physical activity</value>
-  </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 13</value>
-  </data>
-  <data name="btnEnviar.Text" xml:space="preserve">
-    <value>Send</value>
-  </data>
-  <data name="Label6.Text" xml:space="preserve">
-    <value>Select the item that applies:</value>
-  </data>
-  <data name="Label3.Text" xml:space="preserve">
-    <value>Availability to exercise (days per week)</value>
-  </data>
-  <data name="chkRespiratorio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 17</value>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>Availability to exercise (hours a day)</value>
   </data>
   <data name="chkRespiratorio.Text" xml:space="preserve">
-    <value>I have a respiratory illness or problem.</value>
-  </data>
-  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 13</value>
-  </data>
-  <data name="chkEscoliosis.Text" xml:space="preserve">
-    <value>I have scoliosis.</value>
-  </data>
-  <data name="chkEscoliosis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 17</value>
+    <value>I have breathing difficulty or a respiratory problem.</value>
   </data>
   <data name="chkArtrosis.Text" xml:space="preserve">
     <value>I suffer from osteoarthritis or some other chronic ailment.</value>
   </data>
-  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 13</value>
-  </data>
-  <data name="cmbFrecuencia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 21</value>
-  </data>
-  <data name="chkArticulaciones.Text" xml:space="preserve">
-    <value>I suffer from problems with my joints.</value>
-  </data>
-  <data name="Label4.Text" xml:space="preserve">
-    <value>Availability to exercise (hours a day)</value>
-  </data>
-  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 13</value>
-  </data>
-  <data name="chkLimpiar.Text" xml:space="preserve">
-    <value>Clean</value>
-  </data>
   <data name="Label5.Text" xml:space="preserve">
     <value>Check the statements that apply:</value>
   </data>
-  <data name="chkArticulaciones.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 17</value>
+  <data name="chkRodillas.Text" xml:space="preserve">
+    <value>I broke my meniscus in the past or I have some other problem in my knees.</value>
   </data>
-  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>How often I do physical activity</value>
   </data>
-  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 13</value>
+  <data name="Label6.Text" xml:space="preserve">
+    <value>Select the item that applies:</value>
   </data>
-  <data name="cmbDisponibilidadHoras.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 21</value>
+  <data name="lblWelcome.Text" xml:space="preserve">
+    <value>Welcome, {0}</value>
   </data>
-  <data name="chkArtrosis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 17</value>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>My goal</value>
+  </data>
+  <data name="chkArticulaciones.Text" xml:space="preserve">
+    <value>I feel pain in my joints.</value>
+  </data>
+  <data name="chkEscoliosis.Text" xml:space="preserve">
+    <value>I have scoliosis.</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Availability to exercise (days per week)</value>
+  </data>
+  <data name="chkInfarto.Text" xml:space="preserve">
+    <value>I had a heart attack or have a heart disease.</value>
+  </data>
+  <data name="btnEnviar.Text" xml:space="preserve">
+    <value>&amp;Send</value>
+  </data>
+  <data name="chkLimpiar.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
   </data>
 </root>

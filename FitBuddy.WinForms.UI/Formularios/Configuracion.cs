@@ -1,14 +1,7 @@
 ﻿using MetroFramework.Forms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
@@ -27,7 +20,6 @@ namespace FitBuddy.WinForms.UI.Formularios
         private void btnBackup_Click(object sender, EventArgs e)
         {
             _formManager.Show<Configuracion>();
-
         }
 
         private void Configuracion_Load(object sender, EventArgs e)

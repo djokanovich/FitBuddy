@@ -117,20 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblWelcome.Text" xml:space="preserve">
-    <value>Welcome</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
-  </data>
-  <data name="btnAtras.Text" xml:space="preserve">
-    <value>Back</value>
-  </data>
   <data name="btnCrearDieta.Text" xml:space="preserve">
     <value>Create Plan</value>
   </data>
   <data name="btnVerDieta.Text" xml:space="preserve">
     <value>View Plan</value>
+  </data>
+  <data name="btnAtras.Text" xml:space="preserve">
+    <value>&amp;Back</value>
+  </data>
+  <data name="lblWelcome.Text" xml:space="preserve">
+    <value>Welcome, {0}</value>
   </data>
 </root>

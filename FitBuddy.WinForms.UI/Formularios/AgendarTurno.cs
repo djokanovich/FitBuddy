@@ -1,4 +1,5 @@
 ﻿using FitBuddy.Business.Facade;
+using FitBuddy.WinForms.UI.ExtensionMethods;
 using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 using System;
@@ -19,7 +20,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         public AgendarTurno(IFormManager formManager, IAgendarTurnoBusinessLogic agendarTurnoBusinessLogic)
         {
             InitializeComponent();
-            lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
+            lblWelcome.FormatearControl(IdentityManager.UsuarioActual.Username);
             _formManager = formManager;
             _agendarTurnoBusinessLogic = agendarTurnoBusinessLogic;
         }

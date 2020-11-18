@@ -1,5 +1,6 @@
 ﻿using FitBuddy.Business.Facade;
 using FitBuddy.WinForms.UI.Animación;
+using FitBuddy.WinForms.UI.ExtensionMethods;
 using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 using System;
@@ -38,7 +39,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             InitializeComponent();
 
-            lblWelcome.Text = $"{IdentityManager.UsuarioActual.Username}";
+            lblWelcome.FormatearControl(IdentityManager.UsuarioActual.Username);
 
             _formManager = formManager;
             _estadisticasBusinessLogic = estadisticasBusinessLogic;

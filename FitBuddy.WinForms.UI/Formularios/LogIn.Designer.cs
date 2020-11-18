@@ -32,13 +32,13 @@
             this.lnkAcercaDe = new System.Windows.Forms.LinkLabel();
             this.lnkOlvideContrasena = new System.Windows.Forms.LinkLabel();
             this.lnkRegistrarUsuario = new System.Windows.Forms.LinkLabel();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnAceptar = new System.Windows.Forms.Button();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.PasswordLabel = new System.Windows.Forms.Label();
+            this.btnCancelar = new MetroFramework.Controls.MetroButton();
+            this.btnAceptar = new MetroFramework.Controls.MetroButton();
+            this.txtPassword = new MetroFramework.Controls.MetroTextBox();
+            this.txtUsername = new MetroFramework.Controls.MetroTextBox();
+            this.PasswordLabel = new MetroFramework.Controls.MetroLabel();
             this.LogoPictureBox = new System.Windows.Forms.PictureBox();
-            this.UsernameLabel = new System.Windows.Forms.Label();
+            this.UsernameLabel = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,25 +66,78 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelar.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnCancelar, "btnCancelar");
             this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.UseSelectable = true;
             this.btnCancelar.Click += new System.EventHandler(this.OnBtnCancelarClick);
             // 
             // btnAceptar
             // 
+            this.btnAceptar.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnAceptar.Highlight = true;
             resources.ApplyResources(this.btnAceptar, "btnAceptar");
             this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.UseSelectable = true;
             this.btnAceptar.Click += new System.EventHandler(this.OnBtnAceptarClick);
             // 
             // txtPassword
             // 
+            // 
+            // 
+            // 
+            this.txtPassword.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.txtPassword.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
+            this.txtPassword.CustomButton.Name = "";
+            this.txtPassword.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
+            this.txtPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPassword.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
+            this.txtPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPassword.CustomButton.UseSelectable = true;
+            this.txtPassword.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
+            this.txtPassword.Lines = new string[0];
             resources.ApplyResources(this.txtPassword, "txtPassword");
+            this.txtPassword.MaxLength = 32767;
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.SelectionLength = 0;
+            this.txtPassword.SelectionStart = 0;
+            this.txtPassword.ShortcutsEnabled = true;
+            this.txtPassword.ShowClearButton = true;
+            this.txtPassword.UseSelectable = true;
+            this.txtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // txtUsername
             // 
+            // 
+            // 
+            // 
+            this.txtUsername.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.txtUsername.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location1")));
+            this.txtUsername.CustomButton.Name = "";
+            this.txtUsername.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size1")));
+            this.txtUsername.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtUsername.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex1")));
+            this.txtUsername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtUsername.CustomButton.UseSelectable = true;
+            this.txtUsername.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible1")));
+            this.txtUsername.Lines = new string[0];
             resources.ApplyResources(this.txtUsername, "txtUsername");
+            this.txtUsername.MaxLength = 32767;
             this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PasswordChar = '\0';
+            this.txtUsername.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.SelectionLength = 0;
+            this.txtUsername.SelectionStart = 0;
+            this.txtUsername.ShortcutsEnabled = true;
+            this.txtUsername.ShowClearButton = true;
+            this.txtUsername.UseSelectable = true;
+            this.txtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtUsername.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // PasswordLabel
             // 
@@ -119,8 +172,9 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.PasswordLabel);
             this.Controls.Add(this.LogoPictureBox);
+            this.MaximizeBox = false;
             this.Name = "LogIn";
-            this.Opacity = 0.9D;
+            this.Resizable = false;
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -132,12 +186,12 @@
         internal System.Windows.Forms.LinkLabel lnkAcercaDe;
         internal System.Windows.Forms.LinkLabel lnkOlvideContrasena;
         internal System.Windows.Forms.LinkLabel lnkRegistrarUsuario;
-        internal System.Windows.Forms.Button btnCancelar;
-        internal System.Windows.Forms.Button btnAceptar;
-        internal System.Windows.Forms.TextBox txtPassword;
-        internal System.Windows.Forms.TextBox txtUsername;
-        internal System.Windows.Forms.Label PasswordLabel;
+        internal MetroFramework.Controls.MetroButton btnCancelar;
+        internal MetroFramework.Controls.MetroButton btnAceptar;
+        internal MetroFramework.Controls.MetroTextBox txtPassword;
+        internal MetroFramework.Controls.MetroTextBox txtUsername;
+        internal MetroFramework.Controls.MetroLabel PasswordLabel;
         internal System.Windows.Forms.PictureBox LogoPictureBox;
-        internal System.Windows.Forms.Label UsernameLabel;
+        internal MetroFramework.Controls.MetroLabel UsernameLabel;
     }
 }

@@ -31,24 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearDieta));
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnAtras = new System.Windows.Forms.Button();
-            this.btnEnviar = new System.Windows.Forms.Button();
-            this.chkSoja = new System.Windows.Forms.CheckBox();
-            this.chkFrutasRojas = new System.Windows.Forms.CheckBox();
-            this.chkHojasVerdes = new System.Windows.Forms.CheckBox();
-            this.chkFructosa = new System.Windows.Forms.CheckBox();
-            this.chkLeche = new System.Windows.Forms.CheckBox();
-            this.chkMariscos = new System.Windows.Forms.CheckBox();
-            this.chkPescado = new System.Windows.Forms.CheckBox();
-            this.chkCarnePollo = new System.Windows.Forms.CheckBox();
-            this.chkTrigo = new System.Windows.Forms.CheckBox();
-            this.chkQueso = new System.Windows.Forms.CheckBox();
-            this.chkFrutosSecos = new System.Windows.Forms.CheckBox();
-            this.chkCarneCerdo = new System.Windows.Forms.CheckBox();
-            this.chkCarneVaca = new System.Windows.Forms.CheckBox();
-            this.chkTomate = new System.Windows.Forms.CheckBox();
-            this.chkHuevo = new System.Windows.Forms.CheckBox();
-            this.lblWelcome = new System.Windows.Forms.Label();
+            this.chkSoja = new MetroFramework.Controls.MetroCheckBox();
+            this.chkFrutasRojas = new MetroFramework.Controls.MetroCheckBox();
+            this.chkHojasVerdes = new MetroFramework.Controls.MetroCheckBox();
+            this.chkFructosa = new MetroFramework.Controls.MetroCheckBox();
+            this.chkLeche = new MetroFramework.Controls.MetroCheckBox();
+            this.chkMariscos = new MetroFramework.Controls.MetroCheckBox();
+            this.chkPescado = new MetroFramework.Controls.MetroCheckBox();
+            this.chkCarnePollo = new MetroFramework.Controls.MetroCheckBox();
+            this.chkTrigo = new MetroFramework.Controls.MetroCheckBox();
+            this.chkQueso = new MetroFramework.Controls.MetroCheckBox();
+            this.chkFrutosSecos = new MetroFramework.Controls.MetroCheckBox();
+            this.chkCarneCerdo = new MetroFramework.Controls.MetroCheckBox();
+            this.chkCarneVaca = new MetroFramework.Controls.MetroCheckBox();
+            this.chkTomate = new MetroFramework.Controls.MetroCheckBox();
+            this.chkHuevo = new MetroFramework.Controls.MetroCheckBox();
+            this.btnAtras = new MetroFramework.Controls.MetroButton();
+            this.btnEnviar = new MetroFramework.Controls.MetroButton();
+            this.lblWelcome = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.GroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -62,8 +62,6 @@
             // 
             // GroupBox1
             // 
-            this.GroupBox1.Controls.Add(this.btnAtras);
-            this.GroupBox1.Controls.Add(this.btnEnviar);
             this.GroupBox1.Controls.Add(this.chkSoja);
             this.GroupBox1.Controls.Add(this.chkFrutasRojas);
             this.GroupBox1.Controls.Add(this.chkHojasVerdes);
@@ -83,110 +81,113 @@
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.TabStop = false;
             // 
-            // btnAtras
-            // 
-            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            resources.ApplyResources(this.btnAtras, "btnAtras");
-            this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
-            this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
-            // 
-            // btnEnviar
-            // 
-            resources.ApplyResources(this.btnEnviar, "btnEnviar");
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
-            this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
-            // 
             // chkSoja
             // 
             resources.ApplyResources(this.chkSoja, "chkSoja");
             this.chkSoja.Name = "chkSoja";
-            this.chkSoja.UseVisualStyleBackColor = true;
+            this.chkSoja.UseSelectable = true;
             // 
             // chkFrutasRojas
             // 
             resources.ApplyResources(this.chkFrutasRojas, "chkFrutasRojas");
             this.chkFrutasRojas.Name = "chkFrutasRojas";
-            this.chkFrutasRojas.UseVisualStyleBackColor = true;
+            this.chkFrutasRojas.UseSelectable = true;
             // 
             // chkHojasVerdes
             // 
             resources.ApplyResources(this.chkHojasVerdes, "chkHojasVerdes");
             this.chkHojasVerdes.Name = "chkHojasVerdes";
-            this.chkHojasVerdes.UseVisualStyleBackColor = true;
+            this.chkHojasVerdes.UseSelectable = true;
             // 
             // chkFructosa
             // 
             resources.ApplyResources(this.chkFructosa, "chkFructosa");
             this.chkFructosa.Name = "chkFructosa";
-            this.chkFructosa.UseVisualStyleBackColor = true;
+            this.chkFructosa.UseSelectable = true;
             // 
             // chkLeche
             // 
             resources.ApplyResources(this.chkLeche, "chkLeche");
             this.chkLeche.Name = "chkLeche";
-            this.chkLeche.UseVisualStyleBackColor = true;
+            this.chkLeche.UseSelectable = true;
             // 
             // chkMariscos
             // 
             resources.ApplyResources(this.chkMariscos, "chkMariscos");
             this.chkMariscos.Name = "chkMariscos";
-            this.chkMariscos.UseVisualStyleBackColor = true;
+            this.chkMariscos.UseSelectable = true;
             // 
             // chkPescado
             // 
             resources.ApplyResources(this.chkPescado, "chkPescado");
             this.chkPescado.Name = "chkPescado";
-            this.chkPescado.UseVisualStyleBackColor = true;
+            this.chkPescado.UseSelectable = true;
             // 
             // chkCarnePollo
             // 
             resources.ApplyResources(this.chkCarnePollo, "chkCarnePollo");
             this.chkCarnePollo.Name = "chkCarnePollo";
-            this.chkCarnePollo.UseVisualStyleBackColor = true;
+            this.chkCarnePollo.UseSelectable = true;
             // 
             // chkTrigo
             // 
             resources.ApplyResources(this.chkTrigo, "chkTrigo");
             this.chkTrigo.Name = "chkTrigo";
-            this.chkTrigo.UseVisualStyleBackColor = true;
+            this.chkTrigo.UseSelectable = true;
             // 
             // chkQueso
             // 
             resources.ApplyResources(this.chkQueso, "chkQueso");
             this.chkQueso.Name = "chkQueso";
-            this.chkQueso.UseVisualStyleBackColor = true;
+            this.chkQueso.UseSelectable = true;
             // 
             // chkFrutosSecos
             // 
             resources.ApplyResources(this.chkFrutosSecos, "chkFrutosSecos");
             this.chkFrutosSecos.Name = "chkFrutosSecos";
-            this.chkFrutosSecos.UseVisualStyleBackColor = true;
+            this.chkFrutosSecos.UseSelectable = true;
             // 
             // chkCarneCerdo
             // 
             resources.ApplyResources(this.chkCarneCerdo, "chkCarneCerdo");
             this.chkCarneCerdo.Name = "chkCarneCerdo";
-            this.chkCarneCerdo.UseVisualStyleBackColor = true;
+            this.chkCarneCerdo.UseSelectable = true;
             // 
             // chkCarneVaca
             // 
             resources.ApplyResources(this.chkCarneVaca, "chkCarneVaca");
             this.chkCarneVaca.Name = "chkCarneVaca";
-            this.chkCarneVaca.UseVisualStyleBackColor = true;
+            this.chkCarneVaca.UseSelectable = true;
             // 
             // chkTomate
             // 
             resources.ApplyResources(this.chkTomate, "chkTomate");
             this.chkTomate.Name = "chkTomate";
-            this.chkTomate.UseVisualStyleBackColor = true;
+            this.chkTomate.UseSelectable = true;
             // 
             // chkHuevo
             // 
             resources.ApplyResources(this.chkHuevo, "chkHuevo");
             this.chkHuevo.Name = "chkHuevo";
-            this.chkHuevo.UseVisualStyleBackColor = true;
+            this.chkHuevo.UseSelectable = true;
+            // 
+            // btnAtras
+            // 
+            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnAtras.FontSize = MetroFramework.MetroButtonSize.Medium;
+            resources.ApplyResources(this.btnAtras, "btnAtras");
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.UseSelectable = true;
+            this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
+            // 
+            // btnEnviar
+            // 
+            this.btnEnviar.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnEnviar.Highlight = true;
+            resources.ApplyResources(this.btnEnviar, "btnEnviar");
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.UseSelectable = true;
+            this.btnEnviar.Click += new System.EventHandler(this.OnBtnEnviarClick);
             // 
             // lblWelcome
             // 
@@ -199,7 +200,9 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAtras;
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.lblWelcome);
+            this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.GroupBox1);
             this.Name = "CrearDieta";
@@ -207,7 +210,6 @@
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -215,23 +217,23 @@
 
         internal System.Windows.Forms.PictureBox PictureBox1;
         internal System.Windows.Forms.GroupBox GroupBox1;
-        internal System.Windows.Forms.Button btnAtras;
-        internal System.Windows.Forms.Button btnEnviar;
-        internal System.Windows.Forms.CheckBox chkSoja;
-        internal System.Windows.Forms.CheckBox chkFrutasRojas;
-        internal System.Windows.Forms.CheckBox chkHojasVerdes;
-        internal System.Windows.Forms.CheckBox chkFructosa;
-        internal System.Windows.Forms.CheckBox chkLeche;
-        internal System.Windows.Forms.CheckBox chkMariscos;
-        internal System.Windows.Forms.CheckBox chkPescado;
-        internal System.Windows.Forms.CheckBox chkCarnePollo;
-        internal System.Windows.Forms.CheckBox chkTrigo;
-        internal System.Windows.Forms.CheckBox chkQueso;
-        internal System.Windows.Forms.CheckBox chkFrutosSecos;
-        internal System.Windows.Forms.CheckBox chkCarneCerdo;
-        internal System.Windows.Forms.CheckBox chkCarneVaca;
-        internal System.Windows.Forms.CheckBox chkTomate;
-        internal System.Windows.Forms.CheckBox chkHuevo;
-        private System.Windows.Forms.Label lblWelcome;
+        internal MetroFramework.Controls.MetroButton btnAtras;
+        internal MetroFramework.Controls.MetroButton btnEnviar;
+        private MetroFramework.Controls.MetroLabel lblWelcome;
+        internal MetroFramework.Controls.MetroCheckBox chkSoja;
+        internal MetroFramework.Controls.MetroCheckBox chkFrutasRojas;
+        internal MetroFramework.Controls.MetroCheckBox chkHojasVerdes;
+        internal MetroFramework.Controls.MetroCheckBox chkFructosa;
+        internal MetroFramework.Controls.MetroCheckBox chkLeche;
+        internal MetroFramework.Controls.MetroCheckBox chkMariscos;
+        internal MetroFramework.Controls.MetroCheckBox chkPescado;
+        internal MetroFramework.Controls.MetroCheckBox chkCarnePollo;
+        internal MetroFramework.Controls.MetroCheckBox chkTrigo;
+        internal MetroFramework.Controls.MetroCheckBox chkQueso;
+        internal MetroFramework.Controls.MetroCheckBox chkFrutosSecos;
+        internal MetroFramework.Controls.MetroCheckBox chkCarneCerdo;
+        internal MetroFramework.Controls.MetroCheckBox chkCarneVaca;
+        internal MetroFramework.Controls.MetroCheckBox chkTomate;
+        internal MetroFramework.Controls.MetroCheckBox chkHuevo;
     }
 }

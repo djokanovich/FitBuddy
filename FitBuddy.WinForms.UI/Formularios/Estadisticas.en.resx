@@ -117,56 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblImcClasificación.Text" xml:space="preserve">
-    <value>Classification</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>User metrics:</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblIgc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 31</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 19</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Body Mass Index (BMI)</value>
-  </data>
-  <data name="lblImcClasificación.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 13</value>
-  </data>
-  <data name="btnCerrar.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Scan to understand calculation variables</value>
-  </data>
   <data name="lblIgcClasificacion.Text" xml:space="preserve">
     <value>Classification</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 13</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 17</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 19</value>
-  </data>
-  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 13</value>
-  </data>
-  <data name="lblWelcome.Text" xml:space="preserve">
-    <value>User</value>
-  </data>
-  <data name="btnVerMás.Text" xml:space="preserve">
-    <value>View more</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOAQMAAABCf2vmAAAABGdBTUEAALGPC/xhBQAAAAZQTFRF////
-        AAAAVcLTfgAAAAlwSFlzAAAOvgAADr4B6kKxwAAAAflJREFUaN7tmU1uxSAMhC1xAI7E1TlSDoBEmRmT
+        AAAAVcLTfgAAAAlwSFlzAAAOwgAADsIBFShKgAAAAflJREFUaN7tmU1uxSAMhC1xAI7E1TlSDoBEmRmT
         n2bZbkaKFeW9hq8LB3ts8+Kzzz77F5uwjuto84gRUWaPiqfDE8Fn7evO9abvo/ZcckTqXA/WVQ6+A7gO
         cL0Ga6QcbSHL77WHCxn+yApDfZfr3kggMMtCcO+gkGrv2LVBJB6Kzdv11hcbJA2a0eho006+zQVZz+gf
         73VSESeksd4E3gpZK0XFiuHJnGv4j6OFJxLUDNjSQvpaFKpXqrkhVHcW4VYoiqhXR7unmheCGsXADAap
@@ -178,13 +136,34 @@
         gzRPQJ8AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Scan to learn more about these variables</value>
+  </data>
+  <data name="btnCerrar.Text" xml:space="preserve">
+    <value>&amp;Back</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Body Fat Index (BFI)</value>
   </data>
-  <data name="lblImc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 32</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Body Mass Index (BMI)</value>
   </data>
-  <data name="lblIgcClasificacion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 13</value>
+  <data name="lblImcClasificación.Text" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>User metrics:</value>
+  </data>
+  <data name="lblWelcome.Text" xml:space="preserve">
+    <value>Welcome, {0}</value>
+  </data>
+  <data name="lblIgc.Text" xml:space="preserve">
+    <value>BFI</value>
+  </data>
+  <data name="btnVerMás.Text" xml:space="preserve">
+    <value>&amp;See more</value>
+  </data>
+  <data name="lblImc.Text" xml:space="preserve">
+    <value>BMI</value>
   </data>
 </root>

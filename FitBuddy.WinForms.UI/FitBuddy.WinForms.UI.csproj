@@ -108,7 +108,9 @@
     <Compile Include="Animación\Animar.cs" />
     <Compile Include="Animación\FuncionesDeSuavizado.cs" />
     <Compile Include="Animación\Transformación.cs" />
+    <Compile Include="AppInfo.cs" />
     <Compile Include="ArgsParser.cs" />
+    <Compile Include="ExtensionMethods\ControlExtensionMethods.cs" />
     <Compile Include="FitBuddyApp.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Formularios\AcercaDe.cs">
@@ -228,6 +230,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Recursos\Strings.en.Designer.cs">
+      <DependentUpon>Strings.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Recursos\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
     <Compile Include="Security\AnonymousIdentity.cs" />
     <Compile Include="Security\CustomIdentity.cs" />
     <Compile Include="Security\CustomPrincipal.cs" />
@@ -341,6 +353,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistrarNuevoUsuario.resx">
       <DependentUpon>RegistrarNuevoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursos\Strings.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursos\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

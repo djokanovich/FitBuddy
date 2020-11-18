@@ -29,44 +29,48 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CargarAlimento));
-            this.btnAtrás = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnBorrar = new System.Windows.Forms.Button();
+            this.btnAtrás = new MetroFramework.Controls.MetroButton();
+            this.btnAgregar = new MetroFramework.Controls.MetroButton();
+            this.btnBorrar = new MetroFramework.Controls.MetroButton();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblPorción = new System.Windows.Forms.Label();
-            this.lblComida = new System.Windows.Forms.Label();
+            this.lblPorción = new MetroFramework.Controls.MetroLabel();
+            this.lblComida = new MetroFramework.Controls.MetroLabel();
             this.datConsumoAlimentos = new System.Windows.Forms.DataGridView();
-            this.lblWelcome = new System.Windows.Forms.Label();
-            this.txtComida = new System.Windows.Forms.TextBox();
-            this.lblCalorías = new System.Windows.Forms.Label();
-            this.txtPorción = new System.Windows.Forms.TextBox();
+            this.lblWelcome = new MetroFramework.Controls.MetroLabel();
+            this.txtComida = new MetroFramework.Controls.MetroTextBox();
+            this.lblCalorías = new MetroFramework.Controls.MetroLabel();
+            this.txtPorción = new MetroFramework.Controls.MetroTextBox();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.cmbMomentoDelDía = new System.Windows.Forms.ComboBox();
-            this.lblMomento = new System.Windows.Forms.Label();
+            this.cmbMomentoDelDía = new MetroFramework.Controls.MetroComboBox();
+            this.lblMomento = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datConsumoAlimentos)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnAtras
+            // btnAtrás
             // 
             this.btnAtrás.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            resources.ApplyResources(this.btnAtrás, "btnAtras");
-            this.btnAtrás.Name = "btnAtras";
-            this.btnAtrás.UseVisualStyleBackColor = true;
+            this.btnAtrás.FontSize = MetroFramework.MetroButtonSize.Medium;
+            resources.ApplyResources(this.btnAtrás, "btnAtrás");
+            this.btnAtrás.Name = "btnAtrás";
+            this.btnAtrás.UseSelectable = true;
             this.btnAtrás.Click += new System.EventHandler(this.OnBtnAtrásClick);
             // 
             // btnAgregar
             // 
+            this.btnAgregar.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnAgregar.Highlight = true;
             resources.ApplyResources(this.btnAgregar, "btnAgregar");
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseSelectable = true;
             this.btnAgregar.Click += new System.EventHandler(this.OnBtnAgregarClick);
             // 
             // btnBorrar
             // 
+            this.btnBorrar.FontSize = MetroFramework.MetroButtonSize.Medium;
             resources.ApplyResources(this.btnBorrar, "btnBorrar");
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.UseSelectable = true;
             // 
             // PictureBox1
             // 
@@ -101,8 +105,31 @@
             // 
             this.txtComida.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtComida.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            // 
+            // 
+            // 
+            this.txtComida.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.txtComida.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
+            this.txtComida.CustomButton.Name = "";
+            this.txtComida.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
+            this.txtComida.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtComida.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
+            this.txtComida.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtComida.CustomButton.UseSelectable = true;
+            this.txtComida.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
+            this.txtComida.Lines = new string[0];
             resources.ApplyResources(this.txtComida, "txtComida");
+            this.txtComida.MaxLength = 32767;
             this.txtComida.Name = "txtComida";
+            this.txtComida.PasswordChar = '\0';
+            this.txtComida.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtComida.SelectedText = "";
+            this.txtComida.SelectionLength = 0;
+            this.txtComida.SelectionStart = 0;
+            this.txtComida.ShortcutsEnabled = true;
+            this.txtComida.UseSelectable = true;
+            this.txtComida.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtComida.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // lblCalorías
             // 
@@ -113,8 +140,31 @@
             // 
             this.txtPorción.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtPorción.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            // 
+            // 
+            // 
+            this.txtPorción.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.txtPorción.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location1")));
+            this.txtPorción.CustomButton.Name = "";
+            this.txtPorción.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size1")));
+            this.txtPorción.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPorción.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex1")));
+            this.txtPorción.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPorción.CustomButton.UseSelectable = true;
+            this.txtPorción.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible1")));
+            this.txtPorción.Lines = new string[0];
             resources.ApplyResources(this.txtPorción, "txtPorción");
+            this.txtPorción.MaxLength = 32767;
             this.txtPorción.Name = "txtPorción";
+            this.txtPorción.PasswordChar = '\0';
+            this.txtPorción.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPorción.SelectedText = "";
+            this.txtPorción.SelectionLength = 0;
+            this.txtPorción.SelectionStart = 0;
+            this.txtPorción.ShortcutsEnabled = true;
+            this.txtPorción.UseSelectable = true;
+            this.txtPorción.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPorción.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txtPorción.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnTxtPorciónKeyPress);
             // 
             // dtpFecha
@@ -124,10 +174,10 @@
             // 
             // cmbMomentoDelDía
             // 
-            this.cmbMomentoDelDía.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMomentoDelDía.FormattingEnabled = true;
             resources.ApplyResources(this.cmbMomentoDelDía, "cmbMomentoDelDía");
             this.cmbMomentoDelDía.Name = "cmbMomentoDelDía";
+            this.cmbMomentoDelDía.UseSelectable = true;
             // 
             // lblMomento
             // 
@@ -158,25 +208,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datConsumoAlimentos)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        internal System.Windows.Forms.Button btnAtrás;
-        internal System.Windows.Forms.Button btnAgregar;
-        internal System.Windows.Forms.Button btnBorrar;
+        internal MetroFramework.Controls.MetroButton btnAtrás;
+        internal MetroFramework.Controls.MetroButton btnAgregar;
+        internal MetroFramework.Controls.MetroButton btnBorrar;
         internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.Label lblPorción;
-        internal System.Windows.Forms.Label lblComida;
+        internal MetroFramework.Controls.MetroLabel lblPorción;
+        internal MetroFramework.Controls.MetroLabel lblComida;
         internal System.Windows.Forms.DataGridView datConsumoAlimentos;
-        private System.Windows.Forms.Label lblWelcome;
-        private System.Windows.Forms.TextBox txtComida;
-        private System.Windows.Forms.Label lblCalorías;
-        private System.Windows.Forms.TextBox txtPorción;
+        private MetroFramework.Controls.MetroLabel lblWelcome;
+        private MetroFramework.Controls.MetroTextBox txtComida;
+        private MetroFramework.Controls.MetroLabel lblCalorías;
+        private MetroFramework.Controls.MetroTextBox txtPorción;
         private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.ComboBox cmbMomentoDelDía;
-        internal System.Windows.Forms.Label lblMomento;
+        private MetroFramework.Controls.MetroComboBox cmbMomentoDelDía;
+        internal MetroFramework.Controls.MetroLabel lblMomento;
     }
 }

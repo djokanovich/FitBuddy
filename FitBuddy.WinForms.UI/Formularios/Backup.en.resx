@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnAtras.Text" xml:space="preserve">
-    <value>Back</value>
+    <value>Cancel</value>
   </data>
   <data name="btnRestaurar.Text" xml:space="preserve">
     <value>Restore</value>

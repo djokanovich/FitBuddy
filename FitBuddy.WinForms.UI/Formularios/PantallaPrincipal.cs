@@ -1,5 +1,6 @@
 ﻿using Common.Bitacora;
 using FitBuddy.Business.Facade;
+using FitBuddy.WinForms.UI.ExtensionMethods;
 using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 using System;
@@ -18,7 +19,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             IPantallaPrincipalBusinessLogic pantallaPrincipalBusinessLogic)
         {
             InitializeComponent();
-            lblWelcome.Text = $"Bienvenido, {IdentityManager.UsuarioActual.Username}";
+            lblWelcome.FormatearControl(IdentityManager.UsuarioActual.Username);
             _formManager = formManager;
             _bitacora = bitacora;
             _pantallaPrincipalBusinessLogic = pantallaPrincipalBusinessLogic;

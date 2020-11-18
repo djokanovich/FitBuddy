@@ -118,36 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnAtras.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 433</value>
+  <data name="btnAtrás.Location" type="System.Drawing.Point, System.Drawing">
+    <value>612, 443</value>
   </data>
-  <data name="btnAtras.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="btnAtrás.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 30</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAtras.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnAtrás.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="btnAtras.Text" xml:space="preserve">
+  <data name="btnAtrás.Text" xml:space="preserve">
     <value>Atrás</value>
   </data>
-  <data name="&gt;&gt;btnAtras.Name" xml:space="preserve">
-    <value>btnAtras</value>
+  <data name="&gt;&gt;btnAtrás.Name" xml:space="preserve">
+    <value>btnAtrás</value>
   </data>
-  <data name="&gt;&gt;btnAtras.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnAtrás.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;btnAtras.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnAtrás.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnAtras.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnAtrás.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="btnAgregar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 151</value>
+    <value>278, 443</value>
   </data>
   <data name="btnAgregar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>120, 30</value>
   </data>
   <data name="btnAgregar.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -159,7 +159,7 @@
     <value>btnAgregar</value>
   </data>
   <data name="&gt;&gt;btnAgregar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;btnAgregar.Parent" xml:space="preserve">
     <value>$this</value>
@@ -168,10 +168,10 @@
     <value>8</value>
   </data>
   <data name="btnBorrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 111</value>
+    <value>404, 443</value>
   </data>
   <data name="btnBorrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>120, 30</value>
   </data>
   <data name="btnBorrar.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -183,7 +183,7 @@
     <value>btnBorrar</value>
   </data>
   <data name="&gt;&gt;btnBorrar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;btnBorrar.Parent" xml:space="preserve">
     <value>$this</value>
@@ -192,7 +192,7 @@
     <value>9</value>
   </data>
   <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 116</value>
+    <value>23, 102</value>
   </data>
   <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>223, 246</value>
@@ -216,14 +216,11 @@
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="lblPorción.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lblPorción.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 171</value>
+    <value>263, 170</value>
   </data>
   <data name="lblPorción.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
+    <value>97, 19</value>
   </data>
   <data name="lblPorción.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -231,11 +228,14 @@
   <data name="lblPorción.Text" xml:space="preserve">
     <value>Porción</value>
   </data>
+  <data name="lblPorción.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
   <data name="&gt;&gt;lblPorción.Name" xml:space="preserve">
     <value>lblPorción</value>
   </data>
   <data name="&gt;&gt;lblPorción.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;lblPorción.Parent" xml:space="preserve">
     <value>$this</value>
@@ -243,14 +243,11 @@
   <data name="&gt;&gt;lblPorción.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="lblComida.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lblComida.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 139</value>
+    <value>263, 136</value>
   </data>
   <data name="lblComida.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 13</value>
+    <value>97, 19</value>
   </data>
   <data name="lblComida.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -258,11 +255,14 @@
   <data name="lblComida.Text" xml:space="preserve">
     <value>Comida</value>
   </data>
+  <data name="lblComida.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
   <data name="&gt;&gt;lblComida.Name" xml:space="preserve">
     <value>lblComida</value>
   </data>
   <data name="&gt;&gt;lblComida.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;lblComida.Parent" xml:space="preserve">
     <value>$this</value>
@@ -271,13 +271,13 @@
     <value>12</value>
   </data>
   <data name="datConsumoAlimentos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>278, 248</value>
+    <value>263, 248</value>
   </data>
   <data name="datConsumoAlimentos.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>82</value>
   </data>
   <data name="datConsumoAlimentos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 133</value>
+    <value>469, 133</value>
   </data>
   <data name="datConsumoAlimentos.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -294,26 +294,29 @@
   <data name="&gt;&gt;datConsumoAlimentos.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="lblWelcome.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lblWelcome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>676, 33</value>
+    <value>263, 60</value>
   </data>
   <data name="lblWelcome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+    <value>469, 20</value>
   </data>
   <data name="lblWelcome.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
+  </data>
+  <data name="lblWelcome.Text" xml:space="preserve">
+    <value>Bienvenido, {0}</value>
+  </data>
+  <data name="lblWelcome.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
   </data>
   <data name="&gt;&gt;lblWelcome.Name" xml:space="preserve">
     <value>lblWelcome</value>
   </data>
   <data name="&gt;&gt;lblWelcome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;lblWelcome.Parent" xml:space="preserve">
     <value>$this</value>
@@ -321,11 +324,26 @@
   <data name="&gt;&gt;lblWelcome.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 2</value>
+  </data>
+  <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 15</value>
+  </data>
+  <data name="resource.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="txtComida.Location" type="System.Drawing.Point, System.Drawing">
     <value>366, 136</value>
   </data>
   <data name="txtComida.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>366, 20</value>
   </data>
   <data name="txtComida.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -334,7 +352,7 @@
     <value>txtComida</value>
   </data>
   <data name="&gt;&gt;txtComida.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;txtComida.Parent" xml:space="preserve">
     <value>$this</value>
@@ -345,9 +363,6 @@
   <data name="lblCalorías.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
   </data>
-  <data name="lblCalorías.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
   <data name="lblCalorías.Location" type="System.Drawing.Point, System.Drawing">
     <value>278, 399</value>
   </data>
@@ -355,13 +370,13 @@
     <value>1, 0, 1, 0</value>
   </data>
   <data name="lblCalorías.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 19</value>
+    <value>454, 19</value>
   </data>
   <data name="lblCalorías.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
   <data name="lblCalorías.Text" xml:space="preserve">
-    <value>{{CaloríasTotales}}</value>
+    <value>Calorías totales: {0}</value>
   </data>
   <data name="lblCalorías.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -370,7 +385,7 @@
     <value>lblCalorías</value>
   </data>
   <data name="&gt;&gt;lblCalorías.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;lblCalorías.Parent" xml:space="preserve">
     <value>$this</value>
@@ -378,11 +393,26 @@
   <data name="&gt;&gt;lblCalorías.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="resource.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Location1" type="System.Drawing.Point, System.Drawing">
+    <value>348, 2</value>
+  </data>
+  <data name="resource.Size1" type="System.Drawing.Size, System.Drawing">
+    <value>15, 15</value>
+  </data>
+  <data name="resource.TabIndex1" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="txtPorción.Location" type="System.Drawing.Point, System.Drawing">
     <value>366, 170</value>
   </data>
   <data name="txtPorción.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>366, 20</value>
   </data>
   <data name="txtPorción.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -391,7 +421,7 @@
     <value>txtPorción</value>
   </data>
   <data name="&gt;&gt;txtPorción.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;txtPorción.Parent" xml:space="preserve">
     <value>$this</value>
@@ -423,6 +453,9 @@
   <data name="&gt;&gt;dtpFecha.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="cmbMomentoDelDía.ItemHeight" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
   <data name="cmbMomentoDelDía.Location" type="System.Drawing.Point, System.Drawing">
     <value>366, 206</value>
   </data>
@@ -430,7 +463,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="cmbMomentoDelDía.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 21</value>
+    <value>366, 29</value>
   </data>
   <data name="cmbMomentoDelDía.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -439,7 +472,7 @@
     <value>cmbMomentoDelDía</value>
   </data>
   <data name="&gt;&gt;cmbMomentoDelDía.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;cmbMomentoDelDía.Parent" xml:space="preserve">
     <value>$this</value>
@@ -447,14 +480,11 @@
   <data name="&gt;&gt;cmbMomentoDelDía.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="lblMomento.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lblMomento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 209</value>
+    <value>263, 211</value>
   </data>
   <data name="lblMomento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 13</value>
+    <value>97, 19</value>
   </data>
   <data name="lblMomento.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -462,11 +492,14 @@
   <data name="lblMomento.Text" xml:space="preserve">
     <value>Momento</value>
   </data>
+  <data name="lblMomento.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
   <data name="&gt;&gt;lblMomento.Name" xml:space="preserve">
     <value>lblMomento</value>
   </data>
   <data name="&gt;&gt;lblMomento.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;lblMomento.Parent" xml:space="preserve">
     <value>$this</value>

@@ -1,5 +1,6 @@
 ﻿using FitBuddy.Business.Facade;
 using FitBuddy.Business.Modelos;
+using FitBuddy.WinForms.UI.ExtensionMethods;
 using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 using System;
@@ -20,7 +21,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         public CargarAlimento(IFormManager formManager, ICargarAlimentoBusinessLogic cargarAlimentoBusinessLogic)
         {
             InitializeComponent();
-            lblWelcome.Text = $"Usuario {IdentityManager.UsuarioActual.Username}";
+            lblWelcome.FormatearControl(IdentityManager.UsuarioActual.Username);
             _formManager = formManager;
             _cargarAlimentoBusinessLogic = cargarAlimentoBusinessLogic;
         }
@@ -44,7 +45,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             datConsumoAlimentos.DataSource = _bindingSource;
 
             // Inicializar combobox con los momentos del día.
-            var momentosDelDía = new[] { "Desayuno", "Almuerzo", "Merienda", "Cena", "Colación" };
+            var momentosDelDía = Recursos.Strings.CargarAlimento_MomentosDelDía.Split('|');
             cmbMomentoDelDía.Items.AddRange(momentosDelDía);
             cmbMomentoDelDía.SelectedIndex = 0;
         }
@@ -74,21 +75,21 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             if (!_tablaAlimentosCalorías.Select(ac => ac.Alimento).Contains(txtComida.Text, StringComparer.InvariantCultureIgnoreCase))
             {
-                MessageBox.Show($"'{txtComida.Text}' no es un alimento válido.");
+                MessageBox.Show(string.Format(Recursos.Strings.CargarAlimento_ErrorAlimentoNoEsVálido, txtComida.Text));
                 txtComida.Focus();
                 return false;
             }
 
             if (!float.TryParse(txtPorción.Text, out _))
             {
-                MessageBox.Show($"Debe ingresar un valor válido.");
+                MessageBox.Show(Recursos.Strings.CargarAlimento_ErrorPorciónNoEsVálida);
                 txtPorción.Focus();
                 return false;
             }
 
             if (cmbMomentoDelDía.SelectedIndex == -1)
             {
-                MessageBox.Show($"Debe seleccionar un momento del día.");
+                MessageBox.Show(Recursos.Strings.CargarAlimento_ErrorMomentoDelDíaNoEsVálido);
                 cmbMomentoDelDía.Focus();
                 return false;
             }
@@ -106,7 +107,7 @@ namespace FitBuddy.WinForms.UI.Formularios
                 caloriasTotales += float.Parse(alimento.Porción) * alimentoCaloría.CaloríasCadaCienGramos / 100;
             }
 
-            lblCalorías.Text = $"Total de calorías: {caloriasTotales}";
+            lblCalorías.FormatearControl(caloriasTotales.ToString());
         }
 
         private void OnBtnAtrásClick(object sender, EventArgs e)

@@ -93,6 +93,7 @@
             // 
             // LogoPictureBox
             // 
+            this.LogoPictureBox.Image = global::FitBuddy.WinForms.UI.Properties.Resources.FitBuddy;
             resources.ApplyResources(this.LogoPictureBox, "LogoPictureBox");
             this.LogoPictureBox.Name = "LogoPictureBox";
             this.LogoPictureBox.TabStop = false;

@@ -126,89 +126,11 @@
     <value>Fill</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="LogoPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        CpvMBemz6AAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="LogoPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="LogoPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>3, 3</value>
   </data>
   <data name="LogoPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>354, 535</value>
+    <value>177, 278</value>
   </data>
   <data name="LogoPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -232,16 +154,16 @@
     <value>Fill</value>
   </data>
   <data name="LabelProductName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 0</value>
+    <value>189, 0</value>
   </data>
   <data name="LabelProductName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 6, 0</value>
+    <value>6, 0, 3, 0</value>
   </data>
   <data name="LabelProductName.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 33</value>
+    <value>0, 17</value>
   </data>
   <data name="LabelProductName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>726, 33</value>
+    <value>363, 17</value>
   </data>
   <data name="LabelProductName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -268,16 +190,16 @@
     <value>Fill</value>
   </data>
   <data name="LabelVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 54</value>
+    <value>189, 28</value>
   </data>
   <data name="LabelVersion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 6, 0</value>
+    <value>6, 0, 3, 0</value>
   </data>
   <data name="LabelVersion.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 33</value>
+    <value>0, 17</value>
   </data>
   <data name="LabelVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>726, 33</value>
+    <value>363, 17</value>
   </data>
   <data name="LabelVersion.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -304,16 +226,16 @@
     <value>Fill</value>
   </data>
   <data name="LabelCopyright.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 108</value>
+    <value>189, 56</value>
   </data>
   <data name="LabelCopyright.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 6, 0</value>
+    <value>6, 0, 3, 0</value>
   </data>
   <data name="LabelCopyright.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 33</value>
+    <value>0, 17</value>
   </data>
   <data name="LabelCopyright.Size" type="System.Drawing.Size, System.Drawing">
-    <value>726, 33</value>
+    <value>363, 17</value>
   </data>
   <data name="LabelCopyright.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -340,16 +262,16 @@
     <value>Fill</value>
   </data>
   <data name="LabelCompanyName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 162</value>
+    <value>189, 84</value>
   </data>
   <data name="LabelCompanyName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 6, 0</value>
+    <value>6, 0, 3, 0</value>
   </data>
   <data name="LabelCompanyName.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 33</value>
+    <value>0, 17</value>
   </data>
   <data name="LabelCompanyName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>726, 33</value>
+    <value>363, 17</value>
   </data>
   <data name="LabelCompanyName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -376,10 +298,10 @@
     <value>Fill</value>
   </data>
   <data name="TextBoxDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 222</value>
+    <value>189, 115</value>
   </data>
   <data name="TextBoxDescription.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 6, 6, 6</value>
+    <value>6, 3, 3, 3</value>
   </data>
   <data name="TextBoxDescription.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -388,7 +310,7 @@
     <value>Both</value>
   </data>
   <data name="TextBoxDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>726, 261</value>
+    <value>363, 136</value>
   </data>
   <data name="TextBoxDescription.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -415,13 +337,10 @@ Personalice la información de ensamblado de la aplicación en el panel Aplicaci
     <value>Bottom, Right</value>
   </data>
   <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>954, 497</value>
-  </data>
-  <data name="btnAceptar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>477, 258</value>
   </data>
   <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 44</value>
+    <value>75, 23</value>
   </data>
   <data name="btnAceptar.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -445,16 +364,13 @@ Personalice la información de ensamblado de la aplicación en el panel Aplicaci
     <value>Fill</value>
   </data>
   <data name="TableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 115</value>
-  </data>
-  <data name="TableLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>20, 60</value>
   </data>
   <data name="TableLayoutPanel.RowCount" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="TableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1110, 547</value>
+    <value>555, 284</value>
   </data>
   <data name="TableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -472,22 +388,19 @@ Personalice la información de ensamblado de la aplicación en el panel Aplicaci
     <value>0</value>
   </data>
   <data name="TableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="LogoPictureBox" Row="0" RowSpan="6" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="LabelProductName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelVersion" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelCopyright" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelCompanyName" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxDescription" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnAceptar" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,Percent,67" /&gt;&lt;Rows Styles="Percent,9.967846,Percent,9.967846,Percent,10,Percent,10,Percent,50,Percent,10,Absolute,38" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="LogoPictureBox" Row="0" RowSpan="6" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="LabelProductName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelVersion" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelCopyright" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LabelCompanyName" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxDescription" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnAceptar" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,Percent,67" /&gt;&lt;Rows Styles="Percent,9.967846,Percent,9.967846,Percent,10,Percent,10,Percent,50,Percent,10,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>12, 25</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1190, 700</value>
+    <value>595, 364</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>40, 115, 40, 38</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FitBuddy</value>

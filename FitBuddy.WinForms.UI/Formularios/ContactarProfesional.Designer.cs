@@ -86,7 +86,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::FitBuddy.WinForms.UI.Properties.Resources.Ilustração_Email_PNG_1024x1024;
+            this.pictureBox1.Image = global::FitBuddy.WinForms.UI.Properties.Resources.Contacto;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;

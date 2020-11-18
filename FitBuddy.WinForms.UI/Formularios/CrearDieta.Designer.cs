@@ -55,7 +55,7 @@
             // 
             // PictureBox1
             // 
-            this.PictureBox1.Image = global::FitBuddy.WinForms.UI.Properties.Resources.catering_clipart_meal_prep_1;
+            this.PictureBox1.Image = global::FitBuddy.WinForms.UI.Properties.Resources.Dieta;
             resources.ApplyResources(this.PictureBox1, "PictureBox1");
             this.PictureBox1.Name = "PictureBox1";
             this.PictureBox1.TabStop = false;

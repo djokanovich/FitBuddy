@@ -56,6 +56,7 @@
             // LogoPictureBox
             // 
             resources.ApplyResources(this.LogoPictureBox, "LogoPictureBox");
+            this.LogoPictureBox.Image = global::FitBuddy.WinForms.UI.Properties.Resources.FitBuddy;
             this.LogoPictureBox.Name = "LogoPictureBox";
             this.TableLayoutPanel.SetRowSpan(this.LogoPictureBox, 6);
             this.LogoPictureBox.TabStop = false;

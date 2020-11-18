@@ -2,7 +2,7 @@
 {
     public class CargarAlimentoModelo
     {
-        public string Comida { get; set; }
+        public string Alimento { get; set; }
         public float CaloríasCadaCienGramos { get; set; }
     }
 }

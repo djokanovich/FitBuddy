@@ -119,18 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnAtras.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1220, 767</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAtras.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>610, 433</value>
   </data>
   <data name="btnAtras.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 44</value>
+    <value>75, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnAtras.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btnAtras.Text" xml:space="preserve">
     <value>Atrás</value>
@@ -145,46 +141,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAtras.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
-  <data name="btnEnviar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1220, 291</value>
+  <data name="btnAgregar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 151</value>
   </data>
-  <data name="btnEnviar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+  <data name="btnAgregar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="btnEnviar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 44</value>
+  <data name="btnAgregar.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="btnEnviar.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btnEnviar.Text" xml:space="preserve">
+  <data name="btnAgregar.Text" xml:space="preserve">
     <value>Agregar</value>
   </data>
-  <data name="&gt;&gt;btnEnviar.Name" xml:space="preserve">
-    <value>btnEnviar</value>
+  <data name="&gt;&gt;btnAgregar.Name" xml:space="preserve">
+    <value>btnAgregar</value>
   </data>
-  <data name="&gt;&gt;btnEnviar.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnAgregar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnEnviar.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnAgregar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnEnviar.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;btnAgregar.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="btnBorrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1220, 213</value>
-  </data>
-  <data name="btnBorrar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>610, 111</value>
   </data>
   <data name="btnBorrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 44</value>
+    <value>75, 23</value>
   </data>
   <data name="btnBorrar.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnBorrar.Text" xml:space="preserve">
     <value>Borrar</value>
@@ -199,17 +189,15 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnBorrar.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 223</value>
-  </data>
-  <data name="PictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>23, 116</value>
   </data>
   <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>446, 473</value>
+    <value>223, 246</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -226,79 +214,70 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
-  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblPorción.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 329</value>
+  <data name="lblPorción.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 171</value>
   </data>
-  <data name="Label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
+  <data name="lblPorción.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
   </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 25</value>
-  </data>
-  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblPorción.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="Label2.Text" xml:space="preserve">
+  <data name="lblPorción.Text" xml:space="preserve">
     <value>Porción</value>
   </data>
-  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
-    <value>Label2</value>
+  <data name="&gt;&gt;lblPorción.Name" xml:space="preserve">
+    <value>lblPorción</value>
   </data>
-  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblPorción.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblPorción.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;lblPorción.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
-  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblComida.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 267</value>
+  <data name="lblComida.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 139</value>
   </data>
-  <data name="Label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
+  <data name="lblComida.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
   </data>
-  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 25</value>
-  </data>
-  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblComida.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="Label1.Text" xml:space="preserve">
+  <data name="lblComida.Text" xml:space="preserve">
     <value>Comida</value>
   </data>
-  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
-    <value>Label1</value>
+  <data name="&gt;&gt;lblComida.Name" xml:space="preserve">
+    <value>lblComida</value>
   </data>
-  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblComida.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblComida.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;lblComida.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="datConsumoAlimentos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>556, 477</value>
-  </data>
-  <data name="datConsumoAlimentos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>278, 248</value>
   </data>
   <data name="datConsumoAlimentos.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>82</value>
   </data>
   <data name="datConsumoAlimentos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>814, 256</value>
+    <value>407, 133</value>
   </data>
   <data name="datConsumoAlimentos.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -313,19 +292,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;datConsumoAlimentos.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="lblWelcome.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblWelcome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1352, 63</value>
+    <value>676, 33</value>
   </data>
   <data name="lblWelcome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 25</value>
+    <value>0, 13</value>
   </data>
   <data name="lblWelcome.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -340,16 +319,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblWelcome.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="txtComida.Location" type="System.Drawing.Point, System.Drawing">
-    <value>732, 261</value>
-  </data>
-  <data name="txtComida.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>366, 136</value>
   </data>
   <data name="txtComida.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 31</value>
+    <value>200, 20</value>
   </data>
   <data name="txtComida.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -364,178 +340,154 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtComida.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 10.125pt</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 773</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 33</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Total calorías día:</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="lblCalorias.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblCalorías.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
   </data>
-  <data name="lblCalorias.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblCalorías.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
   </data>
-  <data name="lblCalorias.Location" type="System.Drawing.Point, System.Drawing">
-    <value>890, 768</value>
+  <data name="lblCalorías.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 399</value>
   </data>
-  <data name="lblCalorias.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 39</value>
+  <data name="lblCalorías.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
   </data>
-  <data name="lblCalorias.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblCalorías.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 19</value>
+  </data>
+  <data name="lblCalorías.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="&gt;&gt;lblCalorias.Name" xml:space="preserve">
-    <value>lblCalorias</value>
+  <data name="lblCalorías.Text" xml:space="preserve">
+    <value>{{CaloríasTotales}}</value>
   </data>
-  <data name="&gt;&gt;lblCalorias.Type" xml:space="preserve">
+  <data name="lblCalorías.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblCalorías.Name" xml:space="preserve">
+    <value>lblCalorías</value>
+  </data>
+  <data name="&gt;&gt;lblCalorías.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblCalorias.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblCalorías.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblCalorias.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblCalorías.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="txtPorcion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>732, 326</value>
+  <data name="txtPorción.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 170</value>
   </data>
-  <data name="txtPorcion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+  <data name="txtPorción.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
   </data>
-  <data name="txtPorcion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 31</value>
-  </data>
-  <data name="txtPorcion.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;txtPorcion.Name" xml:space="preserve">
-    <value>txtPorcion</value>
-  </data>
-  <data name="&gt;&gt;txtPorcion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtPorcion.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtPorcion.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>732, 196</value>
-  </data>
-  <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 31</value>
-  </data>
-  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.Name" xml:space="preserve">
-    <value>dateTimePicker1</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
+  <data name="txtPorción.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="cmbMomento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>732, 394</value>
+  <data name="&gt;&gt;txtPorción.Name" xml:space="preserve">
+    <value>txtPorción</value>
   </data>
-  <data name="cmbMomento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 33</value>
+  <data name="&gt;&gt;txtPorción.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cmbMomento.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="&gt;&gt;txtPorción.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;cmbMomento.Name" xml:space="preserve">
-    <value>cmbMomento</value>
+  <data name="&gt;&gt;txtPorción.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;cmbMomento.Type" xml:space="preserve">
+  <data name="dtpFecha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 102</value>
+  </data>
+  <data name="dtpFecha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="dtpFecha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="dtpFecha.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;dtpFecha.Name" xml:space="preserve">
+    <value>dtpFecha</value>
+  </data>
+  <data name="&gt;&gt;dtpFecha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtpFecha.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dtpFecha.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbMomentoDelDía.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 206</value>
+  </data>
+  <data name="cmbMomentoDelDía.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="cmbMomentoDelDía.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 21</value>
+  </data>
+  <data name="cmbMomentoDelDía.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmbMomentoDelDía.Name" xml:space="preserve">
+    <value>cmbMomentoDelDía</value>
+  </data>
+  <data name="&gt;&gt;cmbMomentoDelDía.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cmbMomento.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbMomentoDelDía.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;cmbMomento.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cmbMomentoDelDía.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblMomento.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 402</value>
+  <data name="lblMomento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 209</value>
   </data>
-  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
+  <data name="lblMomento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 25</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblMomento.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="lblMomento.Text" xml:space="preserve">
     <value>Momento</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;lblMomento.Name" xml:space="preserve">
+    <value>lblMomento</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblMomento.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblMomento.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblMomento.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>12, 25</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1510, 954</value>
+    <value>755, 496</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>40, 115, 40, 38</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Carga Diaria de Comidas</value>

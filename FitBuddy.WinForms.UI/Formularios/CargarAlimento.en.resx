@@ -121,11 +121,14 @@
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
   </data>
+  <data name="btnAgregar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 139</value>
+  </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 13</value>
   </data>
   <data name="lblCalorias.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 19</value>
+    <value>397, 19</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Type of meal</value>
@@ -136,40 +139,46 @@
   <data name="btnAtras.Text" xml:space="preserve">
     <value>Back</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Total calories:</value>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="btnBorrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 103</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 17</value>
   </data>
-  <data name="btnEnviar.Text" xml:space="preserve">
-    <value>Add</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Total calories:</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
   </data>
   <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 20</value>
+    <value>200, 20</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
     <value>Food</value>
   </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>Amount</value>
+  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
   </data>
   <data name="txtPorcion.Size" type="System.Drawing.Size, System.Drawing">
     <value>396, 20</value>
   </data>
+  <data name="lblCalorias.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 399</value>
+  </data>
   <data name="cmbMomento.Size" type="System.Drawing.Size, System.Drawing">
     <value>396, 21</value>
   </data>
-  <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+  <data name="btnEnviar.Text" xml:space="preserve">
+    <value>Add</value>
   </data>
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADKCAYAAADgkA+VAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAABqtSURBVHhe7Z1N
+        DAAACwwBP0AiyAAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAABqtSURBVHhe7Z1N
         zyXHWYbzE/wT5id4jwRWwERBECZEAYkPxUICKQIkg1iA2HgRsWCD2QKLbIIdm8Tj2CEkRGDEhyJEPO94
         PM7YToItB1smQdhRkGWxODxXz1uv69S5q7u6u7q7qk890qWZt7q7urr6uaueqq7u86HD4dAohM89/2PX
         jPvVtsY2yMTGPMzJ7zMeMB4yHjEeNZ675MI4TIRjXT7kSd6cg3Pdp8rSmIdMbKRz6ZwPG581cFzl2GtC
@@ -287,6 +296,6 @@
 </value>
   </data>
   <data name="txtComida.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 20</value>
+    <value>200, 20</value>
   </data>
 </root>

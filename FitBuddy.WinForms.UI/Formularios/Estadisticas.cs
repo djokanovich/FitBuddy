@@ -106,8 +106,7 @@ namespace FitBuddy.WinForms.UI.Formularios
             base.OnClosed(e);
         }
 
-        private void OnBtnCerrarClick(object sender,
-            EventArgs e)
+        private void OnBtnCerrarClick(object sender, EventArgs e)
         {
             _animar.PararCronómetro();
             _formManager.Close(this);

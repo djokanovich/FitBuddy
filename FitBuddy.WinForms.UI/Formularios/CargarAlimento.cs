@@ -15,7 +15,7 @@ namespace FitBuddy.WinForms.UI.Formularios
         private readonly ICargarAlimentoBusinessLogic _cargarAlimentoBusinessLogic;
         private List<ConsumoAlimentosData> _consumoAlimentos = new List<ConsumoAlimentosData>();
         private BindingSource _bindingSource;
-        private IEnumerable<CargarAlimentoModelo> _alimentosYCalorías;
+        private IEnumerable<CargarAlimentoModelo> _tablaAlimentosCalorías;
 
         public CargarAlimento(IFormManager formManager, ICargarAlimentoBusinessLogic cargarAlimentoBusinessLogic)
         {
@@ -29,64 +29,110 @@ namespace FitBuddy.WinForms.UI.Formularios
         {
             base.OnLoad(e);
 
-            var autoCompleteStringCollection = new AutoCompleteStringCollection();
+            ActualizarTotalCalorías();
 
-            _alimentosYCalorías = _cargarAlimentoBusinessLogic.ObtenerAlimentosYCalorías().ToList();
-            autoCompleteStringCollection.AddRange(_alimentosYCalorías.Select(ac => ac.Comida).ToArray());
+            // Inicializar el auto complete.
+            var autoCompleteStringCollection = new AutoCompleteStringCollection();
+            _tablaAlimentosCalorías = _cargarAlimentoBusinessLogic.ObtenerAlimentosYCalorías();
+            var listaDeAlimentos = _tablaAlimentosCalorías.Select(ac => ac.Alimento);
+            autoCompleteStringCollection.AddRange(listaDeAlimentos.ToArray());
             txtComida.AutoCompleteCustomSource = autoCompleteStringCollection;
 
+            // Asociar la fuente de datos del data grid a la lista de consumo de alimentos.
             _bindingSource = new BindingSource();
             _bindingSource.DataSource = _consumoAlimentos;
             datConsumoAlimentos.DataSource = _bindingSource;
-            cmbMomento.Items.Add("Desayuno");
-            cmbMomento.Items.Add("Almuerzo");
-            cmbMomento.Items.Add("Merienda");
-            cmbMomento.Items.Add("Cena");
-            cmbMomento.Items.Add("Colación");
+
+            // Inicializar combobox con los momentos del día.
+            var momentosDelDía = new[] { "Desayuno", "Almuerzo", "Merienda", "Cena", "Colación" };
+            cmbMomentoDelDía.Items.AddRange(momentosDelDía);
+            cmbMomentoDelDía.SelectedIndex = 0;
         }
 
-        private void OnBtnAtrasClick(object sender, EventArgs e)
+        private void OnBtnAgregarClick(object sender, EventArgs e)
         {
-            _formManager.Close(this);
-        }
+            if (!CamposSonVálidos())
+                return;
 
-        private void CargarAlimento_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void cmbPorcion_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnEnviar_Click(object sender, EventArgs e)
-        {
             var consumo = new ConsumoAlimentosData
             {
                 Comida = txtComida.Text,
-                Porción = txtPorcion.Text,
+                Porción = txtPorción.Text,
             };
-            _consumoAlimentos.Add(consumo);
 
+            _consumoAlimentos.Add(consumo);
             _bindingSource.ResetBindings(false);
 
+            ActualizarTotalCalorías();
+
+            txtComida.Text = string.Empty;
+            txtPorción.Text = string.Empty;
+            txtComida.Focus();
+        }
+
+        private bool CamposSonVálidos()
+        {
+            if (!_tablaAlimentosCalorías.Select(ac => ac.Alimento).Contains(txtComida.Text, StringComparer.InvariantCultureIgnoreCase))
+            {
+                MessageBox.Show($"'{txtComida.Text}' no es un alimento válido.");
+                txtComida.Focus();
+                return false;
+            }
+
+            if (!float.TryParse(txtPorción.Text, out _))
+            {
+                MessageBox.Show($"Debe ingresar un valor válido.");
+                txtPorción.Focus();
+                return false;
+            }
+
+            if (cmbMomentoDelDía.SelectedIndex == -1)
+            {
+                MessageBox.Show($"Debe seleccionar un momento del día.");
+                cmbMomentoDelDía.Focus();
+                return false;
+            }
+
+            return true;
+        }
+
+        private void ActualizarTotalCalorías()
+        {
             var caloriasTotales = 0f;
 
             foreach (var alimento in _consumoAlimentos)
             {
-                var alimentoCaloria = _alimentosYCalorías.Single(ac => ac.Comida == alimento.Comida);
-                caloriasTotales += float.Parse(alimento.Porción) * alimentoCaloria.CaloríasCadaCienGramos / 100; 
+                var alimentoCaloría = _tablaAlimentosCalorías.Single(ac => ac.Alimento.Equals(alimento.Comida, StringComparison.InvariantCultureIgnoreCase));
+                caloriasTotales += float.Parse(alimento.Porción) * alimentoCaloría.CaloríasCadaCienGramos / 100;
             }
 
-            lblCalorias.Text = caloriasTotales.ToString();
-
-
+            lblCalorías.Text = $"Total de calorías: {caloriasTotales}";
         }
 
-        private void lblCalorias_Click(object sender, EventArgs e)
+        private void OnBtnAtrásClick(object sender, EventArgs e)
         {
+            _formManager.Close(this);
+        }
 
+        private void OnTxtPorciónKeyPress(object sender, KeyPressEventArgs e)
+        {
+            var keyChar = e.KeyChar;
+            if (!char.IsControl(keyChar) && !char.IsDigit(keyChar) && keyChar != '.' && keyChar != ',')
+            {
+                e.Handled = true;
+            }
+
+            if ((keyChar == '.' || keyChar == ',') && txtPorción.Text.IndexOf('.') > -1)
+            {
+                e.Handled = true;
+            }
+
+            if (keyChar == ',' && txtPorción.Text.IndexOf('.') == -1)
+            {
+                e.Handled = true;
+                txtPorción.Text += '.';
+                txtPorción.SelectionStart = txtPorción.Text.Length;
+            }
         }
     }
 }

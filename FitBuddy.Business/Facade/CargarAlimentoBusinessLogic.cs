@@ -22,7 +22,7 @@ namespace FitBuddy.Business.Facade
 
         public IEnumerable<CargarAlimentoModelo> ObtenerAlimentosYCalorías()
         {
-            return _composiciónAlimentoRepositorio.Todos().Select(ca => new CargarAlimentoModelo { Comida = ca.Alimento, CaloríasCadaCienGramos = ca.Calorías });
+            return _composiciónAlimentoRepositorio.Todos().Select(ca => new CargarAlimentoModelo { Alimento = ca.Alimento, CaloríasCadaCienGramos = ca.Calorías });
         }
     }
 }

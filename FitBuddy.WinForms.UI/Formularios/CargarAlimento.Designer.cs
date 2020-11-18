@@ -29,39 +29,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CargarAlimento));
-            this.btnAtras = new System.Windows.Forms.Button();
-            this.btnEnviar = new System.Windows.Forms.Button();
+            this.btnAtrás = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Label2 = new System.Windows.Forms.Label();
-            this.Label1 = new System.Windows.Forms.Label();
+            this.lblPorción = new System.Windows.Forms.Label();
+            this.lblComida = new System.Windows.Forms.Label();
             this.datConsumoAlimentos = new System.Windows.Forms.DataGridView();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.txtComida = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblCalorias = new System.Windows.Forms.Label();
-            this.txtPorcion = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.cmbMomento = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblCalorías = new System.Windows.Forms.Label();
+            this.txtPorción = new System.Windows.Forms.TextBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.cmbMomentoDelDía = new System.Windows.Forms.ComboBox();
+            this.lblMomento = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datConsumoAlimentos)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAtras
             // 
-            this.btnAtras.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            resources.ApplyResources(this.btnAtras, "btnAtras");
-            this.btnAtras.Name = "btnAtras";
-            this.btnAtras.UseVisualStyleBackColor = true;
-            this.btnAtras.Click += new System.EventHandler(this.OnBtnAtrasClick);
+            this.btnAtrás.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.btnAtrás, "btnAtras");
+            this.btnAtrás.Name = "btnAtras";
+            this.btnAtrás.UseVisualStyleBackColor = true;
+            this.btnAtrás.Click += new System.EventHandler(this.OnBtnAtrásClick);
             // 
-            // btnEnviar
+            // btnAgregar
             // 
-            resources.ApplyResources(this.btnEnviar, "btnEnviar");
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
-            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
+            resources.ApplyResources(this.btnAgregar, "btnAgregar");
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.OnBtnAgregarClick);
             // 
             // btnBorrar
             // 
@@ -76,15 +75,15 @@
             this.PictureBox1.Name = "PictureBox1";
             this.PictureBox1.TabStop = false;
             // 
-            // Label2
+            // lblPorción
             // 
-            resources.ApplyResources(this.Label2, "Label2");
-            this.Label2.Name = "Label2";
+            resources.ApplyResources(this.lblPorción, "lblPorción");
+            this.lblPorción.Name = "lblPorción";
             // 
-            // Label1
+            // lblComida
             // 
-            resources.ApplyResources(this.Label1, "Label1");
-            this.Label1.Name = "Label1";
+            resources.ApplyResources(this.lblComida, "lblComida");
+            this.lblComida.Name = "lblComida";
             // 
             // datConsumoAlimentos
             // 
@@ -105,63 +104,57 @@
             resources.ApplyResources(this.txtComida, "txtComida");
             this.txtComida.Name = "txtComida";
             // 
-            // label3
+            // lblCalorías
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.lblCalorías, "lblCalorías");
+            this.lblCalorías.Name = "lblCalorías";
             // 
-            // lblCalorias
+            // txtPorción
             // 
-            resources.ApplyResources(this.lblCalorias, "lblCalorias");
-            this.lblCalorias.Name = "lblCalorias";
-            this.lblCalorias.Click += new System.EventHandler(this.lblCalorias_Click);
+            this.txtPorción.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtPorción.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            resources.ApplyResources(this.txtPorción, "txtPorción");
+            this.txtPorción.Name = "txtPorción";
+            this.txtPorción.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnTxtPorciónKeyPress);
             // 
-            // txtPorcion
+            // dtpFecha
             // 
-            this.txtPorcion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtPorcion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            resources.ApplyResources(this.txtPorcion, "txtPorcion");
-            this.txtPorcion.Name = "txtPorcion";
+            resources.ApplyResources(this.dtpFecha, "dtpFecha");
+            this.dtpFecha.Name = "dtpFecha";
             // 
-            // dateTimePicker1
+            // cmbMomentoDelDía
             // 
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
-            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.cmbMomentoDelDía.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMomentoDelDía.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbMomentoDelDía, "cmbMomentoDelDía");
+            this.cmbMomentoDelDía.Name = "cmbMomentoDelDía";
             // 
-            // cmbMomento
+            // lblMomento
             // 
-            this.cmbMomento.FormattingEnabled = true;
-            resources.ApplyResources(this.cmbMomento, "cmbMomento");
-            this.cmbMomento.Name = "cmbMomento";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.lblMomento, "lblMomento");
+            this.lblMomento.Name = "lblMomento";
             // 
             // CargarAlimento
             // 
-            this.AcceptButton = this.btnEnviar;
+            this.AcceptButton = this.btnAgregar;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnAtras;
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.cmbMomento);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.txtPorcion);
-            this.Controls.Add(this.lblCalorias);
-            this.Controls.Add(this.label3);
+            this.CancelButton = this.btnAtrás;
+            this.Controls.Add(this.lblMomento);
+            this.Controls.Add(this.cmbMomentoDelDía);
+            this.Controls.Add(this.dtpFecha);
+            this.Controls.Add(this.txtPorción);
+            this.Controls.Add(this.lblCalorías);
             this.Controls.Add(this.txtComida);
             this.Controls.Add(this.lblWelcome);
-            this.Controls.Add(this.btnAtras);
-            this.Controls.Add(this.btnEnviar);
+            this.Controls.Add(this.btnAtrás);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.PictureBox1);
-            this.Controls.Add(this.Label2);
-            this.Controls.Add(this.Label1);
+            this.Controls.Add(this.lblPorción);
+            this.Controls.Add(this.lblComida);
             this.Controls.Add(this.datConsumoAlimentos);
             this.Name = "CargarAlimento";
-            this.Load += new System.EventHandler(this.CargarAlimento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datConsumoAlimentos)).EndInit();
             this.ResumeLayout(false);
@@ -171,20 +164,19 @@
 
         #endregion
 
-        internal System.Windows.Forms.Button btnAtras;
-        internal System.Windows.Forms.Button btnEnviar;
+        internal System.Windows.Forms.Button btnAtrás;
+        internal System.Windows.Forms.Button btnAgregar;
         internal System.Windows.Forms.Button btnBorrar;
         internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.Label Label2;
-        internal System.Windows.Forms.Label Label1;
+        internal System.Windows.Forms.Label lblPorción;
+        internal System.Windows.Forms.Label lblComida;
         internal System.Windows.Forms.DataGridView datConsumoAlimentos;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.TextBox txtComida;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblCalorias;
-        private System.Windows.Forms.TextBox txtPorcion;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox cmbMomento;
-        internal System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblCalorías;
+        private System.Windows.Forms.TextBox txtPorción;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.ComboBox cmbMomentoDelDía;
+        internal System.Windows.Forms.Label lblMomento;
     }
 }

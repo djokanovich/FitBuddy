@@ -180,9 +180,14 @@ namespace FitBuddy.Business.Facade
                         break;
                 }
             }
-            else // Género = Masculino
+            else if (género == Género.Masculino)
             {
                 // TODO
+                IgcClasificación = "(Esta información aún no está implementada para el género masculino.)";
+            }
+            else
+            {
+                IgcClasificación = "Configurá tu sexo para saber más sobre este valor.";
             }
         }
     }

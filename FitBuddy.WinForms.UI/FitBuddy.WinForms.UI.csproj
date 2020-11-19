@@ -404,6 +404,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Recursos\dieta.html" />
+    <Content Include="Recursos\FormClipArt\PdpFileIcon.png" />
     <None Include="Recursos\FormClipArt\Contacto.png" />
     <None Include="Recursos\FormClipArt\EjerciciosDiarios.png" />
     <None Include="Recursos\FormClipArt\AlimentoCargar.png" />

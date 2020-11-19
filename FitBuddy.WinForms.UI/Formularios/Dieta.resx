@@ -145,19 +145,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 98</value>
+    <value>15, 135</value>
   </data>
   <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 19</value>
+    <value>74, 19</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -175,19 +175,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 201</value>
+    <value>16, 238</value>
   </data>
   <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 19</value>
+    <value>74, 19</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -205,19 +205,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 305</value>
+    <value>15, 344</value>
   </data>
   <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 19</value>
+    <value>73, 19</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -235,19 +235,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 408</value>
+    <value>16, 447</value>
   </data>
   <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 19</value>
+    <value>42, 19</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -265,7 +265,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
+  </data>
+  <data name="lblDesayunoLunes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblDesayunoLunes.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 38</value>
@@ -286,13 +289,16 @@
     <value>lblDesayunoLunes</value>
   </data>
   <data name="&gt;&gt;lblDesayunoLunes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblDesayunoLunes.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;lblDesayunoLunes.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="lblAlmuerzoLunes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblAlmuerzoLunes.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 141</value>
@@ -313,13 +319,16 @@
     <value>lblAlmuerzoLunes</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoLunes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoLunes.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoLunes.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="lblMeriendaLunes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblMeriendaLunes.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 245</value>
@@ -340,13 +349,16 @@
     <value>lblMeriendaLunes</value>
   </data>
   <data name="&gt;&gt;lblMeriendaLunes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblMeriendaLunes.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;lblMeriendaLunes.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="lblCenaLunes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblCenaLunes.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 348</value>
@@ -367,7 +379,7 @@
     <value>lblCenaLunes</value>
   </data>
   <data name="&gt;&gt;lblCenaLunes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblCenaLunes.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -400,7 +412,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
     <value>1113, 343</value>
@@ -427,7 +439,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
     <value>1113, 240</value>
@@ -454,7 +466,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
     <value>1113, 136</value>
@@ -481,13 +493,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 62</value>
+    <value>143, 62</value>
   </data>
   <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -514,7 +526,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
+  </data>
+  <data name="lblCenaMartes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblCenaMartes.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 348</value>
@@ -535,13 +550,16 @@
     <value>lblCenaMartes</value>
   </data>
   <data name="&gt;&gt;lblCenaMartes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblCenaMartes.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;lblCenaMartes.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="lblDesayunoMartes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblDesayunoMartes.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 38</value>
@@ -562,13 +580,16 @@
     <value>lblDesayunoMartes</value>
   </data>
   <data name="&gt;&gt;lblDesayunoMartes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblDesayunoMartes.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;lblDesayunoMartes.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="lblAlmuerzoMartes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblAlmuerzoMartes.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 141</value>
@@ -589,13 +610,16 @@
     <value>lblAlmuerzoMartes</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoMartes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoMartes.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoMartes.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="lblMeriendaMartes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblMeriendaMartes.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 245</value>
@@ -616,7 +640,7 @@
     <value>lblMeriendaMartes</value>
   </data>
   <data name="&gt;&gt;lblMeriendaMartes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblMeriendaMartes.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -628,7 +652,7 @@
     <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 62</value>
+    <value>299, 62</value>
   </data>
   <data name="groupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -655,7 +679,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
+  </data>
+  <data name="lblCenaMiercoles.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblCenaMiercoles.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 348</value>
@@ -676,13 +703,16 @@
     <value>lblCenaMiercoles</value>
   </data>
   <data name="&gt;&gt;lblCenaMiercoles.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblCenaMiercoles.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;lblCenaMiercoles.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="lblDesayunoMiercoles.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblDesayunoMiercoles.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 38</value>
@@ -703,13 +733,16 @@
     <value>lblDesayunoMiercoles</value>
   </data>
   <data name="&gt;&gt;lblDesayunoMiercoles.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblDesayunoMiercoles.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;lblDesayunoMiercoles.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="lblAlmuerzoMiercoles.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblAlmuerzoMiercoles.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 141</value>
@@ -730,13 +763,16 @@
     <value>lblAlmuerzoMiercoles</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoMiercoles.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoMiercoles.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoMiercoles.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="lblMeriendaMiercoles.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblMeriendaMiercoles.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 245</value>
@@ -757,7 +793,7 @@
     <value>lblMeriendaMiercoles</value>
   </data>
   <data name="&gt;&gt;lblMeriendaMiercoles.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblMeriendaMiercoles.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -769,7 +805,7 @@
     <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 62</value>
+    <value>455, 62</value>
   </data>
   <data name="groupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -796,7 +832,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
+  </data>
+  <data name="lblCenaJueves.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblCenaJueves.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 348</value>
@@ -817,13 +856,16 @@
     <value>lblCenaJueves</value>
   </data>
   <data name="&gt;&gt;lblCenaJueves.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblCenaJueves.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;lblCenaJueves.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="lblDesayunoJueves.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblDesayunoJueves.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 38</value>
@@ -844,13 +886,16 @@
     <value>lblDesayunoJueves</value>
   </data>
   <data name="&gt;&gt;lblDesayunoJueves.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblDesayunoJueves.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;lblDesayunoJueves.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="lblAlmuerzoJueves.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblAlmuerzoJueves.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 141</value>
@@ -871,13 +916,16 @@
     <value>lblAlmuerzoJueves</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoJueves.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoJueves.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoJueves.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="lblMeriendaJueves.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblMeriendaJueves.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 245</value>
@@ -898,7 +946,7 @@
     <value>lblMeriendaJueves</value>
   </data>
   <data name="&gt;&gt;lblMeriendaJueves.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblMeriendaJueves.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -910,7 +958,7 @@
     <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>578, 62</value>
+    <value>610, 62</value>
   </data>
   <data name="groupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -937,7 +985,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
+  </data>
+  <data name="lblCenaViernes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblCenaViernes.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 348</value>
@@ -958,13 +1009,16 @@
     <value>lblCenaViernes</value>
   </data>
   <data name="&gt;&gt;lblCenaViernes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblCenaViernes.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;lblCenaViernes.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="lblDesayunoViernes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblDesayunoViernes.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 38</value>
@@ -985,13 +1039,16 @@
     <value>lblDesayunoViernes</value>
   </data>
   <data name="&gt;&gt;lblDesayunoViernes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblDesayunoViernes.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;lblDesayunoViernes.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="lblAlmuerzoViernes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblAlmuerzoViernes.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 141</value>
@@ -1012,13 +1069,16 @@
     <value>lblAlmuerzoViernes</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoViernes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoViernes.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;lblAlmuerzoViernes.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="lblMeriendaViernes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.125pt</value>
   </data>
   <data name="lblMeriendaViernes.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 245</value>
@@ -1039,7 +1099,7 @@
     <value>lblMeriendaViernes</value>
   </data>
   <data name="&gt;&gt;lblMeriendaViernes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblMeriendaViernes.Parent" xml:space="preserve">
     <value>groupBox5</value>
@@ -1051,7 +1111,7 @@
     <value>Tahoma, 10.125pt, style=Bold</value>
   </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>733, 62</value>
+    <value>765, 62</value>
   </data>
   <data name="groupBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1078,10 +1138,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnExportarAPdf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>628, 530</value>
+    <value>686, 530</value>
   </data>
   <data name="btnExportarAPdf.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1105,10 +1165,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnExportarAPdf.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnAtras.Location" type="System.Drawing.Point, System.Drawing">
-    <value>753, 530</value>
+    <value>811, 530</value>
   </data>
   <data name="btnAtras.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 30</value>
@@ -1129,6 +1189,111 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAtras.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 98</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>814, 93</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 201</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>814, 93</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 307</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>814, 93</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 410</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>814, 93</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>651, 527</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 37</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1138,7 +1303,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>886, 572</value>
+    <value>959, 584</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>

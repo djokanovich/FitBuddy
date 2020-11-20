@@ -403,6 +403,7 @@
     <None Include="Recursos\Velocimetro.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Recursos\correo.html" />
     <Content Include="Recursos\dieta.html" />
     <Content Include="Recursos\FormClipArt\PdpFileIcon.png" />
     <None Include="Recursos\FormClipArt\Contacto.png" />

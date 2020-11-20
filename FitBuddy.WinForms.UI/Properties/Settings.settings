@@ -8,5 +8,17 @@
     <Setting Name="MinimoNivelMensajesBitacora" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Info</Value>
     </Setting>
+    <Setting Name="SmtpClientHost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">182|246|198|116|54|150|134|182|230|116|14|46|182|206</Value>
+    </Setting>
+    <Setting Name="SmtpClientPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">587</Value>
+    </Setting>
+    <Setting Name="NetworkCredentialsEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">182|246|198|116|54|150|134|182|230|2|206|246|118|78|174|46|158|38|38|174|70|46|150|102</Value>
+    </Setting>
+    <Setting Name="NetworkCredentialsPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">12|44|250|78|166|46|206|166|22|194</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

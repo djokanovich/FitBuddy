@@ -14,6 +14,7 @@ namespace FitBuddy.Business
 
             builder.RegisterModule<DataAccessModule>();
 
+            builder.RegisterType<EmailService>().As<IEmailService>();
             builder.RegisterType<Md5HashingService>().As<IMd5HashingService>();
             builder.RegisterType<PasswordValidator>().As<IPasswordValidator>();
             builder.RegisterType<EmailValidator>().As<IEmailValidator>();

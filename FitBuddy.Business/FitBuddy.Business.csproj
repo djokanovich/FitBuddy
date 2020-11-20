@@ -78,6 +78,7 @@
     <Compile Include="Facade\LogInBusinessLogic.cs" />
     <Compile Include="Facade\PantallaPrincipalBusinessLogic.cs" />
     <Compile Include="Facade\RegistrarNuevoUsuarioBusinessLogic.cs" />
+    <Compile Include="Modelos\AgendarTurnoModelo.cs" />
     <Compile Include="Modelos\CargarAlimentoModelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Facade\BackupBusinessLogic.cs" />
@@ -86,6 +87,10 @@
     <Compile Include="Validators\PasswordValidator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common.Bitacora\Common.Bitacora.csproj">
+      <Project>{a9e94aba-fc74-4048-861c-bbe4193a6909}</Project>
+      <Name>Common.Bitacora</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FitBuddy.DataAccess\FitBuddy.DataAccess.csproj">
       <Project>{3A137CE8-AD5C-49EA-9015-239EDFB4270B}</Project>
       <Name>FitBuddy.DataAccess</Name>

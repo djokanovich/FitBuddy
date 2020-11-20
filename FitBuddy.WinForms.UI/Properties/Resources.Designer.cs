@@ -161,6 +161,27 @@ namespace FitBuddy.WinForms.UI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;h2&gt;Solicitud de turno&lt;/h2&gt;
+        ///
+        ///&lt;p&gt;Estimado {NombreDoctor}&lt;/p&gt;
+        ///
+        ///&lt;p&gt;{NombrePaciente} le solicita un turno para:&lt;/p&gt;
+        ///&lt;ul&gt;
+        ///    &lt;li&gt;{FechaTurno}&lt;/li&gt;
+        ///    &lt;li&gt;{HoraTurno}&lt;/li&gt;
+        ///&lt;/ul&gt;
+        ///
+        ///&lt;p&gt;Muchas gracias,&lt;/p&gt;
+        ///
+        ///&lt;p&gt;&lt;b&gt;FitBuddy&lt;/b&gt;&lt;/p&gt;.
+        /// </summary>
+        internal static string TemplateCorreo {
+            get {
+                return ResourceManager.GetString("TemplateCorreo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
         ///&lt;html lang=&quot;en&quot;&gt;
         ///

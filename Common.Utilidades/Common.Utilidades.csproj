@@ -155,6 +155,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmailService.cs" />
     <Compile Include="RandomNumberGeneratorService.cs" />
     <Compile Include="Md5HashingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -12,7 +12,7 @@ namespace FitBuddy.WinForms.UI.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.7.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -38,6 +38,43 @@ namespace FitBuddy.WinForms.UI.Properties {
         public string MinimoNivelMensajesBitacora {
             get {
                 return ((string)(this["MinimoNivelMensajesBitacora"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("182|246|198|116|54|150|134|182|230|116|14|46|182|206")]
+        public string SmtpClientHost {
+            get {
+                return ((string)(this["SmtpClientHost"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("587")]
+        public int SmtpClientPort {
+            get {
+                return ((int)(this["SmtpClientPort"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("182|246|198|116|54|150|134|182|230|2|206|246|118|78|174|46|158|38|38|174|70|46|15" +
+            "0|102")]
+        public string NetworkCredentialsEmail {
+            get {
+                return ((string)(this["NetworkCredentialsEmail"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("12|44|250|78|166|46|206|166|22|194")]
+        public string NetworkCredentialsPassword {
+            get {
+                return ((string)(this["NetworkCredentialsPassword"]));
             }
         }
     }

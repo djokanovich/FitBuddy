@@ -16,7 +16,6 @@ namespace FitBuddy.WinForms.UI.Formularios
             _formManager = formManager;
         }
 
-        
         private void btnBackup_Click(object sender, EventArgs e)
         {
             _formManager.Show<Configuracion>();

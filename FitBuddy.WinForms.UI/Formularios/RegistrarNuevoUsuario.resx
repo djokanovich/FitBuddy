@@ -144,7 +144,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lnkAcercaDe.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -647,10 +647,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="btnRegistrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>424, 332</value>
+    <value>424, 389</value>
   </data>
   <data name="btnRegistrar.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 30</value>
@@ -671,7 +671,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnRegistrar.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -692,7 +692,7 @@
     <value>False</value>
   </data>
   <data name="txtApellido.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 282</value>
+    <value>482, 339</value>
   </data>
   <data name="txtApellido.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 24</value>
@@ -710,7 +710,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtApellido.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="resource.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -731,7 +731,7 @@
     <value>False</value>
   </data>
   <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 239</value>
+    <value>482, 296</value>
   </data>
   <data name="txtNombre.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 24</value>
@@ -749,7 +749,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtNombre.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="resource.Image2" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -770,7 +770,7 @@
     <value>False</value>
   </data>
   <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 196</value>
+    <value>482, 253</value>
   </data>
   <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 24</value>
@@ -788,7 +788,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtEmail.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="resource.Image3" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -809,7 +809,7 @@
     <value>False</value>
   </data>
   <data name="txtRepeatPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 153</value>
+    <value>482, 210</value>
   </data>
   <data name="txtRepeatPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 24</value>
@@ -827,7 +827,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtRepeatPassword.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="resource.Image4" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -848,7 +848,7 @@
     <value>False</value>
   </data>
   <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 110</value>
+    <value>482, 167</value>
   </data>
   <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 24</value>
@@ -866,10 +866,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="Label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 282</value>
+    <value>296, 339</value>
   </data>
   <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 19</value>
@@ -893,10 +893,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 239</value>
+    <value>296, 296</value>
   </data>
   <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 19</value>
@@ -920,7 +920,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="resource.Image5" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -941,7 +941,7 @@
     <value>False</value>
   </data>
   <data name="txtUsername.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 67</value>
+    <value>482, 124</value>
   </data>
   <data name="txtUsername.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 24</value>
@@ -959,10 +959,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtUsername.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 196</value>
+    <value>296, 253</value>
   </data>
   <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 19</value>
@@ -986,10 +986,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 153</value>
+    <value>296, 210</value>
   </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 19</value>
@@ -1013,10 +1013,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 110</value>
+    <value>296, 167</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 19</value>
@@ -1040,10 +1040,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 67</value>
+    <value>296, 124</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 19</value>
@@ -1067,10 +1067,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="btnAtrás.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 332</value>
+    <value>550, 389</value>
   </data>
   <data name="btnAtrás.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 30</value>
@@ -1091,6 +1091,57 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAtrás.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbIdioma.ItemHeight" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="cmbIdioma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 68</value>
+  </data>
+  <data name="cmbIdioma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 29</value>
+  </data>
+  <data name="cmbIdioma.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;cmbIdioma.Name" xml:space="preserve">
+    <value>cmbIdioma</value>
+  </data>
+  <data name="&gt;&gt;cmbIdioma.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;cmbIdioma.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbIdioma.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="metroLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 73</value>
+  </data>
+  <data name="metroLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 19</value>
+  </data>
+  <data name="metroLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="metroLabel1.Text" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="metroLabel1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.Name" xml:space="preserve">
+    <value>metroLabel1</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1100,7 +1151,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>693, 386</value>
+    <value>693, 448</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>

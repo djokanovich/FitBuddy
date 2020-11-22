@@ -45,6 +45,8 @@
             this.Label2 = new MetroFramework.Controls.MetroLabel();
             this.Label1 = new MetroFramework.Controls.MetroLabel();
             this.btnAtrás = new MetroFramework.Controls.MetroButton();
+            this.cmbIdioma = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -282,12 +284,26 @@
             this.btnAtrás.UseSelectable = true;
             this.btnAtrás.Click += new System.EventHandler(this.OnBtnAtrásClick);
             // 
+            // cmbIdioma
+            // 
+            this.cmbIdioma.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbIdioma, "cmbIdioma");
+            this.cmbIdioma.Name = "cmbIdioma";
+            this.cmbIdioma.UseSelectable = true;
+            // 
+            // metroLabel1
+            // 
+            resources.ApplyResources(this.metroLabel1, "metroLabel1");
+            this.metroLabel1.Name = "metroLabel1";
+            // 
             // RegistrarNuevoUsuario
             // 
             this.AcceptButton = this.btnRegistrar;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAtrás;
+            this.Controls.Add(this.metroLabel1);
+            this.Controls.Add(this.cmbIdioma);
             this.Controls.Add(this.btnAtrás);
             this.Controls.Add(this.lnkAcercaDe);
             this.Controls.Add(this.PictureBox1);
@@ -329,5 +345,7 @@
         internal MetroFramework.Controls.MetroLabel Label2;
         internal MetroFramework.Controls.MetroLabel Label1;
         private MetroFramework.Controls.MetroButton btnAtrás;
+        private MetroFramework.Controls.MetroComboBox cmbIdioma;
+        internal MetroFramework.Controls.MetroLabel metroLabel1;
     }
 }

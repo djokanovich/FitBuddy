@@ -114,6 +114,7 @@
     <Compile Include="Repositorios\ComposiciónAlimentoRepositorio.cs" />
     <Compile Include="Repositorios\Genérico\IRepositorio.cs" />
     <Compile Include="Repositorios\HistorialPacienteRepositorio.cs" />
+    <Compile Include="Repositorios\IdiomaRepositorio.cs" />
     <Compile Include="Repositorios\MédicoRepositorio.cs" />
     <Compile Include="Repositorios\PacienteRepositorio.cs" />
     <Compile Include="Repositorios\Genérico\RepositorioGenérico.cs" />

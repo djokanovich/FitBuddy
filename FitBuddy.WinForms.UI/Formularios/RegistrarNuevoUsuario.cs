@@ -3,6 +3,7 @@ using FitBuddy.Business.Facade;
 using FitBuddy.Entidades;
 using MetroFramework.Forms;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
@@ -23,6 +24,19 @@ namespace FitBuddy.WinForms.UI.Formularios
             _registrarNuevoUsuarioBusinessLogic = registrarNuevoUsuarioBusinessLogic;
         }
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            var idiomas = _registrarNuevoUsuarioBusinessLogic.ObtenerIdiomas();
+            cmbIdioma.Items.AddRange(idiomas);
+            cmbIdioma.ValueMember = "Id";
+            cmbIdioma.DisplayMember = "Nombre";
+
+            if (idiomas.Any())
+                cmbIdioma.SelectedIndex = 0;
+        }
+
         private void OnBtnRegistrarClick(object sender, EventArgs e)
         {
             if (!SonCamposVálidos())
@@ -36,6 +50,7 @@ namespace FitBuddy.WinForms.UI.Formularios
                 return;
             }
 
+            var idioma = (Idioma)cmbIdioma.SelectedItem;
             var usuario = new Usuario
             {
                 Username = username,
@@ -43,7 +58,8 @@ namespace FitBuddy.WinForms.UI.Formularios
                 Apellido = txtApellido.Text,
                 Estado = Estado.Activo,
                 IntentosFallidos = 0,
-                IdiomaId = 0 // TODO: Agregar idiomas a la tabla idiomas, mostrarlos en un combobox en este formulario, y setear este campo al valor seleccionado
+                IdiomaId = idioma.Id,
+                Idioma = idioma
             };
             var contraseña = txtPassword.Text;
 

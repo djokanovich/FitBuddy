@@ -13,12 +13,14 @@ namespace FitBuddy.Business.Facade
         bool EsUsuarioGuardadoConÉxito(Usuario usuario, string plainPassword);
         bool EsContraseñaVálida(string contraseña);
         bool EsEmailVálido(string email);
+        Idioma[] ObtenerIdiomas();
     }
 
     public class RegistrarNuevoUsuarioBusinessLogic : IRegistrarNuevoUsuarioBusinessLogic
     {
         private readonly IMd5HashingService _md5HashingService;
         private readonly IRepositorio<Usuario> _usuarioRepositorio;
+        private readonly IRepositorio<Idioma> _idiomaRepositorio;
         private readonly IPasswordValidator _passwordValidator;
         private readonly IEmailValidator _emailValidator;
 
@@ -27,11 +29,13 @@ namespace FitBuddy.Business.Facade
         public RegistrarNuevoUsuarioBusinessLogic(
             IMd5HashingService md5HashingService,
             IRepositorio<Usuario> usuarioRepositorio,
+            IRepositorio<Idioma> idiomaRepositorio,
             IPasswordValidator passwordValidator,
             IEmailValidator emailValidator)
         {
             _md5HashingService = md5HashingService;
             _usuarioRepositorio = usuarioRepositorio;
+            _idiomaRepositorio = idiomaRepositorio;
             _passwordValidator = passwordValidator;
             _emailValidator = emailValidator;
         }
@@ -61,6 +65,11 @@ namespace FitBuddy.Business.Facade
         public bool EsEmailVálido(string email)
         {
             return _emailValidator.EsEmailVálido(email);
+        }
+
+        public Idioma[] ObtenerIdiomas()
+        {
+            return _idiomaRepositorio.Todos().ToArray();
         }
     }
 }

@@ -3,6 +3,8 @@ using FitBuddy.Business.Facade;
 using FitBuddy.WinForms.UI.Security;
 using MetroFramework.Forms;
 using System;
+using System.Globalization;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace FitBuddy.WinForms.UI.Formularios
@@ -37,6 +39,8 @@ namespace FitBuddy.WinForms.UI.Formularios
             {
                 _bitacora.Info($"Se ha logueado el usuario {usuario.Username} (id: {usuario.Id}).");
 
+                SetearIdioma(usuario.Idioma.Código);
+
                 IdentityManager.IniciarSesionUsuario(usuario.Id, usuario.Username, null);
 
                 MessageBox.Show("Logueado correctamente.");
@@ -49,6 +53,17 @@ namespace FitBuddy.WinForms.UI.Formularios
                 _bitacora.Debug($"El usuario '{username}' (ID: {usuario.Id}) ha intentado ingresar al sistema sin éxito.");
                 MessageBox.Show("Usuario o contraseña incorrectos.");
             }
+        }
+
+        private void SetearIdioma(string código)
+        {
+            var cultureInfo = new CultureInfo(código);
+
+            Thread.CurrentThread.CurrentCulture = cultureInfo;
+            Thread.CurrentThread.CurrentUICulture = cultureInfo;
+
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
         }
 
         private void OnLnkRegistrarUsuarioClicked(object sender, LinkLabelLinkClickedEventArgs e)

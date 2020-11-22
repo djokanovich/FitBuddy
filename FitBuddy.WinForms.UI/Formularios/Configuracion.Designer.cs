@@ -73,7 +73,6 @@
             this.Controls.Add(this.cmbIdioma);
             this.Controls.Add(this.btnBackup);
             this.Name = "Configuracion";
-            this.Load += new System.EventHandler(this.Configuracion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

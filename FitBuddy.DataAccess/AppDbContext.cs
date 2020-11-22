@@ -25,6 +25,7 @@ namespace FitBuddy.DataAccess
         public DbSet<Médico> Medicos { get; set; }
         public DbSet<Paciente> Paciente { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Idioma> Idiomas { get; set; }
 
         public override int SaveChanges() // se ejecuta cada vez que modifico o creo una fila en alguna tabla (record)
         {

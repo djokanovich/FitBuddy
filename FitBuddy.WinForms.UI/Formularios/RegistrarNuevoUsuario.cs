@@ -43,7 +43,7 @@ namespace FitBuddy.WinForms.UI.Formularios
                 Apellido = txtApellido.Text,
                 Estado = Estado.Activo,
                 IntentosFallidos = 0,
-                IdIdioma = 0 // TODO: Agregar idiomas a la tabla idiomas, mostrarlos en un combobox en este formulario, y setear este campo al valor seleccionado
+                IdiomaId = 0 // TODO: Agregar idiomas a la tabla idiomas, mostrarlos en un combobox en este formulario, y setear este campo al valor seleccionado
             };
             var contraseña = txtPassword.Text;
 

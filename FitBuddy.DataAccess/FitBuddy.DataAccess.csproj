@@ -97,9 +97,18 @@
     <Compile Include="Migrations\202011112311376_UsuarioUsernameNoEsClavePrimaria.designer.cs">
       <DependentUpon>202011112311376_UsuarioUsernameNoEsClavePrimaria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011212254590_AgregarTablaIdiomas.cs" />
+    <Compile Include="Migrations\202011212254590_AgregarTablaIdiomas.designer.cs">
+      <DependentUpon>202011212254590_AgregarTablaIdiomas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011212258144_IdiomaNoNuloEnUsuario.cs" />
+    <Compile Include="Migrations\202011212258144_IdiomaNoNuloEnUsuario.designer.cs">
+      <DependentUpon>202011212258144_IdiomaNoNuloEnUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\SeedData\ComidaSeedData.cs" />
     <Compile Include="Migrations\SeedData\ComposicionAlimentoSeedData.cs" />
+    <Compile Include="Migrations\SeedData\IdiomaSeedData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\ComidaRepositorio.cs" />
     <Compile Include="Repositorios\ComposiciónAlimentoRepositorio.cs" />
@@ -145,6 +154,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011112311376_UsuarioUsernameNoEsClavePrimaria.resx">
       <DependentUpon>202011112311376_UsuarioUsernameNoEsClavePrimaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011212254590_AgregarTablaIdiomas.resx">
+      <DependentUpon>202011212254590_AgregarTablaIdiomas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011212258144_IdiomaNoNuloEnUsuario.resx">
+      <DependentUpon>202011212258144_IdiomaNoNuloEnUsuario.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

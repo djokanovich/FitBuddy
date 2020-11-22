@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FitBuddy.Entidades
 {
@@ -16,7 +15,8 @@ namespace FitBuddy.Entidades
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public Estado Estado { get; set; }
-        public int IdIdioma { get; set; }
+        public int IdiomaId { get; set; }
+        public Idioma Idioma { get; set; }
         public int IntentosFallidos { get; set; }
     }
 }

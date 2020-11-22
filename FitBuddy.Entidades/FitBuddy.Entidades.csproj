@@ -51,6 +51,7 @@
     <Compile Include="Enums\Género.cs" />
     <Compile Include="HistorialPaciente.cs" />
     <Compile Include="HistorialPeso.cs" />
+    <Compile Include="Idioma.cs" />
     <Compile Include="Médico.cs" />
     <Compile Include="Enums\Objetivo.cs" />
     <Compile Include="Paciente.cs" />
